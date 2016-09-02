@@ -139,3 +139,12 @@ function change_profile_image($con,$user_id,$file_temp,$file_extn) {
     return $file_path;
 
 }
+
+
+function draftpost($con){
+
+    $sql = "SELECT * FROM posts WHERE type=2";
+    $res = $con->query($sql);
+    return $res;
+
+}

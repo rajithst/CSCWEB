@@ -11,11 +11,14 @@ if(logged_in() === false){
 
 }
 
-$var =basename($current_file,".php");
-
-require  'components/page_head.php'; ?>
-
+require  'components/page_head.php';
+$var =basename($current_file,".php");?>
 <script>
+
+    $(document).ready(function() {
+        $('#myDatatable').DataTable();
+    });
+
 
 </script>
 </head>
@@ -51,12 +54,12 @@ require  'components/page_head.php'; ?>
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Published Posts
+                        Draft Posts
 
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Posts</a></li>
-                        <li class="active">Published</li>
+                        <li class="active">Draft</li>
                     </ol>
                 </section>
 
@@ -66,37 +69,41 @@ require  'components/page_head.php'; ?>
                         <div class="col-xs-12">
                             <div class="box">
                                 <div class="box-header">
-                                    <h3 class="box-title">Users</h3>
+                                    <h3 class="box-title">Draft Posts</h3>
 
                                 </div>
                                 <!-- /.box-header -->
                                 <div class="box-body table-responsive no-padding">
 
                                     <?php $id = $user_data['id']; ?>
-                                    <table class="table table-striped table-bordered" id="myDatatable">
+                                    <table class="table table-striped table-bordered" id="">
                                         <thead>
                                         <tr>
-                                            <th style='text-align: center'>ID</th>
-                                            <th style='text-align: center'>User Name</th>
-                                            <th style='text-align: center'>Role</th>
+                                            <th style='text-align: center'>Admin ID</th>
+                                            <th style='text-align: center'>Post ID</th>
+
                                             <th style='text-align: center'>Title</th>
                                             <th style='text-align: center'>Date</th>
+                                            <th style='text-align: center'>Status</th>
+
 
                                         </tr>
 
                                         </thead>
                                         <tbody>
                                         <?php
-                                        $result=published($con,$id);
+
+                                        $result =draftpost($con);
 
                                         while($row = $result->fetch_assoc()) {
 
                                             echo "<tr>";
                                             echo "<td style='text-align: center'>" . $row["adminid"] . "</td>";
-                                            echo "<td style='text-align: center'>" . $row["name"] . '</td>';
-                                            echo '<td style="text-align: center">' . $row['role'] . '</td>';
-                                            echo '<td style="text-align: center">' . $row['subject'] . '</td>';
+                                            echo "<td style='text-align: center'>" . $row["id"] . "</td>";
+                                            echo "<td style='text-align: center'>" . $row["subject"] . '</td>';
                                             echo '<td style="text-align: center">' . $row['date'] . '</td>';
+                                            echo "<td style=\"text-align: center\"><button id='approve' type='button' class='btn btn-success' >Post</button> <button id='approve' type='button' class='btn btn-primary' >Edit</button> <button type='button' class='btn btn-danger'>Delete</button></td>";
+
 
                                             echo '</tr>';
 
@@ -129,14 +136,3 @@ require  'components/page_head.php'; ?>
 </div>
 
 <?php require  'components/page_tail.php'; ?>
-
-<script>
-$(document).ready(function() {
-$('#myDatatable').DataTable();
-});
-
-
-
-</script>
-
-

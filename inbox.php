@@ -62,7 +62,7 @@ require  'components/page_head.php';
                         <ul class="nav nav-pills nav-stacked">
                             <li class="active"><a href="#"><i class="fa fa-inbox"></i> Inbox
 
-                            <li><a href="#"><i class="fa fa-envelope-o"></i> Sent</a></li>
+                            <li><a href="sent.php"><i class="fa fa-envelope-o"></i> Sent</a></li>
                             <li><a href="#"><i class="fa fa-file-text-o"></i> Drafts</a></li>
 
                         </ul>

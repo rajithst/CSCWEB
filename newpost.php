@@ -3,7 +3,7 @@
 require 'core/init.php';
 require  'components/page_head.php';
 
-
+$var =basename($current_file,".php");
 ?>
 
 <script>
@@ -103,7 +103,7 @@ require  'components/page_head.php';
               <ul class="nav nav-pills nav-stacked">
 
                 <li><a href="published.php"><i class="fa fa-envelope-o"></i> Published</a></li>
-                <li><a href="#"><i class="fa fa-file-text-o"></i> Drafts</a></li>
+                <li><a href="Draft.php"><i class="fa fa-file-text-o"></i> Drafts</a></li>
 
                 <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
               </ul>
@@ -151,7 +151,7 @@ require  'components/page_head.php';
                         <!-- /.box-body -->
                         <div class="box-footer">
                           <div class="pull-right">
-                            <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Draft</button>
+                            <button type="button" id= "draft" class="btn btn-default" onclick="getid(this)"><i class="fa fa-pencil"></i> Draft</button>
                             <button type="submit" class="btn btn-primary" name="postdata"><i class="fa fa-envelope-o"></i> Post</button>
                           </div>
                           <button type="reset" class="btn btn-default"><i class="fa fa-times"></i> Discard</button>
@@ -173,7 +173,10 @@ require  'components/page_head.php';
     <div class="control-sidebar-bg"></div>
 </div>
 
-<?php require  'components/page_tail.php';
+<?php require  'components/page_tail.php'; ?>
+
+
+                <?php
 
 
             $id = $user_data['id'];

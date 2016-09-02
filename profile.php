@@ -10,7 +10,7 @@ if(logged_in() === false){
     exit();
 
 }
-
+$var =basename($current_file,".php");
 require  'components/page_head.php';
 
 ?>

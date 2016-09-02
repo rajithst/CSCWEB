@@ -90,6 +90,7 @@ require  'components/page_head.php';
                                             <th style='text-align: center'>Last Name</th>
                                             <th style='text-align: center'>Email</th>
                                             <th style='text-align: center'>Role</th>
+                                            <th style='text-align: center'>Status</th>
 
                                         </tr>
 
@@ -106,6 +107,7 @@ require  'components/page_head.php';
                                             echo '<td style="text-align: center">' . $row['last_name'] . '</td>';
                                             echo '<td style="text-align: center">' . $row['email'] . '</td>';
                                             echo '<td style="text-align: center">' . $row['role'] . '</td>';
+                                            echo "<td style=\"text-align: center\"><button id='approve' type='button' class='btn btn-primary' >Edit User</button> <button id='approve' type='button' class='btn btn-danger' >Delete</button></td>";
                                             echo '</tr>';
 
 
