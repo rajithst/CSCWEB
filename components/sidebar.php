@@ -5,8 +5,8 @@
     $(document).ready(function(){
         var page = " <?php echo $var; ?> ";
 
-        $("li.treeview> ul.treeview-menu>li>a").click(function() {
-            $(this).parent().addClass('active');
+        $("li.treeview> ul.treeview-menu>li").click(function() {
+            $(this).addClass('active');
 
         });
 
@@ -24,10 +24,10 @@
 
 <ul class="sidebar-menu" style="margin-top: 20px;">
 
-    <!-- Optionally, you can add icons to the links -->
+
     <li class="active"><a href="dashboard.php"><i class="fa fa-link"></i> <span>Home</span></a></li>
 
-    <li class="treeview active">
+    <li class="treeview">
         <a href="#"><i class="fa fa-link"></i> <span>Posts</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -69,6 +69,7 @@
         </ul>
     </li>
 
+    <li class=""><a href="backup.php"><i class="fa fa-link"></i> <span>Backup</span></a></li>
 
     <li class="treeview">
         <a href="#"><i class="fa fa-link"></i> <span>Settings</span>
@@ -82,6 +83,28 @@
             <li><a href="profile.php">My Profile</a></li>
         </ul>
     </li>
+
+
+    <li class="treeview">
+        <a href="#"><i class="fa fa-link"></i> <span>Reports</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+        </a>
+        <ul class="treeview-menu">
+            <li><a href="general.php" id="general" >All Reports</a></li>
+            <li><a href="users.php">Export</a></li>
+            <li><a href="profile.php">Import</a></li>
+        </ul>
+    </li>
+
+
+
+
+
+
+
+
 
     </li>
 </ul>

@@ -1,5 +1,5 @@
 <?php
 
-$con = mysqli_connect('localhost','root','','mvc');
+$con = mysqli_connect('localhost','root','','CSC');
 
 ?>

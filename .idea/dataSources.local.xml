@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="csc" uuid="756af51c-ac1c-4503-8067-4641179bf890">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>csc.*</schema-pattern>
+      <default-schemas>csc.*</default-schemas>
+    </data-source>
+  </component>
+</project>

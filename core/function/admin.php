@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect('localhost','root','','mvc');
+$con = mysqli_connect('localhost','root','','CSC');
 
 function user_id_from_email($con,$email){
 
@@ -89,7 +89,11 @@ function postdata($con,$postdata){
     $data='\'' . implode('\', \'' ,$postdata ) . '\' ';
 
     $sql = "INSERT INTO posts ($fields) VALUE ($data)";
+
+
     mysqli_query($con,$sql);
+
+
 
 }
 
@@ -131,8 +135,8 @@ function email($to,$subject,$body){
     mail($to,$subject,$body, ' From:Computer and Service Center - University of Colombo School of Computing');
 }
 
-function change_profile_image($con,$user_id,$file_temp,$file_extn) {
-    $file_path='public/dist/img/profile/' . substr(md5(time()),0,10) . '.' . $file_extn;
+function changeimage($con,$user_id,$file_temp,$file_extn) {
+    $file_path='../public/dist/img/profile/' . substr(md5(time()),0,10) . '.' . $file_extn;
     move_uploaded_file($file_temp,$file_path);
     $query="UPDATE adminusers SET profile = '" . $file_path . "' WHERE id= " . (int)$user_id;
     mysqli_query($con,$query);
@@ -146,5 +150,72 @@ function draftpost($con){
     $sql = "SELECT * FROM posts WHERE type=2";
     $res = $con->query($sql);
     return $res;
+
+}
+
+function activity_data($con,$id){
+
+    $data =array();
+    $id= (int)$id;
+
+    $get_num = func_num_args();
+    $get_args =func_get_args();
+
+    if($get_num>1){
+        unset($get_args[0],$get_args[1]);
+        $fields = '`'. implode('`,`',$get_args). '`';
+
+
+
+        $res=mysqli_query($con,"SELECT $fields FROM `activity` WHERE `adminid`= $id");
+        $data = mysqli_fetch_assoc($res);
+
+
+        return $data;
+
+    }
+
+}
+
+function backupdata($con){
+
+    header('Content-Type: text/csv; charset=utf-8');
+    header('Content-Disposition: attachment; filename=members.csv');
+
+    $output = "id,first_name,last_name,email,password,role\n";
+    $sql = 'SELECT * FROM members ORDER BY id ASC';
+    $query = $con->prepare($sql);
+    $query->execute();
+    $list = $query->fetchAll();
+    foreach ($list as $rs) {
+        $output .= $rs['id'].",".$rs['first_name'].",".$rs['last_name'].",".$rs['email'].",".$rs['password'].",".$rs['role']."\n";
+    }
+// export the output
+    echo $output;
+    exit;
+
+
+}
+
+function showtables($con){
+
+    $sql = "SHOW TABLES";
+    $res = $con ->query($sql);
+    return $res;
+
+}
+
+function putdraft($con,$postdata){
+
+    $fields='`' .implode('`,`' ,array_keys($postdata)) . '`';
+    $data='\'' . implode('\', \'' ,$postdata ) . '\' ';
+
+    $sql = "INSERT INTO posts ($fields) VALUE ($data)";
+
+
+    mysqli_query($con,$sql);
+
+
+
 
 }
