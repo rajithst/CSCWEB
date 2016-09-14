@@ -22,7 +22,7 @@ if (isset($_FILES['profile']) === true and empty($_FILES['profile']['name'])=== 
 
 
     if (in_array($file_extn,$allowed) === true) {
-        $res = changeimage($con,$id,$file_temp,$file_extn);
+        $res = changeimage($id,$file_temp,$file_extn);
 
     }
 

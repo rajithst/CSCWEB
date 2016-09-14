@@ -11,7 +11,7 @@ if(logged_in() === false){
 
 }
 $var =basename($current_file,".php");
-require  '../components/page_head.php';
+require '../components/page_head.php';
 
 ?>
 
@@ -39,7 +39,7 @@ require  '../components/page_head.php';
         <section class="sidebar">
 
 
-            <?php include '../components/sidebar_head.php'?>
+            <?php include '../components/sidebar_head.php' ?>
 
             <?php include '../components/sidebar.php'?>
 

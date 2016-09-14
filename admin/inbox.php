@@ -8,7 +8,7 @@ if(logged_in() === false){
     exit();
 
 }
-require  '../components/page_head.php'; ?>
+require '../components/page_head.php'; ?>
 
 </head>
 
@@ -34,7 +34,7 @@ require  '../components/page_head.php'; ?>
 
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
-            <?php include '../components/sidebar_head.php'?>
+            <?php include '../components/sidebar_head.php' ?>
             <?php include '../components/sidebar.php'?>
 
             <div class="content-wrapper">

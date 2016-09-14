@@ -11,7 +11,7 @@ if(logged_in() === false){
 
 }
 
-require  '../components/page_head.php'; ?>
+require '../components/page_head.php'; ?>
 
 <script>
     $(function () {
@@ -42,7 +42,7 @@ require  '../components/page_head.php'; ?>
 
         <section class="sidebar">
 
-            <?php include '../components/sidebar_head.php'?>
+            <?php include '../components/sidebar_head.php' ?>
 
             <?php include '../components/sidebar.php'?>
 
@@ -136,9 +136,9 @@ require  '../components/page_head.php'; ?>
             </div>
 
             <?php include "../components/footer.php"; ?>
-            <?php include "components/activity_bar.php"; ?>
+            <?php include "../components/activity_bar.php"; ?>
 
-            <div class="../control-sidebar-bg"></div>
+            <div class="control-sidebar-bg"></div>
 </div>
 
 <?php require  '../components/page_tail.php'; ?>

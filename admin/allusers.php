@@ -11,7 +11,7 @@ if(logged_in() === false){
 
 }
 
-require  '../components/page_head.php';
+require '../components/page_head.php';
 
 
 ?>
@@ -42,7 +42,7 @@ require  '../components/page_head.php';
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
 
-            <?php include '../components/sidebar_head.php'?>
+            <?php include '../components/sidebar_head.php' ?>
             <!-- /.search form -->
             <?php include '../components/sidebar.php'?>
             <!-- Sidebar Menu --
@@ -89,7 +89,7 @@ require  '../components/page_head.php';
                                         </thead>
                                         <tbody>
                                         <?php
-                                        $result=allusers($con,$id);
+                                        $result=allusers($id);
                                         $i = 1;
                                         while($row = $result->fetch_assoc()) {
 

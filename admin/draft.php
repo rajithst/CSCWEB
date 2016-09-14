@@ -11,7 +11,7 @@
 
     }
 
-require  '../components/page_head.php';
+require '../components/page_head.php';
 $var =basename($current_file,".php");?>
 
 </head>
@@ -38,7 +38,7 @@ $var =basename($current_file,".php");?>
 
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
-            <?php include '../components/sidebar_head.php'?>
+            <?php include '../components/sidebar_head.php' ?>
             <?php include '../components/sidebar.php'?>
             <!-- Sidebar Menu --
 

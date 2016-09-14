@@ -1,6 +1,6 @@
 <?php
 require '../core/init.php';
-error_reporting(0);
+//error_reporting(0);
 if(logged_in() === false){
 
     session_destroy();
@@ -30,14 +30,14 @@ require '../components/page_head.php'; ?>
         </a>
 
 
-    <?php include "../components/navbar.php";?>
+    <?php include '../components/navbar.php'; ?>
     </header>
 
     <aside class="main-sidebar">
 
         <section class="sidebar">
-            <?php include '../components/sidebar_head.php'?>
-       <?php include '../components/sidebar.php'?>
+            <?php include '../components/sidebar_head.php';?>
+       <?php include '../components/sidebar.php'; ?>
 
     <div class="content-wrapper">
 
@@ -61,8 +61,8 @@ require '../components/page_head.php'; ?>
     </div>
 
 
-            <?php include "../components/footer.php"; ?>
-            <?php include "../components/activity_bar.php"; ?>
+            <?php include '../components/footer.php'; ?>
+            <?php include '../components/activity_bar.php'; ?>
 
     <div class="control-sidebar-bg"></div>
 </div>

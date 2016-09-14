@@ -11,7 +11,7 @@ if(logged_in() === false){
 
 }
 
-require  '../components/page_head.php'; ?>
+require '../components/page_head.php'; ?>
 
 <script>
 
@@ -81,7 +81,7 @@ require  '../components/page_head.php'; ?>
 
         <section class="sidebar">
 
-            <?php include '../components/sidebar_head.php'?>
+            <?php include '../components/sidebar_head.php' ?>
 
             <?php include '../components/sidebar.php'?>
 
@@ -202,7 +202,7 @@ if(isset($_POST['adduser']) === true){
         'role' => $_POST['role']
     );
 
-    adduser($con,$postdata);
+    adduser($postdata);
     ?>
 
     <script>

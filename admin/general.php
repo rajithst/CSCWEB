@@ -36,7 +36,7 @@ require '../components/page_head.php'; ?>
     <aside class="main-sidebar">
 
         <section class="sidebar">
-            <?php include '../components/sidebar_head.php'?>
+            <?php include '../components/sidebar_head.php' ?>
             <?php include '../components/sidebar.php'?>
 
             <div class="content-wrapper">
@@ -67,4 +67,5 @@ require '../components/page_head.php'; ?>
             <div class="control-sidebar-bg"></div>
 </div>
 
+<?php require '../components/page_tail.php'; ?>
 <?php require '../components/page_tail.php'; ?>

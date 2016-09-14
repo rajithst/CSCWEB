@@ -9,7 +9,7 @@ if(logged_in() === false){
 
 }
 
-require  '../components/page_head.php';
+require '../components/page_head.php';
 
 $var =basename($current_file,".php");
 ?>
@@ -51,7 +51,7 @@ $var =basename($current_file,".php");
 
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
-            <?php include '../components/sidebar_head.php'?>
+            <?php include '../components/sidebar_head.php' ?>
             <?php include '../components/sidebar.php'?>
             <!-- Sidebar Menu --
 
@@ -107,7 +107,7 @@ $var =basename($current_file,".php");
 
                         $sub = $_GET['post'];
                         $sql = "SELECT * FROM posts WHERE subject= '$sub'";
-                        $res = mysqli_query($con,$sql);
+                        $res = mysqli_query($sql);
 
                         while($rowsi = mysqli_fetch_assoc($res)) {
 
@@ -221,7 +221,7 @@ if(isset($_POST['postdata']) === true){
         'date'=> $date
     );
 
-    postdata($con,$postdata); 
+    postdata($postdata); 
      exit();
 
 

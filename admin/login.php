@@ -28,11 +28,10 @@ require '../components/page_head.php';
                  $email    = $_POST['email'];
                  $password = $_POST['password'];
 
-                $login = login($con,$email,$password);
+                echo "$email $password";
+                $login = login($email,$password);
                 if($login === false){  ?>
-
-                    <script>swal("Access Denied!", "Your Email and Password combination is incorrect!!")</script>      
-
+                   <script>swal("Access Denied!", "Your Email and Password combination is incorrect!!")</script>
             <?php
 
                }else{
@@ -81,4 +80,4 @@ require '../components/page_head.php';
         </form>   <!-- end of form -->
     </div>
 </div>
-<? include('../components/page_tail.php'); ?>
+<?php include '../components/page_tail.php'; ?>

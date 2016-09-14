@@ -10,7 +10,7 @@ if(logged_in() === false){
 }
 
 
-require  '../components/page_head.php';
+require '../components/page_head.php';
 
 $var =basename($current_file,".php");
 ?>
@@ -48,7 +48,7 @@ $var =basename($current_file,".php");
 
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
-            <?php include '../components/sidebar_head.php'?>
+            <?php include '../components/sidebar_head.php' ?>
             <?php include '../components/sidebar.php'?>
             <!-- Sidebar Menu --
 
@@ -157,7 +157,7 @@ $var =basename($current_file,".php");
     <div class="control-sidebar-bg"></div>
 </div>
 
-<?php require  '../components/page_tail.php'; 
+<?php require  '../components/page_tail.php';
 
             $id = $user_data['id'];
             if(isset($_POST['postdata']) === true){ 
@@ -184,7 +184,7 @@ $var =basename($current_file,".php");
                     'date'=> $date
                 );
 
-                postdata($con,$postdata);  ?>
+                postdata($postdata);  ?>
 
                 <script>swal("Posted!", "Your have benn published a post successfully")</script> 
                 <?php
@@ -217,7 +217,7 @@ $var =basename($current_file,".php");
                         'date'=> $date
                     );
 
-                    putdraft($con,$postdata); ?>
+                    putdraft($postdata); ?>
 
                 <script>swal("Drafted!", "Your have benn Draft a post")</script> 
                 <?php
