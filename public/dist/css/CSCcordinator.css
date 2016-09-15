@@ -22,17 +22,13 @@
 
 }
 .navbar-custom a {
-    color:black;
+    color:white;
     font-weight: bold;
     font-family: courier;
     font-size: 17px;
     border-color: black;
 }
-.navbar-custom a:hover {
-    background-color:rgb(149, 46, 62);
-    color:black;
 
-}
 
 .dropdown-color{
     background-color:burlywood;

@@ -17,9 +17,9 @@
 
 
         </div>
-        <div class="collapse navbar-collapse" id="navbar_collapse">
+        <div class="collapse navbar-collapse" id="navbar_collapse" >
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-home"></span> HOME</a>
+                <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-home" style="hover:pink;"></span> HOME</a>
                 <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-globe"></span> NOTIFICATIONS</a></li>
                 <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-envelope"></span> MESSAGES</a></li>
                 <li><a class="navbar-brand navbar-right" href="#" style="height:40px;">(LOGOUT)</a></li>
@@ -45,7 +45,7 @@
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color:burlywood;">
     <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >REPORTS<span class="caret">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black;">REPORTS<span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                 <li><a tabindex="-1" href="#">ATTENDENCE</a></li>
@@ -60,7 +60,7 @@
         </li>
 
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HANDLE LECTURER <span class="caret">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black;">HANDLE LECTURER <span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                 <li><a tabindex="-1" href="handlelecturer.html">HANDLE LECTURER</a></li>
@@ -70,7 +70,7 @@
 
             </ul>
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HANDLE COURSES<span class="caret">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black;">HANDLE COURSES<span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                 <li><a tabindex="-1" href="handlecourses.html">HANDLE COURSES</a></li>
@@ -79,7 +79,7 @@
             </ul>
 
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HANDLE DATA<span class="caret">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black;">HANDLE DATA<span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                 <li><a tabindex="-1" href="#">REPORT DATA</a></li>
@@ -93,7 +93,7 @@
         </li>
 
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HANDLE LECTURES <span class="caret">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black;">HANDLE LECTURES <span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                 <li><a tabindex="-1" href="handlelectures.html">HANDLE LECTURES</a></li>
@@ -103,7 +103,7 @@
         </li>
 
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SEND<span class="caret">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black;">SEND<span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                 <li><a tabindex="-1" href="#">EMAILS</a></li>
