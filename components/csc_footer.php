@@ -6,9 +6,6 @@
    bottom:0px;
    height:40px;
    width:100%;
-
-
-
 ">
     <div class = "container-fluid">
         <div class="row">

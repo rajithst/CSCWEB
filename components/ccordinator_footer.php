@@ -1,4 +1,10 @@
-<footer lass="container-fluid">
+<footer lass="container-fluid" style="
+    position:fixed;
+   left:0px;
+   bottom:0px;
+   height:40px;
+   width:100%;
+">
     <div class = "container-fluid">
         <div class="row">
             <div col-md-5 class="footer-content">

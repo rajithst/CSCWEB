@@ -1,6 +1,6 @@
 <?php include '../components/ccordinator_head.php'; ?>
 
-
+</head>
 <body style="background-color:blanchedalmond">
 
 <!-- page header ><!-->
@@ -13,7 +13,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#"><img src="images/csc_logo_new.png" style="width:170px; height:50px;" ></a>
+            <a href="#"><img src="../public/dist/img/system/csclogo.png" style="width:170px; height:50px;" ></a>
 
 
         </div>
@@ -30,7 +30,7 @@
 
     </div>
 </nav>
-<nav class="navbar navbar-custom" role = "navigation">
+<nav class="navbar navbar-custom" role = "navigation>
     <div class="container-fluid">
 <div class="navbar-header">
     <button style="background-color:white;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -180,4 +180,6 @@
 </div>
 </div>
 
-<?php include '../components/ccordinator_footer.php'; ?>
+
+
+<?php include "../components/ccordinator_footer.php"; ?>
