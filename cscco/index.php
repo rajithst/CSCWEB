@@ -1,13 +1,13 @@
 <?php include '../components/cscordinator_head.php'; ?>
 
 </head>
-<body style="background-color:blanchedalmond">
+    <body style="background-color:blanchedalmond">
 
-<!-- page header ><!-->
-<nav class="navbar navbar-custom" role = "navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button style="background-color:burlywood;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+           <!-- page header ><!-->
+        <nav class="navbar navbar-custom" role = "navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+            <button style="background-color:burlywood;" type="button" class="navbar-toggle collapsed" >
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -19,7 +19,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar_collapse" >
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-home" style="hover:pink;"></span> HOME</a>
+                <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-home"></span> HOME</a>
                 <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-globe"></span> NOTIFICATIONS</a></li>
                 <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-envelope"></span> MESSAGES</a></li>
                 <li><a class="navbar-brand navbar-right" href="#" style="height:40px;">(LOGOUT)</a></li>
@@ -48,13 +48,13 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black;">REPORTS<span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="#">ATTENDENCE</a></li>
+                <li><a tabindex="-1" href="#">Attendence</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a tabindex="-1" href="#">INCOME</a></li>
+                <li><a tabindex="-1" href="#">Income</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a tabindex="-1" href="#">MARKS</a></li>
+                <li><a tabindex="-1" href="#">Marks</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a tabindex="-1" href="#">EXPENCES</a></li>
+                <li><a tabindex="-1" href="#">Expences</a></li>
                 <li role="separator" class="divider"></li>
             </ul>
         </li>
@@ -63,7 +63,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black;">HANDLE LECTURER <span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="handlelecturer.html">HANDLE LECTURER</a></li>
+                <li><a tabindex="-1" href="handlelecturer.html">Handle Lecturer</a></li>
                 </li>
 
 
@@ -73,7 +73,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black;">HANDLE COURSES<span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="handlecourses.html">HANDLE COURSES</a></li>
+                <li><a tabindex="-1" href="handlecourses.html">Handle Courses</a></li>
                 </li>
 
             </ul>
@@ -82,11 +82,11 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black;">HANDLE DATA<span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="#">REPORT DATA</a></li>
+                <li><a tabindex="-1" href="#">Report Data</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a tabindex="-1" href="#">LECTURE ALLOCATION</a></li>
+                <li><a tabindex="-1" href="#">Lecture Allocation</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a tabindex="-1" href="#">OTHERS</a></li>
+                <li><a tabindex="-1" href="#">Others</a></li>
                 <li role="separator" class="divider"></li>
 
             </ul>
@@ -96,7 +96,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black;">HANDLE LECTURES <span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="handlelectures.html">HANDLE LECTURES</a></li>
+                <li><a tabindex="-1" href="handlelectures.html">Handle Lectures</a></li>
                 </li>
             </ul>
 
@@ -106,11 +106,11 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black;">SEND<span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="#">EMAILS</a></li>
+                <li><a tabindex="-1" href="#">Email</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a tabindex="-1" href="notifications.html">NOTIFICATIONS</a></li>
+                <li><a tabindex="-1" href="notifications.html">Notification</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a tabindex="-1" href="messages.html">MESSAGES</a></li>
+                <li><a tabindex="-1" href="messages.html">Message</a></li>
                 <li role="separator" class="divider"></li>
 
             </ul>
