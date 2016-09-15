@@ -32,7 +32,6 @@ function loginall($email,$password){
 
 }
 
-
 function staff_data($id){
     $con = mysqli_connect('localhost','root','','CSC');
     $data =array();

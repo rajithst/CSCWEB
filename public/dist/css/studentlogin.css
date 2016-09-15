@@ -1,0 +1,90 @@
+body
+{
+	min-height: 100%
+	
+}
+
+/* link styling */
+
+a:hover{
+	color:#990000;
+	text-decoration:none;
+}
+
+ /* navbar styling*/
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #000066;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.logo{
+	margin-top:3px;
+}
+
+/* news feed styling */
+#newsfeed{
+	background-color:white;
+	margin-bottom:20px;
+	margin-top:0px;
+}
+
+.panel-default > .panel-heading {
+  font-size:15px;
+}
+
+#newsbody{
+  overflow-y:scroll;
+}
+
+#attach{
+	text-align: right;
+}
+
+/* login form styling*/
+#student-login{
+	margin-top:20px;
+	margin-right:10px;
+}
+
+.btn{
+	margin-left:16px;
+}
+   
+/* footer styling*/
+footer {
+    background-color: #000066;
+    padding: 15px;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer-nav li{
+    display:inline;
+}
+
+.footer-nav{
+    text-align: left;
+    list-style: none;
+    color:#808080;
+}
+    
+.footer-nav li:not(:first-child):before
+ {
+    content: ' ';
+    padding: 0px 3px;
+}
+  
+    
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) { 
+.sidenav {
+    height: auto;
+	padding: 15px;
+}
+.row.content {height:auto;} 
+}

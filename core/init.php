@@ -5,6 +5,7 @@ session_start();
 require 'db/database.php';
 require 'function/admin.php';
 require 'function/frontend.php';
+require 'function/student.php';
 
 
 $current_file= explode('/',$_SERVER['SCRIPT_NAME']);

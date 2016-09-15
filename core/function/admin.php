@@ -107,9 +107,6 @@ function allusers($id) {
 
 }
 
-function countmembers() {
-
-}
 
 function adduser( $postdata) {
     $con = mysqli_connect('localhost', 'root', '',  'csc');
