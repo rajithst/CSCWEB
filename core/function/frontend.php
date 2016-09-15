@@ -2,7 +2,7 @@
 
 
 function staff_id_from_email($email){
-    $con = mysqli_connect('localhost','root','rajith','csc');
+    $con = mysqli_connect('localhost','root','','csc');
 
     $sql = "SELECT id FROM staff  WHERE email = '$email'";
     $query = mysqli_query($con,$sql);
@@ -13,7 +13,7 @@ function staff_id_from_email($email){
 
 
 function loginall($email,$password){
-    $con = mysqli_connect('localhost','root','rajith','csc');
+    $con = mysqli_connect('localhost','root','','csc');
     $user_id= staff_id_from_email($email);
     $password = md5($password);
 

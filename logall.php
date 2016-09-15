@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="public/dist/css/basic.css" />
     <link rel="stylesheet" href="public/dist/css/mainlogin.css" />
     <link rel="stylesheet" href="public/dist/css/mainloginbody.css" />
+    <link rel="stylesheet" href="public/dist/css/modalform.css" />
     <link rel="stylesheet" href="public/plugins/sweealert/sweetalert.css" />
     <!-- <link rel="stylesheet" href="public/plugins/sweealert/google.css" /> -->
     <link rel="stylesheet" href="public/plugins/wysiwig/bootstrap3-wysihtml5.min.css">
@@ -21,6 +22,18 @@
     <script src="public/plugins/sweealert/sweetalert.min.js"></script>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <script>
+
+
+    </script>
+
+
+
+
+
+</head>
+
 
 <body>
     <section class="content" style="margin: 10% 10%;">
@@ -47,7 +60,7 @@
 
                         <div class="col-sm-4">
                             <div class="description-block">
-                                <button type="button" class="btn btn-block btn-info btn-sm">Log in</button>
+                                <button type="button" class="btn btn-block btn-info btn-sm" data-target="#login-modal">Log in</button>
                             </div>
                             <!-- /.description-block -->
                         </div>
@@ -168,6 +181,7 @@
     </div>
 
     </section>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="public/plugins/jQuery/jquery.js"></script>
