@@ -15,7 +15,6 @@ require '../components/page_head.php'; ?>
 
 
 
-
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
