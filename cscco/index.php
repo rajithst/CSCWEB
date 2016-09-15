@@ -1,4 +1,4 @@
-<?php include '../components/ccordinator_head.php'; ?>
+<?php include '../components/cscordinator_head.php'; ?>
 
 </head>
 <body style="background-color:blanchedalmond">
@@ -182,4 +182,4 @@
 
 
 
-<?php include "../components/ccordinator_footer.php"; ?>
+<?php include "../components/cscordinator_footer.php"; ?>

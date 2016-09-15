@@ -1,7 +1,6 @@
 <?php
 
 require 'core/function/frontend.php';
-error_reporting(0);
 ?>
 
 
@@ -26,10 +25,6 @@ error_reporting(0);
 
 
 		<body style="background-color: #515151">
-
-
-
-
 
 		<div class="top-content">
 
@@ -65,12 +60,9 @@ error_reporting(0);
 
 		      if(isset($_POST['main'])=== true){
 
-			$email    = $_POST['email'];
-			 $password = $_POST['password'];
-
-
-
-		       $login = loginall($con,$email,$password);
+				 $email    = $_POST['email'];
+			 	 $password = $_POST['password'];
+				  $login = loginall($email,$password);
 
 		       if($login === false){  ?>
 
@@ -80,9 +72,9 @@ error_reporting(0);
 
 		       }else{
 
-			$_SESSION['id']= $loginall;
-			header('Location:logall.php');
-			exit();
+					$_SESSION['id']= $login;
+					header('Location:logall.php');
+					exit();
 		       }
 		      }
 

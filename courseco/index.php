@@ -1,4 +1,4 @@
-<?php include '../components/csc_head.php'; ?>
+<?php include '../components/course_head.php'; ?>
 
 </head>
 <body>
@@ -201,4 +201,4 @@ Name :
     </div>
   </div>
 
-<?php include '../components/csc_footer.php'; ?>
+<?php include '../components/course_footer.php'; ?>
