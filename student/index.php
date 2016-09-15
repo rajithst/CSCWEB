@@ -1,4 +1,6 @@
-<?php include "../components/stud_head.php"; ?>
+<?php require '../core/init.php';
+
+include "../components/stud_head.php"; ?>
 
 
     </head>
@@ -21,57 +23,41 @@
             <div class="col-md-9 col-sm-12 col-xs-12 text-left">
                 <div id="newsfeed">
                     <div class="col-sm-12 col-xm-12"> <h3>News Feed</h3></div>
-                    <div class="col-sm-12 col-xm-12">
-                        <div id="nws">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">News 1</div>
-                                <div class="panel-body" id="newsbody">
 
-                                    <div id="attach"><a href="">Attachment</a></div>
+
+                    <?php
+
+                    $posts = getposts();
+                    while ($row = mysqli_fetch_assoc($posts)) {
+                        $id = $row['adminid'];
+                        $admindata = getadmin($id);
+                        while ($data = mysqli_fetch_assoc($admindata)) {
+                            ?>
+
+                            <div class="col-sm-12 col-xm-12" >
+                                <div id="nws">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" ><strong><?php echo $row['subject']; ?></strong> <br>
+                                            <small>Posted by <?php echo $data['name']; ?></small>
+                                            <div style="width: 10%; margin-left: 85%;margin-top: -3%;height: 70px;"><img src="<?php echo $data['profile']; ?>" alt="" style="width: 100%; height: 100%;"></div>
+
+                                        </div>
+                                        <div class="panel-body" id="newsbody">
+                                            <?php echo $row['text']; ?>
+                                            <div id="attach"><a href=""><?php echo $row['date']; ?></a></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xm-12">
-                        <div id="nws">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">News 2</div>
-                                <div class="panel-body" id="newsbody">
-                                    <div id="attach"><a href="">Attachment</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xm-12">
-                        <div id="nws">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">News 3</div>
-                                <div class="panel-body" id="newsbody">
-                                    <div id="attach"><a href="">Attachment</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xm-12">
-                        <div id="nws">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">News 4</div>
-                                <div class="panel-body" id="newsbody">
-                                    <div id="attach"><a href="">Attachment</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xm-12">
-                        <div id="nws">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">News 5</div>
-                                <div class="panel-body" id="newsbody">
-                                    <div id="attach"><a href="">Attachment</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            <?php
+
+                        }
+
+                    } ?>
+
+
+
+
                     <div align="center"> <a href="">Older topics..</a></div>
                 </div>
             </div>

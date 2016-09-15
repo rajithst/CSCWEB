@@ -13,9 +13,8 @@ function getposts(){
 
 function getadmin($id){
     $con = mysqli_connect('localhost','root','','csc');
-    $sql = "SELECT name From adminusers WHERE id=$id";
+    $sql = "SELECT name,profile From adminusers WHERE id=$id";
     $res = mysqli_query($con,$sql);
-    $fetcharray = mysqli_fetch_array($res);
-    return $fetcharray[0];
+    return $res;
 
 }

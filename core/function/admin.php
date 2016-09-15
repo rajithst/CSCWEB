@@ -86,7 +86,6 @@ function postdata($postdata) {
 	$data   = '\''.implode('\', \'', $postdata).'\' ';
 
 	$sql = "INSERT INTO posts ($fields) VALUE ($data)";
-
 	mysqli_query($con, $sql);
 
 }
