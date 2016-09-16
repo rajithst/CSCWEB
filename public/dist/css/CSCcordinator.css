@@ -19,6 +19,7 @@
     background-color: dimgray;
     color: black;
     margin-bottom: 10px;
+    
 
 }
 .navbar-custom a {
@@ -28,7 +29,10 @@
     font-size: 17px;
     border-color: black;
 }
-
+.navbar-custom a:hover {
+    background-color:dimgray;
+ 
+}
 
 .dropdown-color{
     background-color:burlywood;
