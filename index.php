@@ -73,6 +73,7 @@ require 'core/function/frontend.php';
 		       }else{
 
 					$_SESSION['id']= $login;
+				   session_write_close();
 					header('Location:logall.php');
 					exit();
 		       }

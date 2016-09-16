@@ -66,12 +66,6 @@ if (isset($_GET['call'])) {
 
 }
 
-if (isset($_POST['submit'])) {
-
-	$subject = $_POST[''];
-
-}
-
 function adminusers( $id) {
     $con = mysqli_connect('localhost', 'root', '',  'csc');
 	$sql = "SELECT id,name,role,email FROM adminusers WHERE id =$id";

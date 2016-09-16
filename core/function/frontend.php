@@ -33,7 +33,7 @@ function loginall($email,$password){
 }
 
 function staff_data($id){
-    $con = mysqli_connect('localhost','root','','CSC');
+    $con = mysqli_connect('localhost','root','','csc');
     $data =array();
     $id= (int)$id;
 

@@ -1,6 +1,7 @@
-<?php require '../core/init.php'; ?>
+<?php
 
-<?php include "../components/stud_head.php"; ?>
+require '../core/init.php';
+include "../components/stud_head.php"; ?>
 
     </head>
 
@@ -19,7 +20,7 @@
                 <a href="Home.html" class="logo pull-left"><img src="../public/dist/img/system/csclogo.png" style="width:auto; height:42px;"></a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="Login.html"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+                <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
             </ul>
         </div>
         </div>
@@ -132,11 +133,11 @@
             <div class="col-md-3 col-sm-12 col-xs-12" style="margin-top: 55px;">
                 <div class="panel panel-default" id="profile">
                     <div class="panel-heading" >
-                        <h3>User Profile</h2>
+                        <h3><?php /*echo $stu_data['fullname']; */?></h2>
                     </div>
-                    <div class="panel-body" id="user-profile">
+                    <div class="panel-body" id="user-profile" style="margin: 0 30%;">
                         <div class="user-profile-pic">
-                            <img src="img/default_profile.jpg" class="img-responsive" alt="profile picture is here" style="width:120px; height:130px;">
+                            <img src="../public/dist/img/system/student.jpg" class="img-responsive" alt="profile picture is here" style="width:120px; height:130px;">
                         </div>
                         <div class="user-details" >
                             <div><h4>User Name</h4></div>
@@ -151,28 +152,6 @@
         </div>
     </div>
 
+<?php include "../components/stud_footer.php";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php include "../components/stud_footer.php"; ?>
+?>

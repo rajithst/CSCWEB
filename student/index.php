@@ -1,4 +1,5 @@
 <?php require '../core/init.php';
+error_reporting(1);
 
 include "../components/stud_head.php"; ?>
 
@@ -69,20 +70,20 @@ include "../components/stud_head.php"; ?>
                         <h3>Student Login</h2>
                     </div>
                     <div class="panel-body">
-                        <form>
+                        <form action="" method="post">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <label for="email">User Name:</label></br>
-                                <input type="user-name" class="form-control" id="user-name">
+                                <input type="text" class="form-control" id="user-name" name="username">
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <label for="pwd">Password:</label></br>
-                                <input type="password" class="form-control" id="pwd" >
+                                <input type="password" class="form-control" id="pwd" name="password">
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <label><input type="checkbox"> Remember me</label>
                             </div>
                             </br>
-                            <button type="submit" class="btn btn-info">Login</button>
+                            <button type="submit" class="btn btn-info" name="submit">Login</button>
                         </form>
                     </div>
                 </div>
@@ -91,7 +92,32 @@ include "../components/stud_head.php"; ?>
         </div>
     </div>
 
+<?php
 
+if(isset($_POST['submit'])=== true){
+
+     $username    = $_POST['username'];
+     $password = $_POST['password'];
+
+    $login = loginstudent($username,$password);
+
+    if($login === false){  ?>
+
+        <script>swal("Access Denied!", "Your Email and Password combination is incorrect!!")</script>
+
+        <?php
+
+    }else{
+
+        $_SESSION['id']= $login;
+       ?>
+        <script> window.location = 'home.php'; </script>
+        <?php
+        exit();
+    }
+}
+
+?>
 
 
 
