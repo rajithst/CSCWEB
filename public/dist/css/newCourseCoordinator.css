@@ -1,57 +1,57 @@
 /* page header styling*/
 
 .pageheader-style{
-  margin-bottom:0px;
-  margin-top:0px;
-  height: 100px;
+    margin-bottom:0px;
+    margin-top:0px;
+    height: 100px;
 }
 .csc-logo{
-  height: 100px;
+    height: 100px;
 }
 .ucsc-logo{
-  float: right;
-  height: 100px;
+    float: right;
+    height: 100px;
 }
 
 
 
- /* navbar styling*/
+/* navbar styling*/
 .navbar {
-  margin-bottom: 0;
-  border-radius: 0;
-  background-color: rgb(120,140,120);
-  color: black;
-  margin-bottom: 10px;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #008F95;
+    color: black;
+    margin-bottom: 10px;
 
 }
 .navbar-collapse{
-  margin-top:15px;
+    margin-top:15px;
 }
 .navbar-header{
-  margin-top: 14px;
-  margin-bottom: 14px;
-  margin-left: 10px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-left: 10px;
 }
-    .navbar-custom a {
-    color:black;
+.navbar-custom a {
+    color:white;
     font-weight: bold;
-    font-family: courier;
+    font-family: serif;
     font-size: 17px;
 }
 .navbar-custom a:hover {
-  background-color:rgb(149, 46, 62);
-  color:black;
+    background-color:rgb(149, 46, 62);
+    color:black;
 
 }
 
 .dropdown-submenu {
-      position: relative;
-  }
-  
+    position: relative;
+}
 
 
-  .dropdown-submenu>.dropdown-menu {
-      top: 0;
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
     left: 100%;
     margin-top: -6px;
     margin-left: -1px;
@@ -80,10 +80,7 @@
     margin-right: -10px;
 }
 
-.dropdown-submenu:hover>a:after {
-    border-left-color: #808080;
 
-}
 
 .dropdown-submenu.pull-left {
     float: none;
@@ -97,11 +94,11 @@
     border-radius: 6px 0 6px 6px;
 }
 .dropdown-color{
-  background-color: rgb(10,180,120);
+    background-color: #008F95;
 }
 
 #navbar-dropdown ul ul a{
-  color:rgb(148, 205, 188);
+    color:rgb(148, 205, 188);
 }
 .dropdown-submenu>.dropdown-menu a,.dropdown-menu li a{
     color:white;
@@ -110,119 +107,131 @@
     font-size: 17px;
 }
 .dropdown-menu > li > a:hover {
-    background-color: rgb(230, 230, 0);
+    background-color: #66B9BF;
     color:black;
 }
 
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 400px}
-    
-   /* sidenav bar styling*/
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 400px}
+
+/* sidenav bar styling*/
 .sidenav {
-  padding-top: 0px;
-  background-color:white;
-  height: 600px;
+    padding-top: 0px;
+    background-color:white;
+    height: 600px;
 }
 .well{
-  height:200px;
-  background-color: rgb(10,180,120);
+    height:200px;
+    background-color: #66B9BF;
 
 }
 #right-bar-well-2{
-  height: 150px;
+    height: 150px;
 
 }
+
 
 
 /*styling panels inside the side nav bars*/
+#NEWS{
+    margin-top: 0px;
+    color: #008F95;
+    font-family: serif;
+    font-size: 20px;
+}
+#news-feed-div{
+    margin-top:0px;
+    margin-bottom: 20px;
+}
 #newsfeed-panelheading{
-  color:black;
-  background-color:rgb(230,230,0);
-  border-color:white;
-  font-size:15px;
+    color:black;
+    background-color:#66B9BF;
+    border-color:white;
+    font-size:12px;
 }
 #newsfeed-panelbody{
-  overflow-y:scroll;
-  height:540px;
+    overflow-y:scroll;
+    height:95px;
 
 }
 #profpic-panel{
-  height: 200px;
+    height: 200px;
 }
 #profpic-well{
-  margin-top: 0px;
-  height: 60px;
-  padding-top: 0px;
-  width: 180px;
-  margin-left:-10px;
-  font-size: 12px;
+    margin-top: 0px;
+    height: 60px;
+    padding-top: 0px;
+    width: 180px;
+    margin-left:-10px;
+    font-size: 12px;
 }
 #message-panel{
-  height: 100px;
+    height: 100px;
 }
 .panel-body>ul{
-  list-style-type: none;
-  padding-left: 0px;
+    list-style-type: none;
+    padding-left: 0px;
 }
 
 
 #sidebar-leftbarpanel-dimensins{
-  margin-top: 10px;
-  margin-left: 0px;
-  height: auto;
-  width: 15px;
+    margin-top: 10px;
+    margin-left: 0px;
+    height: auto;
+    width: 15px;
 }
 #sidebar-panel-height{
-  height:140px;
+    height:140px;
 }
 .thumbnail{
-  margin-left: -25px;
-  margin-top: 0px;
-  height:80px;
-  width: 70px;
+    margin-left: -25px;
+    margin-top: 0px;
+    height:80px;
+    width: 70px;
 }
 
 
 #logout{
-  font-size: 17px;
-  margin-left: -20px;
+    font-size: 14px;
+    margin-left: -20px;
 }
 
-    
-    /* footer styling*/
-    footer {
-      background-color: rgb(10,180,120);
-      
-      padding: 15px;
-      font-weight: bold;
-      font-family: serif;
-      font-size: 14px;
-      margin-top: 10px;
-    }
-    .footer-nav li{
+
+/* footer styling*/
+footer {
+    background-color: #008F95;
+
+    padding: 15px;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 14px;
+    margin-top: 20px;
+
+}
+.footer-nav li{
     display:inline;
-    
-  }
-  .footer-nav{
+
+}
+.footer-nav{
     text-align: left;
     list-style: none;
-    color:black;
-  }
-    .footer-nav li:not(:first-child):before
-  {
+    color:white;
+}
+.footer-nav li:not(:first-child):before
+{
     content: ' ';
     padding: 0px 3px;
-  }
-  
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
+}
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
         height: auto;
         padding: 15px;
-      }
-      .row.content {height:auto;} 
     }
+    .row.content {height:auto;}
+}
 
 
 
