@@ -109,7 +109,7 @@ if(isset($_POST['submit'])=== true){
 
     }else{
 
-        $_SESSION['id']= $login;
+         $_SESSION['id']= $login;
        ?>
         <script> window.location = 'home.php'; </script>
         <?php

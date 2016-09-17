@@ -1,8 +1,9 @@
 <?php
 
 require '../core/init.php';
-include "../components/stud_head.php"; ?>
+include "../components/stud_head.php";
 
+?>
     </head>
 
     <body>
@@ -17,31 +18,36 @@ include "../components/stud_head.php"; ?>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="Home.html" class="logo pull-left"><img src="../public/dist/img/system/csclogo.png" style="width:auto; height:42px;"></a>
+                <a href="home.php" class="logo pull-left"><img src="../public/dist/img/system/csclogo.png" style="width:auto; height:42px;"></a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
             </ul>
         </div>
-        </div>
+
     </nav>
 
-    <!-- start of body -->
+    <?php
+    $id = $_SESSION['id'];
+    $subject = $stu_data['coursename'];
+    $course = getcourse($id,$subject);
+
+    ?>
     <div class="container-fluid">
         <div class="row content" id="row">
 
             <!-- start of course panel -->
-            <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="col-md-3 col-sm-12 col-xs-12" style="margin-top: 55px;">
                 <div class="panel panel-default" id="course-panel">
                     <div class="panel-heading" >
-                        <h3>Courses</h2>
+                       <center><h3>COURSES</h3></center>
                     </div>
                     <div class="panel-body">
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" >Course 1</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" ><?php echo $course; ?></a>
                                     </h4>
                                 </div>
                                 <div id="collapse1" class="panel-collapse collapse">
@@ -95,7 +101,7 @@ include "../components/stud_head.php"; ?>
 
             <div class="col-md-6 col-sm-12 col-xs-12">
                 <div id="newsfeed">
-                    <div class="col-sm-12 col-xm-12"> <h3>News Feed</h3></div>
+                    <div class="col-sm-12 col-xm-12"> <center><h3>News Feed</h3></center></div>
 
                     <?php
 
@@ -133,18 +139,24 @@ include "../components/stud_head.php"; ?>
             <div class="col-md-3 col-sm-12 col-xs-12" style="margin-top: 55px;">
                 <div class="panel panel-default" id="profile">
                     <div class="panel-heading" >
-                        <h3><?php /*echo $stu_data['fullname']; */?></h2>
+                        <center><h3> <?php echo $stu_data['name_w_initials']; ?></h3></center>
                     </div>
                     <div class="panel-body" id="user-profile" style="margin: 0 30%;">
+
+                        <center>
                         <div class="user-profile-pic">
                             <img src="../public/dist/img/system/student.jpg" class="img-responsive" alt="profile picture is here" style="width:120px; height:130px;">
                         </div>
-                        <div class="user-details" >
-                            <div><h4>User Name</h4></div>
-                            <p>Country:User Country</p>
-                            <p>City/Town:User City/Town</p>
-                            <a href="" id="user-email">useremail@gmail.com</a>
+                        </center>
+
+                        <div class="user-details" style="width: 130%;" >
+                            <center>
+                            <div><?php echo $stu_data['fullname']; ?></div>
+                            <a href="" id="user-email"><?php echo $stu_data['email']; ?></a>
+                            </center>
                         </div>
+
+
                     </div>
                 </div>
             </div>
