@@ -17,7 +17,15 @@
     <!-- <link rel="stylesheet" href="../public/plugins/sweealert/google.css" /> -->
     <link rel="stylesheet" href="../public/plugins/wysiwig/bootstrap3-wysihtml5.min.css">
     <script src="../public/plugins/jQuery/jquery.js"></script>
+    <script type="text/javascript" src="../public/plugins/calandar/demos.js"></script>
+    <script type="text/javascript" src="../public/plugins/calandar/jqxcore.js"></script>
+    <script type="text/javascript" src="../public/plugins/calandar/jqxdatetimeinput.js"></script>
+    <script type="text/javascript" src="../public/plugins/calandar/jqxcalendar.js"></script>
+    <script type="text/javascript" src="../public/plugins/calandar/jqxtooltip.js"></script>
+    <script type="text/javascript" src="../public/plugins/calandar/globalize.js"></script>
+
     <script src="../public/plugins/sweealert/sweetalert.min.js"></script>
+    
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 

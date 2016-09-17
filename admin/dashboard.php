@@ -10,7 +10,9 @@ if(logged_in() === false){
 }
 require '../components/page_head.php'; ?>
 
-</head>
+
+
+    </head>
 
 
 
@@ -54,7 +56,7 @@ require '../components/page_head.php'; ?>
         <section class="content">
 
 
-
+            <div id='jqxWidget'></div>
         </section>
 
     </div>
@@ -67,3 +69,23 @@ require '../components/page_head.php'; ?>
 </div>
 
 <?php require '../components/page_tail.php'; ?>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Create calendar.
+        $("#jqxWidget").jqxCalendar({ enableTooltips: true, width: 220, height: 220});
+
+        // Create Date objects.
+        var date1 = new Date();
+        var date2 = new Date();
+        var date3 = new Date();
+        date1.setDate(5);
+        date2.setDate(15);
+        date3.setDate(16);
+        // Add special dates by invoking the addSpecialDate method.
+        $("#jqxWidget").jqxCalendar('addSpecialDate', date1, '', 'Special Date1');
+        $("#jqxWidget").jqxCalendar('addSpecialDate', date2, '', 'Special Date2');
+        $("#jqxWidget").jqxCalendar('addSpecialDate', date3, '', 'Special Date3');
+    });
+</script>

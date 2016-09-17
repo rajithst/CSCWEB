@@ -32,6 +32,7 @@ include "../components/stud_head.php";
     $subject = $stu_data['coursename'];
     $course = getcourse($id,$subject);
 
+
     ?>
     <div class="container-fluid">
         <div class="row content" id="row">
@@ -52,42 +53,16 @@ include "../components/stud_head.php";
                                 </div>
                                 <div id="collapse1" class="panel-collapse collapse">
                                     <ul class="list-group">
-                                        <li class="list-group-item"><a href="Subject.html">Subject 1</a></li>
-                                        <li class="list-group-item"><a href="Subject.html">Subject 2</a></li>
-                                        <li class="list-group-item"><a href="Subject.html">Subject 3</a></li>
-                                        <li class="list-group-item"><a href="Subject.html">Subject 4</a></li>
-                                        <li class="list-group-item"><a href="Subject.html">Subject 5</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="panel panel-default" >
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" >Course 2</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse2" class="panel-collapse collapse">
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><a href="Subject.html">Subject 1</a></li>
-                                        <li class="list-group-item"><a href="Subject.html">Subject 2</a></li>
-                                        <li class="list-group-item"><a href="Subject.html">Subject 3</a></li>
-                                        <li class="list-group-item"><a href="Subject.html">Subject 4</a></li>
-                                        <li class="list-group-item"><a href="Subject.html">Subject 5</a></li>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" >Course 3</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse3" class="panel-collapse collapse">
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><a href="Subject.html">Subject 1</a></li>
-                                        <li class="list-group-item"><a href="Subject.html">Subject 2</a></li>
-                                        <li class="list-group-item"><a href="Subject.html">Subject 3</a></li>
-                                        <li class="list-group-item"><a href="Subject.html">Subject 4</a></li>
-                                        <li class="list-group-item"><a href="Subject.html">Subject 5</a></li>
+                                <?php
+                                    $subjects = getsubjects($course);
+                                    while ($row = mysqli_fetch_assoc($subjects)){ ?>
+
+                                        <center><li class="list-group-item"><a href="subject.php"> <?php echo $row['subject']; ?></a></li></center>
+
+
+                                        <?php    }
+
+                                ?>
                                     </ul>
                                 </div>
                             </div>

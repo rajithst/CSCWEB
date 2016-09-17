@@ -27,72 +27,32 @@ include '../components/course_head.php'; ?>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Course<span class="caret">
                         </a>
-                        <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
+                        <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" style="padding: 0;">
 
                             <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Course No 1</a>
+                                <?php
+
+                                $id = 2;
+                                $res = getcourse_cord($id);
+
+                                while ($row = mysqli_fetch_assoc($res)) {
+                                ?>
+                                <a tabindex="-1" href="#"><?php echo $row ['coursename']; ?></a>
                                 <ul class="dropdown-menu dropdown-color">
-                                    <li><a tabindex="-1" href="upload.html">Subject 1</a></li>
-                                    <li role="separator" class="divider"></li>
+
+                                    <?php
+                                    $course = $row ['coursename'];
+                                    $subs = getsubs_cord($course);
+                                    ?>
+
+                                    <li style="padding: 0;"><a tabindex="-1" href="upload.html">Subject 1</a></li>
                                     <li><a href="upload.html">Subject 2</a></li>
-                                    <li role="separator" class="divider"></li>
                                     <li><a href="upload.html">Subject 3</a></li>
                                 </ul>
+                                    <?php } ?>
+
                             </li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Course No 2</a>
-                                <ul class="dropdown-menu dropdown-color">
-                                    <li><a tabindex="-1" href="#">Subject 1</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Subject 2</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Subject 3</a></li>
-                                </ul>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Course No 3</a>
-                                <ul class="dropdown-menu dropdown-color">
-                                    <li><a tabindex="-1" href="#">Subject 1</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Subject 2</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Subject 3</a></li>
-                                </ul>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Course No 4</a>
-                                <ul class="dropdown-menu dropdown-color">
-                                    <li><a tabindex="-1" href="#">Subject 1</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Subject 2</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Subject 3</a></li>
-                                </ul>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Course No 5</a>
-                                <ul class="dropdown-menu dropdown-color">
-                                    <li><a tabindex="-1" href="#">Subject 1</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Subject 2</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Subject 3</a></li>
-                                </ul>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Course No 6</a>
-                                <ul class="dropdown-menu dropdown-color">
-                                    <li><a tabindex="-1" href="#">Subject 1</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Subject 2</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Subject 3</a></li>
-                                </ul>
+
                         </ul>
                     </li>
 
