@@ -37,3 +37,17 @@ function getallfucks($subid){
 
 
 }
+
+function  insertslides($data){
+    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $fields='`' .implode('`,`' ,array_keys($data)) . '`';
+    $vals= '\'' . implode('\', \'' ,$data ) . '\' ';
+    $sql = "INSERT INTO slides ($fields) VALUES ($vals)";
+    $query = mysqli_query($con, $sql);
+
+    if ($query){
+
+        return true;
+    }
+
+}
