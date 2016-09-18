@@ -16,3 +16,24 @@ function getsubs_cord($course){
     
     
 }
+
+function uploadsilde($file_temp,$file_extn){
+
+    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $file_path = 'slides/'.substr(md5(time()), 0, 10).'.'.$file_extn;
+    move_uploaded_file($file_temp, $file_path);
+    $query = "INSERT INTO slides (path) VALUES ($file_path)";
+    mysqli_query($con, $query);
+    return $file_path;
+}
+
+function getallfucks($subid){
+    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $sql = "SELECT subject FROM subjects WHERE subjectid='$subid'";
+    $query = mysqli_query($con, $sql);
+    $fetcharray = mysqli_fetch_array($query);
+    return $fetcharray[0];
+
+
+
+}
