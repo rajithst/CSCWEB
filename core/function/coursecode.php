@@ -51,3 +51,11 @@ function  insertslides($data){
     }
 
 }
+
+function getslides($subid){
+    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $sql = "SELECT * FROM slides WHERE subjectid = '$subid'";
+    $query = mysqli_query($con, $sql);
+    return $query;
+
+}

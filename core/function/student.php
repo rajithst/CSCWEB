@@ -78,7 +78,7 @@ function getcourse($id,$subject){
 
 function getsubjects($course){
     $con = mysqli_connect('localhost', 'root', '',  'csc');
-    $sql = "SELECT subject FROM subjects WHERE courseid=(SELECT courseid FROM courses WHERE coursename='$course') ";
+    $sql = "SELECT subject,subjectid FROM subjects WHERE courseid=(SELECT courseid FROM courses WHERE coursename='$course') ";
     $query      = mysqli_query($con, $sql);
     return $query;
 

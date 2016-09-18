@@ -51,13 +51,15 @@ include "../components/stud_head.php";
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" ><?php echo $course; ?></a>
                                     </h4>
                                 </div>
-                                <div id="collapse1" class="panel-collapse collapse">
+                                <div id="collapse1" class="panel-collapse">
                                     <ul class="list-group">
                                 <?php
                                     $subjects = getsubjects($course);
-                                    while ($row = mysqli_fetch_assoc($subjects)){ ?>
+                                    while ($row = mysqli_fetch_assoc($subjects)){
+                                        $subid = $row['subjectid'];
+                                        ?>
 
-                                        <center><li class="list-group-item"><a href="subject.php"> <?php echo $row['subject']; ?></a></li></center>
+                                        <center><li class="list-group-item"><a href="subject.php?subject=<?php echo $subid; ?>"> <?php echo $row['subject']; ?></a></li></center>
 
 
                                         <?php    }
