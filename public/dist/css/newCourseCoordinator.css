@@ -38,11 +38,11 @@
     font-family: serif;
     font-size: 17px;
 }
-.navbar-custom a:hover {
+/*.navbar-custom a:hover {
     background-color:rgb(149, 46, 62);
     color:black;
 
-}
+}*/
 
 .dropdown-submenu {
     position: relative;
@@ -52,6 +52,7 @@
 
 .dropdown-submenu>.dropdown-menu {
     top: 0;
+    width:160%;
     left: 100%;
     margin-top: -6px;
     margin-left: -1px;
@@ -106,10 +107,10 @@
     font-family: serif;
     font-size: 17px;
 }
-.dropdown-menu > li > a:hover {
-    background-color: #66B9BF;
+/*.dropdown-menu > li > a:hover {
+    background-color: #;
     color:black;
-}
+}*/
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {height: 400px}

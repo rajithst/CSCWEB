@@ -19,7 +19,7 @@ include '../components/course_head.php'; ?>
 
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right" style="margin-right: 40px;">
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 230px;">
 
 
                     <!-- "Course" Nested-drop-down for courses begins from here. Line 29-94><!-->
@@ -37,17 +37,9 @@ include '../components/course_head.php'; ?>
 
                                 while ($row = mysqli_fetch_assoc($res)) {
                                 ?>
-                                <a tabindex="-1" href="#"><?php echo $row ['coursename']; ?></a>
-                                <ul class="dropdown-menu dropdown-color">
+                                <a tabindex="-1" href="#" id="<?php echo $row['courseid']; ?>" class="mainco"><?php echo $row ['coursename']; ?></a>
+                                <ul class="dropdown-menu dropdown-color" style="padding: 0;" id="subjects">
 
-                                    <?php
-                                    $course = $row ['coursename'];
-                                    $subs = getsubs_cord($course);
-                                    ?>
-
-                                    <li style="padding: 0;"><a tabindex="-1" href="upload.html">Subject 1</a></li>
-                                    <li><a href="upload.html">Subject 2</a></li>
-                                    <li><a href="upload.html">Subject 3</a></li>
                                 </ul>
                                     <?php } ?>
 
@@ -198,3 +190,39 @@ include '../components/course_head.php'; ?>
     </div>
 
 <?php include '../components/course_footer.php'; ?>
+
+    <script>
+
+        $(document).ready(function () {
+           $('li.dropdown-submenu>a.mainco').mouseover(function () {
+               var courseno = this.id;
+
+               $.ajax({
+                  url:'getsubs.php?cid='+courseno,
+                   type:'get',
+                   success:function (data) {
+                    $('li.dropdown-submenu>ul#subjects').html("");
+                    $('li.dropdown-submenu>ul#subjects').html(data);
+
+                   }
+
+
+               });
+           });
+
+
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+    </script>
