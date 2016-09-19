@@ -46,6 +46,7 @@ include "../components/stud_head.php"; ?>
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
+                                        <i class="fa fa-folder-open" aria-hidden="true"></i>
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" ><?php echo $course; ?></a>
                                     </h4>
                                 </div>
@@ -57,7 +58,8 @@ include "../components/stud_head.php"; ?>
                                             $subid = $row['subjectid'];
                                             ?>
 
-                                            <center><li class="list-group-item"><a href="subject.php?subject=<?php echo $subid; ?>"> <?php echo $row['subject']; ?></a></li></center>
+                                            <center><li class="list-group-item"><a href="subject.php?subject=<?php echo $subid; ?>"><i class="fa fa-book" aria-hidden="true"></i>
+                                                        <?php echo $row['subject']; ?></a></li></center>
 
 
                                         <?php    }
@@ -83,13 +85,17 @@ include "../components/stud_head.php"; ?>
 
                         ?>
                         <div class="well">
-                        <div class="text-head"><h3> <?php echo $row['topic']; ?></h3></div>
+                        <div class="text-head"><h3><i class="fa fa-info-circle" aria-hidden="true"></i>
+                                <?php echo $row['topic']; ?></h3></div>
                             <hr style="border-top: 3px double #8c8b8b;">
 
-                            <p><?php echo $row['content']; ?></p>
+                            <p><i class="fa fa-pencil" aria-hidden="true"></i>
+                                        <?php echo $row['content']; ?></p>
                         <ul class="topics">
-                            <div class="contents"><a href="">Lecture Note 1</a></div>
-                            <div class="contents"><a href="">Lecture Note 2</a></div>
+                            <div class="contents"><i class="fa fa-download" aria-hidden="true"></i>
+                                <a href="">Lecture Note 1</a></div>
+                            <div class="contents"><i class="fa fa-download" aria-hidden="true"></i>
+                                <a href="">Lecture Note 2</a></div>
                             <div class="contents">
                                 <a href="">Tutorial</a>
                                 <ul><a href="" style="font-size:13px">Submission Link</a></ul>

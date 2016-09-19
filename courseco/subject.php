@@ -17,7 +17,7 @@ include "../components/page_head.php";
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#"><img src="../public/dist/img/system/csclogo.png" style="width:170px;"></a>
+            <a href="index.php"><img src="../public/dist/img/system/csclogo.png" style="width:170px;"></a>
 
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

@@ -23,7 +23,7 @@ include "../components/stud_head.php"; ?>
             <!-- start of news feed -->
             <div class="col-md-9 col-sm-12 col-xs-12 text-left">
                 <div id="newsfeed">
-                    <div class="col-sm-12 col-xm-12"> <h3>News Feed</h3></div>
+                    <center><div class="col-sm-12 col-xm-12"> <h3>News Feed</h3></div></center>
 
 
                     <?php
@@ -40,7 +40,7 @@ include "../components/stud_head.php"; ?>
                                     <div class="panel panel-default">
                                         <div class="panel-heading" ><strong><?php echo $row['subject']; ?></strong> <br>
                                             <small>Posted by <?php echo $data['name']; ?></small>
-                                            <div style="width: 10%; margin-left: 85%;margin-top: -3%;height: 70px;"><img src="<?php echo $data['profile']; ?>" alt="" style="width: 100%; height: 100%;"></div>
+                                            <div style="width: 10%; margin-left: 85%;margin-top: -3%;height: 70px;"><img src="<?php echo $data['profile']; ?>" alt="" style="width: 75%; height: 100%;"></div>
 
                                         </div>
                                         <div class="panel-body" id="newsbody">

@@ -26,11 +26,47 @@
     <script>
         $(document).ready(function () {
             $('button#login').click(function () {
-                var id = this.id;
-                console.log(id);
+                var person= $(this).parent().attr('id');
                 $("#login-modal").modal();
 
-            });
+                $('form#login-form').submit(function(e) {
+
+                    e.preventDefault();
+
+                        var email    =  $('input[name=email]').val();
+                        var password  =  $('input[name=password]').val();
+
+
+
+                    $.ajax({
+
+                        type:"get",
+                        url:'submit.php?email='+email+'&pass='+password+"&mode="+person,
+                        success:function (data) {
+                            console.log(data);
+                            if(data != 'false'){
+
+                                if (person == 'Course Cordinator'){
+
+                                    window.location = 'courseco/index.php?u='+data;
+
+                                } else if (person == 'CSC Cordinator'){
+
+                                    window.location = 'cscco/index.php?u='+data;
+                                }
+                            }
+                            
+                        }
+
+
+
+                    });
+
+
+                });
+
+
+                });
         });
 
 
@@ -67,7 +103,7 @@
                         </div>
 
                         <div class="col-sm-4">
-                            <div class="description-block">
+                            <div class="description-block" id="CSC Staff">
                                 <button type="button" class="btn btn-block btn-info btn-sm" data-target="#login-modal" id="login">Log in</button>
                             </div>
                             <!-- /.description-block -->
@@ -115,8 +151,8 @@
                             <!-- /.description-block -->
                         </div>
                         <div class="col-sm-4">
-                            <div class="description-block">
-                                <button type="button" class="btn btn-block btn-info btn-sm">Log in</button>
+                            <div class="description-block" id="Course Cordinator">
+                                <button type="button" class="btn btn-block btn-info btn-sm" data-target="#login-modal" id="login">Log in</button>
                             </div>
                             <!-- /.description-block -->
                         </div>
@@ -162,8 +198,8 @@
                         <!-- /.description-block -->
                     </div>
                     <div class="col-sm-4">
-                        <div class="description-block">
-                            <button type="button" class="btn btn-block btn-info btn-sm">Log in</button>
+                        <div class="description-block" id="CSC Cordinator">
+                            <button type="button" class="btn btn-block btn-info btn-sm" data-target="#login-modal" id="login">Log in</button>
                         </div>
                         <!-- /.description-block -->
                     </div>
@@ -194,7 +230,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" align="center">
-                    <img class="img-circle" id="img_logo" src="public/dist/img/system/">
+                    <img class="img-square" id="img_logo" src="public/dist/img/system/ucsc.ico">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                     </button>
@@ -208,10 +244,10 @@
                         <div class="modal-body">
                             <div id="div-login-msg">
                                 <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                <span id="text-login-msg">Type your username and password.</span>
+                                <span id="text-login-msg">Type your email and password.</span>
                             </div>
-                            <input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
-                            <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <input id="login_username" name="email" class="form-control" type="text" placeholder="email" required>
+                            <input id="login_password" name="password" class="form-control" type="password" placeholder="Password" required>
                             <div class="checkbox">
                                 <label>
                                     <input type="checkbox"> Remember me

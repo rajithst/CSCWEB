@@ -1,9 +1,26 @@
 <?php require '../core/init.php';
 
-include '../components/course_head.php'; ?>
+include '../components/course_head.php';
+    $id =  $_GET['u'];
+    $_SESSION['id']= $id;
+
+if(logged_in() === false){
+
+    session_destroy();
+    header('Location:../index.php');
+    exit();
+
+}
+
+
+
+
+?>
+
+
 
     </head>
-    <body>
+<body xmlns="http://www.w3.org/1999/html">
 
     <!--start of the navbar<!-->
     <nav class="navbar navbar-custom" role = "navigation">
@@ -32,7 +49,9 @@ include '../components/course_head.php'; ?>
                             <li class="dropdown-submenu">
                                 <?php
 
-                                $id = 2;
+                                $id =  $_GET['u'];
+                                $_SESSION['id']= $id;
+
                                 $res = getcourse_cord($id);
 
                                 while ($row = mysqli_fetch_assoc($res)) {
@@ -66,19 +85,19 @@ include '../components/course_head.php'; ?>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Attendance<span class="caret">
                         </a>
                         <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                            <li><a tabindex="-1" href="#">Attendance of Course No 1</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a tabindex="-1" href="#">Attendance of Course No 2</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a tabindex="-1" href="#">Attendance of Course No 3</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a tabindex="-1" href="#">Attendance of Course No 4</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a tabindex="-1" href="#">Attendance of Course No 5</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a tabindex="-1" href="#">Attendance of Course No 6</a></li>
+
+                            <?php
+                            $res = getcourse_cord($id);
+
+                            while ($row = mysqli_fetch_assoc($res)) {
+                            ?>
+                            <li><a tabindex="-1" href="#" style="padding: 0 10px;">Attendance of <?php echo $row['coursename']; ?></a></li>
+
+                            <?php } ?>
+
                         </ul>
                     </li>
+
 
                     <!-- end of attendance drop-down><!-->
                 </ul>
@@ -93,14 +112,14 @@ include '../components/course_head.php'; ?>
     <div class="container-fluid">
         <div class="row content" style="margin-top: 50px;">
             <!--start of leftbar><!-->
-            <div class="sidenav col-md-2 col-sm-3 col-xs-12">
+            <div class="sidenav col-md-2 col-sm-3 col-xs-12" style="margin-top: 35px;">
                 <div class="well">
                     <p><a href="#"><strong>Upcoming Events</strong></a></p>
 
                 </div>
 
                 <div class="panel panel-default" id="message-panel">
-                    <div class="panel-heading" style="background-color:#66B9BF;"><strong>Notifications & E-mails</strong></div>
+                    <center><div class="panel-heading" style="background-color:#66B9BF;"><strong>Notifications & E-mails</strong></div></center>
                     <div class="panel-body">
                         <ul>
                             <li><span class="glyphicon glyphicon glyphicon-comment"></span><a href="notifications.html"><strong> Students</strong></a></li>
@@ -117,7 +136,7 @@ include '../components/course_head.php'; ?>
             <!-- start of News feed><!-->
             <div class="col-md-8 col-sm-6 col-xs-12">
                 <div class="container-fluid" id="news-feed-div">
-                    <h3 id="NEWS">News</h3>
+                    <center><h3 id="NEWS">News</h3></center>
                     <?php
 
                     $posts = getposts();
@@ -156,26 +175,29 @@ include '../components/course_head.php'; ?>
             <!-- start of rightbar><!-->
 
             <!-- profile picture image-component><!-->
-            <div class="sidenav col-md-2  col-sm-3 col-xs-12">
+            <div class="sidenav col-md-2  col-sm-3 col-xs-12" style="margin-top: 35px;">
                 <div class="panel panel-default" id="profpic-panel">
-                    <div class="panel-heading" style="background-color:#66B9BF;"><strong>Logged in as (name)</strong></div>
+                    <div class="panel-heading" style="background-color:#66B9BF;"><strong> </strong></div>
                     <div class="panel-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-md-6 col-sm-12">
-                                    <div class="thumbnail"></div>
-                                </div>
-                                <div class="col-md-6 col-sm-12">
-                                    <div id="profpic-well">
+                                <center>
 
-                                        <strong>L.P</strong></br>
-                                        <strong>Jayasinghe</strong></br>
-                                        <strong>Country</strong></br>
-                                        Sri Lanka</br>
+                                    <div>
+                                        <div class="thumbnail" style="width: 115px; margin-left: 0px;height: 120px;"><img src="../public/dist/img/system/cscco.png" alt=""></div>
                                     </div>
+
+                                </center>
                                 </div>
+                            <div class="row">
+                                <center><div class="col-md-6 col-sm-12">
+                                    <center><div id="profpic-well">
+
+                                        <strong><?php echo $coursecodinator_data['fullname']; ?></strong></br>
+
+                                    </div></center>
+                                </div></center>
                             </div>
-                            <a href="#" id="logout"><strong>(Log Out)</strong></a></h3>
                         </div>
                     </div>
                 </div>

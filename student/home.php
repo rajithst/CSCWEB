@@ -48,6 +48,7 @@ include "../components/stud_head.php";
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
+                                        <i class="fa fa-folder-open" aria-hidden="true"></i>
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" ><?php echo $course; ?></a>
                                     </h4>
                                 </div>
@@ -59,7 +60,8 @@ include "../components/stud_head.php";
                                         $subid = $row['subjectid'];
                                         ?>
 
-                                        <center><li class="list-group-item"><a href="subject.php?subject=<?php echo $subid; ?>"> <?php echo $row['subject']; ?></a></li></center>
+                                        <center><li class="list-group-item"><a href="subject.php?subject=<?php echo $subid; ?>"><i class="fa fa-book" aria-hidden="true"></i>
+                                                    <?php echo $row['subject']; ?></a></li></center>
 
 
                                         <?php    }
