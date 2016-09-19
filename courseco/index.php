@@ -36,7 +36,7 @@ if(logged_in() === false){
 
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right" style="margin-right: 230px;">
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
 
 
                     <!-- "Course" Nested-drop-down for courses begins from here. Line 29-94><!-->
@@ -98,7 +98,7 @@ if(logged_in() === false){
                         </ul>
                     </li>
 
-
+                    <li style="margin-left:100px;"><a href="logout.php"><span class="glyphicon glyphicon-log-out">Logout</span></a></li>
                     <!-- end of attendance drop-down><!-->
                 </ul>
 
@@ -176,8 +176,8 @@ if(logged_in() === false){
 
             <!-- profile picture image-component><!-->
             <div class="sidenav col-md-2  col-sm-3 col-xs-12" style="margin-top: 35px;">
-                <div class="panel panel-default" id="profpic-panel">
-                    <div class="panel-heading" style="background-color:#66B9BF;"><strong> </strong></div>
+                <div class="panel panel-default" id="profpic-panel" style="height: 225px;">
+                    <center><div class="panel-heading" style="background-color:#66B9BF;"><strong> Logged in as</strong></div></center>
                     <div class="panel-body">
                         <div class="container-fluid">
                             <div class="row">
@@ -190,13 +190,13 @@ if(logged_in() === false){
                                 </center>
                                 </div>
                             <div class="row">
-                                <center><div class="col-md-6 col-sm-12">
-                                    <center><div id="profpic-well">
+                                <div class="col-md-6 col-sm-12">
+                                    <div id="profpic-well" style="margin-left: 75px; margin-top: -9px;color: #66B9BF">
 
                                         <strong><?php echo $coursecodinator_data['fullname']; ?></strong></br>
 
-                                    </div></center>
-                                </div></center>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,108 @@
+#logo
+{
+    height:40px;
+    margin-top:5px;
+    margin-right:20px;
+}
+#navbar_txt
+{
+    font-family:Arial;
+    font-size:20px;
+
+
+}
+#myNavbar
+{
+    background-color: rgb(0,143,149);
+
+
+
+}
+#tasks
+{
+    font-size:17px;
+    color:black;
+}
+.well
+{
+    background-color:rgb(102,185,191);
+    text-align:left;
+}
+#tasks_dropdown
+{
+    background-color: rgb(204,255,255);
+
+
+}
+#task_txt
+{
+    color:rgb(153,0,0);
+    font-size:15px;
+
+}
+#enter_details
+{
+    height:30px;
+    background-color:rgb(204,255,255);
+    color:rgb(153,0,0);
+}
+#task_well
+{
+    background-color: rgb(204,255,255);
+    text-align:left;
+}
+#Email_op
+{
+    color:black;
+    font-size: 17px;
+
+
+}
+#info
+{
+    text-align:left;
+}
+#fill_area
+{
+    width:200px;
+    height:30px;
+    font-size:15px;
+    background-color:rgb(204,255,255);
+    color:rgb(153,0,0);
+}
+#task_well_home
+{
+    background-color:rgb(102,185,191);
+    text-align:left;
+}
+#selecting
+{
+    width:200px;
+    height:30px;
+    background-color:rgb(204,255,255);
+    color:rgb(153,0,0);
+}
+footer {
+    background-color: rgb(0,143,149);
+    padding: 15px;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer-nav li{
+    display:inline;
+}
+
+.footer-nav{
+    text-align: left;
+    list-style: none;
+    color:white;
+}
+
+.footer-nav li:not(:first-child):before
+{
+    content: ' ';
+    padding: 0px 3px;
+}
