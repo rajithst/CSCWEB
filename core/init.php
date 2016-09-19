@@ -7,6 +7,7 @@ require 'function/admin.php';
 require 'function/frontend.php';
 require 'function/student.php';
 require 'function/coursecode.php';
+require 'function/staff.php';
 
 
 $current_file= explode('/',$_SERVER['SCRIPT_NAME']);

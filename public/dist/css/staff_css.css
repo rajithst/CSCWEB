@@ -6,7 +6,7 @@
 }
 #navbar_txt
 {
-    font-family:Arial;
+    font-family:Sherif;
     font-size:20px;
 
 
@@ -89,6 +89,15 @@ footer {
     font-family: serif;
     font-size: 14px;
     margin-top: 10px;
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
 }
 
 .footer-nav li{
