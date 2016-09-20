@@ -66,8 +66,8 @@ include '../components/page_head.php'; ?>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
                         <li><a tabindex="-1" href="select_course.php" id="task_txt">Attendence</a></li>
-                        <li><a tabindex="-1" href="income_report.html" id="task_txt">Income</a></li>
-                        <li><a tabindex="-1" href="expense_report.html" id="task_txt">Expences</a></li>
+                        <li><a tabindex="-1" href="income.php" id="task_txt">Income</a></li>
+                        <li><a tabindex="-1" href="expense.php" id="task_txt">Expences</a></li>
                         <li><a tabindex="-1" href="select_course_marks.html" id="task_txt">Student Marks</a></li>
                     </ul>
                 </li>

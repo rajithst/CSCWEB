@@ -10,9 +10,43 @@ include '../components/page_head.php'; ?>
 
     <body background="">
     <!-- header-->
+    <nav class="navbar navbar-default" id="myNavbar">
+        <div class="container-fluid" >
+            <div class="navbar-header" style="margin: 17px;" >
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="../public/dist/img/system/csclogo.png"class="img-responsive csc-logo" id="logo" >
+
+
+            </div>
+            <div class="collapse navbar-collapse">
+
+                <ul class="nav navbar-nav navbar-right" id="navbar_txt" style="margin: 12px;">
+                    <li><a href="index.php" style="color:white;" >Home</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;"><span>Notifications</span>
+                            <span class="caret">
+						</span>
+                        </a>
+                        <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
+                            <li><a tabindex="-1" href="inbox_Email.html" id="task_txt">Emails</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#" style="color:white;"><span class="glyphicon glyphicon-log-out"></span> logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <nav class="navbar navbar-inverse" id="myNavbar">
         <div class="container-fluid" >
-            <div class="navbar-header" >
+            <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -22,25 +56,41 @@ include '../components/page_head.php'; ?>
 
 
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav" id="navbar_txt">
-                    <li><img src="images/logo.png"class="img-responsive csc-logo" id="logo" ></li>
-                    <li><a href="index.php" style="color:white;">Home</a></li>
-                    <li><a href="profile_csc_staff.html" style="color:white;">Profile</a></li>
+            <div class="collapse navbar-collapse" style="background-color: rgb(102, 185, 191)">
+
+                <ul class="nav navbar-nav navbar-right" id="navbar_txt">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Notifications
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="color:white;font-size:17px;" >Edit Reports
                             <span class="caret">
 						</span>
                         </a>
                         <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
-                            <li><a tabindex="-1" href="inbox_Email.html" id="task_txt">Emails</a></li>
-                            <li><a tabindex="-1" href="notification_csc_staff.html" id="task_txt">Notifications</a></li>
+                            <li><a tabindex="-1" href="select_course.php" id="task_txt">Attendence</a></li>
+                            <li><a tabindex="-1" href="income.php" id="task_txt">Income</a></li>
+                            <li><a tabindex="-1" href="expense.php" id="task_txt">Expences</a></li>
+                            <li><a tabindex="-1" href="select_course_marks.html" id="task_txt">Student Marks</a></li>
                         </ul>
                     </li>
+                    <li class="dropdown">
+                        <a href="report_generating.html"  style="color:white;font-size:17px;">Generate Report
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="color:white;font-size:17px;">Send
+                            <span class="caret">
+						</span>
+                        </a>
+                        <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
+                            <li><a tabindex="-1" href="inbox_Email.html" id="task_txt" >Email</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="student_registration.html"   style="color:white;font-size:17px;">Register Students
+                        </a>
+                    </li>
 
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" style="color:white;"><span class="glyphicon glyphicon-log-out"></span> logout</a></li>
+
+
                 </ul>
             </div>
         </div>

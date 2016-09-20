@@ -87,7 +87,7 @@ $var =basename($current_file,".php");
               <ul class="nav nav-pills nav-stacked">
 
                 <li><a href="published.php"><i class="fa fa-envelope-o"></i> Published</a></li>
-                <li><a href="Draft.php"><i class="fa fa-file-text-o"></i> Drafts</a></li>
+                <li><a href="draft.php"><i class="fa fa-file-text-o"></i> Drafts</a></li>
 
                 <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
               </ul>

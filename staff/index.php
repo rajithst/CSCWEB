@@ -1,4 +1,5 @@
 <?php
+include "../core/init.php";
  include '../components/page_head.php'; ?>
 
 <link rel="stylesheet" href="../public/dist/css/staff_css.css">
@@ -64,8 +65,8 @@
                         </a>
                         <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
                             <li><a tabindex="-1" href="select_course.php" id="task_txt">Attendence</a></li>
-                            <li><a tabindex="-1" href="income_report.html" id="task_txt">Income</a></li>
-                            <li><a tabindex="-1" href="expense_report.html" id="task_txt">Expences</a></li>
+                            <li><a tabindex="-1" href="income.php" id="task_txt">Income</a></li>
+                            <li><a tabindex="-1" href="expense.php" id="task_txt">Expences</a></li>
                             <li><a tabindex="-1" href="select_course_marks.html" id="task_txt">Student Marks</a></li>
                         </ul>
                     </li>
@@ -96,47 +97,59 @@
     <!-- end of header-->
     <div class="container-fluid text-center">
         <div class="row content">
-            <div class="col-sm-8 text-left">
-                <div class="well" id="news">
-                    <p>News feed:</p>
-                    <div class="thumbnail">
-                        <p style="text-align:left;"><strong>Subject:******</strong></p>
-                        <p style="text-align:left;">Date --:--:----  / time --:--:--</p>
-                        <p style="text-align:left;">Description:*************</p>
-                        <button class="btn btn-primary">See More</button>
-                    </div>
 
-                    <div class="thumbnail">
-                        <p style="text-align:left;"><strong>Subject:******</strong></p>
-                        <p style="text-align:left;">Date --:--:----  / time --:--:--</p>
-                        <p style="text-align:left;">Description:*************</p>
-                        <button class="btn btn-primary">See More</button>
-                    </div>
 
-                    <div class="thumbnail">
-                        <p style="text-align:left;"><strong>Subject:******</strong></p>
-                        <p style="text-align:left;">Date --:--:----  / time --:--:--</p>
-                        <p style="text-align:left;">Description:*************</p>
-                        <button class="btn btn-primary">See More</button>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-sm-2 sidenav">
-                <!--profile-->
-                <div class="well" style="height:200px;" id="proArea">
-                    <h4>Full Name</h4>
-                    <img src="images/propic.png" class="img-circle" height="100" width="100" alt="Avatar">
-                </div>
-                <!--end profile-->
-
-            </div>
-            <div class="col-sm-2 sidenav">
+            <div class="col-md-3 sidenav">
                 <div class="well" style="height:200px;" id="calendar">
                     <p><strong>calender</strong></p>
                 </div>
             </div>
+
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div id="newsfeed">
+                    <div class="col-sm-12 col-xm-12"> <center><h3>News Feed</h3></center></div>
+
+                    <?php
+
+                    $posts = getposts();
+                    while ($row = mysqli_fetch_assoc($posts)) {
+                        $id = $row['adminid'];
+                        $admindata = getadmin($id);
+                        while ($data = mysqli_fetch_assoc($admindata)) {
+                            ?>
+
+                            <div class="col-sm-12 col-xm-12" >
+                                <div id="nws">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" ><strong><?php echo $row['subject']; ?></strong> <br>
+                                            <small>Posted by <?php echo $data['name']; ?></small>
+                                            <div style="width: 10%; margin-left: 85%;margin-top: -5%;height: 70px;"><img src="<?php echo $data['profile']; ?>" alt="" style="width: 100%; height: 100%;"></div>
+
+                                        </div>
+                                        <div class="panel-body" id="newsbody">
+                                            <?php echo $row['text']; ?>
+                                            <div id="attach"><a href=""><?php echo $row['date']; ?></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php
+
+                        }
+
+                    } ?>
+                </div>
+            </div>
+
+        <div class="col-md-3 sidenav">
+            <!--profile-->
+            <div class="well" style="height:200px;" id="proArea">
+                <h4>Full Name</h4>
+                <img src="images/propic.png" class="img-circle" height="100" width="100" alt="Avatar">
+            </div>
+            </div>
+
+        </div>
         </div>
 
 <?php include "../components/page_tail.php";

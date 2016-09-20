@@ -1,4 +1,6 @@
-<?php include '../components/cscordinator_head.php'; ?>
+<?php include '../core/init.php';
+
+include '../components/cscordinator_head.php'; ?>
 
 </head>
 <body style="background-color:white">
@@ -62,7 +64,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Handle Lecturer<span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="handlelecturer.html">Handle Lecturer</a></li>
+                <li><a tabindex="-1" href="handle_lecturer.php">Handle Lecturer</a></li>
                 </li>
 
 
@@ -120,7 +122,9 @@
 <br>
 
 <!-- other information leftbar panel><!-->
-<div class="sidenav col-md-2 col-sm-3 col-xs-12">
+<div class="container" style="width: 100%;">
+<div class="row">
+<div class="sidenav col-md-3 col-sm-3 col-xs-4">
     <div class="well">
         <p><a href="#" style="color:brown;"><strong>Upcoming Events</strong></a></p>
 
@@ -134,14 +138,42 @@
 
 
 <!-- start of News feed><!-->
-<div class="col-md-8 col-sm-6 col-xs-12">
-    <div class="container-fluid">
-        <div class="panel panel-default">
-            <div class="panel-heading"  style="background-color:#66B9BF;" id="newsfeed"><strong>News Feed</strong></div>
-            <div class="panel-body" id="newsfeed-panelbody" style="background-color:white;"></div>
-        </div>
+<div class="col-md-6 col-sm-12 col-xs-12">
+    <div id="newsfeed">
+        <div class="col-sm-12 col-xm-12"> <center><h3>News Feed</h3></center></div>
+
+        <?php
+
+        $posts = getposts();
+        while ($row = mysqli_fetch_assoc($posts)) {
+            $id = $row['adminid'];
+            $admindata = getadmin($id);
+            while ($data = mysqli_fetch_assoc($admindata)) {
+                ?>
+
+                <div class="col-sm-12 col-xm-12" >
+                    <div id="nws">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" ><strong><?php echo $row['subject']; ?></strong> <br>
+                                <small>Posted by <?php echo $data['name']; ?></small>
+                                <div style="width: 10%; margin-left: 85%;margin-top: -5%;height: 70px;"><img src="<?php echo $data['profile']; ?>" alt="" style="width: 100%; height: 100%;"></div>
+
+                            </div>
+                            <div class="panel-body" id="newsbody">
+                                <?php echo $row['text']; ?>
+                                <div id="attach"><a href=""><?php echo $row['date']; ?></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php
+
+            }
+
+        } ?>
     </div>
 </div>
+
 
 
 
@@ -149,7 +181,7 @@
 
 
 <!-- profile picture image><!-->
-<div class="sidenav col-md-2  col-sm-3 col-xs-12">
+<div class="sidenav col-md-3  col-sm-3 col-xs-12">
     <div class="panel panel-default" id="profpic-panel">
         <div class="panel-heading" style="background-color:#66B9BF;"><strong>Logged in User</strong></div>
         <div class="panel-body" style="background-color:white;">
@@ -175,6 +207,7 @@
 </div>
 </div>
 
-
+</div>
+</div>
 
 <?php include "../components/cscordinator_footer.php"; ?>

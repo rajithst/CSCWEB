@@ -19,7 +19,7 @@ include "../components/stud_head.php"; ?>
                 <a href="home.php" class="logo pull-left"><img src="../public/dist/img/system/csclogo.png" style="width:auto; height:42px;"></a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="Login.html"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+                <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
             </ul>
         </div>
         </div>

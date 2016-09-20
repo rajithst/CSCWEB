@@ -16,7 +16,9 @@
     $id = $_GET['pub'];
 
     $sql = "DELETE FROM posts WHERE subject= '$id'";
-    mysqli_query($sql);
+
+        $con = mysqli_connect('localhost', 'root', '',  'csc');
+    mysqli_query($con,$sql);
     echo true;
 
                                     

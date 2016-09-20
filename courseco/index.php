@@ -4,13 +4,13 @@ include '../components/course_head.php';
     $id =  $_GET['u'];
     $_SESSION['id']= $id;
 
-if(logged_in() === false){
+/*if(logged_in() === false){
 
     session_destroy();
     header('Location:../index.php');
     exit();
 
-}
+}*/
 
 
 
