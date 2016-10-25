@@ -1,11 +1,9 @@
-<?php include '../core/init.php';
-
+<?php
+include "../core/init.php";
 include '../components/cscordinator_head.php'; ?>
 
-</head>
-<body style="background-color:white">
+<link rel="stylesheet" href="../public/dist/css/handle-lectur.css">
 
-<!-- page header ><!-->
 <nav class="navbar navbar-custom" role = "navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -15,7 +13,7 @@ include '../components/cscordinator_head.php'; ?>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#"><img src="../public/dist/img/system/csclogo.png" style="width:170px; height:50px;" ></a>
+            <a href="index.php"><img src="../public/dist/img/system/csclogo.png" style="width:170px; height:50px;" ></a>
 
 
         </div>
@@ -95,7 +93,7 @@ include '../components/cscordinator_head.php'; ?>
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Handle Lectures<span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="handlelectures.html">Handle Lectures</a></li>
+                <li><a tabindex="-1" href="">Handle Lectures</a></li>
                 </li>
             </ul>
 
@@ -119,95 +117,71 @@ include '../components/cscordinator_head.php'; ?>
 </div>
 
 </div></div></nav>
-<br>
-
-<!-- other information leftbar panel><!-->
-<div class="container" style="width: 100%;">
-<div class="row">
-<div class="sidenav col-md-3 col-sm-3 col-xs-4">
-    <div class="well">
-        <p><a href="#" style="color:brown;"><strong>Upcoming Events</strong></a></p>
-
-    </div>
 
 
-</div>
-
-
-
-
-
-<!-- start of News feed><!-->
-<div class="col-md-6 col-sm-12 col-xs-12">
-    <div id="newsfeed">
-        <div class="col-sm-12 col-xm-12"> <center><h3>News Feed</h3></center></div>
-
-        <?php
-
-        $posts = getposts();
-        while ($row = mysqli_fetch_assoc($posts)) {
-            $id = $row['adminid'];
-            $admindata = getadmin($id);
-            while ($data = mysqli_fetch_assoc($admindata)) {
-                ?>
-
-                <div class="col-sm-12 col-xm-12" >
-                    <div id="nws">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" ><strong><?php echo $row['subject']; ?></strong> <br>
-                                <small>Posted by <?php echo $data['name']; ?></small>
-                                <div style="width: 10%; margin-left: 85%;margin-top: -5%;height: 70px;"><img src="<?php echo $data['profile']; ?>" alt="" style="width: 100%; height: 100%;"></div>
-
-                            </div>
-                            <div class="panel-body" id="newsbody">
-                                <?php echo $row['text']; ?>
-                                <div id="attach"><a href=""><?php echo $row['date']; ?></a></div>
+<div class="container-fluid">
+    <div class="row content" style="margin-top: 3%">
+        <div class="col-sm-6 text-left">
+            <div class="panel panel-default">
+                <div class="panel-heading">Add Lecturer</div>
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-sm-4 col-form-label">Lecture Name</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text">
                             </div>
                         </div>
-                    </div>
+                        <div class="form-group row">
+                            <label for="example-search-input" class="col-sm-4 col-form-label">Subject Name</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="search">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-search-input" class="col-sm-4 col-form-label">Subject Code</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="search">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-search-input" class="col-sm-4 col-form-label">Course</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="search">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="add">Add</button>
+                        <button type="submit" class="btn btn-primary" id="cancel">Cancel</button>
+                    </form>
                 </div>
-                <?php
-
-            }
-
-        } ?>
-    </div>
-</div>
-
-
-
-
-<br>
-
-
-<!-- profile picture image><!-->
-<div class="sidenav col-md-3  col-sm-3 col-xs-12">
-    <div class="panel panel-default" id="profpic-panel">
-        <div class="panel-heading" style="background-color:#66B9BF;"><strong>Logged in User</strong></div>
-        <div class="panel-body" style="background-color:white;">
-            <div class="thumbnail"></div>
-            <div id="profpic-well">
-
-                <strong>CSC Coordinator</strong></br>
-                Country :</br>
-                Name :
             </div>
         </div>
+        <div class="col-sm-6">
+            <h3 id="lecturer">Lecturers</h3>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Subject</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Anna</td>
+                        <td>Pitt</td>
+                        <td>35</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
     </div>
-
-
-    <div class="well">
-        <p><a href="#" style="color:brown;">Calendar</a></p>
-    </div>
-
-
-
-
-</div>
-</div>
 </div>
 
-</div>
-</div>
 
-<?php include "../components/cscordinator_footer.php"; ?>
+<?php include "../components/cscordinator_footer.php";

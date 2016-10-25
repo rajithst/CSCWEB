@@ -13,9 +13,9 @@
 
 if (isset($_GET['delete'])) {
     $id = $_GET['delete'];
-
+    $con = mysqli_connect('localhost', 'root', '',  'csc');
     $sql = "DELETE FROM posts WHERE id= $id";
-    mysqli_query($con,$sql)
+    mysqli_query($con,$sql);
     echo true;
 
                                     

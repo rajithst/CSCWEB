@@ -72,7 +72,6 @@ require 'core/function/frontend.php';
 
 		       }else{
 
-					$_SESSION['id']= $login;
 					header('Location:logall.php');
 					exit();
 		       }

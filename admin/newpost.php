@@ -87,7 +87,7 @@ $var =basename($current_file,".php");
               <ul class="nav nav-pills nav-stacked">
 
                 <li><a href="published.php"><i class="fa fa-envelope-o"></i> Published</a></li>
-                <li><a href="Draft.php"><i class="fa fa-file-text-o"></i> Drafts</a></li>
+                <li><a href="draft.php"><i class="fa fa-file-text-o"></i> Drafts</a></li>
 
                 <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
               </ul>
@@ -99,6 +99,7 @@ $var =basename($current_file,".php");
 
 
         </div>
+
 
         <div class="col-md-9">
             <form action="" method="post" id="idForm">
@@ -159,38 +160,38 @@ $var =basename($current_file,".php");
 
 <?php require  '../components/page_tail.php';
 
-            $id = $user_data['id'];
-            if(isset($_POST['postdata']) === true){ 
+                $id = $user_data['id'];
+                if(isset($_POST['postdata']) === true){
 
-                if(!empty($_POST["user"]))
-                {
-                    foreach($_POST["user"] as $user)
+                    if(!empty($_POST["user"]))
                     {
-                        $row[] = $user;
+                        foreach($_POST["user"] as $user)
+                        {
+                            $row[] = $user;
+                        }
+
+
                     }
 
+                    $date = date("Y/m/d");
+
+                    $postdata = array(
+
+
+                        'subject' =>  $_POST['subject'],
+                        'text' =>  $_POST['content'],
+                        'adminid'   =>  $id,
+                        'type' => 1,
+                        'date'=> $date
+                    );
+
+                    postdata($postdata);  ?>
+
+                    <script>swal("Posted!", "Your have benn published a post successfully")</script>
+                    <?php
+                    exit();
 
                 }
-
-                $date = date("Y/m/d");
-
-                $postdata = array(
-
-
-                    'subject' =>  $_POST['subject'],
-                    'text' =>  $_POST['content'],
-                    'adminid'   =>  $id,
-                    'type' => 1,
-                    'date'=> $date
-                );
-
-                postdata($postdata);  ?>
-
-                <script>swal("Posted!", "Your have benn published a post successfully")</script> 
-                <?php
-                exit();
-
-            } 
 
 
                 if(isset($_POST['draft']) === true){
@@ -219,12 +220,20 @@ $var =basename($current_file,".php");
 
                     putdraft($postdata); ?>
 
-                <script>swal("Drafted!", "Your have benn Draft a post")</script> 
-                <?php
-                     exit();
+                    <script>swal("Drafted!", "Your have benn Draft a post")</script>
+                    <?php
+                    exit();
                 }
 
-            ?>
+                ?>
+
+
+
+
+
+
+
+
 
 
 

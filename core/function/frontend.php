@@ -1,20 +1,8 @@
 <?php
 
 
-function staff_id_from_email($email){
-    $con = mysqli_connect('localhost','root','','csc');
-
-    $sql = "SELECT id FROM staff  WHERE email = '$email'";
-    $query = mysqli_query($con,$sql);
-    $fetcharray=mysqli_fetch_array($query,MYSQLI_NUM);
-    return $fetcharray[0];
-
-}
-
-
 function loginall($email,$password){
     $con = mysqli_connect('localhost','root','','csc');
-    $user_id= staff_id_from_email($email);
     $password = md5($password);
 
     $query=mysqli_query($con,"SELECT * FROM staff WHERE email= '$email' AND password='$password'");
@@ -22,7 +10,7 @@ function loginall($email,$password){
 
     if($result == 1){
 
-        return $user_id;
+        return true;
     } else{
 
         return false;
@@ -32,9 +20,8 @@ function loginall($email,$password){
 
 }
 
-
 function staff_data($id){
-    $con = mysqli_connect('localhost','root','','CSC');
+    $con = mysqli_connect('localhost','root','','csc');
     $data =array();
     $id= (int)$id;
 

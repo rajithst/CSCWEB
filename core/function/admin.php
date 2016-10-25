@@ -66,12 +66,6 @@ if (isset($_GET['call'])) {
 
 }
 
-if (isset($_POST['submit'])) {
-
-	$subject = $_POST[''];
-
-}
-
 function adminusers( $id) {
     $con = mysqli_connect('localhost', 'root', '',  'csc');
 	$sql = "SELECT id,name,role,email FROM adminusers WHERE id =$id";
@@ -86,7 +80,6 @@ function postdata($postdata) {
 	$data   = '\''.implode('\', \'', $postdata).'\' ';
 
 	$sql = "INSERT INTO posts ($fields) VALUE ($data)";
-
 	mysqli_query($con, $sql);
 
 }
@@ -107,9 +100,6 @@ function allusers($id) {
 
 }
 
-function countmembers() {
-
-}
 
 function adduser( $postdata) {
     $con = mysqli_connect('localhost', 'root', '',  'csc');
