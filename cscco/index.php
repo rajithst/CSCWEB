@@ -4,7 +4,8 @@ include '../components/cscordinator_head.php'; ?>
 
 </head>
 <body style="background-color:white">
-
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href=index.css>
 <!-- page header ><!-->
 <nav class="navbar navbar-custom" role = "navigation">
     <div class="container-fluid">
