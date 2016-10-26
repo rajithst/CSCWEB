@@ -1,207 +1,34 @@
-/* page header styling*/
-
-
-
-.pageheader-style{
-    margin-bottom:0px;
-    margin-top:0px;
-    height: 40px;
-}
-.csc-logo{
-    height: 100px;
-}
-
-
-/* navbar styling*/
-.navbar {
-    margin-top: 0;
-    border-radius:0;
-    background-color: #008F95;
-    color: white;
-    margin-bottom: 10px;
-
-
-}
-#navbar-1{
-    margin-top: 17px;
-    margin-left: 650px;
-}
-#navbar-2{
-    margin-left: 532px;
-}
-.navbar-header{
-    margin-top: 14px;
-    margin-bottom: 14px;
-    margin-left: 10px;
-}
-.navbar-custom a {
-    color:white;
-    font-weight: bold;
-    font-family: serif;
-    font-size: 17px;
-    border-color: black;
-}
-/*.navbar-custom a:hover {
-    background-color:dimgray;
-
-}*/
-#log-out{
-    margin-top: 17px;
-    height:40px;
-    font-family: serif;
-    float: right;
-
-}
-
-.dropdown-color{
-    background-color:#66B9BF;
-}
-.dropdown{
-
-}
-
-#navbar-dropdown ul ul a{
-    color:saddlebrown;
-}
-.dropdown-menu a,.dropdown-menu li a{
-    color:white;
-    font-weight: bold;
-    font-family: serif;
-    font-size: 17px;
-    padding-top: 0px;
-}
-.dropdown-menu > li > a:hover{
-    background-color:white;
-    color:black;
-}
-
-/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 400px}
-
-/* sidenav bar styling*/
-.sidenav {
-    padding-top: 0px;
-    background-color:white;
-    height: 600px;
-}
-.well{
-    height:200px;
-    background-color: #66B9BF;
-
-}
-#right-bar-well-2{
-    height: 150px;
-    background-color:burlywood;
-
-}
-
-
-/*styling panels inside the side nav bars*/
-#newsfeed{
-    background-color: burlywood;
-
-    background-color: burlywood;
-    font-weight: bolder;
-
-    font-size:15px;
-    padding: 6px 10px;
-}
-#newsfeed-panelbody{
-    overflow-y:scroll;
-    height:540px;
-
-}
-
-#propic-panelheading{
-    background-color: #66B9BF;
-}
-#profpic-panel{
-    height: 250px;
-}
-#profpic-well{
-    margin-top: 0px;
-    height: 60px;
-    padding-top: 0px;
-    width: 180px;
-    margin-left: 0px;
-}
-#message-panel{
-    height: 100px;
-}
-.panel-body>ul{
-    list-style-type: none;
-}
-
-
-#sidebar-leftbarpanel-dimensins{
-    margin-top: 10px;
-    margin-left: 0px;
-    height: auto;
-    width: 15px;
-}
-#sidebar-panel-height{
-    height:140px;
-}
-.thumbnail{
-    margin-left: 0px;
-    margin-top: 0px;
-    height:100px;
-    width: 100px;
-}
-
-#prof-image{
-    width:150px;
-    height:140px;
-}
-#logout{
-    font-size: 20px;
-}
-
-
-/* footer styling*/
-footer {
-    background-color: #008F95;
-
-    padding: 15px;
-    font-weight: bold;
-    font-family: serif;
-    font-size: 14px;
-    margin-top: 600px;
-}
-.footer-nav li{
-    display:inline;
-
-}
-.footer-nav{
-    text-align: left;
-    list-style: none;
-    color:white;
-}
-.footer-nav li:not(:first-child):before
-{
-    content: ' ';
-    padding: 0px 3px;
-}
-
-
-/* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) {
+/* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
     .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
         height: auto;
         padding: 15px;
+      }
+      .row.content {height:auto;}
     }
-    .row.content {height:auto;}
-}
-
-
-
-body {
-    padding-bottom:0px;
-}
-
-#newsfeed{
-    background-color: aliceblue;
-}
-
-
+    
+    
 
