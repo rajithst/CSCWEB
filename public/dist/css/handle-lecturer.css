@@ -2,6 +2,7 @@
  .button{
   color:#fff;background-color:black;border-color:black
 }
+
 .button.focus,.button:focus{
  color:#fff;background-color:black;border-color:black
 }
