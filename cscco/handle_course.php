@@ -1,5 +1,5 @@
 <?php
-include "../core/init.php";
+
 include '../components/cscordinator_head.php'; ?>
 
 <link rel="stylesheet" href="../public/dist/css/handle-courses.css">
@@ -12,11 +12,11 @@ include '../components/cscordinator_head.php'; ?>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="#"><img src="csclogo.png" style="width:170px; height:50px;" ></a>
+      <a href="#"><img src="../public/dist/img/system/csclogo.png"style="width:170px; height:50px;" ></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html" style="height:50px;"><span class="glyphicon glyphicon-home"></span> HOME</a>
+        <li><a href="index.php" style="height:50px;"><span class="glyphicon glyphicon-home"></span> HOME</a>
         <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-globe"></span> NOTIFICATIONS</a></li>
         <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-envelope"></span> MESSAGES</a></li>
         <li><a class="navbar-brand navbar-right" href="#" style="height:40px;">(LOGOUT)</a></li>
@@ -74,5 +74,7 @@ include '../components/cscordinator_head.php'; ?>
 	    		</div>
     		</div>
     	</div>
-</div>
+    </div>
+
+
 <?php include "../components/cscordinator_footer.php";
