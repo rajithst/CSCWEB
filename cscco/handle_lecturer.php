@@ -1,5 +1,5 @@
 <?php
-include "../core/init.php";
+
 include '../components/cscordinator_head.php'; ?>
 
 <link rel="stylesheet" href="../public/dist/css/handle-lecturer.css">
@@ -12,11 +12,11 @@ include '../components/cscordinator_head.php'; ?>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="#"><img src="csclogo.png" style="width:170px; height:50px;" ></a>
+      <a href="#"><img src="../public/dist/img/system/csclogo.png" style="width:170px; height:50px;" ></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html" style="height:50px;"><span class="glyphicon glyphicon-home"></span> HOME</a>
+        <li><a href="index.php" style="height:50px;"><span class="glyphicon glyphicon-home"></span> HOME</a>
         <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-globe"></span> NOTIFICATIONS</a></li>
         <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-envelope"></span> MESSAGES</a></li>
         <li><a class="navbar-brand navbar-right" href="#" style="height:40px;">(LOGOUT)</a></li>
@@ -62,42 +62,14 @@ include '../components/cscordinator_head.php'; ?>
 			    				
 			    			</div>
 			    			
-			    			<input type="submit" value="Create Lecturer" class="button">
-			    		
+			    			
+			    		    <input type="submit" value="Create Lecturer" class="button" >
 			    		</form>
 			    	</div>
 	    		</div>
     		</div>
     	</div>
     </div>
-          
-   
-        <div class="col-sm-6">
-            <h3 id="lecturer">Lecturers</h3>
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Course</th>
-                        <th>Subject</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Anna</td>
-                        <td>Pitt</td>
-                        <td>35</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 
 <?php include "../components/cscordinator_footer.php";
