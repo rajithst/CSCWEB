@@ -1,7 +1,7 @@
 <?php
 
 function user_id_from_email($email,$table) {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 
     $sql        = "SELECT userid FROM $table  WHERE email = '$email'";
     $query      = mysqli_query($con, $sql);
@@ -31,7 +31,7 @@ if (isset($_GET['email']) and isset($_GET['pass']) AND isset($_GET['mode'])){
         $table =   'csc_cscco';
     }
 
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $user_id  = user_id_from_email($email,$table);
 
     $sql = "SELECT * FROM $table WHERE email = '$email' AND password = '$password'";
