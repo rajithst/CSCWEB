@@ -2,8 +2,7 @@
 
 include '../components/cscordinator_head.php'; ?>
 
-<link rel="stylesheet" href="../public/dist/css/handle-lecturer.css">
-
+<link rel="stylesheet" href="../public/dist/css/notification.css">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -29,47 +28,41 @@ include '../components/cscordinator_head.php'; ?>
     
     <div class="container">
         <div class="row centered-form">
-        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-1">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-4">
         	<div class="panel panel-default">
         		<div class="panel-heading">
-			    		<h3 class="panel-title">Lecturer</h3>
+			    		<h3 class="panel-title">Compose Notification</h3>
 			 			</div>
 			 			<div class="panel-body">
 			    		<form role="form">
 			    			<div class="row">
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
-			                <input type="text" name="ID" id="lecturer_id" class="form-control input-sm" placeholder="ID">
+			                <input type="text" name="ID" id="id" class="form-control input-sm" placeholder="ID">
 			    					</div>
 			    				</div>
 			    				
 			    			</div>
                             <div class="form-group">
-			    				<input type="name" name="name" id="lecturer_name" class="form-control input-sm" placeholder="Name">
+			    				<input type="name" name="name" id="name" class="form-control input-sm" placeholder="Name">
 			    			</div>
 			    			<div class="form-group">
 			    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
 			    			</div>
-
-			    			<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="tel" name="contact_number" id="contact_number" class="form-control input-sm" placeholder="Contact Number">
-                                        
-                                        </div>
-			    				</div>
-			    				
+                             
+			    			       <div class="form-group">
+                                  <label for="comment">Notification:</label>
+                                        <textarea class="form-control" rows="6" id="comment"></textarea>
+                                </div>
 			    				
 			    			</div>
-			    			
-			    			
-			    		    <input type="submit" value="Create Lecturer" class="button" >
+                            </br></br></div>
+			    			<input type="submit" value="Submit" class="button">
+                              </br>
 			    		</form>
 			    	</div>
 	    		</div>
     		</div>
     	</div>
     </div>
-
-
-<?php include "../components/cscordinator_footer.php";
+<?php include "../components/cscordinator_footer.php"; ?>
