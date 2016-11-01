@@ -35,7 +35,7 @@ require 'core/function/frontend.php';
 		     <h1><strong>Computer and Service Center</strong></h1> <br>
 		     <div class="description">
 		      <p>
-		       Main login area of <strong style="color: green;">Computer and Service Center</strong> of University of Colombo School of Computing
+		       Main login area of <strong style="color: green;">Computer Services Center</strong> of University of Colombo School of Computing
 		       <br>
 		       This site  accessible only for provided users
 		      </p>
