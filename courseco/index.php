@@ -1,6 +1,7 @@
 <?php session_start()
-include '../core/init.php';
-include '../core/function/coursecode.php';
+//include '../core/init.php';
+//include '../core/function/coursecode.php';
+include '../components/course_head.php';
 ?>
 
 

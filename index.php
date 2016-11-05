@@ -198,19 +198,19 @@ if (isset($_POST['submit'])){
 
     if ($role === "CSC Staff") {
 
-        session_start(); 
+    
         $_SESSION['id'] = $id;
         header('Location:staff/index.php'); 
         exit;
 
     }else if ($role === "CSC Cordinator") {
-        session_start(); 
+        
         $_SESSION['id'] = $id;
         header('Location:cscco/index.php'); 
         exit;
     }else{
 
-        session_start(); 
+    
         $_SESSION['id'] = $id;
         header('Location:courseco/index.php'); 
         exit;
