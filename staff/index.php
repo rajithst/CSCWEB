@@ -1,6 +1,8 @@
-<?php
-include "../core/init.php";
- include '../components/page_head.php'; ?>
+<?php session_start();
+include '..core/init.php';
+include '../components/page_head.php';
+?>
+
 
 <link rel="stylesheet" href="../public/dist/css/staff_css.css">
 
@@ -98,7 +100,7 @@ include "../core/init.php";
     <div class="container-fluid text-center">
         <div class="row content">
 
-
+                
             <div class="col-md-3 sidenav">
                 <div class="well" style="height:200px;" id="calendar">
                     <p><strong>calender</strong></p>
@@ -110,6 +112,9 @@ include "../core/init.php";
                     <div class="col-sm-12 col-xm-12"> <center><h3>News Feed</h3></center></div>
 
                     <?php
+
+
+                    print_r($_SESSION);
 
                     $posts = getposts();
                     while ($row = mysqli_fetch_assoc($posts)) {

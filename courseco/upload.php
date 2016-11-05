@@ -1,6 +1,6 @@
 <?php
 
-require '../core/init.php';
+//require '../core/init.php';
 
 
 if (isset($_FILES['slide']) === true and empty($_FILES['slide']['name'])=== false ) {

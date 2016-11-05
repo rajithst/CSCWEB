@@ -1,5 +1,7 @@
 <?php
 
+include "../core/init.php";
+
 include '../components/cscordinator_head.php'; ?>
 
 <link rel="stylesheet" href="../public/dist/css/handle-courses.css">
@@ -28,7 +30,7 @@ include '../components/cscordinator_head.php'; ?>
    </br> 
      <div class="container">
         <div class="row centered-form">
-        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-1">
+        <div class="col-xs-12 col-sm-8 col-md-6">
         	<div class="panel panel-default">
         		<div class="panel-heading">
 			    		<h3 class="panel-title">Course</h3>

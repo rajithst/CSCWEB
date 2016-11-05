@@ -1,14 +1,11 @@
 <?php
 
-session_start();
-
-require 'db/database.php';
 require 'function/admin.php';
 require 'function/frontend.php';
-require 'function/student.php';
+require 'function/student.php';*/
 require 'function/coursecode.php';
 require 'function/staff.php';
-
+require 'function/cscco.php';
 
 $current_file= explode('/',$_SERVER['SCRIPT_NAME']);
 $current_file=end($current_file);
@@ -22,10 +19,6 @@ if(logged_in() === true) {
     $stu_data = stu_data( $session_id, 'id', 'fullname', 'coursename','name_w_initials','email');
     $coursecodinator_data = coursecodinator_data( $session_id, 'id','fullname', 'email', 'password');
 
-
-
-
-    $errors = [];
 }
 
 

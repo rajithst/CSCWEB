@@ -1,6 +1,6 @@
 <?php
 
-require '../core/init.php';
+//require '../core/init.php';
 include "../components/page_head.php";
 
 ?>

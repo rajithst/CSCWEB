@@ -1,26 +1,12 @@
-<?php require '../core/init.php';
-
-include '../components/course_head.php';
-    $id =  $_GET['u'];
-    $_SESSION['id']= $id;
-
-/*if(logged_in() === false){
-
-    session_destroy();
-    header('Location:../index.php');
-    exit();
-
-}*/
-
-
-
-
+<?php session_start()
+include '../core/init.php';
+include '../core/function/coursecode.php';
 ?>
 
 
 
     </head>
-<body xmlns="http://www.w3.org/1999/html">
+<body>
 
     <!--start of the navbar<!-->
     <nav class="navbar navbar-custom" role = "navigation">
@@ -49,8 +35,7 @@ include '../components/course_head.php';
                             <li class="dropdown-submenu">
                                 <?php
 
-                                $id =  $_GET['u'];
-                                $_SESSION['id']= $id;
+                               //$id = $_SESSION['id']
 
                                 $res = getcourse_cord($id);
 

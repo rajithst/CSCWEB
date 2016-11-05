@@ -1,5 +1,5 @@
-<?php 
-
+<?php session_start();
+include '../init.php';
 include '../components/cscordinator_head.php'; ?>
 
 </head>
@@ -20,7 +20,7 @@ include '../components/cscordinator_head.php'; ?>
         <li><a href="index.php" style="height:50px;"><span class="glyphicon glyphicon-home"></span> HOME</a>
         <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-globe"></span> NOTIFICATIONS</a></li>
         <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-envelope"></span> MESSAGES</a></li>
-        <li><a class="navbar-brand navbar-right" href="#" style="height:40px;"> (LOGOUT)</a></li>
+        <li><a class="navbar-brand navbar-right" href="#" style="height:40px;"> </a></li>
       </ul>
     </div>
   </div>
@@ -116,6 +116,8 @@ include '../components/cscordinator_head.php'; ?>
     <div class="container-fluid">
         <div class="panel panel-default">
             <div class="panel-heading"  style="background-color:black;" id="newsfeed"><strong>News Feed</strong></div>
+
+            <h2> <?php print_r($_SESSION); ?></h2>
             <div class="panel-body" id="newsfeed-panelbody" style="background-color:dimgray;"></div>
         </div>
     </div>

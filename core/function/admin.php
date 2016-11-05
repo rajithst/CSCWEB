@@ -1,8 +1,8 @@
 <?php
-$con = mysqli_connect('localhost', 'root', '',  'csc');
+$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 
 function user_id_from_email($email) {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 
 	$sql        = "SELECT id FROM adminusers  WHERE email = '$email'";
 	$query      = mysqli_query($con, $sql);
@@ -13,7 +13,7 @@ function user_id_from_email($email) {
 
 function login( $email, $password) {
 
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 	$user_id  = user_id_from_email($email);
 	$password = md5($password);
 	$sql      = "SELECT * FROM adminusers WHERE email= '$email' AND password='$password'";
@@ -25,7 +25,7 @@ function login( $email, $password) {
 }
 
 function user_data($id) {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 	$data = array();
 	$id   = (int) $id;
 
@@ -51,7 +51,7 @@ function logged_in() {
 }
 
 if (isset($_GET['call'])) {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 	$sql = " SELECT email from staff";
 	$res = mysqli_query($con, $sql);
 
@@ -67,7 +67,7 @@ if (isset($_GET['call'])) {
 }
 
 function adminusers( $id) {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 	$sql = "SELECT id,name,role,email FROM adminusers WHERE id =$id";
 	$res = mysqli_query($con, $sql);
 	return $res;
@@ -75,7 +75,7 @@ function adminusers( $id) {
 }
 
 function postdata($postdata) {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 	$fields = '`'.implode('`,`', array_keys($postdata)).'`';
 	$data   = '\''.implode('\', \'', $postdata).'\' ';
 
@@ -85,7 +85,7 @@ function postdata($postdata) {
 }
 
 function published( $id) {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 	$sql = "SELECT posts.adminid,posts.subject,posts.date,adminusers.name,adminusers.role FROM posts INNER JOIN adminusers WHERE type = 1 AND adminusers.id=posts.adminid";
 	$res = mysqli_query($con, $sql);
 	return $res;
@@ -93,7 +93,7 @@ function published( $id) {
 }
 
 function allusers($id) {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 	$sql = "SELECT * FROM staff";
 	$res = mysqli_query($con, $sql);
 	return $res;
@@ -102,7 +102,7 @@ function allusers($id) {
 
 
 function adduser( $postdata) {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 	$fields = '`'.implode('`,`', array_keys($postdata)).'`';
 	$data   = '\''.implode('\', \'', $postdata).'\' ';
 
@@ -116,7 +116,7 @@ function email($to, $subject, $body) {
 }
 
 function changeimage( $user_id, $file_temp, $file_extn) {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 	$file_path = '../public/dist/img/profile/'.substr(md5(time()), 0, 10).'.'.$file_extn;
 	move_uploaded_file($file_temp, $file_path);
 	$query = "UPDATE adminusers SET profile = '".$file_path."' WHERE id= ".(int) $user_id;
@@ -126,7 +126,7 @@ function changeimage( $user_id, $file_temp, $file_extn) {
 }
 
 function draftpost() {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 	$sql = "SELECT * FROM posts WHERE type=2";
 	$res = $con->query($sql);
 	return $res;
@@ -134,7 +134,7 @@ function draftpost() {
 }
 
 function activity_data( $id) {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 	$data = array();
 	$id   = (int) $id;
 
@@ -155,7 +155,7 @@ function activity_data( $id) {
 }
 
 function backupdata() {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 	header('Content-Type: text/csv; charset=utf-8');
 
 	header('Content-Disposition: attachment; filename=members.csv');
@@ -175,7 +175,7 @@ function backupdata() {
 }
 
 function showtables() {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 	$sql = "SHOW TABLES";
 	$res = $con->query($sql);
 	return $res;
@@ -183,7 +183,7 @@ function showtables() {
 }
 
 function putdraft( $postdata) {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 	$fields = '`'.implode('`,`', array_keys($postdata)).'`';
 	$data   = '\''.implode('\', \'', $postdata).'\' ';
 

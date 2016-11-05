@@ -2,763 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f1d35d0-92e6-4db0-8b8c-4dd84c35362e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/adduser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/allusers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/compose.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/draft.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/general.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/inbox.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/login.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logout.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newpost.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/profile.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/_all-skins.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/_all-skins.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-black-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-black-light.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-black.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-black.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-blue-light.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-blue.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-green-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-green-light.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-green.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-purple-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-purple-light.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-purple.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-red-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-red-light.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-red.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-yellow-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-yellow-light.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-yellow.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/img/profile/1e11d1da51.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/img/profile/247d419b2d.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/img/profile/392bef5a63.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/img/profile/44f557b3d4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/img/profile/592ad7ec6a.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/img/profile/aeb5e33cbb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/img/profile/e1255dd019.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/js/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/js/notification.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/js/noty.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/js/pages/dashboard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/js/pages/dashboard2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/bootstrap-slider/bootstrap-slider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/bootstrap-slider/slider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/colorpicker/bootstrap-colorpicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/colorpicker/bootstrap-colorpicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/colorpicker/bootstrap-colorpicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/colorpicker/bootstrap-colorpicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/colorpicker/img/alpha-horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/colorpicker/img/alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/colorpicker/img/hue-horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/colorpicker/img/hue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/colorpicker/img/saturation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/License.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/css/autoFill.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/css/autoFill.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/css/autoFill.bootstrap4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/css/autoFill.bootstrap4.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/css/autoFill.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/css/autoFill.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/css/autoFill.foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/css/autoFill.foundation.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/css/autoFill.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/css/autoFill.jqueryui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/css/autoFill.semanticui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/css/autoFill.semanticui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/initialisation/alwaysAsk.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/initialisation/columns.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/initialisation/events.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/initialisation/fills.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/initialisation/focus.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/initialisation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/initialisation/keyTable.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/initialisation/plugins.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/initialisation/scrolling.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/initialisation/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/styling/bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/styling/bootstrap4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/styling/foundation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/styling/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/styling/jqueryui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/styling/semanticui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/js/autoFill.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/js/autoFill.bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/js/autoFill.bootstrap4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/js/autoFill.bootstrap4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/js/autoFill.foundation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/js/autoFill.foundation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/js/autoFill.jqueryui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/js/autoFill.jqueryui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/js/autoFill.semanticui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/js/autoFill.semanticui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/License.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/css/buttons.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/css/buttons.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/css/buttons.bootstrap4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/css/buttons.bootstrap4.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/css/buttons.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/css/buttons.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/css/buttons.foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/css/buttons.foundation.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/css/buttons.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/css/buttons.jqueryui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/css/buttons.semanticui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/css/buttons.semanticui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/css/common.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/css/mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/api/addRemove.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/api/enable.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/api/group.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/api/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/api/text.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/column_visibility/columnGroups.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/column_visibility/columns.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/column_visibility/columnsToggle.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/column_visibility/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/column_visibility/layout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/column_visibility/restore.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/column_visibility/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/column_visibility/stateSave.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/column_visibility/text.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/flash/copyi18n.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/flash/filename.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/flash/hidden.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/flash/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/flash/pdfMessage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/flash/pdfPage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/flash/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/flash/swfPath.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/flash/tsv.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/columns.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/copyi18n.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/customFile.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/excelBorder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/excelCellShading.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/excelTextBold.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/filename.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/outputFormat-function.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/outputFormat-orthogonal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/pdfImage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/pdfMessage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/pdfOpen.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/pdfPage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/html5/tsv.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/initialisation/className.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/initialisation/collections-autoClose.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/initialisation/collections-sub.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/initialisation/collections.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/initialisation/custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/initialisation/export.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/initialisation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/initialisation/keys.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/initialisation/multiple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/initialisation/new.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/initialisation/pageLength.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/initialisation/plugins.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/initialisation/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/print/autoPrint.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/print/columns.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/print/customisation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/print/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/print/message.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/print/select.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/print/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/styling/bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/styling/bootstrap4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/styling/foundation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/styling/icons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/styling/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/styling/jqueryui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/examples/styling/semanticui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.bootstrap4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.bootstrap4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.colVis.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.colVis.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.flash.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.flash.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.foundation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.foundation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.html5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.html5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.jqueryui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.jqueryui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.print.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.print.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.semanticui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/buttons.semanticui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/dataTables.buttons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/js/dataTables.buttons.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Buttons/swf/flashExport.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/License.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/css/colReorder.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/css/colReorder.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/css/colReorder.bootstrap4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/css/colReorder.bootstrap4.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/css/colReorder.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/css/colReorder.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/css/colReorder.foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/css/colReorder.foundation.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/css/colReorder.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/css/colReorder.jqueryui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/css/colReorder.semanticui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/css/colReorder.semanticui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/initialisation/col_filter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/initialisation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/initialisation/new_init.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/initialisation/predefined.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/initialisation/realtime.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/initialisation/reset.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/initialisation/scrolling.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/initialisation/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/integration/colvis.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/integration/fixedcolumns.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/integration/fixedheader.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/integration/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/integration/responsive.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/integration/server_side.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/integration/state_save.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/styling/alt_insert.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/styling/bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/styling/bootstrap4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/styling/foundation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/styling/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/styling/jqueryui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/styling/semanticui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/License.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/css/fixedColumns.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/css/fixedColumns.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/css/fixedColumns.bootstrap4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/css/fixedColumns.bootstrap4.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/css/fixedColumns.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/css/fixedColumns.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/css/fixedColumns.foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/css/fixedColumns.foundation.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/css/fixedColumns.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/css/fixedColumns.jqueryui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/css/fixedColumns.semanticui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/css/fixedColumns.semanticui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/initialisation/colvis.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/initialisation/css_size.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/initialisation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/initialisation/index_column.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/initialisation/left_right_columns.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/initialisation/right_column.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/initialisation/server-side-processing.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/initialisation/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/initialisation/size_fixed.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/initialisation/size_fluid.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/initialisation/two_columns.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/integration/api.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/integration/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/integration/select-checkbox.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/integration/select.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/styling/bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/styling/bootstrap4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/styling/col_filter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/styling/colvis.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/styling/foundation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/styling/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/styling/jqueryui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/styling/rowspan.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/styling/rtl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/styling/semanticui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/styling/server-side-processing.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/License.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/css/fixedHeader.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/css/fixedHeader.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/css/fixedHeader.bootstrap4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/css/fixedHeader.bootstrap4.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/css/fixedHeader.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/css/fixedHeader.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/css/fixedHeader.foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/css/fixedHeader.foundation.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/css/fixedHeader.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/css/fixedHeader.jqueryui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/css/fixedHeader.semanticui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/css/fixedHeader.semanticui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/integration/buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/integration/colreorder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/integration/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/integration/responsive-bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/integration/responsive.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/options/enable-disable.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/options/header_footer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/options/horizontal-scroll.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/options/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/options/new.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/options/offset-automatic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/options/offset.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/options/show-hide.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/options/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/options/two_tables.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/styling/bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/styling/bootstrap4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/styling/foundation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/styling/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/styling/jqueryui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/styling/semanticui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/License.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/css/keyTable.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/css/keyTable.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/css/keyTable.bootstrap4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/css/keyTable.bootstrap4.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/css/keyTable.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/css/keyTable.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/css/keyTable.foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/css/keyTable.foundation.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/css/keyTable.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/css/keyTable.jqueryui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/css/keyTable.semanticui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/css/keyTable.semanticui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/initialisation/events.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/initialisation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/initialisation/scroller.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/initialisation/scrolling.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/initialisation/server-side.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/initialisation/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/initialisation/stateSave.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/styling/bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/styling/bootstrap4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/styling/focusStyle.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/styling/foundation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/styling/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/styling/jqueryui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/styling/semanticui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/License.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/css/responsive.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/css/responsive.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/css/responsive.bootstrap4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/css/responsive.bootstrap4.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/css/responsive.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/css/responsive.foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/css/responsive.foundation.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/css/responsive.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/css/responsive.jqueryui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/css/responsive.semanticui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/css/responsive.semanticui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/child-rows/column-control.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/child-rows/custom-renderer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/child-rows/disable-child-rows.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/child-rows/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/child-rows/right-column.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/child-rows/whole-row-control.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/column-control/auto.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/column-control/classes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/column-control/colreorder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/column-control/column-visibility.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/column-control/columnPriority.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/column-control/fixedHeader.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/column-control/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/column-control/init-classes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/display-types/bootstrap-modal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/display-types/bootstrap4-modal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/display-types/foundation-modal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/display-types/immediateShow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/display-types/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/display-types/jqueryui-modal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/display-types/modal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/display-types/semanticui-modal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/initialisation/ajax.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/initialisation/className.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/initialisation/default.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/initialisation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/initialisation/new.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/initialisation/option.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/styling/bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/styling/bootstrap4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/styling/compact.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/styling/foundation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/styling/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/styling/jqueryui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/styling/scrolling.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/styling/semanticui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/js/dataTables.responsive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/js/responsive.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/js/responsive.bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/js/responsive.bootstrap4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/js/responsive.bootstrap4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/js/responsive.foundation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/js/responsive.foundation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/js/responsive.jqueryui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/js/responsive.jqueryui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/js/responsive.semanticui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/js/responsive.semanticui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/License.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/css/rowReorder.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/css/rowReorder.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/css/rowReorder.bootstrap4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/css/rowReorder.bootstrap4.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/css/rowReorder.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/css/rowReorder.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/css/rowReorder.foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/css/rowReorder.foundation.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/css/rowReorder.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/css/rowReorder.jqueryui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/css/rowReorder.semanticui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/css/rowReorder.semanticui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/css/semanticui.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/initialisation/defaults.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/initialisation/events.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/initialisation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/initialisation/responsive.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/initialisation/restrictedOrdering.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/initialisation/scroll.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/initialisation/selector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/initialisation/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/styling/bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/styling/bootstrap4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/styling/foundation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/styling/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/styling/jqueryui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/styling/reorderClass.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/styling/semanticui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/examples/styling/snapX.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/js/dataTables.rowReorder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/RowReorder/js/dataTables.rowReorder.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/License.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/css/scroller.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/css/scroller.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/css/scroller.bootstrap4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/css/scroller.bootstrap4.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/css/scroller.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/css/scroller.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/css/scroller.foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/css/scroller.foundation.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/css/scroller.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/css/scroller.jqueryui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/css/scroller.semanticui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/css/scroller.semanticui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/data/2500.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/data/ssp.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/initialisation/api_scrolling.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/initialisation/fixedColumns.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/initialisation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/initialisation/large_js_source.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/initialisation/select.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/initialisation/server-side_processing.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/initialisation/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/initialisation/state_saving.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/styling/bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/styling/bootstrap4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/styling/foundation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/styling/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/styling/jqueryui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/styling/semanticui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/js/dataTables.scroller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/License.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/css/select.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/css/select.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/css/select.bootstrap4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/css/select.bootstrap4.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/css/select.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/css/select.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/css/select.foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/css/select.foundation.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/css/select.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/css/select.jqueryui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/css/select.semanticui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/css/select.semanticui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/api/cancellableEvents.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/api/events.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/api/get.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/api/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/api/select.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/initialisation/blurable.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/initialisation/buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/initialisation/cells.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/initialisation/checkbox.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/initialisation/deferRender.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/initialisation/i18n.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/initialisation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/initialisation/multi.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/initialisation/reload.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/initialisation/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/initialisation/single.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/styling/bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/styling/bootstrap4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/styling/foundation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/styling/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/styling/jqueryui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/examples/styling/semanticui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/js/dataTables.select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/extensions/Select/js/dataTables.select.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/css/dataTables.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/css/dataTables.bootstrap4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/css/dataTables.foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/css/dataTables.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/css/dataTables.material.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/css/dataTables.semanticui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/css/dataTables.uikit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/css/jquery.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/css/jquery.dataTables_themeroller.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/images/Sorting icons.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/images/sort_asc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/images/sort_asc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/images/sort_both.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/images/sort_desc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/images/sort_desc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/js/dataTables.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/js/dataTables.bootstrap4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/js/dataTables.foundation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/js/dataTables.jqueryui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/js/dataTables.material.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/js/dataTables.semanticui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/js/dataTables.uikit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/js/jquery.dataTables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datatables/media/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/bootstrap-datepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/datepicker3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.az.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.cy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.gl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ka.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.kk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.kr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.mk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.nl-BE.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.no.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.pt-BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.rs-latin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.rs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.sq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.sw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ua.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.zh-TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/daterangepicker/daterangepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/daterangepicker/daterangepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/daterangepicker/moment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/daterangepicker/moment.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/_all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/aero.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/aero.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/aero@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/blue@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/flat.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/flat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/flat@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/green@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/grey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/grey@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/orange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/orange@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/pink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/pink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/pink@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/purple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/purple@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/red@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/flat/yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/futurico/futurico.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/futurico/futurico.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/futurico/futurico@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/icheck.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/icheck.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/line/_all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/line/aero.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/line/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/line/green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/line/grey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/line/line.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/line/line.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/line/line@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/line/orange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/line/pink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/line/purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/line/red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/line/yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/_all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/aero.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/aero.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/aero@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/blue@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/green@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/grey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/grey@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/minimal.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/minimal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/minimal@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/orange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/orange@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/pink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/pink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/pink@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/purple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/purple@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/red@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/minimal/yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/polaris/polaris.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/polaris/polaris.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/polaris/polaris@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/_all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/aero.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/aero.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/aero@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/blue@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/green@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/grey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/grey@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/orange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/orange@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/pink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/pink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/pink@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/purple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/purple@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/red@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/square.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/square.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/square@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/sparkline/jquery.sparkline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/sparkline/jquery.sparkline.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/timepicker/bootstrap-timepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/timepicker/bootstrap-timepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/timepicker/bootstrap-timepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/plugins/timepicker/bootstrap-timepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/published.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sent.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-blue-light.css" afterPath="$PROJECT_DIR$/public/dist/css/skin-blue-light.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/dist/css/skins/skin-blue.css" afterPath="$PROJECT_DIR$/public/dist/css/skin-blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/activity_bar.php" afterPath="$PROJECT_DIR$/components/activity_bar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/navbar.php" afterPath="$PROJECT_DIR$/components/navbar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/page_head.php" afterPath="$PROJECT_DIR$/components/page_head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/page_tail.php" afterPath="$PROJECT_DIR$/components/page_tail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/sidebar.php" afterPath="$PROJECT_DIR$/components/sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/db/database.php" afterPath="$PROJECT_DIR$/core/db/database.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/mainlogin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/mainloginbody.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/dist/css/modalform.css" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/logall.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/deletepost.php" afterPath="$PROJECT_DIR$/admin/deletepost.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/deleteposted.php" afterPath="$PROJECT_DIR$/admin/deleteposted.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/profile.php" afterPath="$PROJECT_DIR$/admin/profile.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/admin.php" afterPath="$PROJECT_DIR$/core/function/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/coursecode.php" afterPath="$PROJECT_DIR$/core/function/coursecode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/frontend.php" afterPath="$PROJECT_DIR$/core/function/frontend.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/staff.php" afterPath="$PROJECT_DIR$/core/function/staff.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/student.php" afterPath="$PROJECT_DIR$/core/function/student.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/init.php" afterPath="$PROJECT_DIR$/core/init.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/animate.css" afterPath="$PROJECT_DIR$/public/dist/css/animate.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/basic.css" afterPath="$PROJECT_DIR$/public/dist/css/basic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/buttons.css" afterPath="$PROJECT_DIR$/public/dist/css/buttons.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/getsubs.php" afterPath="$PROJECT_DIR$/courseco/getsubs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/logout.php" afterPath="$PROJECT_DIR$/courseco/logout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/handle_course.php" afterPath="$PROJECT_DIR$/cscco/handle_course.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/getsubs.php" afterPath="$PROJECT_DIR$/staff/getsubs.php" />
     </list>
     <ignored path="mvc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -770,7 +33,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -780,41 +42,28 @@
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
     <PATH>
       <PATH_ELEMENT>
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="csc" />
+        <option name="myItemId" value="MySQL - csc@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - csc@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
         <option name="myItemId" value="staff" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="csc" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="csc" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="adminusers" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -825,97 +74,118 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/init.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="-42">
+              <caret line="156" column="38" selection-start-line="156" selection-start-column="38" selection-end-line="156" selection-end-column="38" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#center#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="frontend.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/function/frontend.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <marker date="1478112355474" expanded="true" signature="170:236" ph="SELECT * FRO... staff" />
+                <marker date="1478112355474" expanded="true" signature="318:330" ph="SELECT role " />
+                <marker date="1478112355474" expanded="true" signature="318:363" ph="SELECT role staff" />
+                <marker date="1478112355474" expanded="true" signature="785:821" ph="SELECT ${$fi... staff" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="submit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/submit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1477651417719" expanded="true" signature="138:187" ph="SELECT useri... ${$table}" />
+                <marker date="1477651417719" expanded="true" signature="828:898" ph="SELECT * FRO... ${$table}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+        <entry file="file://$PROJECT_DIR$/staff/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.7090907">
-              <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logall.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/logall.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27546296">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-              <folding>
-                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/dashboard.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.76923">
-              <caret line="59" column="0" selection-start-line="54" selection-start-column="8" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allusers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/allusers.php">
+      <file leaf-file-name="email.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/email.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.307693">
-              <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="report.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staff/report.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select_course.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staff/select_course.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="attendance.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staff/attendance.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3312">
+              <caret line="184" column="70" selection-start-line="184" selection-start-column="67" selection-end-line="184" selection-end-column="70" />
               <folding>
-                <marker date="1473683794357" expanded="true" signature="3468:3486" placeholder="..." />
-                <marker date="1473683794357" expanded="true" signature="3575:3593" placeholder="..." />
-                <marker date="1473683794357" expanded="true" signature="3690:3708" placeholder="..." />
-                <marker date="1473683794357" expanded="true" signature="3804:3822" placeholder="..." />
-                <marker date="1473683794357" expanded="true" signature="3914:3932" placeholder="..." />
-                <marker date="1473683794357" expanded="true" signature="4024:4042" placeholder="..." />
+                <marker date="1477651347221" expanded="true" signature="7352:7404" ph="SELECT atten... student" />
+                <marker date="1477651347221" expanded="true" signature="7578:7636" ph="UPDATE stude... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page_tail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/page_tail.php">
+      <file leaf-file-name="expense.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staff/expense.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769">
-              <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page_head.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/page_head.php">
+      <file leaf-file-name="getsubs.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staff/getsubs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.038462">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frontend.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/function/frontend.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.0">
-              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+            <state relative-caret-position="108">
+              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
               <folding>
-                <marker date="1473705721327" expanded="true" signature="115:165" placeholder="SELECT `id` staff" />
-                <marker date="1473705721327" expanded="true" signature="447:519" placeholder="SELECT * FRO... staff" />
-                <marker date="1473705721327" expanded="true" signature="942:982" placeholder="SELECT ${$fi... staff" />
+                <marker date="1477837318630" expanded="true" signature="138:200" ph="SELECT subje... subjects" />
               </folding>
             </state>
           </provider>
@@ -936,18 +206,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/Admin/components/page_tail.php" />
-        <option value="$PROJECT_DIR$/controllers/dashboard.php" />
-        <option value="$PROJECT_DIR$/controllers/login.php" />
-        <option value="$PROJECT_DIR$/views/Admin/login.php" />
-        <option value="$PROJECT_DIR$/Admin/components/page_head.php" />
         <option value="$PROJECT_DIR$/core/func/admin/admin.php" />
         <option value="$PROJECT_DIR$/Admin/login.php" />
         <option value="$PROJECT_DIR$/core/db/database.php" />
         <option value="$PROJECT_DIR$/logout.php" />
         <option value="$PROJECT_DIR$/components/footer.php" />
         <option value="$PROJECT_DIR$/components/sidebar_head.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/sent.php" />
         <option value="$PROJECT_DIR$/components/activity_bar.php" />
         <option value="$PROJECT_DIR$/public/dist/js/jquery.sessionTimeout.js" />
@@ -981,28 +245,35 @@
         <option value="$PROJECT_DIR$/newpost.php" />
         <option value="$PROJECT_DIR$/public/dist/js/notification.js" />
         <option value="$PROJECT_DIR$/components/page_head.php" />
-        <option value="$PROJECT_DIR$/core/init.php" />
         <option value="$PROJECT_DIR$/public/dist/js/scripts.js" />
-        <option value="$PROJECT_DIR$/core/function/frontend.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/components/page_tail.php" />
         <option value="$PROJECT_DIR$/logall.php" />
+        <option value="$PROJECT_DIR$/staff/attendance.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/submit.php" />
+        <option value="$PROJECT_DIR$/core/init.php" />
+        <option value="$PROJECT_DIR$/cscco/handle_course.php" />
+        <option value="$PROJECT_DIR$/core/function/staff.php" />
+        <option value="$PROJECT_DIR$/staff/getsubs.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/core/function/frontend.php" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="30" />
-    <option name="width" value="1920" />
-    <option name="height" value="1050" />
+    <option name="x" value="-2" />
+    <option name="width" value="1924" />
+    <option name="height" value="1063" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -1029,7 +300,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -1046,7 +316,7 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1056,11 +326,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1070,15 +340,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1088,63 +354,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="function" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1155,6 +378,7 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;HSQLDB (Remote)" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1175,7 +399,7 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -1190,6 +414,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
@@ -1200,10 +425,12 @@
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
       <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter />
       <node-options />
       <working-directory>$PROJECT_DIR$</working-directory>
       <pass-parent-env>true</pass-parent-env>
@@ -1216,7 +443,9 @@
       <method />
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -1225,21 +454,29 @@
       <changelist id="0f1d35d0-92e6-4db0-8b8c-4dd84c35362e" name="Default" comment="" />
       <created>1472217464241</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1472217464241</updated>
+      <workItem from="1477650657511" duration="761000" />
+      <workItem from="1477743476067" duration="2726000" />
+      <workItem from="1477835821931" duration="2298000" />
+      <workItem from="1478100056642" duration="2367000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8152000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1920" height="1050" extended-state="0" />
-    <editor active="true" />
+    <frame x="-2" y="0" width="1924" height="1063" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18494624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24227902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18064517" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22364217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10171306" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31188658" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.026288118" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1291,62 +528,83 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/components/page_tail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/page_head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/function/frontend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <marker date="1478112355474" expanded="true" signature="170:236" ph="SELECT * FRO... staff" />
+            <marker date="1478112355474" expanded="true" signature="318:330" ph="SELECT role " />
+            <marker date="1478112355474" expanded="true" signature="318:363" ph="SELECT role staff" />
+            <marker date="1478112355474" expanded="true" signature="785:821" ph="SELECT ${$fi... staff" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/components/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7454543">
+        <state relative-caret-position="0">
           <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/dist/css/animate.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2031.0">
+        <state relative-caret-position="0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/dist/css/buttons.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="217.23077">
+        <state relative-caret-position="0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/dist/css/skin-blue-light.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.807693">
+        <state relative-caret-position="0">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/dist/css/skin-blue.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/dist/css/basic.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029929578">
+        <state relative-caret-position="0">
           <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024285715">
+        <state relative-caret-position="0">
           <caret line="71" column="32" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d87afa5e-1ded-42dd-8fc1-43ca940fee7c/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d87afa5e-1ded-42dd-8fc1-43ca940fee7c/console_1.sql" />
     <entry file="uml://DATABASE/807aa3fb-4343-497b-97e6-b6f1f7fa92b2.TABLE:csc.posts">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1367,13 +625,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/807aa3fb-4343-497b-97e6-b6f1f7fa92b2/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/807aa3fb-4343-497b-97e6-b6f1f7fa92b2/console.sql" />
     <entry file="uml://DATABASE/807aa3fb-4343-497b-97e6-b6f1f7fa92b2">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1397,20 +649,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/756af51c-ac1c-4503-8067-4641179bf890/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d87afa5e-1ded-42dd-8fc1-43ca940fee7c/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/756af51c-ac1c-4503-8067-4641179bf890/console.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d87afa5e-1ded-42dd-8fc1-43ca940fee7c/console.sql" />
     <entry file="uml://DATABASE/d87afa5e-1ded-42dd-8fc1-43ca940fee7c.TABLE:mvc.staff">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1467,29 +707,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/dist/img/profile/4590b241c3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/4eeec8b/756af51c-ac1c-4503-8067-4641179bf890/csc.adminusers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dist/img/profile/4590b241c3.jpg" />
+    <entry file="dbDummy://dbtable:/4eeec8b/756af51c-ac1c-4503-8067-4641179bf890/csc.adminusers" />
     <entry file="file://$PROJECT_DIR$/public/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1509,155 +732,237 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="242.0" y="336.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Key columns</Category>
             <Category>Columns</Category>
+            <Category>Key columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/adduser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
+        <state relative-caret-position="0">
           <caret line="2" column="27" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/4eeec8b/756af51c-ac1c-4503-8067-4641179bf890/csc.staff">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.846153">
-          <caret line="45" column="14" selection-start-line="23" selection-start-column="5" selection-end-line="45" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/4eeec8b/756af51c-ac1c-4503-8067-4641179bf890/csc.staff" />
+    <entry file="file://$PROJECT_DIR$/admin/login.php" />
     <entry file="file://$PROJECT_DIR$/components/activity_bar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/function/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.568287">
+        <state relative-caret-position="0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f46fc746-fde5-4c52-985a-0c059a8e8838/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2034">
+          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding>
-            <element signature="e#1101#1434#0#PHP" expanded="false" />
-            <element signature="n#adminusers#0;n#!!top" expanded="false" />
-            <element signature="n#published#0;n#!!top" expanded="false" />
-            <element signature="n#countmembers#0;n#!!top" expanded="false" />
-            <element signature="n#adduser#0;n#!!top" expanded="false" />
-            <element signature="n#backupdata#0;n#!!top" expanded="false" />
-            <element signature="n#showtables#0;n#!!top" expanded="false" />
-            <marker date="1473684640535" expanded="true" signature="114:169" placeholder="SELECT `id` adminusers" />
-            <marker date="1473684640535" expanded="true" signature="447:524" placeholder="SELECT * FRO... adminusers" />
-            <marker date="1473684640535" expanded="true" signature="896:941" placeholder="SELECT ${$fi... adminusers" />
-            <marker date="1473684640535" expanded="true" signature="1147:1170" placeholder="SELECT email... staff" />
-            <marker date="1473684640535" expanded="true" signature="1541:1593" placeholder="SELECT id,na... adminusers" />
-            <marker date="1473684640535" expanded="true" signature="1825:1866" placeholder="INSERT INTO posts... " />
-            <marker date="1473684640535" expanded="true" signature="1949:2106" placeholder="SELECT posts... posts" />
-            <marker date="1473684640535" expanded="true" signature="2207:2226" placeholder="SELECT * FRO... staff" />
-            <marker date="1473684640535" expanded="true" signature="2485:2526" placeholder="INSERT INTO staff... " />
-            <marker date="1473684640535" expanded="true" signature="2924:2987" placeholder="UPDATE admin... " />
-            <marker date="1473684640535" expanded="true" signature="3104:3136" placeholder="SELECT * FRO... posts" />
-            <marker date="1473684640535" expanded="true" signature="3481:3529" placeholder="SELECT ${$fi... activity" />
-            <marker date="1473684640535" expanded="true" signature="3839:3876" placeholder="SELECT * FRO... members" />
-            <marker date="1473684640535" expanded="true" signature="4461:4502" placeholder="INSERT INTO posts... " />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#center#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/function/frontend.php">
+    <entry file="file://$PROJECT_DIR$/cscco/handle_course.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-          <folding>
-            <marker date="1473705721327" expanded="true" signature="115:165" placeholder="SELECT `id` staff" />
-            <marker date="1473705721327" expanded="true" signature="447:519" placeholder="SELECT * FRO... staff" />
-            <marker date="1473705721327" expanded="true" signature="942:982" placeholder="SELECT ${$fi... staff" />
-          </folding>
+        <state relative-caret-position="-421">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/function/coursecode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/function/cscco.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/allusers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.307693">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        <state relative-caret-position="540">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/page_tail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/page_head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/function/staff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
           <folding>
-            <marker date="1473683794357" expanded="true" signature="3468:3486" placeholder="..." />
-            <marker date="1473683794357" expanded="true" signature="3575:3593" placeholder="..." />
-            <marker date="1473683794357" expanded="true" signature="3690:3708" placeholder="..." />
-            <marker date="1473683794357" expanded="true" signature="3804:3822" placeholder="..." />
-            <marker date="1473683794357" expanded="true" signature="3914:3932" placeholder="..." />
-            <marker date="1473683794357" expanded="true" signature="4024:4042" placeholder="..." />
+            <marker date="1477837047452" expanded="true" signature="100:121" ph="SELECT * FRO... courses" />
+            <marker date="1477837047452" expanded="true" signature="233:330" ph="SELECT * FRO... student" />
+            <marker date="1477837047452" expanded="true" signature="276:329" ph="SELECT subje... subjects" />
+            <marker date="1477837047452" expanded="true" signature="504:550" ph="SELECT *FROM... subjects" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.76923">
-          <caret line="59" column="0" selection-start-line="54" selection-start-column="8" selection-end-line="59" selection-end-column="0" />
+        <state relative-caret-position="762">
+          <caret line="59" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staff/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/page_head.php">
+    <entry file="file://$PROJECT_DIR$/staff/marks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/page_tail.php">
+    <entry file="file://$PROJECT_DIR$/staff/report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staff/select_course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staff/attendance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3312">
+          <caret line="184" column="70" selection-start-line="184" selection-start-column="67" selection-end-line="184" selection-end-column="70" />
+          <folding>
+            <marker date="1477651347221" expanded="true" signature="7352:7404" ph="SELECT atten... student" />
+            <marker date="1477651347221" expanded="true" signature="7578:7636" ph="UPDATE stude... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staff/expense.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staff/getsubs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+          <folding>
+            <marker date="1477837318630" expanded="true" signature="138:200" ph="SELECT subje... subjects" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staff/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1477651417719" expanded="true" signature="138:187" ph="SELECT useri... ${$table}" />
+            <marker date="1477651417719" expanded="true" signature="828:898" ph="SELECT * FRO... ${$table}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7090907">
-          <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+        <state relative-caret-position="-42">
+          <caret line="156" column="38" selection-start-line="156" selection-start-column="38" selection-end-line="156" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#center#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logall.php">
+    <entry file="file://$PROJECT_DIR$/core/function/frontend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27546296">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="252">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1478112355474" expanded="true" signature="170:236" ph="SELECT * FRO... staff" />
+            <marker date="1478112355474" expanded="true" signature="318:330" ph="SELECT role " />
+            <marker date="1478112355474" expanded="true" signature="318:363" ph="SELECT role staff" />
+            <marker date="1478112355474" expanded="true" signature="785:821" ph="SELECT ${$fi... staff" />
           </folding>
         </state>
       </provider>

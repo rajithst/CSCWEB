@@ -1,6 +1,6 @@
 <?php
 require '../core/init.php';
-error_reporting(0);
+error_reporting(1);
 if(logged_in() === false){
 
     session_destroy();

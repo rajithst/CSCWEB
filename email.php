@@ -62,6 +62,18 @@ include '../components/cscordinator_head.php'; ?>
 			    			<input type="submit" value="Submit" class="button">
                               </br>
 			    		</form>
+
+<?php 
+
+
+      if (isset($_POST)) {
+        # code...
+      }
+
+
+
+?>
+
 			    	</div>
 	    		</div>
     		</div>

@@ -1,10 +1,10 @@
 <?php
-$con = mysqli_connect('localhost', 'root', '',  'csc');
+$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 
 
 function coursecodinator_data($id){
 
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $data = array();
     $id   = (int) $id;
 
@@ -25,7 +25,7 @@ function coursecodinator_data($id){
 
 
 function getcourse_cord($id){
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $sql = "SELECT coursename,courseid FROM courses WHERE coursecodeid = $id ";
     $query = mysqli_query($con, $sql);
     return $query;
@@ -42,7 +42,7 @@ function getsubs_cord($course){
 
 function uploadsilde($file_temp,$file_extn){
 
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $file_path = 'slides/'.substr(md5(time()), 0, 10).'.'.$file_extn;
     move_uploaded_file($file_temp, $file_path);
     $query = "INSERT INTO slides (path) VALUES ($file_path)";
@@ -50,19 +50,10 @@ function uploadsilde($file_temp,$file_extn){
     return $file_path;
 }
 
-function getallfucks($subid){
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
-    $sql = "SELECT subject FROM subjects WHERE subjectid='$subid'";
-    $query = mysqli_query($con, $sql);
-    $fetcharray = mysqli_fetch_array($query);
-    return $fetcharray[0];
 
-
-
-}
 
 function  insertslides($data){
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $fields='`' .implode('`,`' ,array_keys($data)) . '`';
     $vals= '\'' . implode('\', \'' ,$data ) . '\' ';
     $sql = "INSERT INTO slides ($fields) VALUES ($vals)";
@@ -76,7 +67,7 @@ function  insertslides($data){
 }
 
 function getslides($subid){
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $sql = "SELECT * FROM slides WHERE subjectid = '$subid'";
     $query = mysqli_query($con, $sql);
     return $query;
@@ -84,8 +75,10 @@ function getslides($subid){
 }
 
 function getccdata($id){
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $sql = "SELECT * FROM staff WHERE id = $id ";
     $query = mysqli_query($con, $sql);
     return $query;
 }
+
+

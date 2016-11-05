@@ -1,9 +1,9 @@
 <?php
 
-$con = mysqli_connect('localhost', 'root', '',  'csc');
+$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 
 /*function user_id_from_nic($nic) {
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $sql        = "SELECT id FROM student  WHERE nic = '$nic'";
     $query      = mysqli_query($con, $sql);
     $fetcharray = mysqli_fetch_array($query);
@@ -13,7 +13,7 @@ $con = mysqli_connect('localhost', 'root', '',  'csc');
 
 function loginstudent($username,$password) {
 
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     //$user_id  = user_id_from_nic($password);
     $user_id  = $password;
     $sql      = "SELECT * FROM student WHERE username= 'csc@gmail.com' AND nic='$password'";
@@ -46,7 +46,7 @@ function getadmin($id){
 
 function stu_data($id) {
 
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $data = array();
 
 
@@ -65,7 +65,7 @@ function stu_data($id) {
 }
 
 function getcourse($id,$subject){
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $sql = "SELECT coursename FROM courses WHERE courseid=(SELECT courseid FROM subjects WHERE subject = '$subject')";
     $query      = mysqli_query($con, $sql);
     $fetcharray = mysqli_fetch_array($query);
@@ -77,7 +77,7 @@ function getcourse($id,$subject){
 }
 
 function getsubjects($course){
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $sql = "SELECT subject,subjectid FROM subjects WHERE courseid=(SELECT courseid FROM courses WHERE coursename='$course') ";
     $query      = mysqli_query($con, $sql);
     return $query;

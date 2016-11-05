@@ -3,7 +3,7 @@
 if (isset($_GET['cid'])){
 
     $cid = $_GET['cid'];
-    $con = mysqli_connect('localhost', 'root', '',  'csc');
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $sql = "SELECT subject,subjectid FROM subjects WHERE courseid = '$cid'";
     $query = mysqli_query($con, $sql);
 
