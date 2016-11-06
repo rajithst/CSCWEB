@@ -114,6 +114,73 @@ include '../components/cscordinator_head.php'; ?>
 	</div>
 </nav>
 
+<br>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right" style="margin-right: 20px;">
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Reports<span class="caret">
+					</a>
+					<ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
+						<li><a tabindex="-1" href="#">Attendence</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a tabindex="-1" href="#">Income</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a tabindex="-1" href="#">Marks</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a tabindex="-1" href="#">Expences</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a tabindex="-1" href="#">Handle Report</a></li>
+						<li role="separator" class="divider"></li>
+					</ul>
+				</li>
+
+				<li class="dropdown">
+					<a href="lecturer.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">HANDLE LECTURER <span class="caret">
+					</a>
+					<ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
+						<li><a tabindex="-1" href="lecturer.php">Handle Lecturer</a></li>
+					</ul>
+				</li>
+
+
+				<li class="dropdown">
+					<a href="course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Courses<span class="caret">
+					</a>
+					<ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
+						<li><a tabindex="-1" href="handle_course.php">Handle Courses</a></li>
+					</ul>
+				</li>
+
+
+
+
+
+
+				<li class="dropdown">
+					<a href="lectures.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Lectures <span class="caret">
+					</a>
+					<ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
+						<li><a tabindex="-1" href="lectures.php">Handle Lectures</a></li>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</nav>
+
 </br>
 
 
@@ -123,27 +190,73 @@ include '../components/cscordinator_head.php'; ?>
 		<br>
 		<div class="col-xs-12 col-sm-8 col-md-6 ">
 
-			<center><h3>Add New Course</h3></center>
+			<center><h3>Add New Lecturer</h3></center>
 			<br>
 			<form class="form-horizontal" action=" " method="post"  id="contact_form">
 
 
+				<div class="form-group">
+					<label class="col-md-4 control-label">First Name</label>
+					<div class="col-md-6 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
 
 				<div class="form-group">
-					<label class="col-md-4 control-label">Parent Category</label>
+					<label class="col-md-4 control-label" >Last Name</label>
+					<div class="col-md-6 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label">E-Mail</label>
+					<div class="col-md-6 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+							<input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Text input-->
+
+				<div class="form-group">
+					<label class="col-md-4 control-label">Phone #</label>
+					<div class="col-md-6 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+							<input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+						</div>
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label class="col-md-4 control-label">Course</label>
 					<div class="col-md-6 selectContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
 							<select name="subject" class="form-control selectpicker" >
-								<option value=" " >Please select parent category</option>
+								<option value=" " >Please select subject</option>
 
 								<?php
 
-								$rows = getcoursefor();
+								$subs = getsubsfor();
 
-								while ( $courses = $rows->fetch_assoc()){ ?>
+								while ( $subjects = $subs->fetch_assoc()){ ?>
 
-									<option><?php echo $courses['coursename']; ?></option>
+									<option><?php echo $subjects['subject']; ?></option>
 
 								<?php	}
 
@@ -155,86 +268,6 @@ include '../components/cscordinator_head.php'; ?>
 						</div>
 					</div>
 				</div>
-
-
-				<div class="form-group">
-					<label class="col-md-4 control-label">Course ID</label>
-					<div class="col-md-6 inputGroupContainer">
-						<div class="input-group">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-exclamation-sign"></i></span>
-							<input  name="first_name"  class="form-control"  type="text" disabled value="3">
-						</div>
-					</div>
-				</div>
-
-				<!-- Text input-->
-
-				<div class="form-group">
-					<label class="col-md-4 control-label" >Course Name</label>
-					<div class="col-md-6 inputGroupContainer">
-						<div class="input-group">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-warning-sign"></i></span>
-							<input name="last_name" placeholder="Course Name" class="form-control"  type="text">
-						</div>
-					</div>
-				</div>
-
-
-
-
-				<!-- Text input-->
-				<div class="form-group">
-					<label class="col-md-4 control-label">Course Coordinator</label>
-					<div class="col-md-6 selectContainer">
-						<div class="input-group">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-							<select name="subject" class="form-control selectpicker" >
-								<option value=" " >Please select Course coordinator</option>
-
-								<?php
-
-								$rows = getcoursecodinators();
-
-								while ( $cscname = $rows->fetch_assoc()){ ?>
-
-									<option><?php echo $cscname['first_name'] . " " .$cscname['last_name']; ?></option>
-
-								<?php	}
-
-
-
-								?>
-
-							</select>
-						</div>
-					</div>
-				</div>
-
-
-				<!-- Text input-->
-
-				<div class="form-group">
-					<label class="col-md-4 control-label">Course Fee</label>
-					<div class="col-md-6 inputGroupContainer">
-						<div class="input-group">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-info-sign"></i></span>
-							<input name="phone" placeholder="Rs" class="form-control" type="text">
-						</div>
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label class="col-md-4 control-label">Course Duration (Number of Weeka)</label>
-					<div class="col-md-6 inputGroupContainer">
-						<div class="input-group">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-info-sign"></i></span>
-							<input name="phone" placeholder="" class="form-control" type="number">
-						</div>
-					</div>
-				</div>
-
-
-
 
 
 				<center><div class="form-group">
@@ -258,7 +291,7 @@ include '../components/cscordinator_head.php'; ?>
 
 		<div class="col-xs-12 col-sm-4 col-md-6 ">
 
-			<center><h3>Current Course data</h3></center>
+			<center><h3>Current Lecturers</h3></center>
 			<br>
 
 			<table class="table table-bordred table-striped" style="width: 100%" id="lectable">

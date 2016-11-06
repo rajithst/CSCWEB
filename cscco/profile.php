@@ -11,9 +11,7 @@ if(logged_in() === false){
 }
 require '../core/init.php';
 require '../core/function/cscco.php';
-
 include '../components/cscordinator_head.php'; ?>
-
 
 <style>
 
@@ -39,9 +37,9 @@ include '../components/cscordinator_head.php'; ?>
 </style>
 
 
-
-
 </head>
+<body>
+
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -88,9 +86,6 @@ include '../components/cscordinator_head.php'; ?>
                                         <div class="col-lg-8">
                                             <p class="text-left"><strong><?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?></strong></p>
                                             <p class="text-left small"><?php echo $staff_data['email']; ?></p>
-                                            <p class="text-left">
-                                                <a href="#" class="btn btn-primary btn-block btn-sm">See Profile</a>
-                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -114,7 +109,7 @@ include '../components/cscordinator_head.php'; ?>
     </div>
 </nav>
 
-<br>
+</br>
 
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -147,7 +142,7 @@ include '../components/cscordinator_head.php'; ?>
                 </li>
 
                 <li class="dropdown">
-                    <a href="handle_lecturer.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">HANDLE LECTURER <span class="caret">
+                    <a href="lecturer.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Lecturer <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                         <li><a tabindex="-1" href="lecturer.php">Handle Lecturer</a></li>
@@ -156,10 +151,10 @@ include '../components/cscordinator_head.php'; ?>
 
 
                 <li class="dropdown">
-                    <a href="handle_course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Courses<span class="caret">
+                    <a href="course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Courses<span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a tabindex="-1" href="handle_course.php">Handle Courses</a></li>
+                        <li><a tabindex="-1" href="course.php">Handle Courses</a></li>
                     </ul>
                 </li>
 
@@ -169,10 +164,10 @@ include '../components/cscordinator_head.php'; ?>
 
 
                 <li class="dropdown">
-                    <a href="handle_lectures.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Lectures <span class="caret">
+                    <a href="lectures.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Lectures <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a tabindex="-1" href="handle_lectures.php">Handle Lectures</a></li>
+                        <li><a tabindex="-1" href="lectures.php">Handle Lectures</a></li>
                         </li>
                     </ul>
                 </li>
@@ -182,163 +177,74 @@ include '../components/cscordinator_head.php'; ?>
     </div>
 </nav>
 
-</br>
+<?php
 
 
-<div class="container-fluid">
-    <div class="row" style="padding: 10px;">
-
-        <br>
-        <div class="col-xs-12 col-sm-8 col-md-6 ">
-
-            <center><h3>Add New Lecturer</h3></center>
-            <br>
-            <form class="form-horizontal" action=" " method="post"  id="contact_form">
+?>
 
 
+
+<div class="container" style="padding-top: 60px;">
+    <h1 class="page-header">Edit Profile</h1>
+    <div class="row">
+        <!-- left column -->
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="text-center">
+                <img src="<?php echo $staff_data['profile']; ?>" class="avatar img-circle img-thumbnail" alt="avatar">
+                <h6>Upload a different photo...</h6>
+                <input type="file" class="text-center center-block well well-sm">
+            </div>
+        </div>
+        <!-- edit form column -->
+        <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+            <h3>Personal info</h3>
+            <form class="form-horizontal" role="form">
                 <div class="form-group">
-                    <label class="col-md-4 control-label">First Name</label>
-                    <div class="col-md-6 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
-                        </div>
+                    <label class="col-lg-3 control-label">First name:</label>
+                    <div class="col-lg-8">
+                        <input class="form-control" value="<?php echo $staff_data['first_name']; ?>" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Last name:</label>
+                    <div class="col-lg-8">
+                        <input class="form-control" value="<?php echo $staff_data['last_name']; ?>" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Email:</label>
+                    <div class="col-lg-8">
+                        <input class="form-control" value="<?php echo $staff_data['email']; ?>" type="text">
                     </div>
                 </div>
 
-                <!-- Text input-->
-
                 <div class="form-group">
-                    <label class="col-md-4 control-label" >Last Name</label>
-                    <div class="col-md-6 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
-                        </div>
+                    <label class="col-md-3 control-label">Password:</label>
+                    <div class="col-md-8">
+                        <input class="form-control" value="" type="password">
                     </div>
                 </div>
-
-                <!-- Text input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label">E-Mail</label>
-                    <div class="col-md-6 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                            <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
-                        </div>
+                    <label class="col-md-3 control-label">Confirm password:</label>
+                    <div class="col-md-8">
+                        <input class="form-control" value="" type="password">
                     </div>
                 </div>
-
-
-                <!-- Text input-->
-
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Phone #</label>
-                    <div class="col-md-6 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                            <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
-                        </div>
+                    <label class="col-md-3 control-label"></label>
+                    <div class="col-md-8">
+                        <input class="btn btn-primary" value="Save Changes" type="button">
+                        <span></span>
+                        <input class="btn btn-default" value="Cancel" type="reset">
                     </div>
                 </div>
-
-
-                <div class="form-group">
-                    <label class="col-md-4 control-label">Course</label>
-                    <div class="col-md-6 selectContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                            <select name="subject" class="form-control selectpicker" >
-                                <option value=" " >Please select subject</option>
-
-                                <?php
-
-                                $subs = getsubsfor();
-
-                                while ( $subjects = $subs->fetch_assoc()){ ?>
-
-                                    <option><?php echo $subjects['subject']; ?></option>
-
-                                <?php	}
-
-
-
-                                ?>
-
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-
-                <center><div class="form-group">
-                        <label class="col-md-4 control-label"></label>
-                        <div class="col-md-6">
-                            <button type="submit" class="btn btn-success" >Submit <span class="glyphicon glyphicon-send"></span> </button>
-                            <button type="reset" class="btn btn-danger" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
-                        </div>
-                    </div>
-
-                </center>
-
-
-
-
             </form>
         </div>
-
-
-
-
-        <div class="col-xs-12 col-sm-4 col-md-6 ">
-
-            <center><h3>Current Lecturers</h3></center>
-            <br>
-
-            <table class="table table-bordred table-striped" style="width: 100%" id="lectable">
-                <thead>
-
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>E mail</th>
-                    <th>Course</th>
-                    <th>Send</th>
-                </tr>
-
-
-                </thead>
-                <tbody>
-                <?php  $lecs = getlecs();
-
-                while ( $lecdata = $lecs->fetch_assoc()){ ?>
-
-                    <tr>
-                        <td><?php echo $lecdata['first_name']; ?></td>
-                        <td><?php echo $lecdata['last_name']; ?></td>
-                        <td><?php echo $lecdata['email']; ?></td>
-                        <td><?php echo $lecdata['subject']; ?></td>
-                        <td> <button class="btn btn-success"> Send Email</button></td>
-                    </tr>
-
-                <?php	}
-
-
-                ?>
-
-                </tbody>
-            </table>
-
-        </div>
     </div>
-
 </div>
 
+
+
+
+
 <?php include "../components/cscordinator_footer.php"; ?>
-<script>
-
-    $(document).ready( function () {
-        $('#lectable').DataTable();
-    } );
-
-</script>

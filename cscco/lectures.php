@@ -147,7 +147,7 @@ include '../components/cscordinator_head.php'; ?>
                 </li>
 
                 <li class="dropdown">
-                    <a href="handle_lecturer.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">HANDLE LECTURER <span class="caret">
+                    <a href="lecturer.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">HANDLE LECTURER <span class="caret">
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                         <li><a tabindex="-1" href="lecturer.php">Handle Lecturer</a></li>
@@ -156,10 +156,10 @@ include '../components/cscordinator_head.php'; ?>
 
 
                 <li class="dropdown">
-                    <a href="handle_course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Courses<span class="caret">
+                    <a href="course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Courses<span class="caret">
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a tabindex="-1" href="handle_course.php">Handle Courses</a></li>
+                        <li><a tabindex="-1" href="course.php">Handle Courses</a></li>
                     </ul>
                 </li>
 
@@ -169,10 +169,10 @@ include '../components/cscordinator_head.php'; ?>
 
 
                 <li class="dropdown">
-                    <a href="handle_lectures.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Lectures <span class="caret">
+                    <a href="lectures.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Lectures <span class="caret">
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a tabindex="-1" href="handle_lectures.php">Handle Lectures</a></li>
+                        <li><a tabindex="-1" href="lectures.php">Handle Lectures</a></li>
                         </li>
                     </ul>
                 </li>
@@ -181,7 +181,6 @@ include '../components/cscordinator_head.php'; ?>
         </div>
     </div>
 </nav>
-
 </br>
 
 
@@ -191,7 +190,7 @@ include '../components/cscordinator_head.php'; ?>
         <br>
         <div class="col-xs-12 col-sm-8 col-md-6 ">
 
-            <center><h3>Add New Lecturer</h3></center>
+            <center><h3>Add New Lecture</h3></center>
             <br>
             <form class="form-horizontal" action=" " method="post"  id="contact_form">
 

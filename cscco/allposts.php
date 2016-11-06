@@ -181,164 +181,84 @@ include '../components/cscordinator_head.php'; ?>
         </div>
     </div>
 </nav>
+<br>
 
-</br>
-
+<center>
+    <h2>Old Posts</h2>
+</center>
 
 <div class="container-fluid">
-    <div class="row" style="padding: 10px;">
+    <div class="row">
 
-        <br>
-        <div class="col-xs-12 col-sm-8 col-md-6 ">
+        <section class="content">
+            <div class="col-md-8 col-md-offset-2">
 
-            <center><h3>Add New Lecturer</h3></center>
-            <br>
-            <form class="form-horizontal" action=" " method="post"  id="contact_form">
+                            <table class="table table-condensed" id="posts">
 
-
-                <div class="form-group">
-                    <label class="col-md-4 control-label">First Name</label>
-                    <div class="col-md-6 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Text input-->
-
-                <div class="form-group">
-                    <label class="col-md-4 control-label" >Last Name</label>
-                    <div class="col-md-6 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Text input-->
-                <div class="form-group">
-                    <label class="col-md-4 control-label">E-Mail</label>
-                    <div class="col-md-6 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                            <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
-                        </div>
-                    </div>
-                </div>
+                                <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Subject</th>
+                                    <th>Published by</th>
 
 
-                <!-- Text input-->
 
-                <div class="form-group">
-                    <label class="col-md-4 control-label">Phone #</label>
-                    <div class="col-md-6 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                            <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
-                        </div>
-                    </div>
-                </div>
+                                </tr>
 
-
-                <div class="form-group">
-                    <label class="col-md-4 control-label">Course</label>
-                    <div class="col-md-6 selectContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                            <select name="subject" class="form-control selectpicker" >
-                                <option value=" " >Please select subject</option>
+                                </thead>
+                                <tbody>
 
                                 <?php
+                                $posts = getpostss();
 
-                                $subs = getsubsfor();
 
-                                while ( $subjects = $subs->fetch_assoc()){ ?>
+                                while ($row = mysqli_fetch_assoc($posts)) {
 
-                                    <option><?php echo $subjects['subject']; ?></option>
+                                $id = $row['adminid'];
 
-                                <?php	}
+                                $admindata = getadmins($id);
+                                while ($data = mysqli_fetch_assoc($admindata)) {
+
+                                    $subj = $row['subject'];
+                                ?>
+
+
+                                    <tr >
+
+                                        <td><?php echo $row['date']; ?></td>
+                                        <td><a href="readpost.php?id=<?php echo $subj; ?>"><?php echo $row['subject']; ?></a></td>
+                                        <td><img src="<?php echo $data['profile']; ?>" alt="" style="width: 5%; height: 10%;">    <?php echo $data['name']; ?></td>
+                                    </tr>
+
+
+                                <?php }
+                                }
 
 
 
                                 ?>
 
-                            </select>
-                        </div>
-                    </div>
-                </div>
+
+                                </tbody><?php echo $row['subject']; ?>
+                            </table>
 
 
-                <center><div class="form-group">
-                        <label class="col-md-4 control-label"></label>
-                        <div class="col-md-6">
-                            <button type="submit" class="btn btn-success" >Submit <span class="glyphicon glyphicon-send"></span> </button>
-                            <button type="reset" class="btn btn-danger" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
-                        </div>
-                    </div>
-
+                <center>
+                    <a href="index.php"><button class="btn btn-info">Go back</button></a>
                 </center>
 
+            </div>
+        </section>
 
-
-
-            </form>
-        </div>
-
-
-
-
-        <div class="col-xs-12 col-sm-4 col-md-6 ">
-
-            <center><h3>Current Lecturers</h3></center>
-            <br>
-
-            <table class="table table-bordred table-striped" style="width: 100%" id="lectable">
-                <thead>
-
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>E mail</th>
-                    <th>Course</th>
-                    <th>Send</th>
-                </tr>
-
-
-                </thead>
-                <tbody>
-                <?php  $lecs = getlecs();
-
-                while ( $lecdata = $lecs->fetch_assoc()){ ?>
-
-                    <tr>
-                        <td><?php echo $lecdata['first_name']; ?></td>
-                        <td><?php echo $lecdata['last_name']; ?></td>
-                        <td><?php echo $lecdata['email']; ?></td>
-                        <td><?php echo $lecdata['subject']; ?></td>
-                        <td> <button class="btn btn-success"> Send Email</button></td>
-                    </tr>
-
-                <?php	}
-
-
-                ?>
-
-                </tbody>
-            </table>
-
-        </div>
     </div>
-
 </div>
 
 <?php include "../components/cscordinator_footer.php"; ?>
+
 <script>
 
-    $(document).ready( function () {
-        $('#lectable').DataTable();
-    } );
 
+    $(document).ready(function(){
+        $('#posts').DataTable();
+    });
 </script>

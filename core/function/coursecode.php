@@ -2,7 +2,7 @@
 
 function getpostss(){
     $con = mysqli_connect('localhost','root','rajith','csc');
-    $sql = "SELECT * FROM posts WHERE type =1";
+    $sql = "SELECT * FROM posts WHERE type =1 ORDER BY id DESC ";
     $res = mysqli_query($con,$sql);
     return $res;
 

@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="../public/css/custom.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
      <link rel="stylesheet" href="../public/dist/css/CSCcordinator.css" >
+     <link rel="stylesheet" href="../public/dist/css/csccoside.css" >
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
     <link rel="stylesheet" href="../public/plugins/sweealert/sweetalert.css" />
-<!--     <link rel="stylesheet" href="../public/plugins/sweealert/google.css" /> -->
+    <script src="../public/plugins/jQuery/jquery.js"></script>
+    <script src="../public/plugins/sweealert/sweetalert.min.js"></script>
    <!-- <link rel="stylesheet" href="../public/plugins/wysiwig/bootstrap3-wysihtml5.min.css"> -->
 
 

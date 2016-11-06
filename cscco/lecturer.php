@@ -63,7 +63,7 @@ include '../components/cscordinator_head.php'; ?>
 						<li><a tabindex="-1" href="email.php">Email</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a tabindex="-1" href="notification.php">Notification</a></li>
-						<li role="separator" class="divider"></li>
+
 					</ul>
 				</li>
 
@@ -113,6 +113,73 @@ include '../components/cscordinator_head.php'; ?>
 		</div>
 	</div>
 	</nav>
+<br>
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right" style="margin-right: 20px;">
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Reports<span class="caret">
+					</a>
+					<ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
+						<li><a tabindex="-1" href="#">Attendence</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a tabindex="-1" href="#">Income</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a tabindex="-1" href="#">Marks</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a tabindex="-1" href="#">Expences</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a tabindex="-1" href="#">Handle Report</a></li>
+
+					</ul>
+				</li>
+
+				<li class="dropdown">
+					<a href="lecturer.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Lecturer <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
+						<li><a tabindex="-1" href="lecturer.php">Handle Lecturer</a></li>
+					</ul>
+				</li>
+
+
+				<li class="dropdown">
+					<a href="course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Courses<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
+						<li><a tabindex="-1" href="course.php">Handle Courses</a></li>
+					</ul>
+				</li>
+
+
+
+
+
+
+				<li class="dropdown">
+					<a href="lectures.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Lectures <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
+						<li><a tabindex="-1" href="lectures.php">Handle Lectures</a></li>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</nav>
     
    </br> 
     
@@ -133,7 +200,7 @@ include '../components/cscordinator_head.php'; ?>
 							<div class="col-md-6 inputGroupContainer">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-									<input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+									<input  name="first_name" placeholder="First Name" class="form-control"  type="text" required>
 								</div>
 							</div>
 						</div>
@@ -145,7 +212,7 @@ include '../components/cscordinator_head.php'; ?>
 							<div class="col-md-6 inputGroupContainer">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-									<input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+									<input name="last_name" placeholder="Last Name" class="form-control"  type="text" required>
 								</div>
 							</div>
 						</div>
@@ -156,7 +223,7 @@ include '../components/cscordinator_head.php'; ?>
 							<div class="col-md-6 inputGroupContainer">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-									<input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+									<input name="email" placeholder="E-Mail Address" class="form-control"  type="text" required>
 								</div>
 							</div>
 						</div>
@@ -169,7 +236,7 @@ include '../components/cscordinator_head.php'; ?>
 							<div class="col-md-6 inputGroupContainer">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-									<input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+									<input name="phone" placeholder="(845)555-1212" class="form-control" type="text" required>
 								</div>
 							</div>
 						</div>
@@ -189,7 +256,7 @@ include '../components/cscordinator_head.php'; ?>
 
 										while ( $subjects = $subs->fetch_assoc()){ ?>
 
-											<option><?php echo $subjects['subject']; ?></option>
+											<option value="<?php echo $subjects['subject']; ?>"><?php echo $subjects['subject']; ?></option>
 
 									<?php	}
 
@@ -206,18 +273,45 @@ include '../components/cscordinator_head.php'; ?>
 					<center><div class="form-group">
 							<label class="col-md-4 control-label"></label>
 							<div class="col-md-6">
-								<button type="submit" class="btn btn-success" >Submit <span class="glyphicon glyphicon-send"></span> </button>
+								<button type="submit" class="btn btn-success" name="submit">Submit <span class="glyphicon glyphicon-send"></span> </button>
 								<button type="reset" class="btn btn-danger" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
 							</div>
 						</div>
 
 					</center>
 
-
-
-
 				</form>
 			</div>
+
+
+			<?php
+
+
+            if (isset($_POST['submit'])) {
+                $register_data = array(
+
+                    'first_name' => $_POST['first_name'],
+                    'last_name' => $_POST['last_name'],
+                    'email' => $_POST['email'],
+                    'phone' => $_POST['phone'],
+                    'subject' => $_POST['subject']
+
+                );
+
+
+                register_lect( $register_data); ?>
+			<script>swal("New Lecturer Added!", "Your have benn added a user successfully")</script>
+
+					<?php
+
+
+
+            }
+
+
+
+
+			?>
 		
 
 
@@ -250,7 +344,7 @@ include '../components/cscordinator_head.php'; ?>
 							<td><?php echo $lecdata['last_name']; ?></td>
 							<td><?php echo $lecdata['email']; ?></td>
 							<td><?php echo $lecdata['subject']; ?></td>
-							<td> <button class="btn btn-success"> Send Email</button></td>
+							<td> <button class="btn btn-success"> Send Email</button> <button class="btn btn-danger"> Edit User</button></td>
 						</tr>
 
 					<?php	}
