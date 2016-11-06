@@ -19,4 +19,22 @@ function getlecs(){
 
 }
 
+function getcoursefor(){
+
+
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $sql = "SELECT * FROM courses";
+    $res = mysqli_query($con, $sql);
+    return $res;
+
+}
+
+function getcoursecodinators(){
+
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $sql = "SELECT * FROM staff WHERE role = 'Course Coordinator'";
+    $res = mysqli_query($con, $sql);
+    return $res;
+}
+
 ?>

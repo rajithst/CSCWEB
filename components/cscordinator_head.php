@@ -12,6 +12,6 @@
     <link rel="stylesheet" href="../public/plugins/sweealert/sweetalert.css" />
 <!--     <link rel="stylesheet" href="../public/plugins/sweealert/google.css" /> -->
    <!-- <link rel="stylesheet" href="../public/plugins/wysiwig/bootstrap3-wysihtml5.min.css"> -->
-    <script src="../public/plugins/jQuery/jquery.js"></script>
-    <script src="../public/plugins/sweealert/sweetalert.min.js"></script>
+
+
 

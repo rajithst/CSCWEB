@@ -4,88 +4,307 @@ require '../core/base.php';
 
 if(logged_in() === false){
 
-    session_destroy();
-    header('Location:../index.php');
-    exit();
+	session_destroy();
+	header('Location:../index.php');
+	exit();
 
 }
 require '../core/init.php';
+require '../core/function/cscco.php';
 
 include '../components/cscordinator_head.php'; ?>
 
-<link rel="stylesheet" href="../public/dist/css/handle-courses.css">
 
+<style>
+
+
+	.navbar-login
+	{
+		width: 305px;
+		padding: 10px;
+		padding-bottom: 0px;
+	}
+
+	.navbar-login-session
+	{
+		padding: 10px;
+		padding-bottom: 0px;
+		padding-top: 0px;
+	}
+
+	.icon-size
+	{
+		font-size: 87px;
+	}
+</style>
+
+
+
+
+</head>
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="#"><img src="../public/dist/img/system/csclogo.png"style="width:170px; height:50px;" ></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.php" style="height:50px;"><span class="glyphicon glyphicon-home"></span> HOME</a>
-        <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-globe"></span> NOTIFICATIONS</a></li>
-        <li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-envelope"></span> MESSAGES</a></li>
-        <li><a class="navbar-brand navbar-right" href="#" style="height:40px;">(LOGOUT)</a></li>
-      </ul>
-    </div>
-  </div>
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#"><img src="../public/dist/img/system/csclogo.png" style="width:170px; height:50px;" ></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right" style="margin-right:30px; padding: 10px;">
+				<li><a href="index.php" style="height:50px;"><span class="glyphicon glyphicon-home"></span> Home</a>
+				<li><a href="#" style="height:50px;"><span class="glyphicon glyphicon-globe"></span> Notifications</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;"><span class="glyphicon glyphicon-envelope"></span>  Emails And Posts  <span class="glyphicon glyphicon-chevron-down"></span>
+					</a>
+					<ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
+						<li><a tabindex="-1" href="email.php">Email</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a tabindex="-1" href="notification.php">Notification</a></li>
+						<li role="separator" class="divider"></li>
+					</ul>
+				</li>
+
+
+
+				<ul class="nav navbar-nav navbar-right" >
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<span class="glyphicon glyphicon-user"></span> 
+							<strong><?php echo $staff_data['first_name']; ?></strong>
+							<span class="glyphicon glyphicon-chevron-down"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<div class="navbar-login">
+									<div class="row">
+										<div class="col-lg-4">
+											<p class="text-center">
+												<span class="glyphicon glyphicon-user icon-size"></span>
+											</p>
+										</div>
+										<div class="col-lg-8">
+											<p class="text-left"><strong><?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?></strong></p>
+											<p class="text-left small"><?php echo $staff_data['email']; ?></p>
+											<p class="text-left">
+												<a href="#" class="btn btn-primary btn-block btn-sm">See Profile</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<div class="navbar-login navbar-login-session">
+									<div class="row">
+										<div class="col-lg-12">
+											<p>
+												<a href="logout.php" class="btn btn-danger btn-block">Logout</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+		</div>
+	</div>
 </nav>
-    
-   </br> 
-     <div class="container">
-        <div class="row centered-form">
-        <div class="col-xs-12 col-sm-8 col-md-6">
-        	<div class="panel panel-default">
-        		<div class="panel-heading">
-			    		<h3 class="panel-title">Course</h3>
-			 			</div>
-			 			<div class="panel-body">
-			    		<form role="form">
-			    			<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			                <input type="text" name="ID" id="Course_id" class="form-control input-sm" placeholder="ID">
-			    					</div>
-			    				</div>
-			    				
-			    			</div>
-                            <div class="form-group">
-			    				<input type="text" name="course_name" id="course_name" class="form-control input-sm" placeholder="Course Name">
-			    			</div>
-			    			<div class="form-group">
-			    				<input type="text" name="course_coordinator" id="course_Courdinator" class="form-control input-sm" placeholder="Course Coordinator">
-			    			</div>
 
-			    			<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="varchar" name="fee" id="fee" class="form-control input-sm" placeholder="Corse Fee">
-                                        
-                                        </div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="number" name="course_duration" id="course_duration" class="form-control input-sm" placeholder="Course Duration">
-                                          <label class="checkbox-inline"><input type="checkbox" value="">Day</label>
-                                          <label class="checkbox-inline"><input type="checkbox" value="">Week</label>
-                                          </br><label class="checkbox-inline"><input type="checkbox" value="">Month</label>
-			    					</div>
-			    				</div>
-			    			</div>
-			    			
-			    			<input type="submit" value="Create Course" class="button">
-			    		
-			    		</form>
-			    	</div>
-	    		</div>
-    		</div>
-    	</div>
-    </div>
+</br>
 
 
-<?php include "../components/cscordinator_footer.php";
+<div class="container-fluid">
+	<div class="row" style="padding: 10px;">
+
+		<br>
+		<div class="col-xs-12 col-sm-8 col-md-6 ">
+
+			<center><h3>Add New Course</h3></center>
+			<br>
+			<form class="form-horizontal" action=" " method="post"  id="contact_form">
+
+
+
+				<div class="form-group">
+					<label class="col-md-4 control-label">Parent Category</label>
+					<div class="col-md-6 selectContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+							<select name="subject" class="form-control selectpicker" >
+								<option value=" " >Please select parent category</option>
+
+								<?php
+
+								$rows = getcoursefor();
+
+								while ( $courses = $rows->fetch_assoc()){ ?>
+
+									<option><?php echo $courses['coursename']; ?></option>
+
+								<?php	}
+
+
+
+								?>
+
+							</select>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label class="col-md-4 control-label">Course ID</label>
+					<div class="col-md-6 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-exclamation-sign"></i></span>
+							<input  name="first_name"  class="form-control"  type="text" disabled value="3">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+
+				<div class="form-group">
+					<label class="col-md-4 control-label" >Course Name</label>
+					<div class="col-md-6 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-warning-sign"></i></span>
+							<input name="last_name" placeholder="Course Name" class="form-control"  type="text">
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label">Course Coordinator</label>
+					<div class="col-md-6 selectContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<select name="subject" class="form-control selectpicker" >
+								<option value=" " >Please select Course coordinator</option>
+
+								<?php
+
+								$rows = getcoursecodinators();
+
+								while ( $cscname = $rows->fetch_assoc()){ ?>
+
+									<option><?php echo $cscname['first_name'] . " " .$cscname['last_name']; ?></option>
+
+								<?php	}
+
+
+
+								?>
+
+							</select>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Text input-->
+
+				<div class="form-group">
+					<label class="col-md-4 control-label">Course Fee</label>
+					<div class="col-md-6 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-info-sign"></i></span>
+							<input name="phone" placeholder="Rs" class="form-control" type="text">
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-md-4 control-label">Course Duration (Number of Weeka)</label>
+					<div class="col-md-6 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-info-sign"></i></span>
+							<input name="phone" placeholder="" class="form-control" type="number">
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+				<center><div class="form-group">
+						<label class="col-md-4 control-label"></label>
+						<div class="col-md-6">
+							<button type="submit" class="btn btn-success" >Submit <span class="glyphicon glyphicon-send"></span> </button>
+							<button type="reset" class="btn btn-danger" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
+						</div>
+					</div>
+
+				</center>
+
+
+
+
+			</form>
+		</div>
+
+
+
+
+		<div class="col-xs-12 col-sm-4 col-md-6 ">
+
+			<center><h3>Current Course data</h3></center>
+			<br>
+
+			<table class="table table-bordred table-striped" style="width: 100%" id="lectable">
+				<thead>
+
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>E mail</th>
+					<th>Course</th>
+					<th>Send</th>
+				</tr>
+
+
+				</thead>
+				<tbody>
+				<?php  $lecs = getlecs();
+
+				while ( $lecdata = $lecs->fetch_assoc()){ ?>
+
+					<tr>
+						<td><?php echo $lecdata['first_name']; ?></td>
+						<td><?php echo $lecdata['last_name']; ?></td>
+						<td><?php echo $lecdata['email']; ?></td>
+						<td><?php echo $lecdata['subject']; ?></td>
+						<td> <button class="btn btn-success"> Send Email</button></td>
+					</tr>
+
+				<?php	}
+
+
+				?>
+
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+
+</div>
+
+<?php include "../components/cscordinator_footer.php"; ?>
+<script>
+
+	$(document).ready( function () {
+		$('#lectable').DataTable();
+	} );
+
+</script>

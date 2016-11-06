@@ -147,7 +147,7 @@ include '../components/cscordinator_head.php'; ?>
             <a href="handle_lecturer.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">HANDLE LECTURER <span class="caret">
             </a>
             <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="handle_lecturer.php">Handle Lecturer</a></li>
+                <li><a tabindex="-1" href="lecturer.php">Handle Lecturer</a></li>
                 </ul>
                 </li>
                   

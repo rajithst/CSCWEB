@@ -14,7 +14,6 @@ require '../core/function/cscco.php';
 
 include '../components/cscordinator_head.php'; ?>
 
-<link rel="stylesheet" href="../public/dist/css/handle-lecturer.css">
 
 	<style>
 
@@ -118,16 +117,14 @@ include '../components/cscordinator_head.php'; ?>
    </br> 
     
 
+<div class="container-fluid">
         <div class="row" style="padding: 10px;">
 
-
-			<center> <h2>Add Lecturer</h2></center>
-			<br>
-			<hr>
 			<br>
         <div class="col-xs-12 col-sm-8 col-md-6 ">
 
-
+			<center><h3>Add New Lecturer</h3></center>
+			<br>
 				<form class="form-horizontal" action=" " method="post"  id="contact_form">
 
 
@@ -179,7 +176,7 @@ include '../components/cscordinator_head.php'; ?>
 
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">Subject</label>
+							<label class="col-md-4 control-label">Course</label>
 							<div class="col-md-6 selectContainer">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
@@ -228,16 +225,17 @@ include '../components/cscordinator_head.php'; ?>
 			<div class="col-xs-12 col-sm-4 col-md-6 ">
 
 				<center><h3>Current Lecturers</h3></center>
+				<br>
 
 				<table class="table table-bordred table-striped" style="width: 100%" id="lectable">
 					<thead>
 
 					<tr>
-						<td>First Name</td>
-						<td>Last Name</td>
-						<td>E mail</td>
-						<td>Subject</td>
-						<td>Send</td>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>E mail</th>
+						<th>Course</th>
+						<th>Send</th>
 					</tr>
 
 
@@ -266,7 +264,7 @@ include '../components/cscordinator_head.php'; ?>
 				</div>
     	</div>
 
-
+</div>
 
 <?php include "../components/cscordinator_footer.php"; ?>
 <script>
