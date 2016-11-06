@@ -1,4 +1,6 @@
 <?php
+
+session_start();
 require '../core/base.php';
 
 if(logged_in() === false){

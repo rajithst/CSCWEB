@@ -188,7 +188,7 @@ include '../components/course_head.php'; ?>
                                 <div class="col-md-6 col-sm-12">
                                     <div id="profpic-well" style="margin-left: 75px; margin-top: -9px;color: #66B9BF">
 
-                                        <strong><?php echo $coursecodinator_data['fullname']; ?></strong></br>
+                                        <strong><?php echo $staff_data['first_name']; ?></strong></br>
 
                                     </div>
                                 </div>

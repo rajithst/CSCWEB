@@ -1,9 +1,22 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rajith
- * Date: 10/29/16
- * Time: 6:02 PM
- */
+
+
+function getsubsfor(){
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $sql = "SELECT * FROM subjects";
+    $res = mysqli_query($con, $sql);
+    return $res;
+
+
+}
+
+function getlecs(){
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $sql = "SELECT * FROM lecturers";
+    $res = mysqli_query($con, $sql);
+    return $res;
+
+
+}
 
 ?>

@@ -64,7 +64,7 @@ function stu_data($id) {
 }
 
 
-function coursecodinator_data($id){
+/*function coursecodinator_data($id){
 
     $con = mysqli_connect('localhost','root','rajith','csc');
     $data = array();
@@ -83,4 +83,4 @@ function coursecodinator_data($id){
     }
 
 
-}
+}*/

@@ -14,7 +14,7 @@ if(logged_in() === true) {
     $user_data = user_data( $session_id, 'id', 'name', 'role', 'password','email','profile');
     $staff_data = staff_data( $session_id, 'id', 'first_name', 'last_name', 'email','password','role');
     $stu_data = stu_data( $session_id, 'id', 'fullname', 'coursename','name_w_initials','email');
-    $coursecodinator_data = coursecodinator_data( $session_id, 'id','fullname', 'email', 'password');
+
 
 }
 
