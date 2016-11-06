@@ -329,6 +329,7 @@ include '../components/cscordinator_head.php'; ?>
 						<th>Last Name</th>
 						<th>E mail</th>
 						<th>Course</th>
+						<th>Phone Number</th>
 						<th>Send</th>
 					</tr>
 
@@ -344,6 +345,7 @@ include '../components/cscordinator_head.php'; ?>
 							<td><?php echo $lecdata['last_name']; ?></td>
 							<td><?php echo $lecdata['email']; ?></td>
 							<td><?php echo $lecdata['subject']; ?></td>
+							<td><?php echo $lecdata['phone']; ?></td>
 							<td> <button class="btn btn-success"> Send Email</button> <button class="btn btn-danger"> Edit User</button></td>
 						</tr>
 

@@ -35,7 +35,19 @@ include '../components/cscordinator_head.php'; ?>
         font-size: 87px;
     }
 </style>
+<script>
 
+
+    $(document).ready(function () {
+
+        $('#mycalendar').monthly({
+            mode: 'event',
+            //jsonUrl: 'events.json',
+            //dataType: 'json'
+            xmlUrl: 'events.xml'
+        });
+    });
+</script>
 
 </head>
 <body>
@@ -185,10 +197,9 @@ include '../components/cscordinator_head.php'; ?>
 <div class="container-fluid">
 <div class="sidenav col-md-2 col-sm-3 col-xs-12">
 
-
-
-
-
+    <center>
+        <h3>Main menu</h3>
+    </center>
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -326,7 +337,17 @@ include '../components/cscordinator_head.php'; ?>
                         </div>
                     </div>
                 </div>
+
+
+
+    <center><h3> Event Calender</h3></center>
+    <div class="monthly" id="mycalendar"></div>
+
             </div>
+
+
+
+
             <div class="col-sm-9 col-md-9">
 
 
@@ -469,3 +490,5 @@ include '../components/cscordinator_head.php'; ?>
 </div>
 
 <?php include "../components/cscordinator_footer.php"; ?>
+
+
