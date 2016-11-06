@@ -1,15 +1,6 @@
 <?php
 
-$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
 
-/*function user_id_from_nic($nic) {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-    $sql        = "SELECT id FROM student  WHERE nic = '$nic'";
-    $query      = mysqli_query($con, $sql);
-    $fetcharray = mysqli_fetch_array($query);
-    return $fetcharray[0];
-
-}*/
 
 function loginstudent($username,$password) {
 
@@ -27,7 +18,7 @@ function loginstudent($username,$password) {
 
 
 function getposts(){
-    $con = mysqli_connect('localhost','root','','csc');
+    $con = mysqli_connect('localhost','root','rajith','csc');
     $sql = "SELECT * FROM posts WHERE student =1";
     $res = mysqli_query($con,$sql);
     return $res;
@@ -37,32 +28,13 @@ function getposts(){
 }
 
 function getadmin($id){
-    $con = mysqli_connect('localhost','root','','csc');
+    $con = mysqli_connect('localhost','root','rajith','csc');
     $sql = "SELECT name,profile From adminusers WHERE id=$id";
     $res = mysqli_query($con,$sql);
     return $res;
 
 }
 
-function stu_data($id) {
-
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-    $data = array();
-
-
-    $get_num  = func_num_args();
-    $get_args = func_get_args();
-
-    if ($get_num > 1) {
-        unset($get_args[0]);
-        $fields = '`'.implode('`,`', $get_args).'`';
-        $res  = mysqli_query($con, "SELECT $fields FROM student WHERE nic= '$id'");
-        $data = mysqli_fetch_assoc($res);
-        return $data;
-
-    }
-
-}
 
 function getcourse($id,$subject){
     $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');

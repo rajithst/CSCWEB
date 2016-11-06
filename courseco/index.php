@@ -1,16 +1,26 @@
-<?php session_start()
-//include '../core/init.php';
-//include '../core/function/coursecode.php';
-include '../components/course_head.php';
-?>
+<?php 
+session_start();
+require '../core/base.php';
 
+if(logged_in() === false){
+
+    session_destroy();
+    header('Location:../index.php');
+    exit();
+
+}
+
+
+require '../core/init.php';
+require '../core/function/coursecode.php';
+include '../components/course_head.php'; ?>
 
 
     </head>
 <body>
 
     <!--start of the navbar<!-->
-    <nav class="navbar navbar-custom" role = "navigation">
+    <nav class="navbar navbar-inverse" role = "navigation" id="mainnav">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button style="background-color:white;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -29,15 +39,14 @@ include '../components/course_head.php';
                     <!-- "Course" Nested-drop-down for courses begins from here. Line 29-94><!-->
 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Course<span class="caret">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="" aria-expanded="false">Course<span class="caret">
                         </a>
                         <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" style="padding: 0;">
 
                             <li class="dropdown-submenu">
                                 <?php
 
-                               //$id = $_SESSION['id']
-
+                            
                                 $res = getcourse_cord($id);
 
                                 while ($row = mysqli_fetch_assoc($res)) {
@@ -124,11 +133,11 @@ include '../components/course_head.php';
                 <div class="container-fluid" id="news-feed-div">
                     <center><h3 id="NEWS">News</h3></center>
                     <?php
-
-                    $posts = getposts();
+                    $posts = getpostss();
                     while ($row = mysqli_fetch_assoc($posts)) {
-                        $id = $row['adminid'];
-                        $admindata = getadmin($id);
+                        //$id = $row['adminid'];
+                        $id = 1;
+                        $admindata = getadmins($id);
                         while ($data = mysqli_fetch_assoc($admindata)) {
                             ?>
 

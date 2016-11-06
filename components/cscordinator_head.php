@@ -7,7 +7,7 @@
     <title>CSC Coordinator</title>
   <link rel="stylesheet" href="../public/css/custom.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../public/dist/css/CSCcordinator.css" >
+    <!-- <link rel="stylesheet" href="../public/dist/css/CSCcordinator.css" > -->
     <link rel="stylesheet" href="../public/dist/css/animate.css">
     <link rel="stylesheet" href="../public/plugins/sweealert/sweetalert.css" />
 <!--     <link rel="stylesheet" href="../public/plugins/sweealert/google.css" /> -->

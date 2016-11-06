@@ -1,5 +1,7 @@
 <?php require '../core/init.php';
 
+require 'function/student.php';
+
 include "../components/stud_head.php"; ?>
 
     </head>

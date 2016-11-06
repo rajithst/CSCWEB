@@ -1,5 +1,6 @@
 <?php
 include "../core/init.php";
+require 'function/staff.php';
 include '../components/page_head.php'; ?>
 
     <link rel="stylesheet" href="../public/dist/css/staff_css.css">

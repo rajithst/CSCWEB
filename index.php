@@ -15,6 +15,7 @@ include 'core/function/frontend.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <!--<link rel="stylesheet" href="public/dist/css/buttons.css">-->
     <link rel="stylesheet" href="public/dist/css/basic.css" />
+    <link rel="stylesheet" href="public/plugins/sweealert/sweetalert.css" />
     <script src="public/plugins/jQuery/jquery.js"></script>
     <script src="public/plugins/sweealert/sweetalert.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -191,35 +192,38 @@ if (isset($_POST['submit'])){
     $logindata = loginall($email,$password);
 
 
-    if ($logindata != false) {
+    if ($logindata == false) { ?>
+
+ <script>swal("Access Denied!", "Your Email and Password combination is incorrect!!")</script>
+
+<?php
+    }else{
         
        $id = $logindata[0]; 
     $role = $logindata[1];
 
     if ($role === "CSC Staff") {
 
-    
+        session_start();
         $_SESSION['id'] = $id;
         header('Location:staff/index.php'); 
         exit;
 
     }else if ($role === "CSC Cordinator") {
-        
+        session_start();
         $_SESSION['id'] = $id;
         header('Location:cscco/index.php'); 
         exit;
-    }else{
 
-    
+
+    }else if($role === "Course Coordinator"){
+        session_start();
         $_SESSION['id'] = $id;
         header('Location:courseco/index.php'); 
         exit;
     }
 
         }
-
-        
-
 
     }
     

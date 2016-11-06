@@ -7,6 +7,7 @@
  **/
 
 require '../core/init.php';
+require 'function/admin.php';
 require '../components/page_head.php';
 
 

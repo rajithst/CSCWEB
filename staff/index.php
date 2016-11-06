@@ -1,5 +1,6 @@
 <?php session_start();
 include '..core/init.php';
+require 'function/staff.php';
 include '../components/page_head.php';
 ?>
 

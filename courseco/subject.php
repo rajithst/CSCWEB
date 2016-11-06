@@ -1,6 +1,14 @@
 <?php
+require '../core/base.php';
 
-//require '../core/init.php';
+if(logged_in() === false){
+
+    session_destroy();
+    header('Location:../index.php');
+    exit();
+
+}
+require '../core/init.php';
 include "../components/page_head.php";
 
 ?>

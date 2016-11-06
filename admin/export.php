@@ -3,6 +3,7 @@
 
 <?php
 require '../core/init.php';
+require 'function/admin.php';
 error_reporting(0);
 
 if(logged_in() === false){

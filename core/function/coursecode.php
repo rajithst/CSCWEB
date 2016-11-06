@@ -1,31 +1,26 @@
 <?php
-$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+
+function getpostss(){
+    $con = mysqli_connect('localhost','root','rajith','csc');
+    $sql = "SELECT * FROM posts WHERE type =1";
+    $res = mysqli_query($con,$sql);
+    return $res;
 
 
-function coursecodinator_data($id){
 
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-    $data = array();
-    $id   = (int) $id;
+}
 
-    $get_num  = func_num_args();
-    $get_args = func_get_args();
-
-    if ($get_num > 1) {
-        unset($get_args[0]);
-        $fields = '`'.implode('`,`', $get_args).'`';
-        $res  = mysqli_query($con, "SELECT $fields FROM csc_courseco WHERE userid= $id");
-        $data = mysqli_fetch_assoc($res);
-        return $data;
-
-    }
-
+function getadmins($id){
+    $con = mysqli_connect('localhost','root','rajith','csc');
+    $sql = "SELECT name,profile From adminusers WHERE id=$id";
+    $res = mysqli_query($con,$sql);
+    return $res;
 
 }
 
 
 function getcourse_cord($id){
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $con = mysqli_connect('localhost','root','rajith','csc');
     $sql = "SELECT coursename,courseid FROM courses WHERE coursecodeid = $id ";
     $query = mysqli_query($con, $sql);
     return $query;
@@ -34,7 +29,7 @@ function getcourse_cord($id){
 }
 
 function getsubs_cord($course){
-
+$con = mysqli_connect('localhost','root','rajith','csc');
     $sql = "SELECT subject FROM subject WHERE courseid = (SELECT courseid FROM courses WHERE coursename = '$course')";
     
     
@@ -42,7 +37,7 @@ function getsubs_cord($course){
 
 function uploadsilde($file_temp,$file_extn){
 
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $con = mysqli_connect('localhost','root','rajith','csc');
     $file_path = 'slides/'.substr(md5(time()), 0, 10).'.'.$file_extn;
     move_uploaded_file($file_temp, $file_path);
     $query = "INSERT INTO slides (path) VALUES ($file_path)";
@@ -53,7 +48,7 @@ function uploadsilde($file_temp,$file_extn){
 
 
 function  insertslides($data){
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $con = mysqli_connect('localhost','root','rajith','csc');
     $fields='`' .implode('`,`' ,array_keys($data)) . '`';
     $vals= '\'' . implode('\', \'' ,$data ) . '\' ';
     $sql = "INSERT INTO slides ($fields) VALUES ($vals)";

@@ -1,4 +1,14 @@
 <?php
+require '../core/base.php';
+
+if(logged_in() === false){
+
+    session_destroy();
+    header('Location:../index.php');
+    exit();
+
+}
+require '../core/init.php';
 include '../components/cscordinator_head.php'; ?>
 
 <link rel="stylesheet" href="../public/dist/css/email.css">

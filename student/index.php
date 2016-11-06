@@ -1,4 +1,6 @@
 <?php require '../core/init.php';
+
+require 'function/student.php';
 error_reporting(1);
 
 include "../components/stud_head.php"; ?>

@@ -1,5 +1,15 @@
-<?php session_start();
-include '../init.php';
+<?php 
+session_start();
+require '../core/base.php';
+
+if(logged_in() === false){
+
+    session_destroy();
+    header('Location:../index.php');
+    exit();
+
+}
+require '../core/init.php';
 include '../components/cscordinator_head.php'; ?>
 
 </head>
