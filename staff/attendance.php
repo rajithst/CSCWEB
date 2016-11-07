@@ -1,9 +1,10 @@
 <?php
 
+
 include '../components/page_head.php'; ?>
 
 <link rel="stylesheet" href="../public/dist/css/staff_css.css">
-
+<link rel="stylesheet" href="staff.css">
 </head>
 
 
