@@ -1,7 +1,5 @@
 <?php
 
-include "../core/init.php";
-require 'function/staff.php';
 include '../components/page_head.php'; ?>
 
 <link rel="stylesheet" href="../public/dist/css/staff_css.css">
@@ -11,91 +9,56 @@ include '../components/page_head.php'; ?>
 
     <body background="">
     <!-- header-->
-    <nav class="navbar navbar-default" id="myNavbar">
-        <div class="container-fluid" >
-            <div class="navbar-header" style="margin: 17px;" >
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <img src="../public/dist/img/system/csclogo.png"class="img-responsive csc-logo" id="logo" >
-
-
-            </div>
-            <div class="collapse navbar-collapse">
-
-                <ul class="nav navbar-nav navbar-right" id="navbar_txt" style="margin: 12px;">
-                    <li><a href="index.php" style="color:white;" >Home</a></li>
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;"><span>Notifications</span>
-                            <span class="caret">
-						</span>
-                        </a>
-                        <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
-                            <li><a tabindex="-1" href="inbox_Email.html" id="task_txt">Emails</a></li>
-
-                        </ul>
-                    </li>
-
-                    <li><a href="#" style="color:white;"><span class="glyphicon glyphicon-log-out"></span> logout</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-inverse" id="myNavbar" >
+    <div class="container-fluid" >
+        <div class="navbar-header" >
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img src="../public/dist/img/system/csclogo.png"class="img-responsive csc-logo" id="logo">
         </div>
-    </nav>
+        <div class="collapse navbar-collapse"  >
 
-    <nav class="navbar navbar-inverse" id="myNavbar">
-        <div class="container-fluid" >
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-
-
-            </div>
-            <div class="collapse navbar-collapse" style="background-color: rgb(102, 185, 191)">
-
-                <ul class="nav navbar-nav navbar-right" id="navbar_txt">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="color:white;font-size:17px;" >Edit Reports
-                            <span class="caret">
+            <ul class="nav navbar-nav navbar-right" id="navbar_txt" >
+                <li>
+					<a href="index.php" style="color:white;" class="glyphicon glyphicon-home"> Home</a>
+				</li>
+                <li class="dropdown" style="margin-right:4px" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;padding-top:18px;" >
+					<span class="glyphicon glyphicon-globe"></span>
+					Notifications
+					<span class="caret">
+					</span>
+					</a>
+                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
+                        <li><a tabindex="-1" href="" id="task_txt">Emails</a></li>
+                    </ul>
+                </li>
+				<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;padding-top:18px;">
+					<span class="glyphicon glyphicon-list-alt"> Reports</span>
+                        <span class="caret">
 						</span>
-                        </a>
-                        <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
-                            <li><a tabindex="-1" href="select_course.php" id="task_txt">Attendence</a></li>
-                            <li><a tabindex="-1" href="income.php" id="task_txt">Income</a></li>
-                            <li><a tabindex="-1" href="expense.php" id="task_txt">Expences</a></li>
-                            <li><a tabindex="-1" href="select_course_marks.html" id="task_txt">Student Marks</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="report_generating.html"  style="color:white;font-size:17px;">Generate Report
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="color:white;font-size:17px;">Send
-                            <span class="caret">
-						</span>
-                        </a>
-                        <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
-                            <li><a tabindex="-1" href="inbox_Email.html" id="task_txt" >Email</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="student_registration.html"   style="color:white;font-size:17px;">Register Students
-                        </a>
-                    </li>
-
-
-
-                </ul>
-            </div>
+                    </a>
+                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
+                        <li><a tabindex="-1" href="edit_rep.php" id="task_txt">Edit Report</a></li>
+						<li><a tabindex="-1" href="report_gen.php" id="task_txt">Generate report</a></li>
+                    </ul>
+                </li>
+				<li>
+					<a href="select_course_reg.php" style="color:white;padding-top:18px;"><span class="glyphicon glyphicon-edit"></span> Registration</a>
+				</li>
+                <li>
+					<a href="#" style="color:white;padding-top:18px;"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+				</li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
+
 
 
 <?php
@@ -210,7 +173,19 @@ include '../components/page_head.php'; ?>
     }
 
 ?>
-
+<footer class="container-fluid" id="footer">
+        <div class = "container-fluid">
+            <div class="row">
+                <div col-md-5 class="footer-content">
+                     <ul class="footer-nav">
+                        <li>C</li> <li>O</li> <li>M</li> <li>P</li> <li>U</li> <li>T</li> <li>I</li> <li>N</li><li>G</li><li></li>           
+                        <li>S</li> <li>E</li> <li>R</li> <li>V</li> <li>I</li> <li>C</li> <li>E</li> <li>S</li><li></li>
+                        <li>C</li><li>E</li> <li>N</li> <li>T</li> <li>R</li> <li>E</li>
+                    </ul>
+               </div>
+            </div>
+        </div>
+    </footer>
 
 
 

@@ -4,7 +4,7 @@
 if (isset($_GET['cid'])){
 
     $cid = $_GET['cid'];
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $con = mysqli_connect('localhost', 'root', '',  'csc');
     $sql = "SELECT subject,subjectid FROM subjects WHERE courseid = '$cid'";
     $query = mysqli_query($con, $sql);
 
@@ -12,7 +12,7 @@ if (isset($_GET['cid'])){
         $subid = $row['subjectid'];
 
         echo "<li>";
-        echo "<a tabindex='-1' href='attendance.php?subid=".$subid."' style='font-size: 12px;' id='".$subid ."' >" . $row['subject'] . "</a><br>";
+        echo "<a tabindex='-1' href='marks.php?subid=".$subid."' style='font-size: 12px;' id='".$subid ."' >" . $row['subject'] . "</a><br>";
         echo "</li>";
 
     }

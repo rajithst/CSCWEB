@@ -1,15 +1,14 @@
 <?php
-
+include "../core/init.php";
 include '../components/page_head.php'; ?>
 
 <link rel="stylesheet" href="../public/dist/css/staff_css.css">
-<link rel="stylesheet" href="staff.css">
+
 </head>
 
-
-    <body background="">
-    <!-- header-->
-    <nav class="navbar navbar-inverse" id="myNavbar" >
+<body background="">
+<!-- header-->
+<nav class="navbar navbar-inverse" id="myNavbar" >
     <div class="container-fluid" >
         <div class="navbar-header" >
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
@@ -58,87 +57,59 @@ include '../components/page_head.php'; ?>
     </div>
 </nav>
 
-<?php
-    $subid = $_GET['subid'];
-    $res = getstudents($subid);
-    $subdata = getsubdata($subid);
-?>
-        <section class="content-header">
+
+<!-- end of header-->
+<div class="container-fluid text-center">
+        <div class="row content" style="padding-top:0.1px" >
 
 
-            <div class="row">
-
-                <div class="col-md-2"></div>
-
-                <form action="" method="post">
-                <div class="col-md-10">
-
-                   <h2><?php echo $subdata[2]; ?>  -  <?php echo $subid?></h2><br>
-
-                    <h3> Course Id - <?php echo $subdata[1];?></h3> <br><br>
-
-
-                    <div class="box" style="width:75%;">
-                        <div class="box-header">
-                            <h3 class="box-title">Input Attendance</h3>
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body table-responsive no-padding">
-
-
-                            <table class="table table-hover">
-                                <tr>
-                                    <th>Subject ID</th>
-                                    <th>Student Name</th>
-                                    <th>Marks</th>
-                                    <th>Grade</th>
-                                </tr>
-                                <?php
-
-
-                                while ($row= mysqli_fetch_assoc($res)) {
-
-                                ?>
-                                <tr>
-                                    <td><?php  echo  $subid; ?></td>
-                                    <td><?php  echo  $row['fullname']; ?></td>
-                                    <td><input type="text" checked name="marks" ></td>
-                                    <td><input type="text" name="grade" ></td>
-
-                                </tr>
-
-                                    <?php } ?>
-                            </table>
-
-
-
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2">
-                            <button type="submit" class="btn btn-block btn-success btn-md" name="next">Next Page</button>
-                        </div>
-
-                        <div class="col-md-2">
-
-                            <button type="cancel" class="btn btn-block btn-danger btn-md">Cancel</button>
-                        </div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                    </div>
-                    </div>
-                </form>
-                <div class="col-md-2"></div>
-
+            <div class="col-md-3 sidenav" style="padding-left:0.1px">
+                <div class="well" style="height:200px;" id="calendar">
+                    <p><strong>calender</strong></p>
                 </div>
+            </div>
+			<form action="gen_income.php" method="post">
+            <div class="col-md-6 col-sm-12 col-xs-12" style="padding-right:0.1px;padding-left:0.1px;">
+                <div class="well" id="newsfeed" >
+				<u><h2>INCOME REPORT</h2></u>
+					<?php 
+						$s_date=$_POST['start_date'];
 
-            </section>
+						$e_date=$_POST['end_date'];
+
+						$table=$_POST['type'];
+	
+						?>
+						<table>
+									
+						<?php
+							$sql = "SELECT student_NIC,ammount FROM $table WHERE received_date BETWEEN STR_TO_DATE(, '%m-%d-%Y') AND STR_TO_DATE(, '%m-%d-%Y')";
+							$query = mysqli_query($con, $sql);			
+							while ($row = mysqli_fetch_assoc($query)){
+							$NIC = $row['student_NIC'];
+							?>
+											
+						<tr> <?php echo $row['ammount']; ?></tr>
+											
+											
+						<?php } ?>
+						</table>
+                </div>
+            </div>
+			</form>
+        <div class="col-md-3 sidenav" style="padding-right:0.1px">
+            <!--profile-->
+            <div class="well" style="height:200px;" id="proArea">
+                <h4>L P Jayasinghe</h4>
+                <img src="../public/dist/img/profile/c280829b27.jpg" class="img-circle" height="100" width="100" alt="Avatar">
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</center>
 <footer class="container-fluid" id="footer">
         <div class = "container-fluid">
             <div class="row">
@@ -152,12 +123,4 @@ include '../components/page_head.php'; ?>
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-<?php include "../components/page_tail.php"; ?>
+<?php include "../components/page_tail.php";

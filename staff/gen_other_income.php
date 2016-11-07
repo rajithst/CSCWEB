@@ -1,15 +1,14 @@
 <?php
-
+include "../core/init.php";
 include '../components/page_head.php'; ?>
 
 <link rel="stylesheet" href="../public/dist/css/staff_css.css">
-<link rel="stylesheet" href="staff.css">
+
 </head>
 
-
-    <body background="">
-    <!-- header-->
-    <nav class="navbar navbar-inverse" id="myNavbar" >
+<body background="">
+<!-- header-->
+<nav class="navbar navbar-inverse" id="myNavbar" >
     <div class="container-fluid" >
         <div class="navbar-header" >
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
@@ -58,87 +57,56 @@ include '../components/page_head.php'; ?>
     </div>
 </nav>
 
-<?php
-    $subid = $_GET['subid'];
-    $res = getstudents($subid);
-    $subdata = getsubdata($subid);
-?>
-        <section class="content-header">
+
+<!-- end of header-->
+<div class="container-fluid text-center">
+        <div class="row content" style="padding-top:0.1px" >
 
 
-            <div class="row">
-
-                <div class="col-md-2"></div>
-
-                <form action="" method="post">
-                <div class="col-md-10">
-
-                   <h2><?php echo $subdata[2]; ?>  -  <?php echo $subid?></h2><br>
-
-                    <h3> Course Id - <?php echo $subdata[1];?></h3> <br><br>
-
-
-                    <div class="box" style="width:75%;">
-                        <div class="box-header">
-                            <h3 class="box-title">Input Attendance</h3>
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body table-responsive no-padding">
-
-
-                            <table class="table table-hover">
-                                <tr>
-                                    <th>Subject ID</th>
-                                    <th>Student Name</th>
-                                    <th>Marks</th>
-                                    <th>Grade</th>
-                                </tr>
-                                <?php
-
-
-                                while ($row= mysqli_fetch_assoc($res)) {
-
-                                ?>
-                                <tr>
-                                    <td><?php  echo  $subid; ?></td>
-                                    <td><?php  echo  $row['fullname']; ?></td>
-                                    <td><input type="text" checked name="marks" ></td>
-                                    <td><input type="text" name="grade" ></td>
-
-                                </tr>
-
-                                    <?php } ?>
-                            </table>
-
-
-
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2">
-                            <button type="submit" class="btn btn-block btn-success btn-md" name="next">Next Page</button>
-                        </div>
-
-                        <div class="col-md-2">
-
-                            <button type="cancel" class="btn btn-block btn-danger btn-md">Cancel</button>
-                        </div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                    </div>
-                    </div>
-                </form>
-                <div class="col-md-2"></div>
-
+            <div class="col-md-3 sidenav" style="padding-left:0.1px">
+                <div class="well" style="height:200px;" id="calendar">
+                    <p><strong>calender</strong></p>
                 </div>
+            </div>
+			<form action="gen_income_other.php" method="post">
+            <div class="col-md-6 col-sm-12 col-xs-12" style="padding-right:0.1px;padding-left:0.1px;">
+                <div class="well" id="newsfeed" >
+				<u><h2>GENERATE OTHER INCOME REPORT</h2></u>
+					<h3><b>Enter the duration of the report </b></h3>
+                    <table>
+						<tr>
+							<td><h4><b>Starting from :-<span style="color:red;font-size:25px;">*</span></b></h4></td>
+							<td><input name="start_date" type="date"required id="enter_details" ></input></td>
+						</tr>
+						<tr>
+							<td><h4><b>To :-<span style="color:red;font-size:25px;">*</span></b></h4></td>
+							<td><input name="end_date" type="date"required id="enter_details" ></input></td>
+						</tr>
+						<td><h4><b>Wanted format</b></h4></td>
+						<td>
+							<div class="radio">
+								<label><input type="radio" name="optradio">On screen</label>
+								<label><input type="radio" name="optradio">PDF</label>
+							</div>
+						</td>
+					</table>
+					<button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+			</form>
+        <div class="col-md-3 sidenav" style="padding-right:0.1px">
+            <!--profile-->
+            <div class="well" style="height:200px;" id="proArea">
+                <h4>L P Jayasinghe</h4>
+                <img src="../public/dist/img/profile/c280829b27.jpg" class="img-circle" height="100" width="100" alt="Avatar">
+            </div>
+            </div>
 
-            </section>
+        </div>
+    </div>
+
+
+</center>
 <footer class="container-fluid" id="footer">
         <div class = "container-fluid">
             <div class="row">
@@ -152,12 +120,4 @@ include '../components/page_head.php'; ?>
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-<?php include "../components/page_tail.php"; ?>
+<?php include "../components/page_tail.php";

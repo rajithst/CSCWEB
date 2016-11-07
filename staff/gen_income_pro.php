@@ -1,15 +1,22 @@
 <?php
-
+include "../core/init.php";
 include '../components/page_head.php'; ?>
 
 <link rel="stylesheet" href="../public/dist/css/staff_css.css">
-<link rel="stylesheet" href="staff.css">
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+td{
+	width:100px;
+	border-color:#40ff00;
+}
+</style>
 </head>
 
-
-    <body background="">
-    <!-- header-->
-    <nav class="navbar navbar-inverse" id="myNavbar" >
+<body background="">
+<!-- header-->
+<nav class="navbar navbar-inverse" id="myNavbar" >
     <div class="container-fluid" >
         <div class="navbar-header" >
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
@@ -58,87 +65,39 @@ include '../components/page_head.php'; ?>
     </div>
 </nav>
 
-<?php
-    $subid = $_GET['subid'];
-    $res = getstudents($subid);
-    $subdata = getsubdata($subid);
-?>
-        <section class="content-header">
 
+<!-- end of header-->
+		<form action="student_Registration.php" method="post">
+			<div class="container-fluid text-center">
+				<div class="row content"style="padding-top:0.1px;">	
+						<div class="well" id="news">	
+							<h2><u>Registration Form</u></h2>
+							<?php
+								
+								$s_date=$_POST['start_date'];
 
-            <div class="row">
+								$e_date=$_POST['end_date'];
 
-                <div class="col-md-2"></div>
+								$query = "SELECT * FROM project_income WHERE received_date BETWEEN '$s_date' AND '$e_date'"; //You don't need a ; like you do in SQL
+								$result = mysqli_query($con,$query);
 
-                <form action="" method="post">
-                <div class="col-md-10">
+								echo "<table>"; // start a table tag in the HTML
+								echo "<tr><td>Project name</td><td>Client name</td><td>Responsible party</td><td>Received date</td><td>Due date</td><td>Received by</td><td>Amount</td></tr>";
+								while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
+								echo "<tr><td>" . $row['pro_name'] . "</td><td>" . $row['client'] . "</td><td>" . $row['responsible_party'] . "</td><td>" . $row['received_date'] . "</td><td>" . $row['due_date'] . "</td><td>" . $row['received_by'] . "</td><td>" . $row['amount'] . "</td></tr>";  //$row['index'] the index here is a field name
+								}
 
-                   <h2><?php echo $subdata[2]; ?>  -  <?php echo $subid?></h2><br>
+								echo "</table>"; //Close the table in HTML
 
-                    <h3> Course Id - <?php echo $subdata[1];?></h3> <br><br>
+								mysqli_close($con); //Make sure to close out the database connection
 
-
-                    <div class="box" style="width:75%;">
-                        <div class="box-header">
-                            <h3 class="box-title">Input Attendance</h3>
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body table-responsive no-padding">
-
-
-                            <table class="table table-hover">
-                                <tr>
-                                    <th>Subject ID</th>
-                                    <th>Student Name</th>
-                                    <th>Marks</th>
-                                    <th>Grade</th>
-                                </tr>
-                                <?php
-
-
-                                while ($row= mysqli_fetch_assoc($res)) {
-
-                                ?>
-                                <tr>
-                                    <td><?php  echo  $subid; ?></td>
-                                    <td><?php  echo  $row['fullname']; ?></td>
-                                    <td><input type="text" checked name="marks" ></td>
-                                    <td><input type="text" name="grade" ></td>
-
-                                </tr>
-
-                                    <?php } ?>
-                            </table>
-
-
-
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2">
-                            <button type="submit" class="btn btn-block btn-success btn-md" name="next">Next Page</button>
-                        </div>
-
-                        <div class="col-md-2">
-
-                            <button type="cancel" class="btn btn-block btn-danger btn-md">Cancel</button>
-                        </div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                    </div>
-                    </div>
-                </form>
-                <div class="col-md-2"></div>
-
-                </div>
-
-            </section>
+								?>
+						</div>
+				</div>
+			</div>
+							
+		</form>
+	
 <footer class="container-fluid" id="footer">
         <div class = "container-fluid">
             <div class="row">
@@ -152,12 +111,8 @@ include '../components/page_head.php'; ?>
             </div>
         </div>
     </footer>
+<?php include "../components/page_tail.php";
 
 
 
 
-
-
-
-
-<?php include "../components/page_tail.php"; ?>

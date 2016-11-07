@@ -1,6 +1,5 @@
 <?php
 include "../core/init.php";
-require 'function/staff.php';
 include '../components/page_head.php'; ?>
 
     <link rel="stylesheet" href="../public/dist/css/staff_css.css">
@@ -203,7 +202,7 @@ $(document).ready(function () {
         
         $.ajax({
            
-            url:'getsubs.php?cid='+id,
+            url:'getsubs_marks.php?cid='+id,
             type:"get",
             success:function (data) {
 
