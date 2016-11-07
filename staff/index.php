@@ -1,158 +1,338 @@
-
 <?php
-//include "../core/init.php";
-include '../components/page_head.php';
+session_start();
+require '../core/base.php';
 
-?>
+if(logged_in() === false){
+
+    session_destroy();
+    header('Location:../index.php');
+    exit();
+
+}
+require '../core/init.php';
+require '../core/function/staff.php';
+include '../components/page_head.php'; ?>
 
 
+    <script>
 
 
-<link rel="stylesheet" href="../public/dist/css/staff_css.css">
+        $(document).ready(function () {
+
+            $('#mycalendar').monthly({
+                mode: 'event',
+                //jsonUrl: 'events.json',
+                //dataType: 'json'
+                xmlUrl: 'events.xml'
+            });
+        });
+    </script>
+
+    </head>
+    <body>
+
+    <?php include "comp/navbar.php"; ?>
+
+    </br>
 
 </head>
 
 <body background="">
-<!-- header-->
-<nav class="navbar navbar-inverse" id="myNavbar" >
-    <div class="container-fluid" >
-        <div class="navbar-header" >
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <img src="../public/dist/img/system/csclogo.png"class="img-responsive csc-logo" id="logo">
-        </div>
-        <div class="collapse navbar-collapse"  >
 
-            <ul class="nav navbar-nav navbar-right" id="navbar_txt" >
-                <li>
-					<a href="index.php" style="color:white;" class="glyphicon glyphicon-home"> Home</a>
-				</li>
-                <li class="dropdown" style="margin-right:4px" >
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;padding-top:18px;" >
-					<span class="glyphicon glyphicon-globe"></span>
-					Notifications
-					<span class="caret">
-					</span>
-					</a>
-                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
-                        <li><a tabindex="-1" href="" id="task_txt">Emails</a></li>
-                    </ul>
-                </li>
-				<li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;padding-top:18px;">
-					<span class="glyphicon glyphicon-list-alt"> Reports</span>
-                        <span class="caret">
-						</span>
-                    </a>
-                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
-                        <li><a tabindex="-1" href="edit_rep.php" id="task_txt">Edit Report</a></li>
-						<li><a tabindex="-1" href="report_gen.php" id="task_txt">Generate report</a></li>
-                    </ul>
-                </li>
-				<li>
-					<a href="select_course_reg.php" style="color:white;padding-top:18px;"><span class="glyphicon glyphicon-edit"></span> Registration</a>
-				</li>
-                <li>
-					<a href="#" style="color:white;padding-top:18px;"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
-				</li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    <div class="container-fluid">
+        <div class="sidenav col-md-2 col-sm-3 col-xs-12">
 
+            <center>
+                <h3>Main menu</h3>
+            </center>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+                            </span>Content</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body" style="padding: 0;">
+                            <table class="table" style="margin-bottom: 0px;">
+                                <tr>
+                                    <td style="padding-left: 15px;">
+                                        <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="allposts.php">All Posts</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-user text-success" style="margin-right: 10px;"></span><a href="alluser.php">All Users</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-file text-success" style="margin-right: 10px;"></span><a href="http://www.jquery2dotnet.com">Newsletters</a>
+                                    </td>
+                                </tr>
+                                <tr>
 
-<!-- end of header-->
-<div class="container-fluid text-center">
-        <div class="row content" style="padding-top:0.1px" >
-
-
-
-            <div class="col-md-3 sidenav" style="padding-left:0.1px">
-                
-            <div class="col-md-3 sidenav">
-
-                <div class="well" style="height:200px;" id="calendar">
-                    <p><strong>calender</strong></p>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
+                            </span>Modules</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <a href="http://www.jquery2dotnet.com">Orders</a> <span class="label label-success">$ 320</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://www.jquery2dotnet.com">Invoices</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../public/dist/img/system/csclogo.png"class="img-responsive csc-logo" id="logo">
+                                        <a href="http://www.jquery2dotnet.com">Shipments</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://www.jquery2dotnet.com">Tex</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
+                            </span>Account</a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://www.jquery2dotnet.com">Import/Export</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
+                                            Delete Account</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
+                            </span>Reports</a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">Sales</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">Customers</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-tasks"></span><a href="http://www.jquery2dotnet.com">Products</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-shopping-cart"></span><a href="http://www.jquery2dotnet.com">Shopping Cart</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
-            <div class="col-md-6 col-sm-12 col-xs-12" style="padding-right:0.1px;padding-left:0.1px;">
-                <div class="well" id="newsfeed" >
-				<center><h3>News Feed</h3></center>				
-                    <div class="thumbnail">
-							<p style="text-align:left;"><strong>Subject:******</strong></p>
-							<p style="text-align:left;">Date --:--:----  / time --:--:--</p>
-							<p style="text-align:left;">Description:*************</p>
-							<button class="btn btn-primary">See More</button>
-					</div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div id="newsfeed">
-                    <div class="col-sm-12 col-xm-12"> <center><h3>News Feed</h3></center></div>
+
+            <center><h3> Event Calender</h3></center>
+            <div class="monthly" id="mycalendar"></div>
+
+        </div>
+
+
+
+        <div class="col-sm-9 col-md-9">
+
+
+        </div>
+
+
+        <div class="col-md-8 col-sm-6 col-xs-12">
+
+            <center><h2>News Feed</h2></center>
+
+            <?php
+
+            $posts = getpostss();
+
+            $count = 1;
+
+            while ($row = mysqli_fetch_assoc($posts)) {
+
+                if ($count <=4) {
+                    $id = $row['adminid'];
+
+                    $admindata = getadmins($id);
+                    while ($data = mysqli_fetch_assoc($admindata)) {
+                        ?>
+
+
+                        <div class="alert-message alert-message-notice">
+
+                            <h4><?php echo $row['subject']; ?> </h4>
+                            <span class="badge">Posted By Admin <?php echo $data['name']; ?></span>
+                            <div style="width: 6%; margin-left: 90%;margin-top: -3%;height: 70px;">
+
+                                <img src="<?php echo $data['profile']; ?>" alt="" style="width: 100%; height: 100%;">
+                            </div>
+
+                            <hr>
+
+                            <p><?php echo $row['text']; ?></p>
+
+                            <span class="badge" style="float: right;"> on <?php echo $row['date']; ?></span>
+
+                        </div>
+
+
+                    <?php }
+                }else{
+
+                    ?>
+                    <a href="allposts.php">Click here for Older Posts</a>
 
                     <?php
+                    break;
+                }
+
+                $count++;
 
 
-                    print_r($_SESSION);
+            }?>
 
-                    $posts = getposts();
-                    while ($row = mysqli_fetch_assoc($posts)) {
-                        $id = $row['adminid'];
-                        $admindata = getadmin($id);
-                        while ($data = mysqli_fetch_assoc($admindata)) {
-                            ?>
+        </div>
 
-                            <div class="col-sm-12 col-xm-12" >
-                                <div id="nws">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" ><strong><?php echo $row['subject']; ?></strong> <br>
-                                            <small>Posted by <?php echo $data['name']; ?></small>
-                                            <div style="width: 10%; margin-left: 85%;margin-top: -5%;height: 70px;"><img src="<?php echo $data['profile']; ?>" alt="" style="width: 100%; height: 100%;"></div>
 
-                                        </div>
-                                        <div class="panel-body" id="newsbody">
-                                            <?php echo $row['text']; ?>
-                                            <div id="attach"><a href=""><?php echo $row['date']; ?></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php
+        <br>
 
-                        }
 
-                    } ?>
+
+        <div class="col-md-2 col-sm-3 col-xs-12">
+            <div class="profile-sidebar">
+
+                <div class="profile-userpic">
+                    <img src="<?php echo $staff_data['profile']; ?>" class="img-responsive" alt="">
+                </div>
+
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">
+                        <?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?>
+                    </div>
+                    <div class="profile-usertitle-job">
+                        <?php echo $staff_data['role']; ?>
+                    </div>
+                </div>
+
+                <div class="profile-userbuttons">
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal">Profile</button>
+                    <button type="button" class="btn btn-danger btn-sm">Sign Out</button>
+                </div>
+
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="index.php">
+                                <i class="glyphicon glyphicon-home"></i>
+                                Home </a>
+                        </li>
+                        <li>
+                            <a href="profile.php">
+                                <i class="glyphicon glyphicon-user"></i>
+                                Account Settings </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-flag"></i>
+                                Help </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END MENU -->
+            </div>
+        </div>
+
+
+    </div>
+    <br>
+    <br>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="container-fluid well span6">
+                <div class="row">
+                    <div class="col-md-4" >
+                        <img src="<?php echo $staff_data['profile']; ?>" class="img-circle">
+                    </div>
+
+                    <div class="col-md-8" >
+                        <h3><?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?></h3>
+                        <h5><?php echo $staff_data['email']; ?></h5>
+                        <h5><?php echo $staff_data['role']; ?></h5>
+                    </div>
 
                 </div>
             </div>
-
-        <div class="col-md-3 sidenav" style="padding-right:0.1px">
-            <!--profile-->
-            <div class="well" style="height:200px;" id="proArea">
-                <h4>L P Jayasinghe</h4>
-                <img src="../public/dist/img/profile/c280829b27.jpg" class="img-circle" height="100" width="100" alt="Avatar">
-            </div>
-            </div>
-
         </div>
     </div>
 
 
-</center>
-<footer class="container-fluid" id="footer">
-        <div class = "container-fluid">
-            <div class="row">
-                <div col-md-5 class="footer-content">
-                     <ul class="footer-nav">
-                        <li>C</li> <li>O</li> <li>M</li> <li>P</li> <li>U</li> <li>T</li> <li>I</li> <li>N</li><li>G</li><li></li>           
-                        <li>S</li> <li>E</li> <li>R</li> <li>V</li> <li>I</li> <li>C</li> <li>E</li> <li>S</li><li></li>
-                        <li>C</li><li>E</li> <li>N</li> <li>T</li> <li>R</li> <li>E</li>
-                    </ul>
-               </div>
-            </div>
-        </div>
-    </footer>
+
 <?php include "../components/page_tail.php";

@@ -59,7 +59,7 @@
                     <a href="lecturer.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Lecturer <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a tabindex="-1" href="lecturer.php">Handle Lecturer</a></li>
+                        <li><a tabindex="-1" href="lecturer.php">Add Lecturer</a></li>
                     </ul>
                 </li>
 
@@ -68,7 +68,8 @@
                     <a href="course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Courses<span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a tabindex="-1" href="course.php">Handle Courses</a></li>
+                        <li><a tabindex="-1" href="course.php">Add Courses</a></li>
+                        <li><a tabindex="-1" href="editcourse.php">Edit Courses</a></li>
                     </ul>
                 </li>
 
@@ -76,7 +77,7 @@
                     <a href="lectures.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Lectures <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a tabindex="-1" href="lectures.php">Handle Lectures</a></li>
+                        <li><a tabindex="-1" href="lectures.php">Add Lectures</a></li>
                         </li>
                     </ul>
                 </li>

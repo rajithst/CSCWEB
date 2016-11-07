@@ -27,6 +27,45 @@ include '../components/cscordinator_head.php'; ?>
 </br>
 
 
+
+<?php
+
+
+if (isset($_POST['submit'])) {
+
+	$register_data = array(
+
+		'courseid' => $_POST['courseid'],
+		'subject' => $_POST['subject'],
+		'subjectid' => $_POST['subjectid'],
+		'coursecid' => $_POST['coursecid'],
+		'fee' => $_POST['fee'],
+		'duration' => $_POST['duration']
+
+	);
+
+	addnewcourse( $register_data); ?>
+	<script>swal("New Coursr Added!", "Your have benn added a course successfully")</script>
+
+	<?php
+
+
+
+}
+
+
+
+
+?>
+
+
+
+
+
+
+
+
+
 <div class="container-fluid">
 	<div class="row" style="padding: 10px;">
 
@@ -34,8 +73,15 @@ include '../components/cscordinator_head.php'; ?>
 		<div class="col-xs-12 col-sm-8 col-md-6 ">
 
 			<center><h3>Add New Course</h3></center>
+
+
+			<center><div class="alert alert-danger">
+				<strong>Warning!</strong> Cant Use existing course id for new course.
+			</div></center>
+
+
 			<br>
-			<form class="form-horizontal" action=" " method="post"  id="contact_form">
+			<form class="form-horizontal" action="" method="post"  id="contact_form">
 
 
 
@@ -44,9 +90,8 @@ include '../components/cscordinator_head.php'; ?>
 					<div class="col-md-6 selectContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-							<select name="subject" class="form-control selectpicker" id="getmaincat">
-								<option value=" " >Please select Parent Cetegory</option>
-
+							<select name="courseid" class="form-control selectpicker" id="getmaincat" required="required">
+								<option value="">--- SELECT PARENT CATEGORY ---</option>
 								<?php
 
 								$subs = getcoursefor();
@@ -68,11 +113,11 @@ include '../components/cscordinator_head.php'; ?>
 
 
 				<div class="form-group">
-					<label class="col-md-4 control-label">Course ID</label>
+					<label class="col-md-4 control-label">Course ID</label><button type="button" class="btn btn-warning" id="getid">Get Course ID</button>
 					<div class="col-md-6 inputGroupContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-							<input  name="first_name" placeholder="" class="form-control"  type="text" >
+							<input readonly  name="subjectid" placeholder="" class="form-control"  type="text" value="" id="courseid" required>
 						</div>
 					</div>
 				</div>
@@ -84,7 +129,7 @@ include '../components/cscordinator_head.php'; ?>
 					<div class="col-md-6 inputGroupContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-							<input name="last_name" placeholder="" class="form-control"  type="text">
+							<input name="subject" placeholder="" class="form-control"  type="text" required>
 						</div>
 					</div>
 				</div>
@@ -94,7 +139,7 @@ include '../components/cscordinator_head.php'; ?>
 					<div class="col-md-6 selectContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-							<select name="subject" class="form-control selectpicker" >
+							<select name="coursecid" class="form-control selectpicker" required="required">
 								<option value=" " >Please select Course Coordinator</option>
 
 								<?php
@@ -122,7 +167,7 @@ include '../components/cscordinator_head.php'; ?>
 					<div class="col-md-6 inputGroupContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-							<input name="email" placeholder="" class="form-control"  type="number">
+							<input name="fee" placeholder="" class="form-control"  type="number" required>
 						</div>
 					</div>
 				</div>
@@ -135,7 +180,7 @@ include '../components/cscordinator_head.php'; ?>
 					<div class="col-md-6 inputGroupContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-							<input name="phone" placeholder="" class="form-control" type="number">
+							<input name="duration" placeholder="" class="form-control" type="number" required>
 						</div>
 					</div>
 				</div>
@@ -147,18 +192,18 @@ include '../components/cscordinator_head.php'; ?>
 				<center><div class="form-group">
 						<label class="col-md-4 control-label"></label>
 						<div class="col-md-6">
-							<button type="submit" class="btn btn-success" >Create Course <span class="glyphicon glyphicon-send"></span> </button>
+							<button type="submit" class="btn btn-success" name="submit">Create Course <span class="glyphicon glyphicon-send"></span></button>
 							<button type="reset" class="btn btn-danger" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
 						</div>
 					</div>
 
 				</center>
 
-
-
-
 			</form>
 		</div>
+
+
+
 
 
 
@@ -184,9 +229,16 @@ include '../components/cscordinator_head.php'; ?>
 				</tbody>
 			</table>
 
-		</div>
-	</div>
 
+
+	</div>
+</div>
+
+	<br><br>
+		<center>
+			<a href="fullcourses.php"><button class="btn btn-info">See Full Courses Here</button></a>
+			<a href="addparent.php"><button class="btn btn-info">Add new parent Category Here</button></a>
+		</center>
 </div>
 
 <?php include "../components/cscordinator_footer.php"; ?>
@@ -194,17 +246,16 @@ include '../components/cscordinator_head.php'; ?>
 
 	$(document).ready( function () {
 		$('#lectable').DataTable();
-	} );
 
 
-	$('#getmaincat').click(function () {
-
-        var cid = $(this).val();
+		var cid = "";
+	$('#getmaincat').change(function () {
+		$('input#courseid').val("");
+         cid = $(this).val();
 		var n = $('#getmaincat').find('option:selected').text()+" "+"("+cid+")";
 
 		$('#display').html("");
 		$('#display').html(n);
-
 
 
 		$.ajax({
@@ -218,7 +269,22 @@ include '../components/cscordinator_head.php'; ?>
 			}
 
 
-		})
+		});
+
+
+	});
+
+
+	$('button#getid').click(function () {
+
+		var rowCount = $('#lectable >tbody > tr').length;
+		console.log(rowCount);
+
+		$('input#courseid').val("");
+		$('input#courseid').val(cid+"/"+(rowCount+1));
+
+	});
+
 	});
 
 </script>
