@@ -88,4 +88,13 @@ function getsubsbyid($id){
 
 }
 
+function addnewcourse( $register_data){
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $fields='`' .implode('`,`' ,array_keys($register_data)) . '`';
+    $data = '\'' . implode('\', \'' ,$register_data ) . '\' ';
+    $q = mysqli_query($con,"INSERT INTO subjects($fields) VALUES ($data)");
+
+
+}
+
 ?>
