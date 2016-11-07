@@ -79,4 +79,13 @@ function register_lect( $register_data){
 
 }
 
+function getsubsbyid($id){
+
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $sql = "SELECT * FROM subjects WHERE courseid = '$id'";
+    $res = mysqli_query($con, $sql);
+    return $res;
+
+}
+
 ?>

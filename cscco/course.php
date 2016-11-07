@@ -34,6 +34,13 @@ include '../components/cscordinator_head.php'; ?>
 		<div class="col-xs-12 col-sm-8 col-md-6 ">
 
 			<center><h3>Add New Course</h3></center>
+
+
+			<div class="alert alert-danger">
+				<strong>Warning!</strong> Cant Use existing course id for new course.
+			</div>
+
+
 			<br>
 			<form class="form-horizontal" action=" " method="post"  id="contact_form">
 
@@ -68,11 +75,11 @@ include '../components/cscordinator_head.php'; ?>
 
 
 				<div class="form-group">
-					<label class="col-md-4 control-label">Course ID</label>
+					<label class="col-md-4 control-label">Course ID</label><button type="button" class="btn btn-warning" id="getid">Get Course ID</button>
 					<div class="col-md-6 inputGroupContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-							<input  name="first_name" placeholder="" class="form-control"  type="text" >
+							<input  name="first_name" placeholder="" class="form-control"  type="text" value="" id="courseid" disabled>
 						</div>
 					</div>
 				</div>
@@ -184,9 +191,16 @@ include '../components/cscordinator_head.php'; ?>
 				</tbody>
 			</table>
 
-		</div>
-	</div>
 
+
+	</div>
+</div>
+
+	<br><br>
+		<center>
+			<a href="fullcourses.php"><button class="btn btn-info">See Full Courses Here</button></a>
+			<a href="addparent.php"><button class="btn btn-info">Add new parent Category Here</button></a>
+		</center>
 </div>
 
 <?php include "../components/cscordinator_footer.php"; ?>
@@ -206,7 +220,6 @@ include '../components/cscordinator_head.php'; ?>
 		$('#display').html(n);
 
 
-
 		$.ajax({
 
 			url:'getsubs.php?cid='+cid,
@@ -218,7 +231,22 @@ include '../components/cscordinator_head.php'; ?>
 			}
 
 
-		})
+		});
+
+
 	});
+
+
+	$('button#getid').click(function () {
+
+		var rowCount = $('#lectable >tbody > tr').length;
+		console.log(rowCount);
+
+		$('input#courseid').val("");
+		$('input#courseid').val(cid+"/"+(rowCount+1));
+
+	});
+
+
 
 </script>

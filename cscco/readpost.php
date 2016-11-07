@@ -35,6 +35,8 @@ $data = mysqli_fetch_row($post);
 
 
     <div class="container">
+
+        <center> <h2>Read post here</h2></center>
         <div class="col-md-12">
             <h1><?php echo  $data[2];?></h1>
             <p>
@@ -54,3 +56,5 @@ $data = mysqli_fetch_row($post);
 
 
 <?php include "../components/cscordinator_footer.php"; ?>
+
+
