@@ -97,4 +97,6 @@ function addnewcourse( $register_data){
 
 }
 
+
+
 ?>

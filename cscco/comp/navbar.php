@@ -69,6 +69,7 @@
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                         <li><a tabindex="-1" href="course.php">Add Courses</a></li>
+                        <li><a tabindex="-1" href="editcourse.php">Edit Courses</a></li>
                     </ul>
                 </li>
 

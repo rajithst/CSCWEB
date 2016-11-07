@@ -90,7 +90,7 @@ if (isset($_POST['submit'])) {
 					<div class="col-md-6 selectContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-							<select name="courseid" class="form-control selectpicker" id="getmaincat">
+							<select name="courseid" class="form-control selectpicker" id="getmaincat" required="required">
 								<option value="">--- SELECT PARENT CATEGORY ---</option>
 								<?php
 
@@ -117,7 +117,7 @@ if (isset($_POST['submit'])) {
 					<div class="col-md-6 inputGroupContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-							<input readonly  name="subjectid" placeholder="" class="form-control"  type="text" value="" id="courseid" >
+							<input readonly  name="subjectid" placeholder="" class="form-control"  type="text" value="" id="courseid" required>
 						</div>
 					</div>
 				</div>
@@ -129,7 +129,7 @@ if (isset($_POST['submit'])) {
 					<div class="col-md-6 inputGroupContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-							<input name="subject" placeholder="" class="form-control"  type="text">
+							<input name="subject" placeholder="" class="form-control"  type="text" required>
 						</div>
 					</div>
 				</div>
@@ -139,7 +139,7 @@ if (isset($_POST['submit'])) {
 					<div class="col-md-6 selectContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-							<select name="coursecid" class="form-control selectpicker" >
+							<select name="coursecid" class="form-control selectpicker" required="required">
 								<option value=" " >Please select Course Coordinator</option>
 
 								<?php
@@ -167,7 +167,7 @@ if (isset($_POST['submit'])) {
 					<div class="col-md-6 inputGroupContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-							<input name="fee" placeholder="" class="form-control"  type="number">
+							<input name="fee" placeholder="" class="form-control"  type="number" required>
 						</div>
 					</div>
 				</div>
@@ -180,7 +180,7 @@ if (isset($_POST['submit'])) {
 					<div class="col-md-6 inputGroupContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-							<input name="duration" placeholder="" class="form-control" type="number">
+							<input name="duration" placeholder="" class="form-control" type="number" required>
 						</div>
 					</div>
 				</div>
@@ -249,7 +249,7 @@ if (isset($_POST['submit'])) {
 
 
 		var cid = "";
-	$('#getmaincat').click(function () {
+	$('#getmaincat').change(function () {
 		$('input#courseid').val("");
          cid = $(this).val();
 		var n = $('#getmaincat').find('option:selected').text()+" "+"("+cid+")";
