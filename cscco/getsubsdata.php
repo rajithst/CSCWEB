@@ -49,8 +49,7 @@ echo "<div class='form-group'>
 					<div class='col-md-6 selectContainer'>
 						<div class='input-group'>
 							<span class='input-group-addon'><i class='glyphicon glyphicon-list'></i></span>
-							<select name='coursecid' class='form-control selectpicker' required='required'>
-								<option value=' ' >Please select Course Coordinator</option>";
+							<select name='coursecid' class='form-control selectpicker' required='required'>";
 
 
 								$subs = getcoursecodinators();
@@ -96,7 +95,7 @@ echo "<div class='form-group'>
         <label class='col-md-2 control-label'></label>
         <div class='col-md-6'>
             <button type='submit' class='btn btn-success' name='submit'>Save Changes <span class='glyphicon glyphicon-send'></span></button>
-            <button type='reset' class='btn btn-danger' >Cancel <span class='glyphicon glyphicon-remove'></span> </button>
+            <button type='reset' class='btn btn-success' >Cancel <span class='glyphicon glyphicon-remove'></span> </button>
         </div>
     </div>
 

@@ -113,8 +113,8 @@ include '../components/cscordinator_head.php'; ?>
 					<center><div class="form-group">
 							<label class="col-md-4 control-label"></label>
 							<div class="col-md-6">
-								<button type="submit" class="btn btn-success" name="submit">Submit <span class="glyphicon glyphicon-send"></span> </button>
-								<button type="reset" class="btn btn-danger" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
+								<button type="submit" class="btn btn-info" name="submit">Add <span class="glyphicon glyphicon-send"></span> </button>
+								<button type="reset" class="btn btn-info" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
 							</div>
 						</div>
 
@@ -186,7 +186,7 @@ include '../components/cscordinator_head.php'; ?>
 							<td><?php echo $lecdata['email']; ?></td>
 							<td><?php echo $lecdata['subject']; ?></td>
 							<td><?php echo $lecdata['phone']; ?></td>
-							<td> <button class="btn btn-success"> Send Email</button> <button class="btn btn-danger"> Edit User</button></td>
+							<td><button class="btn btn-info"> Edit User</button></td>
 						</tr>
 
 					<?php	}

@@ -192,8 +192,8 @@ if (isset($_POST['submit'])) {
 				<center><div class="form-group">
 						<label class="col-md-4 control-label"></label>
 						<div class="col-md-6">
-							<button type="submit" class="btn btn-success" name="submit">Create Course <span class="glyphicon glyphicon-send"></span></button>
-							<button type="reset" class="btn btn-danger" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
+							<button type="submit" class="btn btn-success" name="submit">Create Course <span class="glyphicon glyphicon-plus"></span></button>
+							<button type="reset" class="btn btn-success" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
 						</div>
 					</div>
 

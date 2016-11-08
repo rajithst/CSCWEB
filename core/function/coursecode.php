@@ -77,3 +77,12 @@ function getccdata($id){
 }
 
 
+function getentire($subject){
+
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $sql = "SELECT * FROM posts WHERE subject = '$subject'";
+    $res = mysqli_query($con, $sql);
+    return $res;
+
+
+}

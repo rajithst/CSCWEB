@@ -58,7 +58,16 @@ $course = getcoursefor();
 
         <?php } ?>
                     </div>
+
+
+
+
                 </div>
+
+    <center>
+        <a href="editcourse.php"><button class="btn btn-info">Edit Courses Here</button></a>
+        <a href="course.php"><button class="btn btn-info">Back</button></a>
+    </center>
 
     </div>
 

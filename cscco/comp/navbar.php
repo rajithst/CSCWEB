@@ -124,9 +124,6 @@
                                         <div class="col-lg-8">
                                             <p class="text-left"><strong><?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?></strong></p>
                                             <p class="text-left small"><?php echo $staff_data['email']; ?></p>
-                                            <p class="text-left">
-                                                <a href="#" class="btn btn-primary btn-block btn-sm">See Profile</a>
-                                            </p>
                                         </div>
                                     </div>
                                 </div>

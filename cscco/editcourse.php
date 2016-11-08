@@ -41,7 +41,7 @@ include '../components/cscordinator_head.php'; ?>
                         <div class="col-md-6 selectContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                <select name="courseid" class="form-control selectpicker" id="getmaincat">
+                                <select name="courseid" class="form-control selectpicker" id="subs">
                                     <option value="">--- SELECT COURSE ---</option>
                                     <?php
 
@@ -68,9 +68,9 @@ include '../components/cscordinator_head.php'; ?>
 
                     <div class="col-xs-12  col-sm-8 col-md-6 pull-left">
 
-                        <button class="btn btn-warning" id="edit">Edit Course</button> <button class="btn btn-danger" id="delete">Delete Course</button>
+                        <button class="btn btn-info" id="edit">Edit Course</button> <button class="btn btn-info" id="delete">Delete Course</button>
 
-
+                        <a href="fullcourses.php"> <button class="btn btn-info" id="delete">Go back</button></a>
                     </div>
 
                 </div>
@@ -85,6 +85,7 @@ include '../components/cscordinator_head.php'; ?>
 
 
         </div>
+
 
     </div>
 <?php
@@ -114,9 +115,15 @@ if (isset($_POST['submit'])) {
 
         $(document).ready(function () {
 
+            $('#subs').change(function () {
+                $('div#dd>div#inner').html("");
+
+                });
+
+
             $('#edit').click(function () {
 
-                cid = $( "#getmaincat option:selected" ).val();
+                cid = $( "#subs option:selected" ).val();
 
 
                 $.ajax({
@@ -136,6 +143,48 @@ if (isset($_POST['submit'])) {
             });
 
 
-        });
+
+            $('#delete').click(function () {
+                cid = $("#subs option:selected").val();
+
+                 if (cid != ""){
+                swal({
+                        title: "Are you sure?",
+                        text: "You will not be able to recover this action!",
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "Yes, delete it!",
+                        cancelButtonText: "No, cancel ",
+                        closeOnConfirm: false, closeOnCancel: false
+                    },
+
+                    function (isConfirm) {
+                        if (isConfirm) {
+                            swal("removing!", "Your data  has been deleted.", "success");
+
+                            $.ajax({
+
+                                url: 'deletesubsdata.php?cid=' + cid,
+                                type: "GET",
+                                success: function (data) {
+                                    location.reload();
+
+                                }
+                            });
+
+
+                        } else {
+                            swal("Cancelled");
+                        }
+                    });
+            }
+
+                });
+
+
+            });
+
+
 
     </script>

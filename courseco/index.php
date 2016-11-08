@@ -10,9 +10,8 @@ if(logged_in() === false){
 
 }
 
-
-//require '../core/init.php';
-//require '../core/function/coursecode.php';
+require '../core/init.php';
+require '../core/function/coursecode.php';
 include '../components/course_head.php'; ?>
 
 <script>
@@ -196,33 +195,60 @@ include '../components/course_head.php'; ?>
 </div>
 
 
-<div class="col-md-8 col-sm-6 col-xs-12">
+    <div class="col-md-8 col-sm-6 col-xs-12">
 
-    <center><h2>News Feed</h2></center>
+        <center><h2>News Feed</h2></center>
+
+        <?php
+
+        $posts = getpostss();
+
+        $count = 1;
+
+        while ($row = mysqli_fetch_assoc($posts)) {
+
+            if ($count <=4) {
+                $id = $row['adminid'];
+
+                $admindata = getadmins($id);
+                while ($data = mysqli_fetch_assoc($admindata)) {
+                    ?>
+
 
                     <div class="alert-message alert-message-notice">
 
-                        <h4></h4>
-                        <span class="badge">Posted By Admin </span>
+                        <h4><?php echo $row['subject']; ?> </h4>
+                        <span class="badge">Posted By Admin <?php echo $data['name']; ?></span>
                         <div style="width: 6%; margin-left: 90%;margin-top: -3%;height: 70px;">
 
-                          <img src="" alt="" style="width: 100%; height: 100%;">
+                            <img src="<?php echo $data['profile']; ?>" alt="" style="width: 100%; height: 100%;">
                         </div>
 
                         <hr>
 
-                        <p></p>
+                        <p><?php echo $row['text']; ?></p>
 
-                        <span class="badge" style="float: right;"> on </span>
+                        <span class="badge" style="float: right;"> on <?php echo $row['date']; ?></span>
 
                     </div>
 
+
+                <?php }
+            }else{
+
+                ?>
                 <a href="allposts.php">Click here for Older Posts</a>
 
-            
+                <?php
+                break;
+            }
 
-</div>
+            $count++;
 
+
+        }?>
+
+    </div>
     
     <br>
 
@@ -232,15 +258,15 @@ include '../components/course_head.php'; ?>
             <div class="profile-sidebar">
 
                 <div class="profile-userpic">
-                    <img src="" class="img-responsive" alt="">
+                    <img src="<?php echo $staff_data['profile']; ?>" class="img-responsive" alt="">
                 </div>
 
                 <div class="profile-usertitle">
                     <div class="profile-usertitle-name">
-                        
+                        <?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?>
                     </div>
                     <div class="profile-usertitle-job">
-                        
+                        <?php echo $staff_data['role']; ?>
                     </div>
                 </div>
 
@@ -284,27 +310,26 @@ include '../components/course_head.php'; ?>
 
 
 <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+        <div class="modal-dialog">
 
-        <div class="container-fluid well span6">
-            <div class="row">
-                <div class="col-md-4" >
-                    <img src="" class="img-circle">
+            <div class="container-fluid well span6">
+                <div class="row">
+                    <div class="col-md-4" >
+                        <img src="<?php echo $staff_data['profile']; ?>" class="img-circle">
+                    </div>
+
+                    <div class="col-md-8" >
+                        <h3><?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?></h3>
+                        <h5><?php echo $staff_data['email']; ?></h5>
+                        <h5><?php echo $staff_data['role']; ?></h5>
+                    </div>
+
                 </div>
-
-                <div class="col-md-8" >
-                    <h3></h3>
-                    <h5></h5>
-                    <h5>
-                    </h5>
-                </div>
-
             </div>
         </div>
     </div>
-</div>
 
 
-<?php include '../components/course_footer.php'; ?>
+    <?php include '../components/course_footer.php'; ?>
 
   
