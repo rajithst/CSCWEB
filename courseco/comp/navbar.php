@@ -37,7 +37,11 @@
 
 
                 <li class="dropdown">
-                    <a href="course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Courses<span class="caret"></span>
+                    <a href="" style="color:white;"><span class="glyphicon glyphicon-home"></span> Home</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;"><span class="glyphicon glyphicon-education"></span> Courses<span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                         <li><a tabindex="-1" href="course.php">Course 1</a></li>
