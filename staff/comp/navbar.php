@@ -55,8 +55,8 @@
 						</span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
-                        <li><a tabindex="-1" href="edit_rep.php" id="task_txt">Edit Report</a></li>
-                        <li><a tabindex="-1" href="report_gen.php" id="task_txt">Generate report</a></li>
+                        <li><a tabindex="-1" href="edit_report.php" id="task_txt">Edit Reports</a></li>
+                        <li><a tabindex="-1" href="generate_report.php" id="task_txt">Generate reports</a></li>
                     </ul>
                 </li>
                 <li>

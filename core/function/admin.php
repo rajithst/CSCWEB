@@ -1,5 +1,6 @@
 <?php
-$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+
+$con = mysqli_connect('localhost', 'root', 'rajith',  'csc') or die(mysqli_connect_error());
 
 function user_id_from_email($email) {
     $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
@@ -57,6 +58,7 @@ function postdata($postdata) {
 	$data   = '\''.implode('\', \'', $postdata).'\' ';
 
 	$sql = "INSERT INTO posts ($fields) VALUE ($data)";
+
 	mysqli_query($con, $sql);
 
 }
@@ -169,3 +171,33 @@ function putdraft( $postdata) {
 	mysqli_query($con, $sql);
 
 }
+
+function getallstaff(){
+	$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+	$sql = "SELECT * FROM staff WHERE role = 'CSC Staff'";
+	$res = mysqli_query($con, $sql);
+	return $res;
+
+
+}
+
+function getallcscco(){
+	$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+	$sql = "SELECT * FROM staff WHERE role = 'CSC Cordinator'";
+	$res = mysqli_query($con, $sql);
+	return $res;
+
+
+}
+
+
+function getallcourseco(){
+	$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+	$sql = "SELECT * FROM staff WHERE role = 'Course Coordinator'";
+	$res = mysqli_query($con, $sql);
+	return $res;
+
+
+}
+
+

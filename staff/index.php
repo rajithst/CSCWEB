@@ -78,40 +78,8 @@ include '../components/page_head.php'; ?>
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
-                            </span>Modules</a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <table class="table">
-                                <tr>
-                                    <td>
-                                        <a href="http://www.jquery2dotnet.com">Orders</a> <span class="label label-success">$ 320</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="http://www.jquery2dotnet.com">Invoices</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img src="../public/dist/img/system/csclogo.png"class="img-responsive csc-logo" id="logo">
-                                        <a href="http://www.jquery2dotnet.com">Shipments</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="http://www.jquery2dotnet.com">Tex</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+                
+               
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
@@ -159,22 +127,12 @@ include '../components/page_head.php'; ?>
                             <table class="table">
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">Sales</a>
+                                        <span class="glyphicon glyphicon-pencil"></span><a href="edit_report.php">Edit reports</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">Customers</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-tasks"></span><a href="http://www.jquery2dotnet.com">Products</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-shopping-cart"></span><a href="http://www.jquery2dotnet.com">Shopping Cart</a>
+                                        <span class="glyphicon glyphicon-th-list"></span><a href="generate_report.php">Generate reports</a>
                                     </td>
                                 </tr>
                             </table>
@@ -197,7 +155,7 @@ include '../components/page_head.php'; ?>
 
         </div>
 
-
+		
         <div class="col-md-8 col-sm-6 col-xs-12">
 
             <center><h2>News Feed</h2></center>
@@ -252,12 +210,7 @@ include '../components/page_head.php'; ?>
             }?>
 
         </div>
-
-
-        <br>
-
-
-
+		
         <div class="col-md-2 col-sm-3 col-xs-12">
             <div class="profile-sidebar">
 
@@ -335,4 +288,4 @@ include '../components/page_head.php'; ?>
 
 
 
-<?php include "../components/page_tail.php";
+<?php include "../components/page_tail.php";?>

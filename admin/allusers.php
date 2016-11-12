@@ -1,8 +1,6 @@
-
 <?php
-require '../core/init.php';
-require 'function/admin.php';
-error_reporting(0);
+session_start();
+require '../core/base.php';
 
 if(logged_in() === false){
 
@@ -11,122 +9,179 @@ if(logged_in() === false){
     exit();
 
 }
-
-require '../components/page_head.php';
-
-
-?>
-
-
+require '../core/init.php';
+require '../core/function/admin.php';
+require '../components/adminhead.php'; ?>
 </head>
+<body class="nav-md" style="overflow-y:hidden;">
+<div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
 
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
+                <div class="clearfix"></div>
 
-    <!-- Main Header -->
-    <header class="main-header">
+                <?php include '../components/adminmenuprofile.php'; ?>
+                <!-- /menu profile quick info -->
 
-        <!-- Logo -->
-        <a href="index2.html" class="logo">
-            <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini"><b>CSC</span>
-            <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b>CSC</b>  UCSC</span>
-        </a>
+                <br />
 
-        <!-- Header Navbar -->
-        <?php include "../components/navbar.php";?>
-    </header>
-    <!-- Left side column. contains the logo and sidebar -->
-    <aside class="main-sidebar">
+                <!-- sidebar menu -->
+                <?php include '../components/adminsidebar.php'; ?>
+            </div>
+        </div>
 
-        <!-- sidebar: style can be found in sidebar.less -->
-        <section class="sidebar">
+        <!-- top navigation -->
+        <?php include '../components/adminnavbar.php';
 
-            <?php include '../components/sidebar_head.php' ?>
-            <!-- /.search form -->
-            <?php include '../components/sidebar.php'?>
-            <!-- Sidebar Menu --
 
-    <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper">
-                <!-- Content Header (Page header) -->
-                <section class="content-header">
-                    <h1>
-                        All Users
 
-                    </h1>
-                    <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> Users</a></li>
-                        <li class="active">All</li>
-                    </ol>
-                </section>
+        ?>
 
-                <!-- Main content -->
-                <section class="content">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="box">
-                                <div class="box-header">
-                                    <h3 class="box-title">All Users</h3>
+        <div class="right_col" role="main" style="height: 100%;">
+            <div class="">
+                <div class="page-title">
+                    <div class="title_left">
+                        <h3>All Users</h3>
+                    </div>
+                </div>
 
+                <div class="clearfix"></div>
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_content">
+
+
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="x_panel">
+                                        <div class="x_title">
+                                            <h2>All users</h2>
+                                            <ul class="nav navbar-right panel_toolbox">
+                                                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                                </li>
+                                                <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                                </li>
+                                            </ul>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="x_content">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="card-box table-responsive">
+                                                        <?php $id = $user_data['id']; ?>
+                                                        <table id="datatable-keytable" class="table table-striped">
+                                                            <thead>
+                                                            <tr>
+                                                                <th style='text-align: center;display: none;'>ID</th>
+                                                                <th style='text-align: center'>First Name</th>
+                                                                <th style='text-align: center'>Last Name</th>
+                                                                <th style='text-align: center'>Email</th>
+                                                                <th style='text-align: center'>Role</th>
+                                                                <th style='text-align: center'>Status</th>
+
+                                                            </tr>
+
+                                                            </thead>
+                                                            <tbody>
+                                                            <?php
+                                                            $result=allusers($id);
+                                                            $i = 1;
+                                                            while($row = $result->fetch_assoc()) {
+
+                                                                echo "<tr>";
+                                                                echo "<td style='text-align: center;display: none;'>" . $row["id"] . "</td>";
+                                                                echo "<td style='text-align: center'>" . $row["first_name"] . '</td>';
+                                                                echo '<td style="text-align: center">' . $row['last_name'] . '</td>';
+                                                                echo '<td style="text-align: center">' . $row['email'] . '</td>';
+                                                                echo '<td style="text-align: center">' . $row['role'] . '</td>';
+                                                                echo "<td style=\"text-align: center\"><button id='approve' type='button' class='btn btn-primary' >Edit User</button> <button id='delete' type='button' class='btn btn-danger' >Delete</button></td>";
+                                                                echo '</tr>';
+
+
+                                                            }
+
+                                                            ?>
+
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- /.box-header -->
-                                <div class="box-body table-responsive no-padding">
-
-                                    <?php $id = $user_data['id']; ?>
-                                    <table class="table table-striped table-bordered" id="myDatatable">
-                                        <thead>
-                                        <tr>
-                                            <th style='text-align: center'>ID</th>
-                                            <th style='text-align: center'>First Name</th>
-                                            <th style='text-align: center'>Last Name</th>
-                                            <th style='text-align: center'>Email</th>
-                                            <th style='text-align: center'>Role</th>
-                                            <th style='text-align: center'>Status</th>
-
-                                        </tr>
-
-                                        </thead>
-                                        <tbody>
-                                        <?php
-                                        $result=allusers($id);
-                                        $i = 1;
-                                        while($row = $result->fetch_assoc()) {
-
-                                            echo "<tr>";
-                                            echo "<td style='text-align: center'>" . $row["id"] . "</td>";
-                                            echo "<td style='text-align: center'>" . $row["first_name"] . '</td>';
-                                            echo '<td style="text-align: center">' . $row['last_name'] . '</td>';
-                                            echo '<td style="text-align: center">' . $row['email'] . '</td>';
-                                            echo '<td style="text-align: center">' . $row['role'] . '</td>';
-                                            echo "<td style=\"text-align: center\"><button id='approve' type='button' class='btn btn-primary' >Edit User</button> <button id='approve' type='button' class='btn btn-danger' >Delete</button></td>";
-                                            echo '</tr>';
-
-
-                                        }
-
-                                        ?>
-
-
-                                        </tbody>
-
-                                    </table>
-                                </div>
-
                             </div>
-
                         </div>
                     </div>
-
-                </section>
-
+                </div>
             </div>
-
-            <?php include "../components/footer.php"; ?>
-            <?php include "../components/activity_bar.php"; ?>
-
-            <div class="control-sidebar-bg"></div>
+        </div>
+    </div>
 </div>
 
-<?php require  '../components/page_tail.php'; ?>
+
+<?php include '../components/adminfooter.php'; ?>
+
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        $('#datatable-keytable').DataTable();
+
+
+        $('td > button#delete').click(function() {
+            var table = $(this).closest('tr').find('td:nth-child(1)').text();
+            console.log(table);
+
+            swal({
+                    title: "Are you sure?",
+                    text: "You will not be able to recover this action!",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Yes, delete it!",
+                    cancelButtonText: "No, cancel ",
+                    closeOnConfirm: false,   closeOnCancel: false },
+
+                function(isConfirm){
+                    if (isConfirm) {
+                        swal("removing!", "Your imaginary file has been deleted.", "success");
+
+                        $.ajax({
+                            url: 'deleteuser.php?pub='+table,
+                            type: 'get',
+                            success:function (data) {
+
+                                if (data == true) {
+
+                                    location.reload(true);
+                                }
+
+                            }
+                        });
+                    } else{
+                        swal("Cancelled", "Your post is safe :)", "error");
+                    }
+                });
+
+
+
+        });
+
+
+
+    });
+
+
+
+
+</script>

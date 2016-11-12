@@ -11,14 +11,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="../public/plugins/sweealert/sweetalert.css" />
     <link rel="stylesheet" href="../public/dist/css/staff_css.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
-    <link rel="stylesheet" href="../public/plugins/sweealert/sweetalert.css" />
     <link rel="stylesheet" href="../public/plugins/monthly/monthly.css" />
     <link rel="stylesheet" href="../public/plugins/jQueryUI/jquery-ui.css" />
     <script src="../public/plugins/jQuery/jquery.js"></script>
     <script src="../public/plugins/sweealert/sweetalert.min.js"></script>
     <script src="../public/plugins/monthly/monthly.js"></script>
     <script src="../public/plugins/jQueryUI/jquery-ui.js"></script>
+
 
     
 

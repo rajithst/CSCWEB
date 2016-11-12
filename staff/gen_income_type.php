@@ -1,80 +1,65 @@
 <?php
-include "../core/init.php";
+session_start();
+require '../core/base.php';
+
+if(logged_in() === false){
+
+    session_destroy();
+    header('Location:../index.php');
+    exit();
+
+}
+require '../core/init.php';
+require '../core/function/staff.php';
 include '../components/page_head.php'; ?>
 
-<link rel="stylesheet" href="../public/dist/css/staff_css.css">
+
+    <script>
+
+
+        $(document).ready(function () {
+
+            $('#mycalendar').monthly({
+                mode: 'event',
+                //jsonUrl: 'events.json',
+                //dataType: 'json'
+                xmlUrl: 'events.xml'
+            });
+        });
+    </script>
+
+    </head>
+    <body>
+
+    <?php include "comp/navbar.php"; ?>
+
+    </br>
 
 </head>
 
 <body background="">
-<!-- header-->
-<nav class="navbar navbar-inverse" id="myNavbar" >
-    <div class="container-fluid" >
-        <div class="navbar-header" >
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <img src="../public/dist/img/system/csclogo.png"class="img-responsive csc-logo" id="logo">
+
+    <div class="container-fluid">
+        <div class="sidenav col-md-2 col-sm-3 col-xs-12">
+            <center><h3> Event Calender</h3></center>
+            <div class="monthly" id="mycalendar"></div>
+
         </div>
-        <div class="collapse navbar-collapse"  >
 
-            <ul class="nav navbar-nav navbar-right" id="navbar_txt" >
-                <li>
-					<a href="index.php" style="color:white;" class="glyphicon glyphicon-home"> Home</a>
-				</li>
-                <li class="dropdown" style="margin-right:4px" >
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;padding-top:18px;" >
-					<span class="glyphicon glyphicon-globe"></span>
-					Notifications
-					<span class="caret">
-					</span>
-					</a>
-                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
-                        <li><a tabindex="-1" href="" id="task_txt">Emails</a></li>
-                    </ul>
-                </li>
-				<li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;padding-top:18px;">
-					<span class="glyphicon glyphicon-list-alt"> Reports</span>
-                        <span class="caret">
-						</span>
-                    </a>
-                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
-                        <li><a tabindex="-1" href="edit_rep.php" id="task_txt">Edit Report</a></li>
-						<li><a tabindex="-1" href="report_gen.php" id="task_txt">Generate report</a></li>
-                    </ul>
-                </li>
-				<li>
-					<a href="select_course_reg.php" style="color:white;padding-top:18px;"><span class="glyphicon glyphicon-edit"></span> Registration</a>
-				</li>
-                <li>
-					<a href="#" style="color:white;padding-top:18px;"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
-				</li>
-            </ul>
+
+
+        <div class="col-sm-9 col-md-9">
+
+
         </div>
-    </div>
-</nav>
 
 
-<!-- end of header-->
-<div class="container-fluid text-center">
-        <div class="row content" style="padding-top:0.1px" >
-
-
-            <div class="col-md-3 sidenav" style="padding-left:0.1px">
-                <div class="well" style="height:200px;" id="calendar">
-                    <p><strong>calender</strong></p>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-sm-12 col-xs-12" style="padding-right:0.1px;padding-left:0.1px;">
-                <div class="well" id="newsfeed" >
-				<u><b><h4>Select income report type</h4></b></u>				
+        <div class="col-md-8 col-sm-6 col-xs-12">
+                <div class="well"  >
+					<u><b><h4>Select report type</h4></b></u>				
 					<li>
 					<a href="gen_pro_income.php"  style="color:white;font-size:17px;">
-					<button type="button" href="attendance_rep.php" class="btn btn-primary btn-lg gradient"  style="width:200px">
+					<button type="button" href="attendance_rep.php" class="btn btn-primary btn-lg gradient"  style="width:300px">
 					Project income
 					</button>
 					</a>
@@ -82,15 +67,15 @@ include '../components/page_head.php'; ?>
 					<br>
 					<li>
 					<a href="gen_cus_co_income.php"  style="color:white;font-size:17px;">
-					<button type="button" href="income_rep.php" class="btn btn-primary btn-lg gradient"  style="width:200px">
-					Customized course income
+					<button type="button" href="income_rep.php" class="btn btn-primary btn-lg gradient"  style="width:300px">
+					Costomized course income
 					</button>
 					</a>
 					</li>
 					<br>
 					<li>
 					<a href="gen_co_fee_income.php"  style="color:white;font-size:17px;">
-					<button type="button" href="expense_rep.php" class="btn btn-primary btn-lg gradient"  style="width:200px;">
+					<button type="button" href="income_rep.php" class="btn btn-primary btn-lg gradient"  style="width:300px">
 					Course fee income
 					</button>
 					</a>
@@ -98,38 +83,91 @@ include '../components/page_head.php'; ?>
 					<br>
 					<li>
 					<a href="gen_other_income.php"  style="color:white;font-size:17px;">
-					<button type="button" href="income_rep.php" class="btn btn-primary btn-lg gradient"  style="width:200px">
-					Other income
+					<button type="button" href="expense_rep.php" class="btn btn-primary btn-lg gradient"  style="width:300px">
+					Other
 					</button>
 					</a>
 					</li>
                 </div>
-            </div>
+            
 
-        <div class="col-md-3 sidenav" style="padding-right:0.1px">
-            <!--profile-->
-            <div class="well" style="height:200px;" id="proArea">
-                <h4>L P Jayasinghe</h4>
-                <img src="../public/dist/img/profile/c280829b27.jpg" class="img-circle" height="100" width="100" alt="Avatar">
-            </div>
-            </div>
+        </div>
 
+        <div class="col-md-2 col-sm-3 col-xs-12">
+            <div class="profile-sidebar">
+
+                <div class="profile-userpic">
+                    <img src="<?php echo $staff_data['profile']; ?>" class="img-responsive" alt="">
+                </div>
+
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">
+                        <?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?>
+                    </div>
+                    <div class="profile-usertitle-job">
+                        <?php echo $staff_data['role']; ?>
+                    </div>
+                </div>
+
+                <div class="profile-userbuttons">
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal">Profile</button>
+                    <button type="button" class="btn btn-danger btn-sm">Sign Out</button>
+                </div>
+
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="index.php">
+                                <i class="glyphicon glyphicon-home"></i>
+                                Home </a>
+                        </li>
+                        <li>
+                            <a href="profile.php">
+                                <i class="glyphicon glyphicon-user"></i>
+                                Account Settings </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-flag"></i>
+                                Help </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END MENU -->
+            </div>
+        </div>
+
+
+    </div>
+    <br>
+    <br>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="container-fluid well span6">
+                <div class="row">
+                    <div class="col-md-4" >
+                        <img src="<?php echo $staff_data['profile']; ?>" class="img-circle">
+                    </div>
+
+                    <div class="col-md-8" >
+                        <h3><?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?></h3>
+                        <h5><?php echo $staff_data['email']; ?></h5>
+                        <h5><?php echo $staff_data['role']; ?></h5>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 
 
-</center>
-<footer class="container-fluid" id="footer">
-        <div class = "container-fluid">
-            <div class="row">
-                <div col-md-5 class="footer-content">
-                     <ul class="footer-nav">
-                        <li>C</li> <li>O</li> <li>M</li> <li>P</li> <li>U</li> <li>T</li> <li>I</li> <li>N</li><li>G</li><li></li>           
-                        <li>S</li> <li>E</li> <li>R</li> <li>V</li> <li>I</li> <li>C</li> <li>E</li> <li>S</li><li></li>
-                        <li>C</li><li>E</li> <li>N</li> <li>T</li> <li>R</li> <li>E</li>
-                    </ul>
-               </div>
-            </div>
-        </div>
-    </footer>
-<?php include "../components/page_tail.php";
+
+<?php include "../components/page_tail.php";?>

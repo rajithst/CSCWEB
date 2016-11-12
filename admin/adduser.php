@@ -1,8 +1,6 @@
-
 <?php
-require '../core/init.php';
-require 'function/admin.php';
-//error_reporting(0);
+session_start();
+require '../core/base.php';
 
 if(logged_in() === false){
 
@@ -11,211 +9,147 @@ if(logged_in() === false){
     exit();
 
 }
-
-require '../components/page_head.php'; ?>
-
-<script>
-
-    $(document).ready({
-
-
-
-
-
-    });
-
-
-</script>
-
-
-
-
-<script>
-
-    function generate(type, text) {
-
-        var n = noty({
-            text        : text,
-            type        : type,
-            dismissQueue: true,
-            layout      : 'topRight',
-            closeWith   : ['click'],
-            theme       : 'relax',
-            maxVisible  : 10,
-            animation   : {
-                open  : 'animated bounceInLeft',
-                close : 'animated bounceOutLeft',
-                easing: 'swing',
-                speed : 500
-            }
-        });
-        console.log('html: ' + n.options.id);
-    }
-
-    function generateAll() {
-
-        generate('success', notification_html[2]);
-
-    }
-
-</script>
-
+require '../core/init.php';
+require '../core/function/admin.php';
+require '../components/adminhead.php'; ?>
 </head>
+<body class="nav-md" style="overflow-y:hidden;">
+<div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
 
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
+                <div class="clearfix"></div>
 
-    <header class="main-header">
+                <?php include '../components/adminmenuprofile.php'; ?>
+                <!-- /menu profile quick info -->
 
-        <a href="index2.html" class="logo">
+                <br />
 
-            <span class="logo-mini"><b>CSC</span>
+                <!-- sidebar menu -->
+                <?php include '../components/adminsidebar.php'; ?>
+            </div>
+        </div>
 
-            <span class="logo-lg"><b>CSC</b>  UCSC</span>
-        </a>
-
-        <?php include "../components/navbar.php";?>
-    </header>
-
-    <aside class="main-sidebar">
+        <!-- top navigation -->
+        <?php include '../components/adminnavbar.php';
 
 
-        <section class="sidebar">
 
-            <?php include '../components/sidebar_head.php' ?>
+        ?>
 
-            <?php include '../components/sidebar.php'?>
+        <div class="right_col" role="main" style="height: 100%;">
+            <div class="">
+                <div class="page-title">
+                    <div class="title_left">
+                        <h3>Add User</h3>
+                    </div>
+                </div>
 
-            <div class="content-wrapper">
-                <!-- Content Header (Page header) -->
-                <section class="content-header">
-                    <h1>
-                        Add Users
+                <div class="clearfix"></div>
 
-                    </h1>
-                    <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> Users</a></li>
-                        <li class="active">Add</li>
-                    </ol>
-                </section>
-
-                <section class="content">
-                        <div class="row">
-                            <div class="col-md-6">
-                        <div class="box box-warning">
-                            <div class="box-header with-border">
-                                <h3 class="box-title">Add new User</h3>
+                <div class="row">
+                <div class="col-md-2"></div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>Add User </h2>
+                                <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    </li>
+                                 
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
                             </div>
+                            <div class="x_content">
+                                <br />
 
-                            <div class="box-body">
-                                <form action="" method="post">
+                            <?php
+
+
+                                if(isset($_POST['adduser']) === true){
+
+                                        $postdata = array(
+                                            'first_name' =>  $_POST['first_name'],
+                                            'last_name' =>  $_POST['last_name'],
+                                            'email' =>  $_POST['email'],
+                                            'password' =>  md5($_POST['password']),
+                                            'role' => $_POST['role']
+                                        );
+
+                                        adduser($postdata); ?>
+                                    <script>swal("Added!", "Your have benn added a user successfully")</script>
+
+                                        <?php
+                                        }
+
+                                        ?>
+                                <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" action="" method="post">
 
                                     <div class="form-group">
-                                        <label>First Name</label>
-                                        <input type="text" class="form-control" placeholder="Enter First Name" name="first_name">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first_name">First Name <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" name="first_name" required="required" class="form-control col-md-7 col-xs-12">
+                                        </div>
                                     </div>
-
                                     <div class="form-group">
-                                        <label>Last Name</label>
-                                        <input type="text" class="form-control" placeholder="Enter Last Name" name="last_name">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last_name">Last Name <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="last-name" name="last_name" required="required" class="form-control col-md-7 col-xs-12">
+                                        </div>
                                     </div>
-
                                     <div class="form-group">
-                                        <label>Email</label>
-                                        <input type="email" class="form-control" placeholder="Enter Email" name="email">
+                                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">E mail</label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input id="email" class="form-control col-md-7 col-xs-12" type="text" name="email">
+                                        </div>
                                     </div>
-
+                                  
                                     <div class="form-group">
-                                        <label>Password</label>
-                                        <input type="text" class="form-control" placeholder="Enter Password" name="password">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Password <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" name="password">
+                                        </div>
                                     </div>
 
+                                      <div class="form-group">
+                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Role</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <select name="role" id="" class="form-group">
+                                        <option value="CSC Staff">CSC Staff</option>
+                                        <option value="CSC Cordinator">CSC Coordinator</option>
+                                        <option value="Course Coordinator">Course Coordinator</option>
+                                    </select>
+                                    </div>
+                                    </div>
+
+                                    <div class="ln_solid"></div>
                                     <div class="form-group">
-                                        <label>Role</label>
-                                        <select class="form-control" name="role">
-                                            <option>-- SELECT --</option>
-                                            <option>CSC Cordinator</option>
-                                            <option>CSC Staff</option>
-                                            <option>Course Cordinator</option>
-
-                                        </select>
-                                    </div>
-
-                                    <div class="box-footer">
-                                        <button type="submit" class="btn btn-default">Cancel</button>
-                                        <button type="submit" class="btn btn-info pull-right" name="adduser">Add Member</button>
+                                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                            <button type="submit" class="btn btn-primary">Cancel</button>
+                                            <button type="submit" class="btn btn-success" name="adduser">Submit</button>
+                                        </div>
                                     </div>
 
                                 </form>
                             </div>
                         </div>
-                            </div>
+                    </div>
 
-                            <div class="col-md-6">
-
-
-                                <div class="box">
-                                    <div class="box-header with-border">
-                                        <h3 class="box-title">Current Users</h3>
-                                    </div>
-                                    <!-- /.box-header -->
-                                    <div class="box-body">
-                                        <table class="table table-bordered">
-                                            <tr>
-
-                                                <th>Role</th>
-                                                <th>Count</th>
-                                                <th style="width: 40px">Status</th>
-                                            </tr>
-
-                                        </table>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                </section>
+                    <div class="col-md-2"></div>
+                </div>
 
             </div>
-
-            <?php include "../components/footer.php"; ?>
-            <?php include "../components/activity_bar.php"; ?>
-
-            <div class="control-sidebar-bg"></div>
+        </div>
+    </div>
 </div>
 
-<?php require  '../components/page_tail.php';
 
+<?php include '../components/adminfooter.php';
 
-$id = $user_data['id'];
-if(isset($_POST['adduser']) === true){
-
-    $postdata = array(
-
-
-        'first_name' =>  $_POST['first_name'],
-        'last_name' =>  $_POST['last_name'],
-        'email' =>  $_POST['email'],
-        'password' =>  md5($_POST['password']),
-        'role' => $_POST['role']
-    );
-
-    adduser($postdata);
-    ?>
-
-    <script>
-
-        generateAll();
-
-    </script>
-
-    <?php
-    exit();
-
-
-
-} ?>
 

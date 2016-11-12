@@ -1,82 +1,83 @@
 <?php
-include "../core/init.php";
+session_start();
+require '../core/base.php';
+
+if(logged_in() === false){
+
+    session_destroy();
+    header('Location:../index.php');
+    exit();
+
+}
+require '../core/init.php';
+require '../core/function/staff.php';
 include '../components/page_head.php'; ?>
 
-<link rel="stylesheet" href="../public/dist/css/staff_css.css">
+
+    <script>
+
+
+        $(document).ready(function () {
+
+            $('#mycalendar').monthly({
+                mode: 'event',
+                //jsonUrl: 'events.json',
+                //dataType: 'json'
+                xmlUrl: 'events.xml'
+            });
+        });
+    </script>
+
+    </head>
+    <body>
+
+    <?php include "comp/navbar.php"; ?>
+
+    </br>
 
 </head>
 
 <body background="">
-<!-- header-->
-<nav class="navbar navbar-inverse" id="myNavbar" >
-    <div class="container-fluid" >
-        <div class="navbar-header" >
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <img src="../public/dist/img/system/csclogo.png"class="img-responsive csc-logo" id="logo">
+
+    <div class="container-fluid">
+        <div class="sidenav col-md-2 col-sm-3 col-xs-12">
+            <center><h3> Event Calender</h3></center>
+            <div class="monthly" id="mycalendar"></div>
+
         </div>
-        <div class="collapse navbar-collapse"  >
 
-            <ul class="nav navbar-nav navbar-right" id="navbar_txt" >
-                <li>
-					<a href="index.php" style="color:white;" class="glyphicon glyphicon-home"> Home</a>
-				</li>
-                <li class="dropdown" style="margin-right:4px" >
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;padding-top:18px;" >
-					<span class="glyphicon glyphicon-globe"></span>
-					Notifications
-					<span class="caret">
-					</span>
-					</a>
-                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
-                        <li><a tabindex="-1" href="" id="task_txt">Emails</a></li>
-                    </ul>
-                </li>
-				<li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;padding-top:18px;">
-					<span class="glyphicon glyphicon-list-alt"> Reports</span>
-                        <span class="caret">
-						</span>
-                    </a>
-                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
-                        <li><a tabindex="-1" href="" id="task_txt">Edit Report</a></li>
-						<li><a tabindex="-1" href="report_gen.php" id="task_txt">Generate report</a></li>
-                    </ul>
-                </li>
-				<li>
-					<a href="select_course_reg.php" style="color:white;padding-top:18px;"><span class="glyphicon glyphicon-edit"></span> Registration</a>
-				</li>
-                <li>
-					<a href="#" style="color:white;padding-top:18px;"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
-				</li>
-            </ul>
+
+
+        <div class="col-sm-9 col-md-9">
+
+
         </div>
-    </div>
-</nav>
 
 
-<!-- end of header-->
-		<form action="student_Registration.php" method="post">
-			<div class="container-fluid text-center">
-				<div class="row content"style="padding-top:0.1px;">	
-						<div class="well" id="news">	
-							<h2><u>Registration Form</u></h2>
-							<table style="width:100%">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+                <div class="well"  >
+					<h2><u>Registration Form</u></h2>
+							<form action="student_Registration.php" method="post">
+							<table style="width:150%">
+							<tr>
+								<td >
+								</td>
+								<td 
+								</td>
+							</tr>
 							<tr>
 								<td>
 									<h4>Subject name :<span style="color:red;font-size:25px;">*</span></h4>
 								</td>
-								<td>
+								<td >
 									<?php 
 										$ncid=$_POST['cid'];
 										?>
-									<select id="selecting" name="course_name" style="width:700px;">
+									<select id="selecting" name="course_name" style="width:600px;">
 									
 									<?php
-										$sql = "SELECT subject FROM subjects WHERE courseid = '$ncid'";
+										$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+										$sql = "SELECT subject,subjectid FROM subjects WHERE courseid = '$ncid'";
 										$query = mysqli_query($con, $sql);			
 										while ($row = mysqli_fetch_assoc($query)){
 											$subid = $row['subjectid'];
@@ -110,15 +111,15 @@ include '../components/page_head.php'; ?>
 								
 							  </tr>
 							  <tr>
-								<td><h4>Name in full :<span style="color:red;font-size:25px;">*</span></h4></td>
+								<td><h4>Name in full :<span style="color:red;font-size:20px;">*</span></h4></td>
 								<td>
-								<input type="text"required id="enter_details" class="form-control" name="full_name" style="width:900px;"> 
+								<input type="text"required id="enter_details" class="form-control" name="full_name" style="width:600px;"> 
 								</input>
 								</td>
 							  </tr>
 							  <tr>
-								<td><h4>Name with initials :<span style="color:red;font-size:25px;">*</span></h4></td>
-								<td><input type="text" required id="enter_details" name="full_name_with_initials"class="form-control" style="width:900px;"></input>
+								<td><h4>Name with initials :<span style="color:red;font-size:20px;">*</span></h4></td>
+								<td><input type="text" required id="enter_details" name="full_name_with_initials"class="form-control" style="width:600px;"></input>
 								</td>
 							  </tr>
 							  <tr>
@@ -126,7 +127,7 @@ include '../components/page_head.php'; ?>
 								<td>  </td>
 							  </tr>
 							  <tr>
-								<td><h4><b>2)Date of Birth <span style="color:red;font-size:25px;">*</span></b></h4></td>
+								<td><h4><b>2)Date of Birth <span style="color:red;font-size:20px;">*</span></b></h4></td>
 								<td><input type="date"required id="enter_details" name="DOB" ></input>
 								</td>
 							  </tr>
@@ -142,7 +143,7 @@ include '../components/page_head.php'; ?>
 							  </tr>
 							  <tr>
 								<td><h4><b>4)National Identity Card Number<span style="color:red;font-size:25px;">*</span></b></h4></td>
-								<td><input type="text"required id="fill_area" class="form-control" name="NIC"></input>
+								<td><input type="text"required id="fill_area" class="form-control" name="NIC" style="width:600px;"></input>
 								</td>
 							  </tr>
 							  <tr>
@@ -151,20 +152,20 @@ include '../components/page_head.php'; ?>
 							  </tr>
 							  <tr>
 								<td><h4>Address:<span style="color:red;font-size:25px;">*</span></h4></td>
-								<td><input type="text" required id="enter_details" class="form-control" name="home_addr" style="width:900px;"></input>
+								<td><input type="text" required id="enter_details" class="form-control" name="home_addr" style="width:600px;"></input>
 								</td>
 							  </tr>
 							  <tr>
 								<td><h4>Telephone:</h4></td>
-								<td><input type="text" id="fill_area" class="form-control" name="home_tel"></input></td>
+								<td><input type="text" id="fill_area" class="form-control" name="home_tel" style="width:600px;"></input></td>
 							  </tr>
 							  <tr>
 								<td><h4>Mobile:</h4></td>
-								<td><input type="text" id="fill_area" class="form-control" name="mobile"></input></td>
+								<td><input type="text" id="fill_area" class="form-control" name="mobile" style="width:600px;"></input></td>
 							  </tr>
 							  <tr>
 								<td><h4>Email:</h4></td>
-								<td><input type="text" id="fill_area" class="form-control" name="personel_email" style="width:900px;"></input></td>
+								<td><input type="text" id="fill_area" class="form-control" name="personel_email" style="width:600px;"></input></td>
 							  </tr>
 							  <tr>
 								<td><h4><b>6)Work place</b></h4></td>
@@ -172,23 +173,23 @@ include '../components/page_head.php'; ?>
 							  </tr>
 							  <tr>
 								<td><h4>Address:</h4></td>
-								<td><input type="text"  id="fill_area" class="form-control" name="office_addr" style="width:900px;"></input></td>
+								<td><input type="text"  id="fill_area" class="form-control" name="office_addr" style="width:600px;"></input></td>
 							  </tr>
 							  <tr>
 								<td><h4>Telephone:</h4></td>
-								<td><input type="text"  id="fill_area" class="form-control" name="office_tel"></input></td>
+								<td><input type="text"  id="fill_area" class="form-control" name="office_tel" style="width:600px;"></input></td>
 							  </tr>
 							  <tr>
 								<td><h4>Email:</h4></td>
-								<td><input type="text"  id="fill_area" class="form-control" name="office_email" style="width:900px;"></input></td>
+								<td><input type="text"  id="fill_area" class="form-control" name="office_email" style="width:600px;"></input></td>
 							  </tr>
 							  <tr>
 								<td><h4><b>7)Work place & Designation</b></h4></td>
-								<td style="width:1000px;"><input type="text" class="form-control"  id="fill_area" name="work_pl_&_desig" style="width:900px;"></input></td>
+								<td style="width:1000px;"><input type="text" class="form-control"  id="fill_area" name="work_pl_&_desig" style="width:600px;"></input></td>
 							  </tr>
 							  <tr>
 								<td><h4><b>8)Vehicle Number</b>(if any)</h4></td>
-								<td><input type="text" class="form-control"  id="fill_area" name="veh_num"></input></td>
+								<td><input type="text" class="form-control"  id="fill_area" name="veh_num" style="width:600px;"></input></td>
 							  </tr>
 							  </table>
 							  <table>
@@ -206,8 +207,9 @@ include '../components/page_head.php'; ?>
 											<option value="Other">Other</option>
 										</select>
 								</td>
-								<td style="width:200px;"><input type="text" class="form-control"  id="fill_area" name="other_des" style="width:600px;" placeholder="if other please describe"></input>
-								</td>
+							  </tr>
+							  <tr>
+							  <td style="width:200px;"><input type="text" class="form-control"  id="fill_area" name="other_des" style="width:600px;" placeholder="if other please describe"></input>
 							  </tr>
 							  </table>
 							 <hr>
@@ -242,23 +244,89 @@ include '../components/page_head.php'; ?>
 								<td><input type="text" id="fill_area" class="form-control" name="ref"required></input></td>
 							  </tr>
 							 </table>
-							 <button type="submit" class="btn btn-primary" style="width:300px;">Submit</button>
-						</div>
-				</div>
-			</div>
-		</form>
-	
-<footer class="container-fluid" id="footer">
-        <div class = "container-fluid">
-            <div class="row">
-                <div col-md-5 class="footer-content">
-                     <ul class="footer-nav">
-                        <li>C</li> <li>O</li> <li>M</li> <li>P</li> <li>U</li> <li>T</li> <li>I</li> <li>N</li><li>G</li><li></li>           
-                        <li>S</li> <li>E</li> <li>R</li> <li>V</li> <li>I</li> <li>C</li> <li>E</li> <li>S</li><li></li>
-                        <li>C</li><li>E</li> <li>N</li> <li>T</li> <li>R</li> <li>E</li>
+							 <br>
+							<center><button type="submit" class="btn btn-primary">Submit</button></center>
+							</form>
+                </div>
+            
+
+        </div>
+
+        <div class="col-md-2 col-sm-3 col-xs-12">
+            <div class="profile-sidebar">
+
+                <div class="profile-userpic">
+                    <img src="<?php echo $staff_data['profile']; ?>" class="img-responsive" alt="">
+                </div>
+
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">
+                        <?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?>
+                    </div>
+                    <div class="profile-usertitle-job">
+                        <?php echo $staff_data['role']; ?>
+                    </div>
+                </div>
+
+                <div class="profile-userbuttons">
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal">Profile</button>
+                    <button type="button" class="btn btn-danger btn-sm">Sign Out</button>
+                </div>
+
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="index.php">
+                                <i class="glyphicon glyphicon-home"></i>
+                                Home </a>
+                        </li>
+                        <li>
+                            <a href="profile.php">
+                                <i class="glyphicon glyphicon-user"></i>
+                                Account Settings </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-flag"></i>
+                                Help </a>
+                        </li>
                     </ul>
-               </div>
+                </div>
+                <!-- END MENU -->
             </div>
         </div>
-    </footer>
-<?php include "../components/page_tail.php";
+
+
+    </div>
+    <br>
+    <br>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="container-fluid well span6">
+                <div class="row">
+                    <div class="col-md-4" >
+                        <img src="<?php echo $staff_data['profile']; ?>" class="img-circle">
+                    </div>
+
+                    <div class="col-md-8" >
+                        <h3><?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?></h3>
+                        <h5><?php echo $staff_data['email']; ?></h5>
+                        <h5><?php echo $staff_data['role']; ?></h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<?php include "../components/page_tail.php";?>

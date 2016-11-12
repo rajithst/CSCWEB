@@ -1,84 +1,88 @@
-<?php
+<?php require '../core/function/admin.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-/**
- * include main controller file
- * include page head file(load all css files and main script files)
- * 
- **/
+    <title>Computing Service Center</title>
 
-require '../core/init.php';
-require 'function/admin.php';
-require '../components/page_head.php';
+    <link href="../public/css/custom.css" rel="stylesheet">
+    <link href="../public/fontawesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../public/plugins/nprogress/nprogress.css" rel="stylesheet">
+    <link href="../public/plugins/sweealert/sweetalert.css" rel="stylesheet">
+    <link href="../public/css/animate.css" rel="stylesheet">
+    <link href="../public/dist/css/adminfull.css" rel="stylesheet">
+    <script src="../public/plugins/jQuery/jquery.js"></script>
+    <script src="../public/plugins/sweealert/sweetalert.min.js"></script>
+</head>
 
+<body class="login">
+<div>
+    <?php
 
-?>			
-			
-<body class="hold-transition login-page">
-<div class="login-box">
-    <div class="login-logo">
-        <b>Computer and Service Center</b> <br>
-        <small> <b>Welcome</b> <br>
-            This site is accessible to approved users only</small>
-    </div>
+    if(empty($_POST) === false and isset($_POST)=== true){
 
+        $email    = $_POST['email'];
+        $password = $_POST['password'];
 
-	 <?php
-
-            if(empty($_POST) === false and isset($_POST)=== true){
-
-                 $email    = $_POST['email'];
-                 $password = $_POST['password'];
-
-                echo "$email $password";
-                $login = login($email,$password);
-                if($login === false){  ?>
-                   <script>swal("Access Denied!", "Your Email and Password combination is incorrect!!")</script>
+        $login = login($email,$password);
+        if($login === false){  ?>
+            <script>swal("Access Denied!", "Your Email and Password combination is incorrect!!")</script>
             <?php
 
-               }else{
+        }else{
 
-                    $_SESSION['id']= $login;
-                    header('Location:dashboard.php');
-                    exit();
-                }
-            }
+            session_start();
+            $_SESSION['id']= $login;
+            header('Location:dashboard.php');
+            exit();
+        }
+    }
 
-            ?>
-	
-	
-
-    <div class="login-box-body">
-        <p class="login-box-msg">Sign in to start your session</p>
-
-        <form action="" method="post" id="loginform">               <!-- start login form -->
-
-            <div class="form-group has-feedback">
-                <input type="email" class="form-control" placeholder="Email" name="email" id="email" required>
-                <span id="emailval"></span>
-                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-            </div>
-
-            <div class="form-group has-feedback">
-                <input type="password" class="form-control" placeholder="Password" name="password" id="password" required>
-                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-            </div>
-            <div class="row">
-                <div class="col-xs-4">
-                     <button type="reset" class="btn btn-primary btn-block btn-flat" name="cancel" id="login">Cancel</button>
-                </div>
+    ?>
 
 
-                <div class="col-xs-4">
-                </div>
-                
-                <div class="col-xs-4">
-                    <button type="submit" class="btn btn-primary btn-block btn-flat" name="login" id="login">Sign In</button>
-                </div>
+    <div class="login_wrapper">
+        <div class="animate form login_form">
+            <section class="login_content">
+                <center><h2> Computing Service Center </h2></center>
+                <form action="" method="post">
+                    <h1>Sign Up</h1>
+                    <div>
+                        <input type="email" class="form-control" placeholder="E-mail" name="email" required="" />
+                    </div>
+                    <div>
+                        <input type="password" class="form-control" placeholder="Password" name="password" required="" />
+                    </div>
+                    <div>
+                        <button class="submit" type="submit">Log in</button>
+                        <a class="reset_pass" href="#">Lost your password?</a>
+                    </div>
 
-                
+                    <div class="clearfix"></div>
 
-            </div>
-        </form>   <!-- end of form -->
+                    <div class="separator">
+
+
+                        <div class="clearfix"></div>
+                        <br />
+
+                        <div>
+                            <h2> University of Colombo School Of Computing</h2>
+                            <p>©2016 All Rights Reserved. Webrax websolutions</p>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+
     </div>
 </div>
-<?php include '../components/page_tail.php'; ?>
+
+
+</body>
+</html>

@@ -5,7 +5,7 @@
 	<event>
 		<id>1</id>
 		<name>XML Events</name>
-		<startdate>2016-9-15</startdate>
+		<startdate>2016-11-15</startdate>
 		<enddate>2016-9-17</enddate>
 		<starttime>12:00</starttime>
 		<endtime>2:00</endtime>
@@ -37,7 +37,7 @@
 
 	<event>
 		<id>4</id>
-		<name>Another Event</name>
+		<name>lllll</name>
 		<startdate>2016-10-2</startdate>
 		<enddate></enddate>
 		<starttime></starttime>
@@ -59,7 +59,7 @@
 
 	<event>
 		<id>6</id>
-		<name>Another Event</name>
+		<name>python</name>
 		<startdate>2016-11-2</startdate>
 		<enddate></enddate>
 		<starttime></starttime>
