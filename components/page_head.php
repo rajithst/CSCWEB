@@ -13,10 +13,16 @@
     <link rel="stylesheet" href="../public/dist/css/staff_css.css">
     <link rel="stylesheet" href="../public/plugins/monthly/monthly.css" />
     <link rel="stylesheet" href="../public/plugins/jQueryUI/jquery-ui.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../public/plugins/drpicker/daterangepicker.min.css">
     <script src="../public/plugins/jQuery/jquery.js"></script>
     <script src="../public/plugins/sweealert/sweetalert.min.js"></script>
     <script src="../public/plugins/monthly/monthly.js"></script>
     <script src="../public/plugins/jQueryUI/jquery-ui.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js" type="text/javascript"></script>
+    <script src="../public/plugins/drpicker/jquery.daterangepicker.min.js"></script>
+
 
 
     

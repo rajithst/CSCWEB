@@ -13,160 +13,109 @@ require '../core/init.php';
 require '../core/function/staff.php';
 include '../components/page_head.php'; ?>
 
-
-    <script>
-
-
-        $(document).ready(function () {
-
-            $('#mycalendar').monthly({
-                mode: 'event',
-                //jsonUrl: 'events.json',
-                //dataType: 'json'
-                xmlUrl: 'events.xml'
-            });
-        });
-    </script>
-
     </head>
     <body>
 
     <?php include "comp/navbar.php"; ?>
-
-    </br>
-
+<div class="nabbar clearfix" id="path">
+        <ol class="breadcrumb">
+            <li><a href="Home.html">Home</a>
+            <span class="glyphicon glyphicon-triangle-right"></span></li>
+            <li><a href="edit_report.php"> Generate Repors</a>
+            
+        </ol>
+    </div>
 </head>
+<style>
+    .ds-btn li{ list-style:none; float:left; padding:10px; }
+.ds-btn li a span{padding-left:15px;padding-right:5px;width:200px;display:inline-block; text-align:left;}
+.ds-btn li a span small{width:100%; display:inline-block; text-align:left;}
 
+</style>
 <body background="">
 
-    <div class="container-fluid">
-        <div class="sidenav col-md-2 col-sm-3 col-xs-12">
-            <center><h3> Event Calender</h3></center>
-            <div class="monthly" id="mycalendar"></div>
+    <div class="container">
+        <div class="row">
 
-        </div>
+    
+
+      <center><h2>Select report Type</h2></center>
+
+     
+        
+    <ul class="ds-btn">
+
+        <li>
+             <a class="btn btn-lg btn-info" href="">
+          <i class="glyphicon glyphicon-user pull-left"></i><span>Student Attendance<br><small></small></span></a> 
+            
+        </li>
+
+         <li>
+             <a class="btn btn-lg btn-info" href="gen_income_type.php">
+          <i class="glyphicon glyphicon-user pull-left"></i><span>Income<br><small></small></span></a> 
+            
+        </li>
+
+         <li>
+             <a class="btn btn-lg btn-info" href="expense_rep.php">
+          <i class="glyphicon glyphicon-user pull-left"></i><span>Expense<br><small></small></span></a> 
+            
+        </li>
+
+         <li>
+             <a class="btn btn-lg btn-info" href="">
+          <i class="glyphicon glyphicon-user pull-left"></i><span>Student Marks<br><small></small></span></a> 
+            
+        </li>
+        
+        
+       
+    </ul>
+    
 
 
 
-        <div class="col-sm-9 col-md-9">
 
-
-        </div>
-
-
-        <div class="col-md-8 col-sm-6 col-xs-12">
-                <div class="well"  >
-				<u><b><h4>Generate reports</h4></b></u>				
-					<li>
-					<a href=""  style="color:white;font-size:17px;">
-					<button type="button"  class="btn btn-primary btn-lg gradient"  style="width:200px">
-					Attendance
-					</button>
-					</a>
-					</li>
-					<br>
-					<li>
-					<a href="gen_income_type.php"  style="color:white;font-size:17px;">
-					<button type="button" class="btn btn-primary btn-lg gradient"  style="width:200px">
-					Income
-					</button>
-					</a>
-					</li>
-					<br>
-					<li>
-					<a href="expense_rep.php"  style="color:white;font-size:17px;">
-					<button type="button" class="btn btn-primary btn-lg gradient"  style="width:200px">
-					Expense
-					</button>
-					</a>
-					</li>
-					<br>
-					<li>
-					<a href=""  style="color:white;font-size:17px;">
-					<button type="button"  class="btn btn-primary btn-lg gradient"  style="width:200px">
-					Student marks
-					</button>
-					</a>
-					</li>
-                </div>
+                <!-- <div class="well"  >
+                                <u><b><h4>Generate reports</h4></b></u>                
+                                    <li>
+                                    <a href=""  style="color:white;font-size:17px;">
+                                    <button type="button"  class="btn btn-primary btn-lg gradient"  style="width:200px">
+                                    Attendance
+                                    </button>
+                                    </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                    <a href="gen_income_type.php"  style="color:white;font-size:17px;">
+                                    <button type="button" class="btn btn-primary btn-lg gradient"  style="width:200px">
+                                    Income
+                                    </button>
+                                    </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                    <a href="expense_rep.php"  style="color:white;font-size:17px;">
+                                    <button type="button" class="btn btn-primary btn-lg gradient"  style="width:200px">
+                                    Expense
+                                    </button>
+                                    </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                    <a href=""  style="color:white;font-size:17px;">
+                                    <button type="button"  class="btn btn-primary btn-lg gradient"  style="width:200px">
+                                    Student marks
+                                    </button>
+                                    </a>
+                                    </li>
+                </div> -->
             
 
         </div>
-
-        <div class="col-md-2 col-sm-3 col-xs-12">
-            <div class="profile-sidebar">
-
-                <div class="profile-userpic">
-                    <img src="<?php echo $staff_data['profile']; ?>" class="img-responsive" alt="">
-                </div>
-
-                <div class="profile-usertitle">
-                    <div class="profile-usertitle-name">
-                        <?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?>
-                    </div>
-                    <div class="profile-usertitle-job">
-                        <?php echo $staff_data['role']; ?>
-                    </div>
-                </div>
-
-                <div class="profile-userbuttons">
-                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal">Profile</button>
-                    <button type="button" class="btn btn-danger btn-sm">Sign Out</button>
-                </div>
-
-                <div class="profile-usermenu">
-                    <ul class="nav">
-                        <li class="active">
-                            <a href="index.php">
-                                <i class="glyphicon glyphicon-home"></i>
-                                Home </a>
-                        </li>
-                        <li>
-                            <a href="profile.php">
-                                <i class="glyphicon glyphicon-user"></i>
-                                Account Settings </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <i class="glyphicon glyphicon-flag"></i>
-                                Help </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- END MENU -->
-            </div>
-        </div>
-
-
-    </div>
-    <br>
-    <br>
-    </div>
-    </div>
-    </div>
     </div>
 
-
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-
-            <div class="container-fluid well span6">
-                <div class="row">
-                    <div class="col-md-4" >
-                        <img src="<?php echo $staff_data['profile']; ?>" class="img-circle">
-                    </div>
-
-                    <div class="col-md-8" >
-                        <h3><?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?></h3>
-                        <h5><?php echo $staff_data['email']; ?></h5>
-                        <h5><?php echo $staff_data['role']; ?></h5>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
