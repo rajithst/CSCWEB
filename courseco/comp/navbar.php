@@ -19,6 +19,25 @@
     {
         font-size: 87px;
     }
+
+
+    .upload-drop-zone {
+  height: 200px;
+  border-width: 2px;
+  margin-bottom: 20px;
+}
+
+/* skin.css Style*/
+.upload-drop-zone {
+  color: #ccc;
+  border-style: dashed;
+  border-color: #ccc;
+  line-height: 200px;
+  text-align: center
+}
+.upload-drop-zone.drop {
+  color: #222;
+  border-color: #222;
 </style>
 
 
@@ -37,21 +56,21 @@
 
 
                 <li class="dropdown">
-                    <a href="" style="color:white;"><span class="glyphicon glyphicon-home"></span> Home</a>
+                    <a href="index.php" style="color:white;"><span class="glyphicon glyphicon-home"></span> Home</a>
                 </li>
 
                 <li class="dropdown">
                     <a href="course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;"><span class="glyphicon glyphicon-education"></span> Courses<span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a tabindex="-1" href="course.php">Course 1</a></li>
-                        <li><a tabindex="-1" href="course.php">Course 2</a></li>
-                        <li><a tabindex="-1" href="course.php">Course 3</a></li>
+                        <li><a tabindex="-1" href="fileupload.php">python</a></li>
+                        <li><a tabindex="-1" href="fileupload.php">java EE</a></li>
+                        <li><a tabindex="-1" href="fileupload.php">java SE</a></li>
                     </ul>
                 </li>
 
 
-               <li class="dropdown">
+              <!-- <li class="dropdown">
                     <a href="course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Notification<span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
@@ -59,9 +78,9 @@
                         <li><a tabindex="-1" href="course.php">Notification 2</a></li>
                         <li><a tabindex="-1" href="course.php">Notification 3</a></li>
                     </ul>
-                </li>
+                </li>-->
 
-                <li class="dropdown">
+                <!--<li class="dropdown">
                     <a href="lectures.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Attendance <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
@@ -70,7 +89,7 @@
                         <li><a tabindex="-1" href="lectures.php">Attendance of course 3</a></li>
                         </li>
                     </ul>
-                </li>
+                </li>-->
 
 
 

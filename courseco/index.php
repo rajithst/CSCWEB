@@ -42,7 +42,7 @@ include '../components/course_head.php'; ?>
         <h3>Main menu</h3>
     </center>
                 <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
+                    <!--<div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
@@ -142,7 +142,7 @@ include '../components/course_head.php'; ?>
                                 </table>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
@@ -155,24 +155,15 @@ include '../components/course_head.php'; ?>
                                 <table class="table">
                                     <tr>
                                         <td>
-                                            <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">Sales</a>
+                                            <span class=""></span><a href=>Attendance</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">Customers</a>
+                                            <span class=""></span><a href="">other reports</a>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-tasks"></span><a href="http://www.jquery2dotnet.com">Products</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-shopping-cart"></span><a href="http://www.jquery2dotnet.com">Shopping Cart</a>
-                                        </td>
-                                    </tr>
+                                    
                                 </table>
                             </div>
                         </div>
