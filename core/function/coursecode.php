@@ -63,7 +63,7 @@ function  insertslides($data){
 
 function getslides($subid){
     $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-    $sql = "SELECT * FROM slides WHERE subjectid = '$subid'";
+    $sql = "SELECT * FROM subjects WHERE subjectid = '$subid'";
     $query = mysqli_query($con, $sql);
     return $query;
 
@@ -81,6 +81,15 @@ function getentire($subject){
 
     $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $sql = "SELECT * FROM posts WHERE subject = '$subject'";
+    $res = mysqli_query($con, $sql);
+    return $res;
+
+
+}
+
+function getcourses($id){
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $sql = "SELECT * FROM subjects  WHERE coursecid=$id";
     $res = mysqli_query($con, $sql);
     return $res;
 

@@ -1,3 +1,4 @@
+
 <style>
 
 
@@ -62,10 +63,17 @@
                 <li class="dropdown">
                     <a href="course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;"><span class="glyphicon glyphicon-education"></span> Courses<span class="caret"></span>
                     </a>
+
+                    <?php 
+                    $id = $staff_data['id'];
+                    $res = getcourses($id); ?>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a tabindex="-1" href="fileupload.php">python</a></li>
-                        <li><a tabindex="-1" href="fileupload.php">java EE</a></li>
-                        <li><a tabindex="-1" href="fileupload.php">java SE</a></li>
+                    <?php while ($row = mysqli_fetch_assoc($res)) {
+                            $sid= $row['subjectid']; 
+                     ?>
+                       
+                        <li id=""><a tabindex="-1" href="fileupload.php?id=<?php echo $sid; ?>"><?php echo $row['subject']; ?></a></li>
+                        <?php }?>
                     </ul>
                 </li>
 

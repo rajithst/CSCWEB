@@ -1,4 +1,9 @@
 <?php
+
+if (isset($_GET['id']) and isset($_GET['name'])) {
+    $id = $_GET['id'];
+    $name = $_GET['name'];
+}
 $desc = $_POST["desc"];
 $title = $_POST["title"];
 $fileName = $_FILES["file1"]["name"]; // The file name
@@ -24,12 +29,12 @@ if ($fileupload_ok == 0) {
 
 } else {
     if(move_uploaded_file($fileTmpLoc, "test_uploads/$fileName")){
-    echo "$fileName was Uploaded to the test_uploads";
+    echo "$fileName was Uploaded successfully";
 
 	$con = mysqli_connect("localhost", "root", "rajith","csc") or die(mysql_error()) ;
 
    	mysqli_query($con,"INSERT INTO fileuploads(date,subject,subject_code,title,description,file)
-    VALUES ('$date', 'java EE','csco1','$title','$desc','courseco/test_uploads/$fileName')") ;
+    VALUES ('$date', '$name','$id','$title','$desc','courseco/test_uploads/$fileName')") ;
 
     } else {
         echo "Sorry, there was an error uploading your file.";

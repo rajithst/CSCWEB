@@ -14,7 +14,22 @@ require '../core/init.php';
 require '../core/function/coursecode.php';
 include '../components/cscordinator_head.php'; ?>
 
+<?php 
+if (isset($_GET['id'])) {
+  $subid = $_GET['id'];
 
+  $res = getslides($subid);
+ while ($row = mysqli_fetch_assoc($res)) {
+
+    $subname = $row['subject'];
+    $subid = $row['subjectid'];
+
+
+ }
+}
+
+
+?>
 <script>
 /* Script written by Adam Khoury @ DevelopPHP.com */
 /* Video Tutorial: http://www.youtube.com/watch?v=EraNFJiY0Eg */
@@ -35,7 +50,7 @@ function uploadFile(){
   ajax.addEventListener("load", completeHandler, false);
   ajax.addEventListener("error", errorHandler, false);
   ajax.addEventListener("abort", abortHandler, false);
-  ajax.open("POST", "file_upload_parser.php");
+  ajax.open("POST", "file_upload_parser.php?id=<?php echo $subid ?>&name=<?php echo $subname; ?>");
   ajax.send(formdata);
 }
 function progressHandler(event){
@@ -70,11 +85,9 @@ function abortHandler(event){
           <div class="container">
           <div class="row">
           <div class="col-md-9" style="padding-left: 0px;">
-            <h2>Course Name</h2>
+            <h2><?php echo $subname; ?></h2>
           </div>
-          <div class="col-md-3">
-            <h2>Batch No</h2>
-          </div>
+          
             
           </div>
          <!-- <div class="container">
