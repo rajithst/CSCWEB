@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
 	);
 
 	addnewcourse( $register_data); ?>
-	<script>swal("New Coursr Added!", "Your have benn added a course successfully")</script>
+	<script>swal("New Course Added!", "You added a course successfully")</script>
 
 	<?php
 
@@ -57,13 +57,6 @@ if (isset($_POST['submit'])) {
 
 
 ?>
-
-
-
-
-
-
-
 
 
 <div class="container-fluid">
@@ -86,12 +79,12 @@ if (isset($_POST['submit'])) {
 
 
 				<div class="form-group">
-					<label class="col-md-4 control-label">Parent Course</label>
+					<label class="col-md-4 control-label">Main Course</label>
 					<div class="col-md-6 selectContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
 							<select name="courseid" class="form-control selectpicker" id="getmaincat" required="required">
-								<option value="">--- SELECT PARENT CATEGORY ---</option>
+								<option value="">--- SELECT MAIN COURSE---</option>
 								<?php
 
 								$subs = getcoursefor();
