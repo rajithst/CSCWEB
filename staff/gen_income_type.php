@@ -12,22 +12,22 @@ if(logged_in() === false){
 require '../core/init.php';
 require '../core/function/staff.php';
 include '../components/page_head.php'; ?>
+<style>
+    a.list-group-item {
+    height:auto;
+    min-height:100px;
+}
+div#nn{
 
-<link rel="stylesheet" href="../public/dist/css/report.css">
-    </head>
-    <body>
+    margin: 15px 0px;
+}
+span.badge{
 
-    <?php include "comp/navbar.php"; ?>
-<div class="nabbar clearfix" id="path">
-        <ol class="breadcrumb">
-            <li><a href="index.php">Home</a>
-            <span class="glyphicon glyphicon-triangle-right"></span></li>
-            <li><a href="generate_report.php"> Generate Repors</a>
-            <span class="glyphicon glyphicon-triangle-right"></span></li>
-            <li><a href="">Select Income Report Type</a>
-        </ol>
-    </div>
-    </br>
+    padding: 10px;
+    font-size: 20px;
+}
+</style>
+
 <script>
     
     $(document).ready(function(){
@@ -49,36 +49,112 @@ $('#two-inputs').dateRangePicker(
             $('#date-range201').val(s2);
         }
     });
+
+
+$('#two-inputs1').dateRangePicker(
+    {
+        separator : ' to ',
+        getValue: function()
+        {
+            if ($('#date-range202').val() && $('#date-range203').val() )
+                return $('#date-range202').val() + ' to ' + $('#date-range203').val();
+            else
+                return '';
+        },
+        setValue: function(s,s1,s2)
+        {
+            $('#date-range202').val(s1);
+            $('#date-range203').val(s2);
+        }
+    });
+
+$('#two-inputs2').dateRangePicker(
+    {
+        separator : ' to ',
+        getValue: function()
+        {
+            if ($('#date-range202').val() && $('#date-range203').val() )
+                return $('#date-range204').val() + ' to ' + $('#date-range205').val();
+            else
+                return '';
+        },
+        setValue: function(s,s1,s2)
+        {
+            $('#date-range204').val(s1);
+            $('#date-range205').val(s2);
+        }
+    });
+
+
+$('#two-inputs3').dateRangePicker(
+    {
+        separator : ' to ',
+        getValue: function()
+        {
+            if ($('#date-range202').val() && $('#date-range203').val() )
+                return $('#date-range206').val() + ' to ' + $('#date-range207').val();
+            else
+                return '';
+        },
+        setValue: function(s,s1,s2)
+        {
+            $('#date-range206').val(s1);
+            $('#date-range207').val(s2);
+        }
+    });
+
+
+
+
+
+
  });
 </script>
-</head>
-<style>
-    a.list-group-item {
-    height:auto;
-    min-height:100px;
-}
-div#nn{
+    </head>
+    <body>
 
-    margin: 15px 0px;
-}
-span.badge{
+    <?php include "comp/navbar.php"; ?>
+<div class="nabbar clearfix" id="path">
+        <ol class="breadcrumb">
+            <li><a href="index.php">Home</a>
+            <span class="glyphicon glyphicon-triangle-right"></span></li>
+            <li><a href="generate_report.php"> Generate Repors</a>
+            <span class="glyphicon glyphicon-triangle-right"></span></li>
+            <li><a href="">Configuring reports</a>
+        </ol>
+    </div>
+    </br>
 
-    padding: 10px;
-    font-size: 20px;
-}
-
-
-
-
-</style>
-<body background="">
 
     <div class="container">
     <div class="row">
        
-        <h3 class="text-center">Select Report Type</h3>
+        <h3 class="text-center">Configuring reports</h3>
         <br>
         <div class="list-group">
+
+
+         <a href="#" class="list-group-item">
+                <div class="media col-md-3" id="nn">
+                    <span class="badge">Course income</span>
+                </div>
+                <div class="col-md-6 text-center" id="nn">
+                   
+                 
+                Select date range <span id="two-inputs2"><input id="date-range204" size="20" value=""> to <input id="date-range205" size="20" value=""></span>
+
+                    
+                </div>
+                <div class="col-md-3 text-center" id="nn">
+                    <button type="button" class="btn btn-info btn-lg btn-block"> Run Report </button>
+                </div>
+          </a>
+
+
+
+
+
+
           <a href="#" class="list-group-item">
                 <div class="media col-md-3" id="nn">
                    <span class="badge">Project Income</span>
@@ -91,7 +167,7 @@ span.badge{
                     
                 </div>
                 <div class="col-md-3 text-center" id="nn">
-                    <button type="button" class="btn btn-info btn-lg btn-block"> Generate </button>
+                    <button type="button" class="btn btn-info btn-lg btn-block"> Run Report </button>
                 </div>
           </a>
          
@@ -102,29 +178,15 @@ span.badge{
                 <div class="col-md-6 text-center" id="nn">
                    
                  
-                Select date range <span id="two-inputs"><input id="date-range200" size="20" value=""> to <input id="date-range201" size="20" value=""></span>
+                Select date range <span id="two-inputs1"><input id="date-range202" size="20" value=""> to <input id="date-range203" size="20" value=""></span>
 
                     
                 </div>
                 <div class="col-md-3 text-center" id="nn">
-                    <button type="button" class="btn btn-info btn-lg btn-block"> Generate </button>
+                    <button type="button" class="btn btn-info btn-lg btn-block"> Run Report </button>
                 </div>
           </a>
-           <a href="#" class="list-group-item">
-                <div class="media col-md-3" id="nn">
-                    <span class="badge">Course Fee income</span>
-                </div>
-                <div class="col-md-6 text-center" id="nn">
-                   
-                 
-                Select date range <span id="two-inputs"><input id="date-range200" size="20" value=""> to <input id="date-range201" size="20" value=""></span>
-
-                    
-                </div>
-                <div class="col-md-3 text-center" id="nn">
-                    <button type="button" class="btn btn-info btn-lg btn-block"> Generate </button>
-                </div>
-          </a>
+  
 
           <a href="#" class="list-group-item">
                 <div class="media col-md-3" id="nn">
@@ -133,12 +195,12 @@ span.badge{
                 <div class="col-md-6 text-center" id="nn">
                    
                  
-                Select date range <span id="two-inputs"><input id="date-range200" size="20" value=""> to <input id="date-range201" size="20" value=""></span>
+                Select date range <span id="two-inputs3"><input id="date-range206" size="20" value=""> to <input id="date-range207" size="20" value=""></span>
 
                     
                 </div>
                 <div class="col-md-3 text-center" id="nn">
-                    <button type="button" class="btn btn-info btn-lg btn-block"> Generate </button>
+                    <button type="button" class="btn btn-info btn-lg btn-block"> Run Report </button>
                 </div>
           </a>
 

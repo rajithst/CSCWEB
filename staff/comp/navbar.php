@@ -55,13 +55,24 @@
 						</span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
-                        <li><a tabindex="-1" href="edit_report.php" id="task_txt">Edit Reports</a></li>
+                        <li><a tabindex="-1" href="edit_report.php" id="task_txt">Input Report data</a></li>
                         <li><a tabindex="-1" href="generate_report.php" id="task_txt">Generate reports</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="select_course_reg.php" style="color:white;padding-top:18px;"><span class="glyphicon glyphicon-edit"></span> Registration</a>
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;padding-top:18px;">
+                        <span class="glyphicon glyphicon-list-alt"> Registration</span>
+                        <span class="caret">
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
+                        <li><a tabindex="-1" href="select_course_reg.php" id="task_txt">Make manual registration</a></li>
+                        <li><a tabindex="-1" href="markregistered.php" id="task_txt">Mark as registered</a></li>
+                    </ul>
                 </li>
+
 
                 <ul class="nav navbar-nav navbar-right" >
                     <li class="dropdown">

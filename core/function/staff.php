@@ -57,3 +57,12 @@ function getadmins($id){
     return $res;
 
 }
+
+function unregistered(){
+    $con = mysqli_connect('localhost','root','rajith','csc');
+    $sql = "SELECT * FROM student WHERE registered=0";
+    $res = mysqli_query($con,$sql);
+    return $res;
+
+
+}
