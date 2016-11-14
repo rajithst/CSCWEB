@@ -79,6 +79,19 @@ function register_lect( $register_data){
 
 }
 
+function register_lecti( $register){
+
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $fields='`' .implode('`,`' ,array_keys($register)) . '`';
+    $data = '\'' . implode('\', \'' ,$register ) . '\' ';
+    $r = mysqli_query($con,"INSERT INTO lectures($fields) VALUES ($data)");
+
+    if ($r){
+
+        return true;
+    }
+
+}
 function getsubsbyid($id){
 
     $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
