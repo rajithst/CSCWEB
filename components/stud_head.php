@@ -13,6 +13,6 @@
 
     <script src="../public/plugins/jQuery/jquery.js"></script>
     <script src="../public/plugins/monthly/monthly.js"></script>
-<script src="../public/plugins/jQueryUI/jquery-ui.js"></script>
+    <script src="../public/plugins/jQueryUI/jquery-ui.js"></script>
 
     

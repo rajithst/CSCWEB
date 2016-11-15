@@ -1,8 +1,9 @@
 <?php
 
-if (isset($_GET['id']) and isset($_GET['name'])) {
+if (isset($_GET['id']) and isset($_GET['name']) and isset($_GET['fname'])) {
     $id = $_GET['id'];
     $name = $_GET['name'];
+    $fname = $_GET['fname'];
 }
 $desc = $_POST["desc"];
 $title = $_POST["title"];
@@ -17,7 +18,7 @@ if (!$fileTmpLoc) { // if file not chosen
     echo "ERROR: Please browse for a file before clicking the upload button.";
     exit();
 }
-if(file_exists("test_uploads/".$fileName)){
+if(file_exists("../uploads/".$fileName)){
 	echo "Sorry, file already exists.";
 	$fileupload_ok = 0;
 }else{
@@ -28,13 +29,13 @@ if ($fileupload_ok == 0) {
     echo "Sorry, your file was not uploaded.";
 
 } else {
-    if(move_uploaded_file($fileTmpLoc, "test_uploads/$fileName")){
+    if(move_uploaded_file($fileTmpLoc, "../uploads/$fileName")){
     echo "$fileName was Uploaded successfully";
 
 	$con = mysqli_connect("localhost", "root", "rajith","csc") or die(mysql_error()) ;
 
-   	mysqli_query($con,"INSERT INTO fileuploads(date,subject,subject_code,title,description,file)
-    VALUES ('$date', '$name','$id','$title','$desc','courseco/test_uploads/$fileName')") ;
+   	mysqli_query($con,"INSERT INTO fileuploads(date,subject,subject_code,title,description,filename,file)
+    VALUES ('$date', '$name','$id','$title','$desc','$fname','uploads/$fileName')") ;
 
     } else {
         echo "Sorry, there was an error uploading your file.";

@@ -50,3 +50,11 @@ function getsubname($subid){
     return $res;
 
 }
+
+function getslides($subid){
+    $con = mysqli_connect('localhost','root','rajith','csc');
+    $sql = "SELECT * FROM fileuploads WHERE subject_code='$subid'";
+    $res = mysqli_query($con,$sql);
+    return $res;
+
+}

@@ -1,122 +1,169 @@
-<?php require '../core/init.php';
+<?php 
+session_start();
+require '../core/base.php';
 
-require 'function/student.php';
+if(logged_in() === false){
 
-include "../components/stud_head.php"; ?>
+    session_destroy();
+    header('Location:index.php');
+    exit();
+
+}
+require '../core/init.php';
+require '../components/stud_head.php';
+require '../core/function/student.php';
+
+?>
+
+<script>
+
+
+    $(document).ready(function () {
+
+        $('#mycalendar').monthly({
+            mode: 'event',
+            //jsonUrl: 'events.json',
+            //dataType: 'json'
+            xmlUrl: 'events.xml'
+        });
+    });
+</script>
 
     </head>
 
-    <body>
-
-    <!-- start of nav bar-->
-    <nav class="navbar navbar-custom" role = "navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button style="background-color:white;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="home.php" class="logo pull-left"><img src="../public/dist/img/system/csclogo.png" style="width:auto; height:42px;"></a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
-            </ul>
-        </div>
-        </div>
-    </nav>
-    <?php
-    $id = $_SESSION['id'];
-    $subject = $stu_data['coursename'];
-    $course = getcourse($id,$subject);
+        <?php
+              $subid = $stu_data['coursename'];
+              $res = getsubname($subid);
+              while ($rowsi = mysqli_fetch_assoc($res)) {
+                  $subname = $rowsi['subject'];
+                  $duration = $rowsi['duration'];
+              }
 
 
-    ?>
-    <!-- start of body -->
+                                         ?>
+
+
+
+
+    <body style="background-color: #f0f0f0;overflow-x:hidden;">
+
+    <?php include "comp/navbar.php"; ?>
+
+
     <div class="container-fluid">
-        <div class="row content" id="row">
+<div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 10px;margin-top: 4%">
 
-            <!-- start of course panel -->
-            <div class="col-md-3 col-sm-12 col-xs-12" style="margin-top: 55px;">
-                <div class="panel panel-default" id="course-panel">
-                    <div class="panel-heading" >
-                        <center><h3>COURSES</h3></center>
-                    </div>
-                    <div class="panel-body">
-                        <div class="panel-group" id="accordion">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" ><?php echo $course; ?></a>
-                                    </h4>
-                                </div>
-                                <div id="collapse1" class="panel-collapse">
-                                    <ul class="list-group active">
-                                        <?php
-                                        $subjects = getsubjects($course);
-                                        while ($row = mysqli_fetch_assoc($subjects)){
-                                            $subid = $row['subjectid'];
-                                            ?>
+    <center>
+        <h3>Main menu</h3>
+    </center>
+    <hr>
+                    <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+                            </span>Content</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body" style="padding: 0;">
+                                <table class="table" style="margin-bottom: 0px;">
+                                    <tr>
+                                        <td style="padding-left: 15px;">
 
-                                            <center><li class="list-group-item"><a href="subject.php?subject=<?php echo $subid; ?>"><i class="fa fa-book" aria-hidden="true"></i>
-                                                        <?php echo $row['subject']; ?></a></li></center>
-
-
-                                        <?php    }
-
-                                        ?>
-                                    </ul>
-                                </div>
+                                            <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="allposts.php"><?php echo $subname; ?></a>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- start of lecture schedule -->
-            <div class="col-md-9 col-sm-12 col-xs-12">
-                <div id="lecture-schedule" style="margin-top: 75px;">
-
-                        <?php
-                        $subid = $_GET['subject'];
-                        $res = getslides($subid);
-
-                        while ($row= mysqli_fetch_assoc($res)) {
-
-                        ?>
-                        <div class="well">
-                        <div class="text-head"><h3><i class="fa fa-info-circle" aria-hidden="true"></i>
-                                <?php echo $row['topic']; ?></h3></div>
-                            <hr style="border-top: 3px double #8c8b8b;">
-
-                            <p><i class="fa fa-pencil" aria-hidden="true"></i>
-                                        <?php echo $row['content']; ?></p>
-                        <ul class="topics">
-                            <div class="contents"><i class="fa fa-download" aria-hidden="true"></i>
-                                <a href="">Lecture Note 1</a></div>
-                            <div class="contents"><i class="fa fa-download" aria-hidden="true"></i>
-                                <a href="">Lecture Note 2</a></div>
-                            <div class="contents">
-                                <a href="">Tutorial</a>
-                                <ul><a href="" style="font-size:13px">Submission Link</a></ul>
+                
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
+                            </span>Account</a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="http://www.jquery2dotnet.com">Import/Export</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
+                                                Delete Account</a>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
-                            <div class="contents">
-                                <a href="">Assignment</a>
-                                <ul><a href="" style="font-size:13px">Submission Link</a></ul>
-                            </div>
-                            </ul>
-
+                        </div>
                     </div>
-                            <hr style="	height: 10px;
-                                    border: 0;
-                                    box-shadow: 0 10px 10px -10px #8c8b8b inset;">
-                        <?php } ?>
+                
                 </div>
-            </div>
-        </div>
     </div>
 
+    <?php
 
-<?php include "../components/stud_footer.php"; ?>
+    $id = $_GET['id'];
+    $slides =getslides($id); ?>
+
+    <div class="col-md-8 col-sm-12 col-xs-12" style="margin-top: 4%;">
+        <div id="lecture-schedule">
+
+<?php    while ($row= mysqli_fetch_assoc($slides)) {
+    ?>
+
+
+
+
+
+                    <div class="well">
+                        <div class="text-head"><h4><?php echo $row['title']; ?></h4></div>
+                        <p><?php echo $row['description']; ?></p>
+                        <ul class="topics">
+                            <div class="contents"><a href="<?php echo $row['file']; ?>" download target="_blank"><span class="glyphicon glyphicon-folder-open" style="margin-right:10px;"></span><img
+                                        src="../public/dist/img/system/pdf.png" alt=""><?php echo $row['filename']; ?></a></div>
+
+                        <ul>
+                    </div>
+                </div>
+
+<?php } ?>
+        </div>
+
+
+
+        <div class="col-md-2 col-sm-3 col-xs-12" style="background-color: white;margin-top: 4%">
+            <center><h3>Submission Links</h3></center>
+            <hr>
+            <div class="caption">
+                
+            </div>
+            <div class="modal-footer" style="text-align: left">
+                <div class="progress">
+
+                </div>
+
+            </div>
+
+        </div>
+
+</div>
+    <?php include "../components/stud_footer.php"; ?>
+

@@ -1,5 +1,5 @@
 <footer lass="container-fluid" style="
-    
+    position: fixed;
    left:0px;
    bottom:0px;
    height:40px;

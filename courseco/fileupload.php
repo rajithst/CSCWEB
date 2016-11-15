@@ -39,18 +39,21 @@ function _(el){
 function uploadFile(){
   var title = _("title");
   var desc = _("comment");
+  var fname = _("fname");
   var file = _("file1").files[0];
   // alert(file.name+" | "+file.size+" | "+file.type);
   var formdata = new FormData();
   formdata.append("file1", file);
   formdata.append("title",title.value);
   formdata.append("desc", desc.value);
+  formdata.append("fname", fname.value);
+  console.log(fname.value);
   var ajax = new XMLHttpRequest();
   ajax.upload.addEventListener("progress", progressHandler, false);
   ajax.addEventListener("load", completeHandler, false);
   ajax.addEventListener("error", errorHandler, false);
   ajax.addEventListener("abort", abortHandler, false);
-  ajax.open("POST", "file_upload_parser.php?id=<?php echo $subid ?>&name=<?php echo $subname; ?>");
+  ajax.open("POST", "file_upload_parser.php?id=<?php echo $subid ?>&name=<?php echo $subname; ?>&fname="+fname.value);
   ajax.send(formdata);
 }
 function progressHandler(event){
@@ -110,6 +113,10 @@ function abortHandler(event){
             <input type="text" class="form-control" id="title">
             <label for="comment">Description</label>
             <textarea class="form-control" rows="5" id="comment"></textarea><br>
+
+            <label for="comment">File Name to show</label>
+            <input type="text" class="form-control" id="fname">
+            <br>
             <div class="form-inline">
               <div class="form-group">
                 <input type="file" name="file1" id="file1" multiple>

@@ -31,15 +31,13 @@ require '../core/function/student.php';
     </head>
 
         <?php
-              $subid = $stu_data['coursename'];
+               $subid = $stu_data['coursename'];
               $res = getsubname($subid);
               while ($rowsi = mysqli_fetch_assoc($res)) {
                   $subname = $rowsi['subject'];
                   $duration = $rowsi['duration'];
               }
-
-
-                                         ?>
+        ?>
 
 
 
@@ -68,7 +66,7 @@ require '../core/function/student.php';
                                     <tr>
                                         <td style="padding-left: 15px;">
 
-                                            <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="allposts.php"><?php echo $subname; ?></a>
+                                            <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="subject.php?id=<?php echo $stu_data['coursename']; ?> "> <?php echo $subname; ?></a>
                                         </td>
                                     </tr>
                                 </table>
@@ -209,7 +207,7 @@ $value = ($cur/$tot)*100; ?>
                 $res = 80-$value; ?>
 
         <div class="alert alert-danger">
-          <strong>Warning</strong> You need to complete minimum <?php echo $res; ?>%
+          <strong>Warning</strong> You need to complete minimum <?php echo $res; ?>% more
         </div>
 
         <?php } else { ?>
