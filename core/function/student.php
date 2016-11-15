@@ -24,9 +24,9 @@ function loginstudent($username,$password) {
 }
 
 
-function getposts(){
+function getpostss(){
     $con = mysqli_connect('localhost','root','rajith','csc');
-    $sql = "SELECT * FROM posts WHERE student =1";
+    $sql = "SELECT * FROM posts WHERE type =1 ORDER BY id DESC ";
     $res = mysqli_query($con,$sql);
     return $res;
 
@@ -34,7 +34,7 @@ function getposts(){
 
 }
 
-function getadmin($id){
+function getadmins($id){
     $con = mysqli_connect('localhost','root','rajith','csc');
     $sql = "SELECT name,profile From adminusers WHERE id=$id";
     $res = mysqli_query($con,$sql);
@@ -43,22 +43,10 @@ function getadmin($id){
 }
 
 
-function getcourse($id,$subject){
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-    $sql = "SELECT coursename FROM courses WHERE courseid=(SELECT courseid FROM subjects WHERE subject = '$subject')";
-    $query      = mysqli_query($con, $sql);
-    $fetcharray = mysqli_fetch_array($query);
-    return $fetcharray[0];
-    
-    
-    
-    
-}
-
-function getsubjects($course){
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-    $sql = "SELECT subject,subjectid FROM subjects WHERE courseid=(SELECT courseid FROM courses WHERE coursename='$course') ";
-    $query      = mysqli_query($con, $sql);
-    return $query;
+function getsubname($subid){
+    $con = mysqli_connect('localhost','root','rajith','csc');
+    $sql = "SELECT * FROM subjects WHERE subjectid='$subid'";
+    $res = mysqli_query($con,$sql);
+    return $res;
 
 }

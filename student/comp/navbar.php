@@ -54,7 +54,7 @@
             <ul class="nav navbar-nav navbar-right" style="margin-right:30px; padding: 10px;">
 
             <li class="dropdown">
-                    <a href="index.php" style="color:white;"><span class="glyphicon glyphicon-home"></span> Home</a>
+                    <a href="home.php" style="color:white;"><span class="glyphicon glyphicon-home"></span> Home</a>
                 </li>
 
 
@@ -83,7 +83,7 @@
                                             <p class="text-left"><strong><?php echo $stu_data['fullname']; ?></strong></p>
                                             <p class="text-left small"><?php echo $stu_data['email']; ?></p>
                                             <p class="text-left">
-                                                <a href="#" class="btn btn-primary btn-block btn-sm">See Profile</a>
+                                                <a href="#" class="btn btn-primary btn-block btn-sm">Change Password</a>
                                             </p>
                                         </div>
                                     </div>

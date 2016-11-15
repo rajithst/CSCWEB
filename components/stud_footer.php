@@ -1,5 +1,5 @@
 <footer lass="container-fluid" style="
-    position:fixed;
+    
    left:0px;
    bottom:0px;
    height:40px;
@@ -20,6 +20,8 @@
     </div>
 </footer>
 <script src="../public/plugins/jQuery/jquery.js"></script>
+<script src="../public/plugins/monthly/monthly.js"></script>
+<script src="../public/plugins/jQueryUI/jquery-ui.js"></script>
 <script src="../public/js/bootstrap.js"></script>
 </body
 </html>
