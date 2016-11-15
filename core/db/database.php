@@ -55,7 +55,7 @@ function stu_data($id) {
     if ($get_num > 1) {
         unset($get_args[0]);
         $fields = '`'.implode('`,`', $get_args).'`';
-        $res  = mysqli_query($con, "SELECT $fields FROM student WHERE nic= '$id'");
+        $res  = mysqli_query($con, "SELECT $fields FROM student WHERE id= '$id'");
         $data = mysqli_fetch_assoc($res);
         return $data;
 

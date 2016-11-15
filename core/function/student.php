@@ -1,14 +1,21 @@
 <?php
 
+function user_id_from_nic($password) {
+    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+
+    $sql        = "SELECT id FROM student  WHERE nic = '$password'";
+    $query      = mysqli_query($con, $sql);
+    $fetcharray = mysqli_fetch_array($query);
+    return $fetcharray[0];
+
+}
 
 
 function loginstudent($username,$password) {
 
     $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-    //$user_id  = user_id_from_nic($password);
-    $user_id  = $password;
-    $sql      = "SELECT * FROM student WHERE username= 'csc@gmail.com' AND nic='$password'";
-
+    $user_id  = user_id_from_nic($password);
+    $sql      = "SELECT * FROM student WHERE username= 'csc@gmail.com' AND nic='$password' AND registered = 1 ";
     $query    = mysqli_query($con, $sql);
     $result   = mysqli_num_rows($query);
 

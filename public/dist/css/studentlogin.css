@@ -1,90 +1,69 @@
-body
-{
-	min-height: 100%
-	
+    body{
+    font-family: 'Open Sans', sans-serif;
 }
-
-/* link styling */
-
-a:hover{
-	color:#990000;
-	text-decoration:none;
+.logo i {
+    font-size: 31px;
+    margin-right: 4px;
+    word-spacing: 14px;
 }
-
- /* navbar styling*/
-.navbar {
-  margin-bottom: 0;
-  border-radius: 0;
-  background-color: #000066;
-  color: white;
-  margin-bottom: 10px;
-}
-
 .logo{
-	margin-top:3px;
+    color: white;
+    margin: 0;
+    font-size: 20px;
+    padding: 4px 0;
+    padding-bottom: 15px;
+
+}
+.login-bottom-text{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: white;
+    line-height: 19px;
 }
 
-/* news feed styling */
-#newsfeed{
-	background-color:white;
-	margin-bottom:20px;
-	margin-top:0px;
+header{
+    background: #3b5998;
+    padding-top: 20px;
 }
+header .form-group{
+    margin-bottom: 0px;
+}
+header .btn-header-login{
+    margin-bottom: 15px;    
+}
+.login-main{
+    margin-top: 130px;
+}
+.multibox{
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+.login-main span{
+    font-size: 12px;
+} 
 
-.panel-default > .panel-heading {
-  font-size:15px;
-}
 
-#newsbody{
-  overflow-y:scroll;
-}
 
-#attach{
-	text-align: right;
+footer hr{
+    margin-top: 0px;
+    padding-top: 0px;
 }
-
-/* login form styling*/
-#student-login{
-	margin-top:20px;
-	margin-right:10px;
+.footer-options ul{
+    clear: both;
+    padding: 0px;
+    margin: 0px;
 }
-
-.btn{
-	margin-left:16px;
-}
-   
-/* footer styling*/
-footer {
-    background-color: #000066;
-    padding: 15px;
-    font-weight: bold;
-    font-family: serif;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.footer-nav li{
-    display:inline;
-}
-
-.footer-nav{
-    text-align: left;
+.footer-options ul li{
+    float:left;
     list-style: none;
-    color:#808080;
+    padding: 5px;
+    font-size: 12px;
 }
-    
-.footer-nav li:not(:first-child):before
- {
-    content: ' ';
-    padding: 0px 3px;
+.footer-options ul li a{
+    text-decoration: none;
+    color: #000;
 }
-  
-    
-/* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) { 
-.sidenav {
-    height: auto;
-	padding: 15px;
-}
-.row.content {height:auto;} 
+.copyrights{
+    margin-top: 25px;
 }
