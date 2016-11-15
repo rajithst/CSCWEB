@@ -140,16 +140,13 @@ include '../components/cscordinator_head.php'; ?>
 
 
                 register_lect( $register_data); ?>
-			<script>swal("New Lecturer Added!", "Your have benn added a user successfully")</script>
+			<script>swal("New Lecturer Added!", "You added a user successfully")</script>
 
 					<?php
 
 
 
             }
-
-
-
 
 			?>
 		
