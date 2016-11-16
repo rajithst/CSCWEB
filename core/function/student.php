@@ -53,7 +53,15 @@ function getsubname($subid){
 
 function getslides($subid){
     $con = mysqli_connect('localhost','root','rajith','csc');
-    $sql = "SELECT * FROM fileuploads WHERE subject_code='$subid'";
+    $sql = "SELECT * FROM fileuploads WHERE subject_code='$subid' ORDER BY id DESC";
+    $res = mysqli_query($con,$sql);
+    return $res;
+
+}
+
+function getsubmissionlinks($subid){
+    $con = mysqli_connect('localhost','root','rajith','csc');
+    $sql = "SELECT * FROM submissions WHERE subid='$subid' ORDER BY id DESC";
     $res = mysqli_query($con,$sql);
     return $res;
 

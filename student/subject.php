@@ -51,7 +51,8 @@ require '../core/function/student.php';
 
 
     <div class="container-fluid">
-<div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 10px;margin-top: 4%">
+        <div class="row" style="padding-left:10px;padding-right: 10px;">
+<div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 5px;margin-top: 4%">
 
     <center>
         <h3>Main menu</h3>
@@ -128,11 +129,6 @@ require '../core/function/student.php';
 
 <?php    while ($row= mysqli_fetch_assoc($slides)) {
     ?>
-
-
-
-
-
                     <div class="well">
                         <div class="text-head"><h4><?php echo $row['title']; ?></h4></div>
                         <p><?php echo $row['description']; ?></p>
@@ -142,9 +138,10 @@ require '../core/function/student.php';
 
                         <ul>
                     </div>
-                </div>
+
 
 <?php } ?>
+        </div>
         </div>
 
 
@@ -152,18 +149,33 @@ require '../core/function/student.php';
         <div class="col-md-2 col-sm-3 col-xs-12" style="background-color: white;margin-top: 4%">
             <center><h3>Submission Links</h3></center>
             <hr>
+            <?php
+            $submits = getsubmissionlinks($subid);
+
+            while ($row = mysqli_fetch_assoc($submits)) {
+
+            ?>
             <div class="caption">
-                
+                <h4><?php  echo $row['linktitle']; ?> </h4>
             </div>
             <div class="modal-footer" style="text-align: left">
-                <div class="progress">
 
+                <div class="progress">
+                  <?php
+
+                $timestamp=$row['edateandtime'];
+                echo gmdate("F j, Y, g:i a", $timestamp);
+
+
+                   ?>
                 </div>
 
             </div>
+            <?php } ?>
 
         </div>
 
 </div>
+        </div>
     <?php include "../components/stud_footer.php"; ?>
 

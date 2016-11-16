@@ -19,7 +19,9 @@
     </div>
 </footer>
 
+<script src="../public/plugins/jQuery/jquery.js"></script>
 <script src="../public/js/bootstrap.js"></script>
+
 <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
 
 

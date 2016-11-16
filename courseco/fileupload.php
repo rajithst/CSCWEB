@@ -1,5 +1,6 @@
 <?php 
 session_start();
+date_default_timezone_set("Asia/Colombo");
 require '../core/base.php';
 
 if(logged_in() === false){
@@ -12,7 +13,7 @@ if(logged_in() === false){
 
 require '../core/init.php';
 require '../core/function/coursecode.php';
-include '../components/cscordinator_head.php'; ?>
+include '../components/course_head.php'; ?>
 
 <?php 
 if (isset($_GET['id'])) {
@@ -31,8 +32,14 @@ if (isset($_GET['id'])) {
 
 ?>
 <script>
+
+
 /* Script written by Adam Khoury @ DevelopPHP.com */
 /* Video Tutorial: http://www.youtube.com/watch?v=EraNFJiY0Eg */
+
+
+
+
 function _(el){
   return document.getElementById(el);
 }
@@ -72,6 +79,7 @@ function errorHandler(event){
 function abortHandler(event){
   _("status").innerHTML = "Upload Aborted";
 }
+
 </script>
   </head>
 <body>
@@ -79,14 +87,20 @@ function abortHandler(event){
 <?php include "comp/navbar.php"; ?>
 
 
-  <div class="container">
-      <div class="panel panel-default" style="margin-top: 20px;">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-8">
+
+        <div class="panel panel-default" style="margin-top: 20px;">
         <div class="panel-heading" style="background-color: black; color: white;"><strong>Upload Files</strong> <small></small></div>
         <div class="panel-body">
 
 
           <div class="container">
           <div class="row">
+
+
           <div class="col-md-9" style="padding-left: 0px;">
             <h2><?php echo $subname; ?></h2>
           </div>
@@ -153,6 +167,89 @@ function abortHandler(event){
           
         </div>
       </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="panel panel-default" style="margin-top: 20px;">
+          <div class="panel-heading" style="background-color: black; color: white;"><strong>Make Submission link</strong> <small></small></div>
+          <div class="panel-body">
+
+
+            <form action="" method="post"  id="">
+              <label for="comment">link Title</label>
+              <input type="text" class="form-control" name="title">
+              <label for="comment">Submission Description</label>
+              <textarea class="form-control" rows="5" name="description"></textarea><br>
+
+              <label for="comment">End  Date and Time</label>
+              <input  type="text" class="form-control time" value="" readonly name="edtime">
+
+              <br>
+              <label for="comment">Default Place</label>
+              <input  type="text" class="form-control" value="../uploads/" readonly name="path">
+
+              <br>
+
+              <center><button class="btn btn-info" name="submission">Make link</button></center>
+
+            </form>
+
+            <?php
+            if (isset($_POST['submission'])){
+
+              $dtime = strtotime($_POST['edtime']);
+
+              $regdata = array(
+
+                  'subid' =>$subid,
+                  'linktitle'=>$_POST['title'],
+                  'description'=>$_POST['description'],
+                  'edateandtime'=>$dtime,
+                  'path' => $_POST['path']
+
+
+              );
+
+              $submit = submission($regdata);
+
+
+            }
+
+
+            ?>
+
+
+
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    </div>
     </div> <!-- /container -->
 
 <?php include '../components/course_footer.php'; ?>
+
+<script>
+  $(document).ready(function () {
+
+    $( "#datepicker" ).datepicker({
+
+      dateFormat: 'yy-mm-dd'
+    });
+
+
+
+
+
+
+  });
+  $(".time").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+
+</script>

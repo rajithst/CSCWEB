@@ -95,3 +95,14 @@ function getcourses($id){
 
 
 }
+
+function submission($regdata){
+
+    $con = mysqli_connect('localhost','root','rajith','csc');
+    $fields='`' .implode('`,`' ,array_keys($regdata)) . '`';
+    $vals= '\'' . implode('\', \'' ,$regdata ) . '\' ';
+    $sql = "INSERT INTO submissions ($fields) VALUES ($vals)";
+    $query = mysqli_query($con, $sql);
+
+
+}
