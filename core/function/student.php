@@ -78,6 +78,16 @@ function getassignmentdata($subid,$assid){
 
 }
 
+function getsubmissionattempt($name,$subid,$assid){
+    $con = mysqli_connect('localhost','root','rajith','csc');
+    $sql = "SELECT * FROM assignmentsubmissions WHERE studentname='$name' AND subid='$subid' AND assid=$assid";
+
+    $res = mysqli_query($con,$sql);
+    return $res;
+
+
+}
+
 
 
 

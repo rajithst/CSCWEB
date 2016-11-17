@@ -200,7 +200,7 @@ function abortHandler(event){
 
               $foldername = $_POST['path'];
                mkdir("../uploads/".$foldername, 0777 );
-              $folderpath = '../uploads/'.$foldername;
+              $folderpath = '../uploads/'.$foldername.'/';
               $dtime = strtotime($_POST['edtime']);
 
               $regdata = array(

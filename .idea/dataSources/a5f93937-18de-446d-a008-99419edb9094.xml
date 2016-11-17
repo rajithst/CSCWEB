@@ -375,7 +375,11 @@
     <column id="116" parent="22" name="path">
       <data-type>varchar(255)|0</data-type>
     </column>
-    <key id="117" parent="22" name="PRIMARY">
+    <column id="117" parent="22" name="attempt">
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="118" parent="22" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>

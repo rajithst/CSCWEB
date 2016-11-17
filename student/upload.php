@@ -25,7 +25,7 @@ if($_FILES['file_upload']['error'] > 0){
 }*/
 
 // Upload file
-if(!move_uploaded_file($_FILES['file_upload']['tmp_name'], '../ss/' . $_FILES['file_upload']['name'])){
+if(!move_uploaded_file($_FILES['file_upload']['tmp_name'], '../uploads/' . $_FILES['file_upload']['name'])){
     die('Error uploading file - check destination is writeable.');
 }
 

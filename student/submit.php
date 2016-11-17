@@ -1,5 +1,6 @@
 <?php
 session_start();
+ob_start();
 require '../core/base.php';
 
 if(logged_in() === false){
@@ -30,7 +31,10 @@ $res = getsubname($subid);
 while ($rowsi = mysqli_fetch_assoc($res)) {
     $subname = $rowsi['subject'];
     $duration = $rowsi['duration'];
+
 }
+
+
 ?>
 
 
@@ -148,7 +152,7 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
     <div class="col-md-10 col-sm-6 col-xs-12 ">
         <?php $res = getassignmentdata($subid,$assid);
         $data = mysqli_fetch_array($res);
-
+        echo $data[5];
         ?>
             <center><h3><?php echo $data[2]; ?></h3></center>
             <hr/>
@@ -170,8 +174,20 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
 
                         <tbody>
                         <tr>
+                            <?php
+                            $name = $stu_data['fullname'];
+                            $assdata = getsubmissionattempt($name,$subid,$assid);
+                            $assignmentatt = mysqli_fetch_array($assdata);
+                            ?>
                             <td><center>Submission Status</center></td>
-                            <td>Attempted</td>
+                            <td><?php if ($assignmentatt[7]==1){
+
+                                echo  "Attempted";
+
+                                } else {
+                                    echo  "Not Attempted";
+
+                                }?></td>
 
                         </tr>
                         <tr>
@@ -184,12 +200,7 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
 
                         </tr>
                         <tr>
-                            <?php
 
-                            $rem= dateDiff(time()-$timestamp, 2);
-
-
-                            ?>
                             <td><center>Remaining Time</center></td>
                             <td>
 
@@ -204,13 +215,33 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
 
                         </tr>
 
+                        <?php if ($assignmentatt[7]==1){ ?>
+
+                            <tr>
+
+                                <td><center>Uploaded File</center></td>
+                                <td>
+                                    <img src="../public/dist/img/system/pdf.png" alt="">
+                                </td>
+
+                            </tr>
+
+                      <?php  }
+
+                        ?>
+
                         </tbody>
                       <tfoot>
+                      <?php if ($assignmentatt[7]==0){ ?>
                       <tr>
                           <br>
 
                           <td colspan="2"><center><button class="btn btn-info " data-toggle="collapse" data-target="#demo">Make submission</button></center></td>
                       </tr>
+
+                      <?php  }
+
+                      ?>
                       </tfoot>
                     </table>
 
@@ -219,16 +250,16 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
 
                             <div class="panel panel-default">
                                 <div class="panel-heading"><strong>Upload Files</strong></div>
-                                <div class="panel-body">
 
                                     <!-- Standar Form -->
+                                    <div class="panel-body">
 
-                                    <form action="upload.php" method="post" enctype="multipart/form-data" id="js-upload-form">
+                                    <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
                                         <div class="form-inline">
                                             <div class="form-group">
                                                 <input type="file" name="file_upload" id="js-upload-files" multiple>
                                             </div>
-                                            <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
+                                            <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit" name="submitass">Upload files</button>
                                         </div>
                                     </form>
                                 </div>
@@ -236,7 +267,49 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
                         </div> <!-- /container -->
                     </div>
 
-            </div><!-- /.row -->
+            <?php
+
+            if (isset($_POST['submitass'])) {
+                if ($_FILES['file_upload']['error'] > 0) {
+                    die('An error ocurred when uploading.');
+                }
+
+                /*if(!getimagesize($_FILES['file_upload']['tmp_name'])){
+                    die('Please ensure you are uploading an image.');
+                }*/
+
+                // Check filetype
+                /*if($_FILES['file_upload']['type'] != 'image/png'){
+                    die('Unsupported filetype uploaded.');
+                }*/
+
+                // Check filesize
+                /*if($_FILES['file_upload']['size'] > 500000){
+                    die('File uploaded exceeds maximum upload size.');
+                }*/
+
+                // Check if the file exists
+                /*if(file_exists('upload/' . $_FILES['file_upload']['name'])){
+                    die('File with that name already exists.');
+                }*/
+
+                // Upload file
+                if (!move_uploaded_file($_FILES['file_upload']['tmp_name'], $data[5] . $_FILES['file_upload']['name'])) {
+                    die('Error uploading file - check destination is writeable.');
+                }
+
+                $name = $stu_data['fullname'];
+                $date = time();
+                $path = $data[5];
+                $con = mysqli_connect('localhost','root','rajith','csc');
+               $sql = "INSERT INTO assignmentsubmissions(subid,assid,studentname,filename,date,path,attempt) VALUES('$subid','$assid','$name','rr','$date','$path',1)";
+                mysqli_query($con,$sql);
+                header("Refresh:0");
+                ob_end_flush();
+            }
+            ?>
+
+            </div>
 
 
 
@@ -256,7 +329,7 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
     $(document).ready(function(){
         $('#counter').countdown({date:'<?php echo $date; ?>'},
             function(){
-                $('#counter').text('We\'re live');
+                $('#counter').text('link is expired');
             });
     });
 
