@@ -23,5 +23,7 @@
 <script src="../public/plugins/monthly/monthly.js"></script>
 <script src="../public/plugins/jQueryUI/jquery-ui.js"></script>
 <script src="../public/js/bootstrap.js"></script>
+<script src="../public/dist/js/countdow.jquery.js"></script>
+
 </body
 </html>

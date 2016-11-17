@@ -156,7 +156,7 @@ require '../core/function/student.php';
 
             ?>
             <div class="caption">
-                <h4><?php  echo $row['linktitle']; ?> </h4>
+                <a href="submit.php?id=<?php echo $subid; ?>&asid=<?php echo $row['id']?>"><h4><?php  echo $row['linktitle']; ?> </h4></a>
             </div>
             <div class="modal-footer" style="text-align: left">
 

@@ -65,4 +65,19 @@ function getsubmissionlinks($subid){
     $res = mysqli_query($con,$sql);
     return $res;
 
+
 }
+
+function getassignmentdata($subid,$assid){
+
+    $con = mysqli_connect('localhost','root','rajith','csc');
+    $sql = "SELECT * FROM submissions WHERE subid='$subid' AND id=$assid";
+    $res = mysqli_query($con,$sql);
+    return $res;
+
+
+}
+
+
+
+

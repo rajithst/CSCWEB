@@ -1,6 +1,6 @@
 <?php 
 session_start();
-date_default_timezone_set("Asia/Colombo");
+
 require '../core/base.php';
 
 if(logged_in() === false){
@@ -186,8 +186,8 @@ function abortHandler(event){
               <input  type="text" class="form-control time" value="" readonly name="edtime">
 
               <br>
-              <label for="comment">Default Place</label>
-              <input  type="text" class="form-control" value="../uploads/" readonly name="path">
+              <label for="comment">make directory for assignment</label>
+              <input  type="text" class="form-control" value=""  name="path">
 
               <br>
 
@@ -198,6 +198,9 @@ function abortHandler(event){
             <?php
             if (isset($_POST['submission'])){
 
+              $foldername = $_POST['path'];
+               mkdir("../uploads/".$foldername, 0777 );
+              $folderpath = '../uploads/'.$foldername;
               $dtime = strtotime($_POST['edtime']);
 
               $regdata = array(
@@ -206,7 +209,7 @@ function abortHandler(event){
                   'linktitle'=>$_POST['title'],
                   'description'=>$_POST['description'],
                   'edateandtime'=>$dtime,
-                  'path' => $_POST['path']
+                  'path' => $folderpath
 
 
               );
