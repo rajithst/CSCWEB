@@ -24,7 +24,7 @@ include '../components/cscordinator_head.php'; ?>
 
 <?php include "comp/navbar.php"; ?>
     
-   <?php include "comp/navbar.php"; ?>
+  
     <ul class="breadcrum">
         <li class="completed"><a href="index.php">HOME</a></li>
         <li class="completed"><a href="">Reports</a></li>
