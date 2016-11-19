@@ -50,8 +50,8 @@
                         <li role="separator" class="divider"></li>
                         <li><a tabindex="-1" href="expences.php">Expences</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a tabindex="-1" href="handle_report.php">Handle Report</a></li>
-                        <li role="separator" class="divider"></li>
+                        
+                      
                     </ul>
                 </li>
 
