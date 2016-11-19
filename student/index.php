@@ -1,5 +1,6 @@
 <?php 
 ob_start();
+require '../core/base_connection.php';
 require '../core/function/student.php';
 require '../components/stud_head.php';
 
@@ -130,7 +131,7 @@ if(isset($_POST['submit'])=== true){
      $username    = $_POST['username'];
      $password = $_POST['password'];
 
-    $login = loginstudent($username,$password);
+    $login = loginstudent($con,$username,$password);
 
     if($login === false){  ?>
 

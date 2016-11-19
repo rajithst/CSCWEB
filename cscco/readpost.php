@@ -28,7 +28,7 @@ include '../components/cscordinator_head.php'; ?>
 
 $subj = $_GET['id'];
 
-$post = getentire($subj);
+$post = getentire($con$subj);
 
 $data = mysqli_fetch_row($post);
 ?>

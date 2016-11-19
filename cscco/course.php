@@ -44,7 +44,7 @@ if (isset($_POST['submit'])) {
 
 	);
 
-	addnewcourse( $register_data); ?>
+	addnewcourse( $con,$register_data); ?>
 	<script>swal("New Course Added!", "You added a course successfully")</script>
 
 	<?php
@@ -87,7 +87,7 @@ if (isset($_POST['submit'])) {
 								<option value="">--- SELECT MAIN COURSE---</option>
 								<?php
 
-								$subs = getcoursefor();
+								$subs = getcoursefor($con);
 
 								while ( $subjects = $subs->fetch_assoc()){ ?>
 
@@ -137,7 +137,7 @@ if (isset($_POST['submit'])) {
 
 								<?php
 
-								$subs = getcoursecodinators();
+								$subs = getcoursecodinators($con);
 
 								while ( $data = $subs->fetch_assoc()){ ?>
 

@@ -54,7 +54,7 @@ include '../components/cscordinator_head.php'; ?>
 
 										<?php
 
-										$subs = getsubsfor();
+										$subs = getsubsfor($con);
 
 										while ( $subjects = $subs->fetch_assoc()){ ?>
 
@@ -168,7 +168,7 @@ include '../components/cscordinator_head.php'; ?>
                 );
 
 
-                register_lecti( $register); ?>
+                register_lecti( $con,$register); ?>
 			<script>swal("New Lectures Added!", "You have added successfully")</script>
 
 					<?php
@@ -201,7 +201,7 @@ include '../components/cscordinator_head.php'; ?>
 
 					</thead>
 					<tbody>
-					<?php  $lecs = gettable();
+					<?php  $lecs = gettable($con);
 
 					while ( $lecdata = $lecs->fetch_assoc()){ ?>
 

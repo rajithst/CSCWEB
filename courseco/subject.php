@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../core/base.php';
 
 if(logged_in() === false){
@@ -43,7 +44,7 @@ include "../components/page_head.php";
                             <?php
 
                             $id = 2;
-                            $res = getcourse_cord($id);
+                            $res = getcourse_cord($con,$id);
 
                             while ($row = mysqli_fetch_assoc($res)) {
                                 ?>

@@ -1,7 +1,7 @@
 <?php
 
-function user_id_from_nic($password) {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+function user_id_from_nic($con,$password) {
+
 
     $sql        = "SELECT id FROM student  WHERE nic = '$password'";
     $query      = mysqli_query($con, $sql);
@@ -11,10 +11,10 @@ function user_id_from_nic($password) {
 }
 
 
-function loginstudent($username,$password) {
+function loginstudent($con,$username,$password) {
 
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-    $user_id  = user_id_from_nic($password);
+
+    $user_id  = user_id_from_nic($con,$password);
     $sql      = "SELECT * FROM student WHERE username= 'csc@gmail.com' AND nic='$password' AND registered = 1 ";
     $query    = mysqli_query($con, $sql);
     $result   = mysqli_num_rows($query);
@@ -24,8 +24,8 @@ function loginstudent($username,$password) {
 }
 
 
-function getpostss(){
-    $con = mysqli_connect('localhost','root','rajith','csc');
+function getpostss($con){
+
     $sql = "SELECT * FROM posts WHERE type =1 ORDER BY id DESC ";
     $res = mysqli_query($con,$sql);
     return $res;
@@ -34,8 +34,8 @@ function getpostss(){
 
 }
 
-function getadmins($id){
-    $con = mysqli_connect('localhost','root','rajith','csc');
+function getadmins($con,$id){
+
     $sql = "SELECT name,profile From adminusers WHERE id=$id";
     $res = mysqli_query($con,$sql);
     return $res;
@@ -43,23 +43,23 @@ function getadmins($id){
 }
 
 
-function getsubname($subid){
-    $con = mysqli_connect('localhost','root','rajith','csc');
+function getsubname($con,$subid){
+
     $sql = "SELECT * FROM subjects WHERE subjectid='$subid'";
     $res = mysqli_query($con,$sql);
     return $res;
 
 }
 
-function getslides($subid){
-    $con = mysqli_connect('localhost','root','rajith','csc');
+function getslides($con,$subid){
+
     $sql = "SELECT * FROM fileuploads WHERE subject_code='$subid' ORDER BY id DESC";
     $res = mysqli_query($con,$sql);
     return $res;
 
 }
 
-function getsubmissionlinks($subid){
+function getsubmissionlinks($con,$subid){
     $con = mysqli_connect('localhost','root','rajith','csc');
     $sql = "SELECT * FROM submissions WHERE subid='$subid' ORDER BY id DESC";
     $res = mysqli_query($con,$sql);
@@ -68,9 +68,8 @@ function getsubmissionlinks($subid){
 
 }
 
-function getassignmentdata($subid,$assid){
+function getassignmentdata($con,$subid,$assid){
 
-    $con = mysqli_connect('localhost','root','rajith','csc');
     $sql = "SELECT * FROM submissions WHERE subid='$subid' AND id=$assid";
     $res = mysqli_query($con,$sql);
     return $res;
@@ -78,8 +77,8 @@ function getassignmentdata($subid,$assid){
 
 }
 
-function getsubmissionattempt($name,$subid,$assid){
-    $con = mysqli_connect('localhost','root','rajith','csc');
+function getsubmissionattempt($con,$name,$subid,$assid){
+
     $sql = "SELECT * FROM assignmentsubmissions WHERE studentname='$name' AND subid='$subid' AND assid=$assid";
 
     $res = mysqli_query($con,$sql);

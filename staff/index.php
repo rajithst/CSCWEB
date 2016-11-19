@@ -162,7 +162,7 @@ include '../components/page_head.php'; ?>
 
             <?php
 
-            $posts = getpostss();
+            $posts = getpostss($con);
 
             $count = 1;
 
@@ -171,7 +171,7 @@ include '../components/page_head.php'; ?>
                 if ($count <=4) {
                     $id = $row['adminid'];
 
-                    $admindata = getadmins($id);
+                    $admindata = getadmins($con,$id);
                     while ($data = mysqli_fetch_assoc($admindata)) {
                         ?>
 

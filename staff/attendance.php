@@ -33,8 +33,8 @@ include '../components/page_head.php'; ?>
         <div class="col-md-8 col-sm-8 col-xs-12" style="padding-left: 10%">
 				<?php
     $subid = $_GET['subid'];
-    $res = getstudents($subid);
-    $subdata = getsubdata($subid);
+    $res = getstudents($con,$subid);
+    $subdata = getsubdata($con,$subid);
 ?>
             <center>
         <section class="content-header">
@@ -103,7 +103,7 @@ include '../components/page_head.php'; ?>
 <?php
     if(isset($_POST['next']) === true) {
         foreach ($_POST['attendance'] as $index => $val) {
-            $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+
             $sql1 = "SELECT attendance FROM student WHERE fullname='$val'";
             $res = mysqli_query($con,$sql1);
             $dd = mysqli_fetch_array($res);

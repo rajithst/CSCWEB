@@ -33,7 +33,7 @@ require '../core/function/student.php';
 
         <?php
               $subid = $stu_data['coursename'];
-              $res = getsubname($subid);
+              $res = getsubname($con,$subid);
               while ($rowsi = mysqli_fetch_assoc($res)) {
                   $subname = $rowsi['subject'];
                   $duration = $rowsi['duration'];
@@ -122,7 +122,7 @@ require '../core/function/student.php';
     <?php
 
     $id = $_GET['id'];
-    $slides =getslides($id); ?>
+    $slides =getslides($con,$id); ?>
 
     <div class="col-md-8 col-sm-12 col-xs-12" style="margin-top: 4%;">
         <div id="lecture-schedule">
@@ -150,7 +150,7 @@ require '../core/function/student.php';
             <center><h3>Submission Links</h3></center>
             <hr>
             <?php
-            $submits = getsubmissionlinks($subid);
+            $submits = getsubmissionlinks($con,$subid);
 
             while ($row = mysqli_fetch_assoc($submits)) {
 

@@ -29,7 +29,7 @@ include '../components/cscordinator_head.php'; ?>
 
 <?php
 
-$course = getcoursefor();
+$course = getcoursefor($con);
 
 ?>
 
@@ -48,7 +48,7 @@ $course = getcoursefor();
 
                             <?php
                             $id = $row['courseid'];
-                            $subs = getsubsbyid($id);
+                            $subs = getsubsbyid($con,$id);
                             while ($rows = mysqli_fetch_assoc($subs)) { ?>
                             <div>
                                 <span><?php echo $rows['subject']; ?> </span>

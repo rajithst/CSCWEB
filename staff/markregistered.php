@@ -68,7 +68,7 @@ $('#ss').click(function(){
         <h2>Unregistered Students</h2>
         <div class="table-responsive">
 
-            <?php $res = unregistered(); ?>     
+            <?php $res = unregistered($con); ?>
             <form action="" method="post">           
               <table id="mytable" class="table table-bordred table-striped">
                    <thead>

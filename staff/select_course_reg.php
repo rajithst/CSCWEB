@@ -74,7 +74,7 @@ include '../components/page_head.php'; ?>
 											</tr>
 
 											<?php
-											$res = getall();
+											$res = getall($con);
 											while ($row = mysqli_fetch_assoc($res)) {
 												$id= $row['courseid'];
 												?>

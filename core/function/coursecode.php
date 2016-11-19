@@ -1,7 +1,7 @@
 <?php
 
-function getpostss(){
-    $con = mysqli_connect('localhost','root','rajith','csc');
+function getpostss($con){
+
     $sql = "SELECT * FROM posts WHERE type =1 ORDER BY id DESC ";
     $res = mysqli_query($con,$sql);
     return $res;
@@ -10,8 +10,8 @@ function getpostss(){
 
 }
 
-function getadmins($id){
-    $con = mysqli_connect('localhost','root','rajith','csc');
+function getadmins($con,$id){
+
     $sql = "SELECT name,profile From adminusers WHERE id=$id";
     $res = mysqli_query($con,$sql);
     return $res;
@@ -19,8 +19,8 @@ function getadmins($id){
 }
 
 
-function getcourse_cord($id){
-    $con = mysqli_connect('localhost','root','rajith','csc');
+function getcourse_cord($con,$id){
+
     $sql = "SELECT coursename,courseid FROM courses WHERE coursecodeid = $id ";
     $query = mysqli_query($con, $sql);
     return $query;
@@ -28,41 +28,9 @@ function getcourse_cord($id){
 
 }
 
-function getsubs_cord($course){
-$con = mysqli_connect('localhost','root','rajith','csc');
-    $sql = "SELECT subject FROM subject WHERE courseid = (SELECT courseid FROM courses WHERE coursename = '$course')";
-    
-    
-}
 
-function uploadsilde($file_temp,$file_extn){
+function getslides($con,$subid){
 
-    $con = mysqli_connect('localhost','root','rajith','csc');
-    $file_path = 'slides/'.substr(md5(time()), 0, 10).'.'.$file_extn;
-    move_uploaded_file($file_temp, $file_path);
-    $query = "INSERT INTO slides (path) VALUES ($file_path)";
-    mysqli_query($con, $query);
-    return $file_path;
-}
-
-
-
-function  insertslides($data){
-    $con = mysqli_connect('localhost','root','rajith','csc');
-    $fields='`' .implode('`,`' ,array_keys($data)) . '`';
-    $vals= '\'' . implode('\', \'' ,$data ) . '\' ';
-    $sql = "INSERT INTO slides ($fields) VALUES ($vals)";
-    $query = mysqli_query($con, $sql);
-
-    if ($query){
-
-        return true;
-    }
-
-}
-
-function getslides($subid){
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $sql = "SELECT * FROM subjects WHERE subjectid = '$subid'";
     $query = mysqli_query($con, $sql);
     return $query;
@@ -77,9 +45,8 @@ function getccdata($id){
 }
 
 
-function getentire($subject){
+function getentire($con,$subject){
 
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $sql = "SELECT * FROM posts WHERE subject = '$subject'";
     $res = mysqli_query($con, $sql);
     return $res;
@@ -87,8 +54,8 @@ function getentire($subject){
 
 }
 
-function getcourses($id){
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+function getcourses($con,$id){
+
     $sql = "SELECT * FROM subjects  WHERE coursecid=$id";
     $res = mysqli_query($con, $sql);
     return $res;
@@ -96,9 +63,8 @@ function getcourses($id){
 
 }
 
-function submission($regdata){
+function submission($con,$regdata){
 
-    $con = mysqli_connect('localhost','root','rajith','csc');
     $fields='`' .implode('`,`' ,array_keys($regdata)) . '`';
     $vals= '\'' . implode('\', \'' ,$regdata ) . '\' ';
     $sql = "INSERT INTO submissions ($fields) VALUES ($vals)";

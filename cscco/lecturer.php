@@ -92,7 +92,7 @@ include '../components/cscordinator_head.php'; ?>
 
 										<?php
 
-										$subs = getsubsfor();
+										$subs = getsubsfor($con);
 
 										while ( $subjects = $subs->fetch_assoc()){ ?>
 
@@ -139,7 +139,7 @@ include '../components/cscordinator_head.php'; ?>
                 );
 
 
-                register_lect( $register_data); ?>
+                register_lect( $con,$register_data); ?>
 			<script>swal("New Lecturer Added!", "You added a user successfully")</script>
 
 					<?php
@@ -173,7 +173,7 @@ include '../components/cscordinator_head.php'; ?>
 
 					</thead>
 					<tbody>
-					<?php  $lecs = getlecs();
+					<?php  $lecs = getlecs($con);
 
 					while ( $lecdata = $lecs->fetch_assoc()){ ?>
 

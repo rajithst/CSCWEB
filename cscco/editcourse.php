@@ -45,7 +45,7 @@ include '../components/cscordinator_head.php'; ?>
                                     <option value="">--- SELECT COURSE ---</option>
                                     <?php
 
-                                    $subs = getsubsfor();
+                                    $subs = getsubsfor($con);
 
                                     while ( $subjects = $subs->fetch_assoc()){ ?>
 
@@ -97,7 +97,7 @@ if (isset($_POST['submit'])) {
     $coursecid = $_POST['coursecid'];
     $fee = $_POST['fee'];
     $duration = $_POST['duration'];
-    $con = mysqli_connect('localhost', 'root', 'rajith', 'csc');
+
     $sql = "UPDATE subjects SET subject = '$subject', coursecid=$coursecid, fee =$fee, duration=$duration WHERE subjectid = '$subjectid'";
     $res = mysqli_query($con, $sql); ?>
 

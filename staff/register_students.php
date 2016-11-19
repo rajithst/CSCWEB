@@ -76,7 +76,7 @@ include '../components/page_head.php'; ?>
 									<select id="selecting" name="course_name" style="width:600px;">
 									
 									<?php
-										$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+
 										$sql = "SELECT subject,subjectid FROM subjects WHERE courseid = '$ncid'";
 										$query = mysqli_query($con, $sql);			
 										while ($row = mysqli_fetch_assoc($query)){

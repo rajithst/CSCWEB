@@ -32,7 +32,7 @@ require '../core/function/student.php';
 
         <?php
                $subid = $stu_data['coursename'];
-              $res = getsubname($subid);
+              $res = getsubname($con,$subid);
               while ($rowsi = mysqli_fetch_assoc($res)) {
                   $subname = $rowsi['subject'];
                   $duration = $rowsi['duration'];
@@ -126,7 +126,7 @@ require '../core/function/student.php';
 
     <?php
 
-    $posts = getpostss();
+    $posts = getpostss($con);
 
     $count = 1;
 
@@ -135,7 +135,7 @@ require '../core/function/student.php';
             if ($count <=4) {
                 $id = $row['adminid'];
 
-                $admindata = getadmins($id);
+                $admindata = getadmins($con,$id);
                 while ($data = mysqli_fetch_assoc($admindata)) {
                     ?>
 

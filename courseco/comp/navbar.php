@@ -66,7 +66,7 @@
 
                     <?php 
                     $id = $staff_data['id'];
-                    $res = getcourses($id); ?>
+                    $res = getcourses($con,$id); ?>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                     <?php while ($row = mysqli_fetch_assoc($res)) {
                             $sid= $row['subjectid']; 

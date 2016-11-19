@@ -27,7 +27,7 @@ if (isset($_GET['id']) and isset($_GET['asid'])){
 }
 
 $subid = $stu_data['coursename'];
-$res = getsubname($subid);
+$res = getsubname($con,$subid);
 while ($rowsi = mysqli_fetch_assoc($res)) {
     $subname = $rowsi['subject'];
     $duration = $rowsi['duration'];
@@ -150,7 +150,7 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
 
 
     <div class="col-md-10 col-sm-6 col-xs-12 ">
-        <?php $res = getassignmentdata($subid,$assid);
+        <?php $res = getassignmentdata($con,$subid,$assid);
         $data = mysqli_fetch_array($res);
         echo $data[5];
         ?>
@@ -176,7 +176,7 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
                         <tr>
                             <?php
                             $name = $stu_data['fullname'];
-                            $assdata = getsubmissionattempt($name,$subid,$assid);
+                            $assdata = getsubmissionattempt($con,$name,$subid,$assid);
                             $assignmentatt = mysqli_fetch_array($assdata);
                             ?>
                             <td><center>Submission Status</center></td>
@@ -301,7 +301,7 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
                 $name = $stu_data['fullname'];
                 $date = time();
                 $path = $data[5];
-                $con = mysqli_connect('localhost','root','rajith','csc');
+
                $sql = "INSERT INTO assignmentsubmissions(subid,assid,studentname,filename,date,path,attempt) VALUES('$subid','$assid','$name','rr','$date','$path',1)";
                 mysqli_query($con,$sql);
                 header("Refresh:0");

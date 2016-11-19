@@ -1,4 +1,16 @@
 <?php
+session_start();
+require '../core/base.php';
+
+if(logged_in() === false){
+
+    session_destroy();
+    header('Location:../index.php');
+    exit();
+
+}
+require '../core/init.php';
+
 
 if (isset($_GET['id']) and isset($_GET['name']) and isset($_GET['fname'])) {
     $id = $_GET['id'];
@@ -32,7 +44,7 @@ if ($fileupload_ok == 0) {
     if(move_uploaded_file($fileTmpLoc, "../uploads/$fileName")){
     echo "$fileName was Uploaded successfully";
 
-	$con = mysqli_connect("localhost", "root", "rajith","csc") or die(mysql_error()) ;
+	//$con = mysqli_connect("localhost", "root", "rajith","csc") or die(mysql_error()) ;
 
    	mysqli_query($con,"INSERT INTO fileuploads(date,subject,subject_code,title,description,filename,file)
     VALUES ('$date', '$name','$id','$title','$desc','$fname','uploads/$fileName')") ;

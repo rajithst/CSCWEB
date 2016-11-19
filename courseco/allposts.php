@@ -50,14 +50,14 @@ include '../components/cscordinator_head.php'; ?>
                                 <tbody>
 
                                 <?php
-                                $posts = getpostss();
+                                $posts = getpostss($con);
 
 
                                 while ($row = mysqli_fetch_assoc($posts)) {
 
                                 $id = $row['adminid'];
 
-                                $admindata = getadmins($id);
+                                $admindata = getadmins($con,$id);
                                 while ($data = mysqli_fetch_assoc($admindata)) {
 
                                     $subj = $row['subject'];

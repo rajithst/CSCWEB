@@ -96,7 +96,7 @@ include '../components/cscordinator_head.php'; ?>
 
                                 <?php
 
-                                $subs = getsubsfor();
+                                $subs = getsubsfor($con);
 
                                 while ( $subjects = $subs->fetch_assoc()){ ?>
 
@@ -152,7 +152,7 @@ include '../components/cscordinator_head.php'; ?>
 
                 </thead>
                 <tbody>
-                <?php  $lecs = getlecs();
+                <?php  $lecs = getlecs($con);
 
                 while ( $lecdata = $lecs->fetch_assoc()){ ?>
 

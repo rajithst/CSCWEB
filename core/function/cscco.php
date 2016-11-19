@@ -1,7 +1,7 @@
 <?php
 
-function getpostss(){
-    $con = mysqli_connect('localhost','root','rajith','csc');
+function getpostss($con){
+
     $sql = "SELECT * FROM posts WHERE type =1 ORDER BY id DESC ";
     $res = mysqli_query($con,$sql);
     return $res;
@@ -10,16 +10,16 @@ function getpostss(){
 
 }
 
-function getadmins($id){
-    $con = mysqli_connect('localhost','root','rajith','csc');
+function getadmins($con,$id){
+
     $sql = "SELECT name,profile From adminusers WHERE id=$id";
     $res = mysqli_query($con,$sql);
     return $res;
 
 }
 
-function getsubsfor(){
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+function getsubsfor($con){
+
     $sql = "SELECT * FROM subjects";
     $res = mysqli_query($con, $sql);
     return $res;
@@ -27,8 +27,8 @@ function getsubsfor(){
 
 }
 
-function getlecs(){
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+function getlecs($con){
+
     $sql = "SELECT * FROM lecturers";
     $res = mysqli_query($con, $sql);
     return $res;
@@ -36,27 +36,27 @@ function getlecs(){
 
 }
 
-function getcoursefor(){
+function getcoursefor($con){
 
 
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+
     $sql = "SELECT * FROM courses";
     $res = mysqli_query($con, $sql);
     return $res;
 
 }
 
-function getcoursecodinators(){
+function getcoursecodinators($con){
 
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+
     $sql = "SELECT * FROM staff WHERE role = 'Course Coordinator'";
     $res = mysqli_query($con, $sql);
     return $res;
 }
 
-function getentire($subject){
+function getentire($con,$subject){
 
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+
     $sql = "SELECT * FROM posts WHERE subject = '$subject'";
     $res = mysqli_query($con, $sql);
     return $res;
@@ -65,9 +65,9 @@ function getentire($subject){
 }
 
 
-function register_lect( $register_data){
+function register_lect( $con,$register_data){
 
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+
     $fields='`' .implode('`,`' ,array_keys($register_data)) . '`';
     $data = '\'' . implode('\', \'' ,$register_data ) . '\' ';
     $q = mysqli_query($con,"INSERT INTO lecturers($fields) VALUES ($data)");
@@ -79,9 +79,9 @@ function register_lect( $register_data){
 
 }
 
-function register_lecti( $register){
+function register_lecti( $con,$register){
 
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+
     $fields='`' .implode('`,`' ,array_keys($register)) . '`';
     $data = '\'' . implode('\', \'' ,$register ) . '\' ';
     $r = mysqli_query($con,"INSERT INTO lectures($fields) VALUES ($data)");
@@ -92,17 +92,17 @@ function register_lecti( $register){
     }
 
 }
-function getsubsbyid($id){
+function getsubsbyid($con,$id){
 
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+
     $sql = "SELECT * FROM subjects WHERE courseid = '$id'";
     $res = mysqli_query($con, $sql);
     return $res;
 
 }
 
-function addnewcourse( $register_data){
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+function addnewcourse( $con,$register_data){
+
     $fields='`' .implode('`,`' ,array_keys($register_data)) . '`';
     $data = '\'' . implode('\', \'' ,$register_data ) . '\' ';
     $q = mysqli_query($con,"INSERT INTO subjects($fields) VALUES ($data)");

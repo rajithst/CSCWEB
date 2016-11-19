@@ -1,11 +1,21 @@
 <?php
+session_start();
+require '../core/base.php';
+
+if(logged_in() === false){
+
+    session_destroy();
+    header('Location:../index.php');
+    exit();
+
+}
+require '../core/init.php';
 
 
 if (isset($_GET)){
 
     $cid = $_GET['cid'];
 
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
     $sql = " SELECT * from subjects WHERE courseid = '$cid'";
     echo $sql;
     $res = mysqli_query($con, $sql);

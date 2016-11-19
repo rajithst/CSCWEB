@@ -1,8 +1,8 @@
 
 <?php
 
-function user_id_from_email($email) {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+function user_id_from_email($con,$email) {
+
 
     $sql        = "SELECT id FROM staff  WHERE email = '$email'";
     $query      = mysqli_query($con, $sql);
@@ -11,10 +11,10 @@ function user_id_from_email($email) {
 
 }
 
-function loginall($email,$password){
+function loginall($con,$email,$password){
 
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-    $user_id  = user_id_from_email($email);
+
+    $user_id  = user_id_from_email($con,$email);
     $password = md5($password);
     $sql = "SELECT * FROM staff WHERE email = '$email' AND password = '$password'";
     $query    = mysqli_query($con, $sql);

@@ -1,6 +1,7 @@
 <?php 
 ob_start();
-include 'core/function/frontend.php';
+require 'core/base_connection.php';
+require 'core/function/frontend.php';
 ?>
 
 <!doctype html>
@@ -189,7 +190,7 @@ if (isset($_POST['submit'])){
 
    $email = $_POST['email'];
     $password = $_POST['pass'];
-    $logindata = loginall($email,$password);
+    $logindata = loginall($con,$email,$password);
 
 
     if ($logindata == false) { ?>
