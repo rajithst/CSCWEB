@@ -41,16 +41,16 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Reports<span class="caret">
                     </a>
-                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
+                   <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                         <li><a tabindex="-1" href="#">Attendence</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a tabindex="-1" href="#">Income</a></li>
+                        <li><a tabindex="-1" href="income.php">Income</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a tabindex="-1" href="#">Marks</a></li>
+                        <li><a tabindex="-1" href="marks.php">Marks</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a tabindex="-1" href="#">Expences</a></li>
+                        <li><a tabindex="-1" href="expences.php">Expences</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a tabindex="-1" href="#">Handle Report</a></li>
+                        <li><a tabindex="-1" href="handle_report.php">Handle Report</a></li>
                         <li role="separator" class="divider"></li>
                     </ul>
                 </li>
