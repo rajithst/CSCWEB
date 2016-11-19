@@ -23,6 +23,8 @@ include '../components/cscordinator_head.php'; ?>
 <body>
 
 <?php include "comp/navbar.php"; ?>
+	
+	
 <div class="nabbar clearfix" id="path">
         <ol class="breadcrumb">
             <li><a href="index.php">Home</a>
