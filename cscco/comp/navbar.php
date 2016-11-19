@@ -39,7 +39,8 @@
 
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Reports<span class="caret">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">   <span class="glyphicon glyphicon-list-alt"> Reports</span><span class="caret">
+                      
                     </a>
                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                         <li><a tabindex="-1" href="attendence.php">Attendence</a></li>
@@ -56,7 +57,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="lecturer.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Lecturer <span class="caret"></span>
+                    <a href="lecturer.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">  <span class="glyphicon glyphicon-user"> Lecturer </span><span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                         <li><a tabindex="-1" href="lecturer.php">Add Lecturer</a></li>
@@ -65,7 +66,7 @@
 
 
                 <li class="dropdown">
-                    <a href="course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Courses<span class="caret"></span>
+                    <a href="course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">  <span class="glyphicon glyphicon-book"> Courses</span><span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                         <li><a tabindex="-1" href="course.php">Add Courses</a></li>
@@ -74,7 +75,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="lectures.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Lectures <span class="caret"></span>
+                     <a href="lectures.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">  <span class="glyphicon glyphicon-tasks"> Lectures </span><span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                         <li><a tabindex="-1" href="lectures.php">Add Lectures</a></li>
@@ -83,17 +84,8 @@
                 </li>
 
 
-
-
-
-
-
-
-
-
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;"><span class="glyphicon glyphicon-envelope"></span>  Emails And Posts  <span class="glyphicon glyphicon-chevron-down"></span>
+<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;"><span class="glyphicon glyphicon-envelope"> Message  </span> <span class="glyphicon glyphicon-chevron-down"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                         <li><a tabindex="-1" href="email.php">Email</a></li>
@@ -104,6 +96,13 @@
                 </li>
 
 
+
+
+
+
+
+
+                
 
                 <ul class="nav navbar-nav navbar-right" >
                     <li class="dropdown">

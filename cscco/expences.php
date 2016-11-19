@@ -24,15 +24,16 @@ include '../components/cscordinator_head.php'; ?>
 
 <?php include "comp/navbar.php"; ?>
 
-<ul class="breadcrum">
+    <ul class="breadcrum">
         <li class="completed"><a href="index.php">HOME</a></li>
         <li class="completed"><a href="">Reports</a></li>
-        <li class="active"><a href="marks.php">Marks</a></li>
+        <li class="active"><a href="expences.php">Expences reports</a></li>
 
     </ul>
 
     </br>
 
+     
     
      <div class="container-fluid">
         <div class="row centered-form">
@@ -40,39 +41,22 @@ include '../components/cscordinator_head.php'; ?>
         	<div class="panel panel-default">
         		<div class="panel-heading">
                     
-			    		<h3 class="panel-title">MARKSHEET</h3>
+			    		<h3 class="panel-title">EXPENSE REPORT</h3>
 			 			</div>
 			 			<div class="panel-body">
-                            <h3><b>Enter Course and Batch</b></h3>
+                            <h3><b>Enter report duration</b></h3>
 			    		<form role="form" method="post" action="">
 			    			<div class="row">
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
-                                <td><h4><b>Course<span style="color:red;font-size:25px;">*</span></b></h4></td>        
-			                
-                                        <div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-									<select name="subject" class="form-control selectpicker" >
-										<option value=" " >Please select subject</option>
-                                        <?php
-
-										$subs = getsubsfor($con);
-
-										while ( $subjects = $subs->fetch_assoc()){ ?>
-
-											<option value="<?php echo $subjects['subject']; ?>"><?php echo $subjects['subject']; ?></option>
-
-									<?php	}
-
-
-
-										?>
-                                            </select>
+			    					<div class="form-group">
+                                <td><h4><b>Starting from:<span style="color:red;font-size:25px;">*</span></b></h4></td>        
+			                <input type="date" name="start_date"  required="required" class="form-control input-sm" >
 			    					</div>
 			    				</div>
 			    			<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
-                                <td><h4><b>Select Batch<span style="color:red;font-size:25px;">*</span></b></h4></td>        
-			                <input type="number" name="batch"  required="required" class="form-control input-sm" >
+                                <td><h4><b>To:<span style="color:red;font-size:25px;">*</span></b></h4></td>        
+			                <input type="date" name="ending_date"  required="required" class="form-control input-sm" >
 			    					</div>
 			    				</div>	
 			    			</div>
@@ -97,5 +81,6 @@ include '../components/cscordinator_head.php'; ?>
         
 
         
-   
+    
+    
 <?php include "../components/cscordinator_footer.php"; ?>
