@@ -162,26 +162,28 @@ if (isset($_GET['id'])) {
             </center>
 
 
-<?php
+            <?php
+            echo '<ol>';
+
+            function listFolderFiles($Mydir)
+            {
+                foreach (glob($Mydir . '*', GLOB_ONLYDIR) as $dir) {
+                    $dir = str_replace($Mydir, '', $dir);
+                    //echo $dir;
+
+                        if ($dir != '.' && $dir != '..') {
+                            echo '<li>' . $dir;
+                            if (is_dir($Mydir . '/' . $dir)) listFolderFiles($Mydir . '/' . $dir);
+                            echo '</li>';
+                        }
 
 
+                }
+                echo '</ol>';
+            }
 
-$dir = '../uploads/';
-$result = array();
-
-if (is_dir($dir)) {
-    $iterator = new RecursiveDirectoryIterator($dir);
-    foreach (new RecursiveIteratorIterator($iterator, RecursiveIteratorIterator::CHILD_FIRST) as $file) {
-        if (!$file->isFile()) {
-            $result[] = $file->getPath();
-        }
-    }
-
-}
-
-print_r($result);
-
-?>
+            listFolderFiles('../uploads/');
+            ?>
 
 
 
