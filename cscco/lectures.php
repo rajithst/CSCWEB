@@ -20,7 +20,16 @@ include '../components/cscordinator_head.php'; ?>
 
 <?php include "comp/navbar.php"; ?>
 
-</br>
+<div class="nabbar clearfix" id="path">
+        <ol class="breadcrumb">
+            <li><a href="index.php">Home</a>
+            <span class="glyphicon glyphicon-triangle-right"></span></li>
+            <li>Lectures
+            <span class="glyphicon glyphicon-triangle-right"></span></li>
+            <li><a href="lectures.php">Add Lectures</a>
+        </ol>
+    </div>
+
 
 
 			
