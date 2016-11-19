@@ -25,15 +25,15 @@ include '../components/cscordinator_head.php'; ?>
 <?php include "comp/navbar.php"; ?>
 	
 	
-<div class="nabbar clearfix" id="path">
-        <ol class="breadcrumb">
-            <li><a href="index.php">Home</a>
-            <span class="glyphicon glyphicon-triangle-right"></span></li>
-            <li>Courses
-            <span class="glyphicon glyphicon-triangle-right"></span></li>
-            <li><a href="course.php">Add Courses</a>
-        </ol>
-    </div>
+<ul class="breadcrum">
+        <li class="completed"><a href="index.php">HOME</a></li>
+        <li class="completed"><a href="course.php">Courses</a></li>
+        <li class="active"><a href="course.php">Add Courses</a></li>
+
+    </ul>
+
+    </br>
+    
 
 
 
