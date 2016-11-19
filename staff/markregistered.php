@@ -18,11 +18,11 @@ include '../components/page_head.php'; ?>
 $(document).ready(function(){
 
    
-    $('#mytable').DataTable();
+    //$('#mytable').DataTable();
 
-$("#selectall").change(function () {
+/*$("#selectall").change(function () {
     $("input:checkbox").prop('checked', $(this).prop("checked"));
-});
+});*/
 
 
 
@@ -31,7 +31,9 @@ $('#ss').click(function(){
 
 
     $('#mytable tr.item').each(function(){
+
         $(this).find('td').each(function(){
+
 
             if ( $( this ).hasClass( "id" ) ) {
                 var sid = $(this).html();
@@ -41,26 +43,12 @@ $('#ss').click(function(){
 
             if ( $( this ).hasClass( "mark" ) ) {
 
-                var smark = $('.checkboxm').is(":checked");
+               var check =  $('#check_list').prop('checked', true);
 
-                console.log(smark);
-
-
-
-
-
+                console.log(check);
 
             }
 
-
-/*
-
-            if ( $( this ).hasClass( "id" ) ) {
-
-
-            }
-
-*/
 
 
 
@@ -104,7 +92,7 @@ $('#ss').click(function(){
                            <th>Name</th>
                            <th>Course</th>
                            <th>NIC</th>
-                           <th>Register <input type="checkbox" id="selectall"  ></th>
+                           <th>Register <!--<input type="checkbox" id="selectall"  >--></th>
                        </tr>
                    </thead>
 
@@ -118,7 +106,7 @@ $('#ss').click(function(){
                            <td><?php echo $row['coursename']; ?></td>
                            <td><?php echo $row['nic']; ?></td>
                            <td class="mark"><center>
-                               <input type="checkbox" value="1" name="check_list[]" class="checkboxm">
+                               <input type="checkbox" value="0" id="check_list" >
                            </center></td>
                        </tr>
 <?php } ?>

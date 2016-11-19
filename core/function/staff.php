@@ -65,3 +65,22 @@ function unregistered($con){
 
 
 }
+
+function  getallsubjects($con){
+
+    $sql = "SELECT * FROM subjects";
+    $res = mysqli_query($con,$sql);
+    return $res;
+
+
+}
+
+function getstudentsfor($con,$subid,$batch){
+
+    $sql = "SELECT * FROM student WHERE registered=1 AND coursename = '$subid' AND batch = $batch";
+
+    $res = mysqli_query($con,$sql);
+    $numrows = mysqli_num_rows($res);
+
+    return  array($numrows,$res);
+}

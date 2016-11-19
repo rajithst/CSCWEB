@@ -114,15 +114,13 @@ $('#two-inputs3').dateRangePicker(
     <body>
 
     <?php include "comp/navbar.php"; ?>
-<div class="nabbar clearfix" id="path">
-        <ol class="breadcrumb">
-            <li><a href="index.php">Home</a>
-            <span class="glyphicon glyphicon-triangle-right"></span></li>
-            <li><a href="generate_report.php"> Generate Repors</a>
-            <span class="glyphicon glyphicon-triangle-right"></span></li>
-            <li><a href="">Configuring reports</a>
-        </ol>
-    </div>
+    <ul class="breadcrum">
+        <li class="completed"><a href="index.php">HOME</a></li>
+        <li class="completed"><a href="">GENERATE REPORTS</a></li>
+
+        <li class="active"><a href="">CONFIGURE REPORTS </a></li>
+
+    </ul>
     </br>
 
 
@@ -134,14 +132,14 @@ $('#two-inputs3').dateRangePicker(
         <div class="list-group">
 
 
-         <a href="#" class="list-group-item">
+         <a href="courseincomereport.php" class="list-group-item">
                 <div class="media col-md-3" id="nn">
                     <span class="badge">Course income</span>
                 </div>
                 <div class="col-md-6 text-center" id="nn">
                    
                  
-                Select date range <span id="two-inputs2"><input id="date-range204" size="20" value=""> to <input id="date-range205" size="20" value=""></span>
+                Select batch
 
                     
                 </div>
