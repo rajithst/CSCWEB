@@ -17,14 +17,11 @@ include '../components/page_head.php'; ?>
     <body>
 
     <?php include "comp/navbar.php"; ?>
-<div class="nabbar clearfix" id="path">
-        <ol class="breadcrumb">
-            <li><a href="Home.html">Home</a>
-            <span class="glyphicon glyphicon-triangle-right"></span></li>
-            <li><a href="edit_report.php"> Generate Repors</a>
-            
-        </ol>
-    </div>
+    <ul class="breadcrum">
+        <li class="completed"><a href="index.php">HOME</a></li>
+        <li class="active"><a href="">SELECT REPORT</a></li>
+
+    </ul>
 </head>
 <style>
     .ds-btn li{ list-style:none; float:left; padding:10px; }

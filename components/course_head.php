@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../public/plugins/monthly/monthly.css" />
     <link rel="stylesheet" href="../public/plugins/jQueryUI/jquery-ui.css" />
     <link rel="stylesheet" href="../public/plugins/datepicker/bootstrap-datetimepicker.css" />
-    <link rel="stylesheet" href="../public/plugins/jtree/style.css" />
+
     <script src="../public/plugins/jQuery/jquery.js"></script>
     <script src="../public/plugins/jQueryUI/jquery-ui.js"></script>
 

@@ -196,5 +196,22 @@ if (isset($_GET['id'])) {
 
 
 <?php include '../components/course_footer.php'; ?>
+<script>
+    $(document).ready(function () {
+
+        $( "#datepicker" ).datepicker({
+
+            dateFormat: 'yy-mm-dd'
+        });
+
+
+
+
+
+
+    });
+    $(".time").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+
+</script>
 
 

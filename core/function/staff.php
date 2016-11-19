@@ -11,8 +11,7 @@ function getall($con){
 
 function getstudents($con,$subid){
 
-    $sql = "SELECT * FROM student WHERE coursename = ( SELECT subject FROM subjects WHERE subjectid='$subid')";
-
+    $sql = "SELECT * FROM student WHERE coursename = '$subid'";
     $query    = mysqli_query($con, $sql);
 
     return $query;

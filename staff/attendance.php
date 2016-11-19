@@ -11,15 +11,21 @@ if(logged_in() === false){
 }
 require '../core/init.php';
 require '../core/function/staff.php';
-include '../components/page_head.php'; ?>
+include '../components/page_head.php';?>
+
 
 
     </head>
     <body>
 
     <?php include "comp/navbar.php"; ?>
+    <ul class="breadcrum">
+        <li class="completed"><a href="index.php">HOME</a></li>
+        <li class="completed"><a href="edit_report.php">INPUT DATA</a></li>
+        <li class="completed"><a href="select_course.php">SELECT COURSE</a></li>
+        <li class="active"><a href="">INPUT ATTENDANCE</a></li>
 
-    </br>
+    </ul>
 
 </head>
 
@@ -28,6 +34,8 @@ include '../components/page_head.php'; ?>
     <div class="container-fluid">
 
         <div class="row">
+
+
 
             <div class="col-md-2"></div>
         <div class="col-md-8 col-sm-8 col-xs-12" style="padding-left: 10%">

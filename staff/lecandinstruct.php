@@ -20,14 +20,6 @@ include '../components/page_head.php'; ?>
 
 
     <body background="">
-<!-- header-->
-<?php
-//$subid = $_GET['subid'];
-$subid = 'csc02/1';
-$res = getstudents($subid);
-$subdata = getsubdata($subid);
-?>
-
 <br>
 <br>
 <section class="content-header">

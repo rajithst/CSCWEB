@@ -208,15 +208,7 @@ function abortHandler(event){
           </div>-->
 
           <!-- Progress Bar -->
-           <div class="container">
-            <div class="row">
-              <div class="col-md-12 col-sm-6 col-xs-6" style="padding-left: 0px;">
-                <progress id="progress1" value="0" max="100" style="width:1109px;"></progress>
-                <h3 id="status"></h3>
-                <p id="loaded_n_total"></p>
-              </div>
-            </div>
-          </div>
+
           
         </div>
       </div>
@@ -228,20 +220,3 @@ function abortHandler(event){
 
 <?php include '../components/course_footer.php'; ?>
 
-<script>
-  $(document).ready(function () {
-
-    $( "#datepicker" ).datepicker({
-
-      dateFormat: 'yy-mm-dd'
-    });
-
-
-
-
-
-
-  });
-  $(".time").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
-
-</script>
