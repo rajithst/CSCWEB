@@ -19,16 +19,15 @@ include '../components/cscordinator_head.php'; ?>
 
 
 <?php include "comp/navbar.php"; ?>
+<ul class="breadcrum">
+        <li class="completed"><a href="index.php">HOME</a></li>
+        <li class="completed"><a href="lectures.php">Lectures</a></li>
+        <li class="active"><a href="lectures.php">Add Lectures</a></li>
 
-<div class="nabbar clearfix" id="path">
-        <ol class="breadcrumb">
-            <li><a href="index.php">Home</a>
-            <span class="glyphicon glyphicon-triangle-right"></span></li>
-            <li>Lectures
-            <span class="glyphicon glyphicon-triangle-right"></span></li>
-            <li><a href="lectures.php">Add Lectures</a>
-        </ol>
-    </div>
+    </ul>
+
+    </br>
+    
 
 
 
