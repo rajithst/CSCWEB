@@ -42,7 +42,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">Reports<span class="caret">
                     </a>
                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a tabindex="-1" href="#">Attendence</a></li>
+                        <li><a tabindex="-1" href="attendence.php">Attendence</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a tabindex="-1" href="income.php">Income</a></li>
                         <li role="separator" class="divider"></li>
