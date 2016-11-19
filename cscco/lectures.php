@@ -15,38 +15,93 @@ require '../core/function/cscco.php';
 include '../components/cscordinator_head.php'; ?>
 
 </head>
-<body>
+
 
 
 <?php include "comp/navbar.php"; ?>
 
 </br>
 
-<div class="container-fluid">
-        <div class="row" style="padding: 10px;">
 
-			<br>
-        <div class="col-xs-12 col-sm-8 col-md-6 ">
+			
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+ <script>
+ var app = angular.module("myapp", []);
+app.controller("ListController", ['$scope', function($scope) {
+    $scope.personalDetails = [
+        
+        
+        {
+            
+            'date':'',
+            's_time':'',
+            'e_time':'',
+            'lecturer':'',
+            'lectureroom':''
+        }];
+    
+        $scope.addNew = function(personalDetail){
+            $scope.personalDetails.push({ 
+               
+            'date':'',
+            's_time':'',
+            'e_time':'',
+            'lecturer':'',
+            'lectureroom':''
+            });
+        };
+    
+        $scope.remove = function(){
+            var newDataList=[];
+            $scope.selectedAll = false;
+            angular.forEach($scope.personalDetails, function(selected){
+                if(!selected.selected){
+                    newDataList.push(selected);
+                }
+            }); 
+            $scope.personalDetails = newDataList;
+        };
+    
+    $scope.checkAll = function () {
+        if (!$scope.selectedAll) {
+            $scope.selectedAll = true;
+        } else {
+            $scope.selectedAll = false;
+        }
+        angular.forEach($scope.personalDetails, function(personalDetail) {
+            personalDetail.selected = $scope.selectedAll;
+        });
+    };    
+    
+    
+}]);
+</script>
+            
+            
+			
+<body ng-app="myapp" ng-controller="ListController">     
+    
+               
+			
 
-			<center><h3>Add New Lectures</h3></center>
-			<br>
-				<form class="form-horizontal" action=" " method="post"  id="contact_form">
-
-
-						<div class="form-group">
-							<label class="col-md-4 control-label">Batch</label>
-							<div class="col-md-6 inputGroupContainer">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-									<input  name="batch" placeholder="Batch" class="form-control"  type="text" required>
-								</div>
-							</div>
-						</div>
-
-						<!-- Text input-->
-                    <div class="form-group">
-					<label class="col-md-4 control-label" >Course Name</label>
-					<div class="col-md-6 inputGroupContainer">
+                    <div class="panel-body">
+                        <form ng-submit="addNew()"><div class="col-xs-12 col-sm-4 col-md-10 ">
+                            <center><h3>Time Table</h3></center> 
+                            
+                            <table class="table table-bordred table-striped" style="width: 100%" id="lectable">
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox" ng-model="selectedAll" ng-click="checkAll()" /></th>
+                                        <th>Week/Date</th>
+                                        <th>Start Time</th>
+                                        <th>End Time</th>
+                                        <th>Lecturer</th>
+                                        <th>Lecture Room</th>
+                                    </tr>
+                                </thead>
+                                <div class="form-group">
+					<label class="col-md-2 control-label" >Course Name</label>
+					<div class="col-md-5 inputGroupContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
 							<select name="course_name" class="form-control selectpicker" >
@@ -72,70 +127,49 @@ include '../components/cscordinator_head.php'; ?>
 					</div>
 				</div>
                     
-                    <div class="form-group">
-							<label class="col-md-4 control-label"> Lecturer Name</label>
-							<div class="col-md-6 inputGroupContainer">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-									<input  name="lecturer_name" placeholder="Lecturer Name" class="form-control"  type="text" required>
-								</div>
-							</div>
-						</div>
-                    
-                    <div class="form-group">
-							<label class="col-md-4 control-label">Date</label>
-							<div class="col-md-6 inputGroupContainer">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-									<input  name="date" placeholder="Date" class="form-control"  type="date" required>
-								</div>
-							</div>
-						</div>
-                    
-                    <div class="form-group">
-							<label class="col-md-4 control-label">Lecture Room</label>
-							<div class="col-md-6 inputGroupContainer">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-									<input  name="room" placeholder="Lecture Room" class="form-control"  type="text" required>
-								</div>
-							</div>
-						</div>
+                                <form class="form-horizontal" action=" " method="post"  id="contact_form">
 
-						
-                    <div class="form-group">
-							<label class="col-md-4 control-label">Sessions</label>
-							<div class="col-md-6 inputGroupContainer">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-									<input  name="session" placeholder="Sessions" class="form-control"  type="number" required>
-								</div>
-							</div>
-						</div>
-                    
-                    <div class="form-group">
-							<label class="col-md-4 control-label">Starting Time</label>
-							<div class="col-md-6 inputGroupContainer">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-									<input  name="s_time" placeholder="time" class="form-control"  type="time" required>
-								</div>
-							</div>
-						</div>
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">Ending Time</label>
-							<div class="col-md-6 inputGroupContainer">
+							<label class="col-md-2 control-label">Batch</label>
+							<div class="col-md-3 inputGroupContainer">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-									<input  name="e_time" placeholder="time" class="form-control"  type="time" required>
+									<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
+									<input  name="batch" placeholder="Batch" class="form-control"  type="text" required>
 								</div>
 							</div>
 						</div>
+                                </td></td>
+                                <tbody>
+                                    <tr ng-repeat="personalDetail in personalDetails">
+                                        <td>
+                                            <input type="checkbox" ng-model="personalDetail.selected"/></td>
+                                        <td>
+                                            <input type="date" class="form-control" name="date" ng-model="personalDetail.date"  required/></td>
+                                        <td>
+                                            <input type="time" class="form-control"  name="s_time1" ng-model="personalDetail.s_time1" required/>
+                                            <input type="time" class="form-control"  name="s_time2" ng-model="personalDetail.s_time2" required/>
+                                            <input type="time" class="form-control"  name="s_time3" ng-model="personalDetail.s_time3" required/>
+                                        </td>
+                                        <td>
+                                            <input type="time" class="form-control"   name="e_time1" ng-model="personalDetail.e_time1" required/>
+                                            <input type="time" class="form-control"   name="e_time2" ng-model="personalDetail.e_time2" required/>
+                                            <input type="time" class="form-control"   name="e_time3" ng-model="personalDetail.e_time3" required/>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control"  name="lecturer_name" ng-model="personalDetail.lecturer_name" required/></td>
+                                        <td>
+                                            <input type="text" class="form-control"name="room" ng-model="personalDetail.room" required/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-						
-
-					<center><div class="form-group">
+                            <div class="form-group">
+                                <input ng-hide="!personalDetails.length" type="button" class="btn btn-danger pull-right" ng-click="remove()" value="Remove">
+                                <input type="submit" class="btn btn-primary addnew pull-right" value="Add New">
+                            </div>
+                        </form>
+                    <center><div class="form-group">
 							<label class="col-md-4 control-label"></label>
 							<div class="col-md-6">
 								<button type="submit" class="btn btn-info" name="submit">Submit <span class="glyphicon glyphicon-send"></span> </button>
@@ -144,6 +178,7 @@ include '../components/cscordinator_head.php'; ?>
 						</div>
 
 					</center>
+<<<<<<< HEAD
 
 				</form>
 			</div>
@@ -248,4 +283,9 @@ include '../components/cscordinator_head.php'; ?>
 
 
 
+=======
+                
+            </div>
+        
+>>>>>>> 451e0a3042b7b0fc6e9a2fc94bd8af8c5cb23dd4
 <?php include "../components/cscordinator_footer.php"; ?>
