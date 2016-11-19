@@ -32,17 +32,13 @@ include '../components/page_head.php'; ?>
 
     <?php include "comp/navbar.php"; ?>
 
-<div class="nabbar clearfix" id="path">
-        <ol class="breadcrumb">
-            <li><a href="Home.html">Home</a>
-            <span class="glyphicon glyphicon-triangle-right"></span></li>
-            <li><a href="edit_report.php"> Select Type</a>
-            <span class="glyphicon glyphicon-triangle-right"></span></li>
-            <li><a href="">Expenses</a>
-            <span class="glyphicon glyphicon-triangle-right"></span></li>
-            <li class="active">Add expenses</li>
-        </ol>
-    </div>
+    <ul class="breadcrum">
+        <li class="completed"><a href="index.php">HOME</a></li>
+        <li class="completed"><a href="">INPUT DATA</a></li>
+        <li class="completed"><a href="">EXPENSES</a></li>
+        <li class="active"><a href="">ADD EXPENSES </a></li>
+
+    </ul>
     </br>
 
 </head>

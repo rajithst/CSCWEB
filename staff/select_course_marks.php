@@ -70,7 +70,13 @@ include '../components/page_head.php'; ?>
 <body>
 
 <?php include "comp/navbar.php"; ?>
+<ul class="breadcrum">
+    <li class="completed"><a href="index.php">HOME</a></li>
+    <li class="completed"><a href="">INPUT DATA</a></li>
+    <li class="completed"><a href="">STUDENT MARKS</a></li>
+    <li class="active"><a href="">SELECT COURSE</a></li>
 
+</ul>
 </br>
 
 </head>
@@ -78,7 +84,6 @@ include '../components/page_head.php'; ?>
 <body background="">
 
 <div class="container">
-    <?php include "comp/uppermenu.php"; ?>
     <div class="row">
         <div class="col-xs-12 col-md-2 col-sm-12"></div>
         <div class="col-xs-12 col-md-10 col-sm-10">

@@ -24,27 +24,54 @@ $("#selectall").change(function () {
     $("input:checkbox").prop('checked', $(this).prop("checked"));
 });
 
+
+
 $('#ss').click(function(){
-    
-      /* $("tr.item").each(function() {*/
-        if($("#checkboxId").prop('checked') == true){
-            //var quantity1 = $(this).find("td").val();
-            console.log('true');
 
-        }else{
 
-           console.log('false');
-        }
-           
-    
 
-        
-   
-/*});*/
+    $('#mytable tr.item').each(function(){
+        $(this).find('td').each(function(){
+
+            if ( $( this ).hasClass( "id" ) ) {
+                var sid = $(this).html();
+                console.log(sid);
+
+            }
+
+            if ( $( this ).hasClass( "mark" ) ) {
+
+                var smark = $('.checkboxm').is(":checked");
+
+                console.log(smark);
+
+
+
+
+
+
+            }
+
+
+/*
+
+            if ( $( this ).hasClass( "id" ) ) {
+
+
+            }
+
+*/
+
+
+
+        });
+    });
+
+});
   
 });
 
-});
+
 
 
 
@@ -77,7 +104,7 @@ $('#ss').click(function(){
                            <th>Name</th>
                            <th>Course</th>
                            <th>NIC</th>
-                           <th>Register <input type="checkbox" id="selectall" id="checkboxId"></th>
+                           <th>Register <input type="checkbox" id="selectall"  ></th>
                        </tr>
                    </thead>
 
@@ -86,12 +113,12 @@ $('#ss').click(function(){
                    
                    <?php while ($row = $res->fetch_assoc()) { ?>
                        <tr class="item">
-                            <td><?php echo $row['id']; ?></td>
+                            <td class="id"><?php echo $row['id']; ?></td>
                            <td><?php echo $row['fullname']; ?></td>
                            <td><?php echo $row['coursename']; ?></td>
                            <td><?php echo $row['nic']; ?></td>
-                           <td><center>
-                               <input type="checkbox" value="1" name="check_list[]">
+                           <td class="mark"><center>
+                               <input type="checkbox" value="1" name="check_list[]" class="checkboxm">
                            </center></td>
                        </tr>
 <?php } ?>

@@ -14,7 +14,13 @@ require '../core/function/staff.php';
 include '../components/page_head.php'; ?>
 
     <?php include "comp/navbar.php"; ?>
+<ul class="breadcrum">
+    <li class="completed"><a href="index.php">HOME</a></li>
+    <li class="completed"><a href="">INPUT DATA</a></li>
+    <li class="completed"><a href="">SELECT COURSE</a></li>
+    <li class="active"><a href="">INPUT MARKS</a></li>
 
+</ul>
     </br>
 
 </head>
@@ -33,8 +39,8 @@ include '../components/page_head.php'; ?>
                 <div class="well"  >
 				<?php
     $subid = $_GET['subid'];
-    $res = getstudents($subid);
-    $subdata = getsubdata($subid);
+    $res = getstudents($con,$subid);
+    $subdata = getsubdata($con,$subid);
 ?>
         <section class="content-header">
 
