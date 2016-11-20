@@ -43,14 +43,8 @@
                       
                     </a>
                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a tabindex="-1" href="attendence.php">Attendence</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a tabindex="-1" href="income.php">Income</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a tabindex="-1" href="marks.php">Marks</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a tabindex="-1" href="expences.php">Expences</a></li>
-                        <li role="separator" class="divider"></li>
+                        <li><a tabindex="-1" href="report.php">Select Report</a></li>
+                       
                         
                       
                     </ul>
@@ -85,24 +79,17 @@
 
 
 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;"><span class="glyphicon glyphicon-envelope"> Message  </span> <span class="glyphicon glyphicon-chevron-down"></span>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;"><span class="glyphicon glyphicon-envelope"> Message  </span><span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                         <li><a tabindex="-1" href="email.php">Email</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a tabindex="-1" href="notification.php">Notification</a></li>
-                        <li role="separator" class="divider"></li>
+                        
                     </ul>
                 </li>
 
 
-
-
-
-
-
-
-                
 
                 <ul class="nav navbar-nav navbar-right" >
                     <li class="dropdown">
