@@ -26,8 +26,8 @@ include '../components/cscordinator_head.php'; ?>
 
     <ul class="breadcrum">
         <li class="completed"><a href="index.php">HOME</a></li>
-        <li class="completed"><a href="">Reports</a></li>
-        <li class="active"><a href="expences.php">Expences reports</a></li>
+        <li class="completed"><a href="report.php">SELECT REPORT</a></li>
+        <li class="active"><a href="expences.php">EXPENCE REPORT</a></li>
 
     </ul>
 
