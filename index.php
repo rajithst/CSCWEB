@@ -11,7 +11,7 @@ require 'core/function/frontend.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
-    <title>Computing Service Center</title>
+    <title>Computing Services Center</title>
     <link rel="stylesheet" href="public/css/custom.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <!--<link rel="stylesheet" href="public/dist/css/buttons.css">-->
@@ -159,7 +159,7 @@ require 'core/function/frontend.php';
 <body style="background-color: ">
     <section class="content" style="margin: 10% 10%;">
 
-         <center><h2 style="color: red;">Computing Service Center</h2></center>
+         <center><h2 style="color: red;">Computing Services Center</h2></center>
 
         <div class="container">
             <div class="card card-container">
