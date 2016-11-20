@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 require '../core/base.php';
 
 if(logged_in() === false){
@@ -97,7 +98,7 @@ include '../components/page_head.php';?>
 
                     </div>
 
-                            <button type="submit" class="btn btn-block btn-success btn-md" name="next">Next Page</button>
+                            <button type="submit" class="btn btn-block btn-success btn-md" name="next">Record Marks</button>
                             <button type="cancel" class="btn btn-block btn-danger btn-md">Cancel</button>
                         </div>
                 </form>
@@ -106,6 +107,11 @@ include '../components/page_head.php';?>
         </div>
             <div class="col-md-2"></div>
         </div>
+
+        <div class="row">
+
+            <div class="col-md-4"></div>
+
 
 
 <?php
@@ -121,34 +127,30 @@ include '../components/page_head.php';?>
             $res = mysqli_query($con,$sql);
 
         }
+
         ?>
-        <script>
-            swal("Submited!", "Your have been submit attendance");
 
-            setTimeout(function () {
-                window.location.href = "lecandinstruct.php";
-            }, 2000);
+            <div class="col-md-4">
 
+                <br>
+        <div class="alert alert-info">
+            <strong><center>Recorded!</center></strong>
+        </div>
 
-        </script>
-
+                <form action="lecandinstruct.php" method="GET"> <center><button class="btn btn-info" type="submit" name="subid" value="<?php echo $subid; ?>">Process to next page</button></center> </form>
 
         <?php
-        exit();
-    }
 
-?>
+
+    } ?>
+
+            </div>
+            <div class="col-md-4"></div>
+
+        </div>
+
 			</div>
-		</div>
 
-
-    </div>
-    <br>
-    <br>
-    </div>
-    </div>
-    </div>
-    </div>
 
 
 

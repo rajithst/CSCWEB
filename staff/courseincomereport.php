@@ -12,7 +12,7 @@ if(logged_in() === false){
 require '../core/init.php';
 require '../core/function/staff.php';
 include '../components/page_head.php'; ?>
-
+<script src="../public/dist/js/csv.js"></script>
 
 <script>
 
@@ -23,6 +23,12 @@ include '../components/page_head.php'; ?>
         $( function() {
             $( "#datepick" ).datepicker();
         } );
+
+        $('button#getfile').click(function() {
+            console.log('a');
+                exportTableToCSV.apply(this, [$('#sum_table'), 'filename.csv']);
+            });
+
     });
 
 </script>
@@ -59,7 +65,7 @@ include '../components/page_head.php'; ?>
 
                         <table class="table table-hover" id="sum_table">
                             <thead>
-                            <tr class="">
+                            <tr >
                                 <th><center>Course Name</center></th>
                                 <th><center>Batch</center></th>
                                 <th><center>Course fee (Rs)</center></th>
@@ -68,10 +74,16 @@ include '../components/page_head.php'; ?>
 
                             </tr>
                             </thead>
+                            <?php
+
+                            $csv_hdr = "Course Name, Batch, Course fee (Rs), Participants, Total income (Rs)";
+                            $csv_output="";
+                            ?>
 
     <tbody>
 
 <?php
+
 $stu = getallsubjects($con);
 while ($row = mysqli_fetch_assoc($stu)){
 
@@ -85,7 +97,10 @@ $batch = $batches;
 
         ?>
         <tr>
-        <td rowspan="<?php echo $batch; ?>"><center><?php echo $subname; ?></center></td>
+        <td rowspan="<?php echo $batch; ?>"><center><?php echo $subname; ?></center>
+            <?php  $csv_output .= $subname . ", "; ?>
+        </td>
+
         <?php
         $count = 0;
         for ($i = 1; $i <= $batch; $i++) {
@@ -98,10 +113,22 @@ $batch = $batches;
             <?php } ?>
 
 
-            <td><center><?php echo date("Y"). " / ".$i; ?></center></td>
-            <td><center><?php echo $subfee; ?></center></td>
-            <td><center><?php echo $numstu; ?></center></td>
-            <td class="price"><center><?php echo $total; ?></center></td>
+            <td><center><?php echo date("Y"). " / ".$i; ?></center>
+
+                <?php  $csv_output .= date("Y"). " / ".$i . ", ";?>
+            </td>
+
+            <td><center><?php echo $subfee; ?></center>
+                <?php  $csv_output .= $subfee . ", ";?>
+            </td>
+
+            <td><center><?php echo $numstu; ?></center>
+                <?php  $csv_output .= $numstu . ", ";?>
+            </td>
+
+            <td class="price"><center><?php echo $total; ?></center>
+                <?php  $csv_output .= $total  . "\n";?>
+            </td>
 
 
             <?php
@@ -129,7 +156,14 @@ $batch = $batches;
 
             </div>
 
-             <center><button class="btn btn-info " type="submit" name="pdf">Download PDF</button></center>f
+
+           <center> <form name="export" action="export.php" method="post">
+                <button class="btn btn-info " type="submit" id="getfile">Download Exel</button>
+                <input type="hidden" value="<?php echo $csv_hdr; ?>" name="csv_hdr">
+                <input type="hidden" value="<?php echo $csv_output; ?>" name="csv_output">
+            </form> </center>
+            <br>
+             <center><button class="btn btn-info " type="submit" name="pdf">Download PDF</button></center>
         </div>
     </div>
 </div>
@@ -140,6 +174,7 @@ $batch = $batches;
 
 
 <?php include "../components/page_tail.php";?>
+
 
 <script>
 
@@ -158,10 +193,10 @@ $batch = $batches;
         $("#sum_table td.totalCol>center").html("Rs: " + totals+ " /=");
         });
 
-    $('button').click(function () {
+/*    $('button').click(function () {
 
         var innerdata = $('table#sum_table').html();
-        console.log(innerdata);
+
         var ajax_url = 'getpdf.php';
         var params = { contents: innerdata };
         $.ajax({
@@ -176,6 +211,6 @@ $batch = $batches;
             }
 
         });
-    });
+    });*/
 
 </script>

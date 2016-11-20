@@ -17,9 +17,13 @@ include '../components/page_head.php'; ?>
 
 
     </head>
+<?php
 
+$subid = $_GET['subid'];
 
-    <body background="">
+?>
+
+    <body style="overflow-x:hidden; ">
 <br>
 <br>
 <section class="content-header">
