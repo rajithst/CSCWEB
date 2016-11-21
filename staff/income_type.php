@@ -15,6 +15,13 @@ include '../components/page_head.php'; ?>
 
     <?php include "comp/navbar.php"; ?>
 
+<ul class="breadcrum">
+	<li class="completed"><a href="index.php">HOME</a></li>
+	<li class="completed"><a href="">GENERATE REPORTS</a></li>
+	<li class="completed"><a href="">CONFIGURE REPORTS</a></li>
+	<li class="active"><a href="">COURSE INCOME REPORT </a></li>
+
+</ul>
     </br>
 
 </head>
