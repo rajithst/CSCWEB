@@ -25,4 +25,20 @@
     "dependencies": {
         "jquery": ">=1.11.0"
     }
+
+
+"licenses": [
+        {
+            "type": "GNU GENERAL PUBLIC LICENSE",
+            "url": "https://github.com/jhonis/e-calendar/blob/master/LICENSE"
+        }
+    ],
+    "bugs": "https://github.com/jhonis/e-calendar/issues",
+    "homepage": "https://github.com/jhonis/e-calendar",
+    "docs": "https://github.com/jhonis/e-calendar",
+    "download": "https://github.com/jhonis/e-calendar",
+    "dependencies": {
+        "jquery": ">=1.11.0"
+    }
+    
 }
