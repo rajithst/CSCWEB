@@ -15,9 +15,10 @@
             </li>
             <li><a><i class="fa fa-desktop"></i> E-mails <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="general_elements.html">New</a></li>
+                    <li><a href="compose.php">New</a></li>
                     <li><a href="media_gallery.html">Sent</a></li>
                     <li><a href="typography.html">Inbox</a></li>
+                    <li><a href="typography.html">Templates</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-user"></i> Users <span class="fa fa-chevron-down"></span></a>

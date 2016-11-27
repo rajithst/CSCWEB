@@ -1,13 +1,17 @@
 <?php
-$con = mysqli_connect('127.0.0.1','root','');
-if(!$con)
-{
-	echo "Not connected to database";
-}
-if(!mysqli_select_db($con,'csc'))
-{
-	echo "database not selected";
-}
+session_start();
+	require '../core/base.php';
+
+	if(logged_in() === false){
+
+		session_destroy();
+		
+		exit();
+
+	}
+	require '../core/init.php';
+	require '../core/function/staff.php';
+	include '../components/page_head.php'; 
 
 $c_name=$_POST['course_name'];
 
@@ -23,15 +27,58 @@ $sql="INSERT INTO
 cus_course_income(course_name,requesting_party,received_date,received_by,amount)
 values('$c_name','$requesting_party','$received_date','$received_by','$amount')";
 
-if(!mysqli_query($con,$sql))
-{
-	echo "payment not registered<br>";
+if(mysqli_query($con,$sql))
+{?>
+
+	</head>
+    <body>
+
+    <?php include "comp/navbar.php"; ?>
+	
+	<ul class="breadcrum">
+	<li class="completed"><a href="index.php">HOME</a></li>
+	<li class="completed"><a href="edit_report.php">INPUT DATA</a></li>
+	<li class="completed"><a href="income_type.php">SELECT REPORT TYPE</a></li>
+	<li class="completed"><a href="customized_courses_in.php">CUSTOMIZED COURSE INCOME</a></li>
+	<li class="active"><a href="">RECORDED</a></li>
+	
+	
+
+</ul>
+    </br>
+	
+        <div class="alert alert-info">
+            <strong><center>Recorded!</center></strong>
+        </div>
+	</body>
+	<?php include "../components/page_tail.php";?>
+	<?php
 }
 else
 	//
-{
-	echo "payment registered<br>";
+{?>
+	</head>
+    <body>
+
+    <?php include "comp/navbar.php"; ?>
+	<ul class="breadcrum">
+	<li class="completed"><a href="index.php">HOME</a></li>
+	<li class="completed"><a href="edit_report.php">INPUT DATA</a></li>
+	<li class="completed"><a href="income_type.php">SELECT REPORT TYPE</a></li>
+	<li class="completed"><a href="customized_courses_in.php">CUSTOMIZED COURSE INCOME</a></li>
+	<li class="active"><a href="">NOT RECORDED</a></li>
+	
+	
+
+</ul>
+    </br>
+	
+        <div class="alert alert-info">
+            <strong><center>Not Recorded!</center></strong>
+        </div>
+	</body>
+	<?php include "../components/page_tail.php";?>
+	<?php
 }
 
-header("refresh:4; url=index.php");
 ?>

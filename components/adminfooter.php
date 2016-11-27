@@ -20,5 +20,6 @@
 <script src="../public/plugins/monthly/monthly.js"></script>
 <script src="../public/dist/js/adminall.js"></script>
 <script src="../public/plugins/dt/dataTables.js">
+
 </body>
 </html>

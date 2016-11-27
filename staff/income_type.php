@@ -17,9 +17,9 @@ include '../components/page_head.php'; ?>
 
 <ul class="breadcrum">
 	<li class="completed"><a href="index.php">HOME</a></li>
-	<li class="completed"><a href="">GENERATE REPORTS</a></li>
-	<li class="completed"><a href="">CONFIGURE REPORTS</a></li>
-	<li class="active"><a href="">COURSE INCOME REPORT </a></li>
+	<li class="completed"><a href="edit_report.php">INPUT DATA</a></li>
+	<li class="active"><a href="">SELECT REPORT TYPE</a></li>
+	
 
 </ul>
     </br>
@@ -38,30 +38,30 @@ include '../components/page_head.php'; ?>
 
         <div class="col-md-8 col-sm-6 col-xs-12">
                 <div class="well">
-					<u><b><h4>Select report type</h4></b></u>				
-					<li>
+					<span class="badge" style="font-size:40px">Select report type</span><br>
+					<hr>
+					<ul>
 					<a href="project_in.php"  style="color:white;font-size:15px;">
 					<button type="button" href="attendance_rep.php" class="btn btn-primary btn-lg gradient"  style="width:250px">
 					Project income
 					</button>
 					</a>
-					</li>
-					<br>
-					<li>
+					</ul>
+					<ul>
 					<a href="customized_courses_in.php"  style="color:white;font-size:15px;">
 					<button type="button" href="income_rep.php" class="btn btn-primary btn-lg gradient"  style="width:250px">
 					Costomized course income
 					</button>
 					</a>
-					</li>
-					<br>
-					<li>
+					</ul>
+					<ul>
 					<a href="other_in.php"  style="color:white;font-size:15px;">
 					<button type="button" href="expense_rep.php" class="btn btn-primary btn-lg gradient"  style="width:250px">
 					Other
 					</button>
 					</a>
-					</li>
+					</ul>
+					
                 </div>
         </div>
     </div>

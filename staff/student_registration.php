@@ -1,14 +1,25 @@
 <?php
-$con = mysqli_connect('127.0.0.1','root','rajith');
-if(!$con)
-{
-	echo "Not connected to database";
-}
-if(!mysqli_select_db($con,'csc'))
-{
-	echo "database not selected";
-}
-$course_name=$_POST['course_name'];
+session_start();
+	require '../core/base.php';
+
+	if(logged_in() === false){
+
+		session_destroy();
+		
+		exit();
+
+	}
+	require '../core/init.php';
+	require '../core/function/staff.php';
+	include '../components/page_head.php'; 
+	
+$sub_name=$_POST['subject_name'];
+$sqlx="SELECT subjectid FROM subjects WHERE subject='$sub_name'";
+$result = mysqli_query($con,$sqlx);
+$arr = mysqli_fetch_array($result);
+
+$course_name=$arr[0];
+
 
 $title=$_POST['title'];
 
@@ -44,6 +55,8 @@ $method_of_being_informed=$_POST['method'];
 
 $description_of_other_method=$_POST['other_des'];
 
+$status=1;
+
 
 
 $payment_method=$_POST['pay_method'];
@@ -54,29 +67,62 @@ $payment_referrence=$_POST['ref'];
 
 
 $sql="INSERT INTO 
-student(name_title,fullname,coursename,name_w_initials,dob,gender,nic,home_address,home_tel,home_mobile,email,work_place_addr,work_place_tel,work_place_email,workplace_designation,vehicle_no,howknow,description_howknow) 
-VALUES ('$title','$full_name','$course_name','$full_name_with_initials','$date_of_birth','$gender','$NIC','$home_address','$home_telephone','$mobile','$personel_email','$office_address','$office_telephone','$office_email','$work_place_and_designation','$vehicle_number','$method_of_being_informed','$description_of_other_method')";
+student(name_title,fullname,coursename,name_w_initials,dob,gender,nic,home_address,home_tel,home_mobile,workplace_designation,work_place_addr,work_place_tel,work_place_email,vehicle_no,description_howknow,howknow,registered) 
+VALUES ('$title','$full_name','$course_name','$full_name_with_initials','$date_of_birth','$gender','$NIC','$home_address','$home_telephone','$mobile','$work_place_and_designation','$office_address','$office_telephone','$office_email','$vehicle_number','$description_of_other_method','$method_of_being_informed','$status')";
+
 
 $sqlp="INSERT INTO
-course_income(student_NIC,subject_name,payment_method,amount,received_date,person_rec,refference_no)
+course_income(student_NIC,coursename,payment_method,amount,received_date,person_rec,refference_no)
 VALUE('$NIC','$course_name','$payment_method','$payed_ammount','$payment_received_day','$person_rec','$payment_referrence')";
-if(!mysqli_query($con,$sql))
-{
-	echo "student details not registered<br>";
+
+if(mysqli_query($con,$sql) && mysqli_query($con,$sqlp) )
+{?>
+	
+	</head>
+    <body>
+
+    <?php include "comp/navbar.php"; ?>
+	<ul class="breadcrum">
+        <li class="completed"><a href="index.php">HOME</a></li>
+        <li class="completed"><a href="select_course_reg.php">SELECT COURSE</a></li>
+        <li class="completed"><a href="">REGISTRATION</a></li>
+		<li class="active"><a href="">REGISTERED</a></li>
+        
+
+    </ul>
+    </br>
+	
+        <div class="alert alert-info">
+            <strong><center>Recorded!</center></strong>
+        </div>
+	</body>
+	<?php include "../components/page_tail.php";?>
+<?php
 }
 else
-	//
-{
-	echo "student details registered<br>";
+{?>
+	</head>
+    <body>
+
+    <?php include "comp/navbar.php"; ?>
+	<ul class="breadcrum">
+        <li class="completed"><a href="index.php">HOME</a></li>
+        <li class="completed"><a href="select_course_reg.php">SELECT COURSE</a></li>
+        <li class="completed"><a href="">REGISTRATION</a></li>
+		<li class="active"><a href="">NOT REGISTERED</a></li>
+        
+
+    </ul>
+    </br>
+	
+        <div class="alert alert-info">
+            <strong><center>Not Recorded!</center></strong>
+        </div>
+	</body>
+	<?php include "../components/page_tail.php";?>
+	
+<?php
 }
-if(!mysqli_query($con,$sqlp))
-{
-	echo "payment not registered\n<br>";
-}
-else
-	//
-{
-	echo "payment registered\n<br>";
-}
-header("refresh:4; url=index.php");
+
+
 ?>

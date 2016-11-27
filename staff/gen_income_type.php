@@ -49,8 +49,7 @@ $('#two-inputs').dateRangePicker(
             $('#date-range201').val(s2);
         }
     });
-
-
+	
 $('#two-inputs1').dateRangePicker(
     {
         separator : ' to ',
@@ -67,13 +66,13 @@ $('#two-inputs1').dateRangePicker(
             $('#date-range203').val(s2);
         }
     });
-
+	
 $('#two-inputs2').dateRangePicker(
     {
         separator : ' to ',
         getValue: function()
         {
-            if ($('#date-range202').val() && $('#date-range203').val() )
+            if ($('#date-range204').val() && $('#date-range204').val() )
                 return $('#date-range204').val() + ' to ' + $('#date-range205').val();
             else
                 return '';
@@ -86,22 +85,8 @@ $('#two-inputs2').dateRangePicker(
     });
 
 
-$('#two-inputs3').dateRangePicker(
-    {
-        separator : ' to ',
-        getValue: function()
-        {
-            if ($('#date-range202').val() && $('#date-range203').val() )
-                return $('#date-range206').val() + ' to ' + $('#date-range207').val();
-            else
-                return '';
-        },
-        setValue: function(s,s1,s2)
-        {
-            $('#date-range206').val(s1);
-            $('#date-range207').val(s2);
-        }
-    });
+
+
 
 
 
@@ -116,9 +101,8 @@ $('#two-inputs3').dateRangePicker(
     <?php include "comp/navbar.php"; ?>
     <ul class="breadcrum">
         <li class="completed"><a href="index.php">HOME</a></li>
-        <li class="completed"><a href="">GENERATE REPORTS</a></li>
-
-        <li class="active"><a href="">CONFIGURE REPORTS </a></li>
+        <li class="completed"><a href="generate_report.php">SELECT REPORTS</a></li>
+        <li class="active"><a href="">INCOME</a></li>
 
     </ul>
     </br>
@@ -147,105 +131,56 @@ $('#two-inputs3').dateRangePicker(
                     <button type="button" class="btn btn-info btn-lg btn-block"> Run Report </button>
                 </div>
           </a>
-
-
-
-
-
-
-          <a href="#" class="list-group-item">
-                <div class="media col-md-3" id="nn">
+		  <form action="report.php" method="post">
+		  <div class="media col-md-3" id="nn">
                    <span class="badge">Project Income</span>
                 </div>
                 <div class="col-md-6 text-center" id="nn">
                    
                  
-                Select date range <span id="two-inputs"><input id="date-range200" size="20" value=""> to <input id="date-range201" size="20" value=""></span>
+                Select date range <span id="two-inputs"><input name="start_date" id="date-range200" size="20" value=""> to <input name="end_date"id="date-range201" size="20" value=""></span>
 
                     
                 </div>
                 <div class="col-md-3 text-center" id="nn">
-                    <button type="button" class="btn btn-info btn-lg btn-block"> Run Report </button>
+                    <button type="submit" name="pro_in" class="btn btn-info btn-lg btn-block"> Run Report </button>
                 </div>
-          </a>
-         
-           <a href="#" class="list-group-item">
-                <div class="media col-md-3" id="nn">
+		</form>
+		<form action="report.php" method="post">
+		  <div class="media col-md-3" id="nn">
                   <span class="badge">Customize Course Income</span>
                 </div>
                 <div class="col-md-6 text-center" id="nn">
                    
                  
-                Select date range <span id="two-inputs1"><input id="date-range202" size="20" value=""> to <input id="date-range203" size="20" value=""></span>
+                Select date range <span id="two-inputs1"><input name="start_date" id="date-range202" size="20" value=""> to <input name="end_date" id="date-range203" size="20" value=""></span>
 
                     
                 </div>
                 <div class="col-md-3 text-center" id="nn">
-                    <button type="button" class="btn btn-info btn-lg btn-block"> Run Report </button>
+                    <button type="submit" name="cc_in" class="btn btn-info btn-lg btn-block"> Run Report </button>
                 </div>
-          </a>
-  
-
-          <a href="#" class="list-group-item">
-                <div class="media col-md-3" id="nn">
+		</form>
+		<form action="report.php" method="post">
+		  <div class="media col-md-3" id="nn">
                   <span class="badge">Other Income</span>
                 </div>
                 <div class="col-md-6 text-center" id="nn">
                    
                  
-                Select date range <span id="two-inputs3"><input id="date-range206" size="20" value=""> to <input id="date-range207" size="20" value=""></span>
+                Select date range <span  id="two-inputs2"><input name="start_date" id="date-range204" size="20" value=""> to <input name="end_date" id="date-range205" size="20" value=""></span>
 
                     
                 </div>
                 <div class="col-md-3 text-center" id="nn">
-                    <button type="button" class="btn btn-info btn-lg btn-block"> Run Report </button>
+                    <button type="submit" name="other_in" class="btn btn-info btn-lg btn-block"> Run Report </button>
                 </div>
-          </a>
-
+		</form>
+         
 
         </div>
       
     </div>
-
-
-					<!-- <u><b><h4>Select report type</h4></b></u>                
-                                        <li>
-                                        <a href="gen_pro_income.php"  style="color:white;font-size:17px;">
-                                        <button type="button" href="attendance_rep.php" class="btn btn-primary btn-lg gradient"  style="width:300px">
-                                        Project income
-                                        </button>
-                                        </a>
-                                        </li>
-                                        <br>
-                                        <li>
-                                        <a href="gen_cus_co_income.php"  style="color:white;font-size:17px;">
-                                        <button type="button" href="income_rep.php" class="btn btn-primary btn-lg gradient"  style="width:300px">
-                                        Costomized course income
-                                        </button>
-                                        </a>
-                                        </li>
-                                        <br>
-                                        <li>
-                                        <a href="gen_co_fee_income.php"  style="color:white;font-size:17px;">
-                                        <button type="button" href="income_rep.php" class="btn btn-primary btn-lg gradient"  style="width:300px">
-                                        Course fee income
-                                        </button>
-                                        </a>
-                                        </li>
-                                        <br>
-                                        <li>
-                                        <a href="gen_other_income.php"  style="color:white;font-size:17px;">
-                                        <button type="button" href="expense_rep.php" class="btn btn-primary btn-lg gradient"  style="width:300px">
-                                        Other
-                                        </button>
-                                        </a>
-                                        </li> -->
-                                    
-            
-
-        
-
-       
 
     </div>
    

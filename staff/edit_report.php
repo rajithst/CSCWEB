@@ -16,7 +16,7 @@ include '../components/page_head.php';
 include "comp/navbar.php"; ?>
 <ul class="breadcrum">
     <li class="completed"><a href="index.php">HOME</a></li>
-    <li class="completed"><a href="edit_report.php">INPUT DATA</a></li>
+    <li class="active"><a href="edit_report.php">INPUT DATA</a></li>
     <li class=""><a href="select_course.php">ATTENDANCE</a></li>
     <li class=""><a href="income_type.php">INCOME</a></li>
     <li class=""><a href="expense_type.php">EXPENSES</a></li>

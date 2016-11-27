@@ -34,8 +34,7 @@ include '../components/page_head.php'; ?>
 
     <ul class="breadcrum">
         <li class="completed"><a href="index.php">HOME</a></li>
-        <li class="completed"><a href="">INPUT DATA</a></li>
-        <li class="completed"><a href="">EXPENSES</a></li>
+        <li class="completed"><a href="edit_report.php">INPUT DATA</a></li>
         <li class="active"><a href="">ADD EXPENSES </a></li>
 
     </ul>
@@ -54,7 +53,7 @@ include '../components/page_head.php'; ?>
 
             <center><h3>Add Expense information</h3></center>
             <br>
-                <form class="form-horizontal" action=" " method="post"  id="contact_form">
+                <form class="form-horizontal" action="expense.php" method="post"  id="contact_form">
 
 
                         <div class="form-group">
@@ -62,12 +61,11 @@ include '../components/page_head.php'; ?>
                             <div class="col-md-6 selectContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                    <select name="subject" class="form-control selectpicker" >
-                                        <option value=" " >Please select subject</option>
-
-                                            <option value="">Donation</option>
-                                            <option value="">Advertising</option>
-                                            <option value="">Others</option>
+                                    <select name="meth" class="form-control selectpicker" >
+                                  
+                                            <option value="Dnation">Donation</option>
+                                            <option value="Advertising">Advertising</option>
+                                            <option value="Other">Others</option>
                                     </select>
                                 </div>
                             </div>
@@ -80,7 +78,7 @@ include '../components/page_head.php'; ?>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-book"></i></span>
-                                    <input name="last_name" placeholder="Last Name" class="form-control"  type="text" required>
+                                    <input name="desc" placeholder="Description" class="form-control"  type="text" required>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +89,7 @@ include '../components/page_head.php'; ?>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="text" placeholder="E-Mail Address" class="form-control"  type="text" required>
+                                    <input name="g_to" placeholder="Given to" class="form-control"  type="text" required>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +102,7 @@ include '../components/page_head.php'; ?>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="phone" placeholder="" class="form-control" type="text" required>
+                                    <input name="g_by" placeholder="Given by" class="form-control" type="text" required>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +113,7 @@ include '../components/page_head.php'; ?>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                                    <input name="phone" placeholder="" class="form-control" type="date" id="datepick" required>
+                                    <input name="g_date" style="width:160px;" placeholder="" class="form-control" type="date" id="datepick" required>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +123,7 @@ include '../components/page_head.php'; ?>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
-                                    <input name="phone" placeholder="" class="form-control" type="number" required>
+                                    <input name="amm" placeholder="Amount" class="form-control" type="number" required>
                                 </div>
                             </div>
                         </div>

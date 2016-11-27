@@ -43,7 +43,7 @@ include '../components/page_head.php'; ?>
     <ul class="ds-btn">
 
         <li>
-             <a class="btn btn-lg btn-info" href="">
+             <a class="btn btn-lg btn-info" href="select_course_att.php">
           <i class="glyphicon glyphicon-user pull-left"></i><span>Student Attendance<br><small></small></span></a> 
             
         </li>
@@ -74,41 +74,7 @@ include '../components/page_head.php'; ?>
 
 
 
-                <!-- <div class="well"  >
-                                <u><b><h4>Generate reports</h4></b></u>                
-                                    <li>
-                                    <a href=""  style="color:white;font-size:17px;">
-                                    <button type="button"  class="btn btn-primary btn-lg gradient"  style="width:200px">
-                                    Attendance
-                                    </button>
-                                    </a>
-                                    </li>
-                                    <br>
-                                    <li>
-                                    <a href="gen_income_type.php"  style="color:white;font-size:17px;">
-                                    <button type="button" class="btn btn-primary btn-lg gradient"  style="width:200px">
-                                    Income
-                                    </button>
-                                    </a>
-                                    </li>
-                                    <br>
-                                    <li>
-                                    <a href="expense_rep.php"  style="color:white;font-size:17px;">
-                                    <button type="button" class="btn btn-primary btn-lg gradient"  style="width:200px">
-                                    Expense
-                                    </button>
-                                    </a>
-                                    </li>
-                                    <br>
-                                    <li>
-                                    <a href=""  style="color:white;font-size:17px;">
-                                    <button type="button"  class="btn btn-primary btn-lg gradient"  style="width:200px">
-                                    Student marks
-                                    </button>
-                                    </a>
-                                    </li>
-                </div> -->
-            
+                
 
         </div>
     </div>

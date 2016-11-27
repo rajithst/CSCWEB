@@ -82,7 +82,13 @@ include '../components/page_head.php';?>
                                 <tr>
                                     <td><?php  echo  $subid; ?></td>
                                     <td><?php  echo  $row['fullname']; ?></td>
-                                    <td><center><input type="checkbox" checked name="attendance[]" value="<?php  echo  $row['fullname']; ?>"></center></td>
+									
+                                    <td>
+										<center>
+											<input type="hidden" id="attendance[]" name="attendance[]"  value="<?php echo $row['name_w_initials']; ?>">
+											<input type="checkbox" checked id="attendance[]" name="attendance[]" value="<?php  echo  $row['fullname']; ?>">
+										</center>
+									</td>
                                     <td><input type="text" name="addtional" class="form-control"></td>
 
                                 </tr>
@@ -98,7 +104,7 @@ include '../components/page_head.php';?>
 
                     </div>
 
-                            <button type="submit" class="btn btn-block btn-success btn-md" name="next">Record Marks</button>
+                            <button type="submit" class="btn btn-block btn-success btn-md" name="next">Record Attendance</button>
                             <button type="cancel" class="btn btn-block btn-danger btn-md">Cancel</button>
                         </div>
                 </form>
@@ -118,13 +124,26 @@ include '../components/page_head.php';?>
     if(isset($_POST['next']) === true) {
         foreach ($_POST['attendance'] as $index => $val) {
 
-            $sql1 = "SELECT attendance FROM student WHERE fullname='$val'";
+            $sql1 = "SELECT attendance,total_attendance FROM student WHERE fullname='$val'";
             $res = mysqli_query($con,$sql1);
             $dd = mysqli_fetch_array($res);
             $current= $dd[0];
             $new = $current+ 1;
-            $sql = "UPDATE student SET attendance=$new WHERE fullname = '$val'" ;
+			
+			$cr= $dd[1];
+            $n = $cr-1;
+			
+            $sql = "UPDATE student SET attendance=$new,total_attendance=$n WHERE fullname = '$val'" ;
             $res = mysqli_query($con,$sql);
+			
+			$sql2 = "SELECT total_attendance FROM student WHERE (fullname='$val' or name_w_initials='$val')";
+			$res2=mysqli_query($con,$sql2);
+			$dx = mysqli_fetch_array($res2);
+			$cur= $dx[0];
+            $nw = $cur+ 1;
+			$sql3 = "UPDATE student SET total_attendance=$nw WHERE (fullname = '$val' or name_w_initials='$val') " ;
+            $res3 = mysqli_query($con,$sql3);
+			
 
         }
 

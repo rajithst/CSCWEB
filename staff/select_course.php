@@ -72,7 +72,7 @@ include '../components/page_head.php'; ?>
     <?php include "comp/navbar.php"; ?>
     <ul class="breadcrum">
         <li class="completed"><a href="index.php">HOME</a></li>
-        <li class="completed"><a href="">INPUT DATA</a></li>
+        <li class="completed"><a href="edit_report.php">INPUT DATA</a></li>
         <li class="active"><a href="">SELECT COURSE</a></li>
 
     </ul>

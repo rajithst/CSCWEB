@@ -32,28 +32,20 @@ include '../components/page_head.php'; ?>
     <body>
 
     <?php include "comp/navbar.php"; ?>
+	<ul class="breadcrum">
+        <li class="completed"><a href="index.php">HOME</a></li>
+        <li class="active"><a href="">SELECT COURSE</a></li>
+        
+        
 
+    </ul>
+    </br>
     </br>
 
 </head>
 
 <body background="">
-
-    <div class="container-fluid">
-        <div class="sidenav col-md-2 col-sm-3 col-xs-12">
-            <center><h3> Event Calender</h3></center>
-            <div class="monthly" id="mycalendar"></div>
-
-        </div>
-
-
-
-        <div class="col-sm-9 col-md-9">
-
-
-        </div>
-
-
+    <div class="container-fluid" style="margin-left:25%;">
         <div class="col-md-8 col-sm-6 col-xs-12">
                 <div class="well"  >
 					<section class="content-header">
@@ -62,15 +54,15 @@ include '../components/page_head.php'; ?>
 							<div class="col-xs-2"></div>
 							<div class="col-xs-10">
 								<div class="box" style="width: 75%;">
-									<div class="box-header">
-										<h3 class="box-title">Select Course</h3>
+									<div class="badge" style="font-size:40px;">
+										Select Course
 									</div>
 									<!-- /.box-header -->
 									<div class="box-body table-responsive no-padding">
 										<table class="table table-hover">
 											<tr>
-												<th>Course ID</th>
-												<th>Course Name</th>
+												<th><span class="badge" style="font-size:15px;">Course ID</span></th>
+												<th><span class="badge" style="font-size:15px;">Course Name</span></th>
 											</tr>
 
 											<?php
@@ -123,50 +115,6 @@ include '../components/page_head.php'; ?>
 
         </div>
 
-        <div class="col-md-2 col-sm-3 col-xs-12">
-            <div class="profile-sidebar">
-
-                <div class="profile-userpic">
-                    <img src="<?php echo $staff_data['profile']; ?>" class="img-responsive" alt="">
-                </div>
-
-                <div class="profile-usertitle">
-                    <div class="profile-usertitle-name">
-                        <?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?>
-                    </div>
-                    <div class="profile-usertitle-job">
-                        <?php echo $staff_data['role']; ?>
-                    </div>
-                </div>
-
-                <div class="profile-userbuttons">
-                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal">Profile</button>
-                    <button type="button" class="btn btn-danger btn-sm">Sign Out</button>
-                </div>
-
-                <div class="profile-usermenu">
-                    <ul class="nav">
-                        <li class="active">
-                            <a href="index.php">
-                                <i class="glyphicon glyphicon-home"></i>
-                                Home </a>
-                        </li>
-                        <li>
-                            <a href="profile.php">
-                                <i class="glyphicon glyphicon-user"></i>
-                                Account Settings </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <i class="glyphicon glyphicon-flag"></i>
-                                Help </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- END MENU -->
-            </div>
-        </div>
 
 
     </div>
