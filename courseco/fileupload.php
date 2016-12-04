@@ -109,7 +109,7 @@ function abortHandler(event){
                   <table class="table" style="margin-bottom: 0px;">
                       <tr>
                           <td style="padding-left: 15px;">
-                              <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="allposts.php">All Assignment</a>
+                              <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="courseassignments.php">All Assignment</a>
                           </td>
                       </tr>
                       <tr>

@@ -62,7 +62,7 @@ if (isset($_GET['id'])) {
                         <table class="table" style="margin-bottom: 0px;">
                             <tr>
                                 <td style="padding-left: 15px;">
-                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="allposts.php">All Assignment</a>
+                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="courseassignments.php">All Assignment</a>
                                 </td>
                             </tr>
                             <tr>
@@ -101,11 +101,11 @@ if (isset($_GET['id'])) {
           <div class="panel-body">
 
 
-            <form action="" method="post"  id="">
+            <form action="" name="submissionform" method="post"  id="">
               <label for="comment">link Title</label>
-              <input type="text" class="form-control" name="title">
+              <input type="text" class="form-control" name="title" value="">
               <label for="comment">Submission Description</label>
-              <textarea class="form-control" rows="5" name="description"></textarea><br>
+              <textarea class="form-control" rows="5" name="description" value=""></textarea><br>
 
               <label for="comment">End  Date and Time</label>
               <input  type="text" class="form-control time" value="" readonly name="edtime">
@@ -116,7 +116,7 @@ if (isset($_GET['id'])) {
 
               <br>
 
-              <center><button class="btn btn-info" name="submission">Make link</button></center>
+              <center><button class="btn btn-info" name="submission" onclick="">Make link</button></center>
 
             </form>
 
@@ -124,22 +124,34 @@ if (isset($_GET['id'])) {
                if (isset($_POST['submission'])){
 
                   $foldername = $_POST['path'];
-                   mkdir("../uploads/".$foldername, 0777 );
-                  $folderpath = '../uploads/'.$foldername.'/';
-                  $dtime = strtotime($_POST['edtime']);
+                  if(!file_exists("../uploads/".$foldername)){
+                      mkdir("../uploads/".$foldername, 0777 );
+                      $folderpath = '../uploads/'.$foldername.'/';
+                      $dtime = strtotime($_POST['edtime']);
 
-                  $regdata = array(
+                      $regdata = array(
 
-                      'subid' =>$subid,
-                      'linktitle'=>$_POST['title'],
-                      'description'=>$_POST['description'],
-                      'edateandtime'=>$dtime,
-                      'path' => $folderpath
+                          'subid' =>$subid,
+                          'linktitle'=>$_POST['title'],
+                          'description'=>$_POST['description'],
+                          'submitted_date'=>date("Y-m-d"),
+                          'edateandtime'=>$dtime,
+                          'path' => $folderpath
 
 
-                  );
+                      );
 
-                  $submit = submission($con,$regdata);
+                      $submit = submission($con,$regdata);
+                      echo "<script type=text/javascript>alert('Foder ok!')</script>";
+                  }else{
+                    echo '<script>';
+                   /*echo 'document.submissionform.title.value = <?php echo $_POST["title"]?>;';
+                    echo 'document.submissionform.description.value = <?php echo $_POST["description"]?>;';*/
+                    echo 'var newfolder = prompt("A folder with this name already exists try giving another name!");';
+                    echo 'document.submissionform.path.value = newfolder;';
+                    echo '</script>';
+                  }
+                  
 
 
                 }

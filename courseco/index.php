@@ -147,7 +147,7 @@ include '../components/course_head.php'; ?>
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
-                            </span>Reports</a>
+                            </span>My Files</a>
                             </h4>
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse">
@@ -155,12 +155,17 @@ include '../components/course_head.php'; ?>
                                 <table class="table">
                                     <tr>
                                         <td>
-                                            <span class=""></span><a href=>Attendance</a>
+                                            <span class=""></span><a href=>Attendance Reports</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <span class=""></span><a href="">other reports</a>
+                                            <span class=""></span><a href="">Other reports</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class=""></span><a href="">View Assignments</a>
                                         </td>
                                     </tr>
                                     
