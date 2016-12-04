@@ -86,7 +86,7 @@ include '../components/cscordinator_head.php'; ?>
 
                         <button class="btn btn-info" id="edit">Edit Course</button> <button class="btn btn-info" id="delete">Delete Course</button>
 
-                        <a href="fullcourses.php"> <button class="btn btn-info" id="delete">Go back</button></a>
+                        <a href="fullcourses.php"> <button class="btn btn-info" id="delete">View All Courses</button></a>
                     </div>
 
                 </div>
