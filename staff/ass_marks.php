@@ -123,6 +123,34 @@ include '../components/page_head.php'; ?>
             
 
         </div>
+		
+		
+		<?php
+    if(isset($_POST['next']) === true) {
+        foreach ($_POST['marks'] as $index => $val) {
+
+            $sql1 = "SELECT assignment_marks,total_assignments FROM student WHERE fullname='$val'";
+            $res = mysqli_query($con,$sql1);
+            $dd = mysqli_fetch_array($res);
+            $currentmarks= $dd[0];
+			$newmark = $currentmarks+
+            
+			
+            $sql = "UPDATE student SET attendance=$new,total_attendance=$n WHERE fullname = '$val'" ;
+            $res = mysqli_query($con,$sql);
+			
+			$sql2 = "SELECT total_attendance FROM student WHERE (fullname='$val' or name_w_initials='$val')";
+			$res2=mysqli_query($con,$sql2);
+			$dx = mysqli_fetch_array($res2);
+			$cur= $dx[0];
+            $nw = $cur+ 1;
+			$sql3 = "UPDATE student SET total_attendance=$nw WHERE (fullname = '$val' or name_w_initials='$val') " ;
+            $res3 = mysqli_query($con,$sql3);
+			
+
+        }
+
+        ?>
 
 
 

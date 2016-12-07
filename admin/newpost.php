@@ -61,9 +61,9 @@ require '../components/adminhead.php'; ?>
                                         <label class="control-label col-md-2 col-sm-3" for="first-name">Select User  <span class="required"> * </span>
                                         </label>
                                         <div class="col-md-6 col-sm-6">
-                                            <label class="checkbox-inline"><input type="checkbox" value="" name="user[]">Student</label>
-                                            <label class="checkbox-inline"><input type="checkbox" value="" name="user[]">Course Coordinator</label>
-                                            <label class="checkbox-inline"><input type="checkbox" value="" name="user[]">CSC Coordinator</label>
+                                            <label class="checkbox-inline"><input type="checkbox" value="1" name="user[]" id="1" >Student</label>
+                                            <label class="checkbox-inline"><input type="checkbox" value="2" name="user[]" id="2">Course Coordinator</label>
+                                            <label class="checkbox-inline"><input type="checkbox" value="3" name="user[]" id="3">CSC Coordinator</label>
                                         </div>
                                     </div>
 
@@ -117,14 +117,22 @@ require '../components/adminhead.php'; ?>
         <?php
 
         $id = $user_data['id'];
-        if(isset($_POST['postdata'])){
+        if(isset($_POST['postdata'])) {
+
+            $stu = 0;
+            $couc = 0;
+            $csc = 0;
+            if (!empty($_POST["user"])) {
+                foreach ($_POST["user"] as $user) {
+                    if ($user == 1) {
+                        $stu = 1;
+                    } else if ($user == 2) {
+                        $couc = 1;
+                    } else if ($user == 3) {
+                        $csc = 1;
+                    }
 
 
-            if(!empty($_POST["user"]))
-            {
-                foreach($_POST["user"] as $user)
-                {
-                    $row[] = $user;
                 }
 
 
@@ -134,17 +142,26 @@ require '../components/adminhead.php'; ?>
             $postdata = array(
 
 
-                'subject' =>  $_POST['subject'],
-                'text' =>  $_POST['content'],
-                'adminid'   =>  $id,
+                'subject' => $_POST['subject'],
+                'text' => $_POST['content'],
+                'student' => $stu,
+                'coursec' => $couc,
+                'cscc' => $csc,
+                'adminid' => $id,
                 'type' => 1,
-                'date'=> $date
+                'date' => $date
             );
 
-            postdata($postdata);  ?>
+            $confim = postdata($postdata);
+
+        if ($confirm) {
+
+       ?>
 
             <script>swal("Posted!", "Your have benn published a post successfully")</script>
             <?php
+
+        }
             exit();
 
         }
@@ -154,7 +171,15 @@ require '../components/adminhead.php'; ?>
 
             if (!empty($_POST["user"])) {
                 foreach ($_POST["user"] as $user) {
-                    $row[] = $user;
+                    if ($user == 1) {
+                        $stu = 1;
+                    } else if ($user == 2) {
+                        $couc = 1;
+                    } else if ($user == 3) {
+                        $csc = 1;
+                    }
+
+
                 }
 
 
@@ -167,19 +192,24 @@ require '../components/adminhead.php'; ?>
 
                 'subject' => $_POST['subject'],
                 'text' => $_POST['content'],
+                'student' => $stu,
+                'coursec' => $couc,
+                'cscc' => $csc,
                 'adminid' => $id,
-                'type' => 2,
+                'type' => 1,
                 'date' => $date
             );
 
-            putdraft($postdata); ?>
+            $confim = putdraft($postdata);
+            if ($confirm) {
 
-            <script>swal("Drafted!", "Your have benn Draft a post")</script>
-            <?php
-            exit();
+                ?>
+
+                <script>swal("Drafted!", "Your have benn Draft a post")</script>
+                <?php
+            }
+           exit();
 
 
         }
         ?>
-
-

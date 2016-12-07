@@ -58,8 +58,8 @@ function postdata($postdata) {
 	$data   = '\''.implode('\', \'', $postdata).'\' ';
 
 	$sql = "INSERT INTO posts ($fields) VALUE ($data)";
-
-	mysqli_query($con, $sql);
+	$res = mysqli_query($con, $sql);
+    return $res;
 
 }
 
@@ -174,26 +174,7 @@ function putdraft( $postdata) {
 
 function getallstaff(){
 	$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-	$sql = "SELECT * FROM staff WHERE role = 'CSC Staff'";
-	$res = mysqli_query($con, $sql);
-	return $res;
-
-
-}
-
-function getallcscco(){
-	$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-	$sql = "SELECT * FROM staff WHERE role = 'CSC Cordinator'";
-	$res = mysqli_query($con, $sql);
-	return $res;
-
-
-}
-
-
-function getallcourseco(){
-	$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-	$sql = "SELECT * FROM staff WHERE role = 'Course Coordinator'";
+	$sql = "SELECT * FROM staff";
 	$res = mysqli_query($con, $sql);
 	return $res;
 
