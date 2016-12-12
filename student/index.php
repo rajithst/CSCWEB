@@ -15,15 +15,16 @@ require '../components/stud_head.php';
     <header>
     <div class="container">
     <div class="row">
-        <div class="col-sm-6">
-            <div class="logo">Computing Service Center Student Portial</div>
+        <div class="col-sm-6" style="margin-top: 0px;">
+            <div class="logo"><h3>Computing Service Center Student Portial</h3></div>
         </div>
-        <div class="col-sm-6 hidden-xs">
+        <div class="col-sm-5 hidden-xs">
 
         <form action="" method="post">
             <div class="row">
                 <div class="col-sm-5">
-                      <div class="form-group">
+                      <div class="form-group" style="margin-bottom: 15px;color: #fff;">
+                        <label for="pwd">Username:</label>
                         <input type="text" class="form-control" placeholder="Username" name="username">
                         <div class="login-bottom-text checkbox hidden-sm">
                             <label>
@@ -34,94 +35,71 @@ require '../components/stud_head.php';
                       </div>
                 </div>  
                 <div class="col-sm-5">
-                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Password" name="password">
-                        <div class="login-bottom-text hidden-sm"> Forgot your password?  </div>
+                     <div class="form-group" style="margin-bottom: 15px;color: #fff;">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" placeholder="Password" name="password">
+                        <div class="login-bottom-text hidden-md"> Forgot your password?  </div>
                       </div>
                 </div>
-                <div class="col-sm-2">
-                     <div class="form-group">
-                        <input type="submit" value="login" name="submit" class="btn btn-default btn-header-login">
+                <div class="col-sm-1">
+                     <div class="form-group" style="margin-top: 20px;">
+                        <input type="submit" value="Login" name="submit" class="btn btn-primary btn-header-login">
                       </div>
                 </div>
+                
             </div>  
             </form>
+        </div>
+        <div class="col-sm-1" style="margin-top: 20px;">
+            <button class="btn btn-primary">Register</button>
         </div>
     </div>
     </div>
 </header>
-<article class="container">
-        <div class="row">
-            <!-- <div class="col-sm-8">
-                <div class="login-main">
-                    <h4><i class="fa fa-dashboard"></i> Gorgeous color and design</h4>
-                    <span>Some sample description text about the template goes here</span>
-            
-                    <h4> <i class="fa fa-money"></i> 100%  fully responsive </h4>
-                    <span>Another description text about the template goes here</span>
-            
-                    <h4><i class="fa fa-mobile-phone"></i> Competible with all browers and mobile devices</h4>
-                    <span>Yet another sample description text can be placed in one line</span>
-            
-                    <h4> <i class="fa fa-trophy"></i> Easy to use and custmize with mobile friendly and responsive</h4>
-                    <span>Your last description text about your startup or business</span>
-                </div>
-            </div> -->
-            <!-- <div class="col-sm-4">
-                <div class="">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-xs-12">
+            <article >
                 
-                <h3><i class="fa fa-shield"></i> Register now</h3>
+                <h3><strong>About</strong></h3>
                 <hr>
-                <div class="form-group">
-                  <label class="control-label" for="">Email Address</label>
-                  <input type="text" class="form-control" placeholder="Email Address">
+                <p>The Computing Services Centre, which is the Consultancy arm of the UCSC was established in 1990 to provide Consultancy Services to the IT and related industries.</p>
+                
+                <br>
+                <h3><strong>Short Term Training Courses At CSC</strong></h3>
+                <hr>
+                <p>The UCSC conducts specialised, short-term training programmes in the most advanced and up to date topics that are in demand in the industry. These programmes are designed with a view to enable a participant to learn about a particular programming language, a design methodology, new technologies or the use of specialised packages in small groups with close supervision. These courses are designed by the staff of UCSC and closely follows the industry needs and standards. Many of these courses are conducted over 5 or 10 days. Special programmes for individual groups from companies are arranged on demand.</p>
+                <br>
+                <h4><strong>Co-ordinator</strong></h4>
+                <p>Mr. L.P. Jayasinghe – BSc (Col)(Instructor Gr. I)</p>
+                
+            </article>
+        </div>
+        <div class="col-sm-3 col-xs-12">
+            <div><h3><strong>Contact</strong><h3></div>
+            <hr>
+            <article>
+                <div class="wpb_wrapper">
+                  <h4><strong>Mailing Address</strong></h4>
+                  <p>University of Colombo School of Computing<br>
+                  UCSC Building Complex,<br>
+                  35 ,Reid Avenue, Colombo 7<br>
+                  SRI LANKA<br>
+                  </p>
+                  <br>
+                  <h4><strong>Telephone</strong></h4>
+                  <p>
+                    +94 -1- 2581245 ext. 8910 / 8911
+                  </p>
+                  <br>
+                  <h4><strong>Fax</strong></h4>
+                  <p>+94-1-2587239</p>
+                  <br>
+                  <h4><strong>E-mail</strong></h4>
+                  <p> csc@ucsc.cmb.ac.lk</p>
+                  <br>
                 </div>
-            
-                <div class="form-group">
-                  <label class="control-label" for="">Password</label>
-                  <input type="text" class="form-control" placeholder="Password">
-                </div>
-            
-                <div class="form-group">
-                  <label class="control-label" for="">Repeat Password</label>
-                  <input type="text" class="form-control" placeholder="Repeat Password">
-                </div>
-            
-                <div class="">
-                    <label>Birthday</label>
-                  <div class="form-group">
-                      <div class="col-sm-4 multibox">
-                        <select class="form-control">
-                            <option>Day</option>
-                        </select>
-                      </div>
-                       <div class="col-sm-4 multibox">
-                        <select class="form-control">
-                            <option>Month</option>
-                        </select>
-                      </div>
-                       <div class="col-sm-4 multibox">
-                        <select class="form-control">
-                            <option>Year</option>
-                        </select>
-                      </div>
-                   
-                  </div>
-                </div> -->
-              
-               <!--  <small>
-                   By clicking Sign Up, you agree to our Terms and that you have read our
-                    Data Use Policy, including our Cookie Use.
-               </small>     
-               <div style="height:10px;"></div>
-               <div class="form-group">
-                 <label class="control-label" for=""></label>
-                 <input type="submit" class="btn btn-primary">
-               </div>    -->
-
-                  </div>
-            </div>
-            </div>
+            </article>
         </div>
 </article>
 <?php
