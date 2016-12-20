@@ -21,6 +21,15 @@
                     <li><a href="typography.html">Templates</a></li>
                 </ul>
             </li>
+
+            <li><a><i class="fa fa-envelope"></i> Messages <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="chat.php">New</a></li>
+
+                </ul>
+            </li>
+
+
             <li><a><i class="fa fa-user"></i> Users <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="allusers.php">All Users</a></li>

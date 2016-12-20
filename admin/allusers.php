@@ -89,8 +89,7 @@ require '../components/adminhead.php'; ?>
                                                             </thead>
                                                             <tbody>
                                                             <?php
-                                                            $result=allusers($id);
-                                                            $i = 1;
+                                                            $result=allusers($con);
                                                             while($row = $result->fetch_assoc()) {
 
                                                                 echo "<tr>";

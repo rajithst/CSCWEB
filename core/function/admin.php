@@ -71,8 +71,7 @@ function published( $id) {
 
 }
 
-function allusers($id) {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+function allusers($con) {
 	$sql = "SELECT * FROM staff";
 	$res = mysqli_query($con, $sql);
 	return $res;
@@ -181,4 +180,18 @@ function getallstaff(){
 
 }
 
+function getmessages($con,$id,$adid){
+
+    $sql = "SELECT * FROM chat WHERE sent =$adid AND rcvd=$id  OR sent =$id AND rcvd=$adid ORDER BY id DESC";
+    echo $sql;
+    $res = mysqli_query($con, $sql);
+    return $res;
+}
+
+function getpersondata($con,$id){
+    $sql = "SELECT * FROM staff WHERE id = $id";
+    $res = mysqli_query($con, $sql);
+    return $res;
+
+}
 
