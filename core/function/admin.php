@@ -182,8 +182,7 @@ function getallstaff(){
 
 function getmessages($con,$id,$adid){
 
-    $sql = "SELECT * FROM chat WHERE sent =$adid AND rcvd=$id  OR sent =$id AND rcvd=$adid ORDER BY id DESC";
-    echo $sql;
+    $sql = "SELECT * FROM chat WHERE sent =$adid AND rcvd=$id  OR sent =$id AND rcvd=$adid";
     $res = mysqli_query($con, $sql);
     return $res;
 }
@@ -193,5 +192,12 @@ function getpersondata($con,$id){
     $res = mysqli_query($con, $sql);
     return $res;
 
+}
+
+function insertMessage($con,$id,$adid,$message){
+    $date = time();
+    $sql = "INSERT INTO chat(sent,rcvd,sentmsg,time) VALUE ('$adid','$id','$message','$date')";
+    $res = mysqli_query($con, $sql);
+    return $res;
 }
 

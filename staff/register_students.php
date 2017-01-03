@@ -52,7 +52,7 @@ include '../components/page_head.php'; ?>
 							<tr>
 								<td >
 								</td>
-								<td 
+								<td> 
 								</td>
 							</tr>
 							<tr>

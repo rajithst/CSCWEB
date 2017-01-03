@@ -60,7 +60,6 @@ function getslides($con,$subid){
 }
 
 function getsubmissionlinks($con,$subid){
-    $con = mysqli_connect('localhost','root','rajith','csc');
     $sql = "SELECT * FROM submissions WHERE subid='$subid' ORDER BY id DESC";
     $res = mysqli_query($con,$sql);
     return $res;

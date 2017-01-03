@@ -56,7 +56,7 @@ if (isset($_GET['id']) and isset($_GET['adminid'] ) ){
                                 </div>
                                 <div class='media-body'>
                                     <div class='mf-content'>";
-                                    echo   $rows['rcvdmsg'];
+                                    echo   $rows['sentmsg'];
                            echo "         </div>
                                     <small class='mf-date'><i class='fa fa-clock-o'></i> 20/02/2015 at 09:30</small>
                                 </div>

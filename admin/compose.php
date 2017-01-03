@@ -99,7 +99,9 @@ require '../components/adminhead.php'; ?>
 
                                                             <button type="submit" class="btn btn-primary" name="postdata">Send</button>
                                                             <button type="reset" class="btn btn-primary">Cancel</button>
-                                                            <button id="send" type="submit" class="btn btn-success" name="draft">Draft</button></center>
+                                                            <button id="send" type="submit" class="btn btn-success" name="draft">Draft</button>
+                                                            
+                                                          </center>
 
 
                                                     </div>
