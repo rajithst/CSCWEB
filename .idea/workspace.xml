@@ -2,510 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8a2abd2-b0f4-4cec-8935-3c8e5a8be2fc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/animate/animate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/animate/animate.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/blueimp/blueimp-gallery.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/bootstrap/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/bootstrap/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/codemirror.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/3024-day.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/3024-night.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/ambiance-mobile.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/ambiance.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/base16-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/base16-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/blackboard.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/cobalt.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/eclipse.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/elegant.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/erlang-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/lesser-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/mbo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/mdn-like.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/midnight.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/monokai.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/neat.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/neo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/night.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/paraiso-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/paraiso-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/pastel-on-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/rubyblue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/solarized.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/the-matrix.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/tomorrow-night-eighties.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/twilight.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/vibrant-ink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/xq-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/codemirror/theme/xq-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/dropzone/dropzone.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/fontawesome/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/fullcalendar/fullcalendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/jquery/jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/mcustomscrollbar/jquery.mCustomScrollbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/nvd3/nv.d3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/rickshaw/rickshaw.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/summernote/summernote.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/theme-dark-head-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/theme-dark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/theme-default-head-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/theme-default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/theme-forest-head-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/theme-forest.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/theme-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/theme-night-head-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/theme-night.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/theme-serenity-head-light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/theme-serenity.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/actions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/demo_charts_morris.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/demo_charts_nvd3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/demo_charts_rickshaw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/demo_dashboard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/demo_icons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/demo_maps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/demo_tables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/demo_tasks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/faq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/blueimp/jquery.blueimp-gallery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/bootstrap/bootstrap-colorpicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/bootstrap/bootstrap-datepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/bootstrap/bootstrap-file-input.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/bootstrap/bootstrap-select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/bootstrap/bootstrap-timepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/bootstrap/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/bootstrap/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/codemirror.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/apl/apl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/asterisk/asterisk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/clike/clike.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/clojure/clojure.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/cobol/cobol.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/coffeescript/coffeescript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/commonlisp/commonlisp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/css/css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/css/less_test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/css/scss_test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/css/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/cypher/cypher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/d/d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/diff/diff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/django/django.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/dtd/dtd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/dylan/dylan.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/ecl/ecl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/eiffel/eiffel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/erlang/erlang.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/fortran/fortran.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/gas/gas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/gfm/gfm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/gfm/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/gherkin/gherkin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/go/go.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/groovy/groovy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/haml/haml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/haml/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/haskell/haskell.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/haxe/haxe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/htmlembedded/htmlembedded.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/htmlmixed/htmlmixed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/http/http.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/jade/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/javascript/javascript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/javascript/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/jinja2/jinja2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/julia/julia.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/kotlin/kotlin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/livescript/livescript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/lua/lua.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/markdown/markdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/markdown/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/meta.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/mirc/mirc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/mllike/mllike.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/nginx/nginx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/ntriples/ntriples.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/octave/octave.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/pascal/pascal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/pegjs/pegjs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/perl/perl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/php/php.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/php/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/pig/pig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/properties/properties.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/puppet/puppet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/python/python.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/q/q.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/r/r.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/rpm/changes/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/rpm/rpm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/rst/rst.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/ruby/ruby.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/ruby/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/rust/rust.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/sass/sass.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/scheme/scheme.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/shell/shell.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/shell/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/sieve/sieve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/slim/slim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/slim/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/smalltalk/smalltalk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/smarty/smarty.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/smartymixed/smartymixed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/solr/solr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/sparql/sparql.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/sql/sql.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/stex/stex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/stex/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/tcl/tcl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/tiddlywiki/tiddlywiki.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/tiddlywiki/tiddlywiki.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/tiki/tiki.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/tiki/tiki.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/toml/toml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/turtle/turtle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/vb/vb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/vbscript/vbscript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/velocity/velocity.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/verilog/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/verilog/verilog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/xml/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/xml/xml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/xquery/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/xquery/xquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/yaml/yaml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/codemirror/mode/z80/z80.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/datatables/jquery.dataTables.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/daterangepicker/daterangepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/dropzone/dropzone.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fileinput/fileinput.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/filetree/jqueryFileTree.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/fullcalendar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ar-ma.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ar-sa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/de-at.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/en-au.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/en-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/en-gb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/fr-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/hi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/sr-cyrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/zh-tw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/highlight/jquery.highlight-4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/icheck/icheck.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/accept.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/additional.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/alphanumeric.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/bankaccountNL.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/bankorgiroaccountNL.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/bic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/cifES.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/creditcardtypes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/dateFA.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/dateITA.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/dateNL.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/extension.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/giroaccountNL.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/iban.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/integer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/ipv4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/ipv6.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/lettersonly.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/letterswithbasicpunc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/mobileNL.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/mobileUK.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/nieES.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/nifES.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/nowhitespace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/pattern.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/phoneNL.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/phoneUK.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/phoneUS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/phonesUK.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/postalCodeCA.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/postalcodeIT.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/postalcodeNL.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/postcodeUK.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/require_from_group.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/skip_or_fill_minimum.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/statesUS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/strippedminlength.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/time.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/time12h.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/url2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/vinUS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/zipcodeUS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/additional/ziprange.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/jquery.validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_es_AR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_eu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_gl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_ka.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_kk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_my.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_no.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_pt_BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_pt_PT.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_si.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_sr_lat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_tj.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_zh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/messages_zh_TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/methods_de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/methods_es_CL.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/methods_fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/methods_nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery-validation/localization/methods_pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery/jquery-2.1.1.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery/jquery-migrate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jvectormap/jquery-jvectormap-europe-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jvectormap/jquery-jvectormap-uakraine-merc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jvectormap/jquery-jvectormap-us-aea-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/knob/jquery.knob.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/lesscss/less.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/maskedinput/jquery.maskedinput.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/moment.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/morris/morris.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/morris/raphael-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/jquery.noty.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/layouts/bottom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/layouts/bottomCenter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/layouts/bottomLeft.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/layouts/bottomRight.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/layouts/center.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/layouts/centerLeft.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/layouts/centerRight.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/layouts/inline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/layouts/top.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/layouts/topCenter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/layouts/topLeft.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/layouts/topRight.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/promise.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/noty/themes/default.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/lib/cie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/lib/colorbrewer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/lib/crossfilter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/lib/crossfilter.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/lib/d3.v2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/lib/d3.v2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/lib/d3.v3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/lib/fisheye.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/lib/hive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/lib/horizon.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/lib/sankey.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/nv.d3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/interactiveLayer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/intro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/axis.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/backup/bullet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/backup/bulletChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/boilerplate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/bullet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/bulletChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/cumulativeLineChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/discreteBar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/discreteBarChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/distribution.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/historicalBar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/historicalBarChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/indentedTree.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/legend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/line.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/lineChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/linePlusBarChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/linePlusBarWithFocusChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/lineWithFisheye.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/lineWithFisheyeChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/lineWithFocusChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/multiBar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/multiBarChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/multiBarHorizontal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/multiBarHorizontalChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/multiBarTimeSeries.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/multiBarTimeSeriesChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/multiChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/ohlcBar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/parallelCoordinates.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/pie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/pieChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/scatter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/scatterChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/scatterPlusLineChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/sparkline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/sparklinePlus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/stackedArea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/models/stackedAreaChart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/outro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/nvd3/src/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/owl/owl.carousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/rangeslider/jQAllRangeSliders-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/rickshaw/d3.layout.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/rickshaw/d3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/rickshaw/d3.v2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/rickshaw/d3.v3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/rickshaw/rickshaw.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/scrolltotop/scrolltopcontrol.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/smartwizard/jquery.smartWizard-2.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/sparkline/jquery.sparkline.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/summernote/summernote.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tableexport/html2canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tableexport/jquery.base64.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tableexport/jspdf/jspdf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tableexport/jspdf/libs/base64.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tableexport/jspdf/libs/sprintf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tableexport/simple_html_dom.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tableexport/tableExport.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tagsinput/jquery.tagsinput.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tocify/jquery.tocify.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tour/bootstrap-tour.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tour/bootstro.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/jquery.validationEngine.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-cz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-no.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-pt_BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-sr_Cyrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-sr_Latn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-zh_CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/validationengine/languages/jquery.validationEngine-zh_TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/portlet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/calendar/css/jquery.e-calendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/calendar/e-calendar.jquery.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/calendar/example/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/calendar/example/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/calendar/js/jquery-1.11.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/calendar/js/jquery.e-calendar.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/assets/uploads/Images/Space_Launching_pad_023724_.jpg" afterPath="$PROJECT_DIR$/NEW/assets/uploads/Images/Space_Launching_pad_023724_.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/assets/uploads/Images/Sport_Extreme__Waves__Ocean__Risk__Surfing_023731_.jpg" afterPath="$PROJECT_DIR$/NEW/assets/uploads/Images/Sport_Extreme__Waves__Ocean__Risk__Surfing_023731_.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/assets/uploads/Images/World_other_world_Costa_Rica__Puntarenas_023746_.jpg" afterPath="$PROJECT_DIR$/NEW/assets/uploads/Images/World_other_world_Costa_Rica__Puntarenas_023746_.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/5cf20d1a-42f1-4ebf-bfcf-dc9d8bd26946.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/allusers.php" afterPath="$PROJECT_DIR$/NEW/allusers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/chat.php" afterPath="$PROJECT_DIR$/NEW/chat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/backup.php" afterPath="$PROJECT_DIR$/NEW/backup.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/components/ad_foot.php" afterPath="$PROJECT_DIR$/NEW/components/ad_foot.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/components/ad_head.php" afterPath="$PROJECT_DIR$/NEW/components/ad_head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/components/ad_messagebox.php" afterPath="$PROJECT_DIR$/NEW/components/ad_messagebox.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/components/ad_sidebar.php" afterPath="$PROJECT_DIR$/NEW/components/ad_sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/compose.php" afterPath="$PROJECT_DIR$/NEW/compose.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/home.php" afterPath="$PROJECT_DIR$/NEW/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/index.php" afterPath="$PROJECT_DIR$/NEW/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/post.php" afterPath="$PROJECT_DIR$/NEW/post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/published.php" afterPath="$PROJECT_DIR$/NEW/published.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/coursesettings.php" afterPath="$PROJECT_DIR$/NEW/coursesettings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/edituser.php" afterPath="$PROJECT_DIR$/NEW/edituser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/js/actions.js" afterPath="$PROJECT_DIR$/NEW/js/actions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEW/js/plugins.js" afterPath="$PROJECT_DIR$/NEW/js/plugins.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/admin.php" afterPath="$PROJECT_DIR$/core/function/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/getsubsdata.php" afterPath="$PROJECT_DIR$/cscco/getsubsdata.php" />
     </list>
     <ignored path="mvc.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -516,12 +28,245 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - csc@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - csc@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="subjects" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="mvc" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="coursesettings.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NEW/coursesettings.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="186" column="125" selection-start-line="186" selection-start-column="107" selection-end-line="186" selection-end-column="125" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getsubsdata.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NEW/getsubsdata.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="582">
+              <caret line="95" column="68" selection-start-line="95" selection-start-column="68" selection-end-line="95" selection-end-column="68" />
+              <folding>
+                <marker date="1483732725320" expanded="true" signature="285:319" ph="SELECT * fro... subjects" />
+                <marker date="1483732725320" expanded="true" signature="285:323" ph="SELECT * fro... subjects" />
+                <marker date="1483732725320" expanded="true" signature="449:2904" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="503:2904" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="555:677" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="747:2031" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="747:2904" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="801:1359" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="966:1324" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="1028:1230" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="1028:1231" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="1028:1284" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="1414:1990" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="1414:2031" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="1579:1955" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="1641:1854" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="1641:1855" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="1641:1862" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="1641:1915" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="2044:2604" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="2210:2569" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="2272:2529" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="2659:2904" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="2831:2904" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="3194:3340" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="3306:3340" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="3711:3830" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="3711:4264" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="3830:4257" ph="..." />
+                <marker date="1483732725320" expanded="true" signature="4299:4425" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/init.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/db/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-243">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1479194078000" expanded="true" signature="355:400" ph="SELECT ${$fi... adminusers" />
+                <marker date="1479194078000" expanded="true" signature="812:848" ph="SELECT ${$fi... staff" />
+                <marker date="1479194078000" expanded="true" signature="1255:1298" ph="SELECT ${$fi... student" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/base.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cscco.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/function/cscco.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="50" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <folding>
+                <marker date="1479543606000" expanded="true" signature="46:96" ph="SELECT * FRO... posts" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/function/admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+              <folding>
+                <marker date="1483730224496" expanded="true" signature="160:209" ph="SELECT id FR... adminusers" />
+                <marker date="1483730224496" expanded="true" signature="455:526" ph="SELECT * FRO... adminusers" />
+                <marker date="1483730224496" expanded="true" signature="758:781" ph="SELECT email... staff" />
+                <marker date="1483730224496" expanded="true" signature="1086:1138" ph="SELECT id,na... adminusers" />
+                <marker date="1483730224496" expanded="true" signature="1413:1454" ph="INSERT INTO posts... " />
+                <marker date="1483730224496" expanded="true" signature="1614:1771" ph="SELECT posts... posts" />
+                <marker date="1483730224496" expanded="true" signature="1861:1880" ph="SELECT * FRO... staff" />
+                <marker date="1483730224496" expanded="true" signature="2153:2194" ph="INSERT INTO staff... " />
+                <marker date="1483730224496" expanded="true" signature="2647:2706" ph="UPDATE admin... " />
+                <marker date="1483730224496" expanded="true" signature="2875:2907" ph="SELECT * FRO... posts" />
+                <marker date="1483730224496" expanded="true" signature="3274:3322" ph="SELECT ${$fi... activity" />
+                <marker date="1483730224496" expanded="true" signature="3670:3707" ph="SELECT * FRO... members" />
+                <marker date="1483730224496" expanded="true" signature="4369:4410" ph="INSERT INTO posts... " />
+                <marker date="1483730224496" expanded="true" signature="4541:4560" ph="SELECT * FRO... staff" />
+                <marker date="1483730224496" expanded="true" signature="4667:4740" ph="SELECT * FRO... chat" />
+                <marker date="1483730224496" expanded="true" signature="4851:4882" ph="SELECT * FRO... staff" />
+                <marker date="1483730224496" expanded="true" signature="5027:5108" ph="INSERT INTO chat... " />
+                <marker date="1483730224496" expanded="true" signature="5219:5261" ph="SELECT * FRO... student" />
+                <marker date="1483730224496" expanded="true" signature="5392:5414" ph="SELECT * FRO... subjects" />
+                <marker date="1483730224496" expanded="true" signature="5526:5579" ph="SELECT * FRO... staff" />
+                <marker date="1483730224496" expanded="true" signature="5688:5727" ph="SELECT activ... subjects" />
+                <marker date="1483730224496" expanded="true" signature="5688:5728" ph="SELECT activ... subjects" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editcourse.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cscco/editcourse.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="141" column="56" selection-start-line="141" selection-start-column="16" selection-end-line="141" selection-end-column="57" />
+              <folding>
+                <marker date="1480832294000" expanded="true" signature="3233:3357" ph="UPDATE subje... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getsubsdata.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cscco/getsubsdata.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+              <folding>
+                <marker date="1483731120638" expanded="true" signature="285:332" ph="SELECT * fro... subjects" />
+                <marker date="1483731120638" expanded="true" signature="634:1202" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="781:1175" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="835:1144" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="1242:1784" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="1392:1757" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="1446:1726" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="1819:2139" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="1933:2139" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="1965:2139" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="2508:2888" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="2622:2881" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="2656:2870" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="2927:3316" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="3042:3309" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="3076:3298" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="3339:3751" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="3363:3740" ph="..." />
+                <marker date="1483731120638" expanded="true" signature="3449:3729" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/NEW/edituser.php" />
+        <option value="$PROJECT_DIR$/NEW/components/ad_foot.php" />
+        <option value="$PROJECT_DIR$/NEW/backup.php" />
+        <option value="$PROJECT_DIR$/NEW/js/plugins.js" />
+        <option value="$PROJECT_DIR$/NEW/js/actions.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d50a27fb-11ae-4d27-bc7d-fe385265ffe4/console.sql" />
+        <option value="$PROJECT_DIR$/core/function/admin.php" />
+        <option value="$PROJECT_DIR$/NEW/js/course.js" />
+        <option value="$PROJECT_DIR$/cscco/getcoursedata.php" />
+        <option value="$PROJECT_DIR$/cscco/getsubsdata.php" />
+        <option value="$PROJECT_DIR$/NEW/coursesettings.php" />
+        <option value="$PROJECT_DIR$/NEW/getsubsdata.php" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -531,9 +276,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="width" value="1928" />
-    <option name="height" value="1042" />
+    <option name="width" value="1920" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -561,6 +305,16 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -573,30 +327,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="mvc">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="NEW">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -606,6 +336,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/NEW" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -667,34 +403,36 @@
       <updated>1483644741198</updated>
       <workItem from="1483644748768" duration="142000" />
       <workItem from="1483644912517" duration="25000" />
-      <workItem from="1483683262545" duration="701000" />
+      <workItem from="1483683262545" duration="8891000" />
+      <workItem from="1483723074278" duration="7780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="868000" />
+    <option name="totallyTimeSpent" value="16838000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1928" height="1042" extended-state="7" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1920" height="1038" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16542156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16145833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15885417" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962853" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32119206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -711,5 +449,295 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/NEW/js/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/adduser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="178" column="18" selection-start-line="93" selection-start-column="12" selection-end-line="178" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/components/ad_foot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="90" selection-start-line="25" selection-start-column="90" selection-end-line="25" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/js/plugins/tableexport/tableExport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1035">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/js/plugins/tableexport/simple_html_dom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/allusers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="126" column="65" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/backup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="109" column="100" selection-start-line="109" selection-start-column="100" selection-end-line="109" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/js/demo_icons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/js/demo_tables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/js/portlet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/js/plugins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/js/demo_tasks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/js/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="71" column="30" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d50a27fb-11ae-4d27-bc7d-fe385265ffe4/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/edituser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/draft.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/js/course.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cscco/getsubsdata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding>
+            <marker date="1483731120638" expanded="true" signature="285:332" ph="SELECT * fro... subjects" />
+            <marker date="1483731120638" expanded="true" signature="634:1202" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="781:1175" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="835:1144" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="1242:1784" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="1392:1757" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="1446:1726" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="1819:2139" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="1933:2139" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="1965:2139" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="2508:2888" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="2622:2881" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="2656:2870" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="2927:3316" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="3042:3309" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="3076:3298" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="3339:3751" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="3363:3740" ph="..." />
+            <marker date="1483731120638" expanded="true" signature="3449:3729" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cscco/editcourse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="141" column="56" selection-start-line="141" selection-start-column="16" selection-end-line="141" selection-end-column="57" />
+          <folding>
+            <marker date="1480832294000" expanded="true" signature="3233:3357" ph="UPDATE subje... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/db/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1479194078000" expanded="true" signature="355:400" ph="SELECT ${$fi... adminusers" />
+            <marker date="1479194078000" expanded="true" signature="812:848" ph="SELECT ${$fi... staff" />
+            <marker date="1479194078000" expanded="true" signature="1255:1298" ph="SELECT ${$fi... student" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/function/cscco.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="50" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <marker date="1479543606000" expanded="true" signature="46:96" ph="SELECT * FRO... posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/function/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+          <folding>
+            <marker date="1483730224496" expanded="true" signature="160:209" ph="SELECT id FR... adminusers" />
+            <marker date="1483730224496" expanded="true" signature="455:526" ph="SELECT * FRO... adminusers" />
+            <marker date="1483730224496" expanded="true" signature="758:781" ph="SELECT email... staff" />
+            <marker date="1483730224496" expanded="true" signature="1086:1138" ph="SELECT id,na... adminusers" />
+            <marker date="1483730224496" expanded="true" signature="1413:1454" ph="INSERT INTO posts... " />
+            <marker date="1483730224496" expanded="true" signature="1614:1771" ph="SELECT posts... posts" />
+            <marker date="1483730224496" expanded="true" signature="1861:1880" ph="SELECT * FRO... staff" />
+            <marker date="1483730224496" expanded="true" signature="2153:2194" ph="INSERT INTO staff... " />
+            <marker date="1483730224496" expanded="true" signature="2647:2706" ph="UPDATE admin... " />
+            <marker date="1483730224496" expanded="true" signature="2875:2907" ph="SELECT * FRO... posts" />
+            <marker date="1483730224496" expanded="true" signature="3274:3322" ph="SELECT ${$fi... activity" />
+            <marker date="1483730224496" expanded="true" signature="3670:3707" ph="SELECT * FRO... members" />
+            <marker date="1483730224496" expanded="true" signature="4369:4410" ph="INSERT INTO posts... " />
+            <marker date="1483730224496" expanded="true" signature="4541:4560" ph="SELECT * FRO... staff" />
+            <marker date="1483730224496" expanded="true" signature="4667:4740" ph="SELECT * FRO... chat" />
+            <marker date="1483730224496" expanded="true" signature="4851:4882" ph="SELECT * FRO... staff" />
+            <marker date="1483730224496" expanded="true" signature="5027:5108" ph="INSERT INTO chat... " />
+            <marker date="1483730224496" expanded="true" signature="5219:5261" ph="SELECT * FRO... student" />
+            <marker date="1483730224496" expanded="true" signature="5392:5414" ph="SELECT * FRO... subjects" />
+            <marker date="1483730224496" expanded="true" signature="5526:5579" ph="SELECT * FRO... staff" />
+            <marker date="1483730224496" expanded="true" signature="5688:5727" ph="SELECT activ... subjects" />
+            <marker date="1483730224496" expanded="true" signature="5688:5728" ph="SELECT activ... subjects" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/coursesettings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="186" column="125" selection-start-line="186" selection-start-column="107" selection-end-line="186" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEW/getsubsdata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="95" column="68" selection-start-line="95" selection-start-column="68" selection-end-line="95" selection-end-column="68" />
+          <folding>
+            <marker date="1483732725320" expanded="true" signature="285:319" ph="SELECT * fro... subjects" />
+            <marker date="1483732725320" expanded="true" signature="285:323" ph="SELECT * fro... subjects" />
+            <marker date="1483732725320" expanded="true" signature="449:2904" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="503:2904" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="555:677" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="747:2031" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="747:2904" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="801:1359" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="966:1324" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="1028:1230" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="1028:1231" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="1028:1284" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="1414:1990" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="1414:2031" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="1579:1955" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="1641:1854" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="1641:1855" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="1641:1862" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="1641:1915" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="2044:2604" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="2210:2569" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="2272:2529" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="2659:2904" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="2831:2904" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="3194:3340" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="3306:3340" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="3711:3830" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="3711:4264" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="3830:4257" ph="..." />
+            <marker date="1483732725320" expanded="true" signature="4299:4425" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

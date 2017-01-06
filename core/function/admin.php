@@ -205,3 +205,31 @@ function getRegisteredStudents($con){
     return $x;
 }
 
+function getsubjects($con){
+
+    $sql = "SELECT * FROM subjects";
+    $res = mysqli_query($con, $sql);
+    return $res;
+
+
+}
+
+function getcoursecodinators($con){
+
+
+    $sql = "SELECT * FROM staff WHERE role = 'Course Coordinator'";
+    $res = mysqli_query($con, $sql);
+    return $res;
+}
+
+function getcurrentstatus($id,$con){
+    $sql = "SELECT active FROM subjects WHERE id = $id";
+    $res = mysqli_query($con, $sql);
+    while ( $data = $res->fetch_array()){
+
+        $result = $data[0];
+
+    }
+    return $result;
+
+}

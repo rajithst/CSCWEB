@@ -91,7 +91,7 @@
     <div class="page-content-wrap">
         <div class="row">
 
-        <div class="col-md-8">
+        <div class="col-md-6">
 
             <!-- CONTACTS WITH CONTROLS -->
             <div class="panel panel-default">
@@ -117,34 +117,94 @@
             <!-- END CONTACTS WITH CONTROLS -->
 
         </div>
-            <div class="col-md-4">
-
-                <div class="panel panel-default">
-                    <div class="panel-body profile" style="background: url('assets/images/gallery/music-4.jpg') center center no-repeat;">
-                        <div class="profile-image">
-                            <img src="assets/images/users/user3.jpg" alt="Nadia Ali"/>
-                        </div>
-                        <div class="profile-data">
-                            <div class="profile-data-name">Nadia Ali</div>
-                            <div class="profile-data-title" style="color: #FFF;">Singer-Songwriter</div>
-                        </div>
-                        <div class="profile-controls">
-                            <a href="#" class="profile-control-left twitter"><span class="fa fa-twitter"></span></a>
-                            <a href="#" class="profile-control-right facebook"><span class="fa fa-facebook"></span></a>
-                        </div>
-                    </div>
-
-                    <div class="panel-body list-group border-bottom">
-                        <a href="#" class="list-group-item active"><span class="fa fa-bar-chart-o"></span> First Name <input type="text" class="form-control"/></a>
-                        <a href="#" class="list-group-item active"><span class="fa fa-bar-chart-o"></span> Last Name <input type="text" class="form-control"/></a>
-                        <a href="#" class="list-group-item active"><span class="fa fa-bar-chart-o"></span> Email  <input type="text" class="form-control"/></a>
-                        <a href="#" class="list-group-item active"><span class="fa fa-bar-chart-o"></span> Telephone  <input type="text" class="form-control"/></a>
-                        <a href="#" class="list-group-item active"><span class="fa fa-bar-chart-o"></span> Address  <input type="text" class="form-control"/></a>
-                        <br>
-                        <button class="btn btn-info btn-block">Update</button>
-                    </div>
+            <div class="col-md-6">
+                <div class="panel-heading ui-draggable-handle">
+                    <h3 class="panel-title">Edit User Details Here</h3>
                 </div>
-            </div>
+                    <form class="form-horizontal">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+
+                                <div class="form-group">
+                                    <label class="col-md-3 col-xs-12 control-label">First Name</label>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span class="fa fa-user"></span></span>
+                                            <input type="text" class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 col-xs-12 control-label">Last Name</label>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span class="fa fa-user"></span></span>
+                                            <input type="text" class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="col-md-3 col-xs-12 control-label">E-mail</label>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span class="fa fa-envelope"></span></span>
+                                            <input type="text" class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="col-md-3 col-xs-12 control-label">Telephone</label>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span class="fa fa-phone"></span></span>
+                                            <input type="text" class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 col-xs-12 control-label">Address</label>
+                                    <div class="col-md-6 col-xs-12">
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="col-md-3 col-xs-12 control-label">Select Role</label>
+                                    <div class="col-md-6 col-xs-12">
+                                        <select class="form-control select">
+                                            <option value="CSC Staff">CSC Staff</option>
+                                            <option value="CSC Cordinator">CSC Coordinator</option>
+                                            <option value="Course Coordinator">Course Coordinator</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 col-xs-12 control-label">Set Default Password </label>
+                                    <div class="col-md-6 col-xs-12">
+                                        <label class="check"><input type="checkbox" class="icheckbox" checked="checked"/>Password (csc)</label>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="panel-footer">
+                                <button class="btn btn-default">Clear Form</button>
+                                <button class="btn btn-primary pull-right">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
 
     </div>
     <!-- PAGE CONTENT WRAPPER -->
