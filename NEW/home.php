@@ -1,3 +1,5 @@
+<?php include 'components/admust.php' ?>
+
 <?php include 'components/ad_head.php' ?>
 
 
@@ -7,6 +9,64 @@
             
             <!-- START PAGE SIDEBAR -->
             <?php include "components/ad_sidebar.php";?>
+            <li class="xn-title">Menu</li>
+            <li class="active">
+                <a href="home.php"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
+            </li>
+
+            <li class="">
+                <a href="calander.php"><span class="fa fa-desktop"></span> <span class="xn-text">Calander</span></a>
+            </li>
+
+            <li class="xn-openable">
+                <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Posts</span></a>
+                <ul>
+                    <li><a href="compose.php"><span class="fa fa-image"></span> New Post</a></li>
+                    <li><a href="published.php"><span class="fa fa-user"></span> Published</a></li>
+                    <li><a href="draft.php"><span class="fa fa-users"></span> Draft</a></li>
+
+                </ul>
+            </li>
+            <li class="xn-openable">
+                <a href="#"><span class="fa fa-envelope"></span> Mailbox</a>
+                <ul>
+                    <li><a href="inbox.php"><span class="fa fa-inbox"></span> Inbox</a></li>
+                    <li><a href="pages-mailbox-message.html"><span class="fa fa-file-text"></span> Message</a></li>
+                    <li><a href="compose.php"><span class="fa fa-pencil"></span> Compose</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="chat.php"><span class="fa fa-comments"></span> Messages</a></li>
+
+            <li class="xn-openable">
+                <a href="#"><span class="fa fa-user"></span> <span class="xn-text">Users</span></a>
+                <ul>
+                    <li><a href="allusers.php"><span class="fa fa-heart"></span> All Users</a></li>
+                    <li><a href="adduser.php"><span class="fa fa-cogs"></span> Add User</a></li>
+                    <li><a href="edituser.php"><span class="fa fa-square-o"></span> Edit User</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="backup.php"><span class="fa fa-map-marker"></span> <span class="xn-text">Data Backups</span></a>
+            </li>
+
+            <li>
+                <a href="coursesettings.php"><span class="fa fa-map-marker"></span> <span class="xn-text">Course Settings</span></a>
+            </li>
+
+            <li class="xn-openable">
+                <a href=""><span class="fa fa-user"></span> <span class="xn-text">System Settings</span></a>
+                <ul>
+                    <li><a href="profilesettings.php"><span class="fa fa-heart"></span> Profile Setings</a></li>
+                    <li><a href="generalsettings.php"><span class="fa fa-cogs"></span> General Settings</a></li>
+
+                </ul>
+            </li>
+
+            </ul>
+            <!-- END X-NAVIGATION -->
+        </div>
             <!-- END PAGE SIDEBAR -->
             
             <!-- PAGE CONTENT -->
@@ -68,9 +128,13 @@
                                     <span class="fa fa-user"></span>
                                 </div>
                                 <div class="widget-data">
-                                    <div class="widget-int num-count">375</div>
-                                    <div class="widget-title">Registred users</div>
-                                    <div class="widget-subtitle">On your website</div>
+                                    <?php
+                                    $students = getRegisteredStudents($con); ?>
+
+
+                                    <div class="widget-int num-count"><?php echo $students; ?></div>
+                                    <div class="widget-title">Registred Students</div>
+                                    <div class="widget-subtitle">On CSC</div>
                                 </div>
 
                             </div>                            
@@ -159,20 +223,9 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <div class="panel-title-box">
-                                        <h3>Projects</h3>
-                                        <span>Projects activity</span>
-                                    </div>                                    
-                                    <ul class="panel-controls" style="margin-top: 2px;">
-                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
-                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>                                        
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
-                                                <li><a href="#" class="panel-remove"><span class="fa fa-times"></span> Remove</a></li>
-                                            </ul>                                        
-                                        </li>                                        
-                                    </ul>
+                                        <h3>Courses</h3>
+                                        <span>Ongoing Courses</span>
+                                    </div>
                                 </div>
                                 <div class="panel-body panel-body-table">
                                     
@@ -180,9 +233,9 @@
                                         <table class="table table-bordered table-striped">
                                             <thead>
                                                 <tr>
-                                                    <th width="50%">Project</th>
+                                                    <th width="50%">Course</th>
                                                     <th width="20%">Status</th>
-                                                    <th width="30%">Activity</th>
+                                                    <th width="30%">Days</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -356,6 +409,4 @@
     <!-- START SCRIPTS -->
         <!-- START PLUGINS -->
         <?php include 'components/ad_foot.php'; ?>
-
-
 

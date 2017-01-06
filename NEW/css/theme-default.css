@@ -5,12 +5,10 @@
 @import "bootstrap/bootstrap.min.css";
 @import "fontawesome/font-awesome.min.css";
 @import "summernote/summernote.css";
-@import "codemirror/codemirror.css";
-@import "nvd3/nv.d3.css";
+
 @import "mcustomscrollbar/jquery.mCustomScrollbar.css";
 @import "fullcalendar/fullcalendar.css";
-@import "blueimp/blueimp-gallery.min.css";
-@import "rickshaw/rickshaw.css";
+
 @import "dropzone/dropzone.css";
 @import "animate/animate.min.css";
 
@@ -43,7 +41,7 @@ body {
   min-height: 100%;
   padding: 0px;
   margin: 0px;
-  background-color:#f0f0f0;
+  background: #f5f5f5 url('../img/bg.png') left top repeat;
   position: relative;
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
@@ -3968,7 +3966,7 @@ td.dataTables_empty {
   color: #FFF;
 }
 .login-container.lightmode {
-  background-color:black;
+  background: url("../img/backgrounds/wall_1.jpg") left top no-repeat;
 }
 .login-container.lightmode .login-box .login-body {
   background: rgba(255, 255, 255, 0.2);

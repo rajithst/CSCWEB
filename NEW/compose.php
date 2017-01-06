@@ -1,3 +1,4 @@
+<?php include 'components/admust.php' ?>
 <?php include 'components/ad_head.php' ?>
 <body>
 <!-- START PAGE CONTAINER -->
@@ -7,7 +8,64 @@
     <!-- START PAGE SIDEBAR -->
     <?php include "components/ad_sidebar.php";?>
     <!-- END PAGE SIDEBAR -->
-            
+    <li class="xn-title">Menu</li>
+    <li class="">
+        <a href="home.php"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
+    </li>
+
+    <li class="">
+        <a href="calander.php"><span class="fa fa-desktop"></span> <span class="xn-text">Calander</span></a>
+    </li>
+
+    <li class="xn-openable ">
+        <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Posts</span></a>
+        <ul>
+            <li class=""><a href="post.php"><span class="fa fa-image"></span> New Post</a></li>
+            <li><a href="published.php"><span class="fa fa-user"></span> Published</a></li>
+            <li><a href="draft.php"><span class="fa fa-users"></span> Draft</a></li>
+
+        </ul>
+    </li>
+    <li class="xn-openable active ">
+        <a href="#"><span class="fa fa-envelope"></span> Mailbox</a>
+        <ul>
+            <li><a href="inbox.php"><span class="fa fa-inbox"></span> Inbox</a></li>
+            <li><a href="pages-mailbox-message.html"><span class="fa fa-file-text"></span> Message</a></li>
+            <li class="active"><a href="compose.php"><span class="fa fa-pencil"></span> Compose</a></li>
+        </ul>
+    </li>
+    <li class=""><a href="chat.php"><span class="fa fa-comments"></span> Messages</a></li>
+
+    <li class="xn-openable">
+        <a href="#"><span class="fa fa-user"></span> <span class="xn-text">Users</span></a>
+        <ul>
+            <li><a href="allusers.php"><span class="fa fa-heart"></span> All Users</a></li>
+            <li><a href="adduser.php"><span class="fa fa-cogs"></span> Add User</a></li>
+            <li><a href="edituser.php"><span class="fa fa-square-o"></span> Edit User</a></li>
+
+        </ul>
+    </li>
+
+    <li>
+        <a href="backup.php"><span class="fa fa-map-marker"></span> <span class="xn-text">Data Backups</span></a>
+    </li>
+
+    <li>
+        <a href="coursesettings.php"><span class="fa fa-map-marker"></span> <span class="xn-text">Course Settings</span></a>
+    </li>
+
+    <li class="xn-openable">
+        <a href=""><span class="fa fa-user"></span> <span class="xn-text">System Settings</span></a>
+        <ul>
+            <li><a href="profilesettings.php"><span class="fa fa-heart"></span> Profile Setings</a></li>
+            <li><a href="generalsettings.php"><span class="fa fa-cogs"></span> General Settings</a></li>
+
+        </ul>
+    </li>
+
+    </ul>
+    <!-- END X-NAVIGATION -->
+</div>
             <!-- PAGE CONTENT -->
             <div class="page-content">
                 

@@ -2,9 +2,7 @@
 
 $con = mysqli_connect('localhost', 'root', 'rajith',  'csc') or die(mysqli_connect_error());
 
-function user_id_from_email($email) {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-
+function user_id_from_email($con,$email) {
 	$sql        = "SELECT id FROM adminusers  WHERE email = '$email'";
 	$query      = mysqli_query($con, $sql);
 	$fetcharray = mysqli_fetch_array($query);
@@ -12,10 +10,8 @@ function user_id_from_email($email) {
 
 }
 
-function login( $email, $password) {
-
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-	$user_id  = user_id_from_email($email);
+function login( $con,$email, $password) {
+	$user_id  = user_id_from_email($con,$email);
 	$password = md5($password);
 	$sql      = "SELECT * FROM adminusers WHERE email= '$email' AND password='$password'";
 	$query    = mysqli_query($con, $sql);
@@ -199,5 +195,13 @@ function insertMessage($con,$id,$adid,$message){
     $sql = "INSERT INTO chat(sent,rcvd,sentmsg,time) VALUE ('$adid','$id','$message','$date')";
     $res = mysqli_query($con, $sql);
     return $res;
+}
+
+function getRegisteredStudents($con){
+
+    $sql = "SELECT * FROM student WHERE registered = 1";
+    $res = mysqli_query($con, $sql);
+    $x = mysqli_num_rows($res);
+    return $x;
 }
 

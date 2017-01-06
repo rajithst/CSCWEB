@@ -1,3 +1,4 @@
+<?php require '../core/function/admin.php'; ?>
 <!DOCTYPE html>
 <html lang="en" class="body-full-height">
     <head>        
@@ -15,6 +16,32 @@
         <!-- EOF CSS INCLUDE -->                                     
     </head>
     <body>
+
+
+
+    >
+    <?php
+
+    if(empty($_POST) === false and isset($_POST)=== true){
+
+        $email    = $_POST['email'];
+        $password = $_POST['password'];
+
+        $login = login($con,$email,$password);
+        if($login === false){  ?>
+            <script>swal("Access Denied!", "Your Email and Password combination is incorrect!!")</script>
+            <?php
+
+        }else{
+
+            session_start();
+            $_SESSION['id']= $login;
+            header('Location:home.php');
+            exit();
+        }
+    }
+
+    ?>
         
         <div class="login-container lightmode">
         
@@ -22,15 +49,15 @@
                 <div class="login-logo"></div>
                 <div class="login-body">
                     <div class="login-title"><strong>Log In</strong> to your account</div>
-                    <form action="home.php" class="form-horizontal" method="post">
+                    <form action="" class="form-horizontal" method="post">
                     <div class="form-group">
                         <div class="col-md-12">
-                            <input type="text" class="form-control" placeholder="E-mail"/>
+                            <input type="text" class="form-control" placeholder="E-mail" name="email"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-12">
-                            <input type="password" class="form-control" placeholder="Password"/>
+                            <input type="password" class="form-control" placeholder="Password" name="password"/>
                         </div>
                     </div>
                     <div class="form-group">
