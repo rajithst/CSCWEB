@@ -17,15 +17,12 @@
     </head>
     <body>
 
-
-
-    >
     <?php
 
     if(empty($_POST) === false and isset($_POST)=== true){
 
-        $email    = $_POST['email'];
-        $password = $_POST['password'];
+        $email    = filter_var($_POST['email'],FILTER_SANITIZE_EMAIL,FILTER_VALIDATE_EMAIL);
+        $password = mysqli_real_escape_string($con,$_POST['password']);
 
         $login = login($con,$email,$password);
         if($login === false){  ?>
@@ -49,7 +46,7 @@
                 <div class="login-logo"></div>
                 <div class="login-body">
                     <div class="login-title"><strong>Log In</strong> to your account</div>
-                    <form action="" class="form-horizontal" method="post">
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" class="form-horizontal" method="post">
                     <div class="form-group">
                         <div class="col-md-12">
                             <input type="text" class="form-control" placeholder="E-mail" name="email"/>

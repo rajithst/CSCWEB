@@ -21,7 +21,7 @@
             <li class="xn-openable">
                 <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Posts</span></a>
                 <ul>
-                    <li><a href="compose.php"><span class="fa fa-image"></span> New Post</a></li>
+                    <li><a href="post.php"><span class="fa fa-image"></span> New Post</a></li>
                     <li><a href="published.php"><span class="fa fa-user"></span> Published</a></li>
                     <li><a href="draft.php"><span class="fa fa-users"></span> Draft</a></li>
 

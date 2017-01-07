@@ -48,8 +48,8 @@ function adminusers( $id) {
 
 }
 
-function postdata($postdata) {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+function postdata($con,$postdata) {
+
 	$fields = '`'.implode('`,`', array_keys($postdata)).'`';
 	$data   = '\''.implode('\', \'', $postdata).'\' ';
 

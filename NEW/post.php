@@ -114,12 +114,12 @@
             <!-- START CONTENT FRAME BODY -->
             <div class="content-frame-body">
                 <div class="block">
-                    <form role="form" class="form-horizontal">
+                    <form role="form" class="form-horizontal" action="" method="post">
                         <div class="form-group">
                             <label class="col-md-2 control-label">Student:</label>
                             <div class="col-md-10">
                                 <label class="switch">
-                                    <input type="checkbox" checked value="0"/>
+                                    <input type="checkbox" name="user[]" id="1"  value="1"/>
                                     <span></span>
                                 </label>
                             </div>
@@ -130,7 +130,7 @@
                             <label class="col-md-2 control-label">CSC Coordinator:</label>
                             <div class="col-md-10">
                                 <label class="switch">
-                                    <input type="checkbox" checked value="0"/>
+                                    <input type="checkbox" name="user[]"  value="2" id="2"/>
                                     <span></span>
                                 </label>
                             </div>
@@ -140,27 +140,21 @@
                             <label class="col-md-2 control-label">Course Coordinator:</label>
                             <div class="col-md-10">
                                 <label class="switch">
-                                    <input type="checkbox" checked value="0"/>
+                                    <input type="checkbox" name="user[]"  value="3" id="3"/>
                                     <span></span>
                                 </label>
                             </div>
                         </div>
 
-                        <div class="form-group hidden" id="mail-cc">
-                            <label class="col-md-2 control-label">Cc:</label>
-                            <div class="col-md-10">
-                                <input type="text" class="tagsinput" value="" data-placeholder="add email"/>
-                            </div>
-                        </div>
                         <div class="form-group">
                             <label class="col-md-2 control-label">Subject:</label>
                             <div class="col-md-10">
-                                <input type="text" class="form-control" value="Re: Lorem ipsum dolor sit amet"/>
+                                <input type="text" class="form-control" name="subject" required value=""/>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-12">
-                                    <textarea class="summernote_email" placeholder="message herr">
+                                    <textarea class="summernote_email" required name="content">
                                     </textarea>
                             </div>
                         </div>
@@ -170,7 +164,7 @@
                                     <button class="btn btn-default"><span class="fa fa-trash-o"></span> Delete Draft</button>
                                 </div>
                                 <div class="pull-right">
-                                    <button class="btn btn-danger"><span class="fa fa-envelope"></span> Send Message</button>
+                                    <button class="btn btn-danger" type="submit" name="postdata"><span class="fa fa-envelope"></span> Send Message</button>
                                 </div>
                             </div>
                         </div>
@@ -178,21 +172,121 @@
                 </div>
 
             </div>
-            <!-- END CONTENT FRAME BODY -->
+
+
+
+            <?php
+
+            $id = $user_data['id'];
+            if(isset($_POST['postdata'])) {
+
+                $stu = 0;
+                $couc = 0;
+                $csc = 0;
+                if (!empty($_POST["user"])) {
+                    foreach ($_POST["user"] as $user) {
+                        if ($user == 1) {
+                            $stu = 1;
+                        } else if ($user == 2) {
+                            $couc = 1;
+                        } else if ($user == 3) {
+                            $csc = 1;
+                        }
+
+
+                    }
+
+
+                }
+
+                $date = date("Y/m/d");
+                $postdata = array(
+
+
+                    'subject' => filter_var($_POST['subject'],FILTER_SANITIZE_STRING),
+                    'text' => htmlspecialchars($_POST['content']),
+                    'student' => filter_var($stu,FILTER_VALIDATE_INT),
+                    'coursec' => filter_var($couc,FILTER_VALIDATE_INT),
+                    'cscc' => filter_var($csc,FILTER_VALIDATE_INT),
+                    'adminid' => filter_var($id,FILTER_VALIDATE_INT),
+                    'type' => 1,
+                    'date' => $date
+                );
+
+                $confim = postdata($con,$postdata);
+
+                if ($confirm) {
+
+                    ?>
+
+                    <script>swal("Posted!", "Your have benn published a post successfully")</script>
+                    <?php
+
+                }
+                exit();
+
+            }
+
+
+            if(isset($_POST['draft']) === true) {
+
+                if (!empty($_POST["user"])) {
+                    foreach ($_POST["user"] as $user) {
+                        if ($user == 1) {
+                            $stu = 1;
+                        } else if ($user == 2) {
+                            $couc = 1;
+                        } else if ($user == 3) {
+                            $csc = 1;
+                        }
+
+
+                    }
+
+
+                }
+
+                $date = date("Y/m/d");
+                $id = $user_data['id'];
+                $postdata = array(
+
+
+                    'subject' => $_POST['subject'],
+                    'text' => $_POST['content'],
+                    'student' => $stu,
+                    'coursec' => $couc,
+                    'cscc' => $csc,
+                    'adminid' => $id,
+                    'type' => 1,
+                    'date' => $date
+                );
+
+                $confim = putdraft($postdata);
+                if ($confirm) {
+
+                    ?>
+
+                    <script>swal("Drafted!", "Your have benn Draft a post")</script>
+                    <?php
+                }
+                exit();
+
+
+            }
+            ?>
+
+
+
+
+
+
         </div>
-        <!-- END CONTENT FRAME -->
-
     </div>
-    <!-- END PAGE CONTENT -->
+
 </div>
-<!-- END PAGE CONTAINER -->
 
-<!-- MESSAGE BOX-->
 <?php include "components/ad_messagebox.php";?>
-<!-- END MESSAGE BOX-->
 
-
-<!-- START SCRIPTS -->
 <?php include 'components/ad_foot.php'; ?>
 
 
