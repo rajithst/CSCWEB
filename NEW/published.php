@@ -103,32 +103,42 @@
                                     <table class="table datatable">
                                         <thead>
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
+                                                <th style="display: none;">id</th>
+                                                <th>Published By</th>
+                                                <th>Post Title</th>
+                                                <th>Date</th>
+                                                <th>Category</th>
+                                                <th>Actions</th>
+
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
-                                            </tr>
+                                        <?php
+                                        $result=published($con);
 
-                                            <tr>
-                                                <td>Donna Snider</td>
-                                                <td>Customer Support</td>
-                                                <td>New York</td>
-                                                <td>27</td>
-                                                <td>2011/01/25</td>
-                                                <td>$112,000</td>
-                                            </tr>
+                                        while($row = $result->fetch_assoc()) {
+                                        $adminid =  $row['adminid'];
+                                        $adname = adminusers($con,$adminid);
+                                        $res = mysqli_fetch_array($adname);
+                                        $name = $res[1]; ?>
+
+                                        <tr>
+                                            <td style="display: none;"><?php echo $row['id']; ?></td>
+                                            <td><?php echo $name; ?></td>
+                                            <td><a href="readpost.php?id=<?php echo $row['id']; ?>"<"><?php echo $row['subject']; ?></a></td>
+                                            <td><?php echo $row['date']; ?></td>
+                                            <td><?php
+
+                                                if ($row['student']==1)
+                                                echo "<span class='label label-info label-form'>Student</span>". "  ";
+                                                if ($row['coursec']==1)
+                                                    echo "<span class='label label-info label-form'>Course Coordinator</span>" . "  ";
+                                                if ($row['cscc']==1)
+                                                    echo "<span class='label label-info label-form'>CSC Coordinator</span>";
+                                                ?></td>
+                                            <td><button class="btn btn-danger delete" id="<?php echo $row['id']; ?>">Delete</button> </td>
+                                        </tr>
+                                        <?php } ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -156,7 +166,32 @@
         <!-- START PLUGINS -->
 <?php include 'components/ad_foot.php'; ?>
 
+<script>
 
+    $(document).ready(function () {
+
+        $('button.delete').click(function () {
+
+            var postid = this.id;
+            console.log(postid);
+
+            $.ajax({
+
+                url:"deletepost.php?id="+postid,
+                type:"GET",
+                success:function (data) {
+                    if(data){
+
+                        location.reload();
+                    }
+                }
+
+            })
+
+        });
+
+    });
+</script>
 
 
 

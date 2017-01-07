@@ -77,7 +77,7 @@ require '../components/adminhead.php'; ?>
                                             <div class="row">
                                                 <div class="col-sm-12">
                                                     <div class="card-box table-responsive">
-                                                        <?php $id = $user_data['id']; ?>
+                                                        <?php  ?>
                                                         <table id="datatable-keytable" class="table table-striped">
                                                             <thead>
                                                             <tr>

@@ -3,8 +3,7 @@
 require 'db/database.php';
 
 
-$current_file= explode('/',$_SERVER['SCRIPT_NAME']);
-$current_file=end($current_file);
+
 
 
 

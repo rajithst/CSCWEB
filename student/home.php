@@ -141,7 +141,7 @@ require '../core/function/student.php';
 
                       <div class="alert-message alert-message-notice">
 
-                        <h4><?php echo $row['subject']; ?> </h4>
+                        <h4><?php echo htmlspecialchars_decode($row['subject']); ?> </h4>
                         <span class="badge">Posted By Admin <?php echo $data['name']; ?></span>
                         <div style="width: 6%; margin-left: 90%;margin-top: -3%;height: 70px;">
 
@@ -150,7 +150,7 @@ require '../core/function/student.php';
 
                         <hr>
 
-                        <p><?php echo $row['text']; ?></p>
+                        <p><?php echo htmlspecialchars_decode($row['text']); ?></p>
 
                         <span class="badge" style="float: right;"> on <?php echo $row['date']; ?></span>
 

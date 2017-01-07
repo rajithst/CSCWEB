@@ -1,4 +1,5 @@
-<?php require '../core/function/admin.php'; ?>
+<?php require '../core/base.php';
+require '../core/function/admin.php'; ?>
 <!DOCTYPE html>
 <html lang="en" class="body-full-height">
     <head>        

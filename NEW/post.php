@@ -161,7 +161,7 @@
                         <div class="form-group">
                             <div class="col-md-12">
                                 <div class="pull-left">
-                                    <button class="btn btn-default"><span class="fa fa-trash-o"></span> Delete Draft</button>
+                                    <button class="btn btn-default" name="draft"><span class="fa fa-trash-o"></span> Move to Draft</button>
                                 </div>
                                 <div class="pull-right">
                                     <button class="btn btn-danger" type="submit" name="postdata"><span class="fa fa-envelope"></span> Send Message</button>
@@ -230,6 +230,10 @@
 
             if(isset($_POST['draft']) === true) {
 
+                $stu = 0;
+                $couc = 0;
+                $csc = 0;
+
                 if (!empty($_POST["user"])) {
                     foreach ($_POST["user"] as $user) {
                         if ($user == 1) {
@@ -251,17 +255,17 @@
                 $postdata = array(
 
 
-                    'subject' => $_POST['subject'],
-                    'text' => $_POST['content'],
-                    'student' => $stu,
-                    'coursec' => $couc,
-                    'cscc' => $csc,
-                    'adminid' => $id,
-                    'type' => 1,
+                    'subject' => filter_var($_POST['subject'],FILTER_SANITIZE_STRING),
+                    'text' => htmlspecialchars($_POST['content']),
+                    'student' => filter_var($stu,FILTER_VALIDATE_INT),
+                    'coursec' => filter_var($couc,FILTER_VALIDATE_INT),
+                    'cscc' => filter_var($csc,FILTER_VALIDATE_INT),
+                    'adminid' => filter_var($id,FILTER_VALIDATE_INT),
+                    'type' => 0,
                     'date' => $date
                 );
 
-                $confim = putdraft($postdata);
+                $confim = putdraft($con,$postdata);
                 if ($confirm) {
 
                     ?>

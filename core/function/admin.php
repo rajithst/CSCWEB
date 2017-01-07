@@ -1,6 +1,5 @@
 <?php
 
-$con = mysqli_connect('localhost', 'root', 'rajith',  'csc') or die(mysqli_connect_error());
 
 function user_id_from_email($con,$email) {
 	$sql        = "SELECT id FROM adminusers  WHERE email = '$email'";
@@ -23,25 +22,7 @@ function login( $con,$email, $password) {
 
 
 
-
-if (isset($_GET['call'])) {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-	$sql = " SELECT email from staff";
-	$res = mysqli_query($con, $sql);
-
-	if (mysqli_num_rows($res) > 0) {
-
-		while ($row = mysqli_fetch_assoc($res)) {
-
-			echo '<option value="'.$row['email'].'">'.$row['email'].'</option>';
-		}
-
-	}
-
-}
-
-function adminusers( $id) {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+function adminusers( $con,$id) {
 	$sql = "SELECT id,name,role,email FROM adminusers WHERE id =$id";
 	$res = mysqli_query($con, $sql);
 	return $res;
@@ -59,9 +40,9 @@ function postdata($con,$postdata) {
 
 }
 
-function published( $id) {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-	$sql = "SELECT posts.adminid,posts.subject,posts.date,adminusers.name,adminusers.role FROM posts INNER JOIN adminusers WHERE type = 1 AND adminusers.id=posts.adminid";
+function published($con) {
+
+	$sql = "SELECT * FROM posts WHERE type=1";
 	$res = mysqli_query($con, $sql);
 	return $res;
 
@@ -107,57 +88,9 @@ function draftpost() {
 
 }
 
-function activity_data( $id) {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-	$data = array();
-	$id   = (int) $id;
 
-	$get_num  = func_num_args();
-	$get_args = func_get_args();
 
-	if ($get_num > 1) {
-		unset($get_args[0]);
-		$fields = '`'.implode('`,`', $get_args).'`';
-
-		$res  = mysqli_query($con, "SELECT $fields FROM `activity` WHERE `adminid`= $id");
-		$data = mysqli_fetch_assoc($res);
-
-		return $data;
-
-	}
-
-}
-
-function backupdata() {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-	header('Content-Type: text/csv; charset=utf-8');
-
-	header('Content-Disposition: attachment; filename=members.csv');
-
-	$output = "id,first_name,last_name,email,password,role\n";
-	$sql    = 'SELECT * FROM members ORDER BY id ASC';
-	$query  = $con->prepare($sql);
-	$query->execute();
-	$list = $query->fetchAll();
-	foreach ($list as $rs) {
-		$output .= $rs['id'].",".$rs['first_name'].",".$rs['last_name'].",".$rs['email'].",".$rs['password'].",".$rs['role']."\n";
-	}
-	// export the output
-	echo $output;
-	exit;
-
-}
-
-function showtables() {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-	$sql = "SHOW TABLES";
-	$res = $con->query($sql);
-	return $res;
-
-}
-
-function putdraft( $postdata) {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+function putdraft( $con,$postdata) {
 	$fields = '`'.implode('`,`', array_keys($postdata)).'`';
 	$data   = '\''.implode('\', \'', $postdata).'\' ';
 
@@ -231,5 +164,19 @@ function getcurrentstatus($id,$con){
 
     }
     return $result;
+}
+
+function readpost($con,$id){
+
+    $sql = "SELECT * FROM posts WHERE id = $id";
+    $res = mysqli_query($con, $sql);
+    return ($res);
+}
+
+function admindataforposts($con,$result){
+
+    $sql = "SELECT * FROM adminusers WHERE id=$result ";
+    $res = mysqli_query($con, $sql);
+    return $res;
 
 }
