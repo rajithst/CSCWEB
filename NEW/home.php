@@ -240,7 +240,7 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td><strong>Atlant</strong></td>
+                                                    <td><strong>CSC</strong></td>
                                                     <td><span class="label label-danger">Developing</span></td>
                                                     <td>
                                                         <div class="progress progress-small progress-striped active">

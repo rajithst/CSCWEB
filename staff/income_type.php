@@ -28,7 +28,7 @@ include '../components/page_head.php'; ?>
 
 <body background="">
 
-    <div class="container-fluid">
+    <!--<div class="container-fluid">
 
         <div class="col-sm-9 col-md-9">
 
@@ -70,6 +70,12 @@ include '../components/page_head.php'; ?>
     </div>
     </div>
     </div>
+    </div>-->
+	<div class="container">
+
+            <center><h2>Select income type</h2></center>
+            <br><br>
+            <?php include "incomeA.php"; ?>
     </div>
 
 

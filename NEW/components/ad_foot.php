@@ -1,8 +1,8 @@
-<!-- START SCRIPTS -->
-<!-- START PLUGINS -->
+<!-- main scripts -->
 <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/plugins/sw/sweetalert2.min.js"></script>
 <!-- END PLUGINS -->
 
 <!-- START THIS PAGE PLUGINS-->
@@ -18,12 +18,19 @@
 <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-file-input.js"></script>
 <script type="text/javascript" src="js/plugins/moment.min.js"></script>
 <script type="text/javascript" src="js/plugins/datatables/jquery.dataTables.min.js"></script>
+
+<!-- table export plugins -->
+
 <script type="text/javascript" src="js/plugins/tableexport/tableExport.js"></script>
 <script type="text/javascript" src="js/plugins/tableexport/jquery.base64.js"></script>
 <script type="text/javascript" src="js/plugins/tableexport/html2canvas.js"></script>
 <script type="text/javascript" src="js/plugins/tableexport/jspdf/libs/sprintf.js"></script>
 <script type="text/javascript" src="js/plugins/tableexport/jspdf/jspdf.js"></script>
 <script type="text/javascript" src="js/plugins/tableexport/jspdf/libs/base64.js"></script>
+
+<!-- end of tableexport -->
+
+
 <!-- END THIS PAGE PLUGINS-->
 
 <!-- START TEMPLATE -->

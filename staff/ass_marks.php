@@ -55,7 +55,7 @@ include '../components/page_head.php'; ?>
                 <div class="col-md-10">
 
                    <h4><b>Subject : <?php echo $subdata[2]; ?></b></h4>
-					<b>Subject id : </b><?php echo $subid?>
+					<b>Subject id : </b><?php echo $subid; ?>
 					<br>
                     <b> Course Id : </b><?php echo $subdata[1];?>
 					<br>
@@ -85,7 +85,7 @@ include '../components/page_head.php'; ?>
                                 <tr>
                                     <td><?php  echo  $subid; ?></td>
                                     <td><?php  echo  $row['fullname']; ?></td>
-                                    <td><input type="text" placeholder="Enter as a percentage(%)" name="marks[]" id="marks[]" value="<?php $row['fullname']; ?>"?></td>
+                                    <td><input type="text" placeholder="Enter as a percentage(%)" name="marks[]" id="marks[]" value="<?php $row['fullname']; ?>"></td>
                                     
 
                                 </tr>
@@ -133,7 +133,7 @@ include '../components/page_head.php'; ?>
             $res = mysqli_query($con,$sql1);
             $dd = mysqli_fetch_array($res);
             $currentmarks= $dd[0];
-			$newmark = $currentmarks+
+			$newmark = $currentmarks;
             
 			
             $sql = "UPDATE student SET attendance=$new,total_attendance=$n WHERE fullname = '$val'" ;
@@ -149,6 +149,7 @@ include '../components/page_head.php'; ?>
 			
 
         }
+    }
 
         ?>
 

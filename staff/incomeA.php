@@ -58,26 +58,26 @@
 <div class="process">
     <div class="process-row">
         <div class="process-step">
-			 <a href="select_course.php">
-             <button type="button" class="btn btn-info btn-circle" ><i class="fa fa-user fa-3x"></i></button>
-             <p>Attendance</p> </a>
+			 <a href="project_in.php">
+             <button type="button" class="btn btn-info btn-circle" ><i class="fa fa-dollar fa-3x"></i></button>
+             <p>Project income</p> </a>
             </div>
         <div class="process-step">
-			<a href="income_type.php">
-            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-credit-card-alt fa-3x"></i></button>
-            <p>Income</p> </a>
+			<a href="customized_courses_in.php">
+            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-dollar fa-3x"></i></button>
+            <p>Customized course income</p> </a>
+        </div>
+		<div class="process-step">
+			<a href="other_in.php">
+            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-dollar fa-3x"></i></button>
+            <p>Other income</p> </a>
         </div>
 
-        <div class="process-step">
-			<a href="expense_type.php">
-            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-money fa-3x"></i></button>
-            <p>Expense</p></a>
-        </div>
-        <div class="process-step">
-			<a href="mark_type.php">
-            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-star-half-o fa-3x"></i></button>
-            <p>Student marks</p></a>
-        </div>
+        
 
+        <!--<div class="process-step">
+            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-flag fa-3x"></i></button>
+            <p>Edit reports</p>
+        </div>-->
     </div>
 </div>

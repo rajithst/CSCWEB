@@ -125,7 +125,7 @@
                                         <tr>
                                             <td style="display: none;"><?php echo $row['id']; ?></td>
                                             <td><?php echo $name; ?></td>
-                                            <td><a href="readpost.php?id=<?php echo $row['id']; ?>"<"><?php echo $row['subject']; ?></a></td>
+                                            <td><a href="readpost.php?id=<?php echo $row['id']; ?>"><?php echo $row['subject']; ?></a></td>
                                             <td><?php echo $row['date']; ?></td>
                                             <td><?php
 
@@ -169,24 +169,66 @@
 <script>
 
     $(document).ready(function () {
-
+    	var postid;
         $('button.delete').click(function () {
+        	 var postid = this.id;
 
-            var postid = this.id;
-            console.log(postid);
+        	swal({
+        	  title: 'Are you sure?',
+        	  text: "You won't be able to revert this!",
+        	  type: 'warning',
+        	  showCancelButton: true,
+        	  confirmButtonColor: '#3085d6',
+        	  cancelButtonColor: '#d33',
+        	  confirmButtonText: 'Yes, delete it!',
+        	  cancelButtonText: 'No, cancel!',
+        	  confirmButtonClass: 'btn btn-success',
+        	  cancelButtonClass: 'btn btn-danger',
+        	  buttonsStyling: false
+        	}).then(function () {
 
-            $.ajax({
 
-                url:"deletepost.php?id="+postid,
-                type:"GET",
-                success:function (data) {
-                    if(data){
+               
+                console.log(postid);
 
-                        location.reload();
+                $.ajax({
+
+                    url:"deletepost.php?id="+postid,
+                    type:"GET",
+                    success:function (data) {
+                        if(data){
+                        	 swal(
+                               	    'Deleted!',
+                               	    'Your file has been deleted.',
+                               	    'success'
+                               	  )
+                        	setTimeout(
+                        			  function() 
+                        			  {
+                        				 
+                                          location.reload();
+                        			  }, 2000);
+                        	
+                        }
                     }
-                }
 
-            })
+                })
+
+
+            	
+        	  
+        	}, function (dismiss) {
+     
+        	  if (dismiss === 'cancel') {
+        	    swal(
+        	      'Cancelled',
+        	      'Your ipost is safe',
+        	      'error'
+        	    )
+        	  }
+        	})
+
+
 
         });
 

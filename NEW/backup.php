@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 <?php include 'components/admust.php' ?>
 <?php include 'components/ad_head.php' ?>
 
@@ -97,70 +91,22 @@
     <div class="page-content-wrap">
        <div class="row">
 
-           <div class="col-md-8">
+           <div class="col-md-12">
                <div class="panel panel-default">
 
-                   <div class="panel-heading">
-                       <h3 class="panel-title">Current tables</h3>
-                   </div>
-
-                   <div class="panel-body panel-body-table">
-
-                       <div class="table-responsive">
-                           <table class="table table-bordered table-striped table-actions" id="tname">
-                               <thead>
-                               <tr>
-
-                                   <th>Table Name</th>
-                                   <th width="100">status</th>
-                                   <th width="100">Action</th>
-                               </tr>
-                               </thead>
-                               <tbody>
-
-                               <?php
-                               $sql = "SHOW TABLES FROM csc";
-                               $result = mysqli_query($con,$sql);
-                               while ($row = mysqli_fetch_array($result)) { ?>
-
-                               <tr id="trow_1">
-
-                                   <td><strong><?php echo $row[0]; ?></strong></td>
-                                   <td><span class="label label-success">New</span></td>
-                                   <td>
-                                       <button class="btn btn-danger toggle" data-toggle="exportTable"><i class="fa fa-bars"></i> Export Data</button>
-                                       </td>
-
-                               </tr>
-                               <?php } ?>
-
-
-                               </tbody>
-                           </table>
-
-
-
-
-                       </div>
-
-                   </div>
-               </div>
-
-           </div>
-
-           <div class="col-md-4">
-               <div class="panel panel-default">
+        
+     
 
                    <div class="panel-heading">
                        <h3 class="panel-title">Select export Type</h3>
                    </div>
 
-                   <div class="panel-body" id="exportTable" style="display: none;">
+                   <div class="panel-body" id="exportTable" style="display: ;">
                    <div class="row">
                        <div class="col-md-3">
                            <div class="list-group border-bottom">
                                <a href="#" class="list-group-item" onClick ="$('#customers').tableExport({type:'xml',escape:'false'});"><img src='img/icons/xml.png' width="24"/> XML</a>
-                               <a href="#" class="list-group-item" onClick ="$('#customers').tableExport({type:'sql'});"><img src='img/icons/sql.png' width="24"/> SQL</a>
+                               <a href="sqldump.php" class="list-group-item" onClick =""><img src='img/icons/sql.png' width="24"/> SQL</a>
                            </div>
                        </div>
                        <div class="col-md-3">
@@ -183,13 +129,63 @@
                            </div>
                        </div>
                    </div>
+                
                </div>
+
+           </div>
+           
+           
+                  <div class="row">
+
+           <div class="col-md-12">
+               <div class="panel panel-default">
+
+        
+     
+
+                   <div class="panel-heading">
+                       <h3 class="panel-title">Import Data</h3>
+                   </div>
+
+                   <div class="panel-body" id="exportTable" style="display: ;">
+                   <div class="row">
+                       <div class="col-md-3">
+                           <div class="list-group border-bottom">
+                            
+                               <a href="" class="list-group-item" onClick ="event.preventDefault();"><img src='img/icons/sql.png' width="24"/> SQL</a>
+                           </div>
+                       </div>
+                       <div class="col-md-3">
+                           <div class="list-group border-bottom">
+                           
+                   <form action="upload.php" method="post" enctype="multipart/form-data">
+                         <input class="fileinput" name="fileToUpload" id="" style="left: -168.667px; top: 7.39999px;" type="file">
+ 						<input type="submit" value="upload">
+                                          
+                   </form>      
+                   
+                    
+                           </div>
+                       </div>
+                       
+                            <div class="col-md-3">
+                           <div class="list-group border-bottom">
+                           
+                  <div class="alert alert-danger">
+  <strong>Warning!</strong> <br> importing data to current database will overwritten all the tables in the database.this action cannot be reverse!!!
+</div>
+                    
+                           </div>
+                       </div>
+              
+                   </div>
+                
+               </div>
+
+           </div>
+
            </div>
        </div>
-
-
-
-    </div>
     <!-- PAGE CONTENT WRAPPER -->
 </div>
 <!-- END PAGE CONTENT -->
@@ -204,8 +200,5 @@
 <!-- START SCRIPTS -->
 <!-- START PLUGINS -->
 <?php include 'components/ad_foot.php'; ?>
-
-
-
 
 

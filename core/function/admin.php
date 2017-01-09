@@ -36,7 +36,7 @@ function postdata($con,$postdata) {
 
 	$sql = "INSERT INTO posts ($fields) VALUE ($data)";
 	$res = mysqli_query($con, $sql);
-    return $res;
+	return 'true';
 
 }
 

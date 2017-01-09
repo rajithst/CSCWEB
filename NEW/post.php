@@ -214,18 +214,15 @@
                 );
 
                 $confim = postdata($con,$postdata);
-
-                if ($confirm) {
-
+               if ($confim=='true') {
                     ?>
 
-                    <script>swal("Posted!", "Your have benn published a post successfully")</script>
+                  	<script>swal("Posted!", "Your have benn published a post successfully")</script>
                     <?php
 
-                }
-                exit();
-
             }
+            }
+            
 
 
             if(isset($_POST['draft']) === true) {

@@ -14,7 +14,9 @@ require '../core/function/admin.php'; ?>
         
         <!-- CSS INCLUDE -->        
         <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
-        <!-- EOF CSS INCLUDE -->                                     
+        <!-- EOF CSS INCLUDE --> 
+        <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="js/plugins/sw/sweetalert2.min.js"></script>                                    
     </head>
     <body>
 
@@ -84,6 +86,11 @@ require '../core/function/admin.php'; ?>
         </div>
         
     </body>
+    
+
+<script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
+
 </html>
 
 
