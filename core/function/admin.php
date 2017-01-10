@@ -40,6 +40,35 @@ function postdata($con,$postdata) {
 
 }
 
+
+function postdraftedited($con,$update_data,$postid){
+		
+	$update=array();
+	
+	foreach ($update_data as $field => $data) {
+		$update[]= '`' . $field . '` = \'' . $data . '\'';
+	}
+	$sql = "UPDATE posts SET" . implode(' , ',$update) . "WHERE id = $postid";
+	mysqli_query($con,$sql);
+	return 'true';
+	
+}
+
+
+function savedraftedited($con,$postdata,$postid){
+	
+	$update=array();
+	
+	foreach ($update_data as $field => $data) {
+		$update[]= '`' . $field . '` = \'' . $data . '\'';
+	}
+	$sql = "UPDATE posts SET" . implode(' , ',$update) . "WHERE id = $postid";
+	mysqli_query($con,$sql);
+	return 'true';
+	
+	
+}
+
 function published($con) {
 
 	$sql = "SELECT * FROM posts WHERE type=1";
@@ -47,6 +76,57 @@ function published($con) {
 	return $res;
 
 }
+
+function putdraft( $con,$postdata) {
+	$fields = '`'.implode('`,`', array_keys($postdata)).'`';
+	$data   = '\''.implode('\', \'', $postdata).'\' ';
+
+	$sql = "INSERT INTO posts ($fields) VALUE ($data)";
+	
+	$res = mysqli_query($con, $sql);
+	return 'ture';
+
+}
+
+function draftpost($con) {
+	$sql = "SELECT * FROM posts WHERE type=0";
+	$res = $con->query($sql);
+	return $res;
+
+}
+
+
+
+
+
+function getcurrentstatus($id,$con){
+	$sql = "SELECT active FROM subjects WHERE id = $id";
+	$res = mysqli_query($con, $sql);
+	while ( $data = $res->fetch_array()){
+
+		$result = $data[0];
+
+	}
+	return $result;
+}
+
+function readpost($con,$id){
+
+	$sql = "SELECT * FROM posts WHERE id = $id";
+	$res = mysqli_query($con, $sql);
+	return ($res);
+}
+
+function admindataforposts($con,$result){
+
+	$sql = "SELECT * FROM adminusers WHERE id=$result ";
+	$res = mysqli_query($con, $sql);
+	return $res;
+
+}
+
+
+
 
 function allusers($con) {
 	$sql = "SELECT * FROM staff";
@@ -56,13 +136,14 @@ function allusers($con) {
 }
 
 
-function adduser( $postdata) {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+function adduser($con,$postdata) {
+	 
 	$fields = '`'.implode('`,`', array_keys($postdata)).'`';
 	$data   = '\''.implode('\', \'', $postdata).'\' ';
 
 	$sql = "INSERT INTO staff ($fields) VALUE ($data)";
 	mysqli_query($con, $sql);
+	return 'true';
 
 }
 
@@ -80,25 +161,11 @@ function changeimage( $user_id, $file_temp, $file_extn) {
 
 }
 
-function draftpost() {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
-	$sql = "SELECT * FROM posts WHERE type=2";
-	$res = $con->query($sql);
-	return $res;
-
-}
 
 
 
-function putdraft( $con,$postdata) {
-	$fields = '`'.implode('`,`', array_keys($postdata)).'`';
-	$data   = '\''.implode('\', \'', $postdata).'\' ';
 
-	$sql = "INSERT INTO posts ($fields) VALUE ($data)";
 
-	mysqli_query($con, $sql);
-
-}
 
 function getallstaff(){
 	$con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
@@ -155,28 +222,4 @@ function getcoursecodinators($con){
     return $res;
 }
 
-function getcurrentstatus($id,$con){
-    $sql = "SELECT active FROM subjects WHERE id = $id";
-    $res = mysqli_query($con, $sql);
-    while ( $data = $res->fetch_array()){
 
-        $result = $data[0];
-
-    }
-    return $result;
-}
-
-function readpost($con,$id){
-
-    $sql = "SELECT * FROM posts WHERE id = $id";
-    $res = mysqli_query($con, $sql);
-    return ($res);
-}
-
-function admindataforposts($con,$result){
-
-    $sql = "SELECT * FROM adminusers WHERE id=$result ";
-    $res = mysqli_query($con, $sql);
-    return $res;
-
-}

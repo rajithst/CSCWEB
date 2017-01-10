@@ -107,8 +107,8 @@
                         <span class="contacts-title"><?php echo  $row["first_name"] . " ".  $row["last_name"]; ?></span>
                         <p><?php echo $row['role']; ?></p>
                         <div class="list-group-controls">
-                            <button class="btn btn-primary btn-rounded"><span class="fa fa-pencil"></span></button>
-                            <button class="btn btn-primary btn-rounded"><span class="fa fa-minus"></span></button>
+                            <button class="btn btn-warning edit" id="<?php echo $row['id']; ?>"><span class="fa fa-pencil"></span></button>
+                            <button class="btn btn-danger delete" id="<?php echo $row['id']; ?>"><span class="fa fa-minus"></span></button>
                         </div>
                     </a>
                 </div>
@@ -123,14 +123,14 @@
                 </div>
                     <form class="form-horizontal">
                         <div class="panel panel-default">
-                            <div class="panel-body">
+                            <div class="panel-body" id="userdata">
 
                                 <div class="form-group">
                                     <label class="col-md-3 col-xs-12 control-label">First Name</label>
                                     <div class="col-md-6 col-xs-12">
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="fa fa-user"></span></span>
-                                            <input type="text" class="form-control"/>
+                                            <input type="text" class="form-control" readonly/>
                                         </div>
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@
                                     <div class="col-md-6 col-xs-12">
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="fa fa-user"></span></span>
-                                            <input type="text" class="form-control"/>
+                                            <input type="text" class="form-control" readonly/>
                                         </div>
                                     </div>
                                 </div>
@@ -151,7 +151,7 @@
                                     <div class="col-md-6 col-xs-12">
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="fa fa-envelope"></span></span>
-                                            <input type="text" class="form-control"/>
+                                            <input type="text" class="form-control" readonly/>
                                         </div>
                                     </div>
                                 </div>
@@ -162,7 +162,7 @@
                                     <div class="col-md-6 col-xs-12">
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="fa fa-phone"></span></span>
-                                            <input type="text" class="form-control"/>
+                                            <input type="text" class="form-control" readonly/>
                                         </div>
                                     </div>
                                 </div>
@@ -170,7 +170,7 @@
                                 <div class="form-group">
                                     <label class="col-md-3 col-xs-12 control-label">Address</label>
                                     <div class="col-md-6 col-xs-12">
-                                        <textarea class="form-control" rows="5"></textarea>
+                                        <textarea class="form-control" rows="5" readonly> </textarea>
                                     </div>
                                 </div>
 
@@ -178,7 +178,7 @@
                                 <div class="form-group">
                                     <label class="col-md-3 col-xs-12 control-label">Select Role</label>
                                     <div class="col-md-6 col-xs-12">
-                                        <select class="form-control select">
+                                        <select class="form-control select" disabled>
                                             <option value="CSC Staff">CSC Staff</option>
                                             <option value="CSC Cordinator">CSC Coordinator</option>
                                             <option value="Course Coordinator">Course Coordinator</option>
@@ -190,7 +190,7 @@
                                 <div class="form-group">
                                     <label class="col-md-3 col-xs-12 control-label">Set Default Password </label>
                                     <div class="col-md-6 col-xs-12">
-                                        <label class="check"><input type="checkbox" class="icheckbox" checked="checked"/>Password (csc)</label>
+                                        <label class="check"><input type="checkbox" class="icheckbox" disbaled/>Password (csc)</label>
 
                                     </div>
                                 </div>
@@ -199,7 +199,7 @@
                             </div>
                             <div class="panel-footer">
                                 <button class="btn btn-default">Clear Form</button>
-                                <button class="btn btn-primary pull-right">Submit</button>
+                                <button class="btn btn-primary pull-right" disabled>Submit</button>
                             </div>
                         </div>
                     </form>
@@ -223,6 +223,94 @@
 <?php include 'components/ad_foot.php'; ?>
 
 
+<script>
+
+$(document).ready(function () {
+	var postid;
+    $('button.edit').click(function () {
+    	 var postid = this.id;
+
+            $.ajax({
+
+                url:"getuserdata.php?id="+postid,
+                type:"GET",
+                success:function (data) {
+                    if(data){
+
+                        $('div#userdata').html("");
+                        $('div#userdata').html(data);
+                    
+                    	
+                    }
+                }
+
+            })
+
+
+
+    });
+
+
+    $('button.delete').click(function () {
+   	 var postid = this.id;
+
+   	swal({
+   	  title: 'Are you sure?',
+   	  text: "You won't to delete this user",
+   	  type: 'warning',
+   	  showCancelButton: true,
+   	  confirmButtonColor: '#3085d6',
+   	  cancelButtonColor: '#d33',
+   	  confirmButtonText: 'Yes, Delete it!',
+   	  cancelButtonText: 'No, cancel!',
+   	  confirmButtonClass: 'btn btn-success',
+   	  cancelButtonClass: 'btn btn-danger',
+   	  buttonsStyling: false
+   	}).then(function () {
+
+           $.ajax({
+
+               url:"deleteuser.php?id="+postid,
+               type:"GET",
+               success:function (data) {
+                   if(data){
+                   	 swal(
+                          	    'Deleted!',
+                          	    'This user has been removed.',
+                          	    'success'
+                          	  )
+                   	setTimeout(
+                   			  function() 
+                   			  {
+                   				 
+                                     location.reload();
+                   			  }, 2000);
+                   	
+                   }
+               }
+
+           })
+
+
+       	
+   	  
+   	}, function (dismiss) {
+
+   	  if (dismiss === 'cancel') {
+   	    swal(
+   	      'Cancelled',
+   	      'User is not deleted',
+   	      'error'
+   	    )
+   	  }
+   	})
+
+
+
+   });  
+
+});
+</script>
 
 
 

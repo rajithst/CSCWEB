@@ -21,7 +21,7 @@
     <li class="xn-openable active">
         <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Posts</span></a>
         <ul>
-            <li><a href="compose.php"><span class="fa fa-image"></span> New Post</a></li>
+            <li><a href="post.php"><span class="fa fa-image"></span> New Post</a></li>
             <li class=""><a href="published.php"><span class="fa fa-user"></span> Published</a></li>
             <li class="active"><a href="draft.php"><span class="fa fa-users"></span> Draft</a></li>
 
@@ -67,96 +67,237 @@
     </ul>
     <!-- END X-NAVIGATION -->
 </div>
-<!-- PAGE CONTENT -->
-<div class="page-content">
+            <!-- PAGE CONTENT -->
+            <div class="page-content">
 
-    <?php include "components/ad_xnav.php";?>
-    <!-- END X-NAVIGATION VERTICAL -->
+                <?php include "components/ad_xnav.php";?>
+                <!-- END X-NAVIGATION VERTICAL -->                     
+                
+                <!-- START BREADCRUMB -->
+                <ul class="breadcrumb">
+                    <li><a href="#">Home</a></li>                    
+                    <li><a href="#">Posts</a></li>
+                    <li class="active">Dtaft</li>
+                </ul>
+                <!-- END BREADCRUMB -->
 
-    <!-- START BREADCRUMB -->
-    <ul class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Posts</a></li>
-        <li class="active">Draft</li>
-    </ul>
-    <!-- END BREADCRUMB -->
-
-    <!-- PAGE TITLE -->
-    <div class="page-title">
-        <h2><span class="fa fa-arrow-circle-o-left"></span> Draft Posts</h2>
-    </div>
-    <!-- END PAGE TITLE -->
-
-    <!-- PAGE CONTENT WRAPPER -->
-    <div class="page-content-wrap">
-
-        <div class="row">
-            <div class="col-md-12">
-
-                <!-- START DEFAULT DATATABLE -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Draft Posts</h3>
-
-                    </div>
-                    <div class="panel-body">
-                        <table class="table datatable">
-                            <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>2011/04/25</td>
-                                <td>$320,800</td>
-                            </tr>
-
-                            <tr>
-                                <td>Donna Snider</td>
-                                <td>Customer Support</td>
-                                <td>New York</td>
-                                <td>27</td>
-                                <td>2011/01/25</td>
-                                <td>$112,000</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <!-- PAGE TITLE -->
+                <div class="page-title">                    
+                    <h2><span class="fa fa-arrow-circle-o-left"></span> Draft Posts</h2>
                 </div>
-                <!-- END DEFAULT DATATABLE -->
+                <!-- END PAGE TITLE -->                
+
+                <!-- PAGE CONTENT WRAPPER -->
+                <div class="page-content-wrap">                
+                
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <!-- START DEFAULT DATATABLE -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">                                
+                                    <h3 class="panel-title">Draft Posts</h3>
+
+                                </div>
+                                <div class="panel-body">
+                                    <table class="table datatable">
+                                        <thead>
+                                            <tr>
+                                                <th style="display: none;">id</th>
+                                                <th>Written By</th>
+                                                <th>Post Title</th>
+                                                <th>Date</th>
+                                                <th>Category</th>
+                                                <th>Actions</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <?php
+                                        $result=draftpost($con);
+                                        $postid = 0;
+
+                                        while($row = $result->fetch_assoc()) {
+                                        $adminid =  $row['adminid'];
+                                        $adname = adminusers($con,$adminid);
+                                        $res = mysqli_fetch_array($adname);
+                                        $name = $res[1]; ?>
+
+                                        <tr>
+                                            <td style="display: none;"><?php echo $row['id']; ?></td>
+                                            <td><?php echo $name; ?></td>
+                                            <td><a href="readpost.php?id=<?php echo $row['id']; ?>"><?php echo $row['subject']; ?></a></td>
+                                            <td><?php echo $row['date']; ?></td>
+                                            <td><?php
+
+                                                if ($row['student']==1)
+                                                echo "<span class='label label-info label-form'>Student</span>". "  ";
+                                                if ($row['coursec']==1)
+                                                    echo "<span class='label label-info label-form'>Course Coordinator</span>" . "  ";
+                                                if ($row['cscc']==1)
+                                                    echo "<span class='label label-info label-form'>CSC Coordinator</span>";
+                                                ?></td>
+                                            <td><button class="btn btn-danger delete" id="<?php echo $row['id']; ?>">Delete</button>  <button class="btn btn-success publish" id="<?php echo $row['id']; ?>">Publish</button>  <a href="post.php?mode=edit&id=<?php echo $row['id']; ?>"><button class="btn btn-warning edit" id="<?php echo $row['id']; ?>">Edit</button></a></td>
+                                        </tr>
+                                        <?php } ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- END DEFAULT DATATABLE -->
 
 
 
-            </div>
+                        </div>
+                    </div>                                
+                    
+                </div>
+                <!-- PAGE CONTENT WRAPPER -->                                
+            </div>    
+            <!-- END PAGE CONTENT -->
         </div>
-
-    </div>
-    <!-- PAGE CONTENT WRAPPER -->
-</div>
-<!-- END PAGE CONTENT -->
-</div>
-<!-- END PAGE CONTAINER -->
-
-<!-- MESSAGE BOX-->
+        <!-- END PAGE CONTAINER -->       
+        
+        <!-- MESSAGE BOX-->
 <?php include "components/ad_messagebox.php";?>
-<!-- END MESSAGE BOX-->
+        <!-- END MESSAGE BOX-->
 
-
-<!-- START SCRIPTS -->
-<!-- START PLUGINS -->
+        
+    <!-- START SCRIPTS -->
+        <!-- START PLUGINS -->
 <?php include 'components/ad_foot.php'; ?>
 
+<script>
 
+    $(document).ready(function () {
+    	var postid;
+        $('button.delete').click(function () {
+        	 var postid = this.id;
+
+        	swal({
+        	  title: 'Are you sure?',
+        	  text: "You won't be able to revert this!",
+        	  type: 'warning',
+        	  showCancelButton: true,
+        	  confirmButtonColor: '#3085d6',
+        	  cancelButtonColor: '#d33',
+        	  confirmButtonText: 'Yes, delete it!',
+        	  cancelButtonText: 'No, cancel!',
+        	  confirmButtonClass: 'btn btn-success',
+        	  cancelButtonClass: 'btn btn-danger',
+        	  buttonsStyling: false
+        	}).then(function () {
+
+
+               
+                console.log(postid);
+
+                $.ajax({
+
+                    url:"deletepost.php?id="+postid,
+                    type:"GET",
+                    success:function (data) {
+                        if(data){
+                        	 swal(
+                               	    'Deleted!',
+                               	    'Your file has been deleted.',
+                               	    'success'
+                               	  )
+                        	setTimeout(
+                        			  function() 
+                        			  {
+                        				 
+                                          location.reload();
+                        			  }, 2000);
+                        	
+                        }
+                    }
+
+                })
+
+
+            	
+        	  
+        	}, function (dismiss) {
+     
+        	  if (dismiss === 'cancel') {
+        	    swal(
+        	      'Cancelled',
+        	      'Your ipost is safe',
+        	      'error'
+        	    )
+        	  }
+        	})
+
+
+
+        });
+
+
+        $('button.publish').click(function () {
+       	 var postid = this.id;
+
+       	swal({
+       	  title: 'Are you sure?',
+       	  text: "You won't to publish this post",
+       	  type: 'warning',
+       	  showCancelButton: true,
+       	  confirmButtonColor: '#3085d6',
+       	  cancelButtonColor: '#d33',
+       	  confirmButtonText: 'Yes, publish it!',
+       	  cancelButtonText: 'No, cancel!',
+       	  confirmButtonClass: 'btn btn-success',
+       	  cancelButtonClass: 'btn btn-danger',
+       	  buttonsStyling: false
+       	}).then(function () {
+
+
+              
+               console.log(postid);
+
+               $.ajax({
+
+                   url:"publishpost.php?id="+postid,
+                   type:"GET",
+                   success:function (data) {
+                       if(data){
+                       	 swal(
+                              	    'published!',
+                              	    'Your post has been publihsed.',
+                              	    'success'
+                              	  )
+                       	setTimeout(
+                       			  function() 
+                       			  {
+                       				 
+                                         location.reload();
+                       			  }, 2000);
+                       	
+                       }
+                   }
+
+               })
+
+
+           	
+       	  
+       	}, function (dismiss) {
+    
+       	  if (dismiss === 'cancel') {
+       	    swal(
+       	      'Cancelled',
+       	      'Your post is safe',
+       	      'error'
+       	    )
+       	  }
+       	})
+
+
+
+       });  
+
+    });
+</script>
 
 
 

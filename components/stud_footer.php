@@ -4,7 +4,7 @@
    bottom:0px;
    height:40px;
    width:100%;
-   background-color: #3b5998;
+   background-color: #3b5998;">
 
     <div class = "container-fluid">
         <div class="row">

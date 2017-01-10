@@ -1,5 +1,7 @@
 <?php include 'components/admust.php' ?>
-<?php include 'components/ad_head.php' ?>
+<?php include 'components/ad_head.php';
+ob_start();		
+?>
 <body>
 <!-- START PAGE CONTAINER -->
 <div class="page-container">
@@ -112,6 +114,87 @@
             <!-- END CONTENT FRAME LEFT -->
 
             <!-- START CONTENT FRAME BODY -->
+            
+            <?php 
+            if ( empty($_GET['mode'])==FALSE){
+            	
+            	$id = $_GET['id'];
+            	$res = readpost($con,$id);
+            	$data = mysqli_fetch_array($res); ?>
+            	
+            	
+            	<div class="content-frame-body">
+                <div class="block">
+                    <form role="form" class="form-horizontal" action="" method="post">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Student:</label>
+                            <div class="col-md-10">
+                                <label class="switch">
+                                    <input type="checkbox" name="user[]" id="1"  value="1"/>
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">CSC Coordinator:</label>
+                            <div class="col-md-10">
+                                <label class="switch">
+                                    <input type="checkbox" name="user[]"  value="2" id="2"/>
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Course Coordinator:</label>
+                            <div class="col-md-10">
+                                <label class="switch">
+                                    <input type="checkbox" name="user[]"  value="3" id="3"/>
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Subject:</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" name="subject" required value="<?php echo $data[2]; ?>"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                    <textarea class="summernote_email" required name="content" value="">
+                                    <?php echo htmlspecialchars_decode($data[3]); ?>
+                                    </textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="pull-left">
+                                    <button class="btn btn-default" name="draft"><span class="fa fa-trash-o"></span> Move to Draft</button>
+                                </div>
+                                <div class="pull-right">
+                                    <button class="btn btn-danger" type="submit" name="postdata"><span class="fa fa-envelope"></span> Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            	
+            	
+            	
+            	<?php 
+            }
+            
+            
+            
+            ?>
+            
+            
             <div class="content-frame-body">
                 <div class="block">
                     <form role="form" class="form-horizontal" action="" method="post">
@@ -212,15 +295,39 @@
                     'type' => 1,
                     'date' => $date
                 );
-
+				
+                	
                 $confim = postdata($con,$postdata);
+                
+
+                if ($_GET['mode'] == "edit"){
+                	
+                	$postid = $_GET['id'];
+                
+                	$confim = postdraftedited($con,$postdata,$postid);
+                	
+                	if ($confim=='true') {
+                		?>
+                	
+                	                  	<script>swal("Posted!", "Your have benn published a post successfully")</script>
+                	                    <?php
+                	                    
+                	                    header('location:published.php');
+                	                    ob_end_flush();
+                	
+                	            		}
+                
+                }
+              
+                
                if ($confim=='true') {
                     ?>
 
                   	<script>swal("Posted!", "Your have benn published a post successfully")</script>
                     <?php
 
-            }
+            		}
+            
             }
             
 
@@ -262,25 +369,44 @@
                     'date' => $date
                 );
 
-                $confim = putdraft($con,$postdata);
-                if ($confirm) {
+                $confirm = putdraft($con,$postdata);
+                
+                
+                
+                if ($_GET['mode'] == "edit"){
+                	 
+                	$postid = $_GET['id'];
+                
+                	$confim = savedraftedited($con,$postdata,$postid);
+                	 
+                	if ($confim =='true') {
+                		?>
+                                	
+                                	                  	<script>swal("Drafted!", "Your have been save this post to Draft")</script>
+                                	                    <?php
+                                	                    
+                                	                    header('location:draft.php');
+                                	                    ob_end_flush();
+                                	
+                                	            		}
+                                
+                                }
+                
+                
+                
+             
+                if ($confirm == 'true') {
 
                     ?>
 
                     <script>swal("Drafted!", "Your have benn Draft a post")</script>
                     <?php
                 }
-                exit();
+                
 
 
             }
             ?>
-
-
-
-
-
-
         </div>
     </div>
 
