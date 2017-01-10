@@ -42,9 +42,9 @@ if (isset($_GET['id'])) {
 
 <div class="container-fluid">
     <br>
-    <center><h2><?php echo $subname; ?></center>
+    <center><h3 style="margin-top: -15px;"><?php echo $subname; ?></h3></center>
     <hr>
-    <div class="sidenav col-md-2 col-sm-3 col-xs-12" style="margin-top: 3%;">
+    <div class="sidenav col-md-2 col-sm-3 col-xs-12" style="margin-top: 0px;">
 
         <center>
             <h3>Main menu</h3>
@@ -70,14 +70,11 @@ if (isset($_GET['id'])) {
                                     <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;"></span><a href="addnewassignment.php?id=<?php echo $subid?>">Add new Assignment</a>
                                 </td>
                             </tr>
-                            <tr>
+                            <!--<tr>
                                 <td>
                                     <span class="glyphicon glyphicon-file text-success" style="margin-right: 10px;"></span><a href="http://www.jquery2dotnet.com">Newsletters</a>
                                 </td>
-                            </tr>
-                            <tr>
-
-                            </tr>
+                            </tr>-->
                         </table>
                     </div>
                 </div>
@@ -94,27 +91,28 @@ if (isset($_GET['id'])) {
     </div>
 
 
-    <div class="col-md-8 col-sm-6 col-xs-12" style="margin-top: 2%;">
+    <div class="col-md-8 col-sm-6 col-xs-12" style="margin-top: -20px;">
 
         <div class="panel panel-default" style="margin-top: 20px;">
           <div class="panel-heading" style="background-color: ; color: black;"><center><h4>Make Submission link</h4></center> </div>
-          <div class="panel-body">
+          <div class="panel-body" style="height: 375px;">
 
 
             <form action="" name="submissionform" method="post"  id="">
               <label for="comment">link Title</label>
               <input type="text" class="form-control" name="title" value="">
+              <label for="comment">End  Date and Time</label>
+              <input  type="text" class="form-control time" value="" readonly name="edtime">
               <label for="comment">Submission Description</label>
               <textarea class="form-control" rows="5" name="description" value=""></textarea><br>
 
-              <label for="comment">End  Date and Time</label>
-              <input  type="text" class="form-control time" value="" readonly name="edtime">
+              
 
               <br>
-              <label for="comment">make directory for assignment</label>
+              <!--<label for="comment">make directory for assignment</label>
               <input  type="text" class="form-control" value=""  name="path">
 
-              <br>
+              <br>-->
 
               <center><button class="btn btn-info" name="submission" onclick="">Make link</button></center>
 
@@ -123,7 +121,7 @@ if (isset($_GET['id'])) {
             <?php
                if (isset($_POST['submission'])){
 
-                  $foldername = $_POST['path'];
+                  $foldername = $_POST['title'];
                   if(!file_exists("../uploads/".$foldername)){
                       mkdir("../uploads/".$foldername, 0777 );
                       $folderpath = '../uploads/'.$foldername.'/';
@@ -142,7 +140,7 @@ if (isset($_GET['id'])) {
                       );
 
                       $submit = submission($con,$regdata);
-                      echo "<script type=text/javascript>alert('Foder ok!')</script>";
+                      echo "<script type=text/javascript>alert('Submission link was created successfully!')</script>";
                   }else{
                     echo '<script>';
                    /*echo 'document.submissionform.title.value = <?php echo $_POST["title"]?>;';
@@ -166,18 +164,18 @@ if (isset($_GET['id'])) {
           </div>
         </div>
       </div>
-    <div class="col-md-2 col-sm-3 col-xs-12" style="margin-top: 3%;">
-        <div class="profile-sidebar">
+    <div class="col-md-2 col-sm-3 col-xs-12" style="margin-top: 0px;">
+        <!--<div class="profile-sidebar">
 
             <center>
                 <h3>Folder Structure</h3>
-            </center>
+            </center>-->
 
 
-            <?php
-            echo '<ol>';
+             <?php
+            //echo '<ol>';
 
-            function listFolderFiles($Mydir)
+            /*function listFolderFiles($Mydir)
             {
                 foreach (glob($Mydir . '*', GLOB_ONLYDIR) as $dir) {
                     $dir = str_replace($Mydir, '', $dir);
@@ -194,12 +192,12 @@ if (isset($_GET['id'])) {
                 echo '</ol>';
             }
 
-            listFolderFiles('../uploads/');
+            listFolderFiles('../uploads/');*/
             ?>
 
 
 
-</div>
+<!--</div>-->
 
 
     </div>
