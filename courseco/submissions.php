@@ -43,35 +43,31 @@ include '../components/course_head.php'; ?>
       <td><a href="#"><span class=" glyphicon glyphicon-file" style="color: yellow; font-size: 25px;"></span>  File Name</a></td>
       <td>2016-12-1</td>
       <td>11.55 pm</td>
-      <td data-checkbox="true"/>
+      <td><form><input type="checkbx" name="checkbox"><button></button>></form></td>
     </tr>
     <tr>
       <td>1</td>
       <td><a href="#"><span class=" glyphicon glyphicon-file" style="color: yellow; font-size: 25px;"></span>  File Name</a></td>
       <td>2016-12-1</td>
       <td>11.55 pm</td>
-      <td data-checkbox="true"/>
     </tr>
     <tr>
       <td>1</td>
       <td><a href="#"><span class=" glyphicon glyphicon-file" style="color: yellow; font-size: 25px;"></span>  File Name</a></td>
       <td>2016-12-1</td>
       <td>11.55 pm</td>
-      <td data-checkbox="true"/>
     </tr>
     <tr>
       <td>1</td>
       <td><a href="#"><span class=" glyphicon glyphicon-file" style="color: yellow; font-size: 25px;"></span>  File Name</a></td>
       <td>2016-12-1</td>
       <td>11.55 pm</td>
-      <td data-checkbox="true"/>
     </tr>
     <tr>
       <td>1</td>
       <td><a href="#"><span class=" glyphicon glyphicon-file" style="color: yellow; font-size: 25px;"></span>  File Name</a></td>
       <td>2016-12-1</td>
       <td>11.55 pm</td>
-      <td data-checkbox="true"/>
     </tr>
   </tbody>
 </table>

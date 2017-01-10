@@ -89,9 +89,9 @@ function abortHandler(event){
 
 <div class="container-fluid">
   <br>
-  <center><h2><?php echo $subname; ?></center>
+  <center><h3 style="margin-top: -5px;"><?php echo $subname; ?></h3></center>
   <hr>
-  <div class="sidenav col-md-2 col-sm-3 col-xs-12" style="margin-top: 4%;">
+  <div class="sidenav col-md-2 col-sm-3 col-xs-12" style="margin-top: 0px;">
 
     <center>
       <h3>Main menu</h3>
@@ -109,7 +109,7 @@ function abortHandler(event){
                   <table class="table" style="margin-bottom: 0px;">
                       <tr>
                           <td style="padding-left: 15px;">
-                              <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="courseassignments.php">All Assignment</a>
+                              <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="courseassignments.php?id=<?php echo $subid?>">All Assignment</a>
                           </td>
                       </tr>
                       <tr>
@@ -117,11 +117,11 @@ function abortHandler(event){
                               <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;"></span><a href="addnewassignment.php?id=<?php echo $subid?>">Add new Assignment</a>
                           </td>
                       </tr>
-                      <tr>
+                      <!--<tr>
                           <td>
                               <span class="glyphicon glyphicon-file text-success" style="margin-right: 10px;"></span><a href="http://www.jquery2dotnet.com">Newsletters</a>
                           </td>
-                      </tr>
+                      </tr>-->
                       <tr>
 
                       </tr>
@@ -149,10 +149,10 @@ function abortHandler(event){
   </div>
 
 
-  <div class="col-md-8 col-sm-6 col-xs-12" style="margin-top: 3%; margin-left: 3%;">
+  <div class="col-md-8 col-sm-6 col-xs-12" style="margin-top: -18px; margin-left: 3%;">
 
         <div class="panel panel-default" style="margin-top: 20px;">
-        <div class="panel-heading" style="background-color: ; color: black;"><center><h4>Add Learning Materials</h4></center></div>
+        <div class="panel-heading" style="background-color: ; color: black; height: 50px;"><center><h4>Add Learning Materials</h4></center></div>
         <div class="panel-body">
 
 
@@ -184,6 +184,8 @@ function abortHandler(event){
             <label for="comment">File Name to show</label>
             <input type="text" class="form-control" id="fname">
             <br>
+            <div class="row">
+            <div class="col-md-8">
             <div class="form-inline">
               <div class="form-group">
                 <input type="file" name="file1" id="file1" multiple>
@@ -191,9 +193,14 @@ function abortHandler(event){
               <input type="button" value="Upload File" onclick="uploadFile()">
               <!--<button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit" onsubmit="uploadFile()">Upload files</button>-->
             </div>
+            </div>
+            <div class="col-md-4">
+              <p style="font-size: 20px;"><strong>Date : <?php echo $today = date("F j, Y"); ?></strong></a></p>
+            </div>
+            </div>
           </form>
 
-          <br>
+          <!--<br>
           <div class="container">
             <div class="row">
             <div class="col-md-12" style="padding-left; margin-left: -12px;">

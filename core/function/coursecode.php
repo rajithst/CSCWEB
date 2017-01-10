@@ -72,3 +72,8 @@ function submission($con,$regdata){
 
 
 }
+function getSubmissionData($con,$subid){
+    $sql = "SELECT linktitle,submitted_date,edateandtime FROM submissions WHERE subid='$subid'";
+    $query = mysqli_query($con, $sql);
+    return $query;
+}

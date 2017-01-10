@@ -25,7 +25,8 @@ $fileType = $_FILES["file1"]["type"]; // The type of file it is
 $fileSize = $_FILES["file1"]["size"]; // File size in bytes
 $fileErrorMsg = $_FILES["file1"]["error"]; 
 $date = date("Y-m-d");
-// 0 for false... and 1 for true
+
+$fileupload_ok = 0;// 0 for false... and 1 for true
 if (!$fileTmpLoc) { // if file not chosen
     echo "ERROR: Please browse for a file before clicking the upload button.";
     exit();
