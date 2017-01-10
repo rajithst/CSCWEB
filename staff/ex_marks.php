@@ -74,7 +74,6 @@ include '../components/page_head.php'; ?>
                                     <th>Subject ID</th>
                                     <th>Student Name</th>
                                     <th>Marks</th>
-                                    <th>Grade</th>
                                 </tr>
                                 <?php
 
@@ -84,10 +83,8 @@ include '../components/page_head.php'; ?>
                                 ?>
                                 <tr>
                                     <td><?php  echo  $subid; ?></td>
-                                    <td><?php  echo  $row['fullname']; ?></td>
+                                    <td name="$name"><?php  echo  $row['fullname']; ?></td>
                                     <td><input type="text" placeholder="Enter as a percentage(%)" checked name="marks" ></td>
-                                    
-
                                 </tr>
 
                                     <?php } ?>
@@ -106,7 +103,7 @@ include '../components/page_head.php'; ?>
                         <div class="col-md-2"></div>
 						
 							<div class="col-md-2">
-								<button type="submit" class="btn btn-block btn-success btn-md" name="next">Next Page</button>
+								<button type="submit" class="btn btn-block btn-success btn-md" name="next">Submit</button>
 							</div>
 
 							<div class="col-md-2">

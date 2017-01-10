@@ -12,6 +12,10 @@ if(logged_in() === false){
 require '../core/init.php';
 require '../core/function/admin.php';
 require '../components/adminhead.php'; ?>
+
+
+
+
 </head>
 <body class="nav-md" style="overflow-y:hidden;">
 <div class="container body">
@@ -73,7 +77,7 @@ require '../components/adminhead.php'; ?>
                                             <div class="row">
                                                 <div class="col-sm-12">
                                                     <div class="card-box table-responsive">
-                                                        <?php $id = $user_data['id']; ?>
+                                                        <?php  ?>
                                                         <table id="datatable-keytable" class="table table-striped">
                                                             <thead>
                                                             <tr>
@@ -100,7 +104,7 @@ require '../components/adminhead.php'; ?>
                                                                 echo '<td style="text-align: center">' . $row['role'] . '</td>';
                                                                 echo "<td style='text-align: center'><a href='postread.php?post=$sub' style='color: blue;'> " . $row['subject'] . "</a></td>";
                                                                 echo '<td style="text-align: center">' . $row['date'] . '</td>';
-                                                                echo '<td style="text-align:center"> <button id="delete" type="button" class="btn btn-danger" >Delete</button></td>';
+                                                                echo '<td style="text-align:center"> <button id="delete" type="" class="btn btn-danger" >Delete</button></td>';
 
 
                                                                 echo '</tr>';
@@ -136,57 +140,58 @@ require '../components/adminhead.php'; ?>
 
 
 
-        <script type="text/javascript">
+<script type="text/javascript">
 
-            $(document).ready(function() {
+    $(document).ready(function() {
 
-                    $('#datatable-keytable').DataTable();
-
-
-                $('td > button#delete').click(function() {
-                    var table = $(this).closest('tr').find('td:nth-child(4)').text();
-                    console.log(table);
-
-                    swal({
-                            title: "Are you sure?",
-                            text: "You will not be able to recover this action!",
-                            type: "warning",
-                            showCancelButton: true,
-                            confirmButtonColor: "#DD6B55",
-                            confirmButtonText: "Yes, delete it!",
-                            cancelButtonText: "No, cancel ",
-                            closeOnConfirm: false,   closeOnCancel: false },
-
-                        function(isConfirm){
-                            if (isConfirm) {
-                                swal("removing!", "Your imaginary file has been deleted.", "success");
-
-                                $.ajax({
-                                    url: 'deleteposted.php?pub='+table,
-                                    type: 'get',
-                                    success:function (data) {
-
-                                        if (data == true) {
-
-                                            location.reload(true);
-                                        }
-
-                                    }
-                                });
-                            } else{
-                                swal("Cancelled", "Your post is safe :)", "error");
-                            }
-                        });
+        $('#datatable-keytable').DataTable();
 
 
+        $('tbody>tr>td>button#delete').click(function() {
+            //var table = $(this).closest('tr').find('td:nth-child(4)').text();
+            console.log('j');
 
-                });
+            swal({
+             title: "Are you sure?",
+             text: "You will not be able to recover this action!",
+             type: "warning",
+             showCancelButton: true,
+             confirmButtonColor: "#DD6B55",
+             confirmButtonText: "Yes, delete it!",
+             cancelButtonText: "No, cancel ",
+             closeOnConfirm: false,   closeOnCancel: false },
+
+             function(isConfirm){
+             if (isConfirm) {
+             swal("removing!", "Your imaginary file has been deleted.", "success");
+
+             $.ajax({
+             url: 'deleteposted.php?pub='+table,
+             type: 'get',
+             success:function (data) {
+
+             if (data == true) {
+
+             location.reload(true);
+             }
+
+             }
+             });
+             } else{
+             swal("Cancelled", "Your post is safe :)", "error");
+             }
+        });
 
 
 
-            });
+    });
 
 
 
 
-        </script>
+
+</script>
+
+
+
+

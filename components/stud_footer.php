@@ -25,5 +25,5 @@
 <script src="../public/js/bootstrap.js"></script>
 <script src="../public/dist/js/countdow.jquery.js"></script>
 
-</body
+</body>
 </html>

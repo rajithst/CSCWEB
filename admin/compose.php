@@ -40,15 +40,6 @@ require '../components/adminhead.php'; ?>
 
         ?>
 
-        <div class="right_col" role="main">
-            <div class="">
-                <div class="page-title">
-                    <div class="title_left">
-                        <h3>Compose Email</h3>
-                    </div>
-                </div>
-
-                <div class="clearfix"></div>
 
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -60,7 +51,7 @@ require '../components/adminhead.php'; ?>
                             </div>
                             <div class="x_content">
                                 <div class="row">
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="col-md-8 col-sm-6 col-xs-12">
                                         <div class="x_panel">
                                             <div class="x_content">
 
@@ -108,7 +99,9 @@ require '../components/adminhead.php'; ?>
 
                                                             <button type="submit" class="btn btn-primary" name="postdata">Send</button>
                                                             <button type="reset" class="btn btn-primary">Cancel</button>
-                                                            <button id="send" type="submit" class="btn btn-success" name="draft">Draft</button></center>
+                                                            <button id="send" type="submit" class="btn btn-success" name="draft">Draft</button>
+                                                            
+                                                          </center>
 
 
                                                     </div>
@@ -120,6 +113,18 @@ require '../components/adminhead.php'; ?>
                                             </div>
                                         </div>
                                     </div>
+
+
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="x_panel">
+                                            <div class="x_content">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
                                 </div>
 
 

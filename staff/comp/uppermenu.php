@@ -79,9 +79,5 @@
             <p>Student marks</p></a>
         </div>
 
-        <!--<div class="process-step">
-            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-flag fa-3x"></i></button>
-            <p>Edit reports</p>
-        </div>-->
     </div>
 </div>

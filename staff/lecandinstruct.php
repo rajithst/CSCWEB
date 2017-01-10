@@ -57,7 +57,7 @@ $subid = $_GET['subid'];
 
                             <tr>
                                 <th>Lecturer Name</th>
-                                <th><center>Mark Attendance</center</th>
+                                <th><center>Mark Attendance</center></th>
 
                             </tr>
 

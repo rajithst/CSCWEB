@@ -55,7 +55,7 @@ include '../components/page_head.php'; ?>
                 <div class="col-md-10">
 
                    <h4><b>Subject : <?php echo $subdata[2]; ?></b></h4>
-					<b>Subject id : </b><?php echo $subid?>
+					<b>Subject id : </b><?php echo $subid; ?>
 					<br>
                     <b> Course Id : </b><?php echo $subdata[1];?>
 					<br>
@@ -85,7 +85,7 @@ include '../components/page_head.php'; ?>
                                 <tr>
                                     <td><?php  echo  $subid; ?></td>
                                     <td><?php  echo  $row['fullname']; ?></td>
-                                    <td><input type="text" placeholder="Enter as a percentage(%)" name="marks[]" id="marks[]" value="<?php $row['fullname']; ?>"?></td>
+                                    <td><input type="text" placeholder="Enter as a percentage(%)" name="marks[]" id="marks[]" value="<?php $row['fullname']; ?>"></td>
                                     
 
                                 </tr>
@@ -123,6 +123,35 @@ include '../components/page_head.php'; ?>
             
 
         </div>
+		
+		
+		<?php
+    if(isset($_POST['next']) === true) {
+        foreach ($_POST['marks'] as $index => $val) {
+
+            $sql1 = "SELECT assignment_marks,total_assignments FROM student WHERE fullname='$val'";
+            $res = mysqli_query($con,$sql1);
+            $dd = mysqli_fetch_array($res);
+            $currentmarks= $dd[0];
+			$newmark = $currentmarks;
+            
+			
+            $sql = "UPDATE student SET attendance=$new,total_attendance=$n WHERE fullname = '$val'" ;
+            $res = mysqli_query($con,$sql);
+			
+			$sql2 = "SELECT total_attendance FROM student WHERE (fullname='$val' or name_w_initials='$val')";
+			$res2=mysqli_query($con,$sql2);
+			$dx = mysqli_fetch_array($res2);
+			$cur= $dx[0];
+            $nw = $cur+ 1;
+			$sql3 = "UPDATE student SET total_attendance=$nw WHERE (fullname = '$val' or name_w_initials='$val') " ;
+            $res3 = mysqli_query($con,$sql3);
+			
+
+        }
+    }
+
+        ?>
 
 
 
