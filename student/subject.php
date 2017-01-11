@@ -40,7 +40,7 @@ require '../core/function/student.php';
               }
 
 
-                                         ?>
+        ?>
 
 
 
@@ -49,10 +49,17 @@ require '../core/function/student.php';
 
     <?php include "comp/navbar.php"; ?>
 
+    <div style="margin-left:20px;">
+        <ol class="breadcrumb breadcrumb-arrow" >
+            <li ><a href="home.php"><span class="glyphicon glyphicon-home"> Home</span></a></li>
+            <li class="active"><?php echo $subname; ?></li>
+        </ol>
+    </div>
+
 
     <div class="container-fluid">
         <div class="row" style="padding-left:10px;padding-right: 10px;">
-<div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 5px;margin-top: 4%">
+<div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 5px;margin-top: 0%">
 
     <center>
         <h3>Main menu</h3>
@@ -72,7 +79,7 @@ require '../core/function/student.php';
                                     <tr>
                                         <td style="padding-left: 15px;">
 
-                                            <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="allposts.php"><?php echo $subname; ?></a>
+                                            <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="subject.php?id=<?php echo $stu_data['coursename']; ?> "><?php echo $subname; ?></a>
                                         </td>
                                     </tr>
                                 </table>
@@ -92,23 +99,7 @@ require '../core/function/student.php';
                                 <table class="table">
                                     <tr>
                                         <td>
-                                            <a href="http://www.jquery2dotnet.com">Change Password</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Import/Export</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
-                                                Delete Account</a>
+                                            <a href="http://www.jquery2dotnet.com">Change Settings</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -124,11 +115,12 @@ require '../core/function/student.php';
     $id = $_GET['id'];
     $slides =getslides($con,$id); ?>
 
-    <div class="col-md-8 col-sm-12 col-xs-12" style="margin-top: 4%;">
+    <div class="col-md-8 col-sm-12 col-xs-12" style="margin-top: 0%;">
         <div id="lecture-schedule">
 
-<?php    while ($row= mysqli_fetch_assoc($slides)) {
-    ?>
+<?php    
+while ($row= mysqli_fetch_assoc($slides)) {
+?>
                     <div class="well">
                         <div class="text-head"><h4><?php echo $row['title']; ?></h4></div>
                         <p><?php echo $row['description']; ?></p>
@@ -146,7 +138,7 @@ require '../core/function/student.php';
 
 
 
-        <div class="col-md-2 col-sm-3 col-xs-12" style="background-color: white;margin-top: 4%">
+        <div class="col-md-2 col-sm-3 col-xs-12" style="background-color: white;margin-top: 0%">
             <center><h3>Submission Links</h3></center>
             <hr>
             <?php
@@ -155,7 +147,7 @@ require '../core/function/student.php';
             while ($row = mysqli_fetch_assoc($submits)) {
 
             ?>
-            <div class="caption">
+            <div class="caption" style="margin-left: 20px;" >
                 <a href="submit.php?id=<?php echo $subid; ?>&asid=<?php echo $row['id']?>"><h4><?php  echo $row['linktitle']; ?> </h4></a>
             </div>
             <div class="modal-footer" style="text-align: left">
