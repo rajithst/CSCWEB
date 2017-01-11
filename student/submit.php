@@ -34,6 +34,8 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
 
 }
 
+$res = getassignmentdata($con,$subid,$assid);
+$data = mysqli_fetch_array($res);
 
 ?>
 
@@ -74,9 +76,17 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
 
 <?php include "comp/navbar.php"; ?>
 
+<div style="margin-left:20px;">
+    <ol class="breadcrumb breadcrumb-arrow" >
+        <li ><a href="home.php"><span class="glyphicon glyphicon-home"> Home</span></a></li>
+        <li ><a href="subject.php?id=<?php echo $stu_data['coursename']; ?> "><?php echo $subname; ?></a></li>
+        <li class="active" ><?php echo $data[2]; ?></li>
+    </ol>
+</div>
+
 <div class="container-fluid">
     <div class="row" style="padding: 10px;">
-    <div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 10px;margin-top: 4%">
+    <div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 10px;margin-top: 0%">
 
         <center>
             <h3>Main menu</h3>
@@ -116,23 +126,7 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
                         <table class="table">
                             <tr>
                                 <td>
-                                    <a href="http://www.jquery2dotnet.com">Change Password</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="http://www.jquery2dotnet.com">Import/Export</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
-                                        Delete Account</a>
+                                    <a href="http://www.jquery2dotnet.com">Change Settings</a>
                                 </td>
                             </tr>
                         </table>
@@ -150,10 +144,7 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
 
 
     <div class="col-md-10 col-sm-6 col-xs-12 ">
-        <?php $res = getassignmentdata($con,$subid,$assid);
-        $data = mysqli_fetch_array($res);
-        echo $data[5];
-        ?>
+        
             <center><h3><?php echo $data[2]; ?></h3></center>
             <hr/>
         <center>
@@ -165,7 +156,7 @@ while ($rowsi = mysqli_fetch_assoc($res)) {
         <hr/>
 
 
-                <div class="col-md-8 col-md-offset-2" style="background-color: white;padding: 10px;">
+                <div class="col-md-8 col-md-offset-2" style="background-color: white;padding: 10px; margin-bottom: 40px;">
 
 
                             <legend>Submission Status</legend>

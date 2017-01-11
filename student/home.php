@@ -45,8 +45,15 @@ require '../core/function/student.php';
     <body style="background-color: #f0f0f0;overflow-x:hidden;">
 
     <?php include "comp/navbar.php"; ?>
+    
+<div style="margin-left:20px;">
+    <ol class="breadcrumb breadcrumb-arrow" >
+        <li class="active"><span class="glyphicon glyphicon-home"> Home</span></li>
+    </ol>
+</div>
+
 <div class="container-fluid">
-<div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 10px;margin-top: 4%">
+<div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 10px;margin-top: 0%">
 
     <center>
         <h3>Main menu</h3>
@@ -86,25 +93,10 @@ require '../core/function/student.php';
                                 <table class="table">
                                     <tr>
                                         <td>
-                                            <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                            <a href="http://www.jquery2dotnet.com">Change Settings</a>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Import/Export</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
-                                                Delete Account</a>
-                                        </td>
-                                    </tr>
+                                    
                                 </table>
                             </div>
                         </div>
@@ -120,7 +112,7 @@ require '../core/function/student.php';
             </div>
 
 
-<div class="col-md-8 col-sm-6 col-xs-12">
+<div class="col-md-8 col-sm-6 col-xs-12" style="margin-top: -20px;">
 
     <center><h2>News Feed</h2></center>
 
@@ -141,7 +133,7 @@ require '../core/function/student.php';
 
                       <div class="alert-message alert-message-notice">
 
-                        <h4><?php echo htmlspecialchars_decode($row['subject']); ?> </h4>
+                        <h4><?php echo $row['subject']; ?> </h4>
                         <span class="badge">Posted By Admin <?php echo $data['name']; ?></span>
                         <div style="width: 6%; margin-left: 90%;margin-top: -3%;height: 70px;">
 
@@ -150,7 +142,7 @@ require '../core/function/student.php';
 
                         <hr>
 
-                        <p><?php echo htmlspecialchars_decode($row['text']); ?></p>
+                        <p><?php echo $row['text']; ?></p>
 
                         <span class="badge" style="float: right;"> on <?php echo $row['date']; ?></span>
 
@@ -174,7 +166,7 @@ require '../core/function/student.php';
 
 </div>
 
-<div class="col-md-2 col-sm-3 col-xs-12" style="background-color: white;margin-top: 4%">
+<div class="col-md-2 col-sm-3 col-xs-12" style="background-color: white;margin-top: 0%">
     <center><h3>CURRENT ATTENDANCE</h3></center>
     <hr>
     <div class="alert alert-info">
@@ -183,8 +175,15 @@ require '../core/function/student.php';
 <?php 
 $cur = $stu_data['attendance'];
 $tot = $duration;
+$value='';
 
-$value = ($cur/$tot)*100; ?>
+if($cur>=$tot){
+    $value=100;
+    $cur=$duration;
+}else{
+    $value = ($cur/$tot)*100;
+}
+?>
     <div class="caption">
               
               <p><?php echo $subname; ?></p>
@@ -192,12 +191,12 @@ $value = ($cur/$tot)*100; ?>
             <div class="modal-footer" style="text-align: left">
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="<?php echo $value; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $value; ?>%;">
-                    <span class=""><?php echo $value; ?> Complete</span>
+                    <span class=""><?php echo $value; ?>% Complete</span>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-4"><b><?php echo $value; ?>%</b><br/><small>COMPLETE</small></div>
-                <div class="col-md-4"><b><?php echo $stu_data['attendance']; ?> Days</b><br/><small>DONE</small></div>
+                <div class="col-md-4"><b><?php echo $cur; ?> Days</b><br/><small>DONE</small></div>
                 <div class="col-md-4"><b><?php echo $duration ?>  Days</b><br/><small>DURATION</small></div>
               </div>
             </div>
@@ -222,7 +221,7 @@ $value = ($cur/$tot)*100; ?>
 
 </div>
 
-        </div>
+</div>
 
 
 <?php include "../components/stud_footer.php"; ?>
