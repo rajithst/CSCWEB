@@ -45,7 +45,7 @@ if (isset($_GET['id'])) {
 
 
 <center><h3 style="margin-top: -15px;"><?php echo $subname; ?></h3></center>  <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 col-sm-12 col-xs-12" >
   <table class="table table-hover">
   <thead class="">
     <tr>
