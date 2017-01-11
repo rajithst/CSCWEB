@@ -102,11 +102,11 @@
                if(isset($_POST['adduser']) === true){
 										$password = 'csc';
                                         $postdata = array(
-                                            'first_name' =>  $_POST['first_name'],
-                                            'last_name' =>  $_POST['last_name'],
-                                            'email' =>  $_POST['email'],
-                                        	'telephone'=>$_POST['telephone'],	
-                                            'address' => $_POST['address'],
+                                            'first_name' =>  filter_var($_POST['first_name'],FILTER_SANITIZE_STRING),
+                                            'last_name' =>  filter_var($_POST['last_name'],FILTER_SANITIZE_STRING),
+                                            'email' =>  filter_var($_POST['email'],FILTER_SANITIZE_EMAIL,FILTER_VALIDATE_EMAIL),
+                                        	'telephone'=>preg_replace('/[^0-9]/', '', $_POST['telephone']),
+                                            'address' => filter_var($_POST['address'],FILTER_SANITIZE_STRING),
                                         	'password'=>md5($password),
                                             'role' => $_POST['role']
                                         );
