@@ -103,7 +103,7 @@
                         $res = allusers($con);
                         while ($row = mysqli_fetch_assoc($res)) { ?>
 
-                        <div class="list-group list-group-contacts border-bottom push-down-10">
+                        <div class="list-group list-group-contacts border-bottom push-down-10 chatdiv " id="<?php echo $row['id']; ?>">
                             <a href="#" class="list-group-item">                                 
                                 <div class="list-group-status status-online"></div>
                                 <img src="<?php echo $row['profile']; ?>" class="pull-left" alt="Dmitry Ivaniuk">
@@ -119,81 +119,10 @@
                     <!-- END CONTENT FRAME RIGHT -->
                 
                     <!-- START CONTENT FRAME BODY -->
-                    <div class="content-frame-body content-frame-body-left">
+                    <div class="content-frame-body content-frame-body-left" id="aa">
                         
-                        <div class="messages messages-img">
-                            <div class="item in">
-                                <div class="image">
-                                    <img src="assets/images/users/user2.jpg" alt="John Doe">
-                                </div>
-                                <div class="text">
-                                    <div class="heading">
-                                        <a href="#">John Doe</a>
-                                        <span class="date">08:33</span>
-                                    </div>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis suscipit eros vitae iaculis.
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="image">
-                                    <img src="assets/images/users/user.jpg" alt="Dmitry Ivaniuk">
-                                </div>                                
-                                <div class="text">
-                                    <div class="heading">
-                                        <a href="#">Dmitry Ivaniuk</a>
-                                        <span class="date">08:39</span>
-                                    </div>                                    
-                                    Integer et ipsum vitae urna mattis dictum. Sed eu sollicitudin nibh, in luctus velit.
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="image">
-                                    <img src="assets/images/users/user.jpg" alt="Dmitry Ivaniuk">
-                                </div>                                
-                                <div class="text">
-                                    <div class="heading">
-                                        <a href="#">Dmitry Ivaniuk</a>
-                                        <span class="date">08:42</span>
-                                    </div>                                    
-                                    In dapibus ex ut nisl laoreet aliquam. Donec in mollis leo. Aenean nec suscipit neque, non iaculis justo. Quisque eget odio efficitur, porta risus vitae, sagittis neque.
-                                </div>
-                            </div>
-                            <div class="item in">
-                                <div class="image">
-                                    <img src="assets/images/users/user2.jpg" alt="John Doe">
-                                </div>
-                                <div class="text">
-                                    <div class="heading">
-                                        <a href="#">John Doe</a>
-                                        <span class="date">08:58</span>
-                                    </div>
-                                    Curabitur et euismod urna?
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="image">
-                                    <img src="assets/images/users/user.jpg" alt="Dmitry Ivaniuk">
-                                </div>                                
-                                <div class="text">
-                                    <div class="heading">
-                                        <a href="#">Dmitry Ivaniuk</a>
-                                        <span class="date">09:11</span>
-                                    </div>                                    
-                                    Fusce ultricies erat quis massa interdum, eu elementum urna iaculis
-                                </div>
-                            </div>
-                            <div class="item in">
-                                <div class="image">
-                                    <img src="assets/images/users/user2.jpg" alt="John Doe">
-                                </div>
-                                <div class="text">
-                                    <div class="heading">
-                                        <a href="#">John Doe</a>
-                                        <span class="date">09:22</span>
-                                    </div>
-                                    Vestibulum cursus ipsum ut dolor vulputate dapibus. Donec elementum est vel vulputate malesuada?
-                                </div>
-                            </div>
+                        <div class="messages messages-img" id="chatbody">
+                            
                         </div>                        
                         
                         <div class="panel panel-default push-up-10">
@@ -229,7 +158,27 @@
         <!-- START PLUGINS -->
         <?php include 'components/ad_foot.php'; ?>
 
+<script>
 
+$(document).ready(function(){
+		var userid;
+	$('div.chatdiv').click(function(){
+		userid = this.id;
+	     $.ajax({
+             type: 'get',
+             url: 'getmessages.php?id=' + userid + '&adminid=' +<?php echo $user_data['id']; ?>,
+             success: function (data) {
+                 $('div#aa>div#chatbody').html("");
+                 $('div#aa>div#chatbody').html(data);
+
+             }
+
+         });
+	})
+
+	
+});
+</script>
 
 
 

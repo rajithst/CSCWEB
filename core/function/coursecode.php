@@ -68,12 +68,21 @@ function submission($con,$regdata){
     $fields='`' .implode('`,`' ,array_keys($regdata)) . '`';
     $vals= '\'' . implode('\', \'' ,$regdata ) . '\' ';
     $sql = "INSERT INTO submissions ($fields) VALUES ($vals)";
+    echo $sql;
     $query = mysqli_query($con, $sql);
 
 
 }
 function getSubmissionData($con,$subid){
-    $sql = "SELECT linktitle,submitted_date,edateandtime FROM submissions WHERE subid='$subid'";
+    $sql = "SELECT * FROM submissions WHERE subid='$subid'";
+    $query = mysqli_query($con, $sql);
+    return $query;
+}
+
+
+function getsubmitteddata($con,$subid,$assid){
+
+    $sql = "SELECT * FROM assignmentsubmissions WHERE subid='$subid' AND assid=$assid";
     $query = mysqli_query($con, $sql);
     return $query;
 }

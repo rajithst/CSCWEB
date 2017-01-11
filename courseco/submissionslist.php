@@ -19,17 +19,11 @@ include '../components/course_head.php'; ?>
 <body>
 
 <?php
-if (isset($_GET['id'])) {
-    $subid = $_GET['id'];
-
-    $res = getslides($con,$subid);
-    while ($row = mysqli_fetch_assoc($res)) {
-
-        $subname = $row['subject'];
-        $subid = $row['subjectid'];
+if (isset($_GET['assid']) and $_GET['subid']) {
+    $assid = $_GET['assid'];
+    $subid = $_GET['subid'];
 
 
-    }
 }
 
 
@@ -45,66 +39,48 @@ if (isset($_GET['id'])) {
 
 
 <center><h3 style="margin-top: -15px;"><?php echo $subname; ?></h3></center>  <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 col-sm-12 col-xs-12" >
   <table class="table table-hover">
   <thead class="">
     <tr>
-      <th>Student Id</th>
+
       <th>Student Name</th>
       <th>Submission</th>
-      <th>Submitted Date</th>
-      <th>Submitted Time</th>
+      <th>Submitted Date and Time</th>
+      <th>Download</th>
+
       <th></th>
       <th></th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">cs111</th>
-      <td>Suneth</td>
-      <td></td>
-      <td>2016-12-19</td>
-      <td>11.55 pm</td>
-      <td><label><input type="checkbox" value="" id="cb" class="selectbox"></label></td>
-      <td><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span>        Download</button></td>
-    </tr>
+
+  <?php
+  $res = getsubmitteddata($con,$subid,$assid);
+  while ($row = mysqli_fetch_assoc($res)) {
+
+      $timestamp=$row['date'];
+      $date = gmdate("F j, Y, g:i a", $timestamp);
+      ?>
+
+      <tr>
+
+          <td><?php echo $row['studentname']; ?></td>
+          <td><?php echo $row['filename']; ?></td>
+          <td><?php echo $date; ?></td>
+
+          <td><label><input type="checkbox" value="" id="cb" class="selectbox"></label>
+          <a href="download-multiple.php?file=<?php echo $row['filename']; ?>&path=<?php echo $row['path']; ?>"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span>Download</button></a> </>
+      </tr>
+
+<?php
+  }
+
+
+  ?>
+
     
-    <tr>
-      <th scope="row">cs111</th>
-      <td>Suneth</td>
-      <td></td>
-      <td>2016-12-19</td>
-      <td>11.55 pm</td>
-      <td><label><input type="checkbox" value="" id="cb1" class="selectbox"></label></td>
-      <td><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span>        Download</button></td>
-    </tr>
-    <tr>
-      <th scope="row">cs111</th>
-      <td>Suneth</td>
-      <td></td>
-      <td>2016-12-19</td>
-      <td>11.55 pm</td>
-      <td><label><input type="checkbox" value="" id="cb2" class="selectbox"></label></td>
-      <td><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span>        Download</button></td>
-    </tr>
-    <tr>
-      <th scope="row">cs111</th>
-      <td>Suneth</td>
-      <td></td>
-      <td>2016-12-19</td>
-      <td>11.55 pm</td>
-      <td><label><input type="checkbox" value="" id="cb3" class="selectbox"></label></td>
-      <td><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span>        Download</button></td>
-    </tr>
-    <tr>
-      <th scope="row">cs111</th>
-      <td>Suneth</td>
-      <td></td>
-      <td>2016-12-19</td>
-      <td>11.55 pm</td>
-      <td><label><input type="checkbox" value="" id="cb4" class="selectbox"></label></td>
-      <td><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span>        Download</button></td>
-    </tr>
+
   </tbody>
 </table>
 

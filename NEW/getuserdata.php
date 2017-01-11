@@ -94,7 +94,16 @@ if (isset($_GET)) {
 		<label class='check'><input type='checkbox' class='icheckbox' checked='checked'/>Password (csc)</label>
 		
 		</div>
-		</div>";
+		</div>
+		
+		
+		
+                                <div class='panel-footer'>
+                                    <button class='btn btn-default' type='reset'>Clear Form</button>
+                                    <button class='btn btn-primary pull-right' type='submit'>Submit</button>
+                                </div>
+		
+		";
 
 
 		
