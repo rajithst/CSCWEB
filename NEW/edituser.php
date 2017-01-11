@@ -121,7 +121,30 @@
                 <div class="panel-heading ui-draggable-handle">
                     <h3 class="panel-title">Edit User Details Here</h3>
                 </div>
-                    <form class="form-horizontal">
+
+                <?php
+
+                if(isset($_POST['adduser']) === true){
+                $password = 'csc';
+                $postdata = array(
+                    'first_name' =>  $_POST['first_name'],
+                    'last_name' =>  $_POST['last_name'],
+                    'email' =>  $_POST['email'],
+                    'telephone'=>$_POST['telephone'],
+                    'address' => $_POST['address'],
+                    'password'=>md5($password),
+                    'role' => $_POST['role']
+                );
+
+                $result = adduser($con,$postdata);
+
+
+                ?>
+
+
+
+
+                    <form class="form-horizontal" action="" method="post">
                         <div class="panel panel-default">
                             <div class="panel-body" id="userdata">
 
@@ -195,12 +218,13 @@
                                     </div>
                                 </div>
 
+                                <div class="panel-footer">
+                                    <button class="btn btn-default">Clear Form</button>
+                                    <button class="btn btn-primary pull-right" disabled>Submit</button>
+                                </div>
 
                             </div>
-                            <div class="panel-footer">
-                                <button class="btn btn-default">Clear Form</button>
-                                <button class="btn btn-primary pull-right" disabled>Submit</button>
-                            </div>
+
                         </div>
                     </form>
 

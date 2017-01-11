@@ -48,7 +48,7 @@ if (isset($_GET['id'])) {
 
 <?php
 
-  $subid = "csc02/1";
+
   $submissionDetails = getSubmissionData($con,$subid);
   if(mysqli_num_rows($submissionDetails) > 0){
     echo '<table class="table table-condensed table-hover">
@@ -62,16 +62,27 @@ if (isset($_GET['id'])) {
     echo '<tbody>';
     while($row = mysqli_fetch_assoc($submissionDetails)){
       echo '<tr>';
-      echo '<th>'.'<a href="submissionslist.php">'.$row["linktitle"].'</a>'.'</th>';
+      echo "<th><a href=submissionslist.php?assid=".$row['id']."&subid=".$subid.">" .$row['linktitle']."</a></th>";
       echo '<td>'.$row["submitted_date"].'</td>';
       echo '<td>'.$row["edateandtime"].'</td>';
-      echo '<td>'."endtime".'</td';
+      echo '<td>'."endtime".'</td>';
       echo '</tr>';
     }
     echo '</tbody>';
     echo '</table>';
-  }else{
-    echo "No submissions found";
+  }else{ ?>
+   
+   <center>
+   
+   
+            <div class="alert alert-info">
+            <strong>Warning!</strong> <br/> No Assignment created for this subject
+            </div>
+   
+   
+   </center>
+   
+ <?php  
   }
   
 

@@ -417,3 +417,45 @@ require '../components/adminhead.php'; ?>
 
 
                     <?php include '../components/adminfooter.php'; ?>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+              echo "<div class='item'>";
+        			echo "<div class='image'>";
+        				echo "<img src='$pic'>";
+        			echo "</div>";
+        				echo "<div class='text'>";
+        				echo "<div class='heading'>";
+        							echo "<a href='#'>$fname </a>";
+        							echo "<span class='date'>08:39</span>";
+        					echo "</div> ";
+        				echo $rows['rcvdmsg'];
+        		echo "</div>";
+                  echo " </div>";
+                            
+                            
+                             echo  "<div class='item in'>
+                                <div class='image'>
+                                    <img src='$adminpic' alt='John Doe'>
+                                </div>
+                                <div class='text'>
+                                    <div class='heading'>";
+                                        echo "<a href='#'>". $user_data['name'] . " </a>";
+                                       echo" <span class='date'>0833</span>
+                                    </div>";
+                                   echo  $rows['sentmsg'];
+                                echo "</div>
+                            </div>";
+                    
+                    
+                    
+                    
