@@ -3,6 +3,7 @@ ob_start();
 require '../core/base_connection.php';
 require '../core/function/student.php';
 require '../components/stud_head.php';
+require '../core/base_connection.php';
 
 ?>
 <link rel="stylesheet" href="../public/dist/css/student.css">
@@ -24,7 +25,7 @@ require '../components/stud_head.php';
             <div class="row">
                 <div class="col-sm-5">
                       <div class="form-group" style="margin-bottom: 15px;color: #fff;">
-                        <label for="pwd">Username:</label>
+                        <label for="username">Username:</label>
                         <input type="text" class="form-control" placeholder="Username" name="username">
                         <div class="login-bottom-text checkbox hidden-sm">
                             <label>
@@ -36,7 +37,7 @@ require '../components/stud_head.php';
                 </div>  
                 <div class="col-sm-5">
                      <div class="form-group" style="margin-bottom: 15px;color: #fff;">
-                        <label for="pwd">Password:</label>
+                        <label for="password">Password:</label>
                         <input type="password" class="form-control" placeholder="Password" name="password">
                         <div class="login-bottom-text hidden-md"> Forgot your password?  </div>
                       </div>
@@ -104,10 +105,10 @@ require '../components/stud_head.php';
 </article>
 <?php
 
-if(isset($_POST['submit'])=== true){
+if(empty($_POST) === false and isset($_POST['submit'])=== true){
 
-     $username    = $_POST['username'];
-     $password = $_POST['password'];
+     $username  =filter_var($_POST['username'],FILTER_SANITIZE_EMAIL,FILTER_VALIDATE_EMAIL) ;
+     $password = mysqli_real_escape_string($con,$_POST['password']);
 
     $login = loginstudent($con,$username,$password);
 
@@ -118,7 +119,7 @@ if(isset($_POST['submit'])=== true){
 
       <div class="alert alert-danger">
        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
- <center> <strong>Your Username Password Combination is not valid</strong> <br> <a href="recover.php">Forget Password?</a></center>
+ <center> <strong>Username and Password Combination is not valid</strong> <br> <a href="recover.php">Forget Password?</a></center>
 </div>
         </div>
 

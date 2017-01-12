@@ -87,5 +87,13 @@ function getsubmissionattempt($con,$name,$subid,$assid){
 }
 
 
+function updatedata($con,$column,$update_data,$id){
+
+    $sql = "UPDATE student SET $column = '$update_data' WHERE id=$id";
+
+    $res = mysqli_query($con,$sql);
+    return $res;
+}
+
 
 
