@@ -2,11 +2,6 @@
 
 require 'db/database.php';
 
-
-
-
-
-
 if(logged_in() === true) {
     
     $session_id = $_SESSION['id'];

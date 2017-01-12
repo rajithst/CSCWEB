@@ -61,7 +61,7 @@ include '../components/page_head.php'; ?>
         </li>
 
          <li>
-             <a class="btn btn-lg btn-info" href="">
+             <a class="btn btn-lg btn-info" href="select_course_marks.php">
           <i class="glyphicon glyphicon-user pull-left"></i><span>Student Marks<br><small></small></span></a> 
             
         </li>

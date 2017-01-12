@@ -55,6 +55,18 @@ function postdraftedited($con,$update_data,$postid){
 }
 
 
+function updateuser($con, $id,$postdata){
+    $update=array();
+
+    foreach ($postdata as $field => $data) {
+        $update[]= '`' . $field . '` = \'' . $data . '\'';
+    }
+    $sql = "UPDATE staff SET" . implode(' , ',$update) . "WHERE id = $id";
+    mysqli_query($con,$sql);
+    return 'true';
+}
+
+
 function savedraftedited($con,$postdata,$postid){
 	
 	$update=array();
@@ -161,7 +173,15 @@ function changeimage( $user_id, $file_temp, $file_extn) {
 
 }
 
+function addevent($con,$postdata){
 
+    $fields = '`'.implode('`,`', array_keys($postdata)).'`';
+    $data   = '\''.implode('\', \'', $postdata).'\' ';
+
+    $sql = "INSERT INTO events ($fields) VALUE ($data)";
+    $res = mysqli_query($con, $sql);
+    return 'ture';
+}
 
 
 

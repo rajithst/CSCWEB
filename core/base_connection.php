@@ -6,4 +6,8 @@
  * Time: 1:37 PM
  */
 
-$con = mysqli_connect('localhost','root','rajith','csc');
+$host = "localhost";
+$user = "root";
+$password="rajith";
+$database = "csc";
+$con = mysqli_connect($host,$user,$password,$database);

@@ -19,9 +19,11 @@ $c_name=$_POST['client_name'];
 
 $r_party=$_POST['res_party'];
 
-$r_date=$_POST['rec_date'];
+$rc_date=$_POST['rec_date'];
+$r_date = date('Y-m-d', strtotime($rc_date));
 
-$d_date=$_POST['due_date'];
+$du_date=$_POST['due_date'];
+$d_date = date('Y-m-d', strtotime($du_date));
 
 $r_by=$_POST['rec_by'];
 

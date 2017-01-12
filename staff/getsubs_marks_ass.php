@@ -10,9 +10,9 @@ if (isset($_GET['cid'])){
 
     while ($row = mysqli_fetch_assoc($query)){
         $subid = $row['subjectid'];
-
+		$token=0;
         echo "<li>";
-        echo "<a tabindex='-1' href='ass_marks.php?subid=".$subid."' style='font-size: 12px;' id='".$subid ."' >" . $row['subject'] . "</a><br>";
+        echo "<a tabindex='-1' href='ass_marks.php?subid=".$subid."&token=".$token."' style='font-size: 12px;' id='".$subid ."' >" . $row['subject'] . "</a><br>";
         echo "</li>";
 
     }

@@ -31,39 +31,125 @@ include '../components/page_head.php'; ?>
 
     <div class="container-fluid">
 
-        <div class="col-sm-9 col-md-9">
+		<div class="row">
+		<?php
+			$token = $_GET['token'];
+			$subid = $_GET['subid'];
+		?>
+        <div class="row">
+			<?php
+			
+			if($token==0)
+			{?>
+						<style>
 
 
-        </div>
 
 
-        <div class="col-md-8 col-sm-6 col-xs-12">
-                <div class="well"  >
+							.stepwizard-step p {
+								margin-top: 10px;
+							}
+
+							.process-row {
+								display: table-row;
+							}
+
+							.process {
+								display: table;
+								width: 100%;
+								position: relative;
+							}
+
+							.process-step button[disabled] {
+								opacity: 1 !important;
+								filter: alpha(opacity=100) !important;
+							}
+
+							.process-row:before {
+								top: 50px;
+								bottom: 0;
+								position: absolute;
+								content: " ";
+								width: 100%;
+								height: 1px;
+								background-color: #ccc;
+								z-order: 0;
+
+							}
+
+							.process-step {
+								display: table-cell;
+								text-align: center;
+								position: relative;
+							}
+
+							.process-step p {
+								margin-top:10px;
+
+							}
+
+							.btn-circle {
+								width: 100px;
+								height: 100px;
+								text-align: center;
+								padding: 6px 0;
+								font-size: 12px;
+								line-height: 1.428571429;
+								border-radius: 15px;
+							}
+						</style>
+						<center><h2>Select the batch</h2></center>
+						<div class="process">
+							<div class="process-row">
+						<div class="process-step">
+							 <a href="ex_marks.php?subid=<?php echo $subid?>&token=1">
+							 <button type="submit" style="font-size:30px;" name="token" value="1" class="btn btn-info btn-circle" >01</button>
+							 <p>batch 01</p> </a>
+							</div>
+						<div class="process-step">
+							<a href="ex_marks.php?subid=<?php echo $subid?>&token=2">
+							<button type="submit" style="font-size:30px;" name="token" value="2" class="btn btn-info btn-circle">02</button>
+							<p>batch 02</p> </a>
+						</div>
+						<div class="process-step">
+							<a href="ex_marks.php?subid=<?php echo $subid?>&token=3">
+							<button type="submit" style="font-size:30px;" name="token" value="3" class="btn btn-info btn-circle">03</button>
+							<p>batch 03</p> </a>
+						</div>
+						</div>
+					</div>
+						
+					
+			<?php
+			}
+			else if($token>0)
+			{?>
+				<div class="col-md-2"></div>
+        <div class="col-md-8 col-sm-8 col-xs-12" style="padding-left: 10%">
 				<?php
-    $subid = $_GET['subid'];
-    $res = getstudents($con,$subid);
-    $subdata = getsubdata($con,$subid);
-?>
+					$subid = $_GET['subid'];
+					$res = getstudents($con,$subid,$token);
+					$subdata = getsubdata($con,$subid);
+				?>
+        <center>
         <section class="content-header">
-
-
-            <div class="row">
-
-                
 
                 <form action="" method="post">
                 <div class="col-md-10">
+					
 
                    <h4><b>Subject : <?php echo $subdata[2]; ?></b></h4>
 					<b>Subject id : </b><?php echo $subid?>
 					<br>
                     <b> Course Id : </b><?php echo $subdata[1];?>
 					<br>
+                    <b> Batch number : </b><?php echo $token;?>
+					<hr>
 
 
-                    <div class="box" style="width:100%;">
+                    <div class="box" style="width:75%;">
                         <div class="box-header">
-                            <h3 class="box-title">Input Attendance</h3>
+                            <h3 class="box-title">Input Marks</h3>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body table-responsive no-padding">
@@ -73,7 +159,8 @@ include '../components/page_head.php'; ?>
                                 <tr>
                                     <th>Subject ID</th>
                                     <th>Student Name</th>
-                                    <th>Marks</th>
+                                    <th>exam marks</th>
+                                    
                                 </tr>
                                 <?php
 
@@ -83,8 +170,16 @@ include '../components/page_head.php'; ?>
                                 ?>
                                 <tr>
                                     <td><?php  echo  $subid; ?></td>
-                                    <td name="$name"><?php  echo  $row['fullname']; ?></td>
-                                    <td><input type="text" placeholder="Enter as a percentage(%)" checked name="marks" ></td>
+                                    <td><?php  echo  $row['fullname']; ?></td>
+									
+                                    <td>
+										<center>
+											<input type="hidden" id="name[]" name="name[]"  value="<?php echo $row['fullname']; ?>">
+											<input type="text" placeholder="Enter as a percentage(%)" name="marks[]" id="marks[]">
+										</center>
+									</td>
+                                    
+
                                 </tr>
 
                                     <?php } ?>
@@ -98,42 +193,50 @@ include '../components/page_head.php'; ?>
 
                     </div>
 
-                    <div class="row">
-
-                        <div class="col-md-2"></div>
-						
-							<div class="col-md-2">
-								<button type="submit" class="btn btn-block btn-success btn-md" name="next">Submit</button>
-							</div>
-
-							<div class="col-md-2">
-								<button type="cancel" class="btn btn-block btn-danger btn-md">Cancel</button>
-							</div>
-						
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                    </div>
-                    </div>
+                            <button type="submit" class="btn btn-block btn-success btn-md" name="next">Record Marks</button>
+                            
+                        </div>
                 </form>
-                <div class="col-md-2"></div>
-
-                </div>
-
             </section>
-                </div>
-            
-
+            </center>
+        </div>
+            <div class="col-md-2"></div>
         </div>
 
+        <div class="row">
 
+        <div class="col-md-4"></div>
 
-    </div>
-    <br>
-    <br>
-    </div>
-    </div>
-    </div>
-    </div>
+				
+			<?php
+			}
+			
+			if(isset($_POST['next']) === true) {
+				$i=0;
+				foreach ($_POST['marks'] as $index => $val)
+				{
+					$n=$_POST['name'];
+					$new=$_POST['marks'];
+					$sql = "UPDATE student SET exam_marks='$new[$i]' WHERE fullname = '$n[$i]'" ;
+					$res = mysqli_query($con,$sql);
+					$i++;
+					
+				}
+				?>
+				<div class="col-md-4">
+				<br>
+				<div class="alert alert-info">
+					<strong><center>Recorded!</center></strong>
+				</div>
+
+				<form action="lecandinstruct.php" method="GET"> 
+				<center><button class="btn btn-info" type="submit" name="subid" value="<?php echo $subid; ?>">Process to next page</button></center>
+				</form>
+				<?php
+				
+			}
+        ?>
+			
 
 
     <div class="modal fade" id="myModal" role="dialog">

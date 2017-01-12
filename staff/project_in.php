@@ -17,12 +17,19 @@ include '../components/page_head.php'; ?>
     <script>
 
 
-        $(document).ready(function () {
-
-    
-               $( function() {
-    $( "#datepick" ).datepicker();
-  } );
+        $(document).ready(function () 
+		{
+			$( function() 
+			{
+				$( "#datepick" ).datepicker();
+			} );
+        });
+		$(document).ready(function () 
+		{
+			$( function() 
+			{
+				$( "#datepick2" ).datepicker();
+			} );
         });
 
     </script>
@@ -108,7 +115,7 @@ include '../components/page_head.php'; ?>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                                    <input name="due_date" style="width:160px;" placeholder="" class="form-control" type="date" id="datepick" required>
+                                    <input name="due_date" style="width:160px;" placeholder="" class="form-control" type="date" id="datepick2" required>
                                 </div>
                             </div>
                         </div>
