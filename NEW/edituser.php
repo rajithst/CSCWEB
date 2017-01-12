@@ -91,7 +91,7 @@
     <div class="page-content-wrap">
         <div class="row">
 
-        <div class="col-md-6">
+        <div class="col-md-6" id="table">
 
             <!-- CONTACTS WITH CONTROLS -->
             <div class="panel panel-default">
@@ -124,20 +124,44 @@
 
                 <?php
 
-                if(isset($_POST['adduser']) === true){
-                $password = 'csc';
-                $postdata = array(
-                    'first_name' =>  $_POST['first_name'],
-                    'last_name' =>  $_POST['last_name'],
-                    'email' =>  $_POST['email'],
-                    'telephone'=>$_POST['telephone'],
-                    'address' => $_POST['address'],
-                    'password'=>md5($password),
-                    'role' => $_POST['role']
-                );
+                if(isset($_POST['update']) === true) {
 
-                $result = adduser($con,$postdata);
+                    $id = $_POST['hidden'];
+                    $password = 'csc';
+                    $postdata = array(
+                        'first_name' =>  filter_var($_POST['first_name'],FILTER_SANITIZE_STRING),
+                        'last_name' =>  filter_var($_POST['last_name'],FILTER_SANITIZE_STRING),
+                        'email' =>  filter_var($_POST['email'],FILTER_SANITIZE_EMAIL,FILTER_VALIDATE_EMAIL),
+                        'telephone'=>preg_replace('/[^0-9]/', '', $_POST['telephone']),
+                        'address' => filter_var($_POST['address'],FILTER_SANITIZE_STRING),
+                        'role' => $_POST['role'],
+                    );
 
+                    $result = updateuser($con, $id,$postdata);
+
+                    if ($result=='true'){
+                        ?>
+                        <script>swal("Updated!", "Your have been updated user data successfully")
+
+                        $.ajax({
+
+                            type:"get",
+                            url:"refreshtable.php",
+                            success:function (data) {
+                                $('#table').html("");
+                                $('#table').html(data);
+
+                            }
+
+                        })
+
+
+                        </script>
+
+                        <?php
+
+                    }
+                }
 
                 ?>
 

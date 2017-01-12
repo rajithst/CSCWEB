@@ -55,6 +55,18 @@ function postdraftedited($con,$update_data,$postid){
 }
 
 
+function updateuser($con, $id,$postdata){
+    $update=array();
+
+    foreach ($postdata as $field => $data) {
+        $update[]= '`' . $field . '` = \'' . $data . '\'';
+    }
+    $sql = "UPDATE staff SET" . implode(' , ',$update) . "WHERE id = $id";
+    mysqli_query($con,$sql);
+    return 'true';
+}
+
+
 function savedraftedited($con,$postdata,$postid){
 	
 	$update=array();
