@@ -26,29 +26,33 @@ $fileSize = $_FILES["file1"]["size"]; // File size in bytes
 $fileErrorMsg = $_FILES["file1"]["error"]; 
 $date = date("Y-m-d");
 
-$fileupload_ok = 0;// 0 for false... and 1 for true
+
+
+$fileupload_ok = 1;// 0 for false... and 1 for true
 if (!$fileTmpLoc) { // if file not chosen
-    echo "ERROR: Please browse for a file before clicking the upload button.";
+    echo $fileErrorMsg;
     exit();
 }
-if(file_exists("../uploads/".$fileName)){
+/*if(file_exists("../uploads/".$fileName)){
 	echo "Sorry, file already exists.";
 	$fileupload_ok = 0;
 }else{
 	$fileupload_ok = 1;
-}
+}*/
 
 if ($fileupload_ok == 0) {
     echo "Sorry, your file was not uploaded.";
 
 } else {
     if(move_uploaded_file($fileTmpLoc, "../uploads/$fileName")){
-    echo "$fileName was Uploaded successfully";
+
+        echo '<h4><strong>'.$fileName.' was Uploaded successfully !'.'</strong></h4>';
 
 	//$con = mysqli_connect("localhost", "root", "rajith","csc") or die(mysql_error()) ;
 
    	mysqli_query($con,"INSERT INTO fileuploads(date,subject,subject_code,title,description,filename,file)
     VALUES ('$date', '$name','$id','$title','$desc','$fname','uploads/$fileName')") ;
+    
 
     } else {
         echo "Sorry, there was an error uploading your file.";

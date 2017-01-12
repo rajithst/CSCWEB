@@ -38,9 +38,7 @@ include '../components/course_head.php'; ?>
 <div class="container-fluid">
 <div class="sidenav col-md-2 col-sm-3 col-xs-12">
 
-    <center>
-        <h3>Main menu</h3>
-    </center>
+    
                 <div class="panel-group" id="accordion">
                     <!--<div class="panel panel-default">
                         <div class="panel-heading">
@@ -143,36 +141,7 @@ include '../components/course_head.php'; ?>
                             </div>
                         </div>
                     </div>-->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
-                            </span>My Files</a>
-                            </h4>
-                        </div>
-                        <div id="collapseFour" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <table class="table">
-                                    <tr>
-                                        <td>
-                                            <span class=""></span><a href=>Attendance Reports</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class=""></span><a href="">Other reports</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class=""></span><a href="">View Assignments</a>
-                                        </td>
-                                    </tr>
-                                    
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
 
 

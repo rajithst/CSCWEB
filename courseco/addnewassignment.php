@@ -14,6 +14,19 @@ require '../core/init.php';
 require '../core/function/coursecode.php';
 include '../components/course_head.php'; ?>
 
+<script>
+
+
+    $(document).ready(function () {
+
+        $('#mycalendar').monthly({
+            mode: 'event',
+            //jsonUrl: 'events.json',
+            //dataType: 'json'
+            xmlUrl: 'events.xml'
+        });
+    });
+</script>
 
 </head>
 <body>
@@ -62,7 +75,7 @@ if (isset($_GET['id'])) {
                         <table class="table" style="margin-bottom: 0px;">
                             <tr>
                                 <td style="padding-left: 15px;">
-                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="courseassignments.php">All Assignment</a>
+                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="courseassignments.php?id=<?php echo $subid; ?>">All Assignment</a>
                                 </td>
                             </tr>
                             <tr>
@@ -140,8 +153,10 @@ if (isset($_GET['id'])) {
                       );
 
                       $submit = submission($con,$regdata);
-                      echo "<script type=text/javascript>alert('Submission link was created successfully!')</script>";
+                      echo "<script type=text/javascript>swal('Submission link was created successfully!')</script>";
                   }else{
+
+
                     echo '<script>';
                    /*echo 'document.submissionform.title.value = <?php echo $_POST["title"]?>;';
                     echo 'document.submissionform.description.value = <?php echo $_POST["description"]?>;';*/
