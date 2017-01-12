@@ -17,12 +17,12 @@ include '../components/page_head.php'; ?>
     <script>
 
 
-        $(document).ready(function () {
-
-    
-               $( function() {
-    $( "#datepick" ).datepicker();
-  } );
+        $(document).ready(function () 
+		{
+			$( function() 
+			{
+				$( "#datepick" ).datepicker();
+			} );
         });
 
     </script>

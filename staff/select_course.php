@@ -95,7 +95,8 @@ include '../components/page_head.php'; ?>
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body table-responsive no-padding">
-							<table class="table table-hover">
+						<div name="val" value="1"></div>
+						<table class="table table-hover">
 								<tr>
 									<th>Course ID</th>
 									<th>Course Name</th>
@@ -104,6 +105,7 @@ include '../components/page_head.php'; ?>
 								</tr>
 
 								<?php
+								$batch=3;
 								$res = getall($con);
 								while ($row = mysqli_fetch_assoc($res)) {
 									$id= $row['courseid'];
@@ -112,7 +114,7 @@ include '../components/page_head.php'; ?>
 									<td><?php echo $row['courseid']; ?></td>
 									<td><?php echo $row['coursename']; ?></td>
 									<td id="btn"><button type="submit" class="btn btn-success">Get Subjects</button> </td>
-
+									
 								</tr>
 								<?php } ?>
 							</table>

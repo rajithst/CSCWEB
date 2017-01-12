@@ -15,21 +15,53 @@ include '../components/page_head.php'; ?>
 
 <style>
 
+
 </style>
 
     <script>
 
 
-        $(document).ready(function () {
-
-    
-               $( function() {
-    $( "#datepick" ).datepicker();
-  } );
+        $(document).ready(function () 
+		{
+            $( function() 
+			{
+				$( "#datepick" ).datepicker();
+			} );
         });
 
     </script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0-beta.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.1.135/jspdf.min.js"></script>
+	<script type="text/javascript" src="http://cdn.uriit.ru/jsPDF/libs/adler32cs.js/adler32cs.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+						
+	<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.addimage.js"></script>
+	<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.from_html.js"></script>
+	<script type="text/javascript" src="js/basic.js"></script>
+	<script>
+							$(function()
+							{
+								var doc = new jsPDF('p', 'pt');
+								
+								var specialElementHandlers = {
+									'#editor': function (element, renderer) {
+										return true;
+									}
+								};
+								doc.setFontSize(30);
+								$('#cmd').click(function () {
+									doc.fromHTML($('#content').html(), 15, 15, {
+										'width': 1500,
+											'elementHandlers': specialElementHandlers
+									});
+									doc.save('income-report.pdf');
+								});
+								
+							});	
+	</script>
     </head>
     <body>
 
@@ -46,6 +78,7 @@ include '../components/page_head.php'; ?>
 		<?php
 		if(isset($_POST['pro_in']) === true)
 			
+		
 			{?>
 			<li class="active"><a href="">PROJECT INCOME REPORT</a></li>
 			</ul>
@@ -60,6 +93,22 @@ include '../components/page_head.php'; ?>
 			   <div class="row">
 			   <div class="col-md-2"></div>
 					<div class="col-md-8 col-sm-6 col-xs-12">
+						<div id='content'>
+						<div class="panel panel-primary">
+							<!-- Default panel contents -->
+							<div class="panel-heading">
+								<center><h2 class="panel-title">
+								<?php
+									$s_date=$_POST['start_date'];
+									$e_date=$_POST['end_date'];
+								?>
+									Project Income Report from <?php echo $s_date." to ".$e_date;?>
+								</h2> </center>
+							</div>
+						
+							<div class="panel-body">
+
+							</div>
 					<?php
 				
 								$s_date=$_POST['start_date'];
@@ -70,19 +119,38 @@ include '../components/page_head.php'; ?>
 								$query = "SELECT * FROM project_income WHERE received_date BETWEEN '$s_date' AND '$e_date'"; //You don't need a ; like you do in SQL
 								$result = mysqli_query($con,$query);
 
-								echo "<table class='table table-bordered table-inverse'>"; // start a table tag in the HTML
-								echo "<th>Project name</th><th>Client name</th><th>Responsible party</th><th>Received date</th><th>Due date</th><th>Received by</th><th>Amount</th>";
+								echo "<table id='table1' class='table' width='120%' style='width:120%'>"; // start a table tag in the HTML
+								echo '<tr><th style="min-width:50px">Project</th>';
+								echo "<th style='min-width:45px'>Client</th>";
+								echo "<th style='min-width:120px'>Responsible party</th>";
+								echo "<th style='min-width:95px'>Received date</th>";
+								echo "<th style='min-width:75px'>Due date</th>";
+								echo "<th style='min-width:80px'>Received by</th>";
+								echo "<th style='min-width:60px'>Amount</th></tr>";
 								while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
 								echo "<tr><td>" . $row['pro_name'] . "</td><td>" . $row['client'] . "</td><td>" . $row['responsible_party'] . "</td><td>" . $row['received_date'] . "</td><td>" . $row['due_date'] . "</td><td>" . $row['received_by'] . "</td><td>" . $row['amount'] . "</td></tr>";  //$row['index'] the index here is a field name
 								$total+=$row['amount'];
 								}
-								echo"<tr><td colspan='6'>"."<strong><i>Total income during the period</i></strong>"."</td><td><strong><i>".$total."</i></strong></tr>";
+								
+								echo "</div>";
 								echo "</table>"; //Close the table in HTML
+								echo "<b><i><h2>Total Project income during the period : ".$total."</h2></i></b>";
+								echo "<div id='editor'></div>";
+								$s_date=0;
+
+								$e_date=0;
 
 								mysqli_close($con); //Make sure to close out the database connection
+								echo "<center>
+									<button class='btn btn-primary' id ='cmd'><span class='glyphicon glyphicon-file' style='vertical-align:middle'></span> Download</button>
+									</center>";
 
-			}
-		if(isset($_POST['cc_in']) === true)
+			}?>
+			</div>
+			
+			
+			<?php
+			if(isset($_POST['cc_in']) === true)
 			
 			{?>
 			<li class="active"><a href="">CUSTOMIZED COURSE INCOME REPORT</a></li>
@@ -98,6 +166,22 @@ include '../components/page_head.php'; ?>
 			   <div class="row">
 			   <div class="col-md-2"></div>
 					<div class="col-md-8 col-sm-6 col-xs-12">
+					<div id='content'>
+					<div class="panel panel-primary">
+							<!-- Default panel contents -->
+							<div class="panel-heading">
+								<center><h2 class="panel-title">
+								<?php
+									$s_date=$_POST['start_date'];
+									$e_date=$_POST['end_date'];
+								?>
+									Customized Course Income Report from <?php echo $s_date." to ".$e_date;?>
+								</h2> </center>
+							</div>
+						
+							<div class="panel-body">
+
+							</div>
 					<?php
 								$s_date=$_POST['start_date'];
 
@@ -108,17 +192,30 @@ include '../components/page_head.php'; ?>
 								$result = mysqli_query($con,$query);
 
 								echo "<table class='table table-bordered table-inverse'>"; // start a table tag in the HTML
-								echo "<th>Course name</th><th>Requesting party</th><th>Received date</th><th>Received by</th><th>Amount</th>";
+								echo "<th style='min-width:80px'>Course name</th><th>Requesting party</th><th>Received date</th><th>Received by</th><th>Amount</th>";
 								while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
 								echo "<tr><td>" . $row['course_name'] . "</td><td>" . $row['requesting_party'] . "</td><td>" . $row['received_date'] . "</td><td>" . $row['received_by'] . "</td><td>" . $row['amount'] . "</td></tr>";  //$row['index'] the index here is a field name
 								$total+=$row['amount'];
 								}
-								echo"<tr><td colspan='4'>"."<strong><i>Total income during the period</i></strong>"."</td><td><strong><i>".$total."</i></strong></tr>";
+								echo "</div>";
 								echo "</table>"; //Close the table in HTML
+								echo "<b><i><h2>Total Project customized course income during the period : ".$total."</h2></i></b>";
+								echo "<div id='editor'></div>";
+								
+								
+								$s_date=0;
 
+								$e_date=0;
 								mysqli_close($con); //Make sure to close out the database connection
+								echo "<center>
+									<button class='btn btn-primary' id ='cmd'><span class='glyphicon glyphicon-file' style='vertical-align:middle'></span> Download</button>
+									</center>";
 
-			}
+			}?>
+			</div>
+			
+			<?php
+			
 			if(isset($_POST['other_in']) === true)
 			
 			{?>
@@ -135,6 +232,22 @@ include '../components/page_head.php'; ?>
 			   <div class="row">
 			   <div class="col-md-2"></div>
 					<div class="col-md-8 col-sm-6 col-xs-12">
+					<div id='content'>
+					<div class="panel panel-primary">
+							<!-- Default panel contents -->
+							<div class="panel-heading">
+								<center><h2 class="panel-title">
+								<?php
+									$s_date=$_POST['start_date'];
+									$e_date=$_POST['end_date'];
+								?>
+									Other Income Report from <?php echo $s_date." to ".$e_date;?>
+								</h2> </center>
+							</div>
+						
+							<div class="panel-body">
+
+							</div>
 					<?php
 								$s_date=$_POST['start_date'];
 
@@ -150,17 +263,26 @@ include '../components/page_head.php'; ?>
 								$total+=$row['amount'];
 								echo "<tr><td>" . $row['description'] . "</td><td>" . $row['received_from'] . "</td><td>" . $row['received_by'] . "</td><td>" . $row['received_date'] . "</td><td>" . $row['amount'] . "</td></tr>";  //$row['index'] the index here is a field name
 								}
-								echo"<tr><td colspan='4'>"."<strong><i>Total income during the period</i></strong>"."</td><td>".$total."</tr>";
-
+								echo "</div>";
 								echo "</table>"; //Close the table in HTML
+								echo "<b><i><h2>Total Project other income during the period : ".$total."</h2></i></b>";
+								echo "<div id='editor'></div>";
 								
+								
+								$s_date=0;
 
+								$e_date=0;
+								
 								mysqli_close($con); //Make sure to close out the database connection
+								echo "<center>
+									<button class='btn btn-primary' id ='cmd'><span class='glyphicon glyphicon-file' style='vertical-align:middle'></span> Download</button>
+									</center>";
 
 
 			}
 			?>
-			   
+			</div>
+			
 
             
         </div>

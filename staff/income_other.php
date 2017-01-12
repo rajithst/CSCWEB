@@ -19,7 +19,8 @@ $received_from=$_POST['rec_from'];
 
 $received_by=$_POST['rec_by'];
 
-$received_date=$_POST['rec_date'];
+$rec_date=$_POST['rec_date'];
+$received_date = date('Y-m-d', strtotime($rec_date));
 
 $amount=$_POST['amm'];
 
