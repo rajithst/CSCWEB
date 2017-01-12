@@ -26,6 +26,26 @@ include '../components/page_head.php'; ?>
                 xmlUrl: 'events.xml'
             });
         });
+	
+
+
+        $(document).ready(function () 
+		{
+			$( function() 
+			{
+				$( "#datepick" ).datepicker();
+			} );
+        });
+		
+		$(document).ready(function () 
+		{
+			$( function() 
+			{
+				$( "#datepick2" ).datepicker();
+			} );
+        });
+
+    </script>
     </script>
 
     </head>
@@ -118,7 +138,8 @@ include '../components/page_head.php'; ?>
 							  </tr>
 							  <tr>
 								<td><h4><b>2)Date of Birth <span style="color:red;font-size:20px;">*</span></b></h4></td>
-								<td><input class="form-control" style="width:20%" type="date"required id="enter_details" name="DOB" ></input>
+								<td>
+									<input class="form-control" style="width:20%" type="date" required id="datepick" name="DOB" >
 								</td>
 							  </tr>
 							  <tr>
@@ -225,7 +246,9 @@ include '../components/page_head.php'; ?>
 							  </tr>
 							  <tr>
 								<td><h4>Date Received <span style="color:red;font-size:25px;">*</span></h4></td>
-								<td><input type="date" class="form-control" style="width:50%"  id="fill_area" name="rec_date" required></input></td>
+								<td>
+									<input type="date" class="form-control" style="width:50%" name="rec_date" required id="datepick2">
+								</td>
 							  </tr>
 							  <tr>
 								<td><h4>Received person:<span style="color:red;font-size:25px;">*</span></h4></td>

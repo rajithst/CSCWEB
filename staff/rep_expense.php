@@ -60,11 +60,25 @@ include '../components/page_head.php'; ?>
 			   <div class="row">
 			   <div class="col-md-2"></div>
 					<div class="col-md-8 col-sm-6 col-xs-12">
-					<?php
-								
+					<div class="panel panel-primary">
+						<!-- Default panel contents -->
+						<div class="panel-heading">
+							<center><h2 class="panel-title">
+							<?php
+							
 								$s_date=$_POST['start_date'];
 
 								$e_date=$_POST['end_date'];
+								?>
+								Expense Report from <?php echo $s_date." to ".$e_date;?>
+							</h2> </center>
+						</div>
+						<div class="panel-body">
+
+						</div>
+					<?php
+								
+								
 								$total=0;
 
 								$query = "SELECT * FROM expenses WHERE given_date BETWEEN '$s_date' AND '$e_date'"; //You don't need a ; like you do in SQL
@@ -84,7 +98,7 @@ include '../components/page_head.php'; ?>
 			}
 			?>
 					
-		
+		</div>
         </div>
 	</div>
 

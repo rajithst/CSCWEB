@@ -173,7 +173,15 @@ function changeimage( $user_id, $file_temp, $file_extn) {
 
 }
 
+function addevent($con,$postdata){
 
+    $fields = '`'.implode('`,`', array_keys($postdata)).'`';
+    $data   = '\''.implode('\', \'', $postdata).'\' ';
+
+    $sql = "INSERT INTO events ($fields) VALUE ($data)";
+    $res = mysqli_query($con, $sql);
+    return 'ture';
+}
 
 
 

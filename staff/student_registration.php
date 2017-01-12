@@ -27,7 +27,8 @@ $full_name=$_POST['full_name'];
 
 $full_name_with_initials=$_POST['full_name_with_initials'];
 
-$date_of_birth=$_POST['DOB'];
+$date_birth=$_POST['DOB'];
+$date_of_birth = date('Y-m-d', strtotime($date_birth));
 
 $gender=$_POST['optradio'];
 
@@ -65,15 +66,18 @@ $payment_received_day=$_POST['rec_date'];
 $person_rec=$_POST['person_received'];
 $payment_referrence=$_POST['ref'];
 
-
 $sql="INSERT INTO 
-student(name_title,fullname,coursename,name_w_initials,dob,gender,nic,home_address,home_tel,home_mobile,workplace_designation,work_place_addr,work_place_tel,work_place_email,vehicle_no,description_howknow,howknow,registered) 
-VALUES ('$title','$full_name','$course_name','$full_name_with_initials','$date_of_birth','$gender','$NIC','$home_address','$home_telephone','$mobile','$work_place_and_designation','$office_address','$office_telephone','$office_email','$vehicle_number','$description_of_other_method','$method_of_being_informed','$status')";
+student(name_title,fullname,coursename,name_w_initials,dob,gender,nic,home_address,home_tel,home_mobile,workplace_designation,work_place_addr,work_place_tel,work_place_email,vehicle_no,description_howknow,howknow,registered,email) 
+VALUES ('$title','$full_name','$course_name','$full_name_with_initials','$date_of_birth','$gender','$NIC','$home_address','$home_telephone','$mobile','$work_place_and_designation','$office_address','$office_telephone','$office_email','$vehicle_number','$description_of_other_method','$method_of_being_informed','$status','$personel_email')";
+
+
+
+$newvalue = date('Y-m-d', strtotime($payment_received_day));
 
 
 $sqlp="INSERT INTO
-course_income(student_NIC,coursename,payment_method,amount,received_date,person_rec,refference_no)
-VALUE('$NIC','$course_name','$payment_method','$payed_ammount','$payment_received_day','$person_rec','$payment_referrence')";
+course_income(student_NIC,coursename,payment_method,amount,person_rec,refference_no,received_date)
+VALUE('$NIC','$course_name','$payment_method','$payed_ammount','$person_rec','$payment_referrence','$newvalue')";
 
 if(mysqli_query($con,$sql) && mysqli_query($con,$sqlp) )
 {?>
@@ -85,8 +89,8 @@ if(mysqli_query($con,$sql) && mysqli_query($con,$sqlp) )
 	<ul class="breadcrum">
         <li class="completed"><a href="index.php">HOME</a></li>
         <li class="completed"><a href="select_course_reg.php">SELECT COURSE</a></li>
-        <li class="completed"><a href="">REGISTRATION</a></li>
-		<li class="active"><a href="">REGISTERED</a></li>
+        <li class="completed"><a href="#">REGISTRATION</a></li>
+		<li class="active"><a href="#">REGISTERED</a></li>
         
 
     </ul>
@@ -108,8 +112,8 @@ else
 	<ul class="breadcrum">
         <li class="completed"><a href="index.php">HOME</a></li>
         <li class="completed"><a href="select_course_reg.php">SELECT COURSE</a></li>
-        <li class="completed"><a href="">REGISTRATION</a></li>
-		<li class="active"><a href="">NOT REGISTERED</a></li>
+        <li class="completed"><a href="#">REGISTRATION</a></li>
+		<li class="active"><a href="#">NOT REGISTERED</a></li>
         
 
     </ul>

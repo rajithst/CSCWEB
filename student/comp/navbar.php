@@ -83,7 +83,7 @@
                                             <p class="text-left"><strong><?php echo $stu_data['fullname']; ?></strong></p>
                                             <p class="text-left small"><?php echo $stu_data['email']; ?></p>
                                             <p class="text-left">
-                                                <a href="#" class="btn btn-primary btn-block btn-sm">Change Password</a>
+                                                <a href="account.php" class="btn btn-primary btn-block btn-sm">Change Settings</a>
                                             </p>
                                         </div>
                                     </div>

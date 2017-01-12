@@ -17,7 +17,8 @@ $c_name=$_POST['course_name'];
 
 $requesting_party=$_POST['req_party'];
 
-$received_date=$_POST['rec_date'];
+$r_date=$_POST['rec_date'];
+$received_date = date('Y-m-d', strtotime($r_date));
 
 $received_by=$_POST['rec_by'];
 

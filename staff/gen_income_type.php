@@ -114,23 +114,21 @@ $('#two-inputs2').dateRangePicker(
         <h3 class="text-center">Configuring reports</h3>
         <br>
         <div class="list-group">
-
-
-         <a href="courseincomereport.php" class="list-group-item">
+		
+        <!--<a href="courseincomereport.php" class="list-group-item">-->
+		
+		<form action="select_co.php" method="post">
                 <div class="media col-md-3" id="nn">
                     <span class="badge">Course income</span>
                 </div>
                 <div class="col-md-6 text-center" id="nn">
-                   
-                 
-                Select batch
-
-                    
+					
                 </div>
                 <div class="col-md-3 text-center" id="nn">
-                    <button type="button" class="btn btn-info btn-lg btn-block"> Run Report </button>
+                    <button type="submit" class="btn btn-info btn-lg btn-block"> Select Course </button>
                 </div>
-          </a>
+		</form>
+		
 		  <form action="report.php" method="post">
 		  <div class="media col-md-3" id="nn">
                    <span class="badge">Project Income</span>
@@ -146,6 +144,8 @@ $('#two-inputs2').dateRangePicker(
                     <button type="submit" name="pro_in" class="btn btn-info btn-lg btn-block"> Run Report </button>
                 </div>
 		</form>
+		
+		
 		<form action="report.php" method="post">
 		  <div class="media col-md-3" id="nn">
                   <span class="badge">Customize Course Income</span>
@@ -161,6 +161,8 @@ $('#two-inputs2').dateRangePicker(
                     <button type="submit" name="cc_in" class="btn btn-info btn-lg btn-block"> Run Report </button>
                 </div>
 		</form>
+		</tr>
+		<tr>
 		<form action="report.php" method="post">
 		  <div class="media col-md-3" id="nn">
                   <span class="badge">Other Income</span>
@@ -176,10 +178,8 @@ $('#two-inputs2').dateRangePicker(
                     <button type="submit" name="other_in" class="btn btn-info btn-lg btn-block"> Run Report </button>
                 </div>
 		</form>
-         
-
-        </div>
-      
+        
+      </div>
     </div>
 
     </div>

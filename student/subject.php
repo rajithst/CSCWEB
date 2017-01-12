@@ -99,7 +99,7 @@ require '../core/function/student.php';
                                 <table class="table">
                                     <tr>
                                         <td>
-                                            <a href="http://www.jquery2dotnet.com">Change Settings</a>
+                                            <a href="account.php">Change Settings</a>
                                         </td>
                                     </tr>
                                 </table>

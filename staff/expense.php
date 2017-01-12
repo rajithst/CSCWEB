@@ -22,7 +22,8 @@ $given_to=$_POST['g_to'];
 
 $given_by=$_POST['g_by'];
 
-$given_date=$_POST['g_date'];
+$g_date=$_POST['g_date'];
+$given_date = date('Y-m-d', strtotime($g_date));
 
 $amount=$_POST['amm'];
 
