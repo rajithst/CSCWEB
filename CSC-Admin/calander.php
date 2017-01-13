@@ -112,17 +112,135 @@
 
 
 
+                $xml = new DOMDocument("1.0","UTF-8");
+                $xml->load('events.xml');
+
+                        $name =  filter_var($_POST['name'],FILTER_SANITIZE_STRING);
+                        $sdate =  $_POST['sdate'];
+                        $enddate =  $_POST['enddate'];
+                        $starttime=$_POST['starttime'];
+                        $endtime = $_POST['endtime'];
+
+                        $rootTag = $xml->getElementsByTagName("monthly")->item(0);
+                        $infoTag = $xml->createElement("event");
+                            $nameTag = $xml->createElement("name",$name);
+                            $sdateTag = $xml->createElement("startdate",$sdate);
+                            $edateTag = $xml->createElement("enddate",$enddate);
+                            $stimeTag = $xml->createElement("starttime",$starttime);
+                            $etimeTag = $xml->createElement("endtime",$endtime);
+
+
+
+                            $infoTag->appendChild($nameTag);
+                            $infoTag->appendChild($sdateTag);
+                            $infoTag->appendChild($edateTag);
+                            $infoTag->appendChild($stimeTag);
+                            $infoTag->appendChild($etimeTag);
+
+                    $rootTag->appendChild($infoTag);
+                    $xml->save('events.xml');
+
+
                             $stu = 0;
                             $couc = 0;
                             $csc = 0;
                             if (!empty($_POST["user"])) {
                                 foreach ($_POST["user"] as $user) {
                                     if ($user == 1) {
-                                        $stu = 1;
+
+
+                                        $xml = new DOMDocument("1.0","UTF-8");
+                                        $xml->load('stuevents.xml');
+
+                                        $name =  filter_var($_POST['name'],FILTER_SANITIZE_STRING);
+                                        $sdate =  $_POST['sdate'];
+                                        $enddate =  $_POST['enddate'];
+                                        $starttime=$_POST['starttime'];
+                                        $endtime = $_POST['endtime'];
+
+                                        $rootTag = $xml->getElementsByTagName("monthly")->item(0);
+                                        $infoTag = $xml->createElement("event");
+                                        $nameTag = $xml->createElement("name",$name);
+                                        $sdateTag = $xml->createElement("startdate",$sdate);
+                                        $edateTag = $xml->createElement("enddate",$enddate);
+                                        $stimeTag = $xml->createElement("starttime",$starttime);
+                                        $etimeTag = $xml->createElement("endtime",$endtime);
+
+
+
+                                        $infoTag->appendChild($nameTag);
+                                        $infoTag->appendChild($sdateTag);
+                                        $infoTag->appendChild($edateTag);
+                                        $infoTag->appendChild($stimeTag);
+                                        $infoTag->appendChild($etimeTag);
+
+                                        $rootTag->appendChild($infoTag);
+                                        $xml->save('stuevents.xml');
+
+
+
+
                                     } else if ($user == 2) {
-                                        $couc = 1;
+
+
+                                        $xml = new DOMDocument("1.0","UTF-8");
+                                        $xml->load('coursecoevents.xml');
+
+                                        $name =  filter_var($_POST['name'],FILTER_SANITIZE_STRING);
+                                        $sdate =  $_POST['sdate'];
+                                        $enddate =  $_POST['enddate'];
+                                        $starttime=$_POST['starttime'];
+                                        $endtime = $_POST['endtime'];
+
+                                        $rootTag = $xml->getElementsByTagName("monthly")->item(0);
+                                        $infoTag = $xml->createElement("event");
+                                        $nameTag = $xml->createElement("name",$name);
+                                        $sdateTag = $xml->createElement("startdate",$sdate);
+                                        $edateTag = $xml->createElement("enddate",$enddate);
+                                        $stimeTag = $xml->createElement("starttime",$starttime);
+                                        $etimeTag = $xml->createElement("endtime",$endtime);
+
+
+
+                                        $infoTag->appendChild($nameTag);
+                                        $infoTag->appendChild($sdateTag);
+                                        $infoTag->appendChild($edateTag);
+                                        $infoTag->appendChild($stimeTag);
+                                        $infoTag->appendChild($etimeTag);
+
+                                        $rootTag->appendChild($infoTag);
+                                        $xml->save('coursecoevents.xml');
+
+
+
                                     } else if ($user == 3) {
-                                        $csc = 1;
+                                        $xml = new DOMDocument("1.0","UTF-8");
+                                        $xml->load('csccoevents.xml');
+
+                                        $name =  filter_var($_POST['name'],FILTER_SANITIZE_STRING);
+                                        $sdate =  $_POST['sdate'];
+                                        $enddate =  $_POST['enddate'];
+                                        $starttime=$_POST['starttime'];
+                                        $endtime = $_POST['endtime'];
+
+                                        $rootTag = $xml->getElementsByTagName("monthly")->item(0);
+                                        $infoTag = $xml->createElement("event");
+                                        $nameTag = $xml->createElement("name",$name);
+                                        $sdateTag = $xml->createElement("startdate",$sdate);
+                                        $edateTag = $xml->createElement("enddate",$enddate);
+                                        $stimeTag = $xml->createElement("starttime",$starttime);
+                                        $etimeTag = $xml->createElement("endtime",$endtime);
+
+
+
+                                        $infoTag->appendChild($nameTag);
+                                        $infoTag->appendChild($sdateTag);
+                                        $infoTag->appendChild($edateTag);
+                                        $infoTag->appendChild($stimeTag);
+                                        $infoTag->appendChild($etimeTag);
+
+                                        $rootTag->appendChild($infoTag);
+                                        $xml->save('csccoevents.xml');
                                     }
 
 
@@ -130,7 +248,7 @@
                             }
 
 
-                    $postdata = array(
+         /*           $postdata = array(
                         'name' =>  filter_var($_POST['name'],FILTER_SANITIZE_STRING),
                         'sdate' =>  $_POST['sdate'],
                         'enddate' =>  $_POST['enddate'],
@@ -141,14 +259,8 @@
                         'cscc' => filter_var($csc,FILTER_VALIDATE_INT)
                     );
 
-                    $result = addevent($con,$postdata);
+                    $result = addevent($con,$postdata);*/
 
-                    if ($result=='true'){
-                        ?>
-                        <script>swal("Updated!", "Your have been updated user data successfully");</script>
-                        <?php
-
-                    }
                 }
 
                 ?>
@@ -257,7 +369,55 @@
 
                     </div>
                 </form>
-                <a href="publishevent.php">click</a>
+                <div class="panel panel-default">
+                    <div class="panel-heading ui-draggable-handle">
+                        <h3 class="panel-title">Event Detailsl</h3>
+                    </div>
+                    <div class="panel-body panel-body-table">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th style="display: none;">id</th>
+                                <th>Event Name</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Tags</th>
+                                <th>Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+
+                            $query = mysqli_query($con,"SELECT * FROM events ORDER BY id DESC ");
+                            while($row = mysqli_fetch_array($query)){
+                            ?>
+                            <tr>
+
+                                <td style="display: none;"><?php echo $row[0]; ?></td>
+                                <td><?php echo $row[1]; ?></td>
+                                <td><?php echo $row[2]; ?></td>
+                                <td><?php echo $row[3]; ?></td>
+                                <td>
+                                    <?php
+
+                                    if ($row['student']==1)
+                                        echo "<span class='label label-info label-form'>Student</span>". "  ";
+                                    if ($row['coursec']==1)
+                                        echo "<span class='label label-info label-form'>Course Coordinator</span>" . "  ";
+                                    if ($row['cscc']==1)
+                                        echo "<span class='label label-info label-form'>CSC Coordinator</span>";
+                                    ?>
+
+                                </td>
+
+                                <td><a href="deleteevent.php?eventid=<?php echo $row[0]; ?>&name=<?php echo $row[1]; ?>"><button class="btn btn-danger delete">Delete</button></a></td>
+                            </tr>
+                            <?php } ?>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
 
         </div>

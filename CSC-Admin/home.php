@@ -162,60 +162,108 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <div class="panel-title-box">
-                                        <h3>Sales</h3>
-                                        <span>Sales activity by period you selected</span>
+                                        <h3>Calander Events</h3>
+
                                     </div>                                     
-                                    <ul class="panel-controls panel-controls-title">                                        
-                                        <li>
-                                            <div id="reportrange" class="dtrange">                                            
-                                                <span></span><b class="caret"></b>
-                                            </div>                                     
-                                        </li>                                
-                                        <li><a href="#" class="panel-fullscreen rounded"><span class="fa fa-expand"></span></a></li>
-                                    </ul>                                    
+
                                     
                                 </div>
                                 <div class="panel-body">                                    
                                     <div class="row stacked">
-                                        <div class="col-md-4">                                            
-                                            <div class="progress-list">                                               
-                                                <div class="pull-left"><strong>In Queue</strong></div>
-                                                <div class="pull-right">75%</div>                                                
-                                                <div class="progress progress-small progress-striped active">
-                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%</div>
+                                        <div class="col-md-12">
+                                            <div class="panel panel-default">
+
+                                                <div class="panel-heading ui-draggable-handle">
+                                                    <h3 class="panel-title">Responsive tables</h3>
+                                                </div>
+
+                                                <div class="panel-body panel-body-table">
+
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered table-striped table-actions">
+                                                            <thead>
+                                                            <tr>
+
+                                                                <th width="100" style="display: none;">id</th>
+                                                                <th width="100">Event Name</th>
+                                                                <th width="100">Current Status</th>
+                                                                <th width="100">End Date</th>
+                                                                <th width="100">Remaining Days</th>
+                                                                <th width="100">Tags</th>
+                                                                <th width="100">actions</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+
+                                                            <?php
+                                                            $query = mysqli_query($con,"SELECT * FROM events ORDER BY id DESC ");
+                                                            while($row = mysqli_fetch_array($query)){
+                                                            ?>
+                                                            <tr id="trow_1">
+
+                                                                <td style="display: none;"><strong><?php echo $row[0]; ?></strong></td>
+                                                                <td><strong><?php echo $row[1]; ?></strong></td>
+                                                                <?php
+                                                                $today = date("Y-m-d");
+                                                                $expday= $row[3];
+                                                                $today_dt = new DateTime($today);
+                                                                $expire_dt = new DateTime($expday);
+                                                                if ($expire_dt > $today_dt) {
+
+                                                                ?>
+                                                                <td><span class="label label-success">On going</span></td>
+                                                                <?php } else{ ?>
+                                                                    <td><span class="label label-danger">Expired</span></td>
+                                                                <?php
+                                                                }
+                                                                ?>
+
+                                                                <td><?php echo $row[3]; ?></td>
+
+                                                                <?php
+
+                                                                $now = time();
+                                                                $your_date = strtotime($row[3]);
+                                                                $datediff = $your_date- $now;
+
+                                                                $remdates= floor($datediff / (60 * 60 * 24));
+
+
+                                                                ?>
+                                                                <td><?php echo $remdates; ?></td>
+
+                                                                <td>
+                                                                    <?php
+
+                                                                    if ($row['student']==1)
+                                                                        echo "<span class='label label-info label-form'>Student</span>". "  ";
+                                                                    if ($row['coursec']==1)
+                                                                        echo "<span class='label label-info label-form'>Course Coordinator</span>" . "  ";
+                                                                    if ($row['cscc']==1)
+                                                                        echo "<span class='label label-info label-form'>CSC Coordinator</span>";
+                                                                    ?>
+
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn btn-default btn-rounded btn-sm"><span class="fa fa-pencil"></span></button>
+                                                                    <a href="deleteevents.php?eventid=<?php echo $row[0]; ?>&name=<?php echo $row[1]; ?>"><button class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-times"></span></button></a>
+                                                                </td>
+                                                            </tr>
+
+                                                            <?php } ?>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
                                                 </div>
                                             </div>
-                                            <div class="progress-list">                                               
-                                                <div class="pull-left"><strong>Shipped Products</strong></div>
-                                                <div class="pull-right">450/500</div>                                                
-                                                <div class="progress progress-small progress-striped active">
-                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">90%</div>
-                                                </div>
-                                            </div>
-                                            <div class="progress-list">                                               
-                                                <div class="pull-left"><strong class="text-danger">Returned Products</strong></div>
-                                                <div class="pull-right">25/500</div>                                                
-                                                <div class="progress progress-small progress-striped active">
-                                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">5%</div>
-                                                </div>
-                                            </div>
-                                            <div class="progress-list">                                               
-                                                <div class="pull-left"><strong class="text-warning">Progress Today</strong></div>
-                                                <div class="pull-right">75/150</div>                                                
-                                                <div class="progress progress-small progress-striped active">
-                                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
-                                                </div>
-                                            </div>
-                                            <p><span class="fa fa-warning"></span> Data update in end of each hour. You can update it manual by pressign update button</p>
                                         </div>
-                                        <div class="col-md-8">
-                                            <div id="dashboard-map-seles" style="width: 100%; height: 200px"></div>
-                                        </div>
-                                    </div>                                    
+
+                                    </div>
                                 </div>
                             </div>
                             <!-- END SALES BLOCK -->
-                            
+
                         </div>
                         <div class="col-md-4">
                             
@@ -313,18 +361,7 @@
                                     <div class="panel-title-box">
                                         <h3>Sales & Event</h3>
                                         <span>Event "Purchase Button"</span>
-                                    </div>
-                                    <ul class="panel-controls" style="margin-top: 2px;">
-                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
-                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>                                        
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
-                                                <li><a href="#" class="panel-remove"><span class="fa fa-times"></span> Remove</a></li>
-                                            </ul>                                        
-                                        </li>                                        
-                                    </ul>
+                                    </div>>
                                 </div>
                                 <div class="panel-body padding-0">
                                     <div class="chart-holder" id="dashboard-line-1" style="height: 200px;"></div>

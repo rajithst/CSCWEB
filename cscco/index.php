@@ -17,13 +17,17 @@ include '../components/cscordinator_head.php'; ?>
 <script>
 
 
+    var getUrl = window.location;
+    var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+    var path= baseUrl+'/CSC-Admin/csccoevents.xml';
+
     $(document).ready(function () {
 
         $('#mycalendar').monthly({
             mode: 'event',
             //jsonUrl: 'events.json',
             //dataType: 'json'
-            xmlUrl: 'events.xml'
+            xmlUrl: path
         });
     });
 </script>

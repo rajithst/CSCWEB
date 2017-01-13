@@ -12,10 +12,14 @@ if(logged_in() === false){
 require '../core/init.php';
 require '../components/stud_head.php';
 require '../core/function/student.php';
+
+
 ?>
 
 <script>
-
+    var getUrl = window.location;
+    var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+    var path= baseUrl+'/CSC-Admin/stuevents.xml';
 
     $(document).ready(function () {
 
@@ -23,7 +27,7 @@ require '../core/function/student.php';
             mode: 'event',
             //jsonUrl: 'events.json',
             //dataType: 'json'
-            xmlUrl: 'events.xml'
+            xmlUrl: path
         });
     });
 </script>

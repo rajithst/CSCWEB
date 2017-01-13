@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><rss version='2.0'><monthly><event><name>we</name><startdate>2017-01-23</startdate><enddate>2017-01-27</enddate><starttime>0000-00-00 00:00:00</starttime><endtime>0000-00-00 00:00:00</endtime></event></rss></monthly>
+<?xml version="1.0"?>
+<monthly>
+
+
+<event><name>Student</name><startdate>2017-01-26</startdate><enddate>2017-01-26</enddate><starttime>11:15 PM</starttime><endtime>11:15 PM</endtime></event><event><name>Course Coordinator</name><startdate>2017-01-25</startdate><enddate>2017-01-25</enddate><starttime>11:15 PM</starttime><endtime>11:15 PM</endtime></event><event><name>CSC Coordinator</name><startdate>2017-01-24</startdate><enddate>2017-01-24</enddate><starttime>11:15 PM</starttime><endtime>11:15 PM</endtime></event></monthly>

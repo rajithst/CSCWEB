@@ -6,14 +6,13 @@ $myFile = "events.xml";
 $fh = fopen($myFile, 'w') or die("can't open file");
 
 $rss_txt .= '<?xml version="1.0" encoding="utf-8"?>';
-$rss_txt .= "<rss version='2.0'>";
+
 $rss_txt .= "<monthly>";
 
 $query = mysqli_query($con,"SELECT * FROM events");
-while($values_query = mysqli_fetch_assoc($query))
+while($values_query = mysqli_fetch_array($query))
 {
-    $rss_txt .= '<event>';
-
+    $rss_txt .= "<event id='$values_query[0]'>";
     $rss_txt .= '<name>' .$values_query['name']. '</name>';
     $rss_txt .= '<startdate>' .$values_query['sdate']. '</startdate>';
     $rss_txt .= '<enddate>' .$values_query['enddate']. '</enddate>';
@@ -24,11 +23,16 @@ while($values_query = mysqli_fetch_assoc($query))
     $rss_txt .= '</event>';
 }
 
-$rss_txt .= '</rss>';
 $rss_txt .= '</monthly>';
 
 fwrite($fh, $rss_txt);
 fclose($fh);
+
+
+
+
+
+
 ?>
 
 
