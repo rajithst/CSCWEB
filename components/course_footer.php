@@ -23,6 +23,8 @@
 <script src="../public/js/bootstrap.js"></script>
 <script src="../public/plugins/datepicker/bootstrap-datetimepicker.js"></script>
 <script src="../public/plugins/monthly/monthly.js"></script>
+
+
 <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
 
 

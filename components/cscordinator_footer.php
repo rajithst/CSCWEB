@@ -1,4 +1,4 @@
-<footer lass="container-fluid" style="
+<footer class="container-fluid" style="
     position:fixed;
    left:0px;
    bottom:0px;
@@ -23,6 +23,7 @@
 <script src="../public/js/bootstrap.js"></script>
 <script src="../public/plugins/monthly/monthly.js"></script>
 <script src="../public/plugins/jQueryUI/jquery-ui.js"></script>
+<script src="../public/plugins/joyride/jquery.js"></script>
 
 <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
 

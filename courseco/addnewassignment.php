@@ -14,8 +14,12 @@ require '../core/init.php';
 require '../core/function/coursecode.php';
 include '../components/course_head.php'; ?>
 
+
 <script>
 
+    var getUrl = window.location;
+    var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+    var path= baseUrl+'/CSC-Admin/coursecoevents.xml';
 
     $(document).ready(function () {
 
@@ -23,7 +27,7 @@ include '../components/course_head.php'; ?>
             mode: 'event',
             //jsonUrl: 'events.json',
             //dataType: 'json'
-            xmlUrl: 'events.xml'
+            xmlUrl: path
         });
     });
 </script>
@@ -104,7 +108,7 @@ if (isset($_GET['id'])) {
     </div>
 
 
-    <div class="col-md-8 col-sm-6 col-xs-12" style="margin-top: -20px;">
+    <div class="col-md-10 col-sm-9 col-xs-12" style="margin-top: -20px;">
 
         <div class="panel panel-default" style="margin-top: 20px;">
           <div class="panel-heading" style="background-color: ; color: black;"><center><h4>Make Submission link</h4></center> </div>
@@ -179,43 +183,7 @@ if (isset($_GET['id'])) {
           </div>
         </div>
       </div>
-    <div class="col-md-2 col-sm-3 col-xs-12" style="margin-top: 0px;">
-        <!--<div class="profile-sidebar">
 
-            <center>
-                <h3>Folder Structure</h3>
-            </center>-->
-
-
-             <?php
-            //echo '<ol>';
-
-            /*function listFolderFiles($Mydir)
-            {
-                foreach (glob($Mydir . '*', GLOB_ONLYDIR) as $dir) {
-                    $dir = str_replace($Mydir, '', $dir);
-                    //echo $dir;
-
-                        if ($dir != '.' && $dir != '..') {
-                            echo '<li>' . $dir;
-                            if (is_dir($Mydir . '/' . $dir)) listFolderFiles($Mydir . '/' . $dir);
-                            echo '</li>';
-                        }
-
-
-                }
-                echo '</ol>';
-            }
-
-            listFolderFiles('../uploads/');*/
-            ?>
-
-
-
-<!--</div>-->
-
-
-    </div>
 
     </div>
 
