@@ -2,616 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8a2abd2-b0f4-4cec-8935-3c8e5a8be2fc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/autoload.inc.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/Cpdf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Courier-Bold.afm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Courier-BoldOblique.afm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Courier-Oblique.afm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Courier.afm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSans-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSans-Bold.ufm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSans-BoldOblique.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSans-BoldOblique.ufm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSans-Oblique.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSans-Oblique.ufm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSans.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSans.ufm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSansMono-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSansMono-Bold.ufm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSansMono-BoldOblique.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSansMono-BoldOblique.ufm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSansMono-Oblique.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSansMono-Oblique.ufm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSansMono.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSansMono.ufm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSerif-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSerif-Bold.ufm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSerif-BoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSerif-BoldItalic.ufm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSerif-Italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSerif-Italic.ufm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSerif.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/DejaVuSerif.ufm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Helvetica-Bold.afm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Helvetica-Bold.afm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Helvetica-BoldOblique.afm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Helvetica-Oblique.afm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Helvetica.afm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Helvetica.afm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Symbol.afm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Times-Bold.afm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Times-Bold.afm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Times-BoldItalic.afm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Times-Italic.afm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Times-Roman.afm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/Times-Roman.afm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/ZapfDingbats.afm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/dompdf_font_family_cache.dist.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/log.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/fonts/mustRead.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/html5lib/Data.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/html5lib/InputStream.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/html5lib/Parser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/html5lib/Tokenizer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/html5lib/TreeBuilder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/html5lib/named-character-references.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/adobe-standard-encoding.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/cp1250.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/cp1251.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/cp1252.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/cp1253.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/cp1254.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/cp1255.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/cp1257.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/cp1258.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/cp874.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/iso-8859-1.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/iso-8859-11.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/iso-8859-15.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/iso-8859-16.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/iso-8859-2.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/iso-8859-4.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/iso-8859-5.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/iso-8859-7.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/iso-8859-9.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/koi8-r.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/maps/koi8-u.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/sample-fonts/IntelClear-Light.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/AdobeFontMetrics.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Autoloader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/BinaryStream.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/EOT/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/EOT/Header.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/EncodingMap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Exception/FontNotFoundException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Font.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Glyph/Outline.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Glyph/OutlineComponent.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Glyph/OutlineComposite.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Glyph/OutlineSimple.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Header.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/OpenType/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/OpenType/TableDirectoryEntry.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Table/DirectoryEntry.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Table/Table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Table/Type/cmap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Table/Type/glyf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Table/Type/head.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Table/Type/hhea.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Table/Type/hmtx.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Table/Type/kern.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Table/Type/loca.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Table/Type/maxp.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Table/Type/name.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Table/Type/nameRecord.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Table/Type/os2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/Table/Type/post.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/TrueType/Collection.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/TrueType/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/TrueType/Header.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/TrueType/TableDirectoryEntry.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/WOFF/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/WOFF/Header.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/src/FontLib/WOFF/TableDirectoryEntry.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-font-lib/tests/FontLib/FontTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/phpunit.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/DefaultStyle.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Document.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Gradient/Stop.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Style.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Surface/CPdf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Surface/SurfaceCpdf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Surface/SurfaceGmagick.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Surface/SurfaceInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Surface/SurfacePDFLib.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/AbstractTag.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/Anchor.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/Circle.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/ClipPath.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/Ellipse.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/Group.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/Image.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/Line.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/LinearGradient.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/Path.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/Polygon.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/Polyline.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/RadialGradient.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/Rect.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/Shape.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/Stop.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/StyleTag.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/Text.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/Svg/Tag/UseTag.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/src/autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/php-svg-lib/tests/Svg/StyleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/res/broken_image.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/lib/res/html.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Adapter/CPDF.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Adapter/GD.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Adapter/PDFLib.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Autoloader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Canvas.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/CanvasFactory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Cellmap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Css/AttributeTranslator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Css/Color.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Css/Style.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Css/Stylesheet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Dompdf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Exception/ImageException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FontMetrics.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Frame.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Frame/Factory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Frame/FrameList.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Frame/FrameListIterator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Frame/FrameTree.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Frame/FrameTreeIterator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Frame/FrameTreeList.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameDecorator/AbstractFrameDecorator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameDecorator/Block.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameDecorator/Image.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameDecorator/Inline.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameDecorator/ListBullet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameDecorator/ListBulletImage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameDecorator/NullFrameDecorator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameDecorator/Page.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameDecorator/Table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameDecorator/TableCell.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameDecorator/TableRow.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameDecorator/TableRowGroup.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameDecorator/Text.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameReflower/AbstractFrameReflower.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameReflower/Block.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameReflower/Image.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameReflower/Inline.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameReflower/ListBullet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameReflower/NullFrameReflower.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameReflower/Page.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameReflower/Table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameReflower/TableCell.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameReflower/TableRow.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameReflower/TableRowGroup.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/FrameReflower/Text.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Helpers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Image/Cache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/JavascriptEmbedder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/LineBox.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Options.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/PhpEvaluator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Positioner/Absolute.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Positioner/AbstractPositioner.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Positioner/Block.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Positioner/Fixed.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Positioner/Inline.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Positioner/ListBullet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Positioner/NullPositioner.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Positioner/TableCell.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Positioner/TableRow.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Renderer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Renderer/AbstractRenderer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Renderer/Block.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Renderer/Image.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Renderer/Inline.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Renderer/ListBullet.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Renderer/TableCell.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Renderer/TableRowGroup.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/src/Renderer/Text.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/tests/Dompdf/Tests/AutoloaderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/tests/Dompdf/Tests/DompdfTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/tests/Dompdf/Tests/OptionsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/tests/Dompdf/Tests/_files/jamaica.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/dompdf/tests/bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/html2canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/jquery.base64.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/jspdf/jspdf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/jspdf/libs/base64.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/jspdf/libs/sprintf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/tableExport.jquery.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staff/tableExport.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/student/1484783700Group 14.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/student/events.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/backgrounds/wall_1.jpg" afterPath="$PROJECT_DIR$/CSC-Admin/img/backgrounds/wall_1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/fileinput/loading.gif" afterPath="$PROJECT_DIR$/CSC-Admin/img/fileinput/loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/icheck/grey.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icheck/grey.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/icheck/grey@2x.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icheck/grey@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/icons/csv.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/csv.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/icons/json.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/json.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/icons/pdf.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/pdf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/icons/png.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/png.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/icons/ppt.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/ppt.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/icons/sql.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/sql.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/icons/txt.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/txt.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/icons/word.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/word.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/icons/xls.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/xls.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/icons/xml.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/xml.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/animated-overlay.gif" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/animated-overlay.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/resize-icon.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/resize-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/resize-icon@2x.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/resize-icon@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_diagonals-thick_18_b81900_40x40.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_diagonals-thick_20_666666_40x40.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_flat_10_000000_40x100.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_flat_10_000000_40x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_glass_100_f6f6f6_1x400.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_glass_100_f6f6f6_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_glass_100_fdf5ce_1x400.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_glass_100_fdf5ce_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_glass_65_ffffff_1x400.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_gloss-wave_35_f6a828_500x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_222222_256x240.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_222222_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_228ef1_256x240.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_228ef1_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_ef8c08_256x240.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_ef8c08_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_ffd27a_256x240.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_ffd27a_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_ffffff_256x240.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_ffffff_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/img/loaders/default.gif" afterPath="$PROJECT_DIR$/CSC-Admin/img/loaders/default.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/img/profile/adebacda33.jpg" afterPath="$PROJECT_DIR$/public/dist/img/profile/adebacda33.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/img/profile/c280829b27.jpg" afterPath="$PROJECT_DIR$/public/dist/img/profile/c280829b27.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/img/profile/dd9e142e0d.jpg" afterPath="$PROJECT_DIR$/public/dist/img/profile/dd9e142e0d.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/img/system/cc.png" afterPath="$PROJECT_DIR$/public/dist/img/system/cc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/img/system/csc.png" afterPath="$PROJECT_DIR$/public/dist/img/system/csc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/img/system/cscco.png" afterPath="$PROJECT_DIR$/public/dist/img/system/cscco.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/img/system/csclogo.png" afterPath="$PROJECT_DIR$/public/dist/img/system/csclogo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/img/system/pdf.png" afterPath="$PROJECT_DIR$/public/dist/img/system/pdf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/img/system/staff.jpg" afterPath="$PROJECT_DIR$/public/dist/img/system/staff.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/img/system/student.jpg" afterPath="$PROJECT_DIR$/public/dist/img/system/student.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/img/system/ucsc.ico" afterPath="$PROJECT_DIR$/public/dist/img/system/ucsc.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fontawesome/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/public/fontawesome/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fontawesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/fontawesome/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fontawesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/fontawesome/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fontawesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/fontawesome/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fontawesome/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/public/fontawesome/fonts/fontawesome-webfont.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/images/Sorting icons.psd" afterPath="$PROJECT_DIR$/public/plugins/images/Sorting icons.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/images/arrow.png" afterPath="$PROJECT_DIR$/public/plugins/images/arrow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/images/favicon.ico" afterPath="$PROJECT_DIR$/public/plugins/images/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/images/sort_asc.png" afterPath="$PROJECT_DIR$/public/plugins/images/sort_asc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/images/sort_asc_disabled.png" afterPath="$PROJECT_DIR$/public/plugins/images/sort_asc_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/images/sort_both.png" afterPath="$PROJECT_DIR$/public/plugins/images/sort_both.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/images/sort_desc.png" afterPath="$PROJECT_DIR$/public/plugins/images/sort_desc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/images/sort_desc_disabled.png" afterPath="$PROJECT_DIR$/public/plugins/images/sort_desc_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/images/top_arr.png" afterPath="$PROJECT_DIR$/public/plugins/images/top_arr.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploads/14000954.docx" afterPath="$PROJECT_DIR$/uploads/14000954.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploads/14001111.pdf.docx" afterPath="$PROJECT_DIR$/uploads/14001111.pdf.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploads/2nd_Year_CS Groups.pdf" afterPath="$PROJECT_DIR$/uploads/2nd_Year_CS Groups.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploads/HotelProposal.docx" afterPath="$PROJECT_DIR$/uploads/HotelProposal.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploads/IEEE.png" afterPath="$PROJECT_DIR$/uploads/IEEE.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploads/R_work_sheet_6_answers.pdf" afterPath="$PROJECT_DIR$/uploads/R_work_sheet_6_answers.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploads/classdiagram.png" afterPath="$PROJECT_DIR$/uploads/classdiagram.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildpath" afterPath="$PROJECT_DIR$/.buildpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d50a27fb-11ae-4d27-bc7d-fe385265ffe4.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/d50a27fb-11ae-4d27-bc7d-fe385265ffe4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mvc.iml" afterPath="$PROJECT_DIR$/.idea/mvc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/courseco/events.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.project" afterPath="$PROJECT_DIR$/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/adduser.php" afterPath="$PROJECT_DIR$/CSC-Admin/adduser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/allusers.php" afterPath="$PROJECT_DIR$/CSC-Admin/allusers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/backup.php" afterPath="$PROJECT_DIR$/CSC-Admin/backup.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/calander.php" afterPath="$PROJECT_DIR$/CSC-Admin/calander.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/chat.php" afterPath="$PROJECT_DIR$/CSC-Admin/chat.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/components/ad_foot.php" afterPath="$PROJECT_DIR$/CSC-Admin/components/ad_foot.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/components/ad_head.php" afterPath="$PROJECT_DIR$/CSC-Admin/components/ad_head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/components/ad_messagebox.php" afterPath="$PROJECT_DIR$/CSC-Admin/components/ad_messagebox.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/components/ad_sidebar.php" afterPath="$PROJECT_DIR$/CSC-Admin/components/ad_sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/components/ad_xnav.php" afterPath="$PROJECT_DIR$/CSC-Admin/components/ad_xnav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/components/admust.php" afterPath="$PROJECT_DIR$/CSC-Admin/components/admust.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/compose.php" afterPath="$PROJECT_DIR$/CSC-Admin/compose.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/coursesettings.php" afterPath="$PROJECT_DIR$/CSC-Admin/coursesettings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/animate/animate.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/animate/animate.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/animate/animate.min.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/animate/animate.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/bootstrap/bootstrap.css.map" afterPath="$PROJECT_DIR$/CSC-Admin/css/bootstrap/bootstrap.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/bootstrap/bootstrap.min.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/bootstrap/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/dpicker/bootstrap-datepicker.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/dpicker/bootstrap-datepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/fontawesome/font-awesome.min.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/fontawesome/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/jquery/jquery-ui.min.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/jquery/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/mcustomscrollbar/jquery.mCustomScrollbar.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/mcustomscrollbar/jquery.mCustomScrollbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/monthly/monthly.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/monthly/monthly.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/summernote/summernote.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/summernote/summernote.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/sw/sweetalert2.min.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/sw/sweetalert2.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/css/theme-default.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/theme-default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/deletepost.php" afterPath="$PROJECT_DIR$/CSC-Admin/deletepost.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/deleteuser.php" afterPath="$PROJECT_DIR$/CSC-Admin/deleteuser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/draft.php" afterPath="$PROJECT_DIR$/CSC-Admin/draft.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/edituser.php" afterPath="$PROJECT_DIR$/CSC-Admin/edituser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/coursecoevents.xml" afterPath="$PROJECT_DIR$/CSC-Admin/coursecoevents.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/csccoevents.xml" afterPath="$PROJECT_DIR$/CSC-Admin/csccoevents.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/deleteevent.php" afterPath="$PROJECT_DIR$/CSC-Admin/deleteevent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/deleteevents.php" afterPath="$PROJECT_DIR$/CSC-Admin/deleteevents.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/events.xml" afterPath="$PROJECT_DIR$/CSC-Admin/events.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/generalsettings.php" afterPath="$PROJECT_DIR$/CSC-Admin/generalsettings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/getmessages.php" afterPath="$PROJECT_DIR$/CSC-Admin/getmessages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/getsubsdata.php" afterPath="$PROJECT_DIR$/CSC-Admin/getsubsdata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/getuserdata.php" afterPath="$PROJECT_DIR$/CSC-Admin/getuserdata.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/home.php" afterPath="$PROJECT_DIR$/CSC-Admin/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/importdata.php" afterPath="$PROJECT_DIR$/CSC-Admin/importdata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/inbox.php" afterPath="$PROJECT_DIR$/CSC-Admin/inbox.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/index.php" afterPath="$PROJECT_DIR$/CSC-Admin/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/actions.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-colorpicker.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-colorpicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-file-input.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-file-input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-select.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-select.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-timepicker.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-timepicker.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/npm.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/npm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/datatables/jquery.dataTables.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/datatables/jquery.dataTables.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/dpicker/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/dpicker/bootstrap-datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/dpicker/bootstrap-timepicker.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/dpicker/bootstrap-timepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/fileinput/fileinput.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/fileinput/fileinput.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/filetree/jqueryFileTree.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/filetree/jqueryFileTree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/highlight/jquery.highlight-4.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/highlight/jquery.highlight-4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/icheck/icheck.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/icheck/icheck.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/jquery/jquery-2.1.1.min.map" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/jquery/jquery-2.1.1.min.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/jquery/jquery-migrate.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/jquery/jquery-migrate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/jquery/jquery-ui.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/jquery/jquery-ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/jquery/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/moment.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/moment.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/monthly/monthly.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/monthly/monthly.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/summernote/summernote.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/summernote/summernote.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/sw/sweetalert2.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/sw/sweetalert2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/html2canvas.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/html2canvas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/jquery.base64.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/jquery.base64.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/jspdf/jspdf.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/jspdf/jspdf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/jspdf/libs/base64.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/jspdf/libs/base64.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/jspdf/libs/sprintf.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/jspdf/libs/sprintf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/simple_html_dom.php" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/simple_html_dom.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/tableExport.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/tableExport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/tour/bootstrap-tour.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tour/bootstrap-tour.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/js/plugins/tour/bootstro.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tour/bootstro.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/logout.php" afterPath="$PROJECT_DIR$/CSC-Admin/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/post.php" afterPath="$PROJECT_DIR$/CSC-Admin/post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/profilesettings.php" afterPath="$PROJECT_DIR$/CSC-Admin/profilesettings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/published.php" afterPath="$PROJECT_DIR$/CSC-Admin/published.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/publishevent.php" afterPath="$PROJECT_DIR$/CSC-Admin/publishevent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/publishpost.php" afterPath="$PROJECT_DIR$/CSC-Admin/publishpost.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/readpost.php" afterPath="$PROJECT_DIR$/CSC-Admin/readpost.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/refreshtable.php" afterPath="$PROJECT_DIR$/CSC-Admin/refreshtable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/sqldump.php" afterPath="$PROJECT_DIR$/CSC-Admin/sqldump.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/sqlimports/csc.sql" afterPath="$PROJECT_DIR$/CSC-Admin/sqlimports/csc.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/sqlimports/phphelp.sql" afterPath="$PROJECT_DIR$/CSC-Admin/sqlimports/phphelp.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/upload.php" afterPath="$PROJECT_DIR$/CSC-Admin/upload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/stuevents.xml" afterPath="$PROJECT_DIR$/CSC-Admin/stuevents.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/course_footer.php" afterPath="$PROJECT_DIR$/components/course_footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/course_head.php" afterPath="$PROJECT_DIR$/components/course_head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/cscordinator_footer.php" afterPath="$PROJECT_DIR$/components/cscordinator_footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/cscordinator_head.php" afterPath="$PROJECT_DIR$/components/cscordinator_head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/footer.php" afterPath="$PROJECT_DIR$/components/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/page_head.php" afterPath="$PROJECT_DIR$/components/page_head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/page_tail.php" afterPath="$PROJECT_DIR$/components/page_tail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/sidebar.php" afterPath="$PROJECT_DIR$/components/sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/sidebar_head.php" afterPath="$PROJECT_DIR$/components/sidebar_head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/stud_footer.php" afterPath="$PROJECT_DIR$/components/stud_footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/stud_head.php" afterPath="$PROJECT_DIR$/components/stud_head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/base.php" afterPath="$PROJECT_DIR$/core/base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/base_connection.php" afterPath="$PROJECT_DIR$/core/base_connection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/db/database.php" afterPath="$PROJECT_DIR$/core/db/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/admin.php" afterPath="$PROJECT_DIR$/core/function/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/coursecode.php" afterPath="$PROJECT_DIR$/core/function/coursecode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/cscco.php" afterPath="$PROJECT_DIR$/core/function/cscco.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/frontend.php" afterPath="$PROJECT_DIR$/core/function/frontend.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/staff.php" afterPath="$PROJECT_DIR$/core/function/staff.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/student.php" afterPath="$PROJECT_DIR$/core/function/student.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/init.php" afterPath="$PROJECT_DIR$/core/init.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/addnewassignment.php" afterPath="$PROJECT_DIR$/courseco/addnewassignment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/allasinmentview.php" afterPath="$PROJECT_DIR$/courseco/allasinmentview.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/allposts.php" afterPath="$PROJECT_DIR$/courseco/allposts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/comp/navbar.php" afterPath="$PROJECT_DIR$/courseco/comp/navbar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/courseassignments.php" afterPath="$PROJECT_DIR$/courseco/courseassignments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/download-multiple.php" afterPath="$PROJECT_DIR$/courseco/download-multiple.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/events.xml" afterPath="$PROJECT_DIR$/courseco/events.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/file_upload_parser.php" afterPath="$PROJECT_DIR$/courseco/file_upload_parser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/fileupload.php" afterPath="$PROJECT_DIR$/courseco/fileupload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/getsubs.php" afterPath="$PROJECT_DIR$/courseco/getsubs.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/index.php" afterPath="$PROJECT_DIR$/courseco/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/logout.php" afterPath="$PROJECT_DIR$/courseco/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/profile.php" afterPath="$PROJECT_DIR$/courseco/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/readpost.php" afterPath="$PROJECT_DIR$/courseco/readpost.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/subject.php" afterPath="$PROJECT_DIR$/courseco/subject.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/submissions.php" afterPath="$PROJECT_DIR$/courseco/submissions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/submissionslist.php" afterPath="$PROJECT_DIR$/courseco/submissionslist.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/upload.php" afterPath="$PROJECT_DIR$/courseco/upload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/addparent.php" afterPath="$PROJECT_DIR$/cscco/addparent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/allposts.php" afterPath="$PROJECT_DIR$/cscco/allposts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/alluser.php" afterPath="$PROJECT_DIR$/cscco/alluser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/attendence.php" afterPath="$PROJECT_DIR$/cscco/attendence.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/comp/navbar.php" afterPath="$PROJECT_DIR$/cscco/comp/navbar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/course.php" afterPath="$PROJECT_DIR$/cscco/course.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/deletesubsdata.php" afterPath="$PROJECT_DIR$/cscco/deletesubsdata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/editcourse.php" afterPath="$PROJECT_DIR$/cscco/editcourse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/email.php" afterPath="$PROJECT_DIR$/cscco/email.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/events.xml" afterPath="$PROJECT_DIR$/cscco/events.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/expences.php" afterPath="$PROJECT_DIR$/cscco/expences.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/fullcourses.php" afterPath="$PROJECT_DIR$/cscco/fullcourses.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/getsubs.php" afterPath="$PROJECT_DIR$/cscco/getsubs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/getsubsdata.php" afterPath="$PROJECT_DIR$/cscco/getsubsdata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/income.php" afterPath="$PROJECT_DIR$/cscco/income.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/index.php" afterPath="$PROJECT_DIR$/cscco/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/lecturer.php" afterPath="$PROJECT_DIR$/cscco/lecturer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/lectures.php" afterPath="$PROJECT_DIR$/cscco/lectures.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/logout.php" afterPath="$PROJECT_DIR$/cscco/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/marks.php" afterPath="$PROJECT_DIR$/cscco/marks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/notification.php" afterPath="$PROJECT_DIR$/cscco/notification.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/profile.php" afterPath="$PROJECT_DIR$/cscco/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/readpost.php" afterPath="$PROJECT_DIR$/cscco/readpost.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/report.php" afterPath="$PROJECT_DIR$/cscco/report.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mails/2016-09-20 13.44.37,562.eml" afterPath="$PROJECT_DIR$/mails/2016-09-20 13.44.37,562.eml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mails/2016-09-20 14.37.36,533.eml" afterPath="$PROJECT_DIR$/mails/2016-09-20 14.37.36,533.eml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/animate.css" afterPath="$PROJECT_DIR$/public/css/animate.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/custom.css" afterPath="$PROJECT_DIR$/public/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/CSCcordinator.css" afterPath="$PROJECT_DIR$/public/dist/css/CSCcordinator.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/add_c.css" afterPath="$PROJECT_DIR$/public/dist/css/add_c.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/basic.css" afterPath="$PROJECT_DIR$/public/dist/css/basic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/buttons.css" afterPath="$PROJECT_DIR$/public/dist/css/buttons.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/csccoside.css" afterPath="$PROJECT_DIR$/public/dist/css/csccoside.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/finalcc.css" afterPath="$PROJECT_DIR$/public/dist/css/finalcc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/mininav.css" afterPath="$PROJECT_DIR$/public/dist/css/mininav.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/staff_css.css" afterPath="$PROJECT_DIR$/public/dist/css/staff_css.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/student.css" afterPath="$PROJECT_DIR$/public/dist/css/student.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/studentlogin.css" afterPath="$PROJECT_DIR$/public/dist/css/studentlogin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/studentsubject.css" afterPath="$PROJECT_DIR$/public/dist/css/studentsubject.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/img/profile/.htaccess" afterPath="$PROJECT_DIR$/public/dist/img/profile/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/js/adminall.js" afterPath="$PROJECT_DIR$/public/dist/js/adminall.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/js/countdow.jquery.js" afterPath="$PROJECT_DIR$/public/dist/js/countdow.jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/js/csv.js" afterPath="$PROJECT_DIR$/public/dist/js/csv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fontawesome/.bower.json" afterPath="$PROJECT_DIR$/public/fontawesome/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fontawesome/.gitignore" afterPath="$PROJECT_DIR$/public/fontawesome/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fontawesome/.npmignore" afterPath="$PROJECT_DIR$/public/fontawesome/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fontawesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/public/fontawesome/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fontawesome/css/font-awesome.css.map" afterPath="$PROJECT_DIR$/public/fontawesome/css/font-awesome.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fontawesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/fontawesome/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bootstrap.js" afterPath="$PROJECT_DIR$/public/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/datepicker/bootstrap-datetimepicker.css" afterPath="$PROJECT_DIR$/public/plugins/datepicker/bootstrap-datetimepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/datepicker/bootstrap-datetimepicker.js" afterPath="$PROJECT_DIR$/public/plugins/datepicker/bootstrap-datetimepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/drpicker/daterangepicker.min.css" afterPath="$PROJECT_DIR$/public/plugins/drpicker/daterangepicker.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/drpicker/jquery.daterangepicker.min.js" afterPath="$PROJECT_DIR$/public/plugins/drpicker/jquery.daterangepicker.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/dt/dataTables.css" afterPath="$PROJECT_DIR$/public/plugins/dt/dataTables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/dt/dataTables.js" afterPath="$PROJECT_DIR$/public/plugins/dt/dataTables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/images/countdown.jquery.js" afterPath="$PROJECT_DIR$/public/plugins/images/countdown.jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/jQuery/jquery.js" afterPath="$PROJECT_DIR$/public/plugins/jQuery/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/jQueryUI/jquery-ui.css" afterPath="$PROJECT_DIR$/public/plugins/jQueryUI/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/jQueryUI/jquery-ui.js" afterPath="$PROJECT_DIR$/public/plugins/jQueryUI/jquery-ui.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/monthly/monthly.css" afterPath="$PROJECT_DIR$/public/plugins/monthly/monthly.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/monthly/monthly.js" afterPath="$PROJECT_DIR$/public/plugins/monthly/monthly.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/sweealert/sweetalert2.css" afterPath="$PROJECT_DIR$/public/plugins/sweealert/sweetalert2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/sweealert/sweetalert2.js" afterPath="$PROJECT_DIR$/public/plugins/sweealert/sweetalert2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/sweealert/sweetalert2.min.css" afterPath="$PROJECT_DIR$/public/plugins/sweealert/sweetalert2.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/sweealert/sweetalert2.min.js" afterPath="$PROJECT_DIR$/public/plugins/sweealert/sweetalert2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ss/general.php" afterPath="$PROJECT_DIR$/ss/general.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ss/inbox.php" afterPath="$PROJECT_DIR$/ss/inbox.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ss/index.php" afterPath="$PROJECT_DIR$/ss/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ss/manage.php" afterPath="$PROJECT_DIR$/ss/manage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ss/profile.php" afterPath="$PROJECT_DIR$/ss/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ss/profileimage.php" afterPath="$PROJECT_DIR$/ss/profileimage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ss/published.php" afterPath="$PROJECT_DIR$/ss/published.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ss/sent.php" afterPath="$PROJECT_DIR$/ss/sent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/allposts.php" afterPath="$PROJECT_DIR$/staff/allposts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/ass_marks.php" afterPath="$PROJECT_DIR$/staff/ass_marks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/attendance.php" afterPath="$PROJECT_DIR$/staff/attendance.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/batch_and_year.php" afterPath="$PROJECT_DIR$/staff/batch_and_year.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/comp/navbar.php" afterPath="$PROJECT_DIR$/staff/comp/navbar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/comp/uppermenu.php" afterPath="$PROJECT_DIR$/staff/comp/uppermenu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/course_customized.php" afterPath="$PROJECT_DIR$/staff/course_customized.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/courseincomereport.php" afterPath="$PROJECT_DIR$/staff/courseincomereport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/customized_courses_in.php" afterPath="$PROJECT_DIR$/staff/customized_courses_in.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/cutomized_courses_in.php" afterPath="$PROJECT_DIR$/staff/cutomized_courses_in.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/edit_report.php" afterPath="$PROJECT_DIR$/staff/edit_report.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/events.xml" afterPath="$PROJECT_DIR$/staff/events.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/ex_marks.php" afterPath="$PROJECT_DIR$/staff/ex_marks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/expense.php" afterPath="$PROJECT_DIR$/staff/expense.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/expense_rep.php" afterPath="$PROJECT_DIR$/staff/expense_rep.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/expense_type.php" afterPath="$PROJECT_DIR$/staff/expense_type.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/export.php" afterPath="$PROJECT_DIR$/staff/export.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/gen_co_fee_income.php" afterPath="$PROJECT_DIR$/staff/gen_co_fee_income.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/gen_cus_co_income.php" afterPath="$PROJECT_DIR$/staff/gen_cus_co_income.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/gen_income.php" afterPath="$PROJECT_DIR$/staff/gen_income.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/gen_income_co_fee.php" afterPath="$PROJECT_DIR$/staff/gen_income_co_fee.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/gen_income_cus_co.php" afterPath="$PROJECT_DIR$/staff/gen_income_cus_co.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/gen_income_other.php" afterPath="$PROJECT_DIR$/staff/gen_income_other.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/gen_income_pro.php" afterPath="$PROJECT_DIR$/staff/gen_income_pro.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/gen_income_tye.php" afterPath="$PROJECT_DIR$/staff/gen_income_tye.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/gen_income_type.php" afterPath="$PROJECT_DIR$/staff/gen_income_type.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/gen_other_income.php" afterPath="$PROJECT_DIR$/staff/gen_other_income.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/gen_pro_income.php" afterPath="$PROJECT_DIR$/staff/gen_pro_income.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/generate_income.php" afterPath="$PROJECT_DIR$/staff/generate_income.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/generate_report.php" afterPath="$PROJECT_DIR$/staff/generate_report.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/getpdf.php" afterPath="$PROJECT_DIR$/staff/getpdf.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/getsubs.php" afterPath="$PROJECT_DIR$/staff/getsubs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/getsubs_att.php" afterPath="$PROJECT_DIR$/staff/getsubs_att.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/getsubs_marks_ass.php" afterPath="$PROJECT_DIR$/staff/getsubs_marks_ass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/getsubs_marks_ex.php" afterPath="$PROJECT_DIR$/staff/getsubs_marks_ex.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/getsubs_rep_mark.php" afterPath="$PROJECT_DIR$/staff/getsubs_rep_mark.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/getsubs_report.php" afterPath="$PROJECT_DIR$/staff/getsubs_report.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/income.php" afterPath="$PROJECT_DIR$/staff/income.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/incomeA.php" afterPath="$PROJECT_DIR$/staff/incomeA.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/income_other.php" afterPath="$PROJECT_DIR$/staff/income_other.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/income_project.php" afterPath="$PROJECT_DIR$/staff/income_project.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/income_rep.php" afterPath="$PROJECT_DIR$/staff/income_rep.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/income_type.php" afterPath="$PROJECT_DIR$/staff/income_type.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/index.php" afterPath="$PROJECT_DIR$/staff/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/lecandinstruct.php" afterPath="$PROJECT_DIR$/staff/lecandinstruct.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/logout.php" afterPath="$PROJECT_DIR$/staff/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/markA.php" afterPath="$PROJECT_DIR$/staff/markA.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/mark_type.php" afterPath="$PROJECT_DIR$/staff/mark_type.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/markregistered.php" afterPath="$PROJECT_DIR$/staff/markregistered.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/marks.php" afterPath="$PROJECT_DIR$/staff/marks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/marks_rep.php" afterPath="$PROJECT_DIR$/staff/marks_rep.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/other_in.php" afterPath="$PROJECT_DIR$/staff/other_in.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/profile.php" afterPath="$PROJECT_DIR$/staff/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/project_in.php" afterPath="$PROJECT_DIR$/staff/project_in.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/readpost.php" afterPath="$PROJECT_DIR$/staff/readpost.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/register_students.php" afterPath="$PROJECT_DIR$/staff/register_students.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/rep_expense.php" afterPath="$PROJECT_DIR$/staff/rep_expense.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/report.php" afterPath="$PROJECT_DIR$/staff/report.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/report_attendance.php" afterPath="$PROJECT_DIR$/staff/report_attendance.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/report_marks.php" afterPath="$PROJECT_DIR$/staff/report_marks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/select_co.php" afterPath="$PROJECT_DIR$/staff/select_co.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/select_course.php" afterPath="$PROJECT_DIR$/staff/select_course.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/select_course_att.php" afterPath="$PROJECT_DIR$/staff/select_course_att.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/select_course_marks.php" afterPath="$PROJECT_DIR$/staff/select_course_marks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/select_course_marks_ass.php" afterPath="$PROJECT_DIR$/staff/select_course_marks_ass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/select_course_marks_ex.php" afterPath="$PROJECT_DIR$/staff/select_course_marks_ex.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/select_course_reg.php" afterPath="$PROJECT_DIR$/staff/select_course_reg.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/student_registration.php" afterPath="$PROJECT_DIR$/staff/student_registration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/account.php" afterPath="$PROJECT_DIR$/student/account.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/comp/navbar.php" afterPath="$PROJECT_DIR$/student/comp/navbar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/home.php" afterPath="$PROJECT_DIR$/student/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/index.php" afterPath="$PROJECT_DIR$/student/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/logout.php" afterPath="$PROJECT_DIR$/student/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/recover.php" afterPath="$PROJECT_DIR$/student/recover.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/subject.php" afterPath="$PROJECT_DIR$/student/subject.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/submit.php" afterPath="$PROJECT_DIR$/student/submit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/upload.php" afterPath="$PROJECT_DIR$/student/upload.php" />
     </list>
     <ignored path="mvc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -633,6 +38,30 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="csc@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="csc@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="subjects" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -640,73 +69,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/student/home.php">
+      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/function/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="7" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="31" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cscordinator_footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/cscordinator_footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="63" lean-forward="false" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+            <state relative-caret-position="1771">
+              <caret line="175" column="15" lean-forward="false" selection-start-line="175" selection-start-column="9" selection-end-line="175" selection-end-column="15" />
               <folding>
-                <element signature="n#style#0;n#footer#0;n#!!top" expanded="true" />
+                <marker date="1484310008016" expanded="true" signature="67:116" ph="SELECT id FR... adminusers" />
+                <marker date="1484310008016" expanded="true" signature="362:433" ph="SELECT * FRO... adminusers" />
+                <marker date="1484310008016" expanded="true" signature="602:654" ph="SELECT id,na... adminusers" />
+                <marker date="1484310008016" expanded="true" signature="869:910" ph="INSERT INTO posts... " />
+                <marker date="1484310008016" expanded="true" signature="1905:1937" ph="SELECT * FRO... posts" />
+                <marker date="1484310008016" expanded="true" signature="2149:2190" ph="INSERT INTO posts... " />
+                <marker date="1484310008016" expanded="true" signature="2285:2317" ph="SELECT * FRO... posts" />
+                <marker date="1484310008016" expanded="true" signature="2415:2454" ph="SELECT activ... subjects" />
+                <marker date="1484310008016" expanded="true" signature="2619:2650" ph="SELECT * FRO... posts" />
+                <marker date="1484310008016" expanded="true" signature="2761:2795" ph="SELECT * FRO... adminusers" />
+                <marker date="1484310008016" expanded="true" signature="2896:2915" ph="SELECT * FRO... staff" />
+                <marker date="1484310008016" expanded="true" signature="3129:3170" ph="INSERT INTO staff... " />
+                <marker date="1484310008016" expanded="true" signature="3639:3698" ph="UPDATE admin... " />
+                <marker date="1484310008016" expanded="true" signature="3934:3976" ph="INSERT INTO events... " />
+                <marker date="1484310008016" expanded="true" signature="4138:4157" ph="SELECT * FRO... staff" />
+                <marker date="1484310008016" expanded="true" signature="4264:4337" ph="SELECT * FRO... chat" />
+                <marker date="1484310008016" expanded="true" signature="4448:4479" ph="SELECT * FRO... staff" />
+                <marker date="1484310008016" expanded="true" signature="4624:4705" ph="INSERT INTO chat... " />
+                <marker date="1484310008016" expanded="true" signature="4816:4858" ph="SELECT * FRO... student" />
+                <marker date="1484310008016" expanded="true" signature="4989:5011" ph="SELECT * FRO... subjects" />
+                <marker date="1484310008016" expanded="true" signature="5123:5176" ph="SELECT * FRO... staff" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cscordinator_head.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/cscordinator_head.php">
+      <file leaf-file-name="draft.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSC-Admin/draft.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="62" lean-forward="false" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_head.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/page_head.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-1421">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stud_head.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/stud_head.php">
+      <file leaf-file-name="calander.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSC-Admin/calander.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="67" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="15" selection-end-column="67" />
+            <state relative-caret-position="420">
+              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+              <folding>
+                <marker date="1484332506661" expanded="true" signature="18972:19009" ph="SELECT * FRO... events" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="backup.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSC-Admin/backup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="107" column="66" lean-forward="false" selection-start-line="107" selection-start-column="66" selection-end-line="107" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cscco/index.php">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSC-Admin/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="32" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="660">
+              <caret line="299" column="73" lean-forward="false" selection-start-line="299" selection-start-column="73" selection-end-line="299" selection-end-column="73" />
+              <folding>
+                <marker date="1484332390905" expanded="true" signature="9688:9725" ph="SELECT * FRO... events" />
+                <marker date="1484332390905" expanded="true" signature="15826:15863" ph="SELECT * FRO... subjects" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stuevents.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSC-Admin/stuevents.xml">
+      <file leaf-file-name="coursecoevents.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSC-Admin/coursecoevents.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -722,11 +166,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coursecoevents.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSC-Admin/coursecoevents.xml">
+      <file leaf-file-name="stuevents.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSC-Admin/stuevents.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -737,6 +181,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSC-Admin/post.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="312" column="45" lean-forward="false" selection-start-line="309" selection-start-column="24" selection-end-line="312" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -756,6 +210,7 @@
       <find>.monthly-event-list .listed-event</find>
       <find>panel-controls panel-controls-title</find>
       <find>myca</find>
+      <find>addeve</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -764,11 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/NEW/index.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d50a27fb-11ae-4d27-bc7d-fe385265ffe4/console.sql" />
-        <option value="$PROJECT_DIR$/NEW/readpost.php" />
-        <option value="$PROJECT_DIR$/NEW/deletepost.php" />
         <option value="$PROJECT_DIR$/NEW/published.php" />
         <option value="$PROJECT_DIR$/core/base.php" />
         <option value="$PROJECT_DIR$/NEW/backup.php" />
@@ -795,10 +245,7 @@
         <option value="$PROJECT_DIR$/CSC-Admin/components/ad_foot.php" />
         <option value="$PROJECT_DIR$/core/function/admin.php" />
         <option value="$PROJECT_DIR$/CSC-Admin/css/monthly/monthly.css" />
-        <option value="$PROJECT_DIR$/CSC-Admin/deleteevent.php" />
-        <option value="$PROJECT_DIR$/CSC-Admin/deleteevents.php" />
         <option value="$PROJECT_DIR$/CSC-Admin/getsubsdata.php" />
-        <option value="$PROJECT_DIR$/CSC-Admin/home.php" />
         <option value="$PROJECT_DIR$/CSC-Admin/publishevent.php" />
         <option value="$PROJECT_DIR$/student/cal.php" />
         <option value="$PROJECT_DIR$/courseco/events.xml" />
@@ -806,15 +253,23 @@
         <option value="$PROJECT_DIR$/core/init.php" />
         <option value="$PROJECT_DIR$/core/db/database.php" />
         <option value="$PROJECT_DIR$/student/home.php" />
-        <option value="$PROJECT_DIR$/CSC-Admin/calander.php" />
         <option value="$PROJECT_DIR$/student/events.xml" />
-        <option value="$PROJECT_DIR$/CSC-Admin/coursecoevents.xml" />
-        <option value="$PROJECT_DIR$/CSC-Admin/events.xml" />
-        <option value="$PROJECT_DIR$/CSC-Admin/stuevents.xml" />
-        <option value="$PROJECT_DIR$/CSC-Admin/csccoevents.xml" />
         <option value="$PROJECT_DIR$/components/cscordinator_footer.php" />
         <option value="$PROJECT_DIR$/components/cscordinator_head.php" />
         <option value="$PROJECT_DIR$/cscco/index.php" />
+        <option value="$PROJECT_DIR$/components/course_head.php" />
+        <option value="$PROJECT_DIR$/components/course_footer.php" />
+        <option value="$PROJECT_DIR$/courseco/index.php" />
+        <option value="$PROJECT_DIR$/public/plugins/monthly/monthly.css" />
+        <option value="$PROJECT_DIR$/CSC-Admin/deleteevent.php" />
+        <option value="$PROJECT_DIR$/CSC-Admin/stuevents.xml" />
+        <option value="$PROJECT_DIR$/CSC-Admin/coursecoevents.xml" />
+        <option value="$PROJECT_DIR$/CSC-Admin/csccoevents.xml" />
+        <option value="$PROJECT_DIR$/CSC-Admin/events.xml" />
+        <option value="$PROJECT_DIR$/CSC-Admin/deleteevents.php" />
+        <option value="$PROJECT_DIR$/CSC-Admin/home.php" />
+        <option value="$PROJECT_DIR$/CSC-Admin/calander.php" />
+        <option value="$PROJECT_DIR$/CSC-Admin/backup.php" />
       </list>
     </option>
   </component>
@@ -853,36 +308,6 @@
       <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="External Dependencies">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="/">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="home">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="rajith">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT=".PhpStorm2016.3">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="config">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
               <option name="myItemId" value="" />
@@ -984,7 +409,25 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="components">
+            <PATH_ELEMENT USER_OBJECT="core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CSCWEB">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="core">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="function">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -1008,7 +451,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;DB2 (JTOpen)" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
@@ -1128,12 +571,12 @@
       <workItem from="1484114566332" duration="5110000" />
       <workItem from="1484143394556" duration="7448000" />
       <workItem from="1484196609957" duration="15818000" />
-      <workItem from="1484309486027" duration="16185000" />
+      <workItem from="1484309486027" duration="19327000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90727000" />
+    <option name="totallyTimeSpent" value="93869000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1219,12 +662,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/bg-dot.png" />
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/bg.png" />
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo-grey.png" />
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo-grey@2x.png" />
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo-small-grey.png" />
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo-small-grey@2x.png" />
     <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo-small.png" />
     <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo-small@2x.png" />
     <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo.png" />
@@ -1248,14 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="75" lean-forward="false" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4380">
-          <caret line="292" column="67" lean-forward="false" selection-start-line="290" selection-start-column="20" selection-end-line="292" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -1284,36 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/function/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="180" column="56" lean-forward="false" selection-start-line="180" selection-start-column="56" selection-end-line="180" selection-end-column="56" />
-          <folding>
-            <marker date="1484310008016" expanded="true" signature="67:116" ph="SELECT id FR... adminusers" />
-            <marker date="1484310008016" expanded="true" signature="362:433" ph="SELECT * FRO... adminusers" />
-            <marker date="1484310008016" expanded="true" signature="602:654" ph="SELECT id,na... adminusers" />
-            <marker date="1484310008016" expanded="true" signature="869:910" ph="INSERT INTO posts... " />
-            <marker date="1484310008016" expanded="true" signature="1905:1937" ph="SELECT * FRO... posts" />
-            <marker date="1484310008016" expanded="true" signature="2149:2190" ph="INSERT INTO posts... " />
-            <marker date="1484310008016" expanded="true" signature="2285:2317" ph="SELECT * FRO... posts" />
-            <marker date="1484310008016" expanded="true" signature="2415:2454" ph="SELECT activ... subjects" />
-            <marker date="1484310008016" expanded="true" signature="2619:2650" ph="SELECT * FRO... posts" />
-            <marker date="1484310008016" expanded="true" signature="2761:2795" ph="SELECT * FRO... adminusers" />
-            <marker date="1484310008016" expanded="true" signature="2896:2915" ph="SELECT * FRO... staff" />
-            <marker date="1484310008016" expanded="true" signature="3129:3170" ph="INSERT INTO staff... " />
-            <marker date="1484310008016" expanded="true" signature="3639:3698" ph="UPDATE admin... " />
-            <marker date="1484310008016" expanded="true" signature="3934:3976" ph="INSERT INTO events... " />
-            <marker date="1484310008016" expanded="true" signature="4138:4157" ph="SELECT * FRO... staff" />
-            <marker date="1484310008016" expanded="true" signature="4264:4337" ph="SELECT * FRO... chat" />
-            <marker date="1484310008016" expanded="true" signature="4448:4479" ph="SELECT * FRO... staff" />
-            <marker date="1484310008016" expanded="true" signature="4624:4705" ph="INSERT INTO chat... " />
-            <marker date="1484310008016" expanded="true" signature="4816:4858" ph="SELECT * FRO... student" />
-            <marker date="1484310008016" expanded="true" signature="4989:5011" ph="SELECT * FRO... subjects" />
-            <marker date="1484310008016" expanded="true" signature="5123:5176" ph="SELECT * FRO... staff" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staff/events.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1334,14 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/draft.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="139" column="132" lean-forward="false" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="132" />
           <folding />
         </state>
       </provider>
@@ -1380,40 +771,6 @@
         <state relative-caret-position="1530">
           <caret line="225" column="30" lean-forward="false" selection-start-line="225" selection-start-column="30" selection-end-line="225" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/deleteevents.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <marker date="1484320066251" expanded="true" signature="472:500" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/deleteevent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <marker date="1484318257566" expanded="true" signature="472:500" ph="DELETE FROM " />
-            <marker date="1484318257566" expanded="true" signature="472:501" ph="DELETE FROM " />
-            <marker date="1484318257566" expanded="true" signature="472:591" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="226" column="4" lean-forward="true" selection-start-line="226" selection-start-column="4" selection-end-line="226" selection-end-column="4" />
-          <folding>
-            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <marker date="1484321098861" expanded="true" signature="9690:9727" ph="SELECT * FRO... events" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1480,7 +837,7 @@
         <state relative-caret-position="-178">
           <caret line="157" column="42" lean-forward="true" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
             <marker date="1484245046775" expanded="true" signature="9432:9443" ph="..." />
             <marker date="1484245046775" expanded="true" signature="9829:9840" ph="..." />
             <marker date="1484245046775" expanded="true" signature="10522:10533" ph="..." />
@@ -1540,60 +897,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/calander.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2810">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1484328077283" expanded="true" signature="18134:18171" ph="SELECT * FRO... events" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/student/events.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/csccoevents.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/coursecoevents.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/events.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/stuevents.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="7" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="31" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1636,6 +943,187 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/course_head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/course_footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="60" lean-forward="false" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#footer#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="31" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseco/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/609a57c7-5bbc-4866-8ac7-02927ac813ad/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/deleteevent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <marker date="1484331253985" expanded="true" signature="174:204" ph="SELECT * FRO... events" />
+            <marker date="1484331253985" expanded="true" signature="174:205" ph="SELECT * FRO... events" />
+            <marker date="1484331253985" expanded="true" signature="1702:1730" ph="DELETE FROM " />
+            <marker date="1484331253985" expanded="true" signature="1702:1731" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/deleteevents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <marker date="1484331500335" expanded="true" signature="176:206" ph="SELECT * FRO... events" />
+            <marker date="1484331500335" expanded="true" signature="1703:1731" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/csccoevents.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/stuevents.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/events.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/coursecoevents.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/monthly/monthly.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="319" column="16" lean-forward="false" selection-start-line="319" selection-start-column="16" selection-end-line="319" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="312" column="45" lean-forward="false" selection-start-line="309" selection-start-column="24" selection-end-line="312" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/function/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1771">
+          <caret line="175" column="15" lean-forward="false" selection-start-line="175" selection-start-column="9" selection-end-line="175" selection-end-column="15" />
+          <folding>
+            <marker date="1484310008016" expanded="true" signature="67:116" ph="SELECT id FR... adminusers" />
+            <marker date="1484310008016" expanded="true" signature="362:433" ph="SELECT * FRO... adminusers" />
+            <marker date="1484310008016" expanded="true" signature="602:654" ph="SELECT id,na... adminusers" />
+            <marker date="1484310008016" expanded="true" signature="869:910" ph="INSERT INTO posts... " />
+            <marker date="1484310008016" expanded="true" signature="1905:1937" ph="SELECT * FRO... posts" />
+            <marker date="1484310008016" expanded="true" signature="2149:2190" ph="INSERT INTO posts... " />
+            <marker date="1484310008016" expanded="true" signature="2285:2317" ph="SELECT * FRO... posts" />
+            <marker date="1484310008016" expanded="true" signature="2415:2454" ph="SELECT activ... subjects" />
+            <marker date="1484310008016" expanded="true" signature="2619:2650" ph="SELECT * FRO... posts" />
+            <marker date="1484310008016" expanded="true" signature="2761:2795" ph="SELECT * FRO... adminusers" />
+            <marker date="1484310008016" expanded="true" signature="2896:2915" ph="SELECT * FRO... staff" />
+            <marker date="1484310008016" expanded="true" signature="3129:3170" ph="INSERT INTO staff... " />
+            <marker date="1484310008016" expanded="true" signature="3639:3698" ph="UPDATE admin... " />
+            <marker date="1484310008016" expanded="true" signature="3934:3976" ph="INSERT INTO events... " />
+            <marker date="1484310008016" expanded="true" signature="4138:4157" ph="SELECT * FRO... staff" />
+            <marker date="1484310008016" expanded="true" signature="4264:4337" ph="SELECT * FRO... chat" />
+            <marker date="1484310008016" expanded="true" signature="4448:4479" ph="SELECT * FRO... staff" />
+            <marker date="1484310008016" expanded="true" signature="4624:4705" ph="INSERT INTO chat... " />
+            <marker date="1484310008016" expanded="true" signature="4816:4858" ph="SELECT * FRO... student" />
+            <marker date="1484310008016" expanded="true" signature="4989:5011" ph="SELECT * FRO... subjects" />
+            <marker date="1484310008016" expanded="true" signature="5123:5176" ph="SELECT * FRO... staff" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/draft.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1421">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="299" column="73" lean-forward="false" selection-start-line="299" selection-start-column="73" selection-end-line="299" selection-end-column="73" />
+          <folding>
+            <marker date="1484332390905" expanded="true" signature="9688:9725" ph="SELECT * FRO... events" />
+            <marker date="1484332390905" expanded="true" signature="15826:15863" ph="SELECT * FRO... subjects" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/calander.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <marker date="1484332506661" expanded="true" signature="18972:19009" ph="SELECT * FRO... events" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/backup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="107" column="66" lean-forward="false" selection-start-line="107" selection-start-column="66" selection-end-line="107" selection-end-column="66" />
           <folding />
         </state>
       </provider>

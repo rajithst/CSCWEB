@@ -174,7 +174,7 @@
                                             <div class="panel panel-default">
 
                                                 <div class="panel-heading ui-draggable-handle">
-                                                    <h3 class="panel-title">Responsive tables</h3>
+                                                    <h3 class="panel-title">Calander Events</h3>
                                                 </div>
 
                                                 <div class="panel-body panel-body-table">
@@ -284,63 +284,23 @@
                                                     <th width="50%">Course</th>
                                                     <th width="20%">Status</th>
                                                     <th width="30%">Days</th>
+                                                    <th width="30%">Current Batch</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                            <?php
+                                            $query = mysqli_query($con,"SELECT * FROM subjects WHERE active=1 ");
+                                            while($row = mysqli_fetch_array($query)){
+                                            ?>
+
                                                 <tr>
-                                                    <td><strong>CSC</strong></td>
-                                                    <td><span class="label label-danger">Developing</span></td>
-                                                    <td>
-                                                        <div class="progress progress-small progress-striped active">
-                                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">85%</div>
-                                                        </div>
-                                                    </td>
+                                                    <td><strong><?php echo $row[2]; ?></strong></td>
+                                                    <td><span class="label label-success">Running</span></td>
+                                                    <td><?php echo $row[6]; ?></td>
+                                                    <td><?php echo $row[7]; ?></td>
                                                 </tr>
-                                                <tr>
-                                                    <td><strong>Gemini</strong></td>
-                                                    <td><span class="label label-warning">Updating</span></td>
-                                                    <td>
-                                                        <div class="progress progress-small progress-striped active">
-                                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">40%</div>
-                                                        </div>
-                                                    </td>
-                                                </tr>                                                
-                                                <tr>
-                                                    <td><strong>Taurus</strong></td>
-                                                    <td><span class="label label-warning">Updating</span></td>
-                                                    <td>
-                                                        <div class="progress progress-small progress-striped active">
-                                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 72%;">72%</div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><strong>Leo</strong></td>
-                                                    <td><span class="label label-success">Support</span></td>
-                                                    <td>
-                                                        <div class="progress progress-small progress-striped active">
-                                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><strong>Virgo</strong></td>
-                                                    <td><span class="label label-success">Support</span></td>
-                                                    <td>
-                                                        <div class="progress progress-small progress-striped active">
-                                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
-                                                        </div>
-                                                    </td>
-                                                </tr>                                                
-                                                <tr>
-                                                    <td><strong>Aquarius</strong></td>
-                                                    <td><span class="label label-success">Support</span></td>
-                                                    <td>
-                                                        <div class="progress progress-small progress-striped active">
-                                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
+                                            <?php } ?>
+
                                             </tbody>
                                         </table>
                                     </div>

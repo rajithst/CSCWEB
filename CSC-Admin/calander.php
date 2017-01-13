@@ -21,7 +21,7 @@
     <li class="xn-openable ">
         <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Posts</span></a>
         <ul>
-            <li><a href="compose.php"><span class="fa fa-image"></span> New Post</a></li>
+            <li><a href="post.php"><span class="fa fa-image"></span> New Post</a></li>
             <li class=""><a href="published.php"><span class="fa fa-user"></span> Published</a></li>
             <li class=""><a href="draft.php"><span class="fa fa-users"></span> Draft</a></li>
 
@@ -247,8 +247,26 @@
                                 }
                             }
 
+                    $stu = 0;
+                    $couc = 0;
+                    $csc = 0;
+                    if (!empty($_POST["user"])) {
+                        foreach ($_POST["user"] as $user) {
+                            if ($user == 1) {
+                                $stu = 1;
+                            } else if ($user == 2) {
+                                $couc = 1;
+                            } else if ($user == 3) {
+                                $csc = 1;
+                            }
 
-         /*           $postdata = array(
+
+                        }
+
+
+                    }
+
+                    $postdata = array(
                         'name' =>  filter_var($_POST['name'],FILTER_SANITIZE_STRING),
                         'sdate' =>  $_POST['sdate'],
                         'enddate' =>  $_POST['enddate'],
@@ -259,7 +277,15 @@
                         'cscc' => filter_var($csc,FILTER_VALIDATE_INT)
                     );
 
-                    $result = addevent($con,$postdata);*/
+                    $result = addevent($con,$postdata);
+
+                    if ($result=='true'){
+
+                        ?>
+
+                        <script>swal("Added!", "Your have been published a new event successfully")</script>
+                        <?php
+                    }
 
                 }
 
@@ -277,7 +303,7 @@
                                 <div class="col-md-6 col-xs-12">
                                     <div class="input-group">
                                         <span class="input-group-addon"><span class="fa fa-user"></span></span>
-                                        <input type="text" class="form-control"  name="name"/>
+                                        <input type="text" class="form-control"  name="name"  required />
                                     </div>
                                 </div>
                             </div>
@@ -287,7 +313,7 @@
                                 <div class="col-md-6 col-xs-12">
                                     <div class="input-group" id="datepicker">
                                         <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-                                        <input type="text" class="form-control datepicker" name="sdate" />
+                                        <input type="text" class="form-control datepicker" name="sdate"  required />
                                     </div>
                                  </div>
                             </div>
@@ -298,7 +324,7 @@
                                 <div class="col-md-6 col-xs-12">
                                     <div class="input-group">
                                         <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-                                        <input type="text" class="form-control datepicker" name="enddate" />
+                                        <input type="text" class="form-control datepicker" name="enddate"  required />
                                     </div>
                                 </div>
                             </div>
@@ -308,7 +334,7 @@
                                 <div class="col-md-6 col-xs-12">
                                     <div class="input-group">
                                         <span class="input-group-addon"><span class="fa fa-clock-o"></span></span>
-                                        <input type="text" class="form-control" id="timepicker1" name="starttime" />
+                                        <input type="text" class="form-control" id="timepicker1" name="starttime" required  />
                                     </div>
                                 </div>
                             </div>
@@ -318,7 +344,7 @@
                                 <div class="col-md-6 col-xs-12">
                                     <div class="input-group">
                                         <span class="input-group-addon"><span class="fa fa-clock-o"></span></span>
-                                        <input type="text" class="form-control" id="timepicker2" name="endtime" />
+                                        <input type="text" class="form-control" id="timepicker2" required name="endtime" />
                                     </div>
                                 </div>
                             </div>

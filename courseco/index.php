@@ -16,6 +16,9 @@ include '../components/course_head.php'; ?>
 
 <script>
 
+    var getUrl = window.location;
+    var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+    var path= baseUrl+'/CSC-Admin/coursecoevents.xml';
 
     $(document).ready(function () {
 
@@ -23,7 +26,7 @@ include '../components/course_head.php'; ?>
             mode: 'event',
             //jsonUrl: 'events.json',
             //dataType: 'json'
-            xmlUrl: 'events.xml'
+            xmlUrl: path
         });
     });
 </script>
