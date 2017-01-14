@@ -93,4 +93,24 @@ function update_settings($con,$fname,$lname,$email,$password,$id){
         
     return true;
 }
+
+function removefolder($folder){
+    if(is_dir($folder)===true){
+        $foldercontents = scandir($folder);
+        unset($foldercontents[0],$foldercontents[1]);
+        foreach ($foldercontents as $content => $contentname) {
+            $currentpath = $folder.'/'.$contentname;
+            $filetype = filetype($currentpath);
+            //echo "$filetype"."<br>";
+            if($filetype=='dir'){
+                removefolder($currentpath);
+            }else{
+                unlink($currentpath);
+            }
+            unset($foldercontents[$content]);
+        }
+        rmdir($folder);
+    }
+}
+
 }
