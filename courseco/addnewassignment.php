@@ -156,10 +156,19 @@ if (isset($_GET['id'])) {
 
                       );
 
-                      $submit = submission($con,$regdata);
-                      echo "<script type=text/javascript>swal('Submission link was created successfully!')</script>";
-                  }else{
 
+                      if(empty($regdata['edateandtime']) && empty($regdata['edateandtime'])){
+                        echo "<script type=text/javascript>swal('Link title and End date should be mentioned!')</script>";
+                      }else{
+                        $submit = submission($con,$regdata);
+                        echo "<script type=text/javascript>swal('Submission link was created successfully!')</script>";
+                      }
+
+                      
+                  }else if(empty($regdata['edateandtime']) && empty($regdata['edateandtime'])){
+                    echo "<script type=text/javascript>swal('Link title and End date should be mentioned!')</script>";
+                    
+                  }else{
                     echo "<script type=text/javascript>swal('An assignment link with this name already exists try giving another name!')</script>";
                   }
                   

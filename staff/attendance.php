@@ -176,7 +176,7 @@ include '../components/page_head.php';?>
 			<br>
 			
 			<hr>
-			<form action="" method="post">
+			<form action="" method="post" onSubmit="if(!confirm('Do you want to submit these data?')){return false;}else{return true;}">
 			<table>
 					<tr>
 						<td  width="38%"><h4><b><span style="color:red;font-size:25px;">*</span>Date :</b></h4></td>
@@ -220,7 +220,7 @@ include '../components/page_head.php';?>
 							</script>
 											
 						</td>
-						<td width="10%"><center><h4><b>(To)</b></h4></center></td>
+						<td width="5%"><center><h4><b>To</b></h4></center></td>
 						<td>
 							
 							<div class="input-group bootstrap-timepicker timepicker">

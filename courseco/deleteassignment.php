@@ -22,13 +22,25 @@ if (isset($_GET['assid'])) {
 	$sql1 = "SELECT * FROM submissions WHERE id=$assid";
 	$res1 = mysqli_query($con,$sql1);
 	$row = mysqli_fetch_assoc($res1);
-	echo $row;
-	$sql2 = "DELETE FROM submissions WHERE id= $assid";
+	$path = $row['path'];
+	$sql2 = "DELETE FROM submissions WHERE id=$assid";
 	$res2 = mysqli_query($con,$sql2);
 
-	if ($res1 && $res2) {
-		
-	return true;
-	}
-	removefolder($row['path']);
+    rrmdir($path);
+    function rrmdir($dir) {
+        if (is_dir($dir)) {
+            $objects = scandir($dir);
+            foreach ($objects as $object) {
+                if ($object != "." && $object != "..") {
+                    if (is_dir($dir."/".$object))
+                        rrmdir($dir."/".$object);
+                    else
+                        unlink($dir."/".$object);
+                }
+            }
+            rmdir($dir);
+        }
+    }
+
+
 }
