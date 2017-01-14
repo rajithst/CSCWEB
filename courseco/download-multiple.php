@@ -8,6 +8,7 @@ if (isset($_GET['file']) and isset($_GET['path']) ) {
 $file = filter_input(INPUT_GET, 'file', FILTER_SANITIZE_SPECIAL_CHARS);
 $fileType = pathinfo($path.$file);
     $pp = $fileType['dirname'];
+    echo $pp;
 $returnType ;
 if (file_exists($pp.'/'.$file) && is_readable($pp.'/'.$file)) {
 

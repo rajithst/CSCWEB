@@ -144,13 +144,12 @@ if (isset($_GET['id'])) {
 </div>
 
 
-<<<<<<< HEAD
+
 
               
     
   </div>
 </div>
-=======
   </div>
 </div>
 
@@ -211,7 +210,7 @@ $('button.deleteass').click(function(){
 
   
 })
->>>>>>> 934da26604746c7f7185cc5cde3a786e35697fcc
+
 
 
 })

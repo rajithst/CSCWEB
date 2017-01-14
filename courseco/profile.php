@@ -29,12 +29,12 @@ include '../components/course_head.php'; ?>
 
 $fnameerr = $lnameerr = $emailerr = $passworderr = $confirmpassworderr = $matchingerror = "";
 
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-    $fname = $_post['fname'];
-    $lname = $_post['lname'];
-    $email = $_post['email'];
-    $password = $_post['password'];
-    $confirmpassword = $_post['confirmpassword'];
+if(isset($_POST["submit"])){
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $confirmpassword = $_POST['confirmpassword'];
 
     if(empty($fname)){
         $fnameerr = "First name should be included !"; 
@@ -70,7 +70,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 
 
-    $md5password = md5($Password);
+    $md5password = md5($password);
     $md5confirmpassword = md5($confirmpassword);
 
     if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password) && !empty($confirmpassword)){
@@ -111,6 +111,7 @@ function test_input($data){
         <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
             <h3>Personal information</h3>
             <form class="form-horizontal" role="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+
                 <div class="form-group">
                     <label class="col-lg-3 control-label">First name:</label>
                     <div class="col-lg-8">
@@ -150,7 +151,7 @@ function test_input($data){
                 <div class="form-group">
                     <label class="col-md-3 control-label"></label>
                     <div class="col-md-8">
-                        <input class="btn btn-primary" value="Save Changes" name="submit" type="button">
+                        <input class="btn btn-primary" value="Save Changes" name="submit" type="submit">
                         <span></span>
                         <input class="btn btn-default" value="Cancel" type="reset">
                     </div>

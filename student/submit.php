@@ -183,7 +183,7 @@ $data = mysqli_fetch_array($res);
                         </tr>
                         <tr>
                             <?php
-                            $timestamp=$data[4];
+                            $timestamp=$data[5];
                             $date = gmdate("F j, Y, g:i a", $timestamp);
                             ?>
                             <td><center>Due date</center></td>
@@ -285,15 +285,16 @@ $data = mysqli_fetch_array($res);
                 }*/
 
                 // Upload file
-                if (!move_uploaded_file($_FILES['file_upload']['tmp_name'], $data[5] . $_FILES['file_upload']['name'])) {
+                if (!move_uploaded_file($_FILES['file_upload']['tmp_name'], $data[6] . $_FILES['file_upload']['name'])) {
                     die('Error uploading file - check destination is writeable.');
                 }
 
                 $name = $stu_data['fullname'];
                 $date = time();
-                $path = $data[5];
+                $path = $data[6];
+                $fname=$_FILES['file_upload']['name'];
 
-               $sql = "INSERT INTO assignmentsubmissions(subid,assid,studentname,filename,date,path,attempt) VALUES('$subid','$assid','$name','rr','$date','$path',1)";
+               $sql = "INSERT INTO assignmentsubmissions(subid,assid,studentname,filename,date,path,attempt) VALUES('$subid','$assid','$name','$fname','$date','$path',1)";
                 mysqli_query($con,$sql);
                 header("Refresh:0");
                 ob_end_flush();
