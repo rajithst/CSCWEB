@@ -18,6 +18,15 @@ require '../core/base_connection.php';
 
 <body style="background-color: #f0f0f0;overflow-x:hidden;">
 <?php include "comp/navbar.php"; ?>
+
+<div class="row" style="margin-left:20px; margin-bottom: 20px;">
+    <div class="btn-group btn-breadcrumb">
+        <a href="home.php" class="btn btn-primary"><i class="glyphicon glyphicon-home"> Home</i></a>
+        <a href="#" class="btn btn-primary"><?php echo $stu_data['name_w_initials']; ?></a>
+        <a href="#" class="btn btn-primary" style="color: #ccc;">Account Settings</a>
+    </div>
+</div>
+
 	<div class="container" >
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2" style="background-color: #fff;margin-bottom: 60px;">
@@ -217,13 +226,15 @@ require '../core/base_connection.php';
 									if(($newpwd!=$conpwd) || ($curpwd!=$stu_pwd)){
 										$pwdError='Password Combination error occured.';
 									}else{
+										$newpwd1=md5($newpwd);
 										$column='password';
-										$result=updatedata($con,$column,$newpwd,$stu_id);
+										$result=updatedata($con,$column,$newpwd1,$stu_id);
 										$comment="Successfully updated.";
 									}
 								}
 
 								?>
+
 								<div class="col-sm-6 col-sm-offset-3"><span style="color: red; margin-left: 0px;"><?php echo $pwdError ;?></span></div>
 							</form>
 							</td>

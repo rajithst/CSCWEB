@@ -76,17 +76,17 @@ $data = mysqli_fetch_array($res);
 
 <?php include "comp/navbar.php"; ?>
 
-<div style="margin-left:20px;">
-    <ol class="breadcrumb breadcrumb-arrow" >
-        <li ><a href="home.php"><span class="glyphicon glyphicon-home"> Home</span></a></li>
-        <li ><a href="subject.php?id=<?php echo $stu_data['coursename']; ?> "><?php echo $subname; ?></a></li>
-        <li class="active" ><?php echo $data[2]; ?></li>
-    </ol>
+<div class="row" style="margin-left:20px; margin-bottom: 0px;">
+    <div class="btn-group btn-breadcrumb">
+            <a href="home.php" class="btn btn-primary"><i class="glyphicon glyphicon-home"> Home</i></a>
+            <a href="subject.php?id=<?php echo $stu_data['coursename']; ?> " class="btn btn-primary"><?php echo $subname; ?></a>
+            <a href="#" class="btn btn-primary" style="color: #ccc;"><?php echo $data[2]; ?></a>
+        </div>
 </div>
 
 <div class="container-fluid">
-    <div class="row" style="padding: 10px;">
-    <div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 10px;margin-top: 0%">
+    <div class="row" style="padding: 20px;">
+    <div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 15px;margin-top: 0%">
 
         <center>
             <h3>Main menu</h3>

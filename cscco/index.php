@@ -17,14 +17,38 @@ include '../components/cscordinator_head.php'; ?>
 <script>
 
 
+    var getUrl = window.location;
+    var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+    var path= baseUrl+'/CSC-Admin/csccoevents.xml';
+
     $(document).ready(function () {
 
         $('#mycalendar').monthly({
             mode: 'event',
             //jsonUrl: 'events.json',
             //dataType: 'json'
-            xmlUrl: 'events.xml'
+            xmlUrl: path
         });
+
+        $('.helpbutton').click(function () {
+
+
+            $('#joyRideTipContent').joyride({
+                autoStart : false,
+                postStepCallback : function (index, tip) {
+                    if (index == 2) {
+                        $(this).joyride('set_li', false, 1);
+                    }
+                },
+                modal:false,
+                expose: false
+            });
+
+        });
+
+
+
+
     });
 </script>
 
@@ -162,9 +186,9 @@ include '../components/cscordinator_head.php'; ?>
 </div>
 
 
-<div class="col-md-8 col-sm-6 col-xs-12">
+<div class="col-md-8 col-sm-6 col-xs-12" >
 
-    <center><h2>News Feed</h2></center>
+    <center><h2 >News Feed</h2></center>
 
     <?php
 
@@ -182,7 +206,7 @@ include '../components/cscordinator_head.php'; ?>
                     ?>
 
 
-                    <div class="alert-message alert-message-notice">
+                    <div class="alert-message alert-message-notice" id="jrnewsfeed">
 
                         <h4><?php echo $row['subject']; ?> </h4>
                         <span class="badge">Posted By Admin <?php echo $data['name']; ?></span>
@@ -240,7 +264,7 @@ include '../components/cscordinator_head.php'; ?>
 
                 <div class="profile-userbuttons">
                     <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal">Profile</button>
-                    <button type="button" class="btn btn-danger btn-sm">Sign Out</button>
+                    <button type="button" class="btn btn-danger btn-sm" id="jrlogout">Sign Out</button>
                 </div>
 
                 <div class="profile-usermenu">
@@ -250,13 +274,13 @@ include '../components/cscordinator_head.php'; ?>
                                 <i class="glyphicon glyphicon-home"></i>
                                 Home </a>
                         </li>
-                        <li>
+                        <li id="jraccsettings">
                             <a href="profile.php">
                                 <i class="glyphicon glyphicon-user"></i>
                                 Account Settings </a>
                         </li>
 
-                        <li>
+                        <li class="helpbutton">
                             <a href="#">
                                 <i class="glyphicon glyphicon-flag"></i>
                                 Help </a>
@@ -296,6 +320,59 @@ include '../components/cscordinator_head.php'; ?>
         </div>
     </div>
 </div>
+
+<ol id="joyRideTipContent">
+    <li data-id="jrnewsfeed" data-text="Next" class="custom">
+        <h2>News Feed</h2>
+        <p>This Section will display all the News related to Course Coordinator Publish by Administrator</p>
+    </li>
+    <li data-id="jrnavbar" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
+        <h2>Main Naviation Bar</h2>
+        <p>This Section Includes All the operations Which can perform by Course Coordinator</p>
+    </li>
+    <li data-id="jrreporttab" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
+        <h2>Reports Section</h2>
+        <p>This Section You can view and Download All the reports Generate by System</p>
+    </li>
+
+    <li data-id="jrcourse" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
+        <h2>Add and Edit Courses</h2>
+        <p>This Section You can Add and Edit All the Courses Regarding to system</p>
+    </li>
+
+    <li data-id="jrlecturer" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
+        <h2>Add Lecturer</h2>
+        <p>This Section You can Add Lecturer and edit All the Details Lecturers</p>
+    </li>
+
+
+
+    <li data-id="jrlectures" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
+        <h2>Add Lectures</h2>
+        <p>This Section You can Add Lectures and timeslots according to Lectures</p>
+    </li>
+
+    <li data-id="jrmessages" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
+        <h2>Message and Emails</h2>
+        <p>This Section You can Access to instance Messanging and Email sending</p>
+    </li>
+
+    <li data-id="mycalendar" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
+        <h2>Event Calander</h2>
+        <p>All the events publish here</p>
+    </li>
+
+
+
+    <li data-id="jraccsettings" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
+        <h2>Change your Account Settings</h2>
+        <p>All the Settings can be change and save</p>
+    </li>
+    <li data-id="jrlogout" data-button="Next" data-options="tipLocation:left;tipAnimation:fade">
+        <h2>Logout</h2>
+        <p>Logout Button</p>
+    </li>
+</ol>
 
 <?php include "../components/cscordinator_footer.php"; ?>
 

@@ -20,7 +20,7 @@
 
     <script src="../public/plugins/datepicker/bootstrap-datetimepicker.js"></script>
     <script src="../public/plugins/sweealert/sweetalert2.min.js"></script>
-    <script src="../public/plugins/monthly/monthly.js"></script>
+
    <!-- <link rel="stylesheet" href="../public/plugins/wysiwig/bootstrap3-wysihtml5.min.css"> -->
 
 

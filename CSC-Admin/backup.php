@@ -105,29 +105,17 @@
                    <div class="row">
                        <div class="col-md-3">
                            <div class="list-group border-bottom">
-                               <a href="#" class="list-group-item" onClick ="$('#customers').tableExport({type:'xml',escape:'false'});"><img src='img/icons/xml.png' width="24"/> XML</a>
-                               <a href="sqldump.php" class="list-group-item" onClick =""><img src='img/icons/sql.png' width="24"/> SQL</a>
-                           </div>
-                       </div>
-                       <div class="col-md-3">
-                           <div class="list-group border-bottom">
-                               <a href="#" class="list-group-item" onClick ="$('#customers').tableExport({type:'csv',escape:'false'});"><img src='img/icons/csv.png' width="24"/> CSV</a>
-                               <a href="#" class="list-group-item" onClick ="$('#customers').tableExport({type:'txt',escape:'false'});"><img src='img/icons/txt.png' width="24"/> TXT</a>
-                           </div>
-                       </div>
-                       <div class="col-md-3">
-                           <div class="list-group border-bottom">
-                               <a href="#" class="list-group-item" onClick ="$('#customers').tableExport({type:'excel',escape:'false'});"><img src='img/icons/xls.png' width="24"/> XLS</a>
-                               <a href="#" class="list-group-item" onClick ="$('#customers').tableExport({type:'doc',escape:'false'});"><img src='img/icons/word.png' width="24"/> Word</a>
+                               Backup current Database as SQL file
 
                            </div>
                        </div>
-                       <div class="col-md-2">
+                       <div class="col-md-3">
                            <div class="list-group border-bottom">
-                               <a href="#" class="list-group-item" onClick ="$('#customers').tableExport({type:'png',escape:'false'});"><img src='img/icons/png.png' width="24"/> PNG</a>
-                               <a href="#" class="list-group-item" onClick ="$('#customers').tableExport({type:'pdf',escape:'false'});"><img src='img/icons/pdf.png' width="24"/> PDF</a>
+
+                               <a href="sqldump.php" class="list-group-item" onClick =""><img src='img/icons/sql.png' width="24"/> SQL</a>
                            </div>
                        </div>
+
                    </div>
                 
                </div>

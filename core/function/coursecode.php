@@ -67,7 +67,7 @@ function submission($con,$regdata){
     $fields='`' .implode('`,`' ,array_keys($regdata)) . '`';
     $vals= '\'' . implode('\', \'' ,$regdata ) . '\' ';
     $sql = "INSERT INTO submissions ($fields) VALUES ($vals)";
-    //echo $sql;
+
     $query = mysqli_query($con, $sql);
 
 

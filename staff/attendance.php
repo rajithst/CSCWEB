@@ -13,7 +13,27 @@ if(logged_in() === false){
 require '../core/init.php';
 require '../core/function/staff.php';
 include '../components/page_head.php';?>
-
+	
+    <link type="text/css" href="bt/css/bootstrap-timepicker.min.css" />
+        
+    <script type="text/javascript" src="bt/js/bootstrap-timepicker.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () 
+		{
+			$( function() 
+			{
+				$( "#datepick" ).datepicker();
+				
+			} );
+			
+        });
+		
+	
+		
+				
+		
+	</script>
+	
 
 
     </head>
@@ -125,20 +145,108 @@ include '../components/page_head.php';?>
 			}
 			else if($token>0)
 			{?>
-        <div class="col-md-2"></div>
+		
+        <div class="col-md-4">
+			<center>
+			<h3><b><u>Input Lecture Details</u></b></h3>
+			</center>
+			<br>
+			
+			<hr>
+			<form action="" method="post">
+			<table>
+					<tr>
+						<td  width="35%"><h4><b><span style="color:red;font-size:25px;">*</span>Date :</b></h4></td>
+						<td>
+								<div class="input-group">
+									<input  class="form-control" type="date" required id="datepick" name="date" >
+									<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+								</div>
+						</td>
+						
+					</tr>
+					<tr>
+						<td  width="20%"><h4><b><span style="color:red;font-size:25px;">*</span>Hall :</b></h4></td>
+						<td>
+							
+								<select class="form-control" id="selecting" name="hall">
+											<option value="W001">W001</option>
+											<option value="W002">W002</option>
+											<option value="LAB A">LAB A</option>
+											<option value="LAB B">LAB B</option>
+											<option value="LAB C">LAB C</option>
+											<option value="IRQUE">IRQUE</option>
+											<option value="Mini auditorium">Mini auditorium</option>
+											<option value="4th floor">4th floor</option>
+											<option value="Other">Other</option>
+								</select>
+							
+						</td>
+					</tr>
+					
+					<tr>
+						<td  width="20%"><h4><b><span style="color:red;font-size:25px;">*</span>Time(From)</b></h4></td>
+						<td>
+							<div class="input-group bootstrap-timepicker timepicker">
+								<input id="timepicker1" type="text" class="form-control input-small" name="f_time">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+							</div>
+							 
+							<script type="text/javascript">
+								$('#timepicker1').timepicker({ 'step': 30 });
+							</script>
+											
+						</td>
+						<td width="10%"><center><h4><b>(To)</b></h4></center></td>
+						<td>
+							
+							<div class="input-group bootstrap-timepicker timepicker">
+								<input id="timepicker2" type="text" class="form-control input-small" name="t_time">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+							</div>
+							 
+							<script type="text/javascript">
+								$('#timepicker2').timepicker({ 'step': 30 });
+							</script>
+												
+						</td>
+					</tr>
+					<tr>
+						<td  width="20%"><h4><b><span style="color:red;font-size:25px;">*</span>Lecturer name :</b></h4></td>
+						<td colspan="3">
+								<div class="input-group">
+									<input placeholder="name of the lecturer" class="form-control" required type="text" name="l_name" >
+									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								</div>
+						</td>
+					</tr>
+					<tr>
+						<td  width="20%"><h4><b>Instructor name :</b></h4></td>
+						<td colspan="3">
+								<div class="input-group">
+									<input placeholder="name of the instructor" class="form-control" type="text" name="i_name" >
+									<span class="input-group-addon" ><i class="glyphicon glyphicon-user"></i></span>
+								</div>
+						</td>
+					</tr>
+					
+				</table>
+			
+		</div>
+		
         <div class="col-md-8 col-sm-8 col-xs-12" style="padding-left: 10%">
 				<?php
 					$subid = $_GET['subid'];
 					$res = getstudents($con,$subid,$token);
 					$subdata = getsubdata($con,$subid);
 				?>
-        <center>
+        <!--<center>-->
         <section class="content-header">
-
-                <form action="lecandinstruct.php" method="post">
+		
+                
                 <div class="col-md-10">
 					
-
+					<center>
                    <h4><b>Subject : <?php echo $subdata[2]; ?></b></h4>
 					<b>Subject id : </b><?php echo $subid?>
 					<br>
@@ -146,7 +254,7 @@ include '../components/page_head.php';?>
 					<br>
                     <b> Batch number : </b><?php echo $token;?>
 					<hr>
-
+					
 
                     <div class="box" style="width:75%;">
                         <div class="box-header">
@@ -158,10 +266,10 @@ include '../components/page_head.php';?>
 
                             <table class="table table-hover">
                                 <tr>
-                                    <th>Subject ID</th>
+                                    <th>Student NIC</th>
                                     <th>Student Name</th>
                                     <th>mark Attendance</th>
-                                    <th>Additional Infromation</th>
+                                    
                                 </tr>
                                 <?php
 
@@ -170,8 +278,8 @@ include '../components/page_head.php';?>
 
                                 ?>
                                 <tr>
-                                    <td><?php  echo  $subid; ?></td>
-                                    <td><?php  echo  $row['fullname']; ?></td>
+                                    <td><?php  echo  $row['nic']; ?></td>
+                                    <td><?php  echo  $row['name_w_initials']; ?></td>
 									
                                     <td>
 										<center>
@@ -179,7 +287,7 @@ include '../components/page_head.php';?>
 											<input type="checkbox" checked id="attendance[]" name="attendance[]" value="<?php  echo  $row['fullname']; ?>">
 										</center>
 									</td>
-                                    <td><input type="text" name="addtional" class="form-control"></td>
+                                    
 
                                 </tr>
 
@@ -194,12 +302,13 @@ include '../components/page_head.php';?>
 
                     </div>
 
-                            <button type="submit" class="btn btn-block btn-success btn-md" name="next">Record Attendance</button>
+                            <button type="submit" class="btn btn-block btn-success btn-md" name="next">Submit</button>
                             
                         </div>
                 </form>
+				</center>
             </section>
-            </center>
+            <!--</center>-->
         </div>
             <div class="col-md-2"></div>
         </div>
@@ -211,7 +320,17 @@ include '../components/page_head.php';?>
 
 
 <?php
-    if(isset($_POST['next']) === true) {
+    if(isset($_POST['next']) === true) 
+	{
+		$odate=$_POST['date'];
+		$hall=$_POST['hall'];
+		$t_time=$_POST['t_time'];
+		$f_time=$_POST['f_time'];
+		$l_name=$_POST['l_name'];
+		$i_name=$_POST['i_name'];
+		$date = date('Y-m-d', strtotime($odate));
+		$sqlf="INSERT INTO lecture_details(subject_id,date,hall,time_from,time_to,lecturer_name,instructor_name) VALUES('$subid','$date','$hall','$f_time','$t_time','$l_name','$i_name')";
+		mysqli_query($con,$sqlf);
         foreach ($_POST['attendance'] as $index => $val) {
 
             $sql1 = "SELECT attendance,total_attendance FROM student WHERE fullname='$val'";
@@ -245,9 +364,7 @@ include '../components/page_head.php';?>
             <strong><center>Recorded!</center></strong>
         </div>
 
-        <form action="lecandinstruct.php" method="GET"> 
-		<center><button class="btn btn-info" type="submit" name="subid" value="<?php echo $subid; ?>">Process to next page</button></center>
-		</form>
+        
 
         <?php
 
