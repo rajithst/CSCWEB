@@ -105,7 +105,7 @@ include '../components/page_head.php';?>
 						<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.standard_fonts_metrics.js"></script>
 						<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.split_text_to_size.js"></script>
 						<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.from_html.js"></script>
-						<script type="text/javascript" src="js/basic.js"></script>
+						
 						
 						<script>
 							$(function()
@@ -128,7 +128,7 @@ include '../components/page_head.php';?>
 							});
 							
 						</script>
-							
+						
 							<div class="col-md-2"></div>
 								<div class="col-md-8 col-sm-8 col-xs-12" style="padding-left: 10%">
 										<?php

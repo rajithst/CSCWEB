@@ -10,8 +10,8 @@ if(logged_in() === false){
 
 }
 require '../core/init.php';
-require '../core/function/cscco.php';
-include '../components/cscordinator_head.php'; ?>
+require '../core/function/coursecode.php';
+include '../components/course_head.php'; ?>
 
 
 
@@ -36,13 +36,13 @@ include '../components/cscordinator_head.php'; ?>
         <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="text-center">
                 <img src="<?php echo $staff_data['profile']; ?>" class="avatar img-circle img-thumbnail" alt="avatar">
-                <h6>Upload a different photo...</h6>
+                <h6>Browse for different photo...</h6>
                 <input type="file" class="text-center center-block well well-sm">
             </div>
         </div>
         <!-- edit form column -->
         <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
-            <h3>Personal info</h3>
+            <h3>Personal information</h3>
             <form class="form-horizontal" role="form">
                 <div class="form-group">
                     <label class="col-lg-3 control-label">First name:</label>

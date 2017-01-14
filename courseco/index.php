@@ -16,6 +16,9 @@ include '../components/course_head.php'; ?>
 
 <script>
 
+    var getUrl = window.location;
+    var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+    var path= baseUrl+'/CSC-Admin/coursecoevents.xml';
 
     $(document).ready(function () {
 
@@ -23,7 +26,7 @@ include '../components/course_head.php'; ?>
             mode: 'event',
             //jsonUrl: 'events.json',
             //dataType: 'json'
-            xmlUrl: 'events.xml'
+            xmlUrl: path
         });
     });
 </script>
@@ -38,18 +41,16 @@ include '../components/course_head.php'; ?>
 <div class="container-fluid">
 <div class="sidenav col-md-2 col-sm-3 col-xs-12">
 
-    <center>
-        <h3>Main menu</h3>
-    </center>
+    
                 <div class="panel-group" id="accordion">
-                    <!--<div class="panel panel-default">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
-                            </span>Content</a>
-                            </h4>
+                            <center><h2 class="panel-title">
+
+                                    Main Menu
+                                </h2></center>
                         </div>
-                        <div id="collapseOne" class="panel-collapse collapse in">
+                        <!--<div id="collapseOne" class="panel-collapse collapse in">
                             <div class="panel-body" style="padding: 0;">
                                 <table class="table" style="margin-bottom: 0px;">
                                     <tr>
@@ -143,52 +144,22 @@ include '../components/course_head.php'; ?>
                             </div>
                         </div>
                     </div>-->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
-                            </span>My Files</a>
-                            </h4>
-                        </div>
-                        <div id="collapseFour" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <table class="table">
-                                    <tr>
-                                        <td>
-                                            <span class=""></span><a href=>Attendance Reports</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class=""></span><a href="">Other reports</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class=""></span><a href="">View Assignments</a>
-                                        </td>
-                                    </tr>
-                                    
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+
+                    <center><h3> Event Calender</h3></center>
+                    <div class="monthly" id="mycalendar"></div>
+                    
                 </div>
 
-
-
-    <center><h3> Event Calender</h3></center>
-    <div class="monthly" id="mycalendar"></div>
-
+            </div>
             </div>
 
 
 
 
-            <div class="col-sm-9 col-md-9">
+<!--            <div class="col-sm-9 col-md-9">
 
 
-</div>
+</div>-->
 
 
     <div class="col-md-8 col-sm-6 col-xs-12">

@@ -242,15 +242,16 @@ include '../components/page_head.php';?>
 								}
 								
 							}
-			}?>
-                            
-							</div>
+							echo "</div>
 							</table>
 								
 							<div id='editor'></div>
 							<center>
 							<button class='btn btn-primary' id ='cmd'><span class='glyphicon glyphicon-file' style='vertical-align:middle'></span> Download</button>
-							</center>
+							</center>";
+			}?>
+                            
+							
 
 
 

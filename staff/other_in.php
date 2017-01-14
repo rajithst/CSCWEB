@@ -60,7 +60,7 @@ include '../components/page_head.php'; ?>
                         <!-- Text input-->
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label" >Description of the income</label>
+                            <label class="col-md-4 control-label" ><span style="color:red;font-size:25px;">*</span>Description of the income</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
@@ -71,7 +71,7 @@ include '../components/page_head.php'; ?>
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-md-4 control-label">Received from</label>
+                            <label class="col-md-4 control-label"><span style="color:red;font-size:25px;">*</span>Received from</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -80,7 +80,7 @@ include '../components/page_head.php'; ?>
                             </div>
                         </div>
 						<div class="form-group">
-                            <label class="col-md-4 control-label">Received by</label>
+                            <label class="col-md-4 control-label"><span style="color:red;font-size:25px;">*</span>Received by</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -92,7 +92,7 @@ include '../components/page_head.php'; ?>
                         <!-- Text input-->
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label">Received Date</label>
+                            <label class="col-md-4 control-label"><span style="color:red;font-size:25px;">*</span>Received Date</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
@@ -102,7 +102,7 @@ include '../components/page_head.php'; ?>
                         </div>
 						
                          <div class="form-group">
-                            <label class="col-md-4 control-label">Amount Rs</label>
+                            <label class="col-md-4 control-label"><span style="color:red;font-size:25px;">*</span>Amount Rs</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
@@ -115,8 +115,8 @@ include '../components/page_head.php'; ?>
                     <center><div class="form-group">
                             <label class="col-md-4 control-label"></label>
                             <div class="col-md-6">
-                                <button type="submit" class="btn btn-info" name="submit">Add <span class="glyphicon glyphicon-send"></span> </button>
-                                <button type="reset" class="btn btn-info" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
+                                <button type="submit" class="btn btn-success" name="submit">Add <span class="glyphicon glyphicon-send"></span> </button>
+                                <button type="reset" class="btn btn-warning" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
                             </div>
                         </div>
 
@@ -127,53 +127,7 @@ include '../components/page_head.php'; ?>
             <div class="col-md-2"></div>
             </div>
 
-                <!-- 
-                                    <form action="expense.php" method="post">
                 
-                    <label>Textbox for user name</label>
-                         <div class="input-prepend"><span class="add-on"><i class="icon-user"></i></span><input type="text" id="" name=""></div>
-                
-                
-                
-                
-                
-                
-                
-                                    <table>
-                                        <tr>
-                                            <td><h4><b>Select expense type:-</b></h4></td>
-                                            <td style="width:200px;">
-                                                        <select style="width:200px;"class="form-control" id="selecting" name="meth">
-                                                            <option value="Donations">Donations</option>
-                                                            <option value="Advertising">Advertising</option>
-                                                            <option value="Other">Other</option>
-                                                        </select>
-                                                </td>
-                                        </tr>
-                                        <tr>
-                                            <td><h4><b>Description :-</b></h4></td>
-                                            <td><input name="desc" "type="text"required id="enter_details" class="form-control" style="width:400px;" placeholder="Describe the expense"></input></td>
-                                        </tr>
-                                        <tr>
-                                            <td><h4><b>Given to :-</b></h4></td>
-                                            <td><input name="g_to"type="text"required id="enter_details" class="form-control" style="width:400px;" placeholder="receiving party name"></input></td>
-                                        </tr>
-                                        <tr>
-                                            <td><h4><b>Given by :-</b></h4></td>
-                                            <td><input name="g_by" type="text"required id="enter_details" class="form-control" style="width:400px;" placeholder="Authorized by"></input></td>
-                                        </tr>
-                                        <tr>
-                                            <td><h4><b>Date :-</b></h4></td>
-                                            <td><input  name="g_date" type="date"required id="enter_details" ></input></td>
-                                        </tr>
-                                        <tr>
-                                            <td><h4><b>Total amount:-</b></h4></td>
-                                            <td><input name="amm" type="text"required id="enter_details" class="form-control"placeholder="Ammount"></input></td>
-                                        </tr>
-                                    </table>
-                                    <br>
-                                    <center><button type="submit" class="btn btn-primary">Submit</button></center>
-                                    </form> -->
                 </div>
 
 

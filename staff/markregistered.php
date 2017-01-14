@@ -18,12 +18,7 @@ include '../components/page_head.php'; ?>
 $(document).ready(function(){
 
    
-    //$('#mytable').DataTable();
-
-/*$("#selectall").change(function () {
-    $("input:checkbox").prop('checked', $(this).prop("checked"));
-});*/
-
+    
 
 
 $('#ss').click(function(){
@@ -64,10 +59,17 @@ $('#ss').click(function(){
 
 
 </script>
+
     </head>
     <body>
 
     <?php include "comp/navbar.php"; ?>
+	<ul class="breadcrum">
+        <li class="completed"><a href="index.php">HOME</a></li>
+        <li class="active"><a href="">UNREGISTERED STUDENTS</a></li>
+        
+
+</ul>
 
     </br>
 
@@ -80,12 +82,12 @@ $('#ss').click(function(){
         
         
         <div class="col-md-12">
-        <h2>Unregistered Students</h2>
+        <center><h2>Unregistered Students</h2></center>
         <div class="table-responsive">
 
             <?php $res = unregistered($con); ?>
-            <form action="" method="post">           
-              <table id="mytable" class="table table-bordred table-striped">
+                      
+              <table id="mytable" class="table table-hover">
                    <thead>
                        <tr>
                             <th>id</th>
@@ -99,15 +101,20 @@ $('#ss').click(function(){
                    <tbody>
 
                    
-                   <?php while ($row = $res->fetch_assoc()) { ?>
+                   <?php while ($row = $res->fetch_assoc()) {
+						?>
                        <tr class="item">
                             <td class="id"><?php echo $row['id']; ?></td>
-                           <td><?php echo $row['fullname']; ?></td>
+                           <td><?php echo $row['name_w_initials']; ?></td>
                            <td><?php echo $row['coursename']; ?></td>
                            <td><?php echo $row['nic']; ?></td>
-                           <td class="mark"><center>
-                               <input type="checkbox" value="0" id="check_list" >
-                           </center></td>
+                           <td class="mark">
+						   <?php
+						   
+						   echo "<center>
+                               <a href='markr.php?nic=".$row['nic']."&name=".$row['name_w_initials']."&subid=".$row['coursename']."' class='btn btn-primary' type='submit' name='next'>Enter payment details</a>
+                           </center></td>";
+						   ?>
                        </tr>
 <?php } ?>
                
@@ -116,10 +123,9 @@ $('#ss').click(function(){
 </table>  
 
 
-</form>   
 
-<button type="submit" name="submit" id="ss">Submit</button> 
-       
+
+
             </div>
             
         </div>

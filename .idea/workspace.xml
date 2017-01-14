@@ -2,299 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8a2abd2-b0f4-4cec-8935-3c8e5a8be2fc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/ajax_fullcalendar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/filetree/jqueryFileTree.asp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/filetree/jqueryFileTree.aspx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/filetree/jqueryFileTree.cf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/filetree/jqueryFileTree.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/filetree/jqueryFileTree.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/filetree/jqueryFileTree.pl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/filetree/jqueryFileTree.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/filetree/jqueryFileTree.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/filetree/jqueryFileTree_huck.lasso" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/filetree/jqueryFileTree_sabourdin.lasso" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/blog/post_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/blog/post_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/girls-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/girls-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/girls-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/music-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/music-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/music-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/music-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/music-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/nature-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/nature-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/nature-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/nature-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/nature-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/nature-6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/nature-7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/space-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/gallery/space-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/nature.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/ocean.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/users/avatar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/users/no-image.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/users/user.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/users/user2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/users/user3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/users/user4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/users/user5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/users/user6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/assets/images/users/user7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/css/fullcalendar/fullcalendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/bg-dot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/blueimp/error.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/blueimp/error.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/blueimp/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/blueimp/play-pause.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/blueimp/play-pause.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/blueimp/video-play.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/blueimp/video-play.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/colorpicker/alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/colorpicker/hue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/colorpicker/saturation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/dropzone/spritemap.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/dropzone/spritemap@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/application.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/code.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/css.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/db.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/directory.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/doc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/file.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/film.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/flash.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/folder_open.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/html.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/java.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/linux.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/music.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/pdf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/php.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/picture.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/ppt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/psd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/ruby.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/script.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/spinner.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/txt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/xls.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/filetree/zip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/logo-grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/logo-grey@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/logo-small-grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/logo-small-grey@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/logo-small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/logo-small@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/logo@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/owl/AjaxLoader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/owl/grabbing.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/themes/dark-head-light.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/themes/dark.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/themes/default-head-light.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/themes/default.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/themes/forest-head-light.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/themes/forest.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/themes/light.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/themes/night-head-light.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/themes/night.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/themes/serenity-head-light.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/img/themes/serenity.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/fullcalendar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ar-ma.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ar-sa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/de-at.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/en-au.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/en-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/en-gb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/fr-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/hi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/sr-cyrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fullcalendar/lang/zh-tw.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/adduser.php" afterPath="$PROJECT_DIR$/CSC-Admin/adduser.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/allusers.php" afterPath="$PROJECT_DIR$/CSC-Admin/allusers.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/backup.php" afterPath="$PROJECT_DIR$/CSC-Admin/backup.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/calander.php" afterPath="$PROJECT_DIR$/CSC-Admin/calander.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/chat.php" afterPath="$PROJECT_DIR$/CSC-Admin/chat.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/components/ad_foot.php" afterPath="$PROJECT_DIR$/CSC-Admin/components/ad_foot.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/components/ad_head.php" afterPath="$PROJECT_DIR$/CSC-Admin/components/ad_head.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/components/ad_messagebox.php" afterPath="$PROJECT_DIR$/CSC-Admin/components/ad_messagebox.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/components/ad_sidebar.php" afterPath="$PROJECT_DIR$/CSC-Admin/components/ad_sidebar.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/components/ad_xnav.php" afterPath="$PROJECT_DIR$/CSC-Admin/components/ad_xnav.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/components/admust.php" afterPath="$PROJECT_DIR$/CSC-Admin/components/admust.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/compose.php" afterPath="$PROJECT_DIR$/CSC-Admin/compose.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/coursesettings.php" afterPath="$PROJECT_DIR$/CSC-Admin/coursesettings.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/animate/animate.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/animate/animate.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/animate/animate.min.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/animate/animate.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/bootstrap/bootstrap.css.map" afterPath="$PROJECT_DIR$/CSC-Admin/css/bootstrap/bootstrap.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/bootstrap/bootstrap.min.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/bootstrap/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/fontawesome/font-awesome.min.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/fontawesome/font-awesome.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/FontAwesome.otf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/fontawesome-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/fontawesome-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/fontawesome-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/fontawesome-webfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/CSC-Admin/css/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/jquery/jquery-ui.min.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/jquery/jquery-ui.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/mcustomscrollbar/jquery.mCustomScrollbar.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/mcustomscrollbar/jquery.mCustomScrollbar.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/summernote/summernote.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/summernote/summernote.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/sw/sweetalert2.min.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/sw/sweetalert2.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/css/theme-default.css" afterPath="$PROJECT_DIR$/CSC-Admin/css/theme-default.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/deletepost.php" afterPath="$PROJECT_DIR$/CSC-Admin/deletepost.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/deleteuser.php" afterPath="$PROJECT_DIR$/CSC-Admin/deleteuser.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/draft.php" afterPath="$PROJECT_DIR$/CSC-Admin/draft.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/edituser.php" afterPath="$PROJECT_DIR$/CSC-Admin/edituser.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/generalsettings.php" afterPath="$PROJECT_DIR$/CSC-Admin/generalsettings.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/getmessages.php" afterPath="$PROJECT_DIR$/CSC-Admin/getmessages.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/getsubsdata.php" afterPath="$PROJECT_DIR$/CSC-Admin/getsubsdata.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/getuserdata.php" afterPath="$PROJECT_DIR$/CSC-Admin/getuserdata.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/home.php" afterPath="$PROJECT_DIR$/CSC-Admin/home.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/backgrounds/wall_1.jpg" afterPath="$PROJECT_DIR$/CSC-Admin/img/backgrounds/wall_1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/fileinput/loading.gif" afterPath="$PROJECT_DIR$/CSC-Admin/img/fileinput/loading.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/icheck/grey.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icheck/grey.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/icheck/grey@2x.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icheck/grey@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/icons/csv.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/csv.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/icons/json.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/json.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/icons/pdf.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/pdf.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/icons/png.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/png.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/icons/ppt.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/ppt.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/icons/sql.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/sql.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/icons/txt.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/txt.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/icons/word.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/word.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/icons/xls.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/xls.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/icons/xml.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/icons/xml.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/animated-overlay.gif" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/animated-overlay.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/resize-icon.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/resize-icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/resize-icon@2x.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/resize-icon@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_diagonals-thick_18_b81900_40x40.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_diagonals-thick_20_666666_40x40.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/ui-bg_flat_10_000000_40x100.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_flat_10_000000_40x100.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/ui-bg_glass_100_f6f6f6_1x400.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_glass_100_f6f6f6_1x400.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/ui-bg_glass_100_fdf5ce_1x400.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_glass_100_fdf5ce_1x400.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/ui-bg_glass_65_ffffff_1x400.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_gloss-wave_35_f6a828_500x100.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/ui-icons_222222_256x240.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_222222_256x240.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/ui-icons_228ef1_256x240.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_228ef1_256x240.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/ui-icons_ef8c08_256x240.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_ef8c08_256x240.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/ui-icons_ffd27a_256x240.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_ffd27a_256x240.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/jquery/ui-icons_ffffff_256x240.png" afterPath="$PROJECT_DIR$/CSC-Admin/img/jquery/ui-icons_ffffff_256x240.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/img/loaders/default.gif" afterPath="$PROJECT_DIR$/CSC-Admin/img/loaders/default.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/importdata.php" afterPath="$PROJECT_DIR$/CSC-Admin/importdata.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/inbox.php" afterPath="$PROJECT_DIR$/CSC-Admin/inbox.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/index.php" afterPath="$PROJECT_DIR$/CSC-Admin/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/actions.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/actions.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/bootstrap/bootstrap-colorpicker.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-colorpicker.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/bootstrap/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-datepicker.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/bootstrap/bootstrap-file-input.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-file-input.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/bootstrap/bootstrap-select.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-select.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/bootstrap/bootstrap-timepicker.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap-timepicker.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/bootstrap/bootstrap.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/bootstrap/npm.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/bootstrap/npm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/datatables/jquery.dataTables.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/datatables/jquery.dataTables.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/fileinput/fileinput.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/fileinput/fileinput.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/filetree/jqueryFileTree.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/filetree/jqueryFileTree.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/highlight/jquery.highlight-4.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/highlight/jquery.highlight-4.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/icheck/icheck.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/icheck/icheck.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery/jquery-2.1.1.min.map" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/jquery/jquery-2.1.1.min.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery/jquery-migrate.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/jquery/jquery-migrate.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery/jquery-ui.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/jquery/jquery-ui.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/jquery/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/moment.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/moment.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/summernote/summernote.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/summernote/summernote.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/sw/sweetalert2.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/sw/sweetalert2.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tableexport/html2canvas.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/html2canvas.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tableexport/jquery.base64.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/jquery.base64.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tableexport/jspdf/jspdf.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/jspdf/jspdf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tableexport/jspdf/libs/base64.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/jspdf/libs/base64.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tableexport/jspdf/libs/sprintf.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/jspdf/libs/sprintf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tableexport/simple_html_dom.php" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/simple_html_dom.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tableexport/tableExport.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tableexport/tableExport.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tour/bootstrap-tour.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tour/bootstrap-tour.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/js/plugins/tour/bootstro.min.js" afterPath="$PROJECT_DIR$/CSC-Admin/js/plugins/tour/bootstro.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/logout.php" afterPath="$PROJECT_DIR$/CSC-Admin/logout.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/post.php" afterPath="$PROJECT_DIR$/CSC-Admin/post.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/profilesettings.php" afterPath="$PROJECT_DIR$/CSC-Admin/profilesettings.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/published.php" afterPath="$PROJECT_DIR$/CSC-Admin/published.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/publishpost.php" afterPath="$PROJECT_DIR$/CSC-Admin/publishpost.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/readpost.php" afterPath="$PROJECT_DIR$/CSC-Admin/readpost.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/refreshtable.php" afterPath="$PROJECT_DIR$/CSC-Admin/refreshtable.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/sqldump.php" afterPath="$PROJECT_DIR$/CSC-Admin/sqldump.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/sqlimports/csc.sql" afterPath="$PROJECT_DIR$/CSC-Admin/sqlimports/csc.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/sqlimports/phphelp.sql" afterPath="$PROJECT_DIR$/CSC-Admin/sqlimports/phphelp.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NEW/upload.php" afterPath="$PROJECT_DIR$/CSC-Admin/upload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d50a27fb-11ae-4d27-bc7d-fe385265ffe4.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/d50a27fb-11ae-4d27-bc7d-fe385265ffe4.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/admin.php" afterPath="$PROJECT_DIR$/core/function/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/ass_marks.php" afterPath="$PROJECT_DIR$/staff/ass_marks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/attendance.php" afterPath="$PROJECT_DIR$/staff/attendance.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/course_customized.php" afterPath="$PROJECT_DIR$/staff/course_customized.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/customized_courses_in.php" afterPath="$PROJECT_DIR$/staff/customized_courses_in.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/ex_marks.php" afterPath="$PROJECT_DIR$/staff/ex_marks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/expense.php" afterPath="$PROJECT_DIR$/staff/expense.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/expense_type.php" afterPath="$PROJECT_DIR$/staff/expense_type.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/gen_income_type.php" afterPath="$PROJECT_DIR$/staff/gen_income_type.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/generate_report.php" afterPath="$PROJECT_DIR$/staff/generate_report.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/getsubs.php" afterPath="$PROJECT_DIR$/staff/getsubs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/getsubs_att.php" afterPath="$PROJECT_DIR$/staff/getsubs_att.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/getsubs_marks_ass.php" afterPath="$PROJECT_DIR$/staff/getsubs_marks_ass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/getsubs_marks_ex.php" afterPath="$PROJECT_DIR$/staff/getsubs_marks_ex.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/income_other.php" afterPath="$PROJECT_DIR$/staff/income_other.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/income_project.php" afterPath="$PROJECT_DIR$/staff/income_project.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/income_type.php" afterPath="$PROJECT_DIR$/staff/income_type.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/other_in.php" afterPath="$PROJECT_DIR$/staff/other_in.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/project_in.php" afterPath="$PROJECT_DIR$/staff/project_in.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/register_students.php" afterPath="$PROJECT_DIR$/staff/register_students.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/rep_expense.php" afterPath="$PROJECT_DIR$/staff/rep_expense.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/report.php" afterPath="$PROJECT_DIR$/staff/report.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/report_attendance.php" afterPath="$PROJECT_DIR$/staff/report_attendance.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/select_course.php" afterPath="$PROJECT_DIR$/staff/select_course.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/student_registration.php" afterPath="$PROJECT_DIR$/staff/student_registration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/course_footer.php" afterPath="$PROJECT_DIR$/components/course_footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/cscordinator_footer.php" afterPath="$PROJECT_DIR$/components/cscordinator_footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/cscordinator_head.php" afterPath="$PROJECT_DIR$/components/cscordinator_head.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/coursecode.php" afterPath="$PROJECT_DIR$/core/function/coursecode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/addnewassignment.php" afterPath="$PROJECT_DIR$/courseco/addnewassignment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/index.php" afterPath="$PROJECT_DIR$/courseco/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/comp/navbar.php" afterPath="$PROJECT_DIR$/cscco/comp/navbar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/index.php" afterPath="$PROJECT_DIR$/cscco/index.php" />
     </list>
     <ignored path="mvc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -322,7 +38,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - csc@localhost" />
+        <option name="myItemId" value="csc@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -332,25 +48,11 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - csc@localhost" />
+        <option name="myItemId" value="csc@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="posts" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - csc@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="events" />
+        <option name="myItemId" value="subjects" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -361,125 +63,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="edituser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSC-Admin/edituser.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/courseco/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1005">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="390">
+              <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/function/admin.php">
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="180" column="56" selection-start-line="180" selection-start-column="56" selection-end-line="180" selection-end-column="56" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page_tail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/page_tail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1484210985767" expanded="true" signature="67:116" ph="SELECT id FR... adminusers" />
-                <marker date="1484210985767" expanded="true" signature="362:433" ph="SELECT * FRO... adminusers" />
-                <marker date="1484210985767" expanded="true" signature="602:654" ph="SELECT id,na... adminusers" />
-                <marker date="1484210985767" expanded="true" signature="869:910" ph="INSERT INTO posts... " />
-                <marker date="1484210985767" expanded="true" signature="1905:1937" ph="SELECT * FRO... posts" />
-                <marker date="1484210985767" expanded="true" signature="2149:2190" ph="INSERT INTO posts... " />
-                <marker date="1484210985767" expanded="true" signature="2285:2317" ph="SELECT * FRO... posts" />
-                <marker date="1484210985767" expanded="true" signature="2415:2454" ph="SELECT activ... subjects" />
-                <marker date="1484210985767" expanded="true" signature="2619:2650" ph="SELECT * FRO... posts" />
-                <marker date="1484210985767" expanded="true" signature="2761:2795" ph="SELECT * FRO... adminusers" />
-                <marker date="1484210985767" expanded="true" signature="2896:2915" ph="SELECT * FRO... staff" />
-                <marker date="1484210985767" expanded="true" signature="3129:3170" ph="INSERT INTO staff... " />
-                <marker date="1484210985767" expanded="true" signature="3639:3698" ph="UPDATE admin... " />
-                <marker date="1484210985767" expanded="true" signature="3934:3976" ph="INSERT INTO events... " />
-                <marker date="1484210985767" expanded="true" signature="4138:4157" ph="SELECT * FRO... staff" />
-                <marker date="1484210985767" expanded="true" signature="4264:4337" ph="SELECT * FRO... chat" />
-                <marker date="1484210985767" expanded="true" signature="4448:4479" ph="SELECT * FRO... staff" />
-                <marker date="1484210985767" expanded="true" signature="4624:4705" ph="INSERT INTO chat... " />
-                <marker date="1484210985767" expanded="true" signature="4816:4858" ph="SELECT * FRO... student" />
-                <marker date="1484210985767" expanded="true" signature="4989:5011" ph="SELECT * FRO... subjects" />
-                <marker date="1484210985767" expanded="true" signature="5123:5176" ph="SELECT * FRO... staff" />
+                <element signature="n#style#0;n#footer#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adduser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSC-Admin/adduser.php">
+      <file leaf-file-name="allposts.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staff/allposts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="40" />
+            <state relative-caret-position="-777">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calander.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSC-Admin/calander.php">
+      <file leaf-file-name="cscordinator_footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/cscordinator_footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="815">
-              <caret line="259" column="48" selection-start-line="259" selection-start-column="48" selection-end-line="259" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="published.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSC-Admin/published.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="events.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staff/events.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="events.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSC-Admin/events.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="publishevent.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CSC-Admin/publishevent.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="375">
+              <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
               <folding>
-                <marker date="1484228124273" expanded="true" signature="263:283" ph="SELECT * FRO... events" />
+                <element signature="n#style#0;n#footer#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSC-Admin/post.php">
+      <file leaf-file-name="cscordinator_head.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/cscordinator_head.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="292" column="67" selection-start-line="290" selection-start-column="20" selection-end-line="292" selection-end-column="67" />
+            <state relative-caret-position="240">
+              <caret line="16" column="70" lean-forward="false" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ad_foot.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSC-Admin/components/ad_foot.php">
+      <file leaf-file-name="course_head.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/course_head.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="course_footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/course_footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#footer#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cscco/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="603">
+              <caret line="368" column="50" lean-forward="false" selection-start-line="368" selection-start-column="50" selection-end-line="368" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cscco/comp/navbar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="66" column="65" lean-forward="true" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -494,28 +178,25 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.monthly-event-list .listed-event</find>
+      <find>panel-controls panel-controls-title</find>
+      <find>myca</find>
+      <find>addeve</find>
+      <find>jrnewsfeed</find>
+      <find>nav navbar-nav navbar-right</find>
+      <find>jrcourses</find>
+      <find>btn btn-danger btn-sm</find>
+      <find>mycalander</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/NEW/js/course.js" />
-        <option value="$PROJECT_DIR$/cscco/getcoursedata.php" />
-        <option value="$PROJECT_DIR$/cscco/getsubsdata.php" />
-        <option value="$PROJECT_DIR$/NEW/coursesettings.php" />
-        <option value="$PROJECT_DIR$/NEW/getsubsdata.php" />
-        <option value="/etc/php/php.ini" />
-        <option value="$PROJECT_DIR$/NEW/post.php" />
-        <option value="$PROJECT_DIR$/student/home.php" />
-        <option value="$PROJECT_DIR$/admin/published.php" />
-        <option value="$PROJECT_DIR$/NEW/index.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d50a27fb-11ae-4d27-bc7d-fe385265ffe4/console.sql" />
-        <option value="$PROJECT_DIR$/NEW/readpost.php" />
-        <option value="$PROJECT_DIR$/NEW/deletepost.php" />
-        <option value="$PROJECT_DIR$/NEW/published.php" />
-        <option value="$PROJECT_DIR$/core/base.php" />
         <option value="$PROJECT_DIR$/NEW/backup.php" />
         <option value="$PROJECT_DIR$/NEW/css/theme-default.css" />
         <option value="$PROJECT_DIR$/NEW/calander.php" />
@@ -526,11 +207,9 @@
         <option value="$PROJECT_DIR$/NEW/components/ad_xnav.php" />
         <option value="$PROJECT_DIR$/NEW/js/actions.js" />
         <option value="$PROJECT_DIR$/courseco/courseassignments.php" />
-        <option value="$PROJECT_DIR$/core/function/coursecode.php" />
         <option value="$PROJECT_DIR$/student/submit.php" />
         <option value="$PROJECT_DIR$/courseco/download-multiple.php" />
         <option value="$PROJECT_DIR$/courseco/submissionslist.php" />
-        <option value="$PROJECT_DIR$/core/init.php" />
         <option value="$PROJECT_DIR$/core/base_connection.php" />
         <option value="$PROJECT_DIR$/NEW/adduser.php" />
         <option value="$PROJECT_DIR$/NEW/getuserdata.php" />
@@ -540,9 +219,35 @@
         <option value="$PROJECT_DIR$/CSC-Admin/css/theme-default.css" />
         <option value="$PROJECT_DIR$/CSC-Admin/components/ad_foot.php" />
         <option value="$PROJECT_DIR$/core/function/admin.php" />
-        <option value="$PROJECT_DIR$/CSC-Admin/events.xml" />
+        <option value="$PROJECT_DIR$/CSC-Admin/css/monthly/monthly.css" />
+        <option value="$PROJECT_DIR$/CSC-Admin/getsubsdata.php" />
         <option value="$PROJECT_DIR$/CSC-Admin/publishevent.php" />
+        <option value="$PROJECT_DIR$/student/cal.php" />
+        <option value="$PROJECT_DIR$/courseco/events.xml" />
+        <option value="$PROJECT_DIR$/cscco/events.xml" />
+        <option value="$PROJECT_DIR$/core/init.php" />
+        <option value="$PROJECT_DIR$/core/db/database.php" />
+        <option value="$PROJECT_DIR$/student/home.php" />
+        <option value="$PROJECT_DIR$/student/events.xml" />
+        <option value="$PROJECT_DIR$/components/course_head.php" />
+        <option value="$PROJECT_DIR$/public/plugins/monthly/monthly.css" />
+        <option value="$PROJECT_DIR$/CSC-Admin/deleteevent.php" />
+        <option value="$PROJECT_DIR$/CSC-Admin/stuevents.xml" />
+        <option value="$PROJECT_DIR$/CSC-Admin/coursecoevents.xml" />
+        <option value="$PROJECT_DIR$/CSC-Admin/csccoevents.xml" />
+        <option value="$PROJECT_DIR$/CSC-Admin/events.xml" />
+        <option value="$PROJECT_DIR$/CSC-Admin/deleteevents.php" />
+        <option value="$PROJECT_DIR$/CSC-Admin/home.php" />
         <option value="$PROJECT_DIR$/CSC-Admin/calander.php" />
+        <option value="$PROJECT_DIR$/CSC-Admin/backup.php" />
+        <option value="$PROJECT_DIR$/core/function/coursecode.php" />
+        <option value="$PROJECT_DIR$/courseco/addnewassignment.php" />
+        <option value="$PROJECT_DIR$/courseco/index.php" />
+        <option value="$PROJECT_DIR$/components/course_footer.php" />
+        <option value="$PROJECT_DIR$/components/cscordinator_footer.php" />
+        <option value="$PROJECT_DIR$/components/cscordinator_head.php" />
+        <option value="$PROJECT_DIR$/cscco/comp/navbar.php" />
+        <option value="$PROJECT_DIR$/cscco/index.php" />
       </list>
     </option>
   </component>
@@ -563,16 +268,6 @@
     <option name="width" value="1920" />
     <option name="height" value="1038" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
@@ -588,6 +283,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -595,7 +291,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="mvc">
+            <PATH_ELEMENT USER_OBJECT="CSCWEB">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -605,25 +301,15 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="mvc">
+            <PATH_ELEMENT USER_OBJECT="CSCWEB">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CSC-Admin">
+            <PATH_ELEMENT USER_OBJECT="public">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="mvc">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="core">
+            <PATH_ELEMENT USER_OBJECT="plugins">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -633,15 +319,79 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="mvc">
+            <PATH_ELEMENT USER_OBJECT="CSCWEB">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="core">
+            <PATH_ELEMENT USER_OBJECT="public">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="function">
+            <PATH_ELEMENT USER_OBJECT="plugins">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="joyride">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CSCWEB">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="public">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CSCWEB">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="cscco">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CSCWEB">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="cscco">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="comp">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="CSCWEB">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="components">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -658,24 +408,26 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MAHENNW" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;DB2 (JTOpen)" />
+    <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/CSC-Admin/js/plugins" />
-      <recent name="$PROJECT_DIR$/CSC-Admin/js/plugins/monthly" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CSC-Admin" />
       <recent name="$PROJECT_DIR$/courseco" />
       <recent name="$PROJECT_DIR$/NEW" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/plugins/joyride" />
+      <recent name="$PROJECT_DIR$/CSC-Admin/js/plugins" />
+      <recent name="$PROJECT_DIR$/CSC-Admin/js/plugins/monthly" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.php">
@@ -683,6 +435,12 @@
       <method />
     </configuration>
     <configuration default="true" type="FirefoxRemoteDebugType" factoryName="Firefox Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -709,6 +467,10 @@
       <method />
     </configuration>
     <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
       <method />
     </configuration>
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="debug">
@@ -774,11 +536,12 @@
       <workItem from="1484114566332" duration="5110000" />
       <workItem from="1484143394556" duration="7448000" />
       <workItem from="1484196609957" duration="15818000" />
+      <workItem from="1484309486027" duration="26171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74542000" />
+    <option name="totallyTimeSpent" value="100713000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -790,28 +553,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1038" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18356457" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13190824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16275346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11689692" sideWeight="0.5020855" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16266945" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943678" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6693092" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962853" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1177803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11689692" sideWeight="0.4979145" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45073614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45073614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -861,363 +627,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NEW/js/portlet.js" />
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/assets/ajax_fullcalendar.php">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8eb7baad-8df7-40a2-9190-7b57c689ca96/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/js/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseco/courseassignments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="79" selection-start-line="64" selection-start-column="79" selection-end-line="64" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseco/submissionslist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="72" column="10" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseco/download-multiple.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/function/coursecode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="84" column="85" selection-start-line="84" selection-start-column="85" selection-end-line="84" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/components/ad_xnav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/js/plugins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6945">
-          <caret line="463" column="2" selection-start-line="463" selection-start-column="2" selection-end-line="463" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1815">
-          <caret line="121" column="30" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/submit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="195" column="71" selection-start-line="194" selection-start-column="28" selection-end-line="195" selection-end-column="71" />
-          <folding>
-            <marker date="1484147770360" expanded="true" signature="9585:9731" ph="INSERT INTO assignmentsubmissions... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/base_connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1120">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="48" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="110" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/db/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="92" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/getuserdata.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="80" column="61" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
-          <folding>
-            <marker date="1484199137054" expanded="true" signature="269:300" ph="SELECT * fro... staff" />
-            <marker date="1484199137054" expanded="true" signature="426:440" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="441:530" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="582:894" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="686:885" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="714:876" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="924:1233" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="1027:1224" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="1055:1215" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="1266:1573" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="1366:1564" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="1394:1555" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="1606:1916" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="1709:1907" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="1737:1898" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="1946:2142" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="2047:2133" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="2175:2890" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="2280:2319" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="2280:2331" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="2280:2881" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="2331:2869" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="2920:3162" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="3035:3153" ph="..." />
-            <marker date="1484199137054" expanded="true" signature="3230:3493" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseco/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseco/fileupload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseco/file_upload_parser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1484057281712" expanded="true" signature="1340:1504" ph="INSERT INTO fileuploads... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/draft.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="292" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/refreshtable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
-          <folding>
-            <marker date="1484200253801" expanded="true" signature="82:209" ph="..." />
-            <marker date="1484200253801" expanded="true" signature="82:499" ph="..." />
-            <marker date="1484200253801" expanded="true" signature="126:209" ph="..." />
-            <marker date="1484200253801" expanded="true" signature="389:450" ph="..." />
-            <marker date="1484200253801" expanded="true" signature="389:499" ph="..." />
-            <marker date="1484200253801" expanded="true" signature="450:499" ph="..." />
-            <marker date="1484200253801" expanded="true" signature="728:803" ph="..." />
-            <marker date="1484200253801" expanded="true" signature="728:930" ph="..." />
-            <marker date="1484200253801" expanded="true" signature="728:1015" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/assets/images/nature.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/assets/images/ocean.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/backgrounds/wall_1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/blueimp/play-pause.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/themes/dark-head-light.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/bg-dot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/bg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo-grey.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo-grey@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo-small-grey.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo-small-grey@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo-small.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo-small@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/img/logo@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/css/theme-default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/components/ad_head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/components/ad_foot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="292" column="67" selection-start-line="290" selection-start-column="20" selection-end-line="292" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/function/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="180" column="56" selection-start-line="180" selection-start-column="56" selection-end-line="180" selection-end-column="56" />
-          <folding>
-            <marker date="1484210985767" expanded="true" signature="67:116" ph="SELECT id FR... adminusers" />
-            <marker date="1484210985767" expanded="true" signature="362:433" ph="SELECT * FRO... adminusers" />
-            <marker date="1484210985767" expanded="true" signature="602:654" ph="SELECT id,na... adminusers" />
-            <marker date="1484210985767" expanded="true" signature="869:910" ph="INSERT INTO posts... " />
-            <marker date="1484210985767" expanded="true" signature="1905:1937" ph="SELECT * FRO... posts" />
-            <marker date="1484210985767" expanded="true" signature="2149:2190" ph="INSERT INTO posts... " />
-            <marker date="1484210985767" expanded="true" signature="2285:2317" ph="SELECT * FRO... posts" />
-            <marker date="1484210985767" expanded="true" signature="2415:2454" ph="SELECT activ... subjects" />
-            <marker date="1484210985767" expanded="true" signature="2619:2650" ph="SELECT * FRO... posts" />
-            <marker date="1484210985767" expanded="true" signature="2761:2795" ph="SELECT * FRO... adminusers" />
-            <marker date="1484210985767" expanded="true" signature="2896:2915" ph="SELECT * FRO... staff" />
-            <marker date="1484210985767" expanded="true" signature="3129:3170" ph="INSERT INTO staff... " />
-            <marker date="1484210985767" expanded="true" signature="3639:3698" ph="UPDATE admin... " />
-            <marker date="1484210985767" expanded="true" signature="3934:3976" ph="INSERT INTO events... " />
-            <marker date="1484210985767" expanded="true" signature="4138:4157" ph="SELECT * FRO... staff" />
-            <marker date="1484210985767" expanded="true" signature="4264:4337" ph="SELECT * FRO... chat" />
-            <marker date="1484210985767" expanded="true" signature="4448:4479" ph="SELECT * FRO... staff" />
-            <marker date="1484210985767" expanded="true" signature="4624:4705" ph="INSERT INTO chat... " />
-            <marker date="1484210985767" expanded="true" signature="4816:4858" ph="SELECT * FRO... student" />
-            <marker date="1484210985767" expanded="true" signature="4989:5011" ph="SELECT * FRO... subjects" />
-            <marker date="1484210985767" expanded="true" signature="5123:5176" ph="SELECT * FRO... staff" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/edituser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1005">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1225,31 +638,15 @@
     <entry file="file://$PROJECT_DIR$/staff/events.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/adduser.php">
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/css/monthly/monthly.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/events.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSC-Admin/calander.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="259" column="48" selection-start-line="259" selection-start-column="48" selection-end-line="259" selection-end-column="48" />
+        <state relative-caret-position="279">
+          <caret line="319" column="16" lean-forward="false" selection-start-line="319" selection-start-column="16" selection-end-line="319" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1257,18 +654,489 @@
     <entry file="file://$PROJECT_DIR$/CSC-Admin/published.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/getsubsdata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1318">
+          <caret line="134" column="1" lean-forward="true" selection-start-line="134" selection-start-column="1" selection-end-line="134" selection-end-column="1" />
+          <folding>
+            <marker date="1484320679872" expanded="true" signature="285:319" ph="SELECT * fro... subjects" />
+            <marker date="1484320679872" expanded="true" signature="449:2904" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="503:2904" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="555:677" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="747:2904" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="801:1359" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="966:1324" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="1028:1284" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="1414:1990" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="1579:1955" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="1641:1915" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="2044:2604" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="2210:2569" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="2272:2529" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="2659:2904" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="2831:2904" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="3194:3340" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="3306:3340" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="3711:3830" ph="..." />
+            <marker date="1484320679872" expanded="true" signature="4299:4425" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/coursesettings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="225" column="30" lean-forward="false" selection-start-line="225" selection-start-column="30" selection-end-line="225" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="112" column="25" lean-forward="false" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/function/student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1484245046775" expanded="true" signature="72:119" ph="SELECT id FR... student" />
+            <marker date="1484245046775" expanded="true" signature="363:455" ph="SELECT * FRO... student" />
+            <marker date="1484245046775" expanded="true" signature="630:680" ph="SELECT * FRO... posts" />
+            <marker date="1484245046775" expanded="true" signature="786:831" ph="SELECT name,... adminusers" />
+            <marker date="1484245046775" expanded="true" signature="942:989" ph="SELECT * FRO... subjects" />
+            <marker date="1484245046775" expanded="true" signature="1095:1165" ph="SELECT * FRO... fileuploads" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CSC-Admin/publishevent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <marker date="1484228124273" expanded="true" signature="263:283" ph="SELECT * FRO... events" />
+            <marker date="1484324907679" expanded="true" signature="229:249" ph="SELECT * FRO... events" />
+            <marker date="1484324907679" expanded="true" signature="350:380" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/cal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseco/events.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cscco/events.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/js/plugins/monthly/monthly.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="157" column="42" lean-forward="true" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <marker date="1484245046775" expanded="true" signature="9432:9443" ph="..." />
+            <marker date="1484245046775" expanded="true" signature="9829:9840" ph="..." />
+            <marker date="1484245046775" expanded="true" signature="10522:10533" ph="..." />
+            <marker date="1484245046775" expanded="true" signature="11061:11072" ph="..." />
+            <marker date="1484245046775" expanded="true" signature="11306:11317" ph="..." />
+            <marker date="1484245046775" expanded="true" signature="11887:11898" ph="..." />
+            <marker date="1484245046775" expanded="true" signature="12132:12143" ph="..." />
+            <marker date="1484245046775" expanded="true" signature="12728:12739" ph="..." />
+            <marker date="1484245046775" expanded="true" signature="12973:12984" ph="..." />
+            <marker date="1484245046775" expanded="true" signature="13568:13579" ph="..." />
+            <marker date="1484245046775" expanded="true" signature="13813:13824" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/comp/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="69" column="79" lean-forward="false" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/base_connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="106" lean-forward="false" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/db/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="56" column="52" lean-forward="false" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
+          <folding>
+            <marker date="1484327534127" expanded="true" signature="355:400" ph="SELECT ${$fi... adminusers" />
+            <marker date="1484327534127" expanded="true" signature="812:848" ph="SELECT ${$fi... staff" />
+            <marker date="1484327534127" expanded="true" signature="1255:1298" ph="SELECT ${$fi... student" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/events.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/page_head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/stud_head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="67" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="15" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="31" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/609a57c7-5bbc-4866-8ac7-02927ac813ad/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/deleteevent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <marker date="1484331253985" expanded="true" signature="174:204" ph="SELECT * FRO... events" />
+            <marker date="1484331253985" expanded="true" signature="174:205" ph="SELECT * FRO... events" />
+            <marker date="1484331253985" expanded="true" signature="1702:1730" ph="DELETE FROM " />
+            <marker date="1484331253985" expanded="true" signature="1702:1731" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/deleteevents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <marker date="1484331500335" expanded="true" signature="176:206" ph="SELECT * FRO... events" />
+            <marker date="1484331500335" expanded="true" signature="1703:1731" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/csccoevents.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/stuevents.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/events.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/monthly/monthly.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="319" column="16" lean-forward="false" selection-start-line="319" selection-start-column="16" selection-end-line="319" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="312" column="45" lean-forward="false" selection-start-line="309" selection-start-column="24" selection-end-line="312" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/function/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1771">
+          <caret line="175" column="15" lean-forward="false" selection-start-line="175" selection-start-column="9" selection-end-line="175" selection-end-column="15" />
+          <folding>
+            <marker date="1484310008016" expanded="true" signature="67:116" ph="SELECT id FR... adminusers" />
+            <marker date="1484310008016" expanded="true" signature="362:433" ph="SELECT * FRO... adminusers" />
+            <marker date="1484310008016" expanded="true" signature="602:654" ph="SELECT id,na... adminusers" />
+            <marker date="1484310008016" expanded="true" signature="869:910" ph="INSERT INTO posts... " />
+            <marker date="1484310008016" expanded="true" signature="1905:1937" ph="SELECT * FRO... posts" />
+            <marker date="1484310008016" expanded="true" signature="2149:2190" ph="INSERT INTO posts... " />
+            <marker date="1484310008016" expanded="true" signature="2285:2317" ph="SELECT * FRO... posts" />
+            <marker date="1484310008016" expanded="true" signature="2415:2454" ph="SELECT activ... subjects" />
+            <marker date="1484310008016" expanded="true" signature="2619:2650" ph="SELECT * FRO... posts" />
+            <marker date="1484310008016" expanded="true" signature="2761:2795" ph="SELECT * FRO... adminusers" />
+            <marker date="1484310008016" expanded="true" signature="2896:2915" ph="SELECT * FRO... staff" />
+            <marker date="1484310008016" expanded="true" signature="3129:3170" ph="INSERT INTO staff... " />
+            <marker date="1484310008016" expanded="true" signature="3639:3698" ph="UPDATE admin... " />
+            <marker date="1484310008016" expanded="true" signature="3934:3976" ph="INSERT INTO events... " />
+            <marker date="1484310008016" expanded="true" signature="4138:4157" ph="SELECT * FRO... staff" />
+            <marker date="1484310008016" expanded="true" signature="4264:4337" ph="SELECT * FRO... chat" />
+            <marker date="1484310008016" expanded="true" signature="4448:4479" ph="SELECT * FRO... staff" />
+            <marker date="1484310008016" expanded="true" signature="4624:4705" ph="INSERT INTO chat... " />
+            <marker date="1484310008016" expanded="true" signature="4816:4858" ph="SELECT * FRO... student" />
+            <marker date="1484310008016" expanded="true" signature="4989:5011" ph="SELECT * FRO... subjects" />
+            <marker date="1484310008016" expanded="true" signature="5123:5176" ph="SELECT * FRO... staff" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/draft.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1421">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="299" column="73" lean-forward="false" selection-start-line="299" selection-start-column="73" selection-end-line="299" selection-end-column="73" />
+          <folding>
+            <marker date="1484332390905" expanded="true" signature="9688:9725" ph="SELECT * FRO... events" />
+            <marker date="1484332390905" expanded="true" signature="15826:15863" ph="SELECT * FRO... subjects" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/calander.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <marker date="1484332506661" expanded="true" signature="18972:19009" ph="SELECT * FRO... events" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/backup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="107" column="66" lean-forward="false" selection-start-line="107" selection-start-column="66" selection-end-line="107" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSC-Admin/coursecoevents.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseco/allasinmentview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseco/courseassignments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-735">
+          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <marker date="1484245046775" expanded="true" signature="3044:3221" ph="..." />
+            <marker date="1484245046775" expanded="true" signature="3063:3221" ph="..." />
+            <marker date="1484245046775" expanded="true" signature="3070:3221" ph="..." />
+            <marker date="1484245046775" expanded="false" signature="3193:3205" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/function/coursecode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+          <folding>
+            <marker date="1484333679094" expanded="true" signature="46:96" ph="SELECT * FRO... posts" />
+            <marker date="1484333679094" expanded="true" signature="202:247" ph="SELECT name,... adminusers" />
+            <marker date="1484333679094" expanded="true" signature="359:420" ph="SELECT cours... courses" />
+            <marker date="1484333679094" expanded="true" signature="537:586" ph="SELECT * FRO... subjects" />
+            <marker date="1484333679094" expanded="true" signature="754:785" ph="SELECT * FRO... staff" />
+            <marker date="1484333679094" expanded="true" signature="902:948" ph="SELECT * FRO... posts" />
+            <marker date="1484333679094" expanded="true" signature="1054:1094" ph="SELECT * FRO... subjects" />
+            <marker date="1484333679094" expanded="true" signature="1324:1372" ph="INSERT INTO submissions... " />
+            <marker date="1484333679094" expanded="true" signature="1472:1518" ph="SELECT * FRO... submissions" />
+            <marker date="1484333679094" expanded="true" signature="1643:1710" ph="SELECT * FRO... assignmentsubmissions" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseco/addnewassignment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="724">
+          <caret line="110" column="34" lean-forward="false" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staff/allposts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-777">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/joyride/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/course_head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/page_tail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#footer#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseco/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/course_footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#footer#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/cscordinator_footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#footer#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/cscordinator_head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="70" lean-forward="false" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cscco/comp/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="66" column="65" lean-forward="true" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cscco/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="368" column="50" lean-forward="false" selection-start-line="368" selection-start-column="50" selection-end-line="368" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>

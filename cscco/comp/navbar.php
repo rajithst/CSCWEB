@@ -33,12 +33,12 @@
             <a href="#"><img src="../public/dist/img/system/csclogo.png" style="width:170px; height:50px;" ></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right" style="margin-right:30px; padding: 10px;">
+            <ul class="nav navbar-nav navbar-right" style="margin-right:30px; padding: 10px;" id="jrnavbar">
                 <li><a href="index.php" style="height:50px;"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 
 
 
-                <li class="dropdown">
+                <li class="dropdown" id="jrreporttab">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">   <span class="glyphicon glyphicon-list-alt"> Reports</span><span class="caret">
                       
                     </a>
@@ -50,7 +50,7 @@
                     </ul>
                 </li>
 
-                <li class="dropdown">
+                <li class="dropdown" id="jrlecturer">
                     <a href="lecturer.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">  <span class="glyphicon glyphicon-user"> Lecturer </span><span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
@@ -59,7 +59,7 @@
                 </li>
 
 
-                <li class="dropdown">
+                <li class="dropdown" id="jrcourse">
                     <a href="course.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">  <span class="glyphicon glyphicon-education"> Courses</span><span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
@@ -68,7 +68,7 @@
                     </ul>
                 </li>
 
-                <li class="dropdown">
+                <li class="dropdown" id="jrlectures">
                      <a href="lectures.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">  <span class="glyphicon glyphicon-tasks"> Lectures </span><span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
@@ -78,7 +78,7 @@
                 </li>
 
 
-<li class="dropdown">
+            <li class="dropdown" id="jrmessages">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;"><span class="glyphicon glyphicon-envelope"> Message  </span><span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">

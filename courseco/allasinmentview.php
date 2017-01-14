@@ -25,7 +25,7 @@ include '../components/course_head.php'; ?>
 
 
 <div class="container-fluid">    
-  <h1>Assignment Details</h1><br>
+  <h1><center>Assignment Details</center></h1><br>
     <div class="row">
      <div class="col-md-3">
      <h4>Select Course :</h4>

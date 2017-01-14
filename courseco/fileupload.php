@@ -70,7 +70,8 @@ function progressHandler(event){
   _("status").innerHTML = Math.round(percent)+"% uploaded... please wait";
 }
 function completeHandler(event){
-  _("status").innerHTML = event.target.responseText;
+  var response = event.target.responseText;
+  swal("Great work",response);
   _("progress1").value = 0;
 }
 function errorHandler(event){
@@ -123,7 +124,6 @@ function abortHandler(event){
                           </td>
                       </tr>-->
                       <tr>
-
                       </tr>
                   </table>
               </div>
@@ -143,10 +143,7 @@ function abortHandler(event){
 
 
 
-  <div class="col-sm-9 col-md-9" >
-
-
-  </div>
+  
 
 
   <div class="col-md-8 col-sm-6 col-xs-12" style="margin-top: -18px; margin-left: 3%;">
@@ -156,20 +153,7 @@ function abortHandler(event){
         <div class="panel-body">
 
 
-          <div class="container">
-          <div class="row">
-
-          </div>
-         <!-- <div class="container">
-            <div class="row">
-            <div class="col-md-12" style="padding-left: 0px; margin-left: -15px">
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Attendance</a></p>
-            </div>
-            </div>
-          </div>-->
-
           
-        </div>
 
           <!-- Standar Form -->
 
@@ -181,40 +165,27 @@ function abortHandler(event){
             <label for="comment">Description</label>
             <textarea class="form-control" rows="5" id="comment"></textarea><br>
 
-            <label for="comment">File Name to show</label>
+            <label for="comment">File Name </label>
             <input type="text" class="form-control" id="fname">
             <br>
             <div class="row">
-            <div class="col-md-8">
-            <div class="form-inline">
-              <div class="form-group">
-                <input type="file" name="file1" id="file1" multiple>
-              </div>
-              <input type="button" value="Upload File" onclick="uploadFile()">
-              <!--<button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit" onsubmit="uploadFile()">Upload files</button>-->
-            </div>
-            </div>
-            <div class="col-md-4">
-              <p style="font-size: 20px;"><strong>Date : <?php echo $today = date("F j, Y"); ?></strong></a></p>
-            </div>
+              <div class="col-md-8">
+                <div class="form-inline">
+                  <div class="form-group">
+                    <input type="file" name="file1" id="file1" multiple>
+                  </div>
+                  <input type="button" value="Upload File" onclick="uploadFile()">
+                  <!--<button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit" onsubmit="uploadFile()">Upload files</button>-->
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <p style="font-size: 20px;"><strong>Date : <?php echo $today = date("F j, Y"); ?></strong></a></p>
+                  <p id="status"></p>
+                </div>
             </div>
           </form>
 
-          <!--<br>
-          <div class="container">
-            <div class="row">
-            <div class="col-md-12" style="padding-left; margin-left: -12px;">
-            <p style="font-size: 20px;"><strong>Date : <?php echo $today = date("F j, Y"); ?></strong></a></p>
-            </div>
-            </div>
-          </div>
-          <!-- Drop Zone -->
-          <!--<h4>Or drag and drop files below</h4>
-          <div class="upload-drop-zone" id="drop-zone">
-            Just drag and drop files here
-          </div>-->
-
-          <!-- Progress Bar -->
+         
 
           
         </div>

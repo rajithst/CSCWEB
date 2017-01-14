@@ -23,6 +23,15 @@ if (isset($_GET['assid']) and $_GET['subid']) {
     $assid = $_GET['assid'];
     $subid = $_GET['subid'];
 
+    $res = getslides($con,$subid);
+    while ($row = mysqli_fetch_assoc($res)) {
+
+        $subname = $row['subject'];
+        $subid = $row['subjectid'];
+
+
+    }
+
 
 }
 
@@ -35,11 +44,59 @@ if (isset($_GET['assid']) and $_GET['subid']) {
 </br>
 
 <div class="container-fluid">    
-  <h1>Students submissions</h1><br>
+  <center><h1>Students submissions</h1></center><br>
 
 
 <center><h3 style="margin-top: -15px;"><?php echo $subname; ?></h3></center>  <div class="row">
-    <div class="col-md-12 col-sm-12 col-xs-12" >
+
+
+  <div class="row">
+    <div class="sidenav col-md-2 col-sm-12 col-xs-12" style="margin-top: 0px;">
+
+        <center>
+            <h3>Main menu</h3>
+        </center>
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+              </span>Content</a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body" style="padding: 0;">
+                        <table class="table" style="margin-bottom: 0px;">
+                            <tr>
+                                <td style="padding-left: 15px;">
+                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="courseassignments.php?id=<?php echo $subid; ?>">All Assignment</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;"></span><a href="addnewassignment.php?id=<?php echo $subid?>">Add new Assignment</a>
+                                </td>
+                            </tr>
+                            <!--<tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-file text-success" style="margin-right: 10px;"></span><a href="http://www.jquery2dotnet.com">Newsletters</a>
+                                </td>
+                            </tr>-->
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <center><h3> Event Calender</h3></center>
+        <div class="monthly" id="mycalendar"></div>
+
+    </div>
+     <div class="col-md-10 col-sm-12 col-xs-12" >
   <table class="table table-hover">
   <thead class="">
     <tr>
@@ -89,6 +146,10 @@ if (isset($_GET['assid']) and $_GET['subid']) {
 <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span>        Download All</button>
 
     </div>
+  </div>
+    
+
+   
   </div>
 
 

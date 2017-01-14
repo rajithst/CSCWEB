@@ -15,6 +15,23 @@ require '../core/function/coursecode.php';
 include '../components/course_head.php'; ?>
 
 
+<script>
+
+    var getUrl = window.location;
+    var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+    var path= baseUrl+'/CSC-Admin/coursecoevents.xml';
+
+    $(document).ready(function () {
+
+        $('#mycalendar').monthly({
+            mode: 'event',
+            //jsonUrl: 'events.json',
+            //dataType: 'json'
+            xmlUrl: path
+        });
+    });
+</script>
+
 </head>
 <body>
 
@@ -62,7 +79,7 @@ if (isset($_GET['id'])) {
                         <table class="table" style="margin-bottom: 0px;">
                             <tr>
                                 <td style="padding-left: 15px;">
-                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="courseassignments.php">All Assignment</a>
+                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="courseassignments.php?id=<?php echo $subid; ?>">All Assignment</a>
                                 </td>
                             </tr>
                             <tr>
@@ -91,7 +108,7 @@ if (isset($_GET['id'])) {
     </div>
 
 
-    <div class="col-md-8 col-sm-6 col-xs-12" style="margin-top: -20px;">
+    <div class="col-md-10 col-sm-9 col-xs-12" style="margin-top: -20px;">
 
         <div class="panel panel-default" style="margin-top: 20px;">
           <div class="panel-heading" style="background-color: ; color: black;"><center><h4>Make Submission link</h4></center> </div>
@@ -140,8 +157,10 @@ if (isset($_GET['id'])) {
                       );
 
                       $submit = submission($con,$regdata);
-                      echo "<script type=text/javascript>alert('Submission link was created successfully!')</script>";
+                      echo "<script type=text/javascript>swal('Submission link was created successfully!')</script>";
                   }else{
+
+
                     echo '<script>';
                    /*echo 'document.submissionform.title.value = <?php echo $_POST["title"]?>;';
                     echo 'document.submissionform.description.value = <?php echo $_POST["description"]?>;';*/
@@ -164,43 +183,7 @@ if (isset($_GET['id'])) {
           </div>
         </div>
       </div>
-    <div class="col-md-2 col-sm-3 col-xs-12" style="margin-top: 0px;">
-        <!--<div class="profile-sidebar">
 
-            <center>
-                <h3>Folder Structure</h3>
-            </center>-->
-
-
-             <?php
-            //echo '<ol>';
-
-            /*function listFolderFiles($Mydir)
-            {
-                foreach (glob($Mydir . '*', GLOB_ONLYDIR) as $dir) {
-                    $dir = str_replace($Mydir, '', $dir);
-                    //echo $dir;
-
-                        if ($dir != '.' && $dir != '..') {
-                            echo '<li>' . $dir;
-                            if (is_dir($Mydir . '/' . $dir)) listFolderFiles($Mydir . '/' . $dir);
-                            echo '</li>';
-                        }
-
-
-                }
-                echo '</ol>';
-            }
-
-            listFolderFiles('../uploads/');*/
-            ?>
-
-
-
-<!--</div>-->
-
-
-    </div>
 
     </div>
 

@@ -9,9 +9,9 @@ function getall($con){
 
 }
 
-function getstudents($con,$subid){
+function getstudents($con,$subid,$token){
 
-    $sql = "SELECT * FROM student WHERE coursename = '$subid'";
+    $sql = "SELECT * FROM student WHERE coursename = '$subid' AND batch = '$token'";
     $query    = mysqli_query($con, $sql);
 
     return $query;
