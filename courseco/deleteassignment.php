@@ -23,13 +23,12 @@ if (isset($_GET['assid'])) {
 	$res1 = mysqli_query($con,$sql1);
 	$row = mysqli_fetch_assoc($res1);
 	$path = $row['path'];
-	//echo $row;
-	$sql2 = "DELETE FROM submissions WHERE id= $assid";
+	$sql2 = "DELETE FROM submissions WHERE id=$assid";
 	$res2 = mysqli_query($con,$sql2);
+    $files = glob($path . '/*');
+    foreach ($files as $file) {
+        is_dir($file) ? removeDirectory($file) : unlink($file);
+    }
+    rmdir($path);
 
-	if ($res1 && $res2) {
-		
-	return true;
-	}
-	removefolder($path);
 }

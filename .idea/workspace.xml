@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d8a2abd2-b0f4-4cec-8935-3c8e5a8be2fc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/profile.php" afterPath="$PROJECT_DIR$/courseco/profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/deleteassignment.php" afterPath="$PROJECT_DIR$/courseco/deleteassignment.php" />
     </list>
     <ignored path="mvc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +45,7 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="assignmentsubmissions" />
+        <option name="myItemId" value="submissions" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -116,10 +116,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courseco/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="1290">
               <caret line="86" column="19" lean-forward="false" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
               <folding />
             </state>
@@ -148,34 +148,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/function/student.php">
+      <file leaf-file-name="courseassignments.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/courseco/courseassignments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="450">
+              <caret line="189" column="18" lean-forward="false" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
               <folding>
-                <marker date="1484245046775" expanded="true" signature="72:119" ph="SELECT id FR... student" />
-                <marker date="1484245046775" expanded="true" signature="363:455" ph="SELECT * FRO... student" />
-                <marker date="1484245046775" expanded="true" signature="630:680" ph="SELECT * FRO... posts" />
-                <marker date="1484245046775" expanded="true" signature="786:831" ph="SELECT name,... adminusers" />
-                <marker date="1484245046775" expanded="true" signature="942:989" ph="SELECT * FRO... subjects" />
-                <marker date="1484245046775" expanded="true" signature="1095:1165" ph="SELECT * FRO... fileuploads" />
-                <marker date="1484245046775" expanded="true" signature="1279:1342" ph="SELECT * FRO... submissions" />
+                <marker date="1484398943125" expanded="true" signature="3125:3302" ph="..." />
+                <marker date="1484398943125" expanded="true" signature="3144:3302" ph="..." />
+                <marker date="1484398943125" expanded="true" signature="3151:3302" ph="..." />
+                <marker date="1484398943125" expanded="true" signature="3274:3286" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courseassignments.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/courseco/courseassignments.php">
+      <file leaf-file-name="deleteassignment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/courseco/deleteassignment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3180">
-              <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
               <folding>
-                <marker date="1484377744144" expanded="true" signature="3125:3302" ph="..." />
-                <marker date="1484377744144" expanded="true" signature="3144:3302" ph="..." />
-                <marker date="1484377744144" expanded="true" signature="3151:3302" ph="..." />
-                <marker date="1484377744144" expanded="true" signature="3274:3286" ph="..." />
+                <marker date="1484398776655" expanded="true" signature="323:358" ph="SELECT * FRO... submissions" />
+                <marker date="1484398776655" expanded="true" signature="470:503" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -219,7 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/NEW/css/theme-default.css" />
         <option value="$PROJECT_DIR$/NEW/calander.php" />
         <option value="$PROJECT_DIR$/NEW/home.php" />
         <option value="$PROJECT_DIR$/NEW/components/ad_foot.php" />
@@ -264,12 +258,13 @@
         <option value="$PROJECT_DIR$/components/cscordinator_head.php" />
         <option value="$PROJECT_DIR$/cscco/comp/navbar.php" />
         <option value="$PROJECT_DIR$/cscco/index.php" />
-        <option value="$PROJECT_DIR$/courseco/courseassignments.php" />
         <option value="$PROJECT_DIR$/core/db/database.php" />
         <option value="$PROJECT_DIR$/courseco/download-multiple.php" />
         <option value="$PROJECT_DIR$/student/submit.php" />
         <option value="$PROJECT_DIR$/core/function/coursecode.php" />
         <option value="$PROJECT_DIR$/courseco/profile.php" />
+        <option value="$PROJECT_DIR$/courseco/deleteassignment.php" />
+        <option value="$PROJECT_DIR$/courseco/courseassignments.php" />
       </list>
     </option>
   </component>
@@ -324,20 +319,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="CSCWEB">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CSCWEB">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="courseco">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -475,12 +456,12 @@
       <workItem from="1484309486027" duration="26312000" />
       <workItem from="1484369812308" duration="927000" />
       <workItem from="1484377021908" duration="4053000" />
-      <workItem from="1484396678555" duration="953000" />
+      <workItem from="1484396678555" duration="2058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106787000" />
+    <option name="totallyTimeSpent" value="107892000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -493,7 +474,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1038" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13607258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -501,7 +482,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1664888" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6693092" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962853" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25054467" sideWeight="0.4979145" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25054467" sideWeight="0.4979145" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -846,13 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courseco/deleteassignment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/init.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -900,19 +874,6 @@
             <marker date="1484378237544" expanded="true" signature="355:400" ph="SELECT ${$fi... adminusers" />
             <marker date="1484378237544" expanded="true" signature="812:848" ph="SELECT ${$fi... staff" />
             <marker date="1484378237544" expanded="true" signature="1255:1298" ph="SELECT ${$fi... student" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseco/courseassignments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3180">
-          <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
-          <folding>
-            <marker date="1484377744144" expanded="true" signature="3125:3302" ph="..." />
-            <marker date="1484377744144" expanded="true" signature="3144:3302" ph="..." />
-            <marker date="1484377744144" expanded="true" signature="3151:3302" ph="..." />
-            <marker date="1484377744144" expanded="true" signature="3274:3286" ph="..." />
           </folding>
         </state>
       </provider>
@@ -969,9 +930,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/courseco/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="1290">
           <caret line="86" column="19" lean-forward="false" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseco/deleteassignment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <marker date="1484398776655" expanded="true" signature="323:358" ph="SELECT * FRO... submissions" />
+            <marker date="1484398776655" expanded="true" signature="470:503" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseco/courseassignments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="189" column="18" lean-forward="false" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
+          <folding>
+            <marker date="1484398943125" expanded="true" signature="3125:3302" ph="..." />
+            <marker date="1484398943125" expanded="true" signature="3144:3302" ph="..." />
+            <marker date="1484398943125" expanded="true" signature="3151:3302" ph="..." />
+            <marker date="1484398943125" expanded="true" signature="3274:3286" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
