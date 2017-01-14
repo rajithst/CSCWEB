@@ -25,10 +25,22 @@ if (isset($_GET['assid'])) {
 	$path = $row['path'];
 	$sql2 = "DELETE FROM submissions WHERE id=$assid";
 	$res2 = mysqli_query($con,$sql2);
-    $files = glob($path . '/*');
-    foreach ($files as $file) {
-        is_dir($file) ? removeDirectory($file) : unlink($file);
+
+    rrmdir($path);
+    function rrmdir($dir) {
+        if (is_dir($dir)) {
+            $objects = scandir($dir);
+            foreach ($objects as $object) {
+                if ($object != "." && $object != "..") {
+                    if (is_dir($dir."/".$object))
+                        rrmdir($dir."/".$object);
+                    else
+                        unlink($dir."/".$object);
+                }
+            }
+            rmdir($dir);
+        }
     }
-    rmdir($path);
+
 
 }
