@@ -75,10 +75,15 @@ if(isset($_POST["submit"])){
 
     if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password) && !empty($confirmpassword)){
         if(!($md5password==$md5confirmpassword)){
-            $matchingerror = "passwords do not match, please enter the same password to confirm !";
+            //$matchingerror = "passwords do not match, please enter the same password to confirm !";
+            echo '<script type=text/javascript>alert("passwords do not match, please enter the same password to confirm !")<script>';
         }else{
-            update_settings($con,$fname,$lname,$email,$password,$staff_data['id']);
-            echo '<script>alert("ok !")<script>';
+            update_settings($con,$fname,$lname,$email,$md5password,$staff_data['id']);
+            //session_start();
+            session_destroy();
+            header('Location:../index.php');
+            /
+
         }
     }
 
