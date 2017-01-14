@@ -160,13 +160,7 @@ if (isset($_GET['id'])) {
                       echo "<script type=text/javascript>swal('Submission link was created successfully!')</script>";
                   }else{
 
-
-                    echo '<script>';
-                   /*echo 'document.submissionform.title.value = <?php echo $_POST["title"]?>;';
-                    echo 'document.submissionform.description.value = <?php echo $_POST["description"]?>;';*/
-                    echo 'var newfolder = prompt("A folder with this name already exists try giving another name!");';
-                    echo 'document.submissionform.path.value = newfolder;';
-                    echo '</script>';
+                    echo "<script type=text/javascript>swal('An assignment link with this name already exists try giving another name!')</script>";
                   }
                   
 

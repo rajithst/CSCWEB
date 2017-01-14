@@ -71,7 +71,7 @@ function progressHandler(event){
 }
 function completeHandler(event){
   var response = event.target.responseText;
-  swal("Great work",response);
+  swal("You should select a file to upload!! Try again");
   _("progress1").value = 0;
 }
 function errorHandler(event){

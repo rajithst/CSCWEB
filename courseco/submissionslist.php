@@ -126,8 +126,8 @@ if (isset($_GET['assid']) and $_GET['subid']) {
           <td><?php echo $row['filename']; ?></td>
           <td><?php echo $date; ?></td>
 
-          <td><label><input type="checkbox" value="" id="cb" class="selectbox"></label>
-          <a href="download-multiple.php?file=<?php echo $row['filename']; ?>&path=<?php echo $row['path']; ?>"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span>Download</button></a> </>
+          <td><!--<label><input type="checkbox" value="" id="cb" class="selectbox"></label>-->
+          <a href="download-multiple.php?file=<?php echo $row['filename']; ?>&path=<?php echo $row['path']; ?>"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span>Download</button></a> </td>
       </tr>
 
 <?php
@@ -142,7 +142,7 @@ if (isset($_GET['assid']) and $_GET['subid']) {
 </table>
 
 <!--<button type="button" class="btn btn-primary" id="cbmaster" onclick="select_all(this,'selectbox')">Select All</button>-->
-<input type="checkbox" id="cbmaster" name="" onchange="select_all(this,'selectbox')"> <strong style="font-size: 20px;">Select All</strong>
+<!--<input type="checkbox" id="cbmaster" name="" onchange="select_all(this,'selectbox')"> <strong style="font-size: 20px;">Select All</strong>-->
 <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span>        Download All</button>
 
     </div>
@@ -156,7 +156,7 @@ if (isset($_GET['assid']) and $_GET['subid']) {
 </div>  
 
 <?php include '../components/course_footer.php'; ?>
-<script type="text/javascript">
+<!--<script type="text/javascript">
     function select_all(master,cn){
         var cbarray = document.getElementsByClassName(cn);
         for(var i = 0; i < cbarray.length; i++){
@@ -164,4 +164,4 @@ if (isset($_GET['assid']) and $_GET['subid']) {
             cb.checked = master.checked;
         }
     }
-</script>
+</script>-->
