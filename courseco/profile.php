@@ -1,5 +1,6 @@
 <?php
 session_start();
+ob_start();
 require '../core/base.php';
 
 if(logged_in() === false){
@@ -82,7 +83,9 @@ if(isset($_POST["submit"])){
             //session_start();
             session_destroy();
             header('Location:../index.php');
-            /
+            ob_end_flush();
+            exit();
+
 
         }
     }

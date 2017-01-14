@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8a2abd2-b0f4-4cec-8935-3c8e5a8be2fc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/14000954.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/14001111.pdf.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/2nd_Year_CS Groups.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/HotelProposal.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/IEEE.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/R_work_sheet_6_answers.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/classdiagram.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/db/database.php" afterPath="$PROJECT_DIR$/core/db/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/courseassignments.php" afterPath="$PROJECT_DIR$/courseco/courseassignments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/download-multiple.php" afterPath="$PROJECT_DIR$/courseco/download-multiple.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/profile.php" afterPath="$PROJECT_DIR$/courseco/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/submit.php" afterPath="$PROJECT_DIR$/student/submit.php" />
     </list>
     <ignored path="mvc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,7 +79,7 @@
       <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/db/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="945">
               <caret line="63" column="1" lean-forward="false" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
               <folding>
                 <marker date="1484378237544" expanded="true" signature="355:400" ph="SELECT ${$fi... adminusers" />
@@ -103,8 +93,8 @@
       <file leaf-file-name="submit.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/student/submit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="288" column="82" lean-forward="true" selection-start-line="288" selection-start-column="82" selection-end-line="288" selection-end-column="82" />
+            <state relative-caret-position="4320">
+              <caret line="288" column="82" lean-forward="false" selection-start-line="288" selection-start-column="82" selection-end-line="288" selection-end-column="82" />
               <folding>
                 <marker date="1484379651654" expanded="true" signature="9670:9816" ph="INSERT INTO assignmentsubmissions... " />
               </folding>
@@ -115,8 +105,8 @@
       <file leaf-file-name="download-multiple.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courseco/download-multiple.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-565">
-              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="210">
+              <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
               <folding>
                 <marker date="1484379431939" expanded="true" signature="2296:2305" ph="..." />
                 <marker date="1484379431939" expanded="true" signature="2417:2434" ph="..." />
@@ -126,21 +116,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/courseco/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="86" column="19" lean-forward="false" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coursecode.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="coursecode.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/function/coursecode.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="410">
-              <caret line="93" column="16" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+              <caret line="93" column="16" lean-forward="false" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
               <folding>
                 <marker date="1484380473082" expanded="true" signature="46:96" ph="SELECT * FRO... posts" />
                 <marker date="1484380473082" expanded="true" signature="202:247" ph="SELECT name,... adminusers" />
@@ -161,7 +151,7 @@
       <file leaf-file-name="student.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/function/student.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <marker date="1484245046775" expanded="true" signature="72:119" ph="SELECT id FR... student" />
@@ -179,7 +169,7 @@
       <file leaf-file-name="courseassignments.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courseco/courseassignments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="753">
+            <state relative-caret-position="3180">
               <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
               <folding>
                 <marker date="1484377744144" expanded="true" signature="3125:3302" ph="..." />
@@ -278,8 +268,8 @@
         <option value="$PROJECT_DIR$/core/db/database.php" />
         <option value="$PROJECT_DIR$/courseco/download-multiple.php" />
         <option value="$PROJECT_DIR$/student/submit.php" />
-        <option value="$PROJECT_DIR$/courseco/profile.php" />
         <option value="$PROJECT_DIR$/core/function/coursecode.php" />
+        <option value="$PROJECT_DIR$/courseco/profile.php" />
       </list>
     </option>
   </component>
@@ -316,6 +306,16 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -337,51 +337,9 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="uploads">
+            <PATH_ELEMENT USER_OBJECT="courseco">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CSCWEB">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="core">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="CSCWEB">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="core">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="function">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -516,12 +474,13 @@
       <workItem from="1484196609957" duration="15818000" />
       <workItem from="1484309486027" duration="26312000" />
       <workItem from="1484369812308" duration="927000" />
-      <workItem from="1484377021908" duration="3455000" />
+      <workItem from="1484377021908" duration="4053000" />
+      <workItem from="1484396678555" duration="953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105236000" />
+    <option name="totallyTimeSpent" value="106787000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,10 +492,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1038" extended-state="1" />
+    <frame x="0" y="0" width="1920" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13500534" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13607258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11689692" sideWeight="0.5020855" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1664888" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -846,7 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,12 +836,13 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.6285511363636364" x="728.284745762712" y="694.0" />
+          <settings layout="Hierarchic Group" zoom="0.6285511363636364" x="728.0" y="694.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Key columns</Category>
             <Category>Columns</Category>
+            <Category>Key columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -891,10 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1484377434324" expanded="true" signature="323:358" ph="SELECT * FRO... submissions" />
-            <marker date="1484377434324" expanded="true" signature="459:493" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -902,13 +857,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/function/student.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1484245046775" expanded="true" signature="72:119" ph="SELECT id FR... student" />
@@ -940,7 +894,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/db/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
+        <state relative-caret-position="945">
           <caret line="63" column="1" lean-forward="false" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
           <folding>
             <marker date="1484378237544" expanded="true" signature="355:400" ph="SELECT ${$fi... adminusers" />
@@ -952,7 +906,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/courseco/courseassignments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
+        <state relative-caret-position="3180">
           <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
           <folding>
             <marker date="1484377744144" expanded="true" signature="3125:3302" ph="..." />
@@ -973,8 +927,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/student/submit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="288" column="82" lean-forward="true" selection-start-line="288" selection-start-column="82" selection-end-line="288" selection-end-column="82" />
+        <state relative-caret-position="4320">
+          <caret line="288" column="82" lean-forward="false" selection-start-line="288" selection-start-column="82" selection-end-line="288" selection-end-column="82" />
           <folding>
             <marker date="1484379651654" expanded="true" signature="9670:9816" ph="INSERT INTO assignmentsubmissions... " />
           </folding>
@@ -983,8 +937,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/courseco/download-multiple.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-565">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="210">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
             <marker date="1484379431939" expanded="true" signature="2296:2305" ph="..." />
             <marker date="1484379431939" expanded="true" signature="2417:2434" ph="..." />
@@ -993,18 +947,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courseco/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/function/coursecode.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
-          <caret line="93" column="16" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+          <caret line="93" column="16" lean-forward="false" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
           <folding>
             <marker date="1484380473082" expanded="true" signature="46:96" ph="SELECT * FRO... posts" />
             <marker date="1484380473082" expanded="true" signature="202:247" ph="SELECT name,... adminusers" />
@@ -1018,6 +964,14 @@
             <marker date="1484380473082" expanded="true" signature="1643:1710" ph="SELECT * FRO... assignmentsubmissions" />
             <marker date="1484380473082" expanded="true" signature="1859:1968" ph="UPDATE staff... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseco/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="86" column="19" lean-forward="false" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
