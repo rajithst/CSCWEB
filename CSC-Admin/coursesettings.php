@@ -119,6 +119,44 @@
             </div>
             <div class="col-md-6" id="fromdata">
 
+                <?php
+
+               if (isset($_POST['update'])){
+
+                   $id = $_POST['id'];
+
+
+                   if (empty($_POST['checkval']) === true){
+
+                       $_POST['checkval'] = 0;
+                   }
+                   $postdata = array(
+
+
+                       'subject' => filter_var($_POST['subject'],FILTER_SANITIZE_STRING),
+                       'batch' =>$_POST['batch'],
+                       'coursecid' => $_POST['coursecid'],
+                       'active' => $_POST['checkval'],
+                       'year' =>  $_POST['year'],
+                   );
+
+
+                   $confim = updatedata($con,$postdata,$id);
+                   if ($confim=='true') {
+                       ?>
+
+                       <script>swal("Updated!", "Course details updated")</script>
+                       <?php
+
+                   }
+
+               }
+
+
+
+
+                ?>
+
                 <form class='form-horizontal'>
                     <div class='panel panel-default'>
                         <div class='panel-heading'>

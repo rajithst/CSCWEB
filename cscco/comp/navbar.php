@@ -43,7 +43,7 @@
                       
                     </a>
                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a tabindex="-1" href="report.php">Select Report</a></li>
+                        <li><a tabindex="-1" href="generate_report.php">Select Report</a></li>
                        
                         
                       
