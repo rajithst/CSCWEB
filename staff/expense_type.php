@@ -132,8 +132,8 @@ include '../components/page_head.php'; ?>
                     <center><div class="form-group">
                             <label class="col-md-4 control-label"></label>
                             <div class="col-md-6">
-                                <button type="submit" class="btn btn-info" name="submit">Add <span class="glyphicon glyphicon-send"></span> </button>
-                                <button type="reset" class="btn btn-info" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
+                                <button type="submit" class="btn btn-success" name="submit">Add <span class="glyphicon glyphicon-send"></span> </button>
+                                <button type="reset" class="btn btn-warning" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
                             </div>
                         </div>
 

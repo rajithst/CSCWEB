@@ -142,8 +142,9 @@ include '../components/page_head.php'; ?>
 
 								mysqli_close($con); //Make sure to close out the database connection
 								echo "<center>
-									<button class='btn btn-primary' id ='cmd'><span class='glyphicon glyphicon-file' style='vertical-align:middle'></span> Download</button>
+									<button class='btn btn-primary' id ='cmd'><span class='glyphicon glyphicon-download-alt' style='vertical-align:middle'></span> Download</button>
 									</center>";
+								$total=0;
 
 			}?>
 			</div>
@@ -208,9 +209,9 @@ include '../components/page_head.php'; ?>
 								$e_date=0;
 								mysqli_close($con); //Make sure to close out the database connection
 								echo "<center>
-									<button class='btn btn-primary' id ='cmd'><span class='glyphicon glyphicon-file' style='vertical-align:middle'></span> Download</button>
+									<button class='btn btn-primary' id ='cmd'><span class='glyphicon glyphicon-download-alt' style='vertical-align:middle'></span> Download</button>
 									</center>";
-
+								$total=0;
 			}?>
 			</div>
 			
@@ -275,8 +276,9 @@ include '../components/page_head.php'; ?>
 								
 								mysqli_close($con); //Make sure to close out the database connection
 								echo "<center>
-									<button class='btn btn-primary' id ='cmd'><span class='glyphicon glyphicon-file' style='vertical-align:middle'></span> Download</button>
+									<button class='btn btn-primary' id ='cmd'><span class='glyphicon glyphicon-download-alt' style='vertical-align:middle'></span> Download</button>
 									</center>";
+								$total=0;
 
 
 			}

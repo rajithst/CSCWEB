@@ -112,7 +112,7 @@ include '../components/page_head.php'; ?>
 								<tr id="tdata">
 									<td><?php echo $row['courseid']; ?></td>
 									<td><?php echo $row['coursename']; ?></td>
-									<td id="btn"><button type="submit" class="btn btn-success">Get Subjects</button> </td>
+									<td id="btn"><button type="submit" class="btn btn-success">Get Subjects<span class="glyphicon glyphicon-step-forward"></span></button> </td>
 
 								</tr>
 								<?php } ?>

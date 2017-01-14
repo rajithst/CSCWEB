@@ -12,12 +12,107 @@ if(logged_in() === false){
 require '../core/init.php';
 require '../core/function/staff.php';
 include '../components/page_head.php'; ?>
+<?php
+	if(isset($_POST['next']) === true)
+	{
+		$y=$_POST['year'];
+		echo $y;
+	}
+	else
+	{
+		$y=2017;
+	}
+	
+	$t1=0;
+	$sql1="SELECT amount,given_date FROM expenses";
+	$r1=mysqli_query($con,$sql1);
+	while ($row1= mysqli_fetch_assoc($r1)) 
+	{
+		if(date('Y',strtotime($row1['given_date']))==$y)
+		{
+			$t1=$t1+$row1['amount'];
+		}
+	}
+	$t2=0;
+	$sql2="SELECT * FROM project_income";
+	$r2=mysqli_query($con,$sql2);
+	while ($row2= mysqli_fetch_assoc($r2)) 
+	{
+		if(date('Y',strtotime($row2['received_date']))==$y)
+		{
+			$t2=$t2+$row2['amount'];
+			
+		}
+	}
+	
+	$t3=0;
+	$sql3="SELECT * FROM cus_course_income";
+	$r3=mysqli_query($con,$sql3);
+	while ($row3= mysqli_fetch_assoc($r3)) 
+	{
+		if(date('Y',strtotime($row3['received_date']))==$y)
+		{
+			$t3=$t3+$row3['amount'];
+		}
+	}
+	$t4=0;
+	$sql4="SELECT * FROM course_income";
+	$r4=mysqli_query($con,$sql4);
+	while ($row4= mysqli_fetch_assoc($r4)) 
+	{
+		if(date('Y',strtotime($row4['received_date']))==$y)
+		{
+			$t4=$t4+$row4['amount'];
+		}
+	}
+	$t_in=$t2 + $t3 + $t4;
+?>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
 
+        var data = google.visualization.arrayToDataTable([
+          ['Type', 'Amount'],
+          ['Expenses', <?php echo $t1; ?>],
+          ['Income',  <?php echo $t_in; ?>]
+        ]);
 
+        var options = {
+          title: "<?php echo "Distribution of income against expenses for ".$y;?>"
+		  };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+	<script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Type', 'Amount'],
+          ['Project income', <?php echo $t2; ?>],
+          ['Customized course income',  <?php echo $t3; ?>],
+		  ['Course income',  <?php echo $t4; ?>]
+		  
+        ]);
+
+        var options = {
+          title: "<?php echo "Distribution of income for ".$y;?>"
+		  };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+        chart.draw(data, options);
+      }
+    </script>
     <script>
-
-
-        $(document).ready(function () {
+        $(document).ready(function () 
+		{
 
             $('#mycalendar').monthly({
                 mode: 'event',
@@ -46,40 +141,7 @@ include '../components/page_head.php'; ?>
                 <h3>Main menu</h3>
             </center>
             <div class="panel-group" id="accordion">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
-                            </span>Content</a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in">
-                        <div class="panel-body" style="padding: 0;">
-                            <table class="table" style="margin-bottom: 0px;">
-                                <tr>
-                                    <td style="padding-left: 15px;">
-                                        <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="allposts.php">All Posts</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-user text-success" style="margin-right: 10px;"></span><a href="alluser.php">All Users</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-file text-success" style="margin-right: 10px;"></span><a href="http://www.jquery2dotnet.com">Newsletters</a>
-                                    </td>
-                                </tr>
-                                <tr>
-
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
                 
-               
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
@@ -92,7 +154,7 @@ include '../components/page_head.php'; ?>
                             <table class="table">
                                 <tr>
                                     <td>
-                                        <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                        <a href="profile.php">Change Password</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -100,17 +162,7 @@ include '../components/page_head.php'; ?>
                                         <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <a href="http://www.jquery2dotnet.com">Import/Export</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
-                                            Delete Account</a>
-                                    </td>
-                                </tr>
+                           
                             </table>
                         </div>
                     </div>
@@ -157,60 +209,29 @@ include '../components/page_head.php'; ?>
 
 		
         <div class="col-md-8 col-sm-6 col-xs-12">
-
-            <center><h2>News Feed</h2></center>
-
-            <?php
-
-            $posts = getpostss($con);
-
-            $count = 1;
-
-            while ($row = mysqli_fetch_assoc($posts)) {
-
-                if ($count <=4) {
-                    $id = $row['adminid'];
-
-                    $admindata = getadmins($con,$id);
-                    while ($data = mysqli_fetch_assoc($admindata)) {
-                        ?>
-
-
-                        <div class="alert-message alert-message-notice">
-
-                            <h4><?php echo $row['subject']; ?> </h4>
-                            <span class="badge">Posted By Admin <?php echo $data['name']; ?></span>
-                            <div style="width: 6%; margin-left: 90%;margin-top: -3%;height: 70px;">
-
-                                <img src="<?php echo $data['profile']; ?>" alt="" style="width: 100%; height: 100%;">
-                            </div>
-
-                            <hr>
-
-                            <p><?php echo $row['text']; ?></p>
-
-                            <span class="badge" style="float: right;"> on <?php echo $row['date']; ?></span>
-
-                        </div>
-
-
-                    <?php }
-                }else{
-
-                    ?>
-                    <a href="allposts.php">Click here for Older Posts</a>
-
-                    <?php
-                    break;
-                }
-
-                $count++;
-
-
-            }?>
-
+			<center>
+			
+				<div class="well">
+				<form action="" method="post">
+					<table>
+					<tr>
+						<td style="margin-right:5px;">Enter year :</td>
+						<td><input class="form-control" name="year" placeholder="Please enter the year"></input></td>
+						<td><button style="margin-left:5px;" class='btn btn-primary' type="submit" name="next"><span class='glyphicon glyphicon-ok'></span> Create</button></td>
+					</tr>
+					</table>
+				</form>
+				</div>
+			</center>
+			<div class="well">
+				<div id="piechart" style="width:100%; height: 100%;"></div>
+				<br>
+			</div>
+			<div class="well">
+				<div id="piechart2" style="width:100%; height: 100%;"></div>
+				<br>
+			</div>
         </div>
-		
         <div class="col-md-2 col-sm-3 col-xs-12">
             <div class="profile-sidebar">
 
@@ -229,7 +250,7 @@ include '../components/page_head.php'; ?>
 
                 <div class="profile-userbuttons">
                     <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal">Profile</button>
-                    <button type="button" class="btn btn-danger btn-sm">Sign Out</button>
+                    <a href="logout.php"><button type="button"  class="btn btn-danger btn-sm">Sign Out</button></a>
                 </div>
 
                 <div class="profile-usermenu">

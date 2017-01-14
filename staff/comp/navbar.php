@@ -48,18 +48,12 @@
                         <li><a tabindex="-1" href="" id="task_txt">Emails</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;padding-top:18px;">
-                        <span class="glyphicon glyphicon-list-alt"> Reports</span>
-                        <span class="caret">
-						</span>
-                    </a>
-                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
-                        <li><a tabindex="-1" href="edit_report.php" id="task_txt">Input Report data</a></li>
-                        <li><a tabindex="-1" href="generate_report.php" id="task_txt">Generate reports</a></li>
-                    </ul>
+				<li>
+                    <a style="color:white;" class="glyphicon glyphicon-pencil" href="edit_report.php" >Input-Data</a>
                 </li>
-
+				<li>
+					<a style="color:white;" class="glyphicon glyphicon-file " href="generate_report.php" >Generate-Report</a>
+				</li>
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;padding-top:18px;">
@@ -94,7 +88,7 @@
                                             <p class="text-left"><strong><?php echo $staff_data['first_name']. " ". $staff_data['last_name']; ?></strong></p>
                                             <p class="text-left small"><?php echo $staff_data['email']; ?></p>
                                             <p class="text-left">
-                                                <a href="#" class="btn btn-primary btn-block btn-sm">See Profile</a>
+                                                <button data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-block btn-sm">See Profile</button>
                                             </p>
                                         </div>
                                     </div>

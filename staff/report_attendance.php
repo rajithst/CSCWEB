@@ -23,7 +23,7 @@ include '../components/page_head.php';?>
 	<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.standard_fonts_metrics.js"></script>
 	<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.split_text_to_size.js"></script>
 	<script type="text/javascript" src="http://cdn.immex1.com/js/jspdf/plugins/jspdf.plugin.from_html.js"></script>
-	<script type="text/javascript" src="js/basic.js"></script>
+	
 	<script type="text/javascript">
 	$(function()
 	{
@@ -130,25 +130,46 @@ include '../components/page_head.php';?>
 								line-height: 1.428571429;
 								border-radius: 15px;
 							}
+							
 						</style>
-						<center><h2>Select the batch</h2></center>
-						<div class="process">
-							<div class="process-row">
-						<div class="process-step">
-							 <a href="report_attendance.php?subid=<?php echo $subid?>&token=1">
-							 <button type="submit" style="font-size:30px;" name="token" value="1" class="btn btn-info btn-circle" >01</button>
-							 <p>batch 01</p> </a>
-							</div>
-						<div class="process-step">
-							<a href="report_attendance.php?subid=<?php echo $subid?>&token=2">
-							<button type="submit" style="font-size:30px;" name="token" value="2" class="btn btn-info btn-circle">02</button>
-							<p>batch 02</p> </a>
-						</div>
-						<div class="process-step">
-							<a href="report_attendance.php?subid=<?php echo $subid?>&token=3">
-							<button type="submit" style="font-size:30px;" name="token" value="3" class="btn btn-info btn-circle">03</button>
-							<p>batch 03</p> </a>
-						</div>
+							<?php
+								$qry="SELECT batch FROM subjects WHERE subjectid='$subid'";
+								$result=mysqli_query($con,$qry);
+								while ($row= mysqli_fetch_assoc($result)) 
+								{
+									if($row['batch']!=null)
+									{
+										echo '<center><h2>Select the batch</h2></center>
+												<div class="process">
+													<div class="process-row">';
+										$i=1;
+										while($i<=$row['batch'])
+										{
+											echo '
+											<div class="process-step">
+												 <a href="report_attendance.php?subid='.$subid.'&token='.$i.'">
+												 <button type="submit" style="font-size:30px;" name="token" value=$i class="btn btn-info btn-circle" >
+												 0';echo $i;
+												 echo '</button>
+												 <p>batch 0';
+												 echo $i;
+												 echo'</p> </a>
+											</div>';
+											$i=$i+1;
+										}
+									}
+									else
+									{
+										echo '<div class="col-md-12">
+												<br>
+												<div class="alert alert-warning">
+													<strong><center>THERE IS NO CURRENT BATCH FROM THIS COURSE</center></strong>
+												</div>';
+									
+										
+									}
+								}
+							?>
 						</div>
 					</div>
 						
@@ -202,13 +223,14 @@ include '../components/page_head.php';?>
 								{
 									if($row['total_attendance']!=0)
 									{
-									$percentage=($row['attendance']/$row['total_attendance'])*100;
+									$p=($row['attendance']/$row['total_attendance'])*100;
+									$percentage=number_format($p, 2);
 									if($percentage>=90 )
 									{
 									?>
 									<tr style="background-color:#8ed191;" >
 										<td><?php  echo  $subid; ?></td>
-										<td><?php  echo  $row['fullname']; ?></td>
+										<td><?php  echo  $row['name_w_initials']; ?></td>
 										<td><?php echo  $percentage ."%";?>
 										
 
@@ -219,7 +241,7 @@ include '../components/page_head.php';?>
 									{?>
 										<tr style="background-color:#fcd771;">
 										<td><?php  echo  $subid; ?></td>
-										<td><?php  echo  $row['fullname']; ?></td>
+										<td><?php  echo  $row['name_w_initials']; ?></td>
 										<td><?php echo  $percentage ."%";?>
 										
 
@@ -230,7 +252,7 @@ include '../components/page_head.php';?>
 									{?>
 										<tr style="background-color:#fc8067;">
 										<td><?php  echo  $subid; ?></td>
-										<td><?php  echo  $row['fullname']; ?></td>
+										<td><?php  echo  $row['name_w_initials']; ?></td>
 										<td class="table-danger"><?php echo  $percentage ."%";?>
 										
 
@@ -247,7 +269,7 @@ include '../components/page_head.php';?>
 								
 							<div id='editor'></div>
 							<center>
-							<button class='btn btn-primary' id ='cmd'><span class='glyphicon glyphicon-file' style='vertical-align:middle'></span> Download</button>
+							<button class='btn btn-primary' id ='cmd'><span class='glyphicon glyphicon-download-alt' style='vertical-align:middle'></span> Download</button>
 							</center>";
 			}?>
                             

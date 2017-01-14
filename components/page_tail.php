@@ -1,4 +1,7 @@
-<footer lass="container-fluid" style="
+<br>
+<br>
+<br>
+<footer class="container-fluid" style="
     position:fixed;
    left:0px;
    bottom:0px;
@@ -7,7 +10,7 @@
 ">
     <div class = "container-fluid">
         <div class="row">
-            <div col-md-5 class="footer-content">
+            <div class="footer-content">
                 <ul class="footer-nav">
 
                     <center>Computing Service Center - University of Colombo School of Computing</center>

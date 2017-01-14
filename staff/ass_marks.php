@@ -98,25 +98,46 @@ include '../components/page_head.php'; ?>
 								line-height: 1.428571429;
 								border-radius: 15px;
 							}
+							
 						</style>
-						<center><h2>Select the batch</h2></center>
-						<div class="process">
-							<div class="process-row">
-						<div class="process-step">
-							 <a href="ass_marks.php?subid=<?php echo $subid?>&token=1">
-							 <button type="submit" style="font-size:30px;" name="token" value="1" class="btn btn-info btn-circle" >01</button>
-							 <p>batch 01</p> </a>
-							</div>
-						<div class="process-step">
-							<a href="ass_marks.php?subid=<?php echo $subid?>&token=2">
-							<button type="submit" style="font-size:30px;" name="token" value="2" class="btn btn-info btn-circle">02</button>
-							<p>batch 02</p> </a>
-						</div>
-						<div class="process-step">
-							<a href="ass_marks.php?subid=<?php echo $subid?>&token=3">
-							<button type="submit" style="font-size:30px;" name="token" value="3" class="btn btn-info btn-circle">03</button>
-							<p>batch 03</p> </a>
-						</div>
+							<?php
+								$qry="SELECT batch FROM subjects WHERE subjectid='$subid'";
+								$result=mysqli_query($con,$qry);
+								while ($row= mysqli_fetch_assoc($result)) 
+								{
+									if($row['batch']!=null)
+									{
+										echo '<center><h2>Select the batch</h2></center>
+												<div class="process">
+													<div class="process-row">';
+										$i=1;
+										while($i<=$row['batch'])
+										{
+											echo '
+											<div class="process-step">
+												 <a href="ass_marks.php?subid='.$subid.'&token='.$i.'">
+												 <button type="submit" style="font-size:30px;" name="token" value=$i class="btn btn-info btn-circle" >
+												 0';echo $i;
+												 echo '</button>
+												 <p>batch 0';
+												 echo $i;
+												 echo'</p> </a>
+											</div>';
+											$i=$i+1;
+										}
+									}
+									else
+									{
+										echo '<div class="col-md-12">
+												<br>
+												<div class="alert alert-warning">
+													<strong><center>THERE IS NO CURRENT BATCH FROM THIS COURSE</center></strong>
+												</div>';
+									
+										
+									}
+								}
+							?>
 						</div>
 					</div>
 						
@@ -194,7 +215,7 @@ include '../components/page_head.php'; ?>
 
                     </div>
 
-                            <button type="submit" class="btn btn-block btn-success btn-md" name="next">Record Marks</button>
+                            <button type="submit" class="btn btn-block btn-success btn-md" name="next"><b>Record Marks </b><span class="glyphicon glyphicon-ok"></button>
                             
                         </div>
                 </form>
@@ -225,9 +246,6 @@ include '../components/page_head.php'; ?>
 		<strong><center>Recorded!</center></strong>
 		</div>
 
-		<form action="lecandinstruct.php" method="GET"> 
-		<center><button class="btn btn-info" type="submit" name="subid" value="<?php echo $subid; ?>">Process to next page</button></center>
-		</form>
 	<?php
 	}
         ?>

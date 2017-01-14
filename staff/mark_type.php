@@ -18,8 +18,8 @@ include "comp/navbar.php"; ?>
     <li class="completed"><a href="index.php">HOME</a></li>
     <li class="completed"><a href="edit_report.php">INPUT DATA</a></li>
     <li class="active"><a href="select_course.php">STUDENT MARKS</a></li>
-    <li class=""><a href="income_type.php">ASSIGNMENT</a></li>
-    <li class=""><a href="expense_type.php">EXAM</a></li>
+    <li class=""><a href="select_course_marks_ass.php">ASSIGNMENT</a></li>
+    <li class=""><a href="select_course_marks_ex.php">EXAM</a></li>
     
 
 

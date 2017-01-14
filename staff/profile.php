@@ -78,9 +78,9 @@ include '../components/cscordinator_head.php'; ?>
                 <div class="form-group">
                     <label class="col-md-3 control-label"></label>
                     <div class="col-md-8">
-                        <input class="btn btn-primary" value="Save Changes" type="button">
+                        <input class="btn btn-success" value="Save Changes" type="button">
                         <span></span>
-                        <input class="btn btn-default" value="Cancel" type="reset">
+                        <input class="btn btn-warning" value="Cancel" type="reset">
                     </div>
                 </div>
             </form>
@@ -91,5 +91,4 @@ include '../components/cscordinator_head.php'; ?>
 
 
 
-
-<?php include "../components/cscordinator_footer.php"; ?>
+<?php include "../components/page_tail.php";?>

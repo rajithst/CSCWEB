@@ -214,7 +214,7 @@ include '../components/page_head.php';?>
 						echo "<b><i><h2>Total income during the year : ".$total."</h2></i></b>";
 						
 						echo "<div id='editor'></div>";
-						echo "<button class='btn btn-primary' id ='cmd'><span class='glyphicon glyphicon-file' style='vertical-align:middle'></span> Download</button>";
+						echo "<button class='btn btn-primary' id ='cmd'><span class='glyphicon glyphicon-download-alt' style='vertical-align:middle'></span> Download</button>";
 						$total=0;
 						mysqli_close($con);
 										
