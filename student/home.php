@@ -57,7 +57,7 @@ require '../core/function/student.php';
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" style="margin-bottom: 60px;">
 <div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 15px;margin-top: 0%">
 
     <center>
@@ -68,8 +68,8 @@ require '../core/function/student.php';
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
-                            </span>Content</a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close" style="margin-right: 5px;">
+                            </span> Content</a>
                             </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in">
@@ -89,8 +89,8 @@ require '../core/function/student.php';
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
-                            </span>Account</a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user" style="margin-right: 5px;">
+                            </span> Account</a>
                             </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse">

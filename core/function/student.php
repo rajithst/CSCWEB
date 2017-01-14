@@ -96,4 +96,3 @@ function updatedata($con,$column,$update_data,$id){
 }
 
 
-

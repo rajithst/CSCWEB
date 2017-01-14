@@ -39,7 +39,7 @@ require '../core/base_connection.php';
 				$stu_id=$stu_data['id'];
 				$stu_uname=$stu_data['username'];
 				$stu_email=$stu_data['email'];
-				$stu_contact=$stu_data['mobile'];
+				$stu_contact=$stu_data['home_mobile'];
 				$stu_pwd=$stu_data['password'];
 				$comment='';
 				$column='';
@@ -114,7 +114,24 @@ require '../core/base_connection.php';
 								}
 
 								?>
-								<span style="color: red; margin-left: 18px;"><?php echo $usernameError ;?></span>
+
+								<?php
+								if($usernameError!=''){
+								?>
+								<div class="col-sm-6 col-sm-offset-3" style="margin-top:5px;margin-right: 30px;">
+									<div class="alert alert-danger">
+        								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+       									<strong><?php echo $usernameError ;?></strong>
+      								</div>
+      							</div>
+								<?php
+								}else{
+								?>
+									<div class="col-sm-6 col-sm-offset-3"><span style="color: red; margin-left: 18px;"><?php echo $usernameError ;?></span></div>
+								<?php
+								}
+								?>
+								
 								
 							</form>
 							</td>
@@ -135,18 +152,36 @@ require '../core/base_connection.php';
 								<?php
 
 								if(isset($_POST['save2']) && !empty($_POST['contact'])){
-									if(!preg_match('^[0-9]{10}^', $_POST['contact'])){
+									if(!preg_match('^[0-9]{11}^', $_POST['contact'])){
 										$contactError='Invalid Format';
 									}else{
 										$contact=$_POST['contact'];
-										$column='mobile';
+										$column='home_mobile';
 										$result=updatedata($con,$column,$contact,$stu_id);
 										$comment="Successfully updated.";
 									}
 								}
 
 								?>
-								<span style="color: red; margin-left: 18px;"><?php echo $contactError ;?></span>
+
+
+								<?php
+								if($contactError!=''){
+								?>
+								<div class="col-sm-6 col-sm-offset-3" style="margin-top:5px;margin-right: 30px;">
+									<div class="alert alert-danger">
+        								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+       									<strong><?php echo $contactError ;?></strong>
+      								</div>
+      							</div>
+								<?php
+								}else{
+								?>
+									<div class="col-sm-6 col-sm-offset-3"><span style="color: red; margin-left: 18px;"><?php echo $contactError ;?></span></div>
+								<?php
+								}
+								?>
+								
 							</form>
 							</td>
 						</tr>
@@ -163,6 +198,7 @@ require '../core/base_connection.php';
 								<div class="col-sm-3 col-xs-3" align="right"><h5><strong>New:</strong></h5></div>
 								<div class="col-sm-7 col-xs-7"><input type="email" class="form-control" name="email"></div>
 								<div class="col-sm-2 col-xs-2"><input type="submit" name="save3" value="save" class="btn btn-primary"></div>
+								<br>
 
 								<?php
 
@@ -180,7 +216,23 @@ require '../core/base_connection.php';
 
 								?>
 
-								<span style="color: red; margin-left: 18px;"><?php echo $emailError ;?></span>
+								<?php
+								if($emailError!=''){
+								?>
+								<div class="col-sm-6 col-sm-offset-3" style="margin-top:5px;margin-right: 30px;">
+									<div class="alert alert-danger">
+        								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+       									<strong><?php echo $emailError ;?></strong>
+      								</div>
+      							</div>
+								<?php
+								}else{
+								?>
+									<div class="col-sm-6 col-sm-offset-3"><span style="color: red; margin-left: 18px;"><?php echo $emailError ;?></span></div>
+								<?php
+								}
+								?>
+								
 							</form>
 							</td>
 						</tr>
@@ -235,7 +287,23 @@ require '../core/base_connection.php';
 
 								?>
 
-								<div class="col-sm-6 col-sm-offset-3"><span style="color: red; margin-left: 0px;"><?php echo $pwdError ;?></span></div>
+								<?php
+								if($pwdError!=''){
+								?>
+								<div class="col-sm-6 col-sm-offset-3" style="margin-top:5px;">
+									<div class="alert alert-danger">
+        								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+       									<center> <strong><?php echo $pwdError ;?></strong> </center>
+      								</div>
+      							</div>
+								<?php
+								}else{
+								?>
+									<div class="col-sm-6 col-sm-offset-3"><span style="color: red; margin-left: 0px;"><?php echo $pwdError ;?></span></div>
+								<?php
+								}
+								?>
+								
 							</form>
 							</td>
 						</tr>
@@ -243,7 +311,21 @@ require '../core/base_connection.php';
 					</table>
 
 					<hr>
-					<span style="color: green; margin-bottom: : 30px;"><center><h4><?php echo $comment ;?><h4></center></span>
+					<?php
+					if($comment!=''){
+					?>
+						<div class="alert alert-success">
+        					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+       						<center> <strong><?php echo $comment ;?></strong> </center>
+      					</div>
+					<?php
+					}else{
+					?>
+						<span style="color: green; margin-bottom: 30px;"><center><h4><?php echo $comment ;?><h4></center></span>
+					<?php
+					}
+					?>
+
 				</div>
 
 			</div>
