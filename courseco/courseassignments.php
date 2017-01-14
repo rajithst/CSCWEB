@@ -92,12 +92,13 @@ if (isset($_GET['id'])) {
 
     </div>
   
-<div class="col-md-10 col-sm-12 col-xs-12" >
+<div class="col-md-10 col-sm-12 col-xs-12" id="tableass">
 <?php
 
 
   $submissionDetails = getSubmissionData($con,$subid);
   if(mysqli_num_rows($submissionDetails) > 0){
+    echo '<form action="" name="deleteform" method="post"  id="">';
     echo '<table class="table table-striped table-inverse">
   <thead class="">
   <tr>
@@ -109,17 +110,20 @@ if (isset($_GET['id'])) {
     </tr>';
     echo '<tbody>';
     while($row = mysqli_fetch_assoc($submissionDetails)){
-      echo '<tr id="<?php echo $row["linktitle"]?>">';
-      echo "<th><a href=submissionslist.php?assid=".$row['id']."&subid=".$subid.">" .$row['linktitle']."</a></th>";
+      /*echo '<tr id="<?php echo $row['.'linktitle'.']?>">';*/
+      echo '<tr>';
+      echo "<th name='linktitle'><a href=submissionslist.php?assid=".$row['id']."&subid=".$subid.">" .$row['linktitle']."</a></th>";
       echo '<td>'.$row["submitted_date"].'</td>';
       echo '<td>'.$row["edateandtime"].'</td>';
       echo '<td>'."endtime".'</td>';
       
-      echo '<td><button id="<?php echo $row['.'linktitle'.']?>" type="button" class="btn btn-danger" onclick="remove_row(<?php echo $row['.'linktitle'.']?>)">Remove</button></td>';
+      /*echo '<td><button id="<?php echo $row['.'linktitle'.']?>" type="button" class="btn btn-danger" onclick="remove_row(<?php echo $row['.'linktitle'.']?>)">Remove</button></td>';*/
+      echo "<td><button type='button' class='btn btn-danger deleteass' id='" . $row['id']."'>Remove</button></td>";
       echo '</tr>';
     }
     echo '</tbody>';
     echo '</table>';
+    echo '</form>';
   }else{ ?>
    
    <center>
@@ -140,59 +144,6 @@ if (isset($_GET['id'])) {
 </div>
 
 
-  <!--<table class="table table-condensed table-hover">
-  <thead class="">
-    <tr>
-      <th>Link Title</th>
-      <th>Submitted Date</th>
-      <th>Due Date</th>
-      <th>Due Time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th> scope="row">1</th>
-      <td>2016-12-1</td>
-      <td>2016-12-19</td>
-      <td>11.55 pm</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>2016-12-1</td>
-      <td>2016-12-19</td>
-      <td>11.55 pm</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>2016-12-1</td>
-      <td>2016-12-19</td>
-      <td>11.55 pm</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>2016-12-1</td>
-      <td>2016-12-19</td>
-      <td>11.55 pm</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>2016-12-1</td>
-      <td>2016-12-19</td>
-      <td>11.55 pm</td>
-    </tr>
-  </tbody>
-</table>-->
-
-
-
-
-
-
-
-
-
-
-    
   </div>
 </div>
 
@@ -201,7 +152,60 @@ if (isset($_GET['id'])) {
 <?php include '../components/course_footer.php'; ?>
 
 <script type="text/javascript">
-  function remove_row(row) {
-                    document.getElementById(row).html('');
-    }
+
+$(document).ready(function(){
+
+$('button.deleteass').click(function(){
+
+  var assid = this.id;
+  swal({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!',
+            cancelButtonText: 'No, cancel!',
+            confirmButtonClass: 'btn btn-success',
+            cancelButtonClass: 'btn btn-danger',
+            buttonsStyling: false
+          }).then(function () {
+
+           
+          $.ajax({
+                type: "POST",
+                url: "deleteassignment.php?assid="+assid+"&subid=<?php echo $subid; ?>" ,
+                success:function(data) {
+
+                  /*$('#tableass').html("");
+                  $('#tableass').html(data);*/
+
+                  location.reload();
+
+                
+                }
+               });
+
+
+              
+            
+          }, function (dismiss) {
+     
+            if (dismiss === 'cancel') {
+              swal(
+                'Cancelled',
+                'Your ipost is safe',
+                'error'
+              )
+            }
+          })
+
+
+  
+})
+
+
+})
+
 </script>

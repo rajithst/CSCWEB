@@ -25,7 +25,74 @@ include '../components/course_head.php'; ?>
 </br>
 
 
+ <?php
 
+$fnameerr = $lnameerr = $emailerr = $passworderr = $confirmpassworderr = $matchingerror = "";
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $fname = $_post['fname'];
+    $lname = $_post['lname'];
+    $email = $_post['email'];
+    $password = $_post['password'];
+    $confirmpassword = $_post['confirmpassword'];
+
+    if(empty($fname)){
+        $fnameerr = "First name should be included !"; 
+    }else{
+        $fname = test_input($fname);
+    
+    }
+    if(empty($lname)){
+        $lnameerr = "Last name should be included !"; 
+    }else{
+        $lname = test_input($lname);
+    
+    }
+    if(empty($email)){
+        $emailerr = "E-mail should be included !"; 
+    }else{
+        $email = test_input($email);
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $emailerr = "Invalid email format"; 
+    }
+    
+    }
+    if(empty($Password)){
+        $passworderr = "password should be included !"; 
+    }else{
+        $password = test_input($password);
+    
+    }
+    if(empty($confirmPassword)){
+        $confirmpassworderr = "password should be included again!"; 
+    }else{
+        $confirmpassword = test_input($confirmpassword);
+    }
+
+
+    $md5password = md5($Password);
+    $md5confirmpassword = md5($confirmpassword);
+
+    if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password) && !empty($confirmpassword)){
+        if(!($md5password==$md5confirmpassword)){
+            $matchingerror = "passwords do not match, please enter the same password to confirm !";
+        }else{
+            update_settings($con,$fname,$lname,$email,$password,$staff_data['id']);
+            echo '<script>alert("ok !")<script>';
+        }
+    }
+
+   } 
+
+function test_input($data){
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+}
+
+
+?>
 
 
 
@@ -43,53 +110,57 @@ include '../components/course_head.php'; ?>
         <!-- edit form column -->
         <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
             <h3>Personal information</h3>
-            <form class="form-horizontal" role="form">
+            <form class="form-horizontal" role="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                 <div class="form-group">
                     <label class="col-lg-3 control-label">First name:</label>
                     <div class="col-lg-8">
-                        <input class="form-control" value="<?php echo $staff_data['first_name']; ?>" type="text">
+                        <input class="form-control" name="fname" value="<?php echo $staff_data['first_name']; ?>" type="text">
+                        <span style="color: red; margin-left: 18px;"><?php echo $fnameerr;?></span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-3 control-label">Last name:</label>
                     <div class="col-lg-8">
-                        <input class="form-control" value="<?php echo $staff_data['last_name']; ?>" type="text">
+                        <input class="form-control" name="lname" value="<?php echo $staff_data['last_name']; ?>" type="text">
+                        <span style="color: red; margin-left: 18px;"><?php echo $lnameerr;?></span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-3 control-label">Email:</label>
                     <div class="col-lg-8">
-                        <input class="form-control" value="<?php echo $staff_data['email']; ?>" type="text">
+                        <input class="form-control" name="email" value="<?php echo $staff_data['email']; ?>" type="text">
+                       <span style="color: red; margin-left: 18px;"><?php echo $emailerr;?></span>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="col-md-3 control-label">Password:</label>
                     <div class="col-md-8">
-                        <input class="form-control" value="" type="password">
+                        <input class="form-control" name="password" value="" type="password">
+                        <span style="color: red; margin-left: 18px;"><?php echo $passworderr;?></span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-3 control-label">Confirm password:</label>
                     <div class="col-md-8">
-                        <input class="form-control" value="" type="password">
+                        <input class="form-control" name="confirmpassword" value="" type="password">
                     </div>
+                    <span style="color: red; margin-left: 18px;"><?php echo $confirmpassworderr;?></span>
                 </div>
                 <div class="form-group">
                     <label class="col-md-3 control-label"></label>
                     <div class="col-md-8">
-                        <input class="btn btn-primary" value="Save Changes" type="button">
+                        <input class="btn btn-primary" value="Save Changes" name="submit" type="button">
                         <span></span>
                         <input class="btn btn-default" value="Cancel" type="reset">
                     </div>
                 </div>
             </form>
+
+           
+
         </div>
     </div>
 </div>
-
-
-
-
 
 <?php include "../components/cscordinator_footer.php"; ?>
