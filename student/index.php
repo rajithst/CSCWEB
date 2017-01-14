@@ -3,7 +3,6 @@ ob_start();
 require '../core/base_connection.php';
 require '../core/function/student.php';
 require '../components/stud_head.php';
-require '../core/base_connection.php';
 
 ?>
 <link rel="stylesheet" href="../public/dist/css/student.css">

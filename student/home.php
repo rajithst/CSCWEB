@@ -46,14 +46,15 @@ require '../core/function/student.php';
 
     <?php include "comp/navbar.php"; ?>
     
-<div style="margin-left:20px;">
-    <ol class="breadcrumb breadcrumb-arrow" >
-        <li class="active"><span class="glyphicon glyphicon-home"> Home</span></li>
-    </ol>
+<div class="row" style="margin-left:20px; margin-bottom: 20px;">
+    
+    <div class="btn-group btn-breadcrumb">
+        <a href="#" class="btn btn-primary" style="color: #ccc;"><i class="glyphicon glyphicon-home"> Home</i></a>       
+    </div>
 </div>
 
 <div class="container-fluid">
-<div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 10px;margin-top: 0%">
+<div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 15px;margin-top: 0%">
 
     <center>
         <h3>Main menu</h3>

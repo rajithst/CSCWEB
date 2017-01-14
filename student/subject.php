@@ -49,17 +49,18 @@ require '../core/function/student.php';
 
     <?php include "comp/navbar.php"; ?>
 
-    <div style="margin-left:20px;">
-        <ol class="breadcrumb breadcrumb-arrow" >
-            <li ><a href="home.php"><span class="glyphicon glyphicon-home"> Home</span></a></li>
-            <li class="active"><?php echo $subname; ?></li>
-        </ol>
+    <div class="row" style="margin-left:20px; margin-bottom: 20px;">
+        
+        <div class="btn-group btn-breadcrumb">
+            <a href="home.php" class="btn btn-primary"><i class="glyphicon glyphicon-home"> Home</i></a>
+            <a href="#" class="btn btn-primary" style="color: #ccc;"><?php echo $subname; ?></a>
+        </div>
     </div>
 
 
     <div class="container-fluid">
-        <div class="row" style="padding-left:10px;padding-right: 10px;">
-<div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 5px;margin-top: 0%">
+        <div class="row" style="padding-left:20px;padding-right: 20px;">
+<div class="sidenav col-md-2 col-sm-3 col-xs-12" style="background-color: white;padding: 15px;margin-top: 0%">
 
     <center>
         <h3>Main menu</h3>
