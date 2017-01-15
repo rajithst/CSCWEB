@@ -40,7 +40,7 @@ include '../components/course_head.php'; ?>
 
 <div class="container-fluid">
 
-<div class="sidenav col-md-2 col-sm-3 col-xs-12">
+<div class="sidenav col-md-3 col-sm-3 col-xs-12">
 
     
                 <div class="panel-group" id="accordion">
@@ -152,6 +152,27 @@ include '../components/course_head.php'; ?>
                 </div>
 
             </div>
+
+            <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <center><h2 class="panel-title"><strong>Course Subjects</strong></h2></center>
+                        </div>
+                        <div class="panel-body">
+                        <?php 
+                            $id = $staff_data['id'];
+                            $res = getcourses($con,$id); ?>
+                            <ul class="" role="menu" style="list-style: none;">
+                            <?php while ($row = mysqli_fetch_assoc($res)) {
+                                    $sid= $row['subjectid']; 
+                             ?>
+                               
+                                <li id=""><a tabindex="-1" href="fileupload.php?id=<?php echo $sid; ?>"><span class="glyphicon glyphicon-education"></span><?php echo "  ".$row['subject']; ?></a></li>
+                                <?php }?>
+                            </ul>
+                        </div>
+                    </div>
+            </div>            
             </div>
 
 
@@ -163,7 +184,7 @@ include '../components/course_head.php'; ?>
 </div>-->
 
 
-    <div class="col-md-8 col-sm-6 col-xs-12">
+    <div class="col-md-7 col-sm-6 col-xs-12">
 
         <center><h2>News Feed</h2></center>
 

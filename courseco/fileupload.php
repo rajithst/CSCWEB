@@ -116,21 +116,21 @@ function abortHandler(event){
       <div class="panel panel-default">
           <div class="panel-heading">
               <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
-              </span>Content</a>
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><center><span class="glyphicon glyphicon-folder-close" style="color: blue; font-size: 20px;">
+              </span> Content</center></a>
               </h4>
           </div>
           <div id="collapseOne" class="panel-collapse collapse in">
               <div class="panel-body" style="padding: 0;">
                   <table class="table" style="margin-bottom: 0px;">
                       <tr>
-                          <td style="padding-left: 15px;">
-                              <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="courseassignments.php?id=<?php echo $subid?>">All Assignment</a>
+                          <td style="padding-left: 15px; font-size: 15px;">
+                              <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px; color: blue; font-size: 40px;" ></span><a href="courseassignments.php?id=<?php echo $subid?>">View Assignments</a>
                           </td>
                       </tr>
                       <tr>
                           <td>
-                              <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;"></span><a href="addnewassignment.php?id=<?php echo $subid?>">Add new Assignment</a>
+                              <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px; color: blue; font-size: 40px;"></span><a href="addnewassignment.php?id=<?php echo $subid?>">Add new Assignment</a>
                           </td>
                       </tr>
                       <!--<tr>
@@ -150,8 +150,8 @@ function abortHandler(event){
 
 
 
-    <center><h3> Event Calender</h3></center>
-    <div class="monthly" id="mycalendar"></div>
+    <!--<center><h3> Event Calender</h3></center>
+    <div class="monthly" id="mycalendar"></div>-->
 
   </div>
 

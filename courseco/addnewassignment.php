@@ -78,7 +78,7 @@ if (isset($_GET['id'])) {
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close" style="color: blue; font-size: 20px;">
               </span>Content</a>
                     </h4>
                 </div>
@@ -87,12 +87,12 @@ if (isset($_GET['id'])) {
                         <table class="table" style="margin-bottom: 0px;">
                             <tr>
                                 <td style="padding-left: 15px;">
-                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="courseassignments.php?id=<?php echo $subid; ?>">All Assignment</a>
+                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px; color: blue; font-size: 40px;" ></span><a href="courseassignments.php?id=<?php echo $subid; ?>">All Assignment</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;"></span><a href="addnewassignment.php?id=<?php echo $subid?>">Add new Assignment</a>
+                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px; color: blue; font-size: 40px;"></span><a href="addnewassignment.php?id=<?php echo $subid?>">Add new Assignment</a>
                                 </td>
                             </tr>
                             <!--<tr>
@@ -110,8 +110,8 @@ if (isset($_GET['id'])) {
 
 
 
-        <center><h3> Event Calender</h3></center>
-        <div class="monthly" id="mycalendar"></div>
+        <!--<center><h3> Event Calender</h3></center>
+        <div class="monthly" id="mycalendar"></div>-->
 
     </div>
 
@@ -133,7 +133,7 @@ if (isset($_GET['id'])) {
 
               
 
-              <br>
+              
               <!--<label for="comment">make directory for assignment</label>
               <input  type="text" class="form-control" value=""  name="path">
 

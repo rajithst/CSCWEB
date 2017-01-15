@@ -64,7 +64,7 @@ if (isset($_GET['id'])) {
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close" style="color: blue; font-size: 20px;">
               </span>Content</a>
                     </h4>
                 </div>
@@ -73,12 +73,12 @@ if (isset($_GET['id'])) {
                         <table class="table" style="margin-bottom: 0px;">
                             <tr>
                                 <td style="padding-left: 15px;">
-                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="courseassignments.php?id=<?php echo $subid; ?>">View Assignments</a>
+                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px; color: blue; font-size: 40px;" ></span><a href="courseassignments.php?id=<?php echo $subid; ?>">View Assignments</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;"></span><a href="addnewassignment.php?id=<?php echo $subid?>">Add new Assignment</a>
+                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px; color: blue; font-size: 40px;"></span><a href="addnewassignment.php?id=<?php echo $subid?>">Add new Assignment</a>
                                 </td>
                             </tr>
                             <!--<tr>
@@ -96,8 +96,8 @@ if (isset($_GET['id'])) {
 
 
 
-        <center><h3> Event Calender</h3></center>
-        <div class="monthly" id="mycalendar"></div>
+        <!--<center><h3> Event Calender</h3></center>
+        <div class="monthly" id="mycalendar"></div>-->
 
     </div>
   
@@ -121,7 +121,7 @@ if (isset($_GET['id'])) {
     while($row = mysqli_fetch_assoc($submissionDetails)){
       /*echo '<tr id="<?php echo $row['.'linktitle'.']?>">';*/
       echo '<tr>';
-      echo "<th name='linktitle'><a href=submissionslist.php?assid=".$row['id']."&subid=".$subid.">" .$row['linktitle']."</a></th>";
+      echo "<th name='linktitle'><a href=submissionslist.php?assid=".$row['id']."&subid=".$subid.">"."<span class="."glyphicon glyphicon-pencil text-success"."></span>" .$row['linktitle']."</a></th>";
       echo '<td>'.$row["submitted_date"].'</td>';
       echo '<td>'.gmdate("F j, Y, g:i a", $row["edateandtime"]).'</td>';
       //echo '<td>'."endtime".'</td>';
