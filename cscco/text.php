@@ -20,7 +20,7 @@
 
 	$i=0;
 	while($i<=sizeof($contact)-1){
-
+/*
 		// Authorisation details.
 		$username = "chamithniroshanacn@gmail.com";
 	    $hash = "bb71f9ed7015175f5d9b0d88d833b408620e3774";
@@ -46,6 +46,6 @@
 		$i++;
 	}
 
-	echo "Your message was send.";
-
+	echo "Your message was sent.";
+*/
 ?>	

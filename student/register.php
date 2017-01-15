@@ -2,7 +2,9 @@
 
 require '../core/base_connection.php';
 require '../core/function/student.php';
+//require '../core/function/cscco.php';
 require '../components/stud_head.php';
+
 
 ?>
 <link rel="stylesheet" href="../public/dist/css/student.css">
@@ -20,8 +22,8 @@ require '../components/stud_head.php';
         <div class="col-sm-6" style="margin-top: -14px;">
             <div class="logo"><h3>Computing Service Center Student Portial</h3></div>
         </div>
-        <div class="col-sm-6">
-      
+        <div class="col-sm-6" align="right" >
+          <a href="index.php" class="btn btn-primary">Log In</a>
         </div>
     </div>
     </div>
@@ -34,6 +36,13 @@ require '../components/stud_head.php';
 
   if(!$con){
     die('Cannot connect to the database.');
+  }
+
+  $subdetails=getsubdetails($con);
+
+  while($row=mysqli_fetch_array($subdetails)){
+    $subid[]=$row[0];
+    $subname[]=$row[1];
   }
 
   $courseErr=$fullnameErr=$ininameErr=$genderErr=$dobErr=$nicErr=$peraddressErr=$mobileErr=$emailErr=$howknowErr='';
@@ -84,9 +93,6 @@ require '../components/stud_head.php';
       $emailErr='Personal Email is required.';
     }
 
-    if(empty($_POST['howknow'])){
-      $howknowErr='This is required.';
-    }
   }
 
   function test_input($data){
@@ -108,23 +114,34 @@ require '../components/stud_head.php';
 
     <form action="" method="post">
       <div class="row">
+      
+           
+           <div class="col-sm-12 col-xs-12" id="section"> 
+            <label style="margin-left: 0px;"> Course Name :</label>
+            <span style="color:red ;font-size: 13px;"> * <?php echo $courseErr; ?> </span>
+           
+            <div class="col-sm-12 col-xs-12" id="section">
+              <div class="form-group">
+                <select class="form-control" name="coursename" style="margin-left: 0px;width:50%">
+                  <option style="width:50px;">-- Select Course --</option>
+                <?php
+              
+                  for ($i=0; $i <sizeof($subname) ; $i++) { 
+            
+                ?>
 
-      <label class="control-label" style="margin-left: 15px;">Course Name</label>
-      <span style="color:red ;font-size: 13px;"> *
-           <?php echo $courseErr; ?> </span>
-        <div class="col-sm-12 col-xs-12" id="section">
-          <div class="col-sm-6 col-xs-10" style="margin-left: 0;"> 
-            <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select Course
-              <span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li><a href="#"><?php ?></a></li>
-            </ul>
+                  <option style="width:50px;"><?php echo $subname[$i] ; ?></option>
+
+                <?php
+
+                }
+
+                ?>
+                </select>
             </div>
           </div>
-          <div class="col-sm-6 col-xs-2"></div>
-        </div>
-        <br>
+          </div>
+          
 
         <div class="col-sm-12 col-xs-12" id="section">
           <label class="control-label">Name</label>
@@ -238,7 +255,6 @@ require '../components/stud_head.php';
         <br>
 
         <label style="margin-left: 15px;">How did you get to know about UCSC Short Term Training Courses?</label>
-        <span style="color:red;font-size: 13px;"> * <?php echo $howknowErr ; ?></span>
         <div class="col-sm-12 col-xs-12" id="section">
           <div class="col-sm-3 col-xs-6">
             <input type="checkbox" name="howknow" value="newspaper ad"> Newspaper Advertisement
@@ -284,7 +300,7 @@ require '../components/stud_head.php';
 
       <?php
 
-     
+     /*
       if(isset($_POST['submit'])){
 
         $reg_data= array(
@@ -309,7 +325,7 @@ require '../components/stud_head.php';
         'email'=$_POST['email'],
         
 
-      );
+      );*/
     ?>
     </form>
     </div>

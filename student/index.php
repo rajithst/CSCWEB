@@ -52,7 +52,7 @@ require '../components/stud_head.php';
 
         </div>
         <div class="col-sm-1" style="margin-top: 20px;">
-            <button class="btn btn-primary">Register</button>
+            <a class="btn btn-primary" href="register.php"> Register</a>
         </div>
     </div>
     </div>

@@ -110,16 +110,16 @@ function addnewcourse( $con,$register_data){
 
 }
 
-function getcourseid($con){
+function getcoursedetails($con){
 
-    $sql = "SELECT courseid FROM courses";
+    $sql = "SELECT courseid,coursename FROM courses";
     $res = mysqli_query($con,$sql);
     return $res;
 }
 
-function getsubid($con){
+function getsubdetails($con){
 
-    $sql = "SELECT subjectid FROM subjects";
+    $sql = "SELECT subjectid,subject FROM subjects ";
     $res = mysqli_query($con,$sql);
     return $res;
 
