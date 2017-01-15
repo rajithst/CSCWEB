@@ -2,7 +2,7 @@
 
 
 function user_data($id) {
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $con = mysqli_connect('localhost', 'root', '',  'csc');
     $data = array();
     $id   = (int) $id;
 
@@ -23,7 +23,7 @@ function user_data($id) {
 
 
 function staff_data($id){
-    $con = mysqli_connect('localhost','root','rajith','csc');
+    $con = mysqli_connect('localhost','root','','csc');
     $data =array();
     $id= (int)$id;
 
@@ -45,7 +45,7 @@ function staff_data($id){
 
 function stu_data($id) {
 
-    $con = mysqli_connect('localhost', 'root', 'rajith',  'csc');
+    $con = mysqli_connect('localhost', 'root', '',  'csc');
     $data = array();
 
 
@@ -66,7 +66,7 @@ function stu_data($id) {
 
 function coursecodinator_data($id){
 
-    $con = mysqli_connect('localhost','root','rajith','csc');
+    $con = mysqli_connect('localhost','root','','csc');
     $data = array();
     $id   = (int) $id;
 
