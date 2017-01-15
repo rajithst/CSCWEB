@@ -15,10 +15,14 @@
     <link rel="stylesheet" href="../public/plugins/jQueryUI/jquery-ui.css" />
     <link rel="stylesheet" href="../public/plugins/datepicker/bootstrap-datetimepicker.css" />
     <link rel="stylesheet" href="../public/plugins/joyride/joyride.css" />
+    <link rel="stylesheet" href="../public/plugins/sweealert/sweetalert2.css" />
+    <link rel="stylesheet" href="../public/plugins/drpicker/daterangepicker.min.css">
 
     <script src="../public/plugins/jQuery/jquery.js"></script>
-    <script src="../public/plugins/jQueryUI/jquery-ui.js"></script>
-
+    <script src="../public/plugins/jQueryUI/jquery-ui.js">
+        <script src="../public/plugins/sweealert/sweetalert2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js" type="text/javascript"></script>
+    <script src="../public/plugins/drpicker/jquery.daterangepicker.min.js"></script>
    <!-- <link rel="stylesheet" href="../public/plugins/wysiwig/bootstrap3-wysihtml5.min.css"> -->
 
 

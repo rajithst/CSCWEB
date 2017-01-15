@@ -11,7 +11,7 @@ if(logged_in() === false){
 }
 require '../core/init.php';
 require '../core/function/staff.php';
-include '../components/page_head.php'; ?>
+include '../components/cscordinator_head.php'; ?>
 <style>
     a.list-group-item {
     height:auto;

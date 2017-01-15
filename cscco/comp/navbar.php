@@ -69,15 +69,6 @@
                     </ul>
                 </li>
 
-                <li class="dropdown" id="jrlectures">
-                     <a href="lectures.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;">  <span class="glyphicon glyphicon-tasks"> Lectures </span><span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a tabindex="-1" href="lectures.php">Add Lectures</a></li>
-                        </li>
-                    </ul>
-                </li>
-
 
             <li class="dropdown" id="jrmessages">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;"><span class="glyphicon glyphicon-envelope"> Message  </span><span class="caret"></span>
@@ -85,7 +76,7 @@
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                         <li><a tabindex="-1" href="email.php">Email</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a tabindex="-1" href="sms.php">SMS</a></li>
+                        <li><a tabindex="-1" href="notification.php">Notification</a></li>
                         
                     </ul>
                 </li>
@@ -132,4 +123,8 @@
                 </ul>
         </div>
     </div>
+<<<<<<< HEAD
 </nav>
+=======
+</nav>
+>>>>>>> 4de218ed267eb4aed2c50eb5b46ab4461651bc60

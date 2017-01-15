@@ -29,15 +29,7 @@ include '../components/cscordinator_head.php'; ?>
 
     </br>
     
-<div class="nabbar clearfix" id="path">
-        <ol class="breadcrumb">
-            <li><a href="index.php">Home</a>
-            <span class="glyphicon glyphicon-triangle-right"></span></li>
-            <li>Courses
-            <span class="glyphicon glyphicon-triangle-right"></span></li>
-            <li><a href="editcourse.php">Edit Courses</a>
-        </ol>
-    </div>
+
 
     <div class="container-fluid">
 
@@ -84,7 +76,8 @@ include '../components/cscordinator_head.php'; ?>
 
                     <div class="col-xs-12  col-sm-8 col-md-6 pull-left">
 
-                        <button class="btn btn-info" id="edit">Edit Course</button> <button class="btn btn-info" id="delete">Delete Course</button>
+                        <button class="btn btn-info" id="edit">Edit Course</button>
+                        <button class="btn btn-info" id="delete">Delete Course</button>
 
                         <a href="fullcourses.php"> <button class="btn btn-info" id="delete">View All Courses</button></a>
                     </div>
@@ -160,40 +153,59 @@ if (isset($_POST['submit'])) {
 
 
 
-            $('#delete').click(function () {
+            $('button#delete').click(function () {
                 cid = $("#subs option:selected").val();
 
-                 if (cid != ""){
-                swal({
-                        title: "Are you sure?",
-                        text: "You will not be able to recover this action!",
-                        type: "warning",
+                console.log(cid);
+
+                if (cid != ""){
+
+
+                    swal({
+                        title: 'Are you sure?',
+                        text: "You won't be able to revert this!",
+                        type: 'warning',
                         showCancelButton: true,
-                        confirmButtonColor: "#DD6B55",
-                        confirmButtonText: "Yes, delete it!",
-                        cancelButtonText: "No, cancel ",
-                        closeOnConfirm: false, closeOnCancel: false
-                    },
+                        confirmButtonColor: '#3085d6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Yes, delete it!',
+                        cancelButtonText: 'No, cancel!',
+                        confirmButtonClass: 'btn btn-success',
+                        cancelButtonClass: 'btn btn-danger',
+                        buttonsStyling: false
+                    }).then(function () {
 
-                    function (isConfirm) {
-                        if (isConfirm) {
-                            swal("removing!", "Your data  has been deleted.", "success");
+                        $.ajax({
+                            type:"get",
+                            url:'deletesubsdata.php?cid='+cid,
+                            success: function (data) {
 
-                            $.ajax({
+                                swal('Deleted!',
+                                    'success'
+                                )
 
-                                url: 'deletesubsdata.php?cid=' + cid,
-                                type: "GET",
-                                success: function (data) {
-                                    location.reload();
+                                window.setTimeout(function(){location.reload()},2000)
 
-                                }
-                            });
+                            }
 
 
-                        } else {
-                            swal("Cancelled");
+                        });
+
+                    }, function (dismiss) {
+                        // dismiss can be 'cancel', 'overlay',
+                        // 'close', and 'timer'
+                        if (dismiss === 'cancel') {
+                            swal(
+                                'Cancelled',
+                                'Your imaginary file is safe :)',
+                                'error'
+                            )
                         }
+
                     });
+
+
+
             }
 
                 });

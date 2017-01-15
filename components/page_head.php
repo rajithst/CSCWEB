@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="../public/dist/css/staff_css.css">
     <link rel="stylesheet" href="../public/plugins/monthly/monthly.css" />
     <link rel="stylesheet" href="../public/plugins/jQueryUI/jquery-ui.css" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="../public/plugins/drpicker/daterangepicker.min.css">
     <link href="../public/plugins/dt/dataTables.css" rel="stylesheet">
     <link rel="stylesheet" href="../public/dist/css/mininav.css">
+
     <script src="../public/plugins/jQuery/jquery.js"></script>
     <script src="../public/plugins/sweealert/sweetalert.min.js"></script>
     <script src="../public/plugins/monthly/monthly.js"></script>

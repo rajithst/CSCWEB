@@ -143,4 +143,29 @@ function getStudentContact($con,$subid){
 
 }
 
+function  update_lect( $con,$register_data,$id){
+
+    $update=array();
+
+    foreach ($register_data as $field => $data) {
+        $update[]= '`' . $field . '` = \'' . $data . '\'';
+    }
+    $sql = "UPDATE lecturers SET" . implode(' , ',$update) . "WHERE id = $id";
+
+    mysqli_query($con,$sql);
+    return 'true';
+}
+
+function update_settings($con,$fname,$lname,$email,$password,$id)
+{
+
+    $sql = "UPDATE staff SET first_name='$fname', last_name='$lname', email='$email', password='$password' WHERE id=$id";
+
+    $query = mysqli_query($con, $sql);
+    if ($query) {
+
+        return true;
+    }
+}
+
 ?>

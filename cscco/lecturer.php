@@ -190,7 +190,7 @@ include '../components/cscordinator_head.php'; ?>
 							<td><?php echo $lecdata['email']; ?></td>
 							<td><?php echo $lecdata['subject']; ?></td>
 							<td><?php echo $lecdata['phone']; ?></td>
-							<td><button class="btn btn-info"> Edit User</button></td>
+							<td><a href="editlecturer.php?id=<?php echo $lecdata['id']?>"><button class="btn btn-info"> Edit User</button></a></td>
 						</tr>
 
 					<?php	}

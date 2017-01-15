@@ -30,43 +30,43 @@ include '../components/course_head.php'; ?>
 
 $fnameerr = $lnameerr = $emailerr = $passworderr = $confirmpassworderr = $matchingerror = "";
 
-if(isset($_POST["submit"])){
+if(isset($_POST["submit"])) {
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $confirmpassword = $_POST['confirmpassword'];
 
-    if(empty($fname)){
-        $fnameerr = "First name should be included !"; 
-    }else{
+    if (empty($fname)) {
+        $fnameerr = "First name should be included !";
+    } else {
         $fname = test_input($fname);
-    
+
     }
-    if(empty($lname)){
-        $lnameerr = "Last name should be included !"; 
-    }else{
+    if (empty($lname)) {
+        $lnameerr = "Last name should be included !";
+    } else {
         $lname = test_input($lname);
-    
+
     }
-    if(empty($email)){
-        $emailerr = "E-mail should be included !"; 
-    }else{
+    if (empty($email)) {
+        $emailerr = "E-mail should be included !";
+    } else {
         $email = test_input($email);
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $emailerr = "Invalid email format"; 
+            $emailerr = "Invalid email format";
+        }
+
     }
-    
-    }
-    if(empty($Password)){
-        $passworderr = "password should be included !"; 
-    }else{
+    if (empty($password)) {
+        $passworderr = "password should be included !";
+    } else {
         $password = test_input($password);
-    
+
     }
-    if(empty($confirmPassword)){
-        $confirmpassworderr = "password should be included again!"; 
-    }else{
+    if (empty($confirmpassword)) {
+        $confirmpassworderr = "password should be included again!";
+    } else {
         $confirmpassword = test_input($confirmpassword);
     }
 
@@ -74,24 +74,37 @@ if(isset($_POST["submit"])){
     $md5password = md5($password);
     $md5confirmpassword = md5($confirmpassword);
 
-    if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password) && !empty($confirmpassword)){
-        if(!($md5password==$md5confirmpassword)){
-            //$matchingerror = "passwords do not match, please enter the same password to confirm !";
-            echo '<script type=text/javascript>alert("passwords do not match, please enter the same password to confirm !")<script>';
-        }else{
-            update_settings($con,$fname,$lname,$email,$md5password,$staff_data['id']);
-            //session_start();
-            session_destroy();
-            header('Location:../index.php');
+    /*if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password) && !empty($confirmpassword)){*/
+    if ($md5password != $md5confirmpassword) {
+        $matchingerror = "passwords do not match, please enter the same password to confirm !";
 
-            ob_end_flush();
-            exit();
 
-        }
+    } else {
+        $rr = update_settings($con, $fname, $lname, $email, $md5password, $staff_data['id']);
+
+        if ($rr==true){ ?>
+
+            <div class="row">
+                <div class="col-md-3"></div>
+
+            <div class="col-md-6">
+                <div class="alert alert-danger">
+                    <strong>Settings Changed!!!!!</strong> Your Account will sign out after 5 seconds
+                </div>
+            </div>
+                <div class="col-md-3"></div>
+
+            </div>
+
+     <?php   }
+
+        session_destroy();
+        header("refresh:5;url=../index.php");
+        ob_end_flush();
+        exit();
+
     }
-
-   } 
-
+}
 function test_input($data){
         $data = trim($data);
         $data = stripslashes($data);
@@ -104,8 +117,21 @@ function test_input($data){
 
 
 
-<div class="container" style="padding-top: 60px;">
+<div class="container" style="margin-top: -30px;">
+
     <h1 class="page-header">Edit Profile</h1>
+    
+    <div class="row">
+    <center>
+   
+   
+            <div class="alert alert-info">
+            <strong>Changing account settings may cause the system to log out !</strong>
+            </div>
+   
+   
+   </center>
+    </div>
     <div class="row">
         <!-- left column -->
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -145,7 +171,7 @@ function test_input($data){
                 <div class="form-group">
                     <label class="col-md-3 control-label">Password:</label>
                     <div class="col-md-8">
-                        <input class="form-control" name="password" value="" type="password">
+                        <input class="form-control" name="password" value="<?php echo $staff_data['password']; ?>" type="password">
                         <span style="color: red; margin-left: 18px;"><?php echo $passworderr;?></span>
                     </div>
                 </div>

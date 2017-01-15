@@ -29,6 +29,8 @@ $date = date("Y-m-d");
 
 
 $fileupload_ok = 1;// 0 for false... and 1 for true
+
+
 if (!$fileTmpLoc) { // if file not chosen
     echo $fileErrorMsg;
     exit();
@@ -45,13 +47,10 @@ if ($fileupload_ok == 0) {
 
 } else {
     if(move_uploaded_file($fileTmpLoc, "../uploads/$fileName")){
-
-        echo '<h4><strong>'.$fileName.' was Uploaded successfully !'.'</strong></h4>';
-
-	//$con = mysqli_connect("localhost", "root", "rajith","csc") or die(mysql_error()) ;
+        //echo '<h4><strong>'.$fileName.' was Uploaded successfully !'.'</strong></h4>';
 
    	mysqli_query($con,"INSERT INTO fileuploads(date,subject,subject_code,title,description,filename,file)
-    VALUES ('$date', '$name','$id','$title','$desc','$fname','uploads/$fileName')") ;
+    VALUES ('$date', '$name','$id','$title','$desc','$fname','uploads/$fileName')");
     
 
     } else {

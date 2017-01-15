@@ -13,6 +13,7 @@ function login( $con,$email, $password) {
 	$user_id  = user_id_from_email($con,$email);
 	$password = md5($password);
 	$sql      = "SELECT * FROM adminusers WHERE email= '$email' AND password='$password'";
+
 	$query    = mysqli_query($con, $sql);
 	$result   = mysqli_num_rows($query);
 
@@ -220,6 +221,14 @@ function insertMessage($con,$id,$adid,$message){
 function getRegisteredStudents($con){
 
     $sql = "SELECT * FROM student WHERE registered = 1";
+    $res = mysqli_query($con, $sql);
+    $x = mysqli_num_rows($res);
+    return $x;
+}
+
+function getstaff($con){
+
+    $sql = "SELECT * FROM staff";
     $res = mysqli_query($con, $sql);
     $x = mysqli_num_rows($res);
     return $x;
