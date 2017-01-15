@@ -39,6 +39,7 @@ include '../components/course_head.php'; ?>
     </br>
 
 <div class="container-fluid">
+
 <div class="sidenav col-md-2 col-sm-3 col-xs-12">
 
     

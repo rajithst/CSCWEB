@@ -71,7 +71,13 @@ function progressHandler(event){
 }
 function completeHandler(event){
   var response = event.target.responseText;
-  swal("You should select a file to upload!! Try again");
+  if(response==1){
+    swal("<h4><strong>'.$fileName.' was Uploaded successfully !'.'</strong></h4>");
+  }else{
+    swal("You should select a file to upload, Try again !");
+  }
+  //swal("You should select a file to upload!! Try again");
+  //swal(response);
   _("progress1").value = 0;
 }
 function errorHandler(event){
@@ -82,10 +88,19 @@ function abortHandler(event){
 }
 
 </script>
+
   </head>
 <body>
 
 <?php include "comp/navbar.php"; ?>
+
+<div class="row">
+  <ul class="breadcrum">
+        <li class="completed"><a href="index.php">Home</a></li>
+        <li class="active"><a href="fileupload.php?id=<?php echo $subid; ?>">Add Learning materials</a></li>
+
+    </ul>
+</div>
 
 
 <div class="container-fluid">

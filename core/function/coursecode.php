@@ -72,8 +72,24 @@ function submission($con,$regdata){
 
 
 }
+function edit_submission($con,$regdata,$id){
+
+    $update=array();
+    
+    foreach ($regdata as $field => $data) {
+        $update[]= '`' . $field . '` = \'' . $data . '\'';
+    }
+    $sql = "UPDATE submissions SET" . implode(' , ',$update) . " WHERE id = $id";
+    mysqli_query($con,$sql);
+    return 'true';
+}
 function getSubmissionData($con,$subid){
     $sql = "SELECT * FROM submissions WHERE subid='$subid'";
+    $query = mysqli_query($con, $sql);
+    return $query;
+}
+function getSubmissionData_to_edit($con,$assid){
+    $sql = "SELECT * FROM submissions WHERE id='$assid'";
     $query = mysqli_query($con, $sql);
     return $query;
 }
@@ -87,12 +103,13 @@ function getsubmitteddata($con,$subid,$assid){
 }
 function update_settings($con,$fname,$lname,$email,$password,$id){
 
-    $sql = "UPDATE staff SET first_name='$fname', last_name='$lname', email='$email', password='$password' WHERE id='$id'";
+    $sql = "UPDATE staff SET first_name='$fname', last_name='$lname', email='$email', password='$password' WHERE id='$id;";
     $query = mysqli_query($con, $sql);
     if ($query) {
         
     return true;
 }
+
 
 function removefolder($folder){
     if(is_dir($folder)===true){

@@ -25,10 +25,11 @@ if (isset($_GET['assid'])) {
 	$path = $row['path'];
 	$sql2 = "DELETE FROM submissions WHERE id=$assid";
 	$res2 = mysqli_query($con,$sql2);
-    $files = glob($path . '/*');
+	removefolder($path);
+    /*$files = glob($path . '/*');
     foreach ($files as $file) {
         is_dir($file) ? removeDirectory($file) : unlink($file);
-    }
-    rmdir($path);
+    }*/
+    //rmdir($path);
 
 }
