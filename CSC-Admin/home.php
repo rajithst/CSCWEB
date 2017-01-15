@@ -88,39 +88,27 @@
 
                     <!-- START WIDGETS -->
                     <div class="row">
-                        <div class="col-md-3">
 
-                            <!-- START WIDGET SLIDER -->
-                            <div class="widget widget-default widget-carousel">
-                                <div class="owl-carousel" id="owl-example">
-                                    <div>
-                                        <div class="widget-title">Total Visitors</div>
-                                        <div class="widget-subtitle">27/08/2014 15:23</div>
-                                        <div class="widget-int">3,548</div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- END WIDGET SLIDER -->
-
-                        </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
 
                             <!-- START WIDGET MESSAGES -->
                             <div class="widget widget-default widget-item-icon" onclick="location.href='chat.php';">
                                 <div class="widget-item-left">
-                                    <span class="fa fa-envelope"></span>
+                                    <span class="fa fa-user"></span>
                                 </div>
                                 <div class="widget-data">
-                                    <div class="widget-int num-count">48</div>
-                                    <div class="widget-title">New messages</div>
-                                    <div class="widget-subtitle">In your mailbox</div>
+
+                                    <?php
+                                    $staff = getstaff($con); ?>
+                                    <div class="widget-int num-count"><?php echo $staff; ?></div>
+                                    <div class="widget-title">CSC Staff</div>
+                                    <div class="widget-subtitle">On CSC</div>
                                 </div>
                             </div>
                             <!-- END WIDGET MESSAGES -->
 
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
 
                             <!-- START WIDGET REGISTRED -->
                             <div class="widget widget-default widget-item-icon" onclick="location.href='pages-address-book.html';">
@@ -141,7 +129,7 @@
                             <!-- END WIDGET REGISTRED -->
 
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
 
                             <!-- START WIDGET CLOCK -->
                             <div class="widget widget-danger widget-padding-sm">
@@ -339,16 +327,7 @@
                                         <h3>Users Activity</h3>
                                         <span>Users vs returning</span>
                                     </div>                                    
-                                    <ul class="panel-controls" style="margin-top: 2px;">
-                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
-                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>                                        
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
-                                                <li><a href="#" class="panel-remove"><span class="fa fa-times"></span> Remove</a></li>
-                                            </ul>                                        
-                                        </li>                                        
+
                                     </ul>                                    
                                 </div>                                
                                 <div class="panel-body padding-0">
@@ -367,17 +346,7 @@
                                         <h3>Visitors</h3>
                                         <span>Visitors (last month)</span>
                                     </div>
-                                    <ul class="panel-controls" style="margin-top: 2px;">
-                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
-                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>                                        
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
-                                                <li><a href="#" class="panel-remove"><span class="fa fa-times"></span> Remove</a></li>
-                                            </ul>                                        
-                                        </li>                                        
-                                    </ul>
+
                                 </div>
                                 <div class="panel-body padding-0">
                                     <div class="chart-holder" id="dashboard-donut-1" style="height: 200px;"></div>

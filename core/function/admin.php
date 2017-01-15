@@ -225,6 +225,14 @@ function getRegisteredStudents($con){
     return $x;
 }
 
+function getstaff($con){
+
+    $sql = "SELECT * FROM staff";
+    $res = mysqli_query($con, $sql);
+    $x = mysqli_num_rows($res);
+    return $x;
+}
+
 function getsubjects($con){
 
     $sql = "SELECT * FROM subjects";

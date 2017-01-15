@@ -102,10 +102,10 @@ ob_start();
 
                     <div class="list-group border-bottom">
 
-                        <a href="#" class="list-group-item"><span class="fa fa-flag"></span>Mail list</a>
-                        <a href="#" class="list-group-item"><span class="fa fa-flag"></span>Mail list</a>
-                        <a href="#" class="list-group-item"><span class="fa fa-flag"></span>Mail list</a>
-                        <a href="#" class="list-group-item"><span class="fa fa-flag"></span>Mail list</a>
+                        <a href="#" class="list-group-item">Posts Will display on Selected users newsfeed</a>
+                        <a href="published.php" class="list-group-item"><span class="fa fa-flag"></span>Published</a>
+                        <a href="draft.php" class="list-group-item"><span class="fa fa-flag"></span>Draft</a>
+
 
                     </div>
                 </div>

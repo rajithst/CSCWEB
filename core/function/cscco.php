@@ -133,4 +133,17 @@ function getStudentContact($con,$subid){
 
 }
 
+function  update_lect( $con,$register_data,$id){
+
+    $update=array();
+
+    foreach ($register_data as $field => $data) {
+        $update[]= '`' . $field . '` = \'' . $data . '\'';
+    }
+    $sql = "UPDATE lecturers SET" . implode(' , ',$update) . "WHERE id = $id";
+
+    mysqli_query($con,$sql);
+    return 'true';
+}
+
 ?>

@@ -1,5 +1,5 @@
 <?php
-
+ error_reporting(1);
 require 'db/database.php';
 
 if(logged_in() === true) {

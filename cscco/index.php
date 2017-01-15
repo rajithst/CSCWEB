@@ -86,11 +86,7 @@ include '../components/cscordinator_head.php'; ?>
                                             <span class="glyphicon glyphicon-user text-success" style="margin-right: 10px;"></span><a href="alluser.php">All Users</a>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-file text-success" style="margin-right: 10px;"></span><a href="http://www.jquery2dotnet.com">Newsletters</a>
-                                        </td>
-                                    </tr>
+
                                     <tr>
 
                                     </tr>
@@ -111,25 +107,10 @@ include '../components/cscordinator_head.php'; ?>
                                 <table class="table">
                                     <tr>
                                         <td>
-                                            <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                            <a href="profile.php">Change Password</a>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Import/Export</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
-                                                Delete Account</a>
-                                        </td>
-                                    </tr>
+
                                 </table>
                             </div>
                         </div>
@@ -146,24 +127,10 @@ include '../components/cscordinator_head.php'; ?>
                                 <table class="table">
                                     <tr>
                                         <td>
-                                            <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">Sales</a>
+                                            <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">View Reports</a>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">Customers</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-tasks"></span><a href="http://www.jquery2dotnet.com">Products</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-shopping-cart"></span><a href="http://www.jquery2dotnet.com">Shopping Cart</a>
-                                        </td>
-                                    </tr>
+
                                 </table>
                             </div>
                         </div>
