@@ -58,13 +58,13 @@ if(isset($_POST["submit"])){
     }
     
     }
-    if(empty($Password)){
+    if(empty($password)){
         $passworderr = "password should be included !"; 
     }else{
         $password = test_input($password);
     
     }
-    if(empty($confirmPassword)){
+    if(empty($confirmpassword)){
         $confirmpassworderr = "password should be included again!"; 
     }else{
         $confirmpassword = test_input($confirmpassword);
@@ -74,21 +74,29 @@ if(isset($_POST["submit"])){
     $md5password = md5($password);
     $md5confirmpassword = md5($confirmpassword);
 
-    if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password) && !empty($confirmpassword)){
-        if(!($md5password==$md5confirmpassword)){
-            //$matchingerror = "passwords do not match, please enter the same password to confirm !";
-            echo '<script type=text/javascript>alert("passwords do not match, please enter the same password to confirm !")<script>';
+    /*if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password) && !empty($confirmpassword)){*/
+        if($md5password!=$md5confirmpassword){
+            $matchingerror = "passwords do not match, please enter the same password to confirm !";
+            
+       
         }else{
             update_settings($con,$fname,$lname,$email,$md5password,$staff_data['id']);
             //session_start();
             session_destroy();
             header('Location:../index.php');
+<<<<<<< HEAD
+            ob_end_flush();
+            exit();
+
+
+=======
 
             ob_end_flush();
             exit();
 
+>>>>>>> 44371cac8626ebe47a1b3162d8f8d1af13748b41
         }
-    }
+   /* }*/
 
    } 
 
@@ -104,8 +112,21 @@ function test_input($data){
 
 
 
-<div class="container" style="padding-top: 60px;">
+<div class="container" style="margin-top: -30px;">
+
     <h1 class="page-header">Edit Profile</h1>
+    
+    <div class="row">
+    <center>
+   
+   
+            <div class="alert alert-info">
+            <strong>Changing account settings may cause the system to log out !</strong>
+            </div>
+   
+   
+   </center>
+    </div>
     <div class="row">
         <!-- left column -->
         <div class="col-md-4 col-sm-6 col-xs-12">

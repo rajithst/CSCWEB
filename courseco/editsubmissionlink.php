@@ -36,8 +36,9 @@ include '../components/course_head.php'; ?>
 <body>
 
 <?php
-if (isset($_GET['id'])) {
-    $subid = $_GET['id'];
+if (isset($_GET['assid'])) {
+    $assid = $_GET['assid'];
+    $subid = $_GET['subid'];
 
     $res = getslides($con,$subid);
     while ($row = mysqli_fetch_assoc($res)) {
@@ -47,6 +48,12 @@ if (isset($_GET['id'])) {
 
 
     }
+    $res2 = getSubmissionData_to_edit($con,$assid);
+    while($row2 = mysqli_fetch_assoc($res2)){
+      $old_linktitle = $row2['linktitle'];
+      $old_end_date_time = gmdate("F j, Y, g:i a", $row2['edateandtime']);
+      $old_description = $row2['description'];
+    }
 }
 
 
@@ -54,14 +61,6 @@ if (isset($_GET['id'])) {
 
 <!--start of the navbar<!-->
 <?php include "comp/navbar.php"; ?>
-<div class="row">
-  <ul class="breadcrum">
-        <li class="completed"><a href="index.php">Home</a></li>
-        <li class="completed"><a href="fileupload.php?id=<?php echo $subid; ?>">Add Learning materials</a></li>
-        <li class="active"><a href="addnewassignment.php?id=<?php echo $subid?>">Make Submission Link</a></li>
-
-    </ul>
-</div>
 
 </br>
 
@@ -119,17 +118,19 @@ if (isset($_GET['id'])) {
     <div class="col-md-10 col-sm-9 col-xs-12" style="margin-top: -20px;">
 
         <div class="panel panel-default" style="margin-top: 20px;">
-          <div class="panel-heading" style="background-color: ; color: black;"><center><h4>Make Submission link</h4></center> </div>
+          <div class="panel-heading" style="background-color: ; color: black;"><center><h4>Edit Submission link</h4></center> </div>
           <div class="panel-body" style="height: 375px;">
 
 
             <form action="" name="submissionform" method="post"  id="">
               <label for="comment">link Title</label>
-              <input type="text" class="form-control" name="title" value="">
-              <label for="comment">End  Date and Time</label>
+              <input type="text" class="form-control" name="title" value="<?php echo $old_linktitle?>">
+              <label for="comment">Old end date and time</label>
+              <input type="text" class="form-control" name="old" value="<?php echo $old_end_date_time?>">
+              <label for="comment">New end  Date and Time</label>
               <input  type="text" class="form-control time" value="" readonly name="edtime">
               <label for="comment">Submission Description</label>
-              <textarea class="form-control" rows="5" name="description" value=""></textarea><br>
+              <textarea class="form-control" rows="5" name="description" value=""><?php echo $old_description ?></textarea><br>
 
               
 
@@ -139,7 +140,7 @@ if (isset($_GET['id'])) {
 
               <br>-->
 
-              <center><button class="btn btn-info" name="submission" onclick="">Make link</button></center>
+              <center><button class="btn btn-info" name="submission" onclick="">Edit link</button></center>
 
             </form>
 
@@ -147,17 +148,15 @@ if (isset($_GET['id'])) {
                if (isset($_POST['submission'])){
 
                   $foldername = $_POST['title'];
-                  if(!file_exists("../uploads/".$foldername)){
-                      mkdir("../uploads/".$foldername, 0777 );
-                      $folderpath = '../uploads/'.$foldername;
+                  if(!file_exists("../uploads/".$foldername."_updated")){
+                      mkdir("../uploads/".$foldername."_updated", 0777 );
+                      $folderpath = '../uploads/'.$foldername."_updated";
                       $dtime = strtotime($_POST['edtime']);
 
                       $regdata = array(
 
-                          'subid' =>$subid,
                           'linktitle'=>$_POST['title'],
                           'description'=>$_POST['description'],
-                          'submitted_date'=>date("Y-m-d"),
                           'edateandtime'=>$dtime,
                           'path' => $folderpath
 
@@ -168,8 +167,8 @@ if (isset($_GET['id'])) {
                       if(empty($regdata['linktitle']) && empty($regdata['edateandtime'])){
                         echo "<script type=text/javascript>swal('Link title and End date should be mentioned!')</script>";
                       }else{
-                        $submit = submission($con,$regdata);
-                        echo "<script type=text/javascript>swal('Submission link was created successfully!')</script>";
+                        $edit = edit_submission($con,$regdata,$assid);
+                        echo "<script type=text/javascript>swal('Assignment link was updated successfully!')</script>";
                       }
 
                       
@@ -177,7 +176,7 @@ if (isset($_GET['id'])) {
                     echo "<script type=text/javascript>swal('Link title and End date should be mentioned!')</script>";
                     
                   }else{
-                    echo "<script type=text/javascript>swal('An assignment link with this name already exists try giving another name!')</script>";
+                    echo "<script type=text/javascript>swal('Assignment link with this name already exists try giving another name!')</script>";
                   }
                   
 

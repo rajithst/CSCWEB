@@ -37,6 +37,15 @@ if (isset($_GET['id'])) {
 
 <!--start of the navbar<!-->
 <?php include "comp/navbar.php"; ?>
+<div class="row">
+  <ul class="breadcrum">
+        <li class="completed"><a href="index.php">Home</a></li>
+        <li class="completed"><a href="fileupload.php?id=<?php echo $subid; ?>">Add Learning materials</a></li>
+        <li class="completed"><a href="addnewassignment.php?id=<?php echo $subid?>">Make Submission Link</a></li>
+        <li class="active"><a href="courseassignments.php?id=<?php echo $subid; ?>">View Assignments</a></li>
+
+    </ul>
+</div>
 
 </br>
 
@@ -64,7 +73,7 @@ if (isset($_GET['id'])) {
                         <table class="table" style="margin-bottom: 0px;">
                             <tr>
                                 <td style="padding-left: 15px;">
-                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="courseassignments.php?id=<?php echo $subid; ?>">All Assignment</a>
+                                    <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="courseassignments.php?id=<?php echo $subid; ?>">View Assignments</a>
                                 </td>
                             </tr>
                             <tr>
@@ -105,7 +114,7 @@ if (isset($_GET['id'])) {
       <th>Link Title</th>
       <th>Submitted Date</th>
       <th>Due Date</th>
-      <th>Due Time</th>
+      <th style="width: 80px;"></th>
       <th style="width: 80px;"></th>
     </tr>';
     echo '<tbody>';
@@ -114,11 +123,14 @@ if (isset($_GET['id'])) {
       echo '<tr>';
       echo "<th name='linktitle'><a href=submissionslist.php?assid=".$row['id']."&subid=".$subid.">" .$row['linktitle']."</a></th>";
       echo '<td>'.$row["submitted_date"].'</td>';
-      echo '<td>'.$row["edateandtime"].'</td>';
-      echo '<td>'."endtime".'</td>';
+      echo '<td>'.gmdate("F j, Y, g:i a", $row["edateandtime"]).'</td>';
+      //echo '<td>'."endtime".'</td>';
       
       /*echo '<td><button id="<?php echo $row['.'linktitle'.']?>" type="button" class="btn btn-danger" onclick="remove_row(<?php echo $row['.'linktitle'.']?>)">Remove</button></td>';*/
       echo "<td><button type='button' class='btn btn-danger deleteass' id='" . $row['id']."'>Remove</button></td>";
+      echo "<td><button type='button' class='btn btn-danger editass' id='" . $row['id']."'>Edit</button></td>";
+      //echo "<td><button type='button' class='btn btn-danger editass' onclick='load_edit_page(".$row['id'].")' id='" . $row['id']."'>Edit</button></td>";
+
       echo '</tr>';
     }
     echo '</tbody>';
@@ -214,5 +226,32 @@ $('button.deleteass').click(function(){
 
 
 })
+
+
+$(document).ready(function(){
+
+$('button.editass').click(function(){
+
+  var assid = this.id;
+  window.location.href = "editsubmissionlink.php?assid="+assid+"&subid=<?php echo $subid; ?>";
+           
+  })
+
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </script>
