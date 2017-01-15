@@ -243,3 +243,16 @@ function getcoursecodinators($con){
 }
 
 
+
+function updatedata($con,$postdata,$id){
+
+    $update=array();
+
+    foreach ($postdata as $field => $data) {
+        $update[]= '`' . $field . '` = \'' . $data . '\'';
+    }
+    $sql = "UPDATE subjects SET" . implode(' , ',$update) . "WHERE id = $id";
+    mysqli_query($con,$sql);
+    return 'true';
+
+}
