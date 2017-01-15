@@ -101,13 +101,15 @@ function getsubmitteddata($con,$subid,$assid){
     $query = mysqli_query($con, $sql);
     return $query;
 }
-function update_settings($con,$fname,$lname,$email,$password,$id){
+function update_settings($con,$fname,$lname,$email,$password,$id)
+{
 
-    $sql = "UPDATE staff SET first_name='$fname', last_name='$lname', email='$email', password='$password' WHERE id='$id;";
+    $sql = "UPDATE staff SET first_name='$fname', last_name='$lname', email='$email', password='$password' WHERE id=$id";
     $query = mysqli_query($con, $sql);
     if ($query) {
-        
-    return true;
+
+        return true;
+    }
 }
 
 
@@ -130,6 +132,6 @@ function removefolder($folder){
     }
 }
 
-}
+
 
 
