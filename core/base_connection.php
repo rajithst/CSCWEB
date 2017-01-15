@@ -8,6 +8,6 @@
 
 $host = "localhost";
 $user = "root";
-$password="";
+$password="rajith";
 $database = "csc";
 $con = mysqli_connect($host,$user,$password,$database);
