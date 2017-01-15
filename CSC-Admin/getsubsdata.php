@@ -25,7 +25,8 @@ if (isset($_GET)) {
     while($row = $res->fetch_array()) {
 
 
-        echo "<form class='form-horizontal'>
+        echo "<form class='form-horizontal' action='' method='post'>
+                <input type='hidden' class='form-control' name='id' value= '$cid'/>
                     <div class='panel panel-default'>
                         <div class='panel-heading'>
                             <h3 class='panel-title'><strong>Course Settings</strong> </h3>
@@ -37,7 +38,7 @@ if (isset($_GET)) {
                                 <div class='col-md-6 col-xs-12'>
                                     <div class='input-group'>
                                         <span class='input-group-addon'><span class='fa fa-pencil'></span></span>
-                                        <input type='text' class='form-control' value= '$row[2]'/>
+                                        <input type='text' class='form-control' required name='subject' value= '$row[2]'/>
                                     </div>
 
                                 </div>
@@ -49,7 +50,7 @@ if (isset($_GET)) {
                                 <div class='col-md-6 col-xs-12'>
                                     <div class='input-group'>
                                         <span class='input-group-addon'><span class='fa fa-calendar'></span></span>
-                                        <input type='text' class='form-control' readonly value='". date("Y") . "'>
+                                        <input type='text' class='form-control'  name='year' readonly value='". date("Y") . "'>
                                     </div>
 
                                 </div>
@@ -60,7 +61,7 @@ if (isset($_GET)) {
                                 <div class='col-md-6 col-xs-12'>
                                     <div class='input-group'>
                                         <span class='input-group-addon'><span class='fa fa-pencil'></span></span>
-                                        <input type='number' class='form-control' value='$row[7]'/>
+                                        <input type='number' class='form-control' name='batch' value='$row[7]' required/>
                                     </div>
 
                                 </div>
@@ -70,7 +71,7 @@ if (isset($_GET)) {
                             <div class='form-group'>
                                 <label class='col-md-3 col-xs-12 control-label'>Course Coordinator</label>
                                 <div class='col-md-6 col-xs-12'>
-                                    <select class='form-control select'>";
+                                    <select class='form-control select' name='coursecid'>";
 
         $subs = getcoursecodinators($con);
 
@@ -114,9 +115,9 @@ if (isset($_GET)) {
 
         if ($row[8] == 0) {
 
-           echo " <label class='check' ><input type = 'checkbox' class='icheckbox' /> Set Active </label >";
+           echo " <label class='check' ><input type = 'checkbox' class='icheckbox' value='1' name='checkval'/> Set Active </label >";
             }else if ($row[8]==1){
-           echo "<label class='check' ><input type = 'checkbox' class='icheckbox' checked='checked'/> Allready Active </label >";
+           echo "<label class='check' ><input type = 'checkbox' class='icheckbox' checked='checked' value='1' name='checkval'/> Allready Active </label >";
             }
 
         echo "<span class='help-block'>This action will set as currently running Course</span>
@@ -125,8 +126,8 @@ if (isset($_GET)) {
 
 </div>
 <div class='panel-footer'>
-    <button class='btn btn-default'>Clear Form</button>
-    <button class='btn btn-primary pull-right'>Submit</button>
+    <button class='btn btn-default' type='reset'>Clear Form</button>
+    <button class='btn btn-primary pull-right' name='update' type='submit'>Submit</button>
 </div>
 </div>
 </form>";

@@ -49,13 +49,47 @@ require '../components/stud_head.php';
                 
             </div>  
             </form>
+
         </div>
         <div class="col-sm-1" style="margin-top: 20px;">
-            <button class="btn btn-primary">Register</button>
+            <a class="btn btn-primary" href="register.php"> Register</a>
         </div>
     </div>
     </div>
 </header>
+<?php
+
+if(empty($_POST) === false and isset($_POST['submit'])=== true){
+
+     $username  =filter_var($_POST['username'],FILTER_SANITIZE_EMAIL,FILTER_VALIDATE_EMAIL) ;
+     $password = mysqli_real_escape_string($con,$_POST['password']);
+
+    $login = loginstudent($con,$username,$password);
+
+    if($login === false){  ?>
+
+    <br><br>
+    <div class="col-md-4 col-md-offset-4">
+
+      <div class="alert alert-danger">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <center> <strong>Username and Password Combination is not valid</strong> <br> <a href="recover.php">Forget Password?</a></center>
+      </div>
+    </div>
+
+    <?php
+
+    }else{
+
+        session_start();
+         $_SESSION['id']= $login;       
+        header('Location:home.php');
+        ob_end_flush();   
+        exit();
+    }
+  }
+
+?>
 <div class="container">
     <div class="row">
         <div class="col-sm-9 col-xs-12">
@@ -102,38 +136,6 @@ require '../components/stud_head.php';
             </article>
         </div>
 </article>
-<?php
 
-if(empty($_POST) === false and isset($_POST['submit'])=== true){
-
-     $username  =filter_var($_POST['username'],FILTER_SANITIZE_EMAIL,FILTER_VALIDATE_EMAIL) ;
-     $password = mysqli_real_escape_string($con,$_POST['password']);
-
-    $login = loginstudent($con,$username,$password);
-
-    if($login === false){  ?>
-
-    <br><br>
-    <div class="col-md-4 col-md-offset-4">
-
-      <div class="alert alert-danger">
-       <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
- <center> <strong>Username and Password Combination is not valid</strong> <br> <a href="recover.php">Forget Password?</a></center>
-</div>
-        </div>
-
-        <?php
-
-    }else{
-
-        session_start();
-         $_SESSION['id']= $login;       
-        header('Location:home.php');
-        ob_end_flush();   
-        exit();
-    }
-}
-
-?>
 
 <?php include "../components/stud_footer.php"; ?>

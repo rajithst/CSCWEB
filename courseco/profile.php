@@ -84,10 +84,17 @@ if(isset($_POST["submit"])){
             //session_start();
             session_destroy();
             header('Location:../index.php');
+<<<<<<< HEAD
             ob_end_flush();
             exit();
 
 
+=======
+
+            ob_end_flush();
+            exit();
+
+>>>>>>> 44371cac8626ebe47a1b3162d8f8d1af13748b41
         }
    /* }*/
 

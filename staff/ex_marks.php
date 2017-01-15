@@ -154,7 +154,7 @@ include '../components/page_head.php'; ?>
         <center>
         <section class="content-header">
 
-                <form action="" method="post">
+                <form action="" method="post" onSubmit="if(!confirm('Do you want to submit these data?')){return false;}else{return true;}">
                 <div class="col-md-10">
 					
 

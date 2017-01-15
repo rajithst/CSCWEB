@@ -55,7 +55,7 @@ include '../components/page_head.php'; ?>
 
             <center><h3>Add other income information</h3></center>
             <br>
-                <form class="form-horizontal" action="income_other.php" method="post"  id="contact_form">
+                <form class="form-horizontal" action="income_other.php" method="post"  id="contact_form" onSubmit="if(!confirm('Do you want to submit these data?')){return false;}else{return true;}">
 
                         <!-- Text input-->
 

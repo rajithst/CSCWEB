@@ -110,6 +110,27 @@ function addnewcourse( $con,$register_data){
 
 }
 
+function getcoursedetails($con){
 
+    $sql = "SELECT courseid,coursename FROM courses";
+    $res = mysqli_query($con,$sql);
+    return $res;
+}
+
+function getsubdetails($con){
+
+    $sql = "SELECT subjectid,subject FROM subjects ";
+    $res = mysqli_query($con,$sql);
+    return $res;
+
+}
+
+function getStudentContact($con,$subid){
+    
+    $sql = "SELECT home_mobile FROM student WHERE coursename='$subid'";
+    $res = mysqli_query($con,$sql);
+    return $res;
+
+}
 
 ?>

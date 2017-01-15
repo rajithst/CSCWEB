@@ -3,7 +3,7 @@
 function user_id_from_nic($con,$password) {
 
 
-    $sql        = "SELECT id FROM student  WHERE nic = '$password'";
+    $sql        = "SELECT id FROM student  WHERE (nic='$password' OR password='$password')";
     $query      = mysqli_query($con, $sql);
     $fetcharray = mysqli_fetch_array($query);
     return $fetcharray[0];
@@ -15,7 +15,7 @@ function loginstudent($con,$username,$password) {
 
 
     $user_id  = user_id_from_nic($con,$password);
-    $sql      = "SELECT * FROM student WHERE username= 'csc@gmail.com' AND nic='$password' AND registered = 1 ";
+    $sql      = "SELECT * FROM student WHERE username= '$username' AND (nic='$password' OR password='$password') AND registered = 1 ";
     $query    = mysqli_query($con, $sql);
     $result   = mysqli_num_rows($query);
 
@@ -95,5 +95,12 @@ function updatedata($con,$column,$update_data,$id){
     return $res;
 }
 
+function getsubdetails($con){
 
+    $sql = "SELECT subjectid,subject FROM subjects ";
+    $res = mysqli_query($con,$sql);
+    return $res;
 
+}
+
+?>
