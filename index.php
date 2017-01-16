@@ -134,13 +134,14 @@ require 'core/function/frontend.php';
 	else {
 		$id=$logindata[0];
 		$role=$logindata[1];
+		echo $role;
 		if ($role==="CSC Staff") {
 			session_start();
 			$_SESSION['id']=$id;
 			header('Location:staff/index.php');
 			exit;
 		}
-		else if ($role==="CSC Cordinator") {
+		else if ($role==="CSC Coordinator") {
 			session_start();
 			$_SESSION['id']=$id;
 			header('Location:cscco/index.php');

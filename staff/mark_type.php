@@ -34,7 +34,7 @@ include "comp/navbar.php"; ?>
 
         <div class="container">
 
-            <center><h2>Select the type of marks</h2></center>
+            <center><h2><b><u>Select the type of marks</u></b></h2></center>
             <br><br>
             <?php include "markA.php"; ?>
         </div>

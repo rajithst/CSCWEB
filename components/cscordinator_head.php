@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../public/plugins/drpicker/daterangepicker.min.css">
 
     <script src="../public/plugins/jQuery/jquery.js"></script>
-    <script src="../public/plugins/jQueryUI/jquery-ui.js">
+    <script src="../public/plugins/jQueryUI/jquery-ui.js"></script>
         <script src="../public/plugins/sweealert/sweetalert2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js" type="text/javascript"></script>
     <script src="../public/plugins/drpicker/jquery.daterangepicker.min.js"></script>

@@ -31,7 +31,7 @@
         <a href="#"><span class="fa fa-envelope"></span> Mailbox</a>
         <ul>
             <li><a href="inbox.php"><span class="fa fa-inbox"></span> Inbox</a></li>
-            <li><a href="pages-mailbox-message.html"><span class="fa fa-file-text"></span> Message</a></li>
+
             <li><a href="compose.php"><span class="fa fa-pencil"></span> Compose</a></li>
         </ul>
     </li>
@@ -230,14 +230,6 @@
                                             <option value="CSC Cordinator">CSC Coordinator</option>
                                             <option value="Course Coordinator">Course Coordinator</option>
                                         </select>
-
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-3 col-xs-12 control-label">Set Default Password </label>
-                                    <div class="col-md-6 col-xs-12">
-                                        <label class="check"><input type="checkbox" class="icheckbox" disbaled/>Password (csc)</label>
 
                                     </div>
                                 </div>

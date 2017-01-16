@@ -31,7 +31,7 @@
         <a href="#"><span class="fa fa-envelope"></span> Mailbox</a>
         <ul>
             <li><a href="inbox.php"><span class="fa fa-inbox"></span> Inbox</a></li>
-            <li><a href="pages-mailbox-message.html"><span class="fa fa-file-text"></span> Message</a></li>
+
             <li><a href="compose.php"><span class="fa fa-pencil"></span> Compose</a></li>
         </ul>
     </li>

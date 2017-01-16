@@ -147,7 +147,7 @@ require '../core/function/student.php';
 
                         <hr>
 
-                        <p><?php echo $row['text']; ?></p>
+                        <p><?php echo htmlspecialchars_decode($row['text']); ?></p>
 
                         <span class="badge" style="float: right;"> on <?php echo $row['date']; ?></span>
 

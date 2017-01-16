@@ -111,7 +111,7 @@ $('#two-inputs2').dateRangePicker(
     <div class="container">
     <div class="row">
        
-        <h3 class="text-center">Configuring reports</h3>
+        <h3 class="text-center"><u>Generating income reports</u></h3>
         <br>
         <div class="list-group">
 		
@@ -136,7 +136,7 @@ $('#two-inputs2').dateRangePicker(
                 <div class="col-md-6 text-center" id="nn">
                    
                  
-                Select date range <span id="two-inputs"><input name="start_date" id="date-range200" size="20" value=""> to <input name="end_date"id="date-range201" size="20" value=""></span>
+                <b>Select date range </b><span id="two-inputs"><input required name="start_date" id="date-range200" size="20" value=""><b> to </b><input required name="end_date"id="date-range201" size="20" value=""></span>
 
                     
                 </div>
@@ -153,7 +153,7 @@ $('#two-inputs2').dateRangePicker(
                 <div class="col-md-6 text-center" id="nn">
                    
                  
-                Select date range <span id="two-inputs1"><input name="start_date" id="date-range202" size="20" value=""> to <input name="end_date" id="date-range203" size="20" value=""></span>
+                <b>Select date range </b><span id="two-inputs1"><input required name="start_date" id="date-range202" size="20" value=""><b> to </b><input required name="end_date" id="date-range203" size="20" value=""></span>
 
                     
                 </div>
@@ -170,7 +170,7 @@ $('#two-inputs2').dateRangePicker(
                 <div class="col-md-6 text-center" id="nn">
                    
                  
-                Select date range <span  id="two-inputs2"><input name="start_date" id="date-range204" size="20" value=""> to <input name="end_date" id="date-range205" size="20" value=""></span>
+                <b>Select date range </b><span  id="two-inputs2"><input required name="start_date" id="date-range204" size="20" value=""><b> to </b><input required name="end_date" id="date-range205" size="20" value=""></span>
 
                     
                 </div>

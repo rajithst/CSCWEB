@@ -4,6 +4,7 @@ function user_id_from_nic($con,$password) {
 
 
     $sql        = "SELECT id FROM student  WHERE (nic='$password' OR password='$password')";
+    echo $sql;
     $query      = mysqli_query($con, $sql);
     $fetcharray = mysqli_fetch_array($query);
     return $fetcharray[0];
@@ -16,6 +17,7 @@ function loginstudent($con,$username,$password) {
 
     $user_id  = user_id_from_nic($con,$password);
     $sql      = "SELECT * FROM student WHERE username= '$username' AND (nic='$password' OR password='$password') AND registered = 1 ";
+    echo $sql;
     $query    = mysqli_query($con, $sql);
     $result   = mysqli_num_rows($query);
 

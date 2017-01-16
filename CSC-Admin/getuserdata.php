@@ -107,13 +107,7 @@ if (isset($_GET)) {
 		</div>
 		</div>
 		
-		<div class='form-group'>
-		<label class='col-md-3 col-xs-12 control-label'>Set Default Password </label>
-		<div class='col-md-6 col-xs-12'>
-		<label class='check'><input type='checkbox' class='icheckbox' checked='checked'/>Password (csc)</label>
-		
-		</div>
-		</div>
+
 		
 		
 		

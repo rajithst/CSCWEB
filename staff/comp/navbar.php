@@ -37,17 +37,7 @@
                 <li>
                     <a href="index.php" style="color:white;" class="glyphicon glyphicon-home"> Home</a>
                 </li>
-                <li class="dropdown" style="margin-right:4px" >
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;padding-top:18px;" >
-                        <span class="glyphicon glyphicon-globe"></span>
-                        Notifications
-                        <span class="caret">
-					</span>
-                    </a>
-                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu" id="tasks_dropdown">
-                        <li><a tabindex="-1" href="" id="task_txt">Emails</a></li>
-                    </ul>
-                </li>
+                
 				<li>
                     <a style="color:white;" class="glyphicon glyphicon-pencil" href="edit_report.php" >Input-Data</a>
                 </li>

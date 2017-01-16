@@ -21,7 +21,7 @@
     <li class="xn-openable active">
         <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Posts</span></a>
         <ul>
-            <li><a href="compose.php"><span class="fa fa-image"></span> New Post</a></li>
+            <li><a href="post.php"><span class="fa fa-image"></span> New Post</a></li>
             <li class="active"><a href="published.php"><span class="fa fa-user"></span> Published</a></li>
             <li class=""><a href="draft.php"><span class="fa fa-users"></span> Draft</a></li>
 
@@ -31,11 +31,10 @@
         <a href="#"><span class="fa fa-envelope"></span> Mailbox</a>
         <ul>
             <li><a href="inbox.php"><span class="fa fa-inbox"></span> Inbox</a></li>
-            <li><a href="pages-mailbox-message.html"><span class="fa fa-file-text"></span> Message</a></li>
+
             <li><a href="compose.php"><span class="fa fa-pencil"></span> Compose</a></li>
         </ul>
     </li>
-    <li class=""><a href="chat.php"><span class="fa fa-comments"></span> Messages</a></li>
 
     <li class="xn-openable">
         <a href="#"><span class="fa fa-user"></span> <span class="xn-text">Users</span></a>

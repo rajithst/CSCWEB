@@ -107,7 +107,7 @@ include '../components/page_head.php'; ?>
 								{
 									if($row['batch']!=null)
 									{
-										echo '<center><h2>Select the batch</h2></center>
+										echo '<center><h2><b><u>Select the batch</u></b></h2></center>
 												<div class="process">
 													<div class="process-row">';
 										$i=1;
@@ -160,7 +160,7 @@ include '../components/page_head.php'; ?>
                 <div class="col-md-10">
 					
 
-                   <h4><b>Subject : <?php echo $subdata[2]; ?></b></h4>
+                   <h4><b>Subject : <?php echo "<i>".$subdata[2]."</i>"; ?></b></h4>
 					<b>Subject id : </b><?php echo $subid?>
 					<br>
                     <b> Course Id : </b><?php echo $subdata[1];?>
@@ -197,7 +197,7 @@ include '../components/page_head.php'; ?>
                                     <td>
 										<center>
 											<input type="hidden" id="name[]" name="name[]"  value="<?php echo $row['fullname']; ?>">
-											<input type="text" placeholder="Enter as a percentage(%)" name="marks[]" id="marks[]">
+											<input type="text" style="background-color: #d1f5e8" class="form-control" placeholder="Enter as a percentage" name="marks[]" id="marks[]">
 										</center>
 									</td>
                                     

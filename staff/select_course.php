@@ -90,7 +90,7 @@ include '../components/page_head.php'; ?>
 				<div class="col-xs-12 col-md-10 col-sm-10">
 					<div class="box" style="width: 75%;">
 						<div class="box-header">
-							<center><h3 class="box-title">Select Course</h3></center>
+							<center><h3 class="box-title"><b><u>Select course</u></b></h3></center>
 
 						</div>
 						<!-- /.box-header -->
