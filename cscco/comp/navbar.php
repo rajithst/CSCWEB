@@ -76,7 +76,7 @@
                     <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
                         <li><a tabindex="-1" href="email.php">Email</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a tabindex="-1" href="notification.php">Notification</a></li>
+                        <li><a tabindex="-1" href="sms.php">SMS</a></li>
                         
                     </ul>
                 </li>
@@ -123,4 +123,6 @@
                 </ul>
         </div>
     </div>
+</nav>
+
 </nav>

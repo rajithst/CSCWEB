@@ -119,11 +119,21 @@ function getcoursedetails($con){
 
 function getsubdetails($con){
 
-    $sql = "SELECT subjectid,subject FROM subjects ";
+    $sql = "SELECT subject FROM subjects ";
     $res = mysqli_query($con,$sql);
     return $res;
 
 }
+
+
+function getsubid($con,$subname){
+
+    $sql = "SELECT subjectid FROM subjects WHERE subject='$subname'";
+    $res = mysqli_query($con,$sql);
+    return $res;
+
+}
+
 
 function getStudentContact($con,$subid){
     
