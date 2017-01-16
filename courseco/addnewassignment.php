@@ -154,9 +154,9 @@ if (isset($_GET['id'])) {
 
                       $regdata = array(
 
-                          'subid' =>$subid,
+                          'subid' =>filter_var($subid,FILTER_SANITIZE_SPECIAL_CHARS),
                           'linktitle'=>$_POST['title'],
-                          'description'=>$_POST['description'],
+                          'description'=>filter_var($_POST['description'],FILTER_SANITIZE_SPECIAL_CHARS),
                           'submitted_date'=>date("Y-m-d"),
                           'edateandtime'=>$dtime,
                           'path' => $folderpath

@@ -92,8 +92,8 @@ if (isset($_GET['assid']) and $_GET['subid']) {
 
 
 
-        <center><h3> Event Calender</h3></center>
-        <div class="monthly" id="mycalendar"></div>
+        <!--<center><h3> Event Calender</h3></center>
+        <div class="monthly" id="mycalendar"></div>-->
 
     </div>
      <div class="col-md-10 col-sm-12 col-xs-12" >
