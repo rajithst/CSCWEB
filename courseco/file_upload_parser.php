@@ -30,26 +30,28 @@ $date = date("Y-m-d");
 
 $fileupload_ok = 1;// 0 for false... and 1 for true
 
+if(!empty($title)){
 
-if (!$fileTmpLoc) { // if file not chosen
-    echo $fileErrorMsg;
+    if (!$fileTmpLoc) { // if file not chosen
+    echo 0;
     exit();
 }
 /*if(file_exists("../uploads/".$fileName)){
-	echo "Sorry, file already exists.";
-	$fileupload_ok = 0;
+    echo "Sorry, file already exists.";
+    $fileupload_ok = 0;
 }else{
-	$fileupload_ok = 1;
+    $fileupload_ok = 1;
 }*/
 
 if ($fileupload_ok == 0) {
-    echo "Sorry, your file was not uploaded.";
+    echo 0;
 
 } else {
     if(move_uploaded_file($fileTmpLoc, "../uploads/$fileName")){
-        //echo '<h4><strong>'.$fileName.' was Uploaded successfully !'.'</strong></h4>';
+        
+        echo 1;
 
-   	mysqli_query($con,"INSERT INTO fileuploads(date,subject,subject_code,title,description,filename,file)
+    mysqli_query($con,"INSERT INTO fileuploads(date,subject,subject_code,title,description,filename,file)
     VALUES ('$date', '$name','$id','$title','$desc','$fname','uploads/$fileName')");
     
 
@@ -57,5 +59,9 @@ if ($fileupload_ok == 0) {
         echo "Sorry, there was an error uploading your file.";
     }
 }
+}else{
+    echo 2;
+}
+
 
 ?>

@@ -79,7 +79,7 @@ if(isset($_POST["submit"])) {
         $matchingerror = "passwords do not match, please enter the same password to confirm !";
         echo "<script type=text/javascript>swal('Passwords does not match try again !')</script>";
 
-    } else {
+    } else {s
         $rr = update_settings($con, $fname, $lname, $email, $md5password, $staff_data['id']);
 
         if ($rr==true){ ?>
@@ -102,7 +102,6 @@ if(isset($_POST["submit"])) {
         header("refresh:5;url=../index.php");
         ob_end_flush();
         exit();
-
     }
 }
 function test_input($data){
