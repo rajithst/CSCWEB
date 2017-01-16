@@ -103,7 +103,7 @@ $(document).ready(function ()
 			
 			
             <br>
-                <form class="form-horizontal" action="" method="post" >
+                <form class="form-horizontal" action="" method="post" onSubmit="if(!confirm('Do you want to submit these data?')){return false;}else{return true;}">
 					<div class="form-group">
 						<label class="col-md-4 control-label"><b>Student name : </b><?php echo"<i>".$name."</i>"?> </label>
 						<label class="col-md-4 control-label"><b>Student NIC : </b><?php echo "<i>".$nic."</i>";?></label>
@@ -115,9 +115,9 @@ $(document).ready(function ()
                             <div class="col-md-6 selectContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                    <select name="pay_method" required class="form-control selectpicker" >
-                                            <option value="Dnation">Cash</option>
-                                            <option value="Advertising">Cheque</option>
+                                    <select name="pay_method" style="background-color:#d1f5e8" required class="form-control selectpicker" >
+                                            <option value="Cash">Cash</option>
+                                            <option value="Cheque">Cheque</option>
                                             <option value="Other">Others</option>
                                     </select>
                                 </div>
@@ -126,22 +126,14 @@ $(document).ready(function ()
 
                         <!-- Text input-->
 
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" ><span style="color:red;font-size:25px;">*</span>Amount</label>
-                            <div class="col-md-6 inputGroupContainer">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class=" 	glyphicon glyphicon-usd"></i></span>
-                                    <input name="amm" placeholder="Amount" class="form-control"  type="text" required>
-                                </div>
-                            </div>
-                        </div>
+                        
 						
 						<div class="form-group">
                             <label class="col-md-4 control-label"><span style="color:red;font-size:25px;">*</span>Date received</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                                    <input name="rec_date" style="width:160px;" placeholder="" class="form-control" type="date" id="datepick" required>
+                                    <input name="rec_date" style="background-color:#d1f5e8" style="width:160px;" placeholder="Date" class="form-control" type="date" id="datepick" required>
                                 </div>
                             </div>
                         </div>
@@ -152,7 +144,25 @@ $(document).ready(function ()
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="person_received" placeholder="Received by" class="form-control"  type="text" required>
+									<select name="person_received" style="background-color:#d1f5e8" class="form-control selectpicker" >
+									<?php
+										$q="SELECT * FROM staff WHERE role='CSC Staff'";
+										$res=mysqli_query($con,$q);
+										while ($row =mysqli_fetch_array($res))
+										{
+											$full_name=$row['first_name']." ".$row['last_name'];
+											
+											?>
+											<option value="<?php echo $full_name;?>"><?php echo $full_name;?></option>";
+										<?php
+										}
+										?>
+                                          
+                                            
+                                        
+									
+									</select>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -165,7 +175,7 @@ $(document).ready(function ()
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="ref" placeholder="Receipt number" class="form-control" type="text" required>
+                                    <input name="ref" style="background-color:#d1f5e8" placeholder="Receipt number" class="form-control" type="text" required>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +203,19 @@ $(document).ready(function ()
 	{
 			
 			$payment_method=$_POST['pay_method'];
-			$payed_ammount=$_POST['amm'];
+			$subq="SELECT * FROM student WHERE nic = '$nic'";
+			$rq=mysqli_query($con,$subq);
+			while ($row =mysqli_fetch_array($rq))
+			{
+				$sub_name=$row['coursename'];
+			}
+			$ammq="SELECT * FROM subjects WHERE subjectid='$sub_name'";
+			$resq=mysqli_query($con,$ammq);
+			while ($row =mysqli_fetch_array($resq))
+			{
+				$payed_ammount=$row['fee'];
+			}
+			
 			$payment_received_day=$_POST['rec_date'];
 			$person_rec=$_POST['person_received'];
 			$payment_referrence=$_POST['ref'];

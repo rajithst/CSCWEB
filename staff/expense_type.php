@@ -53,17 +53,17 @@ include '../components/page_head.php'; ?>
         <div class="col-md-8 col-sm-6 col-xs-12">
 			   
 
-            <center><h3>Add Expense information</h3></center>
+            <center><h3><b><u>Add expense information</u></b></h3></center>
             <br>
                 <form class="form-horizontal" action="expense.php" method="post"  id="contact_form" onSubmit="if(!confirm('Do you want to submit these data?')){return false;}else{return true;}">
 
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label"><span style="color:red;font-size:25px;">*</span>Expense Type</label>
+                            <label class="col-md-4 control-label"><span style="color:red;font-size:20px;">*</span>Expense type</label>
                             <div class="col-md-6 selectContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                    <select name="meth" class="form-control selectpicker" >
+                                    <select name="meth" style="background-color: #d1f5e8" class="form-control selectpicker" >
                                   
                                             <option value="Dnation">Donation</option>
                                             <option value="Advertising">Advertising</option>
@@ -80,18 +80,18 @@ include '../components/page_head.php'; ?>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-book"></i></span>
-                                    <input name="desc" placeholder="Description" class="form-control"  type="text">
+                                    <input name="desc" style="background-color: #d1f5e8" placeholder="Description" class="form-control"  type="text">
                                 </div>
                             </div>
                         </div>
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-md-4 control-label"><span style="color:red;font-size:25px;">*</span>Given To</label>
+                            <label class="col-md-4 control-label"><span style="color:red;font-size:20px;">*</span>Given to</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="g_to" placeholder="Given to" class="form-control"  type="text" required>
+                                    <input name="g_to" style="background-color: #d1f5e8" placeholder="Given to" class="form-control"  type="text" required>
                                 </div>
                             </div>
                         </div>
@@ -100,32 +100,50 @@ include '../components/page_head.php'; ?>
                         <!-- Text input-->
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label"><span style="color:red;font-size:25px;">*</span>Given By</label>
+                            <label class="col-md-4 control-label"><span style="color:red;font-size:20px;">*</span>Authorised by</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="g_by" placeholder="Given by" class="form-control" type="text" required>
+									<select name="g_by" style="background-color: #d1f5e8" class="form-control selectpicker" >
+									<?php
+										$q="SELECT * FROM staff WHERE role='CSC Staff' or role='CSC Coordinator'";
+										$res=mysqli_query($con,$q);
+										while ($row =mysqli_fetch_array($res))
+										{
+											$full_name=$row['first_name']." ".$row['last_name'];
+											
+											?>
+											<option value="<?php echo $full_name;?>"><?php echo $full_name;?></option>";
+										<?php
+										}
+										?>
+                                          
+                                            
+                                        
+									
+									</select>
+                                    
                                 </div>
                             </div>
                         </div>
 
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label"><span style="color:red;font-size:25px;">*</span>Date</label>
+                            <label class="col-md-4 control-label"><span style="color:red;font-size:20px;">*</span>Date</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                                    <input name="g_date" style="width:160px;" placeholder="" class="form-control" type="date" id="datepick" required>
+                                    <input name="g_date" style="width:160px;background-color: #d1f5e8;" placeholder="Date" class="form-control" type="date" id="datepick" required>
                                 </div>
                             </div>
                         </div>
 
                          <div class="form-group">
-                            <label class="col-md-4 control-label"><span style="color:red;font-size:25px;">*</span>Amount Rs</label>
+                            <label class="col-md-4 control-label"><span style="color:red;font-size:20px;">*</span>Amount Rs</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
-                                    <input name="amm" placeholder="Amount" class="form-control" type="number" required>
+                                    <input name="amm" style="background-color: #d1f5e8" placeholder="Amount" class="form-control" type="number" required>
                                 </div>
                             </div>
                         </div>

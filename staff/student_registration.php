@@ -1,5 +1,6 @@
 <?php
 session_start();
+ob_start();
 	require '../core/base.php';
 
 	if(logged_in() === false){
@@ -12,6 +13,8 @@ session_start();
 	require '../core/init.php';
 	require '../core/function/staff.php';
 	include '../components/page_head.php'; 
+
+	
 	
 $sub_name=$_POST['subject_name'];
 $sqlx="SELECT subjectid FROM subjects WHERE subject='$sub_name'";
@@ -61,7 +64,13 @@ $status=1;
 
 
 $payment_method=$_POST['pay_method'];
-$payed_ammount=$_POST['amm'];
+$ammq="SELECT * FROM subjects WHERE subject='$sub_name'";
+$res=mysqli_query($con,$ammq);
+while ($row =mysqli_fetch_array($res))
+{
+	$payed_ammount=$row['fee'];
+}
+
 $payment_received_day=$_POST['rec_date'];
 $person_rec=$_POST['person_received'];
 $payment_referrence=$_POST['ref'];
@@ -98,7 +107,13 @@ if(mysqli_query($con,$sql) && mysqli_query($con,$sqlp) )
 	
         <div class="alert alert-info">
             <strong><center>Recorded!</center></strong>
-        </div>
+
+            </div>
+    <?php
+        header('refresh:3;url=select_course_reg.php');
+        ob_end_flush();
+        exit();
+    ?>
 	</body>
 	<?php include "../components/page_tail.php";?>
 <?php

@@ -139,7 +139,7 @@ include '../components/page_head.php';?>
 								{
 									if($row['batch']!=null)
 									{
-										echo '<center><h2>Select the batch</h2></center>
+										echo '<center><h2><b><u>Select the batch</u></b></h2></center>
 												<div class="process">
 													<div class="process-row">';
 										$i=1;
@@ -204,13 +204,22 @@ include '../components/page_head.php';?>
 
                     <div class="box" style="width:75%;">
                         <div class="box-header">
-                            <h3 class="box-title">Student Marks Report</h3>
+							<div class='panel panel-primary'>
+								<div class='panel-heading'>
+									<center>
+									<h2 class='panel-title'>
+										Student Marks Report
+									</h2> 
+									</center>
+								</div>
+							</div>
+                            
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body table-responsive no-padding">
 
 
-                            <table class='table table-bordered table-inverse'>
+                            <table class='table'>
                                 <tr>
                                     <th>Student Name</th>
 									<th style='min-width:95px'>Number of Assignments</th>

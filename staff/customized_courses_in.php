@@ -53,18 +53,18 @@ include '../components/page_head.php'; ?>
         <div class="col-md-8 col-sm-6 col-xs-12">
 			   
 
-            <center><h3>Add Customized course income information</h3></center>
+            <center><h3><b><u>Add customized course income information</u></b></h3></center>
             <br>
                 <form class="form-horizontal" action="course_customized.php" method="post"  id="contact_form" onSubmit="if(!confirm('Do you want to submit these data?')){return false;}else{return true;}">
 
                         <!-- Text input-->
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label" ><span style="color:red;font-size:25px;">*</span>Course name</label>
+                            <label class="col-md-4 control-label" ><span style="color:red;font-size:20px;">*</span>Course name</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                    <input name="course_name" placeholder="Name of the course" class="form-control"  type="text" required>
+                                    <input name="course_name" style="background-color: #d1f5e8" placeholder="Name of the course" class="form-control"  type="text" required>
                                 </div>
                             </div>
                         </div>
@@ -72,42 +72,60 @@ include '../components/page_head.php'; ?>
                         <!-- Text input-->
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label"><span style="color:red;font-size:25px;">*</span>Requesting party</label>
+                            <label class="col-md-4 control-label"><span style="color:red;font-size:20px;">*</span>Requesting party</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="req_party" placeholder="Requesting company" class="form-control" type="text" required>
+                                    <input name="req_party" style="background-color: #d1f5e8" placeholder="Requesting company" class="form-control" type="text" required>
                                 </div>
                             </div>
                         </div>
 
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label"><span style="color:red;font-size:25px;">*</span>Received Date</label>
+                            <label class="col-md-4 control-label"><span style="color:red;font-size:20px;">*</span>Received date</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                                    <input name="rec_date" style="width:160px;" placeholder="" class="form-control" type="date" id="datepick" required>
+                                    <input name="rec_date"  style="width:160px;background-color: #d1f5e8;" placeholder="Money recieved date" class="form-control" type="date" id="datepick" required>
                                 </div>
                             </div>
                         </div>
 						
 						<div class="form-group">
-                            <label class="col-md-4 control-label"><span style="color:red;font-size:25px;">*</span>Received by</label>
+                            <label class="col-md-4 control-label"><span style="color:red;font-size:20px;">*</span>Received by</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="rec_by" placeholder="Money received by" class="form-control" type="text" required>
+									<select name="rec_by" style="background-color: #d1f5e8" class="form-control selectpicker" >
+									<?php
+										$q="SELECT * FROM staff WHERE role='CSC Staff'";
+										$res=mysqli_query($con,$q);
+										while ($row =mysqli_fetch_array($res))
+										{
+											$full_name=$row['first_name']." ".$row['last_name'];
+											
+											?>
+											<option value="<?php echo $full_name;?>"><?php echo $full_name;?></option>";
+										<?php
+										}
+										?>
+                                          
+                                            
+                                        
+									
+									</select>
+                                   
                                 </div>
                             </div>
                         </div>
 
                          <div class="form-group">
-                            <label class="col-md-4 control-label"><span style="color:red;font-size:25px;">*</span>Amount Rs</label>
+                            <label class="col-md-4 control-label"><span style="color:red;font-size:20px;">*</span>Amount Rs</label>
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
-                                    <input name="amm" placeholder="Amount in rupees" class="form-control" type="number" required>
+                                    <input name="amm" style="background-color: #d1f5e8" placeholder="Amount in rupees" class="form-control" type="number" required>
                                 </div>
                             </div>
                         </div>

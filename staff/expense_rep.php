@@ -69,7 +69,7 @@ $('#two-inputs').dateRangePicker(
     <div class="container">
     <div class="row">
        
-        <h3 class="text-center">Report Generating</h3>
+        <h3 class="text-center"><u>Generating expense reports</u></h3>
         <br>
         <div class="list-group">
 
@@ -82,7 +82,7 @@ $('#two-inputs').dateRangePicker(
                 <div class="col-md-6 text-center" id="nn">
                    
                  
-                Select date range <span id="two-inputs"><input name="start_date" id="date-range200" size="20" value=""> to <input name="end_date"id="date-range201" size="20" value=""></span>
+                <b>Select date range </b><span id="two-inputs"><input required  name="start_date" id="date-range200" size="20" value=""><b> to </b><input required  name="end_date"id="date-range201" size="20" value=""></span>
 
                     
                 </div>

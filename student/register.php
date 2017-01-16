@@ -123,14 +123,14 @@ require '../components/stud_head.php';
             <div class="col-sm-12 col-xs-12" id="section">
               <div class="form-group">
                 <select class="form-control" name="coursename" style="margin-left: 0px;width:50%">
-                  <option style="width:50px;">-- Select Course --</option>
+                  <option style="width:0px;">-- Select Course --</option>
                 <?php
               
                   for ($i=0; $i <sizeof($subname) ; $i++) { 
             
                 ?>
 
-                  <option style="width:50px;"><?php echo $subname[$i] ; ?></option>
+                  <option ><?php echo $subname[$i] ; ?></option>
 
                 <?php
 

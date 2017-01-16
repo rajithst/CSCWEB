@@ -149,9 +149,9 @@ include '../components/page_head.php';?>
 								
 									<tr style="height:25px"><td><b> Course Id : </b></td><td><?php echo $subdata[1];?></td></tr>
 									
-									<tr style="height:25px"><td><b> Enter year : </b></td><td><input required placeholder="Enter the year" name="year" type="text"></td></tr>
+									<tr style="height:25px"><td><b> Enter year : </b></td><td><input required class="form-control" style="background-color: #d1f5e8" placeholder="Enter the year" name="year" type="text"></td></tr>
 								
-									<tr style="height:40px"><td><b> Enter batch number : </b></td><td><input required placeholder="batch number" name="batch" type="text"></td></tr>
+									<tr style="height:40px"><td><b> Enter batch number : </b></td><td><input required class="form-control" style="background-color: #d1f5e8" placeholder="batch number" name="batch" type="text"></td></tr>
 									
 								</table>
 								<center><button type="submit" name="next" class="btn btn-success"><span class='glyphicon glyphicon-send' style='vertical-align:middle'></span> Create Report</button></center>

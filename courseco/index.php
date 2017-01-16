@@ -1,5 +1,6 @@
 <?php 
 session_start();
+
 require '../core/base.php';
 
 if(logged_in() === false){
@@ -13,7 +14,6 @@ if(logged_in() === false){
 require '../core/init.php';
 require '../core/function/coursecode.php';
 include '../components/course_head.php'; ?>
-
 <script>
 
     var getUrl = window.location;
@@ -215,7 +215,7 @@ include '../components/course_head.php'; ?>
 
                         <hr>
 
-                        <p><?php echo $row['text']; ?></p>
+                        <p><?php echo htmlspecialchars_decode($row['text']); ?></p>
 
                         <span class="badge" style="float: right;"> on <?php echo $row['date']; ?></span>
 

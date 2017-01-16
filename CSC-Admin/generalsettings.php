@@ -31,7 +31,7 @@
         <a href="#"><span class="fa fa-envelope"></span> Mailbox</a>
         <ul>
             <li><a href="inbox.php"><span class="fa fa-inbox"></span> Inbox</a></li>
-            <li><a href="pages-mailbox-message.html"><span class="fa fa-file-text"></span> Message</a></li>
+
             <li><a href="compose.php"><span class="fa fa-pencil"></span> Compose</a></li>
         </ul>
     </li>
@@ -94,7 +94,6 @@
             <div class="row">
                 <div class="col-md-12">
 
-                    <form class="form-horizontal">
                         <div class="panel panel-default">
                             <div class="panel-heading ui-draggable-handle">
                                 <h3 class="panel-title"><strong>Change Course Coordinator subject enrolement</strong></h3>
@@ -103,9 +102,8 @@
                             <div class="panel-body">
                                 <p><strong>Select Course Coordinater to view the current enroled subjects.</strong></p>
                                 <div class="row">
-
+                                    <form action="" method="post">
                                     <div class="col-md-4">
-
 
                                         <div class='form-group'>
                                             <label class='col-md-3 col-xs-12 control-label'>Course Coordinator</label>
@@ -131,15 +129,16 @@
 
                                     <?php
 
+                                    if (isset($_POST['submit'])){
+
+                                        $ccid=$_POST['subs'];
+
+
                                     if (!empty($_POST["user"])) {
                                         foreach ($_POST["user"] as $user) {
-                                            if ($user == 1) {
-                                                $stu = 1;
-                                            } else if ($user == 2) {
-                                                $couc = 1;
-                                            } else if ($user == 3) {
-                                                $csc = 1;
-                                            }
+
+                                           $sql = "UPDATE sujects SET coursecid=$ccid WHERE subjectid='$user'";
+                                           echo $sql.'<br>';
 
 
                                         }
@@ -147,11 +146,13 @@
 
                                     }
 
+                                    }
+
                                     ?>
                                     <div class="col-md-8" id="subs">
 
 
-                                        <form action="" method="post">
+
                                         <table class="table table-striped">
                                             <thead>
                                             <tr>
@@ -166,20 +167,22 @@
                                             </tbody>
                                         </table>
 
+                                            <div class="panel-footer">
+                                                <button class="btn btn-default">Clear Form</button>
+                                                <button class="btn btn-primary pull-right" type="submit" name="submit">Submit</button>
+                                            </div>
+
+
+
                                     </div>
 
-
+                                    </form>
                                 </div>
 
                             </div>
-                            <div class="panel-footer">
-                                <button class="btn btn-default">Clear Form</button>
-                                <button class="btn btn-primary pull-right">Submit</button>
-                            </div>
 
-                    </form>
                         </div>
-                    </form>
+
 
                 </div>
             </div>

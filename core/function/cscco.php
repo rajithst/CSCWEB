@@ -119,11 +119,21 @@ function getcoursedetails($con){
 
 function getsubdetails($con){
 
-    $sql = "SELECT subjectid,subject FROM subjects ";
+    $sql = "SELECT subject FROM subjects ";
     $res = mysqli_query($con,$sql);
     return $res;
 
 }
+
+
+function getsubid($con,$subname){
+
+    $sql = "SELECT subjectid FROM subjects WHERE subject='$subname'";
+    $res = mysqli_query($con,$sql);
+    return $res;
+
+}
+
 
 function getStudentContact($con,$subid){
     
@@ -144,6 +154,18 @@ function  update_lect( $con,$register_data,$id){
 
     mysqli_query($con,$sql);
     return 'true';
+}
+
+function update_settings($con,$fname,$lname,$email,$password,$id)
+{
+
+    $sql = "UPDATE staff SET first_name='$fname', last_name='$lname', email='$email', password='$password' WHERE id=$id";
+
+    $query = mysqli_query($con, $sql);
+    if ($query) {
+
+        return true;
+    }
 }
 
 ?>

@@ -58,6 +58,7 @@ include '../components/page_head.php';?>
 		<?php
 			$token = $_GET['token'];
 			$subid = $_GET['subid'];
+			$subdata = getsubdata($con,$subid);
 		?>
         <div class="row">
 			<?php
@@ -129,7 +130,7 @@ include '../components/page_head.php';?>
 								{
 									if($row['batch']!=null)
 									{
-										echo '<center><h2>Select the batch</h2></center>
+										echo '<center><h2><b><u>Select the batch</u></b></h2></center>
 												<div class="process">
 													<div class="process-row">';
 										$i=1;
@@ -171,7 +172,7 @@ include '../components/page_head.php';?>
 		
         <div class="col-md-4">
 			<center>
-			<h3><b><u>Input Lecture Details</u></b></h3>
+			<h3><b><u>Input lecture details</u></b></h3>
 			</center>
 			<br>
 			
@@ -179,20 +180,20 @@ include '../components/page_head.php';?>
 			<form action="" method="post" onSubmit="if(!confirm('Do you want to submit these data?')){return false;}else{return true;}">
 			<table>
 					<tr>
-						<td  width="38%"><h4><b><span style="color:red;font-size:25px;">*</span>Date :</b></h4></td>
+						<td  width="38%"><h4><b><span style="color:red;font-size:20px;">*</span>Date :</b></h4></td>
 						<td colspan="3">
 								<div class="input-group">
-									<input  class="form-control" type="date" required id="datepick" name="date" >
+									<input placeholder="Date of the lecture"  class="form-control" style="background-color: #d1f5e8" type="date" required id="datepick" name="date" >
 									<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 								</div>
 						</td>
 						
 					</tr>
 					<tr>
-						<td  width="38%"><h4><b><span style="color:red;font-size:25px;">*</span>Hall :</b></h4></td>
+						<td  width="38%"><h4><b><span style="color:red;font-size:20px;">*</span>Hall :</b></h4></td>
 						<td colspan="3">
-							
-								<select class="form-control" id="selecting" name="hall">
+							<div class="input-group">
+								<select style="background-color: #d1f5e8" class="form-control" id="selecting" name="hall">
 											<option value="W001">W001</option>
 											<option value="W002">W002</option>
 											<option value="LAB A">LAB A</option>
@@ -203,15 +204,17 @@ include '../components/page_head.php';?>
 											<option value="4th floor">4th floor</option>
 											<option value="Other">Other</option>
 								</select>
+								<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+							</div>
 							
 						</td>
 					</tr>
 					
 					<tr>
-						<td  width="38%"><h4><b><span style="color:red;font-size:25px;">*</span>Time(From)</b></h4></td>
+						<td  width="38%"><h4><b><span style="color:red;font-size:20px;">*</span>Time(From)</b></h4></td>
 						<td>
 							<div class="input-group bootstrap-timepicker timepicker">
-								<input id="timepicker1" type="text" class="form-control input-small" name="f_time">
+								<input id="timepicker1" style="background-color: #d1f5e8" type="text" class="form-control input-small" name="f_time">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
 							</div>
 							 
@@ -224,7 +227,7 @@ include '../components/page_head.php';?>
 						<td>
 							
 							<div class="input-group bootstrap-timepicker timepicker">
-								<input id="timepicker2" type="text" class="form-control input-small" name="t_time">
+								<input id="timepicker2" style="background-color: #d1f5e8" type="text" class="form-control input-small" name="t_time">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
 							</div>
 							 
@@ -235,10 +238,25 @@ include '../components/page_head.php';?>
 						</td>
 					</tr>
 					<tr>
-						<td  width="38%"><h4><b><span style="color:red;font-size:25px;">*</span>Lecturer name :</b></h4></td>
+						<td  width="38%"><h4><b><span style="color:red;font-size:20px;">*</span>Lecturer name :</b></h4></td>
 						<td colspan="3">
 								<div class="input-group">
-									<input placeholder="name of the lecturer" class="form-control" required type="text" name="l_name" >
+									<select name="l_name" style="background-color: #d1f5e8" class="form-control selectpicker" >
+									<?php
+										$q="SELECT * FROM lecturers WHERE subject='$subdata[2]'";
+										$res=mysqli_query($con,$q);
+										while ($row =mysqli_fetch_array($res))
+										{
+											$full_name=$row['first_name']." ".$row['last_name'];
+											
+											?>
+											<option value="<?php echo $full_name;?>"><?php echo $full_name;?></option>";
+										<?php
+										}
+										?>
+									</select>
+                                   
+									
 									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 								</div>
 						</td>
@@ -247,7 +265,7 @@ include '../components/page_head.php';?>
 						<td  width="38%"><h4><b>Instructor name :</b></h4></td>
 						<td colspan="3">
 								<div class="input-group">
-									<input placeholder="name of the instructor" class="form-control" type="text" name="i_name" >
+									<input placeholder="name of the instructor" style="background-color: #d1f5e8" class="form-control" type="text" name="i_name" >
 									<span class="input-group-addon" ><i class="glyphicon glyphicon-user"></i></span>
 								</div>
 						</td>
@@ -261,7 +279,7 @@ include '../components/page_head.php';?>
 				<?php
 					$subid = $_GET['subid'];
 					$res = getstudents($con,$subid,$token);
-					$subdata = getsubdata($con,$subid);
+					
 				?>
         <!--<center>-->
         <section class="content-header">
@@ -270,7 +288,7 @@ include '../components/page_head.php';?>
                 <div class="col-md-10">
 					
 					<center>
-                   <h4><b>Subject : <?php echo $subdata[2]; ?></b></h4>
+                   <h4><b>Subject : <?php echo "<i>".$subdata[2]."</i>"; ?></b></h4>
 					<b>Subject id : </b><?php echo $subid?>
 					<br>
                     <b> Course Id : </b><?php echo $subdata[1];?>
@@ -281,7 +299,7 @@ include '../components/page_head.php';?>
 
                     <div class="box" style="width:75%;">
                         <div class="box-header">
-                            <h3 class="box-title">Input Attendance</h3>
+                            <h3 class="box-title"><u><b>Input attendance</b></u></h3>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body table-responsive no-padding">

@@ -34,7 +34,7 @@ include "comp/navbar.php"; ?>
 
         <div class="container">
 
-            <center><h2>Input Data</h2></center>
+            <center><h2><b><u>Input data</u></b></h2></center>
             <br><br>
             <?php include "comp/uppermenu.php"; ?>
         </div>

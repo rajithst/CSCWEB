@@ -36,7 +36,7 @@ include '../components/page_head.php'; ?>
 
     
 
-      <center><h2>Select report Type</h2></center>
+      <center><h2><b><u>Select report type</u></b></h2></center>
 
      
         

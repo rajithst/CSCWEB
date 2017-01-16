@@ -67,6 +67,7 @@ include '../components/page_head.php'; ?>
 	}
 	$t_in=$t2 + $t3 + $t4;
 ?>
+	
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
@@ -88,6 +89,43 @@ include '../components/page_head.php'; ?>
         chart.draw(data, options);
       }
     </script>
+	<script>
+
+
+    var getUrl = window.location;
+    var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+    var path= baseUrl+'/CSC-Admin/csccoevents.xml';
+
+    $(document).ready(function () {
+
+        $('#mycalendar').monthly({
+            mode: 'event',
+            //jsonUrl: 'events.json',
+            //dataType: 'json'
+            xmlUrl: path
+        });
+
+        $('.helpbutton').click(function () {
+
+
+            $('#joyRideTipContent').joyride({
+                autoStart : false,
+                postStepCallback : function (index, tip) {
+                    if (index == 2) {
+                        $(this).joyride('set_li', false, 1);
+                    }
+                },
+                modal:false,
+                expose: false
+            });
+
+        });
+
+
+
+
+    });
+</script>
 	<script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
@@ -109,18 +147,6 @@ include '../components/page_head.php'; ?>
 
         chart.draw(data, options);
       }
-    </script>
-    <script>
-        $(document).ready(function () 
-		{
-
-            $('#mycalendar').monthly({
-                mode: 'event',
-                //jsonUrl: 'events.json',
-                //dataType: 'json'
-                xmlUrl: 'events.xml'
-            });
-        });
     </script>
 
     </head>
@@ -157,11 +183,7 @@ include '../components/page_head.php'; ?>
                                         <a href="profile.php">Change Password</a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
-                                    </td>
-                                </tr>
+                                
                            
                             </table>
                         </div>
@@ -211,7 +233,7 @@ include '../components/page_head.php'; ?>
         <div class="col-md-8 col-sm-6 col-xs-12">
 			<center>
 			
-				<div class="well">
+				<div class="well" id="jrnewsfeed">
 				<form action="" method="post">
 					<table>
 					<tr>
@@ -232,6 +254,7 @@ include '../components/page_head.php'; ?>
 				<br>
 			</div>
         </div>
+		
         <div class="col-md-2 col-sm-3 col-xs-12">
             <div class="profile-sidebar">
 
@@ -266,7 +289,7 @@ include '../components/page_head.php'; ?>
                                 Account Settings </a>
                         </li>
 
-                        <li>
+                        <li class="helpbutton">
                             <a href="#">
                                 <i class="glyphicon glyphicon-flag"></i>
                                 Help </a>
@@ -306,7 +329,5 @@ include '../components/page_head.php'; ?>
             </div>
         </div>
     </div>
-
-
 
 <?php include "../components/page_tail.php";?>

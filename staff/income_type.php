@@ -30,7 +30,7 @@ include '../components/page_head.php'; ?>
 
 	<div class="container">
 
-            <center><h2>Select income type</h2></center>
+            <center><h2><b><u>Select income type</u></b></h2></center>
             <br><br>
             <?php include "incomeA.php"; ?>
     </div>

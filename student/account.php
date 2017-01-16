@@ -278,9 +278,9 @@ require '../core/base_connection.php';
 									if(($newpwd!=$conpwd) || ($curpwd!=$stu_pwd)){
 										$pwdError='Password Combination error occured.';
 									}else{
-										$newpwd1=md5($newpwd);
+										//$newpwd1=md5($newpwd);
 										$column='password';
-										$result=updatedata($con,$column,$newpwd1,$stu_id);
+										$result=updatedata($con,$column,$newpwd,$stu_id);
 										$comment="Successfully updated.";
 									}
 								}

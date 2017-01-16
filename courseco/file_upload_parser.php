@@ -47,8 +47,6 @@ if ($fileupload_ok == 0) {
 
 } else {
     if(move_uploaded_file($fileTmpLoc, "../uploads/$fileName")){
-
-        echo 1;
         //echo '<h4><strong>'.$fileName.' was Uploaded successfully !'.'</strong></h4>';
 
    	mysqli_query($con,"INSERT INTO fileuploads(date,subject,subject_code,title,description,filename,file)
