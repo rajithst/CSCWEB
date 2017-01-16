@@ -72,16 +72,15 @@ function progressHandler(event){
 function completeHandler(event){
   var response = event.target.responseText;
   if(response==1){
-<<<<<<< HEAD
+
 
     swal("<h3><strong>File was Uploaded successfully !</strong></h3>");
 
     swal('Uploaded successfully!');
-=======
+
 swal("<h3><strong>.File was Uploaded successfully !</strong></h3>");
   }else if(response==2){
-    swal("Title should be given before uploading a file");
->>>>>>> ee39d3ce26f5e00228cff2cac3f1fbb48d195290
+    swal("Uploaded successfully");
   }else{
     swal("You should select a file to upload, Try again !");
   }

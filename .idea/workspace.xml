@@ -2,58 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8a2abd2-b0f4-4cec-8935-3c8e5a8be2fc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ss/general.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ss/inbox.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ss/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ss/manage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ss/profile.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ss/profileimage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ss/published.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ss/sent.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/adduser.php" afterPath="$PROJECT_DIR$/CSC-Admin/adduser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/compose.php" afterPath="$PROJECT_DIR$/CSC-Admin/compose.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/generalsettings.php" afterPath="$PROJECT_DIR$/CSC-Admin/generalsettings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/home.php" afterPath="$PROJECT_DIR$/CSC-Admin/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/inbox.php" afterPath="$PROJECT_DIR$/CSC-Admin/inbox.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/post.php" afterPath="$PROJECT_DIR$/CSC-Admin/post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/profilesettings.php" afterPath="$PROJECT_DIR$/CSC-Admin/profilesettings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/published.php" afterPath="$PROJECT_DIR$/CSC-Admin/published.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSC-Admin/upload.php" afterPath="$PROJECT_DIR$/CSC-Admin/upload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/admin.php" afterPath="$PROJECT_DIR$/core/function/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/frontend.php" afterPath="$PROJECT_DIR$/core/function/frontend.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/staff.php" afterPath="$PROJECT_DIR$/core/function/staff.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/function/student.php" afterPath="$PROJECT_DIR$/core/function/student.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/init.php" afterPath="$PROJECT_DIR$/core/init.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/fileupload.php" afterPath="$PROJECT_DIR$/courseco/fileupload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseco/index.php" afterPath="$PROJECT_DIR$/courseco/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/batch_and_year.php" afterPath="$PROJECT_DIR$/cscco/batch_and_year.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/comp/navbar.php" afterPath="$PROJECT_DIR$/cscco/comp/navbar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/course.php" afterPath="$PROJECT_DIR$/cscco/course.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/editcourse.php" afterPath="$PROJECT_DIR$/cscco/editcourse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/editlecturer.php" afterPath="$PROJECT_DIR$/cscco/editlecturer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/expense_rep.php" afterPath="$PROJECT_DIR$/cscco/expense_rep.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/fullcourses.php" afterPath="$PROJECT_DIR$/cscco/fullcourses.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/gen_income_type.php" afterPath="$PROJECT_DIR$/cscco/gen_income_type.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/generate_report.php" afterPath="$PROJECT_DIR$/cscco/generate_report.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/getsubsdata.php" afterPath="$PROJECT_DIR$/cscco/getsubsdata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/lecturer.php" afterPath="$PROJECT_DIR$/cscco/lecturer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/profile.php" afterPath="$PROJECT_DIR$/cscco/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/rep_expense.php" afterPath="$PROJECT_DIR$/cscco/rep_expense.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/report.php" afterPath="$PROJECT_DIR$/cscco/report.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/report_attendance.php" afterPath="$PROJECT_DIR$/cscco/report_attendance.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/select_course_att.php" afterPath="$PROJECT_DIR$/cscco/select_course_att.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/select_course_marks.php" afterPath="$PROJECT_DIR$/cscco/select_course_marks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/sms.php" afterPath="$PROJECT_DIR$/cscco/sms.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/text.php" afterPath="$PROJECT_DIR$/cscco/text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cscco/textlocal.class.php" afterPath="$PROJECT_DIR$/cscco/textlocal.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/ass_marks.php" afterPath="$PROJECT_DIR$/staff/ass_marks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/ex_marks.php" afterPath="$PROJECT_DIR$/staff/ex_marks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/expense.php" afterPath="$PROJECT_DIR$/staff/expense.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/index.php" afterPath="$PROJECT_DIR$/staff/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/register_students.php" afterPath="$PROJECT_DIR$/staff/register_students.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff/student_registration.php" afterPath="$PROJECT_DIR$/staff/student_registration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/register.php" afterPath="$PROJECT_DIR$/student/register.php" />
     </list>
     <ignored path="mvc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -170,11 +119,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="init.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/init.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addnewassignment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/courseco/addnewassignment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fileupload.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/courseco/fileupload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="82" column="31" lean-forward="false" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -248,7 +217,6 @@
         <option value="$PROJECT_DIR$/student/home.php" />
         <option value="$PROJECT_DIR$/CSC-Admin/profileimage.php" />
         <option value="$PROJECT_DIR$/courseco/index.php" />
-        <option value="$PROJECT_DIR$/courseco/fileupload.php" />
         <option value="$PROJECT_DIR$/core/function/frontend.php" />
         <option value="$PROJECT_DIR$/CSC-Admin/upload.php" />
         <option value="$PROJECT_DIR$/CSC-Admin/published.php" />
@@ -266,6 +234,7 @@
         <option value="$PROJECT_DIR$/student/register.php" />
         <option value="$PROJECT_DIR$/cscco/index.php" />
         <option value="$PROJECT_DIR$/core/init.php" />
+        <option value="$PROJECT_DIR$/courseco/fileupload.php" />
       </list>
     </option>
   </component>
@@ -348,7 +317,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="core">
+            <PATH_ELEMENT USER_OBJECT="courseco">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -493,12 +462,12 @@
       <workItem from="1484462559168" duration="607000" />
       <workItem from="1484474201712" duration="31763000" />
       <workItem from="1484538719786" duration="3716000" />
-      <workItem from="1484544860207" duration="5500000" />
+      <workItem from="1484544860207" duration="5665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161136000" />
+    <option name="totallyTimeSpent" value="161301000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -519,7 +488,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16791044" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6693092" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962853" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26349893" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26349893" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -604,13 +573,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/function/coursecode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/student/account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -713,14 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseco/fileupload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="79" column="36" lean-forward="false" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1108,6 +1062,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseco/addnewassignment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseco/fileupload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="82" column="31" lean-forward="false" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
           <folding />
         </state>
       </provider>
