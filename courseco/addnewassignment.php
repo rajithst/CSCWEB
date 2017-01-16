@@ -174,7 +174,7 @@ if (isset($_GET['id'])) {
 
                       
                   }else if(empty($regdata['linktitle']) && empty($regdata['edateandtime'])){
-                    echo "<script type=text/javascript>swal('Link title and End date should be mentioned!')</script>";
+                    echo "<script type=text/javascript>swal('Assignment link with this name already exists try another title !')</script>";
                     
                   }else{
                     echo "<script type=text/javascript>swal('An assignment link with this name already exists try giving another name!')</script>";

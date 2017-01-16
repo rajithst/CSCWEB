@@ -72,7 +72,7 @@ function progressHandler(event){
 function completeHandler(event){
   var response = event.target.responseText;
   if(response==1){
-    swal("<h4><strong>'.$fileName.' was Uploaded successfully !'.'</strong></h4>");
+    swal("<h3><strong>File was Uploaded successfully !</strong></h3>");
   }else{
     swal("You should select a file to upload, Try again !");
   }
@@ -124,7 +124,7 @@ function abortHandler(event){
               <div class="panel-body" style="padding: 0;">
                   <table class="table" style="margin-bottom: 0px;">
                       <tr>
-                          <td style="padding-left: 15px; font-size: 15px;">
+                          <td style="padding-left: 15px;">
                               <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px; color: blue; font-size: 40px;" ></span><a href="courseassignments.php?id=<?php echo $subid?>">View Assignments</a>
                           </td>
                       </tr>
