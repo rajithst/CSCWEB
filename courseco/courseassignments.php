@@ -199,7 +199,7 @@ $('button.deleteass').click(function(){
                   /*$('#tableass').html("");
                   $('#tableass').html(data);*/
 
-                  //location.reload();
+                  location.reload();
 
                 
                 }
