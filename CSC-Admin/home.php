@@ -35,7 +35,7 @@
                     <li><a href="compose.php"><span class="fa fa-pencil"></span> Compose</a></li>
                 </ul>
             </li>
-            <li class=""><a href="chat.php"><span class="fa fa-comments"></span> Messages</a></li>
+
 
             <li class="xn-openable">
                 <a href="#"><span class="fa fa-user"></span> <span class="xn-text">Users</span></a>
@@ -299,66 +299,6 @@
                             
                         </div>
                     </div>
-                    
-                    <div class="row">
-                        <div class="col-md-4">
-                            
-                            <!-- START SALES & EVENTS BLOCK -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <div class="panel-title-box">
-                                        <h3>Sales & Event</h3>
-                                        <span>Event "Purchase Button"</span>
-                                    </div>>
-                                </div>
-                                <div class="panel-body padding-0">
-                                    <div class="chart-holder" id="dashboard-line-1" style="height: 200px;"></div>
-                                </div>
-                            </div>
-                            <!-- END SALES & EVENTS BLOCK -->
-                            
-                        </div>
-                        <div class="col-md-4">
-                            
-                            <!-- START USERS ACTIVITY BLOCK -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <div class="panel-title-box">
-                                        <h3>Users Activity</h3>
-                                        <span>Users vs returning</span>
-                                    </div>                                    
-
-                                    </ul>                                    
-                                </div>                                
-                                <div class="panel-body padding-0">
-                                    <div class="chart-holder" id="dashboard-bar-1" style="height: 200px;"></div>
-                                </div>                                    
-                            </div>
-                            <!-- END USERS ACTIVITY BLOCK -->
-                            
-                        </div>
-                        <div class="col-md-4">
-                            
-                            <!-- START VISITORS BLOCK -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <div class="panel-title-box">
-                                        <h3>Visitors</h3>
-                                        <span>Visitors (last month)</span>
-                                    </div>
-
-                                </div>
-                                <div class="panel-body padding-0">
-                                    <div class="chart-holder" id="dashboard-donut-1" style="height: 200px;"></div>
-                                </div>
-                            </div>
-                            <!-- END VISITORS BLOCK -->
-                            
-                        </div>
-                    </div>
-                    
-                    <!-- START DASHBOARD CHART -->
-
                     <!-- END DASHBOARD CHART -->
                     
                 </div>

@@ -34,8 +34,8 @@
             <a href="#"><img src="../public/dist/img/system/csclogo.png" style="width:170px; height:50px;" ></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right" style="margin-right:30px; padding: 10px;" id="jrnavbar">
-                <li><a href="index.php" style="height:50px;"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <ul class="nav navbar-nav navbar-right"  id="jrnavbar">
+                <li><a href="index.php" style="height:50px;color:white;"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 
 
 
@@ -68,20 +68,6 @@
                         <li><a tabindex="-1" href="editcourse.php">Edit Courses</a></li>
                     </ul>
                 </li>
-
-
-            <li class="dropdown" id="jrmessages">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;"><span class="glyphicon glyphicon-envelope"> Message  </span><span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu multi-level dropdown-color" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a tabindex="-1" href="email.php">Email</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a tabindex="-1" href="sms.php">SMS</a></li>
-                        
-                    </ul>
-                </li>
-
-
 
                 <ul class="nav navbar-nav navbar-right" >
                     <li class="dropdown">
@@ -123,6 +109,4 @@
                 </ul>
         </div>
     </div>
-</nav>
-
 </nav>

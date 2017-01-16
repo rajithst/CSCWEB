@@ -22,8 +22,7 @@ include '../components/cscordinator_head.php'; ?>
 	<?php include "comp/navbar.php"; ?>
     <ul class="breadcrum">
         <li class="completed"><a href="index.php">HOME</a></li>
-        <li class="completed"><a href="lecturer.php">Lecturer</a></li>
-        <li class="active"><a href="lecturer.php">Add Lecturer</a></li>
+        <li class="active"><a href="lecturer.php">ADD LECTURER</a></li>
 
     </ul>
 
@@ -37,7 +36,7 @@ include '../components/cscordinator_head.php'; ?>
 			<br>
         <div class="col-xs-12 col-sm-8 col-md-6 ">
 
-			<center><h3>Add New Lecturer</h3></center>
+			<center><h3><b><u>Add New Lecturer</u></b></h3></center>
 			<br>
 				<form class="form-horizontal" action=" " method="post"  id="contact_form">
 
@@ -120,8 +119,8 @@ include '../components/cscordinator_head.php'; ?>
 					<center><div class="form-group">
 							<label class="col-md-4 control-label"></label>
 							<div class="col-md-6">
-								<button type="submit" class="btn btn-info" name="submit">Add <span class="glyphicon glyphicon-send"></span> </button>
-								<button type="reset" class="btn btn-info" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
+								<button type="submit" class="btn btn-success" name="submit">Add <span class="glyphicon glyphicon-send"></span> </button>
+								<button type="reset" class="btn btn-warning" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
 							</div>
 						</div>
 
@@ -162,7 +161,7 @@ include '../components/cscordinator_head.php'; ?>
 
 			<div class="col-xs-12 col-sm-4 col-md-6 ">
 
-				<center><h3>Current Lecturers</h3></center>
+				<center><h3><b><u>Current Lecturers</u></b></h3></center>
 				<br>
 
 				<table class="table table-bordred table-striped" style="width: 100%" id="lectable">
@@ -190,7 +189,7 @@ include '../components/cscordinator_head.php'; ?>
 							<td><?php echo $lecdata['email']; ?></td>
 							<td><?php echo $lecdata['subject']; ?></td>
 							<td><?php echo $lecdata['phone']; ?></td>
-							<td><a href="editlecturer.php?id=<?php echo $lecdata['id']?>"><button class="btn btn-info"> Edit User</button></a></td>
+							<td><a href="editlecturer.php?id=<?php echo $lecdata['id']?>"><button class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span> Edit User</button></a></td>
 						</tr>
 
 					<?php	}

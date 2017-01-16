@@ -18,12 +18,12 @@
         <a href="calander.php"><span class="fa fa-desktop"></span> <span class="xn-text">Calander</span></a>
     </li>
 
-    <li class="xn-openable active">
+    <li class="xn-openable ">
         <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Posts</span></a>
         <ul>
             <li><a href="post.php"><span class="fa fa-image"></span> New Post</a></li>
             <li class=""><a href="published.php"><span class="fa fa-user"></span> Published</a></li>
-            <li class="active"><a href="draft.php"><span class="fa fa-users"></span> Draft</a></li>
+            <li class=""><a href="draft.php"><span class="fa fa-users"></span> Draft</a></li>
 
         </ul>
     </li>
@@ -55,10 +55,10 @@
         <a href="coursesettings.php"><span class="fa fa-map-marker"></span> <span class="xn-text">Course Settings</span></a>
     </li>
 
-    <li class="xn-openable">
+    <li class="xn-openable active">
         <a href=""><span class="fa fa-user"></span> <span class="xn-text">System Settings</span></a>
         <ul>
-            <li><a href="profilesettings.php"><span class="fa fa-heart"></span> Profile Setings</a></li>
+            <li class="active"><a href="profilesettings.php"><span class="fa fa-heart"></span> Profile Setings</a></li>
             <li><a href="generalsettings.php"><span class="fa fa-cogs"></span> General Settings</a></li>
 
         </ul>
@@ -76,14 +76,14 @@
     <!-- START BREADCRUMB -->
     <ul class="breadcrumb">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Posts</a></li>
-        <li class="active">Dtaft</li>
+        <li><a href="#">Profile</a></li>
+        <li class="active">settings</li>
     </ul>
     <!-- END BREADCRUMB -->
 
     <!-- PAGE TITLE -->
     <div class="page-title">
-        <h2><span class="fa fa-arrow-circle-o-left"></span> Draft Posts</h2>
+        <h2><span class="fa fa-arrow-circle-o-left"></span> Profile Settings</h2>
     </div>
     <!-- END PAGE TITLE -->
 
@@ -127,7 +127,31 @@
 
             <div class="col-md-9">
 
-                    <form class="form-horizontal">
+                <?php
+                if (isset($_POST['submit'])){
+                $id=$user_data['id'];
+                    $postdata = array(
+                    'email'=> $_POST['email'],
+                    'password'=> md5($_POST['password']),
+                    'name'=> $_POST['name']
+                );
+
+                    $result = updateadminuser($con, $id,$postdata);
+
+                    if ($result=='true'){
+                        ?>
+                        <script>swal("Updated!", "Your have been updated successfully")</script>
+
+                        <?php
+
+                    }
+
+                }
+
+
+                ?>
+
+                    <form class="form-horizontal" action="" method="post">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h3 class="panel-title"><strong>Profile Settings</strong> </h3>
@@ -139,7 +163,7 @@
                                     <div class="col-md-6 col-xs-12">
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
-                                            <input  class="form-control" type="email" value="<?php echo $user_data['email']; ?>">
+                                            <input  class="form-control" type="email" value="<?php echo $user_data['email']; ?>" name="email">
                                         </div>
 
                                     </div>
@@ -151,7 +175,7 @@
                                     <div class="col-md-6 col-xs-12">
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-                                            <input class="form-control"  value="2017" type="password" value="<?php echo $user_data['password']; ?>">
+                                            <input class="form-control"  value="2017" type="password" value="<?php echo $user_data['password']; ?>" name="password">
                                         </div>
 
                                     </div>
@@ -162,7 +186,7 @@
                                     <div class="col-md-6 col-xs-12">
                                         <div class="input-group">
                                             <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
-                                            <input  class="form-control" type="name" value="<?php echo $user_data['name']; ?>">
+                                            <input  class="form-control" type="name" value="<?php echo $user_data['name']; ?>" name="name">
                                         </div>
 
                                     </div>
@@ -173,7 +197,7 @@
                             </div>
                             <div class="panel-footer">
                                 <button class="btn btn-default" disabled="">Clear Form</button>
-                                <button class="btn btn-primary pull-right">Submit</button>
+                                <button class="btn btn-primary pull-right" type="submit" name="submit">Submit</button>
                             </div>
                         </div>
                     </form>

@@ -192,7 +192,7 @@ include '../components/page_head.php'; ?>
                                 ?>
                                 <tr>
                                     <td><?php  echo  $subid; ?></td>
-                                    <td><?php  echo  $row['fullname']; ?></td>
+                                    <td><?php  echo  $row['name_w_initials']; ?></td>
 									
                                     <td>
 										<center>

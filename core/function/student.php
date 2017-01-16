@@ -105,4 +105,16 @@ function getsubdetails($con){
 
 }
 
+function registerstudent($con,$reg_data){
+
+    $fields = '`'.implode('`,`', array_keys($reg_data)).'`';
+    $data   = '\''.implode('\', \'', $reg_data).'\' ';
+
+    $sql = "INSERT INTO student ($fields) VALUE ($data)";
+    $res = mysqli_query($con,$sql);
+    return 'true';
+
+
+}
+
 ?>

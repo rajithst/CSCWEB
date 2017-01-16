@@ -22,8 +22,9 @@ include '../components/cscordinator_head.php'; ?>
 <?php include "comp/navbar.php"; ?>
     <ul class="breadcrum">
         <li class="completed"><a href="index.php">HOME</a></li>
-        <li class="completed"><a href="course.php">Courses</a></li>
-        <li class="active"><a href="editcourse.php">Edit Courses</a></li>
+        <li class="completed"><a href="course.php">ADD COURSES</a></li>
+		<li class="completed"><a href="fullcourses.php">SEE ALL COURSES</a></li>
+        <li class="active"><a href="editcourse.php">EDIT COURSES</a></li>
 
     </ul>
 
@@ -76,10 +77,10 @@ include '../components/cscordinator_head.php'; ?>
 
                     <div class="col-xs-12  col-sm-8 col-md-6 pull-left">
 
-                        <button class="btn btn-info" id="edit">Edit Course</button>
-                        <button class="btn btn-info" id="delete">Delete Course</button>
+                        <button class="btn btn-info" id="edit"><span class="glyphicon glyphicon-pencil"></span> Edit Course</button>
+                        <button class="btn btn-danger" id="delete"><span class="glyphicon glyphicon-trash"></span> Delete Course</button>
 
-                        <a href="fullcourses.php"> <button class="btn btn-info" id="delete">View All Courses</button></a>
+                        <a href="fullcourses.php"> <button class="btn btn-warning" id="delete"><span class="glyphicon glyphicon-arrow-left"></span> View All Courses</button></a>
                     </div>
 
                 </div>

@@ -1,6 +1,5 @@
 <?php
 session_start();
-ob_start();
 	require '../core/base.php';
 
 	if(logged_in() === false){
@@ -107,13 +106,7 @@ if(mysqli_query($con,$sql) && mysqli_query($con,$sqlp) )
 	
         <div class="alert alert-info">
             <strong><center>Recorded!</center></strong>
-
-            </div>
-    <?php
-        header('refresh:3;url=select_course_reg.php');
-        ob_end_flush();
-        exit();
-    ?>
+        </div>
 	</body>
 	<?php include "../components/page_tail.php";?>
 <?php

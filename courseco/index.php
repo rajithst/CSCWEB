@@ -42,8 +42,29 @@ include '../components/course_head.php'; ?>
 
 <div class="col-md-3 col-sm-3 col-xs-12">
 
-    
-                <div class="panel-group" id="accordion">
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <center><h2 class="panel-title"><strong>Course Subjects</strong></h2></center>
+            </div>
+            <div class="panel-body">
+                <?php
+                $id = $staff_data['id'];
+                $res = getcourses($con,$id); ?>
+                <ul class="" role="menu" style="list-style: none;">
+                    <?php while ($row = mysqli_fetch_assoc($res)) {
+                        $sid= $row['subjectid'];
+                        ?>
+
+                        <li id=""><a tabindex="-1" href="fileupload.php?id=<?php echo $sid; ?>"><span class="glyphicon glyphicon-education"></span><?php echo "  ".$row['subject']; ?></a></li>
+                    <?php }?>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <center><h2 class="panel-title">
@@ -51,129 +72,22 @@ include '../components/course_head.php'; ?>
                                     
                                 </h2></center>
                         </div>
-                        <!--<div id="collapseOne" class="panel-collapse collapse in">
-                            <div class="panel-body" style="padding: 0;">
-                                <table class="table" style="margin-bottom: 0px;">
-                                    <tr>
-                                        <td style="padding-left: 15px;">
-                                            <span class="glyphicon glyphicon-pencil text-success" style="margin-right: 10px;" ></span><a href="allposts.php">All Posts</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-user text-success" style="margin-right: 10px;"></span><a href="">All Users</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-file text-success" style="margin-right: 10px;"></span><a href="http://www.jquery2dotnet.com">Newsletters</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
 
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
-                            </span>Modules</a>
-                            </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <table class="table">
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Orders</a> <span class="label label-success">$ 320</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Invoices</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Shipments</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Tex</a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
-                            </span>Account</a>
-                            </h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <table class="table">
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Change Password</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Import/Export</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
-                                                Delete Account</a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>-->
+                        <center><h3> Event Calender</h3></center>
+                        <div class="monthly" id="mycalendar"></div>
 
-                    <center><h3> Event Calender</h3></center>
-                    <div class="monthly" id="mycalendar"></div>
+                    </div>
+
+
+
+
+                    <div class="col-sm-9 col-md-9">
                     
                 </div>
 
             </div>
 
-            <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <center><h2 class="panel-title"><strong>Course Subjects</strong></h2></center>
-                        </div>
-                        <div class="panel-body">
-                        <?php 
-                            $id = $staff_data['id'];
-                            $res = getcourses($con,$id); ?>
-                            <ul class="" role="menu" style="list-style: none;">
-                            <?php while ($row = mysqli_fetch_assoc($res)) {
-                                    $sid= $row['subjectid']; 
-                             ?>
-                               
-                                <li id=""><a tabindex="-1" href="fileupload.php?id=<?php echo $sid; ?>"><span class="glyphicon glyphicon-education"></span><?php echo "  ".$row['subject']; ?></a></li>
-                                <?php }?>
-                            </ul>
-                        </div>
-                    </div>
-            </div>            
-            </div>
+</div>
 
 
 

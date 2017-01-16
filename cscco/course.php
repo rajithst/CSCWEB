@@ -27,10 +27,9 @@ include '../components/cscordinator_head.php'; ?>
 	
 <ul class="breadcrum">
         <li class="completed"><a href="index.php">HOME</a></li>
-        <li class="completed"><a href="course.php">Courses</a></li>
-        <li class="active"><a href="course.php">Add Courses</a></li>
+        <li class="active"><a href="course.php">ADD COURSES</a></li>
 
-    </ul>
+</ul>
 
     </br>
     
@@ -115,13 +114,14 @@ if (isset($_POST['submit'])) {
 
 
 				<div class="form-group">
-					<label class="col-md-4 control-label">Course ID</label><button type="button" class="btn btn-warning" id="getid">Get Course ID</button>
-					<div class="col-md-6 inputGroupContainer">
+					<label class="col-md-4 control-label">Course ID</label>
+					<div class="col-md-4 inputGroupContainer">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
 							<input readonly  name="subjectid" placeholder="" class="form-control"  type="text" value="" id="courseid" required>
 						</div>
 					</div>
+					<button type="button" class="col-md-2 btn btn-warning" id="getid">Get Course ID</button>
 				</div>
 
 				<!-- Text input-->
@@ -195,7 +195,7 @@ if (isset($_POST['submit'])) {
 						<label class="col-md-4 control-label"></label>
 						<div class="col-md-6">
 							<button type="submit" class="btn btn-success" name="submit">Create Course <span class="glyphicon glyphicon-plus"></span></button>
-							<button type="reset" class="btn btn-success" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
+							<button type="reset" class="btn btn-warning" >Cancel <span class="glyphicon glyphicon-remove"></span> </button>
 						</div>
 					</div>
 
@@ -238,8 +238,7 @@ if (isset($_POST['submit'])) {
 
 	<br><br>
 		<center>
-			<a href="fullcourses.php"><button class="btn btn-info">See Full Courses Here</button></a>
-			<a href="addparent.php"><button class="btn btn-info">Add new parent Category Here</button></a>
+			<a href="fullcourses.php"><button class="btn btn-info"><span class="glyphicon glyphicon-th-list"></span> See Full Courses Here</button></a>
 		</center>
 </div>
 

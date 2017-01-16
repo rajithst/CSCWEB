@@ -36,7 +36,7 @@ ob_start();
             <li><a href="compose.php"><span class="fa fa-pencil"></span> Compose</a></li>
         </ul>
     </li>
-    <li class=""><a href="chat.php"><span class="fa fa-comments"></span> Messages</a></li>
+
 
     <li class="xn-openable">
         <a href="#"><span class="fa fa-user"></span> <span class="xn-text">Users</span></a>

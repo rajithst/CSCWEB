@@ -41,7 +41,7 @@ if(mysqli_query($con,$sql))
 	<ul class="breadcrum">
         <li class="completed"><a href="index.php">HOME</a></li>
         <li class="completed"><a href="edit_report.php">INPUT DATA</a></li>
-        <li class="completed"><a href="expense_type,php">ADD EXPENSES </a></li>
+        <li class="completed"><a href="expense_type.php">ADD EXPENSES </a></li>
 		<li class="active"><a href="">RECORDED</a></li>
 
     </ul>

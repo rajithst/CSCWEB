@@ -18,6 +18,7 @@ function loginall($con,$email,$password){
     $password = md5($password);
     $sql = "SELECT * FROM staff WHERE email = '$email' AND password = '$password'";
 
+
     $query    = mysqli_query($con, $sql);
     $result   = mysqli_num_rows($query);
     if($result == 1){

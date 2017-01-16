@@ -46,7 +46,7 @@ include '../components/page_head.php'; ?>
         });
 
     </script>
-
+    </script>
 
     </head>
     <body>
@@ -67,7 +67,7 @@ include '../components/page_head.php'; ?>
 					<div style="margin-left:50px;">
 					<span class="badge" style="font-size:40px;">Registration Form</span>
 					</div>
-							<form action="student_registration.php" method="post" onSubmit="if(!confirm('Do you want to submit these data?')){return false;}else{return true;}">
+							<form action="student_Registration.php" method="post" onSubmit="if(!confirm('Do you want to submit these data?')){return false;}else{return true;}">
 							<table style="width:90%;margin-left:50px;">
 							<tr>
 								<td >
@@ -172,12 +172,12 @@ include '../components/page_head.php'; ?>
 								<td><input type="text" id="fill_area" class="form-control" name="home_tel" style="width:600px;background-color: #d1f5e8;" placeholder="Enter landline number"></input></td>
 							  </tr>
 							  <tr>
-								<td><h4>Mobile:</h4></td>
-								<td><input type="text" id="fill_area" class="form-control" name="mobile" style="width:600px;background-color: #d1f5e8;"placeholder="Enter mobile number"></input></td>
+								<td><h4>Mobile:<span style="color:red;font-size:20px;">*</span></h4></td>
+								<td><input required type="text" id="fill_area" class="form-control" name="mobile" style="width:600px;background-color: #d1f5e8;"placeholder="Enter mobile number"></input></td>
 							  </tr>
 							  <tr>
-								<td><h4>Email:</h4></td>
-								<td><input type="text" id="fill_area" class="form-control" name="personel_email" style="width:600px;background-color: #d1f5e8;"placeholder="Enter personal email"></input></td>
+								<td><h4>Email:<span style="color:red;font-size:20px;">*</span></h4></td>
+								<td><input required type="text" id="fill_area" class="form-control" name="personel_email" style="width:600px;background-color: #d1f5e8;"placeholder="Enter personal email"></input></td>
 							  </tr>
 							  <tr>
 								<td><h4><b>6)Work place</b></h4></td>

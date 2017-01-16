@@ -106,7 +106,7 @@ echo "<div class='form-group'>
         <label class='col-md-2 control-label'></label>
         <div class='col-md-6'>
             <button type='submit' class='btn btn-success' name='submit'>Save Changes <span class='glyphicon glyphicon-send'></span></button>
-            <button type='reset' class='btn btn-success' >Cancel <span class='glyphicon glyphicon-remove'></span> </button>
+            <button type='reset' class='btn btn-warning' >Cancel <span class='glyphicon glyphicon-remove'></span> </button>
         </div>
     </div>
 

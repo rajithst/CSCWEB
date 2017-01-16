@@ -11,7 +11,7 @@ if(logged_in() === false){
 }
 require '../core/init.php';
 require '../core/function/staff.php';
-include '../components/cscordinator_head.php'; ?>
+include '../components/page_head.php'; ?>
 
 <style>
 

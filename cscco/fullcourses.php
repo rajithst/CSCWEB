@@ -24,6 +24,12 @@ include '../components/cscordinator_head.php'; ?>
 <body>
 
 <?php include "comp/navbar.php"; ?>
+<ul class="breadcrum">
+        <li class="completed"><a href="index.php">HOME</a></li>
+        <li class="completed"><a href="course.php">ADD COURSES</a></li>
+		<li class="active"><a href="">SEE ALL COURSES</a></li>
+
+</ul>
 
 </br>
 
@@ -65,8 +71,8 @@ $course = getcoursefor($con);
                 </div>
 
     <center>
-        <a href="editcourse.php"><button class="btn btn-info">Edit Courses Here</button></a>
-        <a href="course.php"><button class="btn btn-info">Back</button></a>
+        <a href="editcourse.php"><button class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span> Edit Courses Here</button></a>
+        <a href="course.php"><button class="btn btn-warning"><span class="glyphicon glyphicon-arrow-left"></span> Back</button></a>
     </center>
 
     </div>

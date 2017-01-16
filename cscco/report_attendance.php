@@ -12,9 +12,9 @@ if(logged_in() === false){
 }
 require '../core/init.php';
 require '../core/function/staff.php';
-include '../components/cscordinator_head.php'; ?>
-<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0-beta.1/jquery-ui.min.js"></script>-->
+include '../components/page_head.php';?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0-beta.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.1.135/jspdf.min.js"></script>
 	<script type="text/javascript" src="http://cdn.uriit.ru/jsPDF/libs/adler32cs.js/adler32cs.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
@@ -139,7 +139,7 @@ include '../components/cscordinator_head.php'; ?>
 								{
 									if($row['batch']!=null)
 									{
-										echo '<center><h2>Select the batch</h2></center>
+										echo '<center><h2><b><u>Select the batch</u></b></h2></center>
 												<div class="process">
 													<div class="process-row">';
 										$i=1;
@@ -200,17 +200,26 @@ include '../components/cscordinator_head.php'; ?>
 					<br>
                     <b> Batch number : </b><?php echo $token;?>
 					<hr>
+					
 
 
                     <div class="box" style="width:75%;">
                         <div class="box-header">
-                            <h3 class="box-title">Attendance Report</h3>
+                            <div class='panel panel-primary'>
+								<div class='panel-heading'>
+									<center>
+									<h2 class='panel-title'>
+										Attendance Report
+									</h2> 
+									</center>
+								</div>
+							</div>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body table-responsive no-padding">
 
 
-                            <table class='table table-bordered table-inverse'>
+                            <table class='table'>
                                 <tr>
                                     <th>Subject ID</th>
                                     <th>Student Name</th>

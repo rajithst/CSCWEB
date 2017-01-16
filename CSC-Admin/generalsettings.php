@@ -131,14 +131,20 @@
 
                                     if (isset($_POST['submit'])){
 
-                                        $ccid=$_POST['subs'];
+                                        $ccid=$_POST['coursecid'];
 
 
                                     if (!empty($_POST["user"])) {
                                         foreach ($_POST["user"] as $user) {
 
-                                           $sql = "UPDATE sujects SET coursecid=$ccid WHERE subjectid='$user'";
-                                           echo $sql.'<br>';
+                                           $sql = "UPDATE subjects SET coursecid=$ccid WHERE subjectid='$user'";
+
+                                           mysqli_query($con,$sql);
+
+                                            ?>
+                                            <script>swal("Added!", "Course coordinator enroled for new subject")</script>
+
+                                            <?php
 
 
                                         }

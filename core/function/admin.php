@@ -161,7 +161,7 @@ function adduser($con,$postdata) {
 }
 
 function email($to, $subject, $body) {
-	mail($to, $subject, $body, ' From:Computer and Service Center - University of Colombo School of Computing');
+	mail($to, $subject, $body, ' From:Computing Services Center - University of Colombo School of Computing');
 }
 
 function changeimage( $user_id, $file_temp, $file_extn) {
@@ -261,6 +261,19 @@ function updatedata($con,$postdata,$id){
         $update[]= '`' . $field . '` = \'' . $data . '\'';
     }
     $sql = "UPDATE subjects SET" . implode(' , ',$update) . "WHERE id = $id";
+    mysqli_query($con,$sql);
+    return 'true';
+
+}
+
+function updateadminuser($con,$id,$postdata){
+
+    $update=array();
+
+    foreach ($postdata as $field => $data) {
+        $update[]= '`' . $field . '` = \'' . $data . '\'';
+    }
+    $sql = "UPDATE adminusers SET" . implode(' , ',$update) . "WHERE id = $id";
     mysqli_query($con,$sql);
     return 'true';
 

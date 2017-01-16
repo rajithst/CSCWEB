@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+error_reporting(0);
 
 require '../core/base_connection.php';
 require '../core/function/student.php';
@@ -300,32 +302,41 @@ require '../components/stud_head.php';
 
       <?php
 
-     /*
-      if(isset($_POST['submit'])){
 
-        $reg_data= array(
-        'name_title'=$_POST['title']
-        'fullname'=$_POST['fullname'],
-        'name_w_initials'=$_POST['ininame'],
-        'coursename'=$POST['course'];
-        'dob'=$_POST['dob'],
-        'gender'=$_POST['gender'],
-        'nic'=$_POST['nic'],
-        'home_address'=$_POST['peraddress'],
-        'mobile'=$_POST['mobie'],
-        'home_tel'=$_POST['telephone'],
-        'Workplace_designation'=$_POST['wrkplace'],
-        'work_place_addr'=$_POST['wrkaddress'],
-        'work_place_tel'=$_POST['wrkphone'],
-        'work_place_email'=$_POST['workemail'],
-        'work_place_fax'=$_POST['fax'],
-        'vehical_no'=$_POST['vno'],
-        'description_howknow'=$_POST['howknow_des'],
-        'howknow'=$_POST['howknow'],
-        'email'=$_POST['email'],
-        
+      if(isset($_POST['submit'])) {
 
-      );*/
+          $reg_data = array(
+
+              'name_title' => $_POST['title'],
+              'fullname' => $_POST['fullname'],
+              'name_w_initials' => $_POST['ininame'],
+              'coursename' => $_POST['course'],
+              'dob' => $_POST['dob'],
+              'gender' => $_POST['gender'],
+              'nic' => $_POST['nic'],
+              'home_address' => $_POST['peraddress'],
+              'home_mobile' => $_POST['mobie'],
+              'home_tel' => $_POST['telephone'],
+              'Workplace_designation' => $_POST['wrkplace'],
+              'work_place_addr' => $_POST['wrkaddress'],
+              'work_place_tel' => $_POST['wrkphone'],
+              'work_place_email' => $_POST['workemail'],
+              'vehicle_no' => $_POST['vno'],
+              'description_howknow' => $_POST['howknow_des'],
+              'howknow' => $_POST['howknow'],
+              'email' => $_POST['email']
+
+
+          );
+
+          $res = registerstudent($con, $reg_data);
+          if ($res == 'true'){ ?>
+              <div class="alert alert-success">
+          <strong>Success!</strong> Registered Suucessfully.
+        </div>
+         <?php }
+
+      }
     ?>
     </form>
     </div>

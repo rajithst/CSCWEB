@@ -11,7 +11,7 @@ function getall($con){
 
 function getstudents($con,$subid,$token){
 
-    $sql = "SELECT * FROM student WHERE coursename = '$subid' AND batch = '$token'";
+    $sql = "SELECT * FROM student WHERE coursename = '$subid' AND batch = '$token' AND registered=1";
     $query    = mysqli_query($con, $sql);
 
     return $query;

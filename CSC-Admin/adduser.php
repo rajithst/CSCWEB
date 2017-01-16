@@ -211,40 +211,6 @@
 
             </div>
 
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Recently Added</h3>
-
-                    </div>
-                    <div class="panel-body">
-                        <table class="table datatable_simple">
-                            <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Added By</th>
-                                <th>Role</th>
-                                <th>Date</th>
-                                <th>Actions</th>
-
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>2011/04/25</td>
-
-                            </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-            </div>
         </div>
 
     </div>

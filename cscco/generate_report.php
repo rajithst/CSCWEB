@@ -11,7 +11,7 @@ if(logged_in() === false){
 }
 require '../core/init.php';
 require '../core/function/staff.php';
-include '../components/cscordinator_head.php'; ?>
+include '../components/page_head.php'; ?>
 
     </head>
     <body>
@@ -36,7 +36,7 @@ include '../components/cscordinator_head.php'; ?>
 
     
 
-      <center><h2>Select report Type</h2></center>
+      <center><h2><b><u>Select report type</u></b></h2></center>
 
      
         

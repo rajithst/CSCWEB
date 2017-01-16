@@ -34,7 +34,6 @@
             <li class="active"><a href="compose.php"><span class="fa fa-pencil"></span> Compose</a></li>
         </ul>
     </li>
-    <li class=""><a href="chat.php"><span class="fa fa-comments"></span> Messages</a></li>
 
     <li class="xn-openable">
         <a href="#"><span class="fa fa-user"></span> <span class="xn-text">Users</span></a>
@@ -92,72 +91,55 @@
                         </div>                         
 
                     </div>
-                    <!-- END CONTENT FRAME TOP -->
-                    
-                    <!-- START CONTENT FRAME LEFT -->
-                    <div class="content-frame-left">
-                        <div class="block">
+                    <?php
 
-                            <div class="list-group border-bottom">
+                    if (isset($_POST['submit'])){
 
-                                <a href="#" class="list-group-item"><span class="fa fa-flag"></span>Mail list</a>
-                                <a href="#" class="list-group-item"><span class="fa fa-flag"></span>Mail list</a>
-                                <a href="#" class="list-group-item"><span class="fa fa-flag"></span>Mail list</a>
-                                <a href="#" class="list-group-item"><span class="fa fa-flag"></span>Mail list</a>
+                        $to= $_POST['to'];
+                        $subject= $_POST['subject'];
+                        $body= $_POST['body'];
+                        email($to, $subject, $body);
+                        ?>
 
-                            </div>
-                        </div>
+                        <script>swal('Mail sent')</script>
 
-                    </div>
-                    <!-- END CONTENT FRAME LEFT -->
-                    
-                    <!-- START CONTENT FRAME BODY -->
+                    <?php
+
+                    }
+
+                    ?>
                     <div class="content-frame-body">
                         <div class="block">
-                        <form role="form" class="form-horizontal">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">From:</label>
-                                <div class="col-md-10">                                        
-                                    <select class="form-control select">
-                                        <option>Dmitry (dmitryivaniuk@domain.com)</option>
+                        <form role="form" class="form-horizontal" action="" method="post">
 
-                                    </select>
-                                </div>
-                            </div>                        
                             <div class="form-group">
                                 <label class="col-md-2 control-label">To:</label>
                                 <div class="col-md-9">                                        
-                                    <input type="text" class="tagsinput" value="" data-placeholder="add email"/>
+                                    <input type="email" class="tagsinput" value="" data-placeholder="add email" name="to"/>
                                 </div>
                                 <div class="col-md-1">
                                     <button class="btn btn-link toggle" data-toggle="mail-cc">Cc</button>
                                 </div>
                             </div>
-                            <div class="form-group hidden" id="mail-cc">
-                                <label class="col-md-2 control-label">Cc:</label>
-                                <div class="col-md-10">                                        
-                                <input type="text" class="tagsinput" value="" data-placeholder="add email"/>
-                                </div>
-                            </div>
                             <div class="form-group">
                                 <label class="col-md-2 control-label">Subject:</label>
                                 <div class="col-md-10">                                        
-                                    <input type="text" class="form-control" value="Re: Lorem ipsum dolor sit amet"/>                                
+                                    <input type="text" class="form-control" name="subject"/>
                                 </div>                                
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12">                            
-                                    <textarea class="summernote_email" placeholder="message herr">
+                                    <textarea class="summernote_email" placeholder="message herr" name="body">
                                     </textarea>                            
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12">
                                     <div class="pull-left">
-                                        <button class="btn btn-default"><span class="fa fa-trash-o"></span> Delete Draft</button>
+                                        <button class="btn btn-default" type="reset"><span class="fa fa-trash-o"></span> Delete Draft</button>
                                     </div>
                                     <div class="pull-right">
-                                        <button class="btn btn-danger"><span class="fa fa-envelope"></span> Send Message</button>
+                                        <button class="btn btn-danger" type="submit" name="submit"><span class="fa fa-envelope"></span> Send Message</button>
                                     </div>                                    
                                 </div>
                             </div>

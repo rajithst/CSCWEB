@@ -22,9 +22,14 @@ include '../components/cscordinator_head.php'; ?>
 
 <?php include "comp/navbar.php"; ?>
 <ul class="breadcrum">
+	<li class="completed"><a href="index.php">HOME</a></li>
+    <li class="completed"><a href="lecturer.php">ADD LECTURER</a></li>
+	<li class="active"><a href="editcourse.php">EDIT LECTURER</a></li>
+	<!--
     <li class="completed"><a href="index.php">HOME</a></li>
     <li class="completed"><a href="course.php">Courses</a></li>
-    <li class="active"><a href="editcourse.php">Edit Lecturer</a></li>
+	-->
+    
 
 </ul>
 
@@ -139,8 +144,8 @@ if (isset($_GET['id'])==true){
                 <center><div class="form-group">
                         <label class="col-md-4 control-label"></label>
                         <div class="col-md-6">
-                            <button type="submit" class="btn btn-info" name="submit">Add <span class="glyphicon glyphicon-send"></span> </button>
-                            <button type="reset" class="btn btn-info">Cancel <span class="glyphicon glyphicon-remove"></span> </button>
+                            <button type="submit" class="btn btn-success" name="submit">Add <span class="glyphicon glyphicon-send"></span> </button>
+                            <button type="reset" class="btn btn-warning">Cancel <span class="glyphicon glyphicon-remove"></span> </button>
                         </div>
                     </div>
 
