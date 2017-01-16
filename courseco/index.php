@@ -261,7 +261,7 @@ include '../components/course_head.php'; ?>
 
                 <div class="profile-userbuttons">
                     <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal">Profile</button>
-                    <button type="button" class="btn btn-danger btn-sm">Sign Out</button>
+                    <a href="logout.php"><button type="button" class="btn btn-danger btn-sm">Sign Out</button></a>
                 </div>
 
                 <div class="profile-usermenu">
