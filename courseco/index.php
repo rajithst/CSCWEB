@@ -40,7 +40,7 @@ include '../components/course_head.php'; ?>
 
 <div class="container-fluid">
 
-<div class="sidenav col-md-3 col-sm-3 col-xs-12">
+<div class="col-md-3 col-sm-3 col-xs-12">
 
     
                 <div class="panel-group" id="accordion">
@@ -48,7 +48,7 @@ include '../components/course_head.php'; ?>
                         <div class="panel-heading">
                             <center><h2 class="panel-title">
 
-                                    Main Menu
+                                    
                                 </h2></center>
                         </div>
                         <!--<div id="collapseOne" class="panel-collapse collapse in">
