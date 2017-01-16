@@ -74,12 +74,12 @@ if(isset($_POST["submit"])) {
     $md5password = md5($password);
     $md5confirmpassword = md5($confirmpassword);
 
-    /*if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password) && !empty($confirmpassword)){*/
+if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password) && !empty($confirmpassword)){
     if ($md5password != $md5confirmpassword) {
         $matchingerror = "passwords do not match, please enter the same password to confirm !";
         echo "<script type=text/javascript>swal('Passwords does not match try again !')</script>";
 
-    } else {s
+    } else {
         $rr = update_settings($con, $fname, $lname, $email, $md5password, $staff_data['id']);
 
         if ($rr==true){ ?>
@@ -103,6 +103,7 @@ if(isset($_POST["submit"])) {
         ob_end_flush();
         exit();
     }
+}
 }
 function test_input($data){
         $data = trim($data);
