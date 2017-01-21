@@ -1,5 +1,9 @@
-<?php include 'components/admust.php' ?>
-<?php include 'components/ad_head.php' ?>
+
+<?php
+
+include 'components/ad_head.php';
+require '../classes/Admin/Retrieve.php';
+?>
 
 
 <body>
@@ -123,11 +127,9 @@
 
                        <?php
 
-                       $result=allusers($con); //call allusers function to get all user data
+                       $users = new Retrieve();
+                       $result= $users->allUsers(); //call allusers function to get all user data
 
-                       /*
-                        * loop through the fetch data and insert data
-                        * */
                         while($row = $result->fetch_assoc()) { ?>
                         <div class="col-md-3">
                             <!-- CONTACT ITEM -->

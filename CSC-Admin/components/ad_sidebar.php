@@ -9,11 +9,11 @@
       
             <div class="profile">
                 <div class="profile-image">
-                    <img src="<?php echo $user_data['profile']; ?>" alt="John Doe"/>
+                    <img src="<?php echo Session::get('adminProfile'); ?>" alt="John Doe"/>
                 </div>
                 <div class="profile-data">
-                    <div class="profile-data-name"><?php echo $user_data['name']; ?></div>
-                    <div class="profile-data-title"><?php echo $user_data['role']; ?></div>
+                    <div class="profile-data-name"><?php echo Session::get('adminUser'); ?></div>
+                    <div class="profile-data-title"><?php echo Session::get('adminRole'); ?></div>
                 </div>
             </div>
         </li>

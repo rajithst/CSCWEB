@@ -1,5 +1,13 @@
-<?php include 'components/admust.php' ?>
-<?php include 'components/ad_head.php' ?>
+
+<?php
+
+include 'components/ad_head.php';
+require '../classes/Admin/Retrieve.php';
+
+$users = new Retrieve();
+$updateusers = new Update();
+$clean = new Format();
+?>
 
 
 <body>
@@ -99,7 +107,8 @@
                     <h3 class="panel-title">Edit Users</h3>
                 </div>
             <?php
-                $result=allusers($con);
+            
+                $result= $users->allUsers();
                 while($row = $result->fetch_assoc()) { ?>
                 <div class="panel-body list-group list-group-contacts">
                     <a href="#" class="list-group-item">
@@ -124,27 +133,29 @@
 
                 <?php
 
-                if(isset($_POST['update']) === true) {
+                if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
                     $id = $_POST['hidden'];
                     $password = 'csc';
-                    $postdata = array(
-                        'first_name' =>  filter_var($_POST['first_name'],FILTER_SANITIZE_STRING),
-                        'last_name' =>  filter_var($_POST['last_name'],FILTER_SANITIZE_STRING),
+                    $post_data = array(
+                        'first_name' =>  $clean->clean($_POST['first_name']),
+                        'last_name' =>  $clean->clean($_POST['last_name']),
                         'email' =>  filter_var($_POST['email'],FILTER_SANITIZE_EMAIL,FILTER_VALIDATE_EMAIL),
                         'telephone'=>preg_replace('/[^0-9]/', '', $_POST['telephone']),
-                        'address' => filter_var($_POST['address'],FILTER_SANITIZE_STRING),
+                        'address' => $clean->clean($_POST['address']),
                         'role' => $_POST['role'],
                     );
 
-                    $result = updateuser($con, $id,$postdata);
+                    $updatedUsers = $updateusers->updateUser($post_data,$id);
 
-                    if ($result=='true'){
+                    if (isset($updatedUsers)){
+
+                            echo $updatedUsers;
                         ?>
-                        <script>swal("Updated!", "Your have been updated user data successfully")
+                        <script>
 
                         $.ajax({
-
+                            async: true,
                             type:"get",
                             url:"refreshtable.php",
                             success:function (data) {
@@ -160,13 +171,11 @@
 
                         <?php
 
+
                     }
                 }
 
-                ?>
-
-
-
+                    ?>
 
                     <form class="form-horizontal" action="" method="post">
                         <div class="panel panel-default">

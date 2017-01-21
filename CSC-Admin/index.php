@@ -1,5 +1,4 @@
-<?php require '../core/base.php';
-require '../core/function/admin.php'; ?>
+<?php require '../classes/Admin/Adminlogin.php'; ?>
 <!DOCTYPE html>
 <html lang="en" class="body-full-height">
     <head>        
@@ -20,44 +19,48 @@ require '../core/function/admin.php'; ?>
     </head>
     <body>
 
+
     <?php
 
-    if(empty($_POST) === false and isset($_POST)=== true){
 
-        $email    = filter_var($_POST['email'],FILTER_SANITIZE_EMAIL,FILTER_VALIDATE_EMAIL);
-        $password = mysqli_real_escape_string($con,$_POST['password']);
 
-        $login = login($con,$email,$password);
-        if($login === false){  ?>
-            <script>swal("Access Denied!", "Your Email and Password combination is incorrect!!")</script>
-            <?php
+    $al = new Adminlogin();
 
-        }else{
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-            session_start();
-            $_SESSION['id']= $login;
-            header('Location:home.php');
-            exit();
-        }
+        $adminEmail = $_POST['adminEmail'];
+        $adminPass = md5($_POST['adminPass']);
+
+        $loginChk= $al->adminLogin($adminEmail,$adminPass);
     }
 
     ?>
+
         
         <div class="login-container lightmode">
         
             <div class="login-box animated fadeInDown">
                 <div class="login-logo"></div>
                 <div class="login-body" style="background:rgba(27, 27, 27, 0.64);">
+
+                    <?php
+                    if (isset($loginChk)){
+
+                    echo $loginChk;
+                    }
+
+
+                    ?>
                     <div class="login-title"><strong>Log In</strong> to your account</div>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" class="form-horizontal" method="post">
                     <div class="form-group">
                         <div class="col-md-12">
-                            <input type="text" class="form-control" placeholder="E-mail" name="email"/>
+                            <input type="text" class="form-control" placeholder="E-mail" name="adminEmail"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-12">
-                            <input type="password" class="form-control" placeholder="Password" name="password"/>
+                            <input type="password" class="form-control" placeholder="Password" name="adminPass"/>
                         </div>
                     </div>
                     <div class="form-group">

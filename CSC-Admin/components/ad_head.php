@@ -1,3 +1,8 @@
+<?php
+require '../lib/Session.php';
+
+Session::checkSession();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +18,6 @@
 
     <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
 	<script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="js/plugins/sw/sweetalert2.min.js"></script>
     <script type="text/javascript" src="js/plugins/moment.min.js"></script>
 
 

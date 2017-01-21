@@ -1,5 +1,7 @@
 <?php
- include 'components/admust.php';
+
+include 'components/ad_head.php';
+require '../classes/Admin/Retrieve.php';
 
 
 
@@ -9,7 +11,8 @@ echo "<div class='panel panel-default'>
                     <h3 class='panel-title'>Edit Users</h3>
                 </div>";
 
-                $result=allusers($con);
+                $users = new Retrieve();
+                $result= $users->allUsers();
                 while($row = $result->fetch_array()) {
                     echo "<div class='panel-body list-group list-group-contacts'>
                         <a href='#' class='list-group-item'>";

@@ -1,12 +1,7 @@
 
 <?php
-
-/*
- * add admust.php and ad_head.php files
- * */
-include 'components/admust.php' ?>
-<?php
-include 'components/ad_head.php' ?>
+include 'components/ad_head.php';
+require '../classes/Admin/Add.php' ?>
 
 
 <body>
@@ -98,49 +93,37 @@ include 'components/ad_head.php' ?>
     <div class="page-content-wrap">
 
         <div class="row">
+
             <div class="col-md-12">
-            
-            
-            
-            
-            <?php 
-            
-           
-               if(isset($_POST['adduser']) === true){  //get all post data to
-										$password = 'csc';
 
-										/*
-										 * add all data to postdata array
-										 *
-										 * */
-                                        $postdata = array(
-                                            'first_name' =>  filter_var($_POST['first_name'],FILTER_SANITIZE_STRING),
-                                            'last_name' =>  filter_var($_POST['last_name'],FILTER_SANITIZE_STRING),
-                                            'email' =>  filter_var($_POST['email'],FILTER_SANITIZE_EMAIL,FILTER_VALIDATE_EMAIL),
-                                        	'telephone'=>preg_replace('/[^0-9]/', '', $_POST['telephone']),
-                                            'address' => filter_var($_POST['address'],FILTER_SANITIZE_STRING),
-                                        	'password'=>md5($password),
-                                            'role' => $_POST['role']
-                                        );
+                <?php
 
-                                        $result = adduser($con,$postdata); //call add user function
+                $add = new Add();
+                $clean = new Format();
 
-                                        /*
-                                         * prompt success alert if function return true
-                                         *
-                                         * */
-                                        
-                                        if ($result=='true'){
-                                        ?>
-                                    <script>swal("Added!", "Your have benn added a user successfully")</script>
+                if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-                                        <?php
-                                        
-                                        }
-                                        
-                                        }
+                    $password = 'csc';
+                    $postdata = array(
+                        'first_name' =>  $clean->clean($_POST['first_name']),
+                        'last_name' =>  $clean->clean($_POST['last_name']),
+                        'email' =>  $clean->clean($_POST['email']),
+                        'telephone'=>preg_replace('/[^0-9]/', '', $_POST['telephone']),
+                        'address' => $clean->clean($_POST['address']),
+                        'password'=>md5($password),
+                        'role' => $clean->clean($_POST['role'])
+                    );
 
-                                        ?>
+                    $useraddChk= $add->addUsers($postdata);
+
+                }
+
+                if (isset($useraddChk)){
+
+                    echo $useraddChk;
+                }
+
+            ?>
                                         
 
                 <form class="form-horizontal" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">

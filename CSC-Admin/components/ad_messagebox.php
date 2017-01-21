@@ -1,3 +1,4 @@
+
 <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
     <div class="mb-container">
         <div class="mb-middle">
@@ -7,6 +8,8 @@
                 <p>Press No if youwant to continue work. Press Yes to logout current user.</p>
             </div>
             <div class="mb-footer">
+
+
                 <div class="pull-right">
                     <a href="logout.php" class="btn btn-success btn-lg">Yes</a>
                     <button class="btn btn-default btn-lg mb-control-close">No</button>
@@ -15,3 +18,4 @@
         </div>
     </div>
 </div>
+

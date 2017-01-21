@@ -2,7 +2,6 @@
 <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/plugins/sw/sweetalert2.min.js"></script>
 <script type="text/javascript" src='js/plugins/monthly/monthly.js'></script>
 <script type="text/javascript" src='js/plugins/dpicker/bootstrap-datepicker.js'></script>
 <script type="text/javascript" src='js/plugins/dpicker/bootstrap-timepicker.js'></script>
@@ -17,9 +16,6 @@
 <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-file-input.js"></script>
 <script type="text/javascript" src="js/plugins/moment.min.js"></script>
 <script type="text/javascript" src="js/plugins/datatables/jquery.dataTables.min.js"></script>
-
-
-
 
 
 <script type="text/javascript" src="js/plugins.js"></script>

@@ -1,17 +1,7 @@
-<?php
-session_start();
-require '../core/base.php';
+<?php 
 
-if(logged_in() === false){
-
-	session_destroy();
-	header('Location:../index.php');
-	exit();
-
-}
-require '../core/init.php';
-require '../core/function/admin.php';
-
+include 'components/ad_head.php';
+require '../classes/Admin/Retrieve.php';
 
 if (isset($_GET)) {
 
@@ -19,10 +9,11 @@ if (isset($_GET)) {
 
 
 
-	$sql = " SELECT * from staff WHERE id = $cid";
+	
+	$edit = new Edit();
 
-	$res = mysqli_query($con, $sql);
-	while($row = $res->fetch_array()) {
+	$result = $edit->editUser($cid);
+	while($row = $result->fetch_array()) {
 		
 		
 		

@@ -1,4 +1,3 @@
-<?php include 'components/admust.php' ?>
 
 <?php include 'components/ad_head.php' ?>
 
@@ -96,14 +95,14 @@
                                 <div class="widget-item-left">
                                     <span class="fa fa-user"></span>
                                 </div>
-                                <div class="widget-data">
+                                <!--<div class="widget-data">
 
                                     <?php
-                                    $staff = getstaff($con); ?>
-                                    <div class="widget-int num-count"><?php echo $staff; ?></div>
+/*                                    $staff = getstaff($con); */?>
+                                    <div class="widget-int num-count"><?php /*echo $staff; */?></div>
                                     <div class="widget-title">CSC Staff</div>
                                     <div class="widget-subtitle">On CSC</div>
-                                </div>
+                                </div>-->
                             </div>
                             <!-- END WIDGET MESSAGES -->
 
@@ -115,15 +114,15 @@
                                 <div class="widget-item-left">
                                     <span class="fa fa-user"></span>
                                 </div>
-                                <div class="widget-data">
+                               <!-- <div class="widget-data">
                                     <?php
-                                    $students = getRegisteredStudents($con); ?>
+/*                                    $students = getRegisteredStudents($con); */?>
 
 
-                                    <div class="widget-int num-count"><?php echo $students; ?></div>
+                                    <div class="widget-int num-count"><?php /*echo $students; */?></div>
                                     <div class="widget-title">Registred Students</div>
                                     <div class="widget-subtitle">On CSC</div>
-                                </div>
+                                </div>-->
 
                             </div>
                             <!-- END WIDGET REGISTRED -->
@@ -168,7 +167,7 @@
                                                 <div class="panel-body panel-body-table">
 
                                                     <div class="table-responsive">
-                                                        <table class="table table-bordered table-striped table-actions">
+                                                        <!--<table class="table table-bordered table-striped table-actions">
                                                             <thead>
                                                             <tr>
 
@@ -184,32 +183,32 @@
                                                             <tbody>
 
                                                             <?php
-                                                            $query = mysqli_query($con,"SELECT * FROM events ORDER BY id DESC ");
+/*                                                            $query = mysqli_query($con,"SELECT * FROM events ORDER BY id DESC ");
                                                             while($row = mysqli_fetch_array($query)){
-                                                            ?>
+                                                            */?>
                                                             <tr id="trow_1">
 
-                                                                <td style="display: none;"><strong><?php echo $row[0]; ?></strong></td>
-                                                                <td><strong><?php echo $row[1]; ?></strong></td>
+                                                                <td style="display: none;"><strong><?php /*echo $row[0]; */?></strong></td>
+                                                                <td><strong><?php /*echo $row[1]; */?></strong></td>
                                                                 <?php
-                                                                $today = date("Y-m-d");
+/*                                                                $today = date("Y-m-d");
                                                                 $expday= $row[3];
                                                                 $today_dt = new DateTime($today);
                                                                 $expire_dt = new DateTime($expday);
                                                                 if ($expire_dt > $today_dt) {
 
-                                                                ?>
+                                                                */?>
                                                                 <td><span class="label label-success">On going</span></td>
-                                                                <?php } else{ ?>
+                                                                <?php /*} else{ */?>
                                                                     <td><span class="label label-danger">Expired</span></td>
                                                                 <?php
-                                                                }
-                                                                ?>
+/*                                                                }
+                                                                */?>
 
-                                                                <td><?php echo $row[3]; ?></td>
+                                                                <td><?php /*echo $row[3]; */?></td>
 
                                                                 <?php
-
+/*
                                                                 $now = time();
                                                                 $your_date = strtotime($row[3]);
                                                                 $datediff = $your_date- $now;
@@ -217,30 +216,30 @@
                                                                 $remdates= floor($datediff / (60 * 60 * 24));
 
 
-                                                                ?>
-                                                                <td><?php echo $remdates; ?></td>
+                                                                */?>
+                                                                <td><?php /*echo $remdates; */?></td>
 
                                                                 <td>
                                                                     <?php
-
+/*
                                                                     if ($row['student']==1)
                                                                         echo "<span class='label label-info label-form'>Student</span>". "  ";
                                                                     if ($row['coursec']==1)
                                                                         echo "<span class='label label-info label-form'>Course Coordinator</span>" . "  ";
                                                                     if ($row['cscc']==1)
                                                                         echo "<span class='label label-info label-form'>CSC Coordinator</span>";
-                                                                    ?>
+                                                                    */?>
 
                                                                 </td>
                                                                 <td>
                                                                     <button class="btn btn-default btn-rounded btn-sm"><span class="fa fa-pencil"></span></button>
-                                                                    <a href="deleteevents.php?eventid=<?php echo $row[0]; ?>&name=<?php echo $row[1]; ?>"><button class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-times"></span></button></a>
+                                                                    <a href="deleteevents.php?eventid=<?php /*echo $row[0]; */?>&name=<?php /*echo $row[1]; */?>"><button class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-times"></span></button></a>
                                                                 </td>
                                                             </tr>
 
-                                                            <?php } ?>
+                                                            <?php /*} */?>
                                                             </tbody>
-                                                        </table>
+                                                        </table>-->
                                                     </div>
 
                                                 </div>
@@ -266,7 +265,7 @@
                                 <div class="panel-body panel-body-table">
                                     
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-striped">
+                                       <!-- <table class="table table-bordered table-striped">
                                             <thead>
                                                 <tr>
                                                     <th width="50%">Course</th>
@@ -277,20 +276,20 @@
                                             </thead>
                                             <tbody>
                                             <?php
-                                            $query = mysqli_query($con,"SELECT * FROM subjects WHERE active=1 ");
+/*                                            $query = mysqli_query($con,"SELECT * FROM subjects WHERE active=1 ");
                                             while($row = mysqli_fetch_array($query)){
-                                            ?>
+                                            */?>
 
                                                 <tr>
-                                                    <td><strong><?php echo $row[2]; ?></strong></td>
+                                                    <td><strong><?php /*echo $row[2]; */?></strong></td>
                                                     <td><span class="label label-success">Running</span></td>
-                                                    <td><?php echo $row[6]; ?></td>
-                                                    <td><?php echo $row[7]; ?></td>
+                                                    <td><?php /*echo $row[6]; */?></td>
+                                                    <td><?php /*echo $row[7]; */?></td>
                                                 </tr>
-                                            <?php } ?>
+                                            <?php /*} */?>
 
                                             </tbody>
-                                        </table>
+                                        </table>-->
                                     </div>
                                     
                                 </div>
