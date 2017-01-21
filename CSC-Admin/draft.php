@@ -239,7 +239,7 @@
 
        	swal({
        	  title: 'Are you sure?',
-       	  text: "You won't to publish this post",
+       	  text: "You want to publish this post?",
        	  type: 'warning',
        	  showCancelButton: true,
        	  confirmButtonColor: '#3085d6',

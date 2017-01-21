@@ -108,19 +108,28 @@
 
                 <?php
 
+
+                /*
+                 * get request from the submit button
+                 *
+                 * */
                 if(isset($_POST['addevent']) === true) {
 
 
 
-                $xml = new DOMDocument("1.0","UTF-8");
-                $xml->load('events.xml');
+                $xml = new DOMDocument("1.0","UTF-8");  //create new DOMDocument object
+                $xml->load('events.xml');        //load events.xml file
 
-                        $name =  filter_var($_POST['name'],FILTER_SANITIZE_STRING);
+                        $name =  filter_var($_POST['name'],FILTER_SANITIZE_STRING);  //sanitizing inputed data
                         $sdate =  $_POST['sdate'];
                         $enddate =  $_POST['enddate'];
                         $starttime=$_POST['starttime'];
                         $endtime = $_POST['endtime'];
 
+                        /*
+                         * writing to add data to xml file
+                         *
+                         * */
                         $rootTag = $xml->getElementsByTagName("monthly")->item(0);
                         $infoTag = $xml->createElement("event");
                             $nameTag = $xml->createElement("name",$name);
@@ -148,7 +157,10 @@
                                 foreach ($_POST["user"] as $user) {
                                     if ($user == 1) {
 
-
+                                        /*
+                                           * writing to add data to xml file if $user=1
+                                           *
+                                            * */
                                         $xml = new DOMDocument("1.0","UTF-8");
                                         $xml->load('stuevents.xml');
 
@@ -182,6 +194,10 @@
 
                                     } else if ($user == 2) {
 
+                                        /*
+                                        * writing to add data to xml file if $user=2
+                                        *
+                                         * */
 
                                         $xml = new DOMDocument("1.0","UTF-8");
                                         $xml->load('coursecoevents.xml');
@@ -214,6 +230,12 @@
 
 
                                     } else if ($user == 3) {
+
+
+                                        /*
+                                        * writing to add data to xml file if $user=3
+                                        *
+                                         * */
                                         $xml = new DOMDocument("1.0","UTF-8");
                                         $xml->load('csccoevents.xml');
 
@@ -266,6 +288,10 @@
 
                     }
 
+                    /*
+                     * create postdata array
+                     * */
+
                     $postdata = array(
                         'name' =>  filter_var($_POST['name'],FILTER_SANITIZE_STRING),
                         'sdate' =>  $_POST['sdate'],
@@ -277,6 +303,11 @@
                         'cscc' => filter_var($csc,FILTER_VALIDATE_INT)
                     );
 
+
+                    /*
+                     * call addevent function to pass postdata to the function
+                     *
+                     * */
                     $result = addevent($con,$postdata);
 
                     if ($result=='true'){

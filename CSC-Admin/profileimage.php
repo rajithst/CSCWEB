@@ -7,7 +7,6 @@ if (isset($_FILES['profile']) === true and empty($_FILES['profile']['name'])=== 
     $allowed=array('jpg','jpeg','gif','png');
     $file_name = $_FILES['profile']['name'];
     $file_extn= strtolower(end(explode('.',$file_name)));
-    echo $file_extn;
     $file_temp=$_FILES['profile']['tmp_name'];
 
 
@@ -16,7 +15,8 @@ if (isset($_FILES['profile']) === true and empty($_FILES['profile']['name'])=== 
 
     }
 
-    echo $res;
+    header('location:profilesettings.php');
+    exit();
 
 }
 

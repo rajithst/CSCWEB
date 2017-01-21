@@ -201,6 +201,7 @@ $('button.deleteass').click(function(){
 
                   location.reload();
 
+
                 
                 }
                });

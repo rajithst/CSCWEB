@@ -329,10 +329,4 @@ include '../components/page_head.php'; ?>
             </div>
         </div>
     </div>
-<ol id="joyRideTipContent">
-    <li data-id="jrnewsfeed" data-text="Next" class="custom">
-        <h2>News Feed</h2>
-        <p>This Section will display all the News related to Course Coordinator Publish by Administrator</p>
-    </li>
-  </ol>
 <?php include "../components/page_tail.php";?>

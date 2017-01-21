@@ -1,5 +1,12 @@
-<?php include 'components/admust.php' ?>
-<?php include 'components/ad_head.php' ?>
+
+<?php
+
+/*
+ * add admust.php and ad_head.php files
+ * */
+include 'components/admust.php' ?>
+<?php
+include 'components/ad_head.php' ?>
 
 
 <body>
@@ -99,8 +106,13 @@
             <?php 
             
            
-               if(isset($_POST['adduser']) === true){
+               if(isset($_POST['adduser']) === true){  //get all post data to
 										$password = 'csc';
+
+										/*
+										 * add all data to postdata array
+										 *
+										 * */
                                         $postdata = array(
                                             'first_name' =>  filter_var($_POST['first_name'],FILTER_SANITIZE_STRING),
                                             'last_name' =>  filter_var($_POST['last_name'],FILTER_SANITIZE_STRING),
@@ -111,7 +123,12 @@
                                             'role' => $_POST['role']
                                         );
 
-                                        $result = adduser($con,$postdata); 
+                                        $result = adduser($con,$postdata); //call add user function
+
+                                        /*
+                                         * prompt success alert if function return true
+                                         *
+                                         * */
                                         
                                         if ($result=='true'){
                                         ?>

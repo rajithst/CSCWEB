@@ -123,7 +123,11 @@
 
                        <?php
 
-                       $result=allusers($con);
+                       $result=allusers($con); //call allusers function to get all user data
+
+                       /*
+                        * loop through the fetch data and insert data
+                        * */
                         while($row = $result->fetch_assoc()) { ?>
                         <div class="col-md-3">
                             <!-- CONTACT ITEM -->
